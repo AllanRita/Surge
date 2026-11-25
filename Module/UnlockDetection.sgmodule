@@ -1,1 +1,11 @@
+#!name=UnlockDetection V2.1
+#!desc=17 services | Streaming regional availability checks
+#!author=AllanRita
+#!category=Panel
+
+[Panel]
+AllanRitaUnlock = title="UnlockDetection",content="Tap to check 17 services",script-name=AllanRitaUnlockCheck,update-interval=900
+
+[Script]
+AllanRitaUnlockCheck = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/AllanRita/Surge/main/Script/UnlockDetection.js,script-update-interval=3600
 
