@@ -1,5 +1,5 @@
 #!name=UnlockDetection
-#!desc=全球及地区流媒体解锁检测 | 12项服务 | V2.4
+#!desc=全球及地区流媒体动态检测 | 12项服务 | V2.5
 #!author=AllanRita
 #!category=流媒体
 
@@ -7,4 +7,4 @@
 AllanRitaUnlock = title="UnlockDetection",content="点击刷新开始检测",script-name=AllanRitaUnlockCheck,update-interval=900
 
 [Script]
-AllanRitaUnlockCheck = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/AllanRita/Surge/main/Script/UnlockDetection.js,script-update-interval=3600
+AllanRitaUnlockCheck = type=generic,timeout=45,script-path=https://raw.githubusercontent.com/AllanRita/Surge/main/Script/UnlockDetection.js,script-update-interval=3600
