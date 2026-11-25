@@ -10,7 +10,7 @@ Surge 图标索引聚合；图片归原作者及相关权利人所有。未镜�
 
 | 图标库 | 数量 | 地址 |
 |---|---:|---|
-| All.json | 4995 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
+| All.json | 4996 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
 | Flags.json | 339 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Flags.json) |
 | Streaming.json | 389 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
 | AI.json | 59 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/AI.json) |
@@ -28,7 +28,7 @@ Surge 图标索引聚合；图片归原作者及相关权利人所有。未镜�
 | Packs/KeLee.json | 388 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/KeLee.json) |
 | Packs/fmz200.json | 1604 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/fmz200.json) |
 | Packs/KeLee-Flags.json | 262 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/KeLee-Flags.json) |
-| Custom.json | 1 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Custom.json) |
+| Custom.json | 2 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Custom.json) |
 
 ## 个人补充图标
 
