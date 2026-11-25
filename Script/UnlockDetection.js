@@ -1,10 +1,10 @@
-// UnlockDetection V2.2
+// UnlockDetection V2.3
 // Author: AllanRita
 // Platform: Surge
-// 17 Streaming Services
-// Full Name Edition
+// 16 Streaming Services
 
 (function () {
+
   const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
 
   const POLICY = '';
@@ -36,10 +36,13 @@
     return m ? m[1].toLowerCase() : '';
   };
 
+  // HTTP Request
+
   function request(url, opt) {
     opt = opt || {};
 
     return new Promise(resolve => {
+
       const o = {
         url,
         timeout: 7,
@@ -59,6 +62,7 @@
 
       try {
         $httpClient[method](o, (e, r, d) => {
+
           const h = {};
 
           Object.keys((r && r.headers) || {})
@@ -72,6 +76,7 @@
             headers: h,
             url
           });
+
         });
       } catch (_) {
         resolve({
@@ -84,7 +89,10 @@
     });
   }
 
+  // Redirect Handling
+
   function nextURL(r) {
+
     const l = r.headers.location || '';
 
     if (/^https:\/\//i.test(l)) return l;
@@ -97,6 +105,7 @@
   }
 
   function sameFamily(a, b) {
+
     const host = u =>
       ((u.match(/^https:\/\/([a-z0-9.-]+)(?:\/|$)/i)
       || [])[1] || '').toLowerCase();
@@ -111,6 +120,7 @@
   }
 
   async function page(url) {
+
     let r = await request(url);
     let loc = nextURL(r);
 
@@ -122,15 +132,20 @@
       !/\/(?:unavailable|intl)(?:[/?#]|$)/i.test(loc) &&
       sameFamily(url, loc)
     ) {
+
       const n = await request(loc);
       n.firstLocation = loc;
+
       return n;
     }
 
     return r;
   }
 
+  // Status Detection
+
   function basic(r) {
+
     if (!r.status) return unknown;
 
     if (
@@ -161,12 +176,14 @@
   }
 
   function usable(r) {
+
     return r.status >= 200 &&
       r.status < 300 &&
       !challenge.test(r.text);
   }
 
   function pathRegion(u) {
+
     const m = String(u || '').match(
       /^https:\/\/[^/]+\/([a-z]{2})(?:-[a-z]{2})?(?:[/?#]|$)/i
     );
@@ -177,6 +194,7 @@
   // 01. YouTube Premium
 
   async function yt() {
+
     const r = await page(
       'https://www.youtube.com/premium'
     );
@@ -197,6 +215,7 @@
   // 02. Netflix
 
   async function nf() {
+
     const r = await page(
       'https://www.netflix.com/title/70143836'
     );
@@ -220,6 +239,7 @@
   // 03. Disney+
 
   async function disney() {
+
     const r = await page(
       'https://www.disneyplus.com/'
     );
@@ -249,6 +269,7 @@
   // 04. HBO Max
 
   async function hbo() {
+
     const r = await page(
       'https://www.hbomax.com/'
     );
@@ -270,6 +291,7 @@
   // 05. Spotify
 
   async function spotify() {
+
     const r = await page(
       'https://www.spotify.com/'
     );
@@ -286,6 +308,7 @@
   // 06. Prime Video
 
   async function prime() {
+
     const r = await page(
       'https://www.primevideo.com/'
     );
@@ -314,6 +337,7 @@
   // 07. Apple TV
 
   async function appleTV() {
+
     return basic(
       await page('https://tv.apple.com/')
     );
@@ -322,6 +346,7 @@
   // 08. Paramount+
 
   async function paramount() {
+
     const r = await page(
       'https://www.paramountplus.com/'
     );
@@ -335,49 +360,10 @@
     );
   }
 
-  // 09. DAZN
-
-  async function dazn() {
-    const r = await request(
-      'https://startup.core.indazn.com/misl/v5/Startup',
-      {
-        method: 'post',
-        headers: {
-          'Content-Type': 'application/json',
-          'Origin': 'https://www.dazn.com',
-          'Referer': 'https://www.dazn.com/'
-        },
-        body: JSON.stringify({
-          Version: '2',
-          LandingPageKey: 'generic',
-          Languages: 'en',
-          Platform: 'web',
-          Manufacturer: '',
-          PromoCode: '',
-          PlatformAttributes: {}
-        })
-      }
-    );
-
-    if (basic(r) === no()) return no();
-    if (!usable(r)) return unknown;
-
-    const c = cc(
-      field(r.text, 'GeolocatedCountry')
-    );
-
-    const f = flag(r.text, 'isAllowed');
-
-    return f === 'false'
-      ? no(c)
-      : f === 'true'
-      ? ok(c)
-      : unknown;
-  }
-
-  // 10. ABEMA
+  // 09. ABEMA
 
   async function abema() {
+
     const r = await request(
       'https://api.abema.io/v1/ip/check?device=android',
       {
@@ -390,6 +376,7 @@
     );
 
     if (basic(r) === no()) return no();
+
     if (!usable(r)) return unknown;
 
     let d;
@@ -411,17 +398,19 @@
       : unknown;
   }
 
-  // 11. TVer
+  // 10. TVer
 
   async function tver() {
+
     return basic(
       await page('https://tver.jp/')
     );
   }
 
-  // 12. U-NEXT
+  // 11. U-NEXT
 
   async function unext() {
+
     const query =
       'query cosmo_getPlaylistUrl($code: String, $playMode: String, $bitrateLow: Int, $bitrateHigh: Int, $validationOnly: Boolean) { webfront_playlistUrl(code: $code, playMode: $playMode, bitrateLow: $bitrateLow, bitrateHigh: $bitrateHigh, validationOnly: $validationOnly) { resultStatus } }';
 
@@ -447,6 +436,7 @@
     );
 
     if (basic(r) === no()) return no();
+
     if (!usable(r)) return unknown;
 
     const m = r.text.match(
@@ -464,25 +454,28 @@
       : unknown;
   }
 
-  // 13. Hulu
+  // 12. Hulu
 
   async function hulu() {
+
     return basic(
       await page('https://www.hulu.com/')
     );
   }
 
-  // 14. Peacock
+  // 13. Peacock
 
   async function peacock() {
+
     return basic(
       await page('https://www.peacocktv.com/')
     );
   }
 
-  // 15. 巴哈姆特动画疯
+  // 14. 巴哈姆特动画疯
 
   async function bahamut() {
+
     const r = await page(
       'https://ani.gamer.com.tw/'
     );
@@ -500,9 +493,10 @@
     return partial(c);
   }
 
-  // 16. ViuTV
+  // 15. ViuTV
 
   async function viu() {
+
     const r = await request(
       'https://api.viu.now.com/p8/3/getLiveURL',
       {
@@ -523,6 +517,7 @@
     );
 
     if (basic(r) === no()) return no();
+
     if (!usable(r)) return unknown;
 
     const code = field(r.text, 'responseCode');
@@ -534,9 +529,10 @@
       : unknown;
   }
 
-  // 17. TVING
+  // 16. TVING
 
   async function tving() {
+
     return basic(
       await page('https://www.tving.com/')
     );
@@ -553,7 +549,6 @@
     ['Prime Video', prime],
     ['Apple TV', appleTV],
     ['Paramount+', paramount],
-    ['DAZN', dazn],
     ['ABEMA', abema],
     ['TVer', tver],
     ['U-NEXT', unext],
@@ -566,23 +561,26 @@
 
   // Panel Layout
 
-  const rows = [1, 2, 2, 2, 2, 2, 2, 2, 2];
+  const rows = [1, 2, 2, 2, 2, 2, 2, 2, 1];
 
   const values = services.map(() => unknown);
 
   let complete = false;
 
   function finish() {
+
     if (complete) return;
 
     complete = true;
 
     const d = new Date();
+
     const pad = n => ('0' + n).slice(-2);
 
     let i = 0;
 
     const content = rows.map(n => {
+
       const line = services
         .slice(i, i + n)
         .map((s, j) =>
@@ -593,6 +591,7 @@
       i += n;
 
       return line;
+
     }).join('\n');
 
     $done({
@@ -608,6 +607,8 @@
       'icon-color': '#007AFF'
     });
   }
+
+  // Concurrent Detection
 
   setTimeout(finish, 24000);
 
