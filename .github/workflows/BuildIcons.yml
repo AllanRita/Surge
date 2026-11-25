@@ -17,8 +17,7 @@ jobs:
   build:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-
+    timeout-minutes: 60
     steps:
       - name: Secure checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
@@ -26,30 +25,23 @@ jobs:
           ref: main
           persist-credentials: false
 
-      - name: Secure icon index build
+      - name: Build and validate icon indexes
         run: |
           python3 - <<'PY'
-          import json
-          import re
-          import time
-          import os
-          import math
-
+          import json, re, time, os, math
           from pathlib import Path
-          from urllib.request import (
-              Request,
-              build_opener,
-              HTTPRedirectHandler
-          )
+          from urllib.request import Request, build_opener, HTTPRedirectHandler
+          from urllib.error import HTTPError
           from urllib.parse import urlsplit, unquote
 
-          VERSION = '3.2 Security + iOS'
-
+          VERSION = '3.3 Security + Apple Auto'
           RAW = 'https://raw.githubusercontent.com/'
           APPLE = 'https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/'
-
-          MAX_BYTES = 12 * 1024 * 1024
-          MAX_ICONS = 30000
+          RSS = 'https://rss.marketingtools.apple.com/api/v2/'
+          BASE = RAW+'AllanRita/Surge/main/Icon/'
+          MAX_INPUT = 12*1024*1024
+          MAX_OUTPUT = 50*1024*1024
+          MAX_TOTAL = 150000
 
           SOURCES = [
               ('Qure-Color', RAW+'Koolson/Qure/master/Other/QureColor.json'),
@@ -73,582 +65,406 @@ jobs:
               ('Qure-Media', RAW+'Koolson/Qure/master/Other/QureColor-Media.json'),
           ]
 
-          # Apple App Store applications
-          # Name, App ID, Storefront, Category
-
           IOS_APPS = [
-              ('ADN', 667935767, 'fr', 'Media'),
-              ('Mercari', 667861049, 'jp', 'Shopping'),
-              ('Rakuten Viki', 445553058, 'us', 'Media'),
-              ('FOX One', 6746049430, 'us', 'Media'),
-              ('Amazon Shopping', 297606951, 'us', 'Shopping'),
-              ('Target', 297430070, 'us', 'Shopping'),
-              ('STARZ', 550221096, 'us', 'Media'),
-              ('myTV SUPER', 1080187984, 'hk', 'Media'),
-              ('Now TV', 501956183, 'hk', 'Media'),
+              ('ADN',667935767,'fr','Media'),
+              ('Mercari',667861049,'jp','Shopping'),
+              ('Rakuten Viki',445553058,'us','Media'),
+              ('FOX One',6746049430,'us','Media'),
+              ('Amazon Shopping',297606951,'us','Shopping'),
+              ('Target',297430070,'us','Shopping'),
+              ('STARZ',550221096,'us','Media'),
+              ('myTV SUPER',1080187984,'hk','Media'),
+              ('Now TV',501956183,'hk','Media'),
           ]
 
-          def lookup_url(app_id, country):
-              return (
-                  'https://itunes.apple.com/lookup'
-                  f'?id={app_id}&country={country}&entity=software'
-              )
+          # Global App Store storefronts
 
-          # ========================================
-          # Security: Trusted image sources
-          # ========================================
+          REGIONS = '''us gb hk tw jp kr sg cn ca au fr de af al dz ao ai ag ar am at az bs bh bb by be bz bj bm bt bo ba bw br vg bn bg bf kh cm cv ky td cl co cg cd cr ci hr cy cz dk dm do ec eg sv ee sz fj fi ga gm ge gh gr gd gt gw gy hn hu is in id iq ie il it jm jo kz ke xk kw kg la lv lb lr ly lt lu mo mg mw my mv ml mt mr mu mx fm md mn me ms ma mz mm na nr np nl nz ni ne ng mk no om pk pw pa pg py pe ph pl pt qa ro ru rw st sa sn rs sc sl sk si sb za es lk kn lc vc sr se ch tj tz th to tt tn tr tm tc ae ug ua uy uz vu ve vn ye zm zw'''.split()
+
+          assert len(REGIONS) == len(set(REGIONS)) == 175
+
+          CHARTS = ('top-free','top-paid')
+
+          # Trusted image sources
 
           TRUSTED = {
               'Qure': [
-                  RAW+'Koolson/Qure/master/IconSet/',
+                  RAW+'Koolson/Qure/master/IconSet/'
               ],
               'Orz3': [
-                  RAW+'Orz-3/mini/master/Color/',
-                  RAW+'Orz-3/mini/master/Alpha/',
+                  RAW+'Orz-3/mini/master/'+p+'/'
+                  for p in ('Color','Alpha')
               ],
               'Lige': [
-                  RAW+'lige47/QuanX-icon-rule/main/icon/',
+                  RAW+'lige47/QuanX-icon-rule/main/icon/'
               ],
               'Semporia': [
-                  RAW+'Semporia/Hand-Painted-icon/master/Rounded_Rectangle/',
-                  RAW+'Semporia/Hand-Painted-icon/master/Google_Suite/',
-                  RAW+'Semporia/Hand-Painted-icon/master/Social_Media/',
-                  RAW+'Semporia/Hand-Painted-icon/master/Universal/',
+                  RAW+'Semporia/Hand-Painted-icon/master/'+p+'/'
+                  for p in (
+                      'Rounded_Rectangle',
+                      'Google_Suite',
+                      'Social_Media',
+                      'Universal'
+                  )
               ],
               'Oasisic': [
-                  RAW+'Hawaiine/Oasisic-Icons/main/icons/',
+                  RAW+'Hawaiine/Oasisic-Icons/main/icons/'
               ],
               'KeLee': [
-                  RAW+'luestr/IconResource/main/App_icon/',
-                  RAW+'luestr/IconResource/main/Other_icon/',
-                  RAW+'luestr/IconResource/main/Website_icon/',
+                  RAW+'luestr/IconResource/main/'+p+'/'
+                  for p in (
+                      'App_icon',
+                      'Other_icon',
+                      'Website_icon'
+                  )
               ],
               'KeLee-Flags': [
-                  'https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/',
+                  'https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/'
               ],
               'fmz200': [
-                  RAW+'fmz200/wool_scripts/main/icons/',
+                  RAW+'fmz200/wool_scripts/main/icons/'
               ],
               'Apple Emoji': [
-                  APPLE+'img/apple/64/',
+                  APPLE+'img/apple/64/'
               ],
               'Personal': [
                   'https://cdn.jsdelivr.net/gh/selfhst/icons/png/',
-                  'https://www.emojiall.com/images/240/apple/',
+                  'https://www.emojiall.com/images/240/apple/'
               ],
           }
 
-          TRUSTED_DOMAINS = {
-              'raw.githubusercontent.com',
-              'cdn.jsdelivr.net',
-              'gitlab.com',
-              'play-lh.googleusercontent.com',
-              'www.emojiall.com',
-          }
-
-          def apple_host(host):
-              return re.fullmatch(
-                  r'is[1-5](?:-ssl)?\.mzstatic\.com',
-                  host
-              ) is not None
-
           def valid_url(source, url):
 
-              if not isinstance(url, str):
-                  return False
-
-              if len(url) > 2048:
-                  return False
-
-              if any(ord(c) <= 32 or ord(c) == 127 for c in url):
+              if not isinstance(url,str) or len(url)>2048 or any(ord(c)<=32 or ord(c)==127 for c in url):
                   return False
 
               try:
-                  p = urlsplit(url)
+                  p=urlsplit(url)
               except ValueError:
                   return False
 
-              if p.scheme != 'https':
+              if p.scheme!='https' or p.query or p.fragment or re.search(r'%(2f|5c|00|25)',url,re.I):
                   return False
 
-              if p.query or p.fragment:
+              path=unquote(p.path)
+
+              if re.search(r'[\x00-\x1f\x7f\\?#]',path) or any(x in {'.','..'} for x in path.split('/')):
                   return False
 
-              if re.search(r'%(2f|5c|00|25)', url, re.I):
-                  return False
-
-              path = unquote(p.path)
-
-              if re.search(r'[\x00-\x1f\x7f\\?#]', path):
-                  return False
-
-              if any(
-                  part in {'.', '..'}
-                  for part in path.split('/')
-              ):
-                  return False
-
-              # Apple App Store artwork whitelist
-
-              if apple_host(p.netloc):
-
+              if re.fullmatch(r'is[1-5](?:-ssl)?\.mzstatic\.com',p.netloc):
                   return (
-                      source in {'iOS', 'Custom'}
+                      source in {'iOS','Custom'}
                       and path.startswith('/image/thumb/')
-                      and re.search(
-                          r'\.(png|jpg|jpeg|webp)$',
-                          path,
-                          re.I
-                      ) is not None
+                      and re.search(r'\.(png|jpe?g|webp)$',path,re.I) is not None
                   )
 
-              if p.netloc not in TRUSTED_DOMAINS:
-                  return False
-
-              if p.netloc == 'play-lh.googleusercontent.com':
-
+              if p.netloc=='play-lh.googleusercontent.com':
                   return (
-                      source == 'Custom'
-                      and re.fullmatch(
-                          r'/[A-Za-z0-9_-]+(?:=w\d+-h\d+)?',
-                          path
-                      ) is not None
+                      source=='Custom'
+                      and re.fullmatch(r'/[A-Za-z0-9_-]+(?:=w\d+-h\d+)?',path) is not None
                   )
 
-              if not re.search(
-                  r'\.(png|jpg|jpeg)$',
-                  path,
-                  re.I
-              ):
+              if not re.search(r'\.(png|jpe?g)$',path,re.I):
                   return False
 
-              normalized = 'https://'+p.netloc+path
-
-              if source == 'Custom':
-
-                  prefixes = [
-                      prefix
-                      for group in TRUSTED.values()
-                      for prefix in group
-                  ]
-
-              else:
-
-                  family = source
-
-                  if source.startswith('Qure-'):
-                      family = 'Qure'
-
-                  elif source.startswith('Orz3-'):
-                      family = 'Orz3'
-
-                  prefixes = TRUSTED.get(family, [])
-
-              return any(
-                  normalized.startswith(prefix)
-                  for prefix in prefixes
+              family=(
+                  'Qure' if source.startswith('Qure-')
+                  else 'Orz3' if source.startswith('Orz3-')
+                  else source
               )
 
-          # ========================================
-          # Security: Block redirects
-          # ========================================
+              prefixes=(
+                  [x for group in TRUSTED.values() for x in group]
+                  if source=='Custom'
+                  else TRUSTED.get(family,[])
+              )
 
-          class NoRedirect(HTTPRedirectHandler):
+              return any(
+                  ('https://'+p.netloc+path).startswith(x)
+                  for x in prefixes
+              )
 
-              def redirect_request(
-                  self, req, fp, code, msg, headers, newurl
-              ):
-                  return None
-
-          OPENER = build_opener(NoRedirect())
-
-          INDEX_URLS = {
-              u for _,u in SOURCES+EXTRA
-          }
-
-          INDEX_URLS.add(APPLE+'emoji.json')
-
-          INDEX_URLS.update(
-              lookup_url(app_id, country)
-              for _,app_id,country,_ in IOS_APPS
-          )
-
-          def fetch_json(url):
-
-              if url not in INDEX_URLS:
-                  raise ValueError('Unapproved index source')
-
-              for attempt in range(3):
-
-                  try:
-
-                      req = Request(
-                          url,
-                          headers={
-                              'User-Agent': 'AllanRita-IconIndex/3.2',
-                              'Accept': 'application/json,*/*'
-                          }
-                      )
-
-                      with OPENER.open(req, timeout=45) as response:
-
-                          if response.geturl() != url:
-                              raise ValueError('Unexpected redirect')
-
-                          raw = response.read(MAX_BYTES+1)
-
-                      if len(raw) > MAX_BYTES:
-                          raise ValueError('Index exceeds size limit')
-
-                      return json.loads(raw)
-
-                  except Exception:
-
-                      if attempt == 2:
-                          raise RuntimeError(
-                              'Trusted index download failed: '+url
-                          ) from None
-
-                      time.sleep(2**attempt)
-
-          # ========================================
-          # Security: Validate icon records
-          # ========================================
+          def name_ok(name):
+              return (
+                  isinstance(name,str)
+                  and bool(name.strip())
+                  and len(name)<=240
+                  and not re.search(r'[\x00-\x1f\x7f]',name)
+              )
 
           def clean(source, rows):
 
-              if not isinstance(rows, list):
-                  raise ValueError('Invalid icon list: '+source)
+              if not isinstance(rows,list) or len(rows)>MAX_TOTAL:
+                  raise ValueError('Invalid list: '+source)
 
-              if len(rows) > MAX_ICONS:
-                  raise ValueError('Too many records: '+source)
+              out=[]
 
-              result = []
-              rejected = 0
+              for r in rows:
 
-              for row in rows:
+                  if not isinstance(r,dict) or not name_ok(r.get('name')) or not valid_url(source,r.get('url')):
+                      raise ValueError('SECURITY BLOCK: invalid record in '+source)
 
-                  if not isinstance(row, dict):
-                      rejected += 1
-                      continue
-
-                  name = row.get('name')
-                  url = row.get('url')
-
-                  if not isinstance(name, str):
-                      rejected += 1
-                      continue
-
-                  if not isinstance(url, str):
-                      rejected += 1
-                      continue
-
-                  name = name.strip()
-                  url = url.strip()
-
-                  if (
-                      not name
-                      or len(name) > 240
-                      or re.search(r'[\x00-\x1f\x7f]', name)
-                      or not valid_url(source, url)
-                  ):
-                      rejected += 1
-                      continue
-
-                  name = re.sub(
-                      r'\.(png|jpg|jpeg|webp|svg|gif)$',
-                      '',
-                      name,
-                      flags=re.I
-                  )
-
-                  result.append({
-                      'name': name,
-                      'url': url,
-                      'source': source,
-                      'category': str(row.get('category') or '')
+                  out.append({
+                      'name':re.sub(
+                          r'\.(png|jpe?g|webp|svg|gif)$',
+                          '',
+                          r['name'].strip(),
+                          flags=re.I
+                      ),
+                      'url':r['url'],
+                      'source':source,
+                      'category':str(r.get('category') or '')
                   })
 
-              if rejected:
-                  raise ValueError(
-                      f'SECURITY BLOCK: {source}: '
-                      f'{rejected} invalid records'
-                  )
-
-              if not result and source != 'Custom':
+              if not out and source!='Custom':
                   raise ValueError('Empty source: '+source)
 
-              print(
-                  f'SECURITY PASS: {source}: '
-                  f'{len(result)} records'
-              )
-
-              return result
+              return out
 
           def pack(rows):
 
-              result = []
-              seen = set()
-              names = set()
+              out=[]
+              urls=set()
+              names=set()
 
-              for row in rows:
+              for r in rows:
 
-                  url = row['url']
-                  key = unquote(url)
+                  key=unquote(r['url'])
 
-                  if key in seen:
+                  if key in urls:
                       continue
 
-                  seen.add(key)
+                  urls.add(key)
 
-                  base = row['name']+' · '+row['source']
-                  name = base
-                  i = 2
+                  base=r['name']+' · '+r['source']
+                  name=base
+                  n=2
 
                   while name.casefold() in names:
-                      name = base+' '+str(i)
-                      i += 1
+                      name=base+' '+str(n)
+                      n+=1
 
                   names.add(name.casefold())
 
-                  result.append({
-                      'name': name,
-                      'url': url
+                  out.append({
+                      'name':name,
+                      'url':r['url']
                   })
 
               return sorted(
-                  result,
-                  key=lambda r: (
+                  out,
+                  key=lambda r:(
                       r['name'].casefold(),
                       r['url']
                   )
               )
 
-          # ========================================
-          # Original icon libraries
-          # ========================================
+          # Secure HTTP requests
 
-          data = {}
+          class NoRedirect(HTTPRedirectHandler):
+              def redirect_request(self,*args,**kwargs):
+                  return None
 
-          for source,url in SOURCES+EXTRA:
+          opener=build_opener(NoRedirect())
 
-              downloaded = fetch_json(url)
+          def lookup_url(a,c):
+              return f'https://itunes.apple.com/lookup?id={a}&country={c}&entity=software'
 
-              if not isinstance(downloaded, dict):
-                  raise ValueError('Invalid index: '+source)
+          def chart_url(c,chart):
+              return RSS+f'{c}/apps/{chart}/100/apps.json'
 
-              data[source] = clean(
-                  source,
-                  downloaded.get('icons')
+          allowed=(
+              {u for _,u in SOURCES+EXTRA}
+              | {APPLE+'emoji.json'}
+              | {lookup_url(a,c) for _,a,c,_ in IOS_APPS}
+              | {chart_url(c,t) for c in REGIONS for t in CHARTS}
+          )
+
+          def fetch(url, attempts=3, timeout=35):
+
+              if url not in allowed:
+                  raise ValueError('Unapproved index URL')
+
+              for i in range(attempts):
+
+                  try:
+
+                      req=Request(
+                          url,
+                          headers={
+                              'User-Agent':'AllanRita-IconIndex/3.3',
+                              'Accept':'application/json,*/*'
+                          }
+                      )
+
+                      with opener.open(req,timeout=timeout) as res:
+
+                          if res.geturl()!=url:
+                              raise ValueError('Redirect blocked')
+
+                          raw=res.read(MAX_INPUT+1)
+
+                      if len(raw)>MAX_INPUT:
+                          raise ValueError('Input size limit')
+
+                      return json.loads(raw)
+
+                  except HTTPError as e:
+
+                      if e.code in (403,404,429):
+                          raise
+
+                      if i+1==attempts:
+                          raise
+
+                  except (OSError,ValueError):
+
+                      if i+1==attempts:
+                          raise
+
+                  time.sleep(2**i)
+
+          def safe_path(file):
+
+              p=Path('Icon')/file
+
+              if any(x.is_symlink() for x in [p,*p.parents]):
+                  raise ValueError('Unsafe output path')
+
+              return p
+
+          def read(file,default=None):
+
+              p=safe_path(file)
+
+              if not p.exists():
+                  return default
+
+              if p.stat().st_size>MAX_OUTPUT:
+                  raise ValueError('Existing index too large: '+file)
+
+              return json.loads(
+                  p.read_text(encoding='utf-8')
               )
 
-          all_rows = [
+          # Original icon libraries
+
+          data={
+              s:clean(s,fetch(u)['icons'])
+              for s,u in SOURCES+EXTRA
+          }
+
+          core=[
               r
-              for source,_ in SOURCES+EXTRA
-              for r in data[source]
+              for s,_ in SOURCES+EXTRA
+              for r in data[s]
           ]
 
-          # ========================================
-          # Preserve personal icons
-          # ========================================
+          # Preserve all custom icons
 
-          custom_path = Path('Icon/Custom.json')
+          custom=read(
+              'Custom.json',
+              {'icons':[]}
+          )
 
-          if custom_path.is_symlink():
-              raise ValueError('Unsafe Custom.json path')
+          core=clean(
+              'Custom',
+              custom['icons']
+          )+core
 
-          if custom_path.exists():
+          # Existing selected Apple applications
 
-              if custom_path.stat().st_size > MAX_BYTES:
-                  raise ValueError('Custom.json too large')
+          ios=[]
 
-              custom = json.loads(
-                  custom_path.read_text(encoding='utf-8')
-              )
+          old_ios=read(
+              'Packs/Apple-iOS.json',
+              {'icons':[]}
+          )['icons']
 
-              custom_icons = clean(
-                  'Custom',
-                  custom['icons']
-              )
+          old_ios_by_name={
+              r['name']:r['url']
+              for r in old_ios
+          }
 
-              all_rows = custom_icons+all_rows
-
-          # ========================================
-          # Apple App Store official icons
-          # ========================================
-
-          ios_rows = []
+          lookup_warnings=[]
 
           for name,app_id,country,category in IOS_APPS:
 
-              response = fetch_json(
-                  lookup_url(app_id, country)
-              )
+              try:
 
-              if not isinstance(response, dict):
-                  raise ValueError('Invalid Apple response: '+name)
+                  result=fetch(
+                      lookup_url(app_id,country)
+                  )['results']
 
-              results = response.get('results', [])
+                  matches=[
+                      r for r in result
+                      if str(r.get('trackId'))==str(app_id)
+                  ]
 
-              if not isinstance(results, list):
-                  raise ValueError('Invalid Apple results: '+name)
+                  if len(matches)!=1:
+                      raise ValueError('App ID mismatch')
 
-              matches = [
-                  r for r in results
-                  if isinstance(r, dict)
-                  and str(r.get('trackId')) == str(app_id)
-              ]
-
-              if len(matches) != 1:
-                  raise ValueError(
-                      'App Store ID lookup failed: '+name
+                  artwork=(
+                      matches[0].get('artworkUrl512')
+                      or matches[0].get('artworkUrl100')
                   )
 
-              app = matches[0]
+                  if not valid_url('iOS',artwork):
+                      raise ValueError('Unsafe Apple artwork')
 
-              artwork = (
-                  app.get('artworkUrl512')
-                  or app.get('artworkUrl100')
-                  or app.get('artworkUrl60')
-              )
+              except Exception:
 
-              if not valid_url('iOS', artwork):
-                  raise ValueError(
-                      'Unsafe or missing Apple artwork: '+name
-                  )
+                  artwork=old_ios_by_name.get(name+' · iOS')
 
-              ios_rows.append({
-                  'name': name,
-                  'url': artwork,
-                  'category': category
+                  if not valid_url('iOS',artwork):
+                      raise ValueError('Missing trusted fallback: '+name)
+
+                  lookup_warnings.append(name)
+
+              ios.append({
+                  'name':name,
+                  'url':artwork,
+                  'category':category
               })
 
-              print(f'APPLE APP PASS: {name} ({app_id})')
+              time.sleep(3.2)
 
-              time.sleep(1)
+          ios=clean('iOS',ios)
 
-          ios_icons = clean('iOS', ios_rows)
+          core=ios+core
 
-          if len(ios_icons) != len(IOS_APPS):
-              raise ValueError('Incomplete iOS icon library')
-
-          # Prefer iOS names when identical URLs exist
-
-          all_rows = ios_icons + all_rows
-
-          # ========================================
-          # Global flags
-          # ========================================
-
-          flags = (
-              data['KeLee-Flags']
-              + data['Qure-Area']
-              + [
-                  r for r in all_rows
-                  if r['category'].casefold() in {
-                      'country',
-                      'region',
-                      'flag',
-                      'flags'
-                  }
-              ]
-          )
-
-          # ========================================
-          # Streaming and music
-          # ========================================
-
-          streaming = re.compile(
-              r'youtube|netflix|disney|hbo|\bmax\b|hulu|prime.?video|amazon.?video|spotify|paramount|\bviu\b|abema|u.?next|bahamut|baha|巴哈|动画疯|動畫瘋|emby|plex|tver|peacock|dazn|bilibili|twitch|crunchyroll|apple.?tv|\badn\b|animation.?digital.?network|kktv|iqiyi|wetv|fox.?one|rakuten.?viki|sling|starz|fubo|espn|discovery|mytv.?super|now.?tv|now.?player',
-              re.I
-          )
-
-          media = (
-              ios_icons
-              + data['Qure-Media']
-          )
-
-          media = [
-              r for r in media
-              if r['category'].casefold() != 'shopping'
-          ]
-
-          media.extend([
-              r for r in all_rows
-              if r['category'].casefold() in {
-                  'media',
-                  'music',
-                  'streaming',
-                  'disney',
-                  'warnerbrosdiscovery',
-                  'nbcuniversal'
-              }
-              or streaming.search(r['name'])
-          ])
-
-          # ========================================
-          # Artificial intelligence
-          # ========================================
-
-          ai = re.compile(
-              r'chat.?gpt|open.?ai|claude|anthropic|gemini|deep.?seek|grok|copilot|perplexity|midjourney|doubao|豆包|通义|通義|kimi|qwen|mistral|poe|sora',
-              re.I
-          )
-
-          ai_rows = [
-              r for r in all_rows
-              if r['category'].casefold() in {
-                  'ai',
-                  'spacexai'
-              }
-              or ai.search(r['name'])
-          ]
-
-          # ========================================
           # Apple Color Emoji
-          # ========================================
 
-          emoji_data = fetch_json(
-              APPLE+'emoji.json'
-          )
+          emoji=[]
 
-          if not isinstance(emoji_data, list):
-              raise ValueError('Invalid Apple Emoji index')
+          for e in fetch(APPLE+'emoji.json'):
 
-          apple = []
-
-          for e in emoji_data:
-
-              if not isinstance(e, dict) or e.get('obsoleted_by'):
+              if not isinstance(e,dict) or e.get('obsoleted_by'):
                   continue
 
-              name = (
+              name=(
                   e.get('name')
                   or e.get('short_name')
                   or e.get('unified')
                   or 'Emoji'
               )
 
-              code = e.get('unified') or ''
-              parts = code.split('-')
-              region = ''
+              parts=(e.get('unified') or '').split('-')
 
-              if len(parts) == 2 and all(
-                  re.fullmatch(
-                      r'1F1[E-F][0-9A-F]',
-                      p,
-                      re.I
-                  )
-                  and 0x1F1E6 <= int(p,16) <= 0x1F1FF
+              region=''
+
+              if len(parts)==2 and all(
+                  re.fullmatch(r'1F1[E-F][0-9A-F]',p,re.I)
+                  and 0x1F1E6<=int(p,16)<=0x1F1FF
                   for p in parts
               ):
 
-                  region = ''.join(
+                  region=''.join(
                       chr(int(p,16)-0x1F1E6+65)
                       for p in parts
                   )
 
-              category = (
+              category=(
                   'Country'
                   if region or e.get('subcategory') in {
                       'country-flag',
@@ -658,12 +474,10 @@ jobs:
               )
 
               if region:
-                  name = region+' · '+name
+                  name=region+' · '+name
 
-              variants = [(e, name)]
-
-              variants += [
-                  (v, name+' · '+k)
+              variants=[(e,name)]+[
+                  (v,name+' · '+k)
                   for k,v in (
                       e.get('skin_variations') or {}
                   ).items()
@@ -671,313 +485,503 @@ jobs:
 
               for v,label in variants:
 
-                  image = v.get('image') or ''
+                  image=v.get('image') or ''
 
                   if (
                       v.get('has_img_apple') is True
-                      and re.fullmatch(
-                          r'[0-9a-f-]+\.png',
-                          image,
-                          re.I
-                      )
+                      and re.fullmatch(r'[0-9a-f-]+\.png',image,re.I)
                   ):
 
-                      apple.append({
-                          'name': label,
-                          'url': APPLE+'img/apple/64/'+image,
-                          'category': category
+                      emoji.append({
+                          'name':label,
+                          'url':APPLE+'img/apple/64/'+image,
+                          'category':category
                       })
 
-          apple = clean('Apple Emoji', apple)
+          emoji=clean('Apple Emoji',emoji)
 
-          apple_flags = [
-              r for r in apple
-              if r['category'] == 'Country'
+          apple_flags=[
+              r for r in emoji
+              if r['category']=='Country'
           ]
 
-          if len(apple) < 1000:
-              raise ValueError('Apple Emoji index incomplete')
+          if len(emoji)<1000 or len(apple_flags)<200:
+              raise ValueError('Incomplete Emoji source')
 
-          if len(apple_flags) < 200:
-              raise ValueError('Apple flag index incomplete')
+          # ===================================
+          # Global Apple App Store archive
+          # ===================================
 
-          all_rows.extend(apple)
-          flags.extend(apple_flags)
+          saved=read(
+              'Apple-Catalog.json',
+              {
+                  'apps':{},
+                  'next_chart':0
+              }
+          )
 
-          # ========================================
-          # Output libraries
-          # ========================================
+          old_archive=saved['apps']
 
-          plans = [
-              ('All.json','全部图标',all_rows),
+          if not isinstance(old_archive,dict):
+              raise ValueError('Invalid Apple archive')
+
+          def valid_app(k,r):
+
+              return (
+                  isinstance(k,str)
+                  and re.fullmatch(r'[0-9]{1,20}',k) is not None
+                  and isinstance(r,dict)
+                  and name_ok(r.get('name'))
+                  and valid_url('iOS',r.get('url'))
+                  and r.get('country') in REGIONS
+              )
+
+          if not all(
+              valid_app(k,r)
+              for k,r in old_archive.items()
+          ):
+              raise ValueError('Invalid saved Apple archive')
+
+          archive=dict(old_archive)
+
+          found={}
+          failures=[]
+          successes=[]
+          stop=False
+
+          fixed_ids={
+              str(a)
+              for _,a,_,_ in IOS_APPS
+          }
+
+          region_rank={
+              country:i
+              for i,country in enumerate(REGIONS)
+          }
+
+          queue=[
+              (country,chart)
+              for country in REGIONS
+              for chart in CHARTS
+          ]
+
+          start=saved.get('next_chart',0)
+
+          if type(start) is not int or not 0<=start<len(queue):
+              raise ValueError('Invalid chart cursor')
+
+          next_chart=start
+          consecutive_denied=0
+          attempted=0
+
+          deadline=time.monotonic()+40*60
+
+          # Fetch up to 350 Apple charts
+
+          for offset in range(len(queue)):
+
+              if time.monotonic()>=deadline:
+
+                  failures.append(
+                      'Time budget reached; resume next run'
+                  )
+
+                  break
+
+              index=(start+offset)%len(queue)
+
+              country,chart=queue[index]
+
+              next_chart=(index+1)%len(queue)
+
+              attempted+=1
+
+              label=country+'/'+chart
+
+              try:
+
+                  feed=fetch(
+                      chart_url(country,chart),
+                      attempts=1,
+                      timeout=12
+                  )['feed']
+
+                  if feed.get('country','').lower()!=country:
+                      raise ValueError('Storefront mismatch')
+
+                  results=feed['results']
+
+                  if not isinstance(results,list) or not 1<=len(results)<=100:
+                      raise ValueError('Invalid chart results')
+
+                  batch={}
+
+                  for r in results:
+
+                      key=str(r['id'])
+                      name=r['name']
+                      url=r['artworkUrl100']
+
+                      entry={
+                          'name':name,
+                          'url':url,
+                          'country':country
+                      }
+
+                      if not valid_app(key,entry) or r.get('kind')!='apps':
+                          raise ValueError('Invalid chart entry')
+
+                      if key not in fixed_ids:
+                          batch[key]=entry
+
+                  for key,entry in batch.items():
+
+                      if key not in found or region_rank[country]<region_rank[found[key]['country']]:
+
+                          found[key]=entry
+
+                  successes.append(label)
+
+                  consecutive_denied=0
+
+              except HTTPError as e:
+
+                  failures.append(
+                      label+' HTTP '+str(e.code)
+                  )
+
+                  consecutive_denied=(
+                      consecutive_denied+1
+                      if e.code==403
+                      else 0
+                  )
+
+                  if e.code==429 or consecutive_denied>=5:
+                      stop=True
+
+              except Exception:
+
+                  failures.append(
+                      label+' unavailable/invalid'
+                  )
+
+                  consecutive_denied=0
+
+              if stop:
+                  break
+
+              time.sleep(3.2)
+
+          if stop:
+
+              failures.append(
+                  'Remaining charts skipped after rate limit/access denial; resume next run'
+              )
+
+          if not old_archive and not found:
+              raise ValueError('No new valid Apple apps; previous library retained')
+
+          # Merge historical app records
+
+          for key,entry in found.items():
+
+              if key not in archive or region_rank[entry['country']]<=region_rank[archive[key]['country']]:
+
+                  archive[key]=entry
+
+          if len(archive)>MAX_TOTAL:
+              raise ValueError('Archive capacity exceeded; previous library retained')
+
+          auto=clean(
+              'iOS',
+              [
+                  {
+                      'name':r['name'],
+                      'url':r['url'],
+                      'category':'Auto'
+                  }
+                  for k,r in archive.items()
+                  if k not in fixed_ids
+              ]
+          )
+
+          # ===================================
+          # Country and region icons
+          # ===================================
+
+          flags=(
+              data['KeLee-Flags']
+              +data['Qure-Area']
+              +[
+                  r for r in core
+                  if r['category'].casefold() in {
+                      'country',
+                      'region',
+                      'flag',
+                      'flags'
+                  }
+              ]
+              +apple_flags
+          )
+
+          # Streaming and music
+
+          media_pattern=re.compile(
+              r'youtube|netflix|disney|hbo|\bmax\b|hulu|prime.?video|amazon.?video|spotify|paramount|\bviu\b|abema|u.?next|bahamut|baha|巴哈|动画疯|動畫瘋|emby|plex|tver|peacock|dazn|bilibili|twitch|crunchyroll|apple.?tv|\badn\b|animation.?digital.?network|kktv|iqiyi|wetv|fox.?one|rakuten.?viki|sling|starz|fubo|espn|discovery|mytv.?super|now.?tv|now.?player',
+              re.I
+          )
+
+          media=(
+              data['Qure-Media']
+              +[
+                  r for r in core
+                  if r['category'].casefold() in {
+                      'media',
+                      'music',
+                      'streaming',
+                      'disney',
+                      'warnerbrosdiscovery',
+                      'nbcuniversal'
+                  }
+                  or media_pattern.search(r['name'])
+              ]
+          )
+
+          # Artificial intelligence
+
+          ai_pattern=re.compile(
+              r'chat.?gpt|open.?ai|claude|anthropic|gemini|deep.?seek|grok|copilot|perplexity|midjourney|doubao|豆包|通义|通義|kimi|qwen|mistral|poe|sora',
+              re.I
+          )
+
+          ai=[
+              r for r in core
+              if r['category'].casefold() in {
+                  'ai',
+                  'spacexai'
+              }
+              or ai_pattern.search(r['name'])
+          ]
+
+          core_all=core+emoji
+
+          # ===================================
+          # Generate all libraries
+          # ===================================
+
+          plans=[
+              ('All.json','全部图标',core_all+auto),
               ('Flags.json','全球地区',flags),
               ('Streaming.json','流媒体与音乐',media),
-              ('AI.json','人工智能',ai_rows),
-              ('Packs/Apple-Emoji.json','Apple Color Emoji',apple),
+              ('AI.json','人工智能',ai),
+              ('Packs/Apple-Emoji.json','Apple Color Emoji',emoji),
               ('Packs/Apple-Flags.json','Apple 地区旗帜',apple_flags),
-              ('Packs/Apple-iOS.json','Apple App Store',ios_icons),
+              ('Packs/Apple-iOS.json','Apple App Store',ios+auto)
           ]
 
-          for source,_ in SOURCES:
+          plans.extend(
+              ('Packs/'+s+'.json',s,data[s])
+              for s,_ in SOURCES
+          )
 
-              plans.append((
-                  'Packs/'+source+'.json',
-                  source,
-                  data[source]
-              ))
+          # Abnormal change detection
 
-          # ========================================
-          # Security: Protect file paths
-          # ========================================
+          def changes(file,icons):
 
-          def safe_path(file):
+              if not icons or len(icons)>MAX_TOTAL:
+                  raise ValueError('Invalid output size: '+file)
 
-              path = Path('Icon')/file
+              old=read(file)
 
-              for p in [path,*path.parents]:
+              if old is None:
 
-                  if p.is_symlink():
-                      raise ValueError('Unsafe output path')
-
-              return path
-
-          # ========================================
-          # Security: Abnormal update detection
-          # ========================================
-
-          def check_changes(file, icons):
-
-              path = safe_path(file)
-
-              if not icons:
-                  raise ValueError('Empty output: '+file)
-
-              if len(icons) > MAX_ICONS:
-                  raise ValueError('Output too large: '+file)
-
-              if not path.exists():
-
-                  if file == 'All.json':
-                      raise ValueError('Previous main index missing')
+                  if file=='All.json':
+                      raise ValueError('Missing previous main index')
 
                   return
 
-              if path.stat().st_size > MAX_BYTES:
-                  raise ValueError('Previous index too large')
-
-              previous = json.loads(
-                  path.read_text(encoding='utf-8')
-              )['icons']
-
-              old_urls = {
-                  unquote(i['url'])
-                  for i in previous
+              old_urls={
+                  unquote(r['url'])
+                  for r in old['icons']
               }
 
-              new_urls = {
-                  unquote(i['url'])
-                  for i in icons
+              new_urls={
+                  unquote(r['url'])
+                  for r in icons
               }
 
-              removed = len(old_urls-new_urls)
-              added = len(new_urls-old_urls)
+              if file in {
+                  'All.json',
+                  'Packs/Apple-iOS.json'
+              }:
 
-              removal_limit = max(
-                  10,
-                  math.ceil(len(old_urls)*0.25)
-              )
+                  old_urls-={
+                      unquote(r['url'])
+                      for r in old_archive.values()
+                  }
 
-              addition_limit = max(
-                  20,
-                  math.ceil(len(old_urls)*0.50)
-              )
-
-              if removed > removal_limit:
-
-                  raise ValueError(
-                      f'SECURITY BLOCK: {file}: '
-                      f'{removed} removed icons'
+                  base_rows=(
+                      core_all
+                      if file=='All.json'
+                      else ios
                   )
 
-              if added > addition_limit:
+                  new_urls={
+                      unquote(r['url'])
+                      for r in pack(base_rows)
+                  }
+
+              if (
+                  len(old_urls-new_urls)>max(
+                      10,
+                      math.ceil(len(old_urls)*.25)
+                  )
+                  or len(new_urls-old_urls)>max(
+                      20,
+                      math.ceil(len(old_urls)*.50)
+                  )
+              ):
 
                   raise ValueError(
-                      f'SECURITY BLOCK: {file}: '
-                      f'{added} new icons'
+                      'SECURITY BLOCK: abnormal core change in '+file
                   )
 
-              print(
-                  f'CHANGE CHECK: {file}: '
-                  f'+{added} / -{removed}'
-              )
-
-          prepared = {}
+          prepared={}
 
           for file,title,rows in plans:
 
-              icons = pack(rows)
+              icons=pack(rows)
 
-              check_changes(file, icons)
+              changes(file,icons)
 
-              prepared[file] = {
-                  'name': 'AllanRita · '+title,
-                  'description': 'Original upstream image URLs and source credits retained.',
-                  'icons': icons
+              prepared[file]={
+                  'name':'AllanRita · '+title,
+                  'description':'Original external image URLs; rights remain with their owners.',
+                  'icons':icons
               }
 
-          # ========================================
-          # Write validated indexes
-          # ========================================
+          prepared['Apple-Catalog.json']={
+              'apps':archive,
+              'next_chart':next_chart
+          }
 
-          outputs = {}
+          # ===================================
+          # Generate README
+          # ===================================
 
-          for file,content in prepared.items():
+          lines=[
+              '# AllanRita Icon Library',
+              '',
+              'Version: V'+VERSION,
+              '',
+              'External icon links only. No image mirroring.',
+              '',
+              '| Index | Icons | Link |',
+              '|---|---:|---|'
+          ]
 
-              path = safe_path(file)
+          for file,obj in prepared.items():
+
+              if 'icons' in obj:
+
+                  lines.append(
+                      f'| {file} | {len(obj["icons"])} | [JSON]({BASE+file}) |'
+                  )
+
+          lines+=[
+              '',
+              '## Sources',
+              ''
+          ]
+
+          lines+=[
+              f'- [{s}]({u})'
+              for s,u in SOURCES+EXTRA
+          ]
+
+          lines+=[
+              '- [Apple RSS](https://rss.marketingtools.apple.com/)',
+              '- [Apple Search API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/)',
+              '- [Apple Emoji](https://github.com/iamcal/emoji-data)',
+              '- [Custom.json](Custom.json)',
+              '',
+              'Apple charts are not a complete App Store catalog. Image contents are not virus-scanned.'
+          ]
+
+          # ===================================
+          # Security and update report
+          # ===================================
+
+          report=[
+              '## V'+VERSION,
+              '',
+              f'Chart feeds succeeded: {len(successes)} / {len(REGIONS)*len(CHARTS)}',
+              f'Archived chart app IDs: {len(archive)}',
+              f'New chart IDs: {len(set(archive)-set(old_archive))}',
+              f'Charts attempted: {attempted}; failed: {attempted-len(successes)}; not attempted: {len(queue)-attempted}',
+              f'Fixed-app fallback: {", ".join(lookup_warnings) or "none"}',
+              f'All icons: {len(prepared["All.json"]["icons"])}',
+              '',
+              '### Failed feeds'
+          ]+[
+              '- '+x
+              for x in failures
+          ]
+
+          encoded={
+              file:(
+                  json.dumps(
+                      obj,
+                      ensure_ascii=False,
+                      indent=2
+                  )+'\n'
+              ).encode('utf-8')
+              for file,obj in prepared.items()
+          }
+
+          encoded['README.md']=(
+              '\n'.join(lines)+'\n'
+          ).encode('utf-8')
+
+          if any(
+              len(b)>MAX_OUTPUT
+              for b in encoded.values()
+          ):
+
+              raise ValueError(
+                  'Output exceeds 50 MiB; prior library retained'
+              )
+
+          for file,blob in encoded.items():
+
+              path=safe_path(file)
 
               path.parent.mkdir(
                   parents=True,
                   exist_ok=True
               )
 
-              path.write_text(
-                  json.dumps(
-                      content,
-                      ensure_ascii=False,
-                      indent=2
-                  )+'\n',
-                  encoding='utf-8'
-              )
+              path.write_bytes(blob)
 
-              outputs[file] = len(content['icons'])
-
-              print(file, outputs[file])
-
-          # ========================================
-          # README
-          # ========================================
-
-          base = 'https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/'
-
-          lines = [
-              '# AllanRita Icon Library',
-              '',
-              'Version: V'+VERSION,
-              '',
-              'Surge 图标索引聚合。仅引用外部图片，版权归原权利人所有。',
-              '',
-              '## 订阅',
-              '',
-              '| 图标库 | 数量 | 地址 |',
-              '|---|---:|---|'
-          ]
-
-          for file,count in outputs.items():
-
-              lines.append(
-                  f'| {file} | {count} | [JSON]({base+file}) |'
-              )
-
-          lines += [
-              '',
-              '## 上游来源',
-              ''
-          ]
-
-          for source,url in SOURCES+EXTRA:
-
-              lines.append(
-                  f'- [{source}]({url})'
-              )
-
-          lines += [
-              '- [Custom.json](Custom.json)',
-              '- [Apple Color Emoji](https://github.com/iamcal/emoji-data) — Emoji 16.0',
-              '',
-              '## Apple App Store',
-              '',
-              'App Store artwork references. All rights belong to their respective owners.',
-              ''
-          ]
-
-          for name,app_id,country,_ in IOS_APPS:
-
-              lines.append(
-                  f'- [{name}](https://apps.apple.com/{country}/app/id{app_id})'
-              )
-
-          lines += [
-              '',
-              '## 安全机制',
-              '',
-              '- HTTPS only',
-              '- Trusted domain and repository paths',
-              '- Restricted Apple artwork CDN',
-              '- Exact Apple application ID validation',
-              '- External index redirects blocked',
-              '- Input size limits',
-              '- Abnormal update detection',
-              '- Fixed GitHub Actions dependency',
-              '- Restricted generated file staging',
-              '',
-              '安全检查仅针对索引及链接，不代表图片内容已经过病毒扫描。',
-              ''
-          ]
-
-          safe_path('README.md').write_text(
-              '\n'.join(lines),
-              encoding='utf-8'
-          )
-
-          # ========================================
-          # Security report
-          # ========================================
-
-          report = [
-              '## Icon Library V'+VERSION,
-              '',
-              'All index security checks passed.',
-              '',
-              '| Index | Icons |',
-              '|---|---:|'
-          ]
-
-          for file,count in outputs.items():
-
-              report.append(
-                  f'| {file} | {count} |'
-              )
-
-          report += [
-              '',
-              '- HTTPS validation: PASS',
-              '- Trusted source paths: PASS',
-              '- Apple App ID validation: PASS',
-              '- Apple artwork URL validation: PASS',
-              '- Abnormal change detection: PASS',
-              '',
-              'Image binary contents were not scanned.'
-          ]
-
-          summary = os.environ.get(
-              'GITHUB_STEP_SUMMARY'
-          )
-
-          if summary:
+          if os.environ.get('GITHUB_STEP_SUMMARY'):
 
               with open(
-                  summary,
+                  os.environ['GITHUB_STEP_SUMMARY'],
                   'a',
                   encoding='utf-8'
               ) as f:
 
-                  f.write('\n'.join(report)+'\n')
+                  f.write(
+                      '\n'.join(report)+'\n'
+                  )
 
-          print('SECURITY VALIDATION PASSED')
+          print(
+              '\n'.join(report[:8])
+          )
 
           PY
 
-      - name: Secure commit and push
+      - name: Commit validated indexes only
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -986,42 +990,22 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
-          git add -- \
-            Icon/All.json \
-            Icon/Flags.json \
-            Icon/Streaming.json \
-            Icon/AI.json \
-            Icon/README.md \
-            Icon/Packs/Apple-Emoji.json \
-            Icon/Packs/Apple-Flags.json \
-            Icon/Packs/Apple-iOS.json \
-            Icon/Packs/Qure-Color.json \
-            Icon/Packs/Qure-Mini.json \
-            Icon/Packs/Qure-Light.json \
-            Icon/Packs/Orz3-Color.json \
-            Icon/Packs/Orz3-Alpha.json \
-            Icon/Packs/Orz3-Mini.json \
-            Icon/Packs/Orz3-ColorPlus.json \
-            Icon/Packs/Orz3-MiniPlus.json \
-            Icon/Packs/Lige.json \
-            Icon/Packs/Semporia.json \
-            Icon/Packs/Oasisic.json \
-            Icon/Packs/KeLee.json \
-            Icon/Packs/fmz200.json \
-            Icon/Packs/KeLee-Flags.json
-
           python3 - <<'PY'
           import subprocess
 
-          allowed = {
-              'Icon/All.json',
-              'Icon/Flags.json',
-              'Icon/Streaming.json',
-              'Icon/AI.json',
-              'Icon/README.md',
-          }
+          files=[
+              'Icon/'+x
+              for x in (
+                  'All.json',
+                  'Flags.json',
+                  'Streaming.json',
+                  'AI.json',
+                  'README.md',
+                  'Apple-Catalog.json'
+              )
+          ]
 
-          packs = [
+          packs=[
               'Apple-Emoji',
               'Apple-Flags',
               'Apple-iOS',
@@ -1038,35 +1022,35 @@ jobs:
               'Oasisic',
               'KeLee',
               'fmz200',
-              'KeLee-Flags',
+              'KeLee-Flags'
           ]
 
-          allowed.update(
+          files+=[
               'Icon/Packs/'+p+'.json'
               for p in packs
-          )
+          ]
 
-          raw = subprocess.check_output([
+          subprocess.check_call([
               'git',
-              'diff',
-              '--cached',
-              '--name-only',
-              '-z'
+              'add',
+              '--',
+              *files
           ])
 
-          staged = {
-              p.decode('utf-8')
-              for p in raw.split(b'\0')
+          staged={
+              p.decode()
+              for p in subprocess.check_output([
+                  'git',
+                  'diff',
+                  '--cached',
+                  '--name-only',
+                  '-z'
+              ]).split(b'\0')
               if p
           }
 
-          if not staged.issubset(allowed):
-
-              raise SystemExit(
-                  'SECURITY BLOCK: unexpected staged files'
-              )
-
-          print('Staged file security check: PASS')
+          if not staged.issubset(files):
+              raise SystemExit('Unexpected staged files')
 
           PY
 
@@ -1076,7 +1060,7 @@ jobs:
 
           else
 
-            git commit -m 'Update Surge icon library V3.2 Security iOS'
+            git commit -m 'Update Surge icon library V3.3 Apple Auto'
 
             auth=$(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)
 
@@ -1086,8 +1070,6 @@ jobs:
 
           fi
 
-      - name: Security failure notice
+      - name: Failure notice
         if: failure()
-        run: |
-          echo "## Security check failed" >> "$GITHUB_STEP_SUMMARY"
-          echo "The icon update did not complete successfully. Review the logs before retrying." >> "$GITHUB_STEP_SUMMARY"
+        run: echo 'Icon update failed; review the logs. No partial index is committed by the build step.' >> "$GITHUB_STEP_SUMMARY"
