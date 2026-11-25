@@ -60,7 +60,7 @@ jobs:
                       req = Request(
                           url,
                           headers={
-                              'User-Agent': 'AllanRita-IconIndex/2.0',
+                              'User-Agent': 'AllanRita-IconIndex/1.0',
                               'Accept': 'application/json,*/*'
                           }
                       )
@@ -78,12 +78,14 @@ jobs:
                   except Exception:
                       if attempt == 2:
                           raise
+
                       time.sleep(2 ** attempt)
 
           def clean(source, rows):
               result = []
 
               for row in rows:
+
                   if not isinstance(row, dict):
                       continue
 
@@ -113,11 +115,13 @@ jobs:
               return result
 
           def pack(rows):
+
               result = []
               seen = set()
               names = set()
 
               for row in rows:
+
                   url = row['url']
                   key = unquote(url)
 
@@ -149,6 +153,7 @@ jobs:
               )
 
           def write_pack(file, title, rows):
+
               icons = pack(rows)
 
               if not icons:
@@ -180,21 +185,12 @@ jobs:
 
               return len(icons)
 
-          # Download all upstream icon libraries
+          # Download original icon libraries
 
-          data = {}
-
-          for source, url in SOURCES+EXTRA:
-              data[source] = clean(
-                  source,
-                  fetch(url)
-              )
-
-              print(
-                  'Loaded:',
-                  source,
-                  len(data[source])
-              )
+          data = {
+              s: clean(s, fetch(u))
+              for s,u in SOURCES+EXTRA
+          }
 
           all_rows = [
               r
@@ -202,21 +198,20 @@ jobs:
               for r in data[s]
           ]
 
-          # Load personal custom icons
+          # Personal custom icons
           # Custom.json will not be overwritten
 
           custom_path = Path('Icon/Custom.json')
-          custom_icons = []
 
           if custom_path.exists():
 
-              custom_data = json.loads(
+              custom = json.loads(
                   custom_path.read_text(
                       encoding='utf-8'
                   )
               )
 
-              custom_rows = custom_data['icons']
+              custom_rows = custom['icons']
 
               if not isinstance(custom_rows, list):
                   raise ValueError(
@@ -224,26 +219,12 @@ jobs:
                   )
 
               if custom_rows:
-
-                  custom_icons = clean(
+                  all_rows = clean(
                       'Custom',
                       custom_rows
-                  )
+                  ) + all_rows
 
-                  all_rows = custom_icons + all_rows
-
-              print(
-                  'Custom icons:',
-                  len(custom_icons)
-              )
-
-          else:
-
-              print(
-                  'Custom.json not found'
-              )
-
-          # Global Country & Region Flags
+          # Global country and region flags
 
           flags = (
               data['KeLee-Flags']
@@ -259,7 +240,7 @@ jobs:
               ]
           )
 
-          # Streaming & Music
+          # Streaming and music
 
           streaming = re.compile(
               r'youtube|netflix|disney|hbo|\bmax\b|hulu|prime.?video|amazon.?video|spotify|paramount|\bviu\b|abema|u.?next|bahamut|baha|巴哈|动画疯|動畫瘋|emby|plex|tver|peacock|dazn|bilibili|twitch|crunchyroll|apple.?tv|\badn\b|animation.?digital.?network|kktv|iqiyi|wetv',
@@ -298,15 +279,156 @@ jobs:
               or ai.search(r['name'])
           ]
 
-          # Generate all icon libraries
+          # ==================================
+          # Apple Color Emoji
+          # ==================================
 
-          outputs = {}
+          APPLE = 'https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/'
+
+          req = Request(
+              APPLE+'emoji.json',
+              headers={
+                  'User-Agent': 'AllanRita-IconIndex/3.0'
+              }
+          )
+
+          with urlopen(req, timeout=60) as response:
+              emoji_data = json.load(response)
+
+          apple = []
+
+          for e in emoji_data:
+
+              if not isinstance(e, dict) or e.get('obsoleted_by'):
+                  continue
+
+              name = (
+                  e.get('name')
+                  or e.get('short_name')
+                  or e.get('unified')
+                  or 'Emoji'
+              )
+
+              code = e.get('unified') or ''
+
+              parts = code.split('-')
+
+              region = ''
+
+              # Regional indicator emoji
+
+              if len(parts) == 2 and all(
+                  re.fullmatch(
+                      r'1F1[E-F][0-9A-F]',
+                      p,
+                      re.I
+                  )
+                  and 0x1F1E6 <= int(p,16) <= 0x1F1FF
+                  for p in parts
+              ):
+
+                  region = ''.join(
+                      chr(int(p,16)-0x1F1E6+65)
+                      for p in parts
+                  )
+
+              category = (
+                  'Country'
+                  if region or e.get('subcategory') in {
+                      'country-flag',
+                      'subdivision-flag'
+                  }
+                  else 'Emoji'
+              )
+
+              if region:
+                  name = region+' · '+name
+
+              variants = [(e, name)]
+
+              variants += [
+                  (v, name+' · '+k)
+                  for k,v in (
+                      e.get('skin_variations') or {}
+                  ).items()
+              ]
+
+              for v, label in variants:
+
+                  image = v.get('image') or ''
+
+                  if (
+                      v.get('has_img_apple') is True
+                      and re.fullmatch(
+                          r'[0-9a-f-]+\.png',
+                          image,
+                          re.I
+                      )
+                  ):
+
+                      apple.append({
+                          'name': label,
+                          'url': APPLE+'img/apple/64/'+image,
+                          'category': category
+                      })
+
+          apple = clean(
+              'Apple Emoji',
+              apple
+          )
+
+          apple_flags = [
+              r for r in apple
+              if r['category'] == 'Country'
+          ]
+
+          # Prevent incomplete updates
+
+          if len(apple) < 1000 or len(apple_flags) < 200:
+              raise ValueError(
+                  'Apple Emoji index incomplete'
+              )
+
+          # Merge Apple icons into existing libraries
+
+          all_rows.extend(apple)
+
+          flags.extend(apple_flags)
+
+          # ==================================
+          # Generate Apple icon packs
+          # ==================================
+
+          outputs = {
+
+              'Packs/Apple-Emoji.json': write_pack(
+                  'Packs/Apple-Emoji.json',
+                  'Apple Color Emoji',
+                  apple
+              ),
+
+              'Packs/Apple-Flags.json': write_pack(
+                  'Packs/Apple-Flags.json',
+                  'Apple 地区旗帜',
+                  apple_flags
+              )
+
+          }
+
+          # ==================================
+          # Generate combined icon libraries
+          # ==================================
 
           for file,title,rows in [
+
               ('All.json','全部图标',all_rows),
+
               ('Flags.json','全球地区',flags),
+
               ('Streaming.json','流媒体与音乐',media),
+
               ('AI.json','人工智能',ai_rows),
+
           ]:
 
               outputs[file] = write_pack(
@@ -327,23 +449,30 @@ jobs:
                   data[source]
               )
 
+          # ==================================
           # Generate README
+          # ==================================
 
           base = 'https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/'
 
           lines = [
+
               '# AllanRita Icon Library',
+
               '',
-              'Version 2.0',
-              '',
+
               'Surge 图标索引聚合；图片归原作者及相关权利人所有。未镜像图片。',
+
               '',
-              '支持第三方图标库及个人补充图标自动合并。',
-              '',
+
               '## 订阅',
+
               '',
+
               '| 图标库 | 数量 | 地址 |',
+
               '|---|---:|---|'
+
           ]
 
           for file,count in outputs.items():
@@ -352,22 +481,14 @@ jobs:
                   f'| {file} | {count} | [JSON]({base+file}) |'
               )
 
-          if custom_path.exists():
-
-              lines.append(
-                  f'| Custom.json | {len(pack(custom_icons))} | [JSON]({base}Custom.json) |'
-              )
-
           lines += [
+
               '',
-              '## 个人补充图标',
-              '',
-              'Custom.json 为手动维护文件。',
-              '自动合并进入 All.json 及对应分类图标库。',
-              '不会被自动更新程序覆盖。',
-              '',
+
               '## 上游来源',
+
               ''
+
           ]
 
           for source,url in SOURCES+EXTRA:
@@ -376,27 +497,28 @@ jobs:
                   f'- [{source}]({url})'
               )
 
+          lines.append(
+              '- [Custom.json](Custom.json) — 个人补充图标及来源'
+          )
+
+          lines.append(
+              '- [Apple Color Emoji](https://github.com/iamcal/emoji-data) — Apple Inc. 图像版权；外部链接，非商业用途。固定 Emoji 16.0 数据源。'
+          )
+
           lines += [
+
               '',
-              '## 自动更新',
-              '',
-              '每周一北京时间 10:17 自动运行。',
-              '支持手动触发 GitHub Actions。',
-              '',
-              '按图片链接去重，保留不同风格及原作者来源。',
-              '分类由上游分类及关键词辅助整理，可能有遗漏。',
-              '图片可用性依赖原作者服务器。',
+
+              '按图片链接去重；保留不同风格。分类由上游分类及关键词辅助整理，可能有遗漏。图片可用性依赖原作者服务器。',
+
               ''
+
           ]
 
           Path('Icon/README.md').write_text(
               '\n'.join(lines),
               encoding='utf-8'
           )
-
-          print('Icon Library V2.0 completed')
-          print('Total icons:', outputs['All.json'])
-          print('Custom icons:', len(custom_icons))
 
           PY
 
@@ -410,6 +532,6 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No changes'
           else
-            git commit -m 'Update Surge icon library V2.0'
+            git commit -m 'Update Surge icon library V3.0'
             git push origin HEAD:main
           fi
