@@ -15,22 +15,41 @@ concurrency:
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Secure checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           ref: main
+          persist-credentials: false
 
-      - name: Merge icon indexes
+      - name: Secure icon index build
         run: |
           python3 - <<'PY'
-          import json, re, time
+          import json
+          import re
+          import time
+          import os
+          import math
+
           from pathlib import Path
-          from urllib.request import Request, urlopen
+          from urllib.request import (
+              Request,
+              build_opener,
+              HTTPRedirectHandler
+          )
           from urllib.parse import urlsplit, unquote
 
+          VERSION = '3.1 Security'
+
           RAW = 'https://raw.githubusercontent.com/'
+          APPLE = 'https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/'
+
+          MAX_BYTES = 12 * 1024 * 1024
+          MAX_ICONS = 30000
 
           SOURCES = [
               ('Qure-Color', RAW+'Koolson/Qure/master/Other/QureColor.json'),
@@ -54,49 +73,252 @@ jobs:
               ('Qure-Media', RAW+'Koolson/Qure/master/Other/QureColor-Media.json'),
           ]
 
-          def fetch(url):
+          # ========================================
+          # Security 1: Trusted image source paths
+          # ========================================
+
+          TRUSTED = {
+
+              'Qure': [
+                  RAW+'Koolson/Qure/master/IconSet/',
+              ],
+
+              'Orz3': [
+                  RAW+'Orz-3/mini/master/Color/',
+                  RAW+'Orz-3/mini/master/Alpha/',
+              ],
+
+              'Lige': [
+                  RAW+'lige47/QuanX-icon-rule/main/icon/',
+              ],
+
+              'Semporia': [
+                  RAW+'Semporia/Hand-Painted-icon/master/Rounded_Rectangle/',
+                  RAW+'Semporia/Hand-Painted-icon/master/Google_Suite/',
+                  RAW+'Semporia/Hand-Painted-icon/master/Social_Media/',
+                  RAW+'Semporia/Hand-Painted-icon/master/Universal/',
+              ],
+
+              'Oasisic': [
+                  RAW+'Hawaiine/Oasisic-Icons/main/icons/',
+              ],
+
+              'KeLee': [
+                  RAW+'luestr/IconResource/main/App_icon/',
+                  RAW+'luestr/IconResource/main/Other_icon/',
+                  RAW+'luestr/IconResource/main/Website_icon/',
+              ],
+
+              'KeLee-Flags': [
+                  'https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/',
+              ],
+
+              'fmz200': [
+                  RAW+'fmz200/wool_scripts/main/icons/',
+              ],
+
+              'Apple Emoji': [
+                  APPLE+'img/apple/64/',
+              ],
+
+              'Personal': [
+                  'https://cdn.jsdelivr.net/gh/selfhst/icons/png/',
+                  'https://www.emojiall.com/images/240/apple/',
+              ],
+
+          }
+
+          TRUSTED_DOMAINS = {
+              'raw.githubusercontent.com',
+              'cdn.jsdelivr.net',
+              'gitlab.com',
+              'play-lh.googleusercontent.com',
+              'www.emojiall.com',
+          }
+
+          def valid_url(source, url):
+
+              if not isinstance(url, str):
+                  return False
+
+              if len(url) > 2048:
+                  return False
+
+              if any(ord(c) <= 32 or ord(c) == 127 for c in url):
+                  return False
+
+              try:
+                  p = urlsplit(url)
+              except ValueError:
+                  return False
+
+              if p.scheme != 'https':
+                  return False
+
+              if p.netloc not in TRUSTED_DOMAINS:
+                  return False
+
+              if p.query or p.fragment:
+                  return False
+
+              if re.search(r'%(2f|5c|00|25)', url, re.I):
+                  return False
+
+              path = unquote(p.path)
+
+              if re.search(r'[\x00-\x1f\x7f\\?#]', path):
+                  return False
+
+              if any(part in {'.', '..'} for part in path.split('/')):
+                  return False
+
+              normalized = 'https://'+p.netloc+path
+
+              if p.netloc == 'play-lh.googleusercontent.com':
+
+                  return (
+                      source == 'Custom'
+                      and re.fullmatch(
+                          r'/[A-Za-z0-9_-]+(?:=w\d+-h\d+)?',
+                          path
+                      ) is not None
+                  )
+
+              if not re.search(
+                  r'\.(png|jpg|jpeg)$',
+                  path,
+                  re.I
+              ):
+                  return False
+
+              if source == 'Custom':
+
+                  prefixes = [
+                      prefix
+                      for group in TRUSTED.values()
+                      for prefix in group
+                  ]
+
+              else:
+
+                  family = source
+
+                  if source.startswith('Qure-'):
+                      family = 'Qure'
+
+                  elif source.startswith('Orz3-'):
+                      family = 'Orz3'
+
+                  prefixes = TRUSTED.get(family, [])
+
+              return any(
+                  normalized.startswith(prefix)
+                  for prefix in prefixes
+              )
+
+          # ========================================
+          # Security 2: Block external redirects
+          # ========================================
+
+          class NoRedirect(HTTPRedirectHandler):
+
+              def redirect_request(
+                  self, req, fp, code, msg, headers, newurl
+              ):
+                  return None
+
+          OPENER = build_opener(NoRedirect())
+
+          INDEX_URLS = {
+              u for _, u in SOURCES + EXTRA
+          }
+
+          INDEX_URLS.add(APPLE+'emoji.json')
+
+          def fetch_json(url):
+
+              if url not in INDEX_URLS:
+                  raise ValueError('Unapproved index source')
+
               for attempt in range(3):
+
                   try:
+
                       req = Request(
                           url,
                           headers={
-                              'User-Agent': 'AllanRita-IconIndex/1.0',
+                              'User-Agent': 'AllanRita-IconIndex/3.1',
                               'Accept': 'application/json,*/*'
                           }
                       )
 
-                      with urlopen(req, timeout=45) as response:
-                          data = json.load(response)
+                      with OPENER.open(req, timeout=45) as response:
 
-                      rows = data['icons']
+                          if response.geturl() != url:
+                              raise ValueError('Unexpected redirect')
 
-                      if not isinstance(rows, list) or not rows:
-                          raise ValueError('Empty or invalid icon list')
+                          raw = response.read(MAX_BYTES+1)
 
-                      return rows
+                      if len(raw) > MAX_BYTES:
+                          raise ValueError('Index exceeds size limit')
+
+                      return json.loads(raw)
 
                   except Exception:
+
                       if attempt == 2:
-                          raise
+                          raise RuntimeError(
+                              'Trusted index download or validation failed'
+                          ) from None
 
                       time.sleep(2 ** attempt)
 
+          # ========================================
+          # Security 3: Validate names and records
+          # ========================================
+
           def clean(source, rows):
+
+              if not isinstance(rows, list):
+                  raise ValueError('Invalid icon list: '+source)
+
+              if len(rows) > MAX_ICONS:
+                  raise ValueError('Too many records: '+source)
+
               result = []
+              rejected = 0
 
               for row in rows:
 
                   if not isinstance(row, dict):
+                      rejected += 1
                       continue
 
-                  name = str(row.get('name') or '').strip()
-                  url = str(row.get('url') or '').strip()
+                  name = row.get('name')
+                  url = row.get('url')
 
-                  if not name or urlsplit(url).scheme != 'https' or not urlsplit(url).netloc:
+                  if not isinstance(name, str):
+                      rejected += 1
+                      continue
+
+                  if not isinstance(url, str):
+                      rejected += 1
+                      continue
+
+                  name = name.strip()
+                  url = url.strip()
+
+                  if (
+                      not name
+                      or len(name) > 240
+                      or re.search(r'[\x00-\x1f\x7f]', name)
+                      or not valid_url(source, url)
+                  ):
+                      rejected += 1
                       continue
 
                   name = re.sub(
-                      r'\.(png|jpe?g|webp|svg|gif)$',
+                      r'\.(png|jpg|jpeg|webp|svg|gif)$',
                       '',
                       name,
                       flags=re.I
@@ -109,8 +331,20 @@ jobs:
                       'category': str(row.get('category') or '')
                   })
 
-              if not result:
-                  raise ValueError('No valid icons: '+source)
+              if rejected:
+
+                  raise ValueError(
+                      f'SECURITY BLOCK: {source}: '
+                      f'{rejected} invalid records'
+                  )
+
+              if not result and source != 'Custom':
+                  raise ValueError('Empty source: '+source)
+
+              print(
+                  f'SECURITY PASS: {source}: '
+                  f'{len(result)} records'
+              )
 
               return result
 
@@ -131,7 +365,9 @@ jobs:
                   seen.add(key)
 
                   base = row['name']+' · '+row['source']
-                  name, i = base, 2
+
+                  name = base
+                  i = 2
 
                   while name.casefold() in names:
                       name = base+' '+str(i)
@@ -152,79 +388,58 @@ jobs:
                   )
               )
 
-          def write_pack(file, title, rows):
+          # ========================================
+          # Download trusted original icon indexes
+          # ========================================
 
-              icons = pack(rows)
+          data = {}
 
-              if not icons:
-                  raise ValueError('Empty output: '+file)
+          for source, url in SOURCES + EXTRA:
 
-              out = {
-                  'name': 'AllanRita · '+title,
-                  'description': 'Original upstream image URLs and source credits retained.',
-                  'icons': icons
-              }
+              downloaded = fetch_json(url)
 
-              path = Path('Icon') / file
+              if not isinstance(downloaded, dict):
+                  raise ValueError('Invalid index: '+source)
 
-              path.parent.mkdir(
-                  parents=True,
-                  exist_ok=True
+              data[source] = clean(
+                  source,
+                  downloaded.get('icons')
               )
-
-              path.write_text(
-                  json.dumps(
-                      out,
-                      ensure_ascii=False,
-                      indent=2
-                  )+'\n',
-                  encoding='utf-8'
-              )
-
-              print(file, len(icons))
-
-              return len(icons)
-
-          # Download original icon libraries
-
-          data = {
-              s: clean(s, fetch(u))
-              for s,u in SOURCES+EXTRA
-          }
 
           all_rows = [
               r
-              for s,_ in SOURCES+EXTRA
-              for r in data[s]
+              for source, _ in SOURCES + EXTRA
+              for r in data[source]
           ]
 
-          # Personal custom icons
-          # Custom.json will not be overwritten
+          # ========================================
+          # Preserve personal custom icons
+          # ========================================
 
           custom_path = Path('Icon/Custom.json')
 
+          if custom_path.is_symlink():
+              raise ValueError('Unsafe Custom.json path')
+
           if custom_path.exists():
 
+              if custom_path.stat().st_size > MAX_BYTES:
+                  raise ValueError('Custom.json too large')
+
               custom = json.loads(
-                  custom_path.read_text(
-                      encoding='utf-8'
-                  )
+                  custom_path.read_text(encoding='utf-8')
               )
 
-              custom_rows = custom['icons']
+              custom_icons = clean(
+                  'Custom',
+                  custom['icons']
+              )
 
-              if not isinstance(custom_rows, list):
-                  raise ValueError(
-                      'Custom.json icons must be a list'
-                  )
+              all_rows = custom_icons + all_rows
 
-              if custom_rows:
-                  all_rows = clean(
-                      'Custom',
-                      custom_rows
-                  ) + all_rows
-
-          # Global country and region flags
+          # ========================================
+          # Country and region flags
+          # ========================================
 
           flags = (
               data['KeLee-Flags']
@@ -240,10 +455,12 @@ jobs:
               ]
           )
 
+          # ========================================
           # Streaming and music
+          # ========================================
 
           streaming = re.compile(
-              r'youtube|netflix|disney|hbo|\bmax\b|hulu|prime.?video|amazon.?video|spotify|paramount|\bviu\b|abema|u.?next|bahamut|baha|巴哈|动画疯|動畫瘋|emby|plex|tver|peacock|dazn|bilibili|twitch|crunchyroll|apple.?tv|\badn\b|animation.?digital.?network|kktv|iqiyi|wetv',
+              r'youtube|netflix|disney|hbo|\bmax\b|hulu|prime.?video|amazon.?video|spotify|paramount|\bviu\b|abema|u.?next|bahamut|baha|巴哈|动画疯|動畫瘋|emby|plex|tver|peacock|dazn|bilibili|twitch|crunchyroll|apple.?tv|\badn\b|animation.?digital.?network|kktv|iqiyi|wetv|fox.?one|rakuten.?viki|sling|starz|fubo|espn|discovery',
               re.I
           )
 
@@ -263,7 +480,9 @@ jobs:
               ]
           )
 
-          # Artificial Intelligence
+          # ========================================
+          # Artificial intelligence
+          # ========================================
 
           ai = re.compile(
               r'chat.?gpt|open.?ai|claude|anthropic|gemini|deep.?seek|grok|copilot|perplexity|midjourney|doubao|豆包|通义|通義|kimi|qwen|mistral|poe|sora',
@@ -279,21 +498,17 @@ jobs:
               or ai.search(r['name'])
           ]
 
-          # ==================================
+          # ========================================
           # Apple Color Emoji
-          # ==================================
+          # Fixed upstream version: 16.0.0
+          # ========================================
 
-          APPLE = 'https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/'
-
-          req = Request(
-              APPLE+'emoji.json',
-              headers={
-                  'User-Agent': 'AllanRita-IconIndex/3.0'
-              }
+          emoji_data = fetch_json(
+              APPLE+'emoji.json'
           )
 
-          with urlopen(req, timeout=60) as response:
-              emoji_data = json.load(response)
+          if not isinstance(emoji_data, list):
+              raise ValueError('Invalid Apple index')
 
           apple = []
 
@@ -310,21 +525,22 @@ jobs:
               )
 
               code = e.get('unified') or ''
-
               parts = code.split('-')
 
               region = ''
 
-              # Regional indicator emoji
-
               if len(parts) == 2 and all(
+
                   re.fullmatch(
                       r'1F1[E-F][0-9A-F]',
                       p,
                       re.I
                   )
+
                   and 0x1F1E6 <= int(p,16) <= 0x1F1FF
+
                   for p in parts
+
               ):
 
                   region = ''.join(
@@ -382,76 +598,171 @@ jobs:
               if r['category'] == 'Country'
           ]
 
-          # Prevent incomplete updates
+          if len(apple) < 1000:
+              raise ValueError('Apple Emoji index incomplete')
 
-          if len(apple) < 1000 or len(apple_flags) < 200:
-              raise ValueError(
-                  'Apple Emoji index incomplete'
-              )
-
-          # Merge Apple icons into existing libraries
+          if len(apple_flags) < 200:
+              raise ValueError('Apple flag index incomplete')
 
           all_rows.extend(apple)
-
           flags.extend(apple_flags)
 
-          # ==================================
-          # Generate Apple icon packs
-          # ==================================
+          # ========================================
+          # Prepare all output indexes
+          # ========================================
 
-          outputs = {
-
-              'Packs/Apple-Emoji.json': write_pack(
-                  'Packs/Apple-Emoji.json',
-                  'Apple Color Emoji',
-                  apple
-              ),
-
-              'Packs/Apple-Flags.json': write_pack(
-                  'Packs/Apple-Flags.json',
-                  'Apple 地区旗帜',
-                  apple_flags
-              )
-
-          }
-
-          # ==================================
-          # Generate combined icon libraries
-          # ==================================
-
-          for file,title,rows in [
-
+          plans = [
               ('All.json','全部图标',all_rows),
-
               ('Flags.json','全球地区',flags),
-
               ('Streaming.json','流媒体与音乐',media),
-
               ('AI.json','人工智能',ai_rows),
+              ('Packs/Apple-Emoji.json','Apple Color Emoji',apple),
+              ('Packs/Apple-Flags.json','Apple 地区旗帜',apple_flags),
+          ]
 
-          ]:
+          for source, _ in SOURCES:
 
-              outputs[file] = write_pack(
-                  file,
-                  title,
-                  rows
-              )
-
-          # Generate individual style packs
-
-          for source,_ in SOURCES:
-
-              file = 'Packs/'+source+'.json'
-
-              outputs[file] = write_pack(
-                  file,
+              plans.append((
+                  'Packs/'+source+'.json',
                   source,
                   data[source]
+              ))
+
+          # ========================================
+          # Security 4: Protect output file paths
+          # ========================================
+
+          def safe_path(file):
+
+              path = Path('Icon') / file
+
+              for p in [path, *path.parents]:
+
+                  if p.is_symlink():
+                      raise ValueError('Unsafe output path')
+
+              return path
+
+          # ========================================
+          # Security 5: Detect abnormal updates
+          # ========================================
+
+          def check_changes(file, icons):
+
+              path = safe_path(file)
+
+              if not icons:
+                  raise ValueError('Empty output: '+file)
+
+              if len(icons) > MAX_ICONS:
+                  raise ValueError('Output too large: '+file)
+
+              if not path.exists():
+
+                  if file == 'All.json':
+                      raise ValueError('Previous main index missing')
+
+                  return
+
+              if path.stat().st_size > MAX_BYTES:
+                  raise ValueError('Previous index too large')
+
+              previous = json.loads(
+                  path.read_text(encoding='utf-8')
+              )['icons']
+
+              old_urls = {
+                  unquote(i['url'])
+                  for i in previous
+              }
+
+              new_urls = {
+                  unquote(i['url'])
+                  for i in icons
+              }
+
+              removed = len(old_urls - new_urls)
+              added = len(new_urls - old_urls)
+
+              removal_limit = max(
+                  10,
+                  math.ceil(len(old_urls)*0.25)
               )
 
-          # ==================================
+              addition_limit = max(
+                  20,
+                  math.ceil(len(old_urls)*0.50)
+              )
+
+              if removed > removal_limit:
+
+                  raise ValueError(
+                      f'SECURITY BLOCK: {file}: '
+                      f'{removed} removed icons'
+                  )
+
+              if added > addition_limit:
+
+                  raise ValueError(
+                      f'SECURITY BLOCK: {file}: '
+                      f'{added} new icons'
+                  )
+
+              print(
+                  f'CHANGE CHECK: {file}: '
+                  f'+{added} / -{removed}'
+              )
+
+          # Validate every output before writing
+
+          prepared = {}
+
+          for file, title, rows in plans:
+
+              icons = pack(rows)
+
+              check_changes(file, icons)
+
+              prepared[file] = {
+                  'name': 'AllanRita · '+title,
+                  'description': 'Original upstream image URLs and source credits retained.',
+                  'icons': icons
+              }
+
+          # ========================================
+          # Write validated JSON indexes
+          # ========================================
+
+          outputs = {}
+
+          for file, content in prepared.items():
+
+              path = safe_path(file)
+
+              path.parent.mkdir(
+                  parents=True,
+                  exist_ok=True
+              )
+
+              path.write_text(
+                  json.dumps(
+                      content,
+                      ensure_ascii=False,
+                      indent=2
+                  )+'\n',
+                  encoding='utf-8'
+              )
+
+              outputs[file] = len(content['icons'])
+
+              print(
+                  file,
+                  outputs[file]
+              )
+
+          # ========================================
           # Generate README
-          # ==================================
+          # ========================================
 
           base = 'https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/'
 
@@ -461,7 +772,11 @@ jobs:
 
               '',
 
-              'Surge 图标索引聚合；图片归原作者及相关权利人所有。未镜像图片。',
+              'Version: V3.1 Security',
+
+              '',
+
+              'Surge 图标索引聚合。仅引用外部图片，版权归原权利人所有。',
 
               '',
 
@@ -475,7 +790,7 @@ jobs:
 
           ]
 
-          for file,count in outputs.items():
+          for file, count in outputs.items():
 
               lines.append(
                   f'| {file} | {count} | [JSON]({base+file}) |'
@@ -491,47 +806,228 @@ jobs:
 
           ]
 
-          for source,url in SOURCES+EXTRA:
+          for source, url in SOURCES + EXTRA:
 
               lines.append(
                   f'- [{source}]({url})'
               )
 
-          lines.append(
-              '- [Custom.json](Custom.json) — 个人补充图标及来源'
-          )
-
-          lines.append(
-              '- [Apple Color Emoji](https://github.com/iamcal/emoji-data) — Apple Inc. 图像版权；外部链接，非商业用途。固定 Emoji 16.0 数据源。'
-          )
-
           lines += [
+
+              '- [Custom.json](Custom.json)',
+
+              '- [Apple Color Emoji](https://github.com/iamcal/emoji-data) — Emoji 16.0',
 
               '',
 
-              '按图片链接去重；保留不同风格。分类由上游分类及关键词辅助整理，可能有遗漏。图片可用性依赖原作者服务器。',
+              '## 安全机制',
+
+              '',
+
+              '- HTTPS only',
+
+              '- Trusted domain and repository paths',
+
+              '- Image URL validation',
+
+              '- External index redirects blocked',
+
+              '- Input size limits',
+
+              '- Abnormal update detection',
+
+              '- Fixed GitHub Actions dependency',
+
+              '- Restricted generated file staging',
+
+              '',
+
+              '安全检查仅针对索引及链接，不代表图片内容已经过病毒扫描。',
 
               ''
 
           ]
 
-          Path('Icon/README.md').write_text(
+          safe_path('README.md').write_text(
               '\n'.join(lines),
               encoding='utf-8'
           )
 
+          # ========================================
+          # Security 6: Workflow security report
+          # ========================================
+
+          report = [
+
+              '## Icon Library V3.1 Security',
+
+              '',
+
+              'All index security checks passed.',
+
+              '',
+
+              '| Index | Icons |',
+
+              '|---|---:|'
+
+          ]
+
+          for file, count in outputs.items():
+
+              report.append(
+                  f'| {file} | {count} |'
+              )
+
+          report += [
+
+              '',
+
+              '- HTTPS validation: PASS',
+
+              '- Trusted source paths: PASS',
+
+              '- Image URL format: PASS',
+
+              '- Record validation: PASS',
+
+              '- Abnormal change detection: PASS',
+
+              '',
+
+              'Image binary contents were not scanned.'
+
+          ]
+
+          summary = os.environ.get(
+              'GITHUB_STEP_SUMMARY'
+          )
+
+          if summary:
+
+              with open(
+                  summary,
+                  'a',
+                  encoding='utf-8'
+              ) as f:
+
+                  f.write('\n'.join(report)+'\n')
+
+          print(
+              'SECURITY VALIDATION PASSED'
+          )
+
           PY
 
-      - name: Commit indexes
+      - name: Secure commit and push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -euo pipefail
+
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
-          git add Icon/
+          git add -- \
+            Icon/All.json \
+            Icon/Flags.json \
+            Icon/Streaming.json \
+            Icon/AI.json \
+            Icon/README.md \
+            Icon/Packs/Apple-Emoji.json \
+            Icon/Packs/Apple-Flags.json \
+            Icon/Packs/Qure-Color.json \
+            Icon/Packs/Qure-Mini.json \
+            Icon/Packs/Qure-Light.json \
+            Icon/Packs/Orz3-Color.json \
+            Icon/Packs/Orz3-Alpha.json \
+            Icon/Packs/Orz3-Mini.json \
+            Icon/Packs/Orz3-ColorPlus.json \
+            Icon/Packs/Orz3-MiniPlus.json \
+            Icon/Packs/Lige.json \
+            Icon/Packs/Semporia.json \
+            Icon/Packs/Oasisic.json \
+            Icon/Packs/KeLee.json \
+            Icon/Packs/fmz200.json \
+            Icon/Packs/KeLee-Flags.json
+
+          python3 - <<'PY'
+          import subprocess
+
+          allowed = {
+              'Icon/All.json',
+              'Icon/Flags.json',
+              'Icon/Streaming.json',
+              'Icon/AI.json',
+              'Icon/README.md',
+          }
+
+          packs = [
+              'Apple-Emoji',
+              'Apple-Flags',
+              'Qure-Color',
+              'Qure-Mini',
+              'Qure-Light',
+              'Orz3-Color',
+              'Orz3-Alpha',
+              'Orz3-Mini',
+              'Orz3-ColorPlus',
+              'Orz3-MiniPlus',
+              'Lige',
+              'Semporia',
+              'Oasisic',
+              'KeLee',
+              'fmz200',
+              'KeLee-Flags',
+          ]
+
+          allowed.update(
+              'Icon/Packs/'+p+'.json'
+              for p in packs
+          )
+
+          raw = subprocess.check_output([
+              'git',
+              'diff',
+              '--cached',
+              '--name-only',
+              '-z'
+          ])
+
+          staged = {
+              p.decode('utf-8')
+              for p in raw.split(b'\0')
+              if p
+          }
+
+          if not staged.issubset(allowed):
+
+              raise SystemExit(
+                  'SECURITY BLOCK: unexpected staged files'
+              )
+
+          print('Staged file security check: PASS')
+
+          PY
 
           if git diff --cached --quiet; then
+
             echo 'No changes'
+
           else
-            git commit -m 'Update Surge icon library V3.0'
-            git push origin HEAD:main
+
+            git commit -m 'Update Surge icon library V3.1 Security'
+
+            auth=$(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)
+
+            echo "::add-mask::$auth"
+
+            git -c http.https://github.com/.extraheader="AUTHORIZATION: basic $auth" push origin HEAD:main
+
           fi
+
+      - name: Security failure notice
+        if: failure()
+        run: |
+          echo "## Security check failed" >> "$GITHUB_STEP_SUMMARY"
+          echo "The icon update did not complete successfully. Review the logs before retrying." >> "$GITHUB_STEP_SUMMARY"
