@@ -1,10 +1,10 @@
-#!name=AI Detection V2.1
-#!desc=3 services | AI regional availability checks
+#!name=AI Detection
+#!desc=ChatGPT、Claude、Gemini 全球地区及访问状态检测 | V2.4
 #!author=AllanRita
-#!category=Panel
+#!category=AI
 
 [Panel]
-AllanRitaAI = title="AI Detection",content="Tap to check 3 services",script-name=AllanRitaAICheck,update-interval=900
+AllanRitaAI = title="AI Detection",content="点击刷新开始检测",script-name=AllanRitaAICheck,update-interval=900
 
 [Script]
 AllanRitaAICheck = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/AllanRita/Surge/main/Script/AIDetection.js,script-update-interval=3600
