@@ -1,44 +1,47 @@
-// UnlockDetection V2.3
+// UnlockDetection V2.4
 // Author: AllanRita
 // Platform: Surge
-// 16 Streaming Services
+// 12 Streaming Services
+// Global & Regional Detection
 
 (function () {
 
   const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
 
-  const POLICY = '';
   const ok = c => '☑' + (c || '');
   const partial = c => '△' + (c || '');
   const no = c => '☒' + (c || '');
   const unknown = '?';
 
-  const geo = /unsupported_country|app-unavailable-in-region|not available in your (?:country|region|location)|not (?:currently )?available in your (?:country|region|location)|outside (?:the )?(?:united states|us)|GEO_CHECK_FAIL|available (?:only )?in South Korea|このサービスは日本国内|日本国外からはご利用|僅限台灣地區|仅限台湾地区/i;
+  const geo = /unsupported_country|app-unavailable-in-region|GEO_BLOCKED|GEO_CHECK_FAIL|not available in your (?:country|region|location)|not currently available in your (?:country|region|location)|日本国外からはご利用|僅限台灣地區/i;
 
-  const challenge = /cf-chl-|challenge-platform|just a moment\.\.\.|captcha challenge|verify you are human|access denied|security policy has been breached/i;
+  const challenge = /cf-chl-|challenge-platform|just a moment\.\.\.|captcha challenge|verify you are human|access denied/i;
 
-  const cc = s =>
-    /^[a-z]{2}$/i.test(String(s || ''))
+  function cc(s) {
+    return /^[a-z]{2}$/i.test(String(s || ''))
       ? String(s).toUpperCase()
       : '';
+  }
 
-  const field = (s, k) => {
+  function field(s, k) {
     const m = s.match(
       new RegExp('"' + k + '"\\s*:\\s*"([^"\\r\\n]+)"', 'i')
     );
     return m ? m[1] : '';
-  };
+  }
 
-  const flag = (s, k) => {
+  function flag(s, k) {
     const m = s.match(
       new RegExp('"' + k + '"\\s*:\\s*(true|false)', 'i')
     );
     return m ? m[1].toLowerCase() : '';
-  };
+  }
 
   // HTTP Request
+  // Follow existing Surge routing rules.
 
   function request(url, opt) {
+
     opt = opt || {};
 
     return new Promise(resolve => {
@@ -55,41 +58,57 @@
         }, opt.headers || {})
       };
 
-      if (POLICY) o.policy = POLICY;
-      if (opt.body !== undefined) o.body = opt.body;
+      if (opt.body !== undefined) {
+        o.body = opt.body;
+      }
 
       const method = opt.method || 'get';
 
       try {
+
         $httpClient[method](o, (e, r, d) => {
 
-          const h = {};
+          const headers = {};
 
           Object.keys((r && r.headers) || {})
             .forEach(k => {
-              h[k.toLowerCase()] = String(r.headers[k]);
+              headers[k.toLowerCase()] =
+                String(r.headers[k]);
             });
 
           resolve({
             status: e || !r ? 0 : Number(r.status),
             text: typeof d === 'string' ? d : '',
-            headers: h,
+            headers,
             url
           });
 
         });
+
       } catch (_) {
+
         resolve({
           status: 0,
           text: '',
           headers: {},
           url
         });
+
       }
+
     });
+
   }
 
-  // Redirect Handling
+  // Redirect Detection
+
+  function host(url) {
+    return (
+      (String(url).match(
+        /^https:\/\/([a-z0-9.-]+)(?:[/?#]|$)/i
+      ) || [])[1] || ''
+    ).toLowerCase();
+  }
 
   function nextURL(r) {
 
@@ -97,49 +116,56 @@
 
     if (/^https:\/\//i.test(l)) return l;
 
+    if (/^\/\//.test(l)) return 'https:' + l;
+
     if (/^\/(?!\/)/.test(l)) {
-      return r.url.match(/^https:\/\/[^/]+/i)[0] + l;
+      return 'https://' + host(r.url) + l;
     }
 
     return '';
+
   }
 
-  function sameFamily(a, b) {
+  function withinDomain(url, domain) {
 
-    const host = u =>
-      ((u.match(/^https:\/\/([a-z0-9.-]+)(?:\/|$)/i)
-      || [])[1] || '').toLowerCase();
+    const h = host(url);
 
-    const x = host(a);
-    const y = host(b);
+    return h === domain ||
+      h.endsWith('.' + domain);
 
-    return !!x && !!y &&
-      (x === y ||
-      x.replace(/^www\./, '') ===
-      y.replace(/^www\./, ''));
   }
 
-  async function page(url) {
+  async function page(url, domain) {
 
     let r = await request(url);
-    let loc = nextURL(r);
+    const redirects = [];
 
-    if (
-      r.status >= 300 &&
-      r.status < 400 &&
-      loc &&
-      !geo.test(loc) &&
-      !/\/(?:unavailable|intl)(?:[/?#]|$)/i.test(loc) &&
-      sameFamily(url, loc)
-    ) {
+    for (let i = 0; i < 2; i++) {
 
-      const n = await request(loc);
-      n.firstLocation = loc;
+      if (r.status < 300 || r.status >= 400) break;
 
-      return n;
+      const loc = nextURL(r);
+
+      if (!loc) break;
+
+      redirects.push(loc);
+
+      if (
+        !withinDomain(loc, domain) ||
+        /\/(?:unavailable|no-service|restrict(?:ed)?)(?:[/?#]|$)/i.test(loc) ||
+        geo.test(loc)
+      ) {
+        break;
+      }
+
+      r = await request(loc);
+
     }
 
+    r.redirects = redirects;
+
     return r;
+
   }
 
   // Status Detection
@@ -148,31 +174,38 @@
 
     if (!r.status) return unknown;
 
+    const links = [
+      r.url,
+      r.headers.location || '',
+      ...(r.redirects || [])
+    ].join(' ');
+
     if (
       r.status === 451 ||
-      geo.test(r.headers.location || '') ||
-      (
-        r.status < 500 &&
-        !challenge.test(r.text) &&
-        geo.test(r.text)
-      )
+      geo.test(links) ||
+      /\/(?:no-service|restrict(?:ed)?)(?:[/?#]|$)/i.test(links)
     ) {
       return no();
     }
 
     if (
       challenge.test(r.text) ||
-      [403, 429].includes(r.status) ||
+      r.status === 429 ||
       r.status >= 500
     ) {
       return unknown;
     }
 
-    if (r.status >= 200 && r.status < 400) {
+    if (geo.test(r.text)) return no();
+
+    if (r.status === 403) return unknown;
+
+    if (r.status >= 200 && r.status < 300) {
       return partial();
     }
 
     return unknown;
+
   }
 
   function usable(r) {
@@ -180,6 +213,7 @@
     return r.status >= 200 &&
       r.status < 300 &&
       !challenge.test(r.text);
+
   }
 
   function pathRegion(u) {
@@ -189,51 +223,108 @@
     );
 
     return m ? cc(m[1]) : '';
+
   }
+
+  function detectedRegion(r) {
+
+    return cc(field(r.text, 'countryCode')) ||
+      cc(field(r.text, 'country_code')) ||
+      cc(field(r.text, 'isoCountryCode')) ||
+      cc(field(r.text, 'geoCountryCode'));
+
+  }
+
+  function redirectRegion(r) {
+
+    const urls = [
+      r.url,
+      ...(r.redirects || []).slice().reverse()
+    ];
+
+    for (const u of urls) {
+
+      const c = pathRegion(u);
+
+      if (c) return c;
+
+    }
+
+    return '';
+
+  }
+
+  // ==================================
+  // Global Streaming Services
+  // ==================================
 
   // 01. YouTube Premium
 
   async function yt() {
 
     const r = await page(
-      'https://www.youtube.com/premium'
-    );
-
-    const b = basic(r);
-
-    if (b !== partial() || !usable(r)) return b;
-
-    const c = cc(
-      field(r.text, 'INNERTUBE_CONTEXT_GL')
-    );
-
-    return /ad-free/i.test(r.text) && c
-      ? ok(c)
-      : partial(c);
-  }
-
-  // 02. Netflix
-
-  async function nf() {
-
-    const r = await page(
-      'https://www.netflix.com/title/70143836'
+      'https://www.youtube.com/premium',
+      'youtube.com'
     );
 
     const b = basic(r);
 
     if (b !== partial()) return b;
 
-    const c =
-      cc(field(r.text, 'countryCode')) ||
-      pathRegion(r.firstLocation || r.headers.location) ||
-      pathRegion(
-        (r.text.match(
-          /<link[^>]*rel="canonical"[^>]*href="([^"]+)"/i
-        ) || [])[1]
-      );
+    const c = cc(
+      field(r.text, 'INNERTUBE_CONTEXT_GL')
+    );
 
-    return partial(c);
+    return c && /ad-free/i.test(r.text)
+      ? ok(c)
+      : partial(c);
+
+  }
+
+  // 02. Netflix
+  // Regional catalog detection
+
+  async function nf() {
+
+    const results = await Promise.all([
+
+      page(
+        'https://www.netflix.com/title/81280792',
+        'netflix.com'
+      ),
+
+      page(
+        'https://www.netflix.com/title/80018499',
+        'netflix.com'
+      )
+
+    ]);
+
+    const a = results[0];
+    const b = results[1];
+
+    if (basic(a) === no() &&
+        basic(b) === no()) {
+      return no();
+    }
+
+    const countries = results.map(r =>
+      detectedRegion(r) ||
+      redirectRegion(r)
+    ).filter(Boolean);
+
+    const unique = [...new Set(countries)];
+
+    if (unique.length > 1) return unknown;
+
+    const c = unique[0] || '';
+
+    if (results.some(usable)) {
+      return partial(c);
+    }
+
+    return unknown;
+
   }
 
   // 03. Disney+
@@ -241,29 +332,35 @@
   async function disney() {
 
     const r = await page(
-      'https://www.disneyplus.com/'
+      'https://www.disneyplus.com/',
+      'disneyplus.com'
     );
 
     const b = basic(r);
 
-    if (b !== partial()) return b;
+    if (b === no()) return b;
 
-    const c =
-      cc(field(r.text, 'countryCode')) ||
-      pathRegion(r.firstLocation || r.headers.location);
+    const c = detectedRegion(r) ||
+      redirectRegion(r);
+
+    const available = flag(
+      r.text, 'inSupportedLocation'
+    );
+
+    if (available === 'false') return no(c);
 
     if (
-      /\/(?:unavailable|preview)(?:[/?#]|$)/i
-        .test(r.headers.location || '')
+      usable(r) &&
+      available === 'true' &&
+      c
     ) {
-      return partial(c);
+      return ok(c);
     }
 
-    return usable(r) &&
-      flag(r.text, 'inSupportedLocation') === 'true' &&
-      c
-      ? ok(c)
-      : partial(c);
+    return b === partial()
+      ? partial(c)
+      : unknown;
+
   }
 
   // 04. HBO Max
@@ -271,7 +368,8 @@
   async function hbo() {
 
     const r = await page(
-      'https://www.hbomax.com/'
+      'https://www.hbomax.com/',
+      'hbomax.com'
     );
 
     const b = basic(r);
@@ -279,30 +377,116 @@
     if (b !== partial()) return b;
 
     const c =
+      detectedRegion(r) ||
       cc(
         (String(r.headers['set-cookie'] || '')
-          .match(/countryCode=([A-Z]{2})/i) || [])[1]
+          .match(/countryCode=([A-Z]{2})/i)
+          || [])[1]
       ) ||
-      pathRegion(r.firstLocation || r.headers.location);
+      redirectRegion(r);
 
     return partial(c);
+
   }
 
-  // 05. Spotify
+  // 05. Hulu
+  // US and Japan checked independently.
+  // Display only one detected region.
 
-  async function spotify() {
+  async function huluUS() {
 
     const r = await page(
-      'https://www.spotify.com/'
+      'https://www.hulu.com/',
+      'hulu.com'
     );
 
     const b = basic(r);
 
-    if (b !== partial()) return b;
+    if (b === no()) return no();
 
-    return partial(
-      pathRegion(r.firstLocation || r.headers.location)
+    if (b !== partial()) return unknown;
+
+    const c = detectedRegion(r);
+
+    if (
+      c === 'US' &&
+      flag(r.text, 'isAllowed') === 'true'
+    ) {
+      return ok('US');
+    }
+
+    return partial(c === 'US' ? 'US' : '');
+
+  }
+
+  async function huluJP() {
+
+    const r = await page(
+      'https://id.hulu.jp/',
+      'hulu.jp'
     );
+
+    const b = basic(r);
+
+    if (b === no()) return no();
+
+    if (
+      usable(r) &&
+      withinDomain(r.url, 'hulu.jp') &&
+      /ログイン|login|sign in/i.test(r.text)
+    ) {
+      return ok('JP');
+    }
+
+    return b === partial()
+      ? partial(
+          detectedRegion(r) === 'JP' ? 'JP' : ''
+        )
+      : unknown;
+
+  }
+
+  async function hulu() {
+
+    const results = await Promise.all([
+      huluUS(),
+      huluJP()
+    ]);
+
+    const passed = results.filter(
+      s => s.startsWith('☑')
+    );
+
+    if (passed.length === 1) {
+      return passed[0];
+    }
+
+    if (passed.length > 1) {
+      return unknown;
+    }
+
+    const identified = results.filter(
+      s => /^△[A-Z]{2}$/.test(s)
+    );
+
+    if (identified.length === 1) {
+      return identified[0];
+    }
+
+    if (identified.length > 1) {
+      return unknown;
+    }
+
+    if (results.every(s => s.startsWith('☒'))) {
+      return no();
+    }
+
+    if (results.some(s => s.startsWith('△'))) {
+      return partial();
+    }
+
+    return unknown;
+
   }
 
   // 06. Prime Video
@@ -310,16 +494,17 @@
   async function prime() {
 
     const r = await page(
-      'https://www.primevideo.com/'
+      'https://www.primevideo.com/',
+      'primevideo.com'
     );
 
     const b = basic(r);
 
-    if (b !== partial()) return b;
+    if (b === no()) return b;
 
-    const c = cc(
-      field(r.text, 'currentTerritory')
-    );
+    const c =
+      cc(field(r.text, 'currentTerritory')) ||
+      detectedRegion(r);
 
     const restricted = flag(
       r.text, 'isServiceRestricted'
@@ -327,40 +512,157 @@
 
     if (restricted === 'true') return no(c);
 
-    return usable(r) &&
+    if (
+      usable(r) &&
       c &&
       restricted === 'false'
-      ? ok(c)
-      : partial(c);
+    ) {
+      return ok(c);
+    }
+
+    return b === partial()
+      ? partial(c)
+      : unknown;
+
   }
 
-  // 07. Apple TV
+  // 07. Spotify
 
-  async function appleTV() {
-
-    return basic(
-      await page('https://tv.apple.com/')
-    );
-  }
-
-  // 08. Paramount+
-
-  async function paramount() {
+  async function spotify() {
 
     const r = await page(
-      'https://www.paramountplus.com/'
+      'https://www.spotify.com/',
+      'spotify.com'
     );
 
     const b = basic(r);
 
     if (b !== partial()) return b;
 
-    return partial(
-      pathRegion(r.firstLocation || r.headers.location)
-    );
+    const c =
+      detectedRegion(r) ||
+      redirectRegion(r);
+
+    return partial(c);
+
   }
 
-  // 09. ABEMA
+  // 08. Paramount+
+  // Multi-region detection.
+  // No fixed country.
+
+  async function paramount() {
+
+    const r = await page(
+      'https://www.paramountplus.com/',
+      'paramountplus.com'
+    );
+
+    const b = basic(r);
+
+    const c =
+      detectedRegion(r) ||
+      redirectRegion(r);
+
+    const restricted = flag(
+      r.text, 'isServiceRestricted'
+    );
+
+    const available = flag(
+      r.text, 'inSupportedLocation'
+    );
+
+    if (
+      b === no() ||
+      restricted === 'true' ||
+      available === 'false'
+    ) {
+      return no(c);
+    }
+
+    if (
+      usable(r) &&
+      c &&
+      (
+        restricted === 'false' ||
+        available === 'true'
+      )
+    ) {
+      return ok(c);
+    }
+
+    return b === partial()
+      ? partial(c)
+      : unknown;
+
+  }
+
+  // 09. Viu
+  // Detect the actual regional Viu site.
+  // Not ViuTV.
+
+  async function viu() {
+
+    const r = await page(
+      'https://www.viu.com/',
+      'viu.com'
+    );
+
+    const urls = [
+      r.url,
+      ...(r.redirects || []).slice().reverse()
+    ];
+
+    if (
+      urls.some(u =>
+        /\/no-service(?:[/?#]|$)/i.test(u)
+      )
+    ) {
+      return no();
+    }
+
+    const b = basic(r);
+
+    if (b === no()) return no();
+
+    let c = detectedRegion(r);
+
+    if (!c) {
+
+      for (const u of urls) {
+
+        const m = u.match(
+          /\/ott\/([a-z]{2})(?:[/?#]|$)/i
+        );
+
+        if (m) {
+          c = cc(m[1]);
+          break;
+        }
+
+      }
+
+    }
+
+    if (
+      usable(r) &&
+      c &&
+      flag(r.text, 'isAllowed') === 'true'
+    ) {
+      return ok(c);
+    }
+
+    return b === partial()
+      ? partial(c)
+      : unknown;
+
+  }
+
+  // ==================================
+  // Regional Streaming Services
+  // ==================================
+
+  // 10. ABEMA
 
   async function abema() {
 
@@ -389,22 +691,14 @@
 
     const c = cc(d.isoCountryCode);
 
-    if (d.isAllowed === false) return no(c);
+    if (d.isAllowed === false) {
+      return no(c);
+    }
 
-    return c === 'JP'
-      ? ok(c)
-      : c
-      ? partial(c)
-      : unknown;
-  }
+    if (c === 'JP') return ok(c);
 
-  // 10. TVer
+    return c ? partial(c) : unknown;
 
-  async function tver() {
-
-    return basic(
-      await page('https://tver.jp/')
-    );
   }
 
   // 11. U-NEXT
@@ -445,127 +739,83 @@
 
     if (!m) return unknown;
 
-    return m[1] === '467'
-      ? no()
-      : m[1] === '200'
-      ? ok('JP')
-      : m[1] === '475'
-      ? partial('JP')
-      : unknown;
+    if (m[1] === '467') return no();
+
+    if (m[1] === '200') return ok('JP');
+
+    if (m[1] === '475') return partial('JP');
+
+    return unknown;
+
   }
 
-  // 12. Hulu
-
-  async function hulu() {
-
-    return basic(
-      await page('https://www.hulu.com/')
-    );
-  }
-
-  // 13. Peacock
-
-  async function peacock() {
-
-    return basic(
-      await page('https://www.peacocktv.com/')
-    );
-  }
-
-  // 14. 巴哈姆特动画疯
+  // 12. Bahamut Anime
 
   async function bahamut() {
 
     const r = await page(
-      'https://ani.gamer.com.tw/'
+      'https://ani.gamer.com.tw/',
+      'gamer.com.tw'
     );
 
     const b = basic(r);
 
     if (b !== partial()) return b;
 
-    const c = cc(
-      (r.text.match(
-        /data-geo="([a-z]{2})"/i
-      ) || [])[1]
-    );
+    const c =
+      detectedRegion(r) ||
+      cc(
+        (r.text.match(
+          /data-geo="([a-z]{2})"/i
+        ) || [])[1]
+      );
 
     return partial(c);
+
   }
 
-  // 15. ViuTV
-
-  async function viu() {
-
-    const r = await request(
-      'https://api.viu.now.com/p8/3/getLiveURL',
-      {
-        method: 'post',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          callerReferenceNo: String(Date.now()),
-          contentId: '099',
-          contentType: 'Channel',
-          channelno: '099',
-          mode: 'prod',
-          deviceId: 'surge-panel-' + Date.now(),
-          deviceType: 'ANDROID_WEB'
-        })
-      }
-    );
-
-    if (basic(r) === no()) return no();
-
-    if (!usable(r)) return unknown;
-
-    const code = field(r.text, 'responseCode');
-
-    return code === 'SUCCESS'
-      ? ok('HK')
-      : code === 'GEO_CHECK_FAIL'
-      ? no()
-      : unknown;
-  }
-
-  // 16. TVING
-
-  async function tving() {
-
-    return basic(
-      await page('https://www.tving.com/')
-    );
-  }
-
-  // Streaming Services
+  // ==================================
+  // Services List
+  // ==================================
 
   const services = [
+
     ['YouTube Premium', yt],
     ['Netflix', nf],
     ['Disney+', disney],
     ['HBO Max', hbo],
-    ['Spotify', spotify],
-    ['Prime Video', prime],
-    ['Apple TV', appleTV],
-    ['Paramount+', paramount],
-    ['ABEMA', abema],
-    ['TVer', tver],
-    ['U-NEXT', unext],
     ['Hulu', hulu],
-    ['Peacock', peacock],
-    ['巴哈姆特动画疯', bahamut],
-    ['ViuTV', viu],
-    ['TVING', tving]
+    ['Prime Video', prime],
+    ['Spotify', spotify],
+    ['Paramount+', paramount],
+    ['Viu', viu],
+
+    ['ABEMA', abema],
+    ['U-NEXT', unext],
+    ['巴哈姆特动画疯', bahamut]
+
   ];
 
-  // Panel Layout
+  const values = {};
 
-  const rows = [1, 2, 2, 2, 2, 2, 2, 2, 1];
-
-  const values = services.map(() => unknown);
+  services.forEach(s => {
+    values[s[0]] = unknown;
+  });
 
   let complete = false;
+
+  function result(name) {
+    return name + ': ' +
+      (values[name] || unknown);
+  }
+
+  function line(...names) {
+    return names.map(result).join(' | ');
+  }
+
+  // ==================================
+  // Panel Layout
+  // ==================================
 
   function finish() {
 
@@ -575,26 +825,35 @@
 
     const d = new Date();
 
-    const pad = n => ('0' + n).slice(-2);
+    const pad = n =>
+      ('0' + n).slice(-2);
 
-    let i = 0;
+    const content = [
 
-    const content = rows.map(n => {
+      '🌐 全球流媒体',
 
-      const line = services
-        .slice(i, i + n)
-        .map((s, j) =>
-          s[0] + ': ' + values[i + j]
-        )
-        .join(' | ');
+      line('YouTube Premium'),
 
-      i += n;
+      line('Netflix', 'Disney+'),
 
-      return line;
+      line('HBO Max', 'Hulu'),
 
-    }).join('\n');
+      line('Prime Video', 'Spotify'),
+
+      line('Paramount+', 'Viu'),
+
+      '',
+
+      '📍 地区流媒体',
+
+      line('ABEMA', 'U-NEXT'),
+
+      line('巴哈姆特动画疯')
+
+    ].join('\n');
 
     $done({
+
       title:
         'UnlockDetection | ' +
         pad(d.getHours()) + ':' +
@@ -605,23 +864,41 @@
       icon: 'lock.open.display',
 
       'icon-color': '#007AFF'
+
     });
+
   }
 
+  // ==================================
   // Concurrent Detection
+  // ==================================
 
   setTimeout(finish, 24000);
 
   Promise.all(
-    services.map((s, i) =>
+
+    services.map(s =>
+
       Promise.resolve()
+
         .then(s[1])
+
         .then(v => {
-          values[i] = v;
+
+          values[s[0]] = v;
+
           console.log(s[0] + ': ' + v);
+
         })
-        .catch(() => {})
+
+        .catch(() => {
+
+          values[s[0]] = unknown;
+
+        })
+
     )
+
   ).then(finish);
 
 })();
