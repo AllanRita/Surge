@@ -335,8 +335,28 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Didiemby.png"
     },
     {
+      "name": "Discovery+ · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Discovery+.png"
+    },
+    {
+      "name": "Discovery+ · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Discovery.png"
+    },
+    {
+      "name": "Discovery+ · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Discovery.png"
+    },
+    {
+      "name": "discovery+ · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/discovery+.png"
+    },
+    {
       "name": "discovery+ · Qure-Media",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/discovery+.png"
+    },
+    {
+      "name": "discovery+ · Qure-Mini",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/discovery+.png"
     },
     {
       "name": "discoveryPlus · Oasisic",
@@ -519,8 +539,16 @@
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Disney/ESPN/ESPN.png"
     },
     {
+      "name": "ESPN+ · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ESPN+.png"
+    },
+    {
       "name": "ESPN+ · Qure-Media",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ESPN+.png"
+    },
+    {
+      "name": "ESPN+ · Qure-Mini",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/ESPN+.png"
     },
     {
       "name": "ESPN+_1 · Qure-Media",
@@ -559,8 +587,16 @@
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/friDayVideo/friDayVideo.png"
     },
     {
+      "name": "fuboTV · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/fuboTV.png"
+    },
+    {
       "name": "fuboTV · Qure-Media",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/fuboTV.png"
+    },
+    {
+      "name": "fuboTV · Qure-Mini",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/fuboTV.png"
     },
     {
       "name": "FujiTV · Oasisic",
@@ -1175,8 +1211,16 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/SeseEmby1.png"
     },
     {
+      "name": "Sling_TV · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Sling_TV.png"
+    },
+    {
       "name": "Sling_TV · Qure-Media",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Sling_TV.png"
+    },
+    {
+      "name": "Sling_TV · Qure-Mini",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Sling_TV.png"
     },
     {
       "name": "SlingTV · Oasisic",
@@ -1269,6 +1313,10 @@
     {
       "name": "STARZ · Oasisic",
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/STARZ/STARZ.png"
+    },
+    {
+      "name": "STARZ · Qure-Color",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/STARZ.png"
     },
     {
       "name": "TELASA · Oasisic",

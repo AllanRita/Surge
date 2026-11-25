@@ -1,17 +1,19 @@
 # AllanRita Icon Library
 
-Surge 图标索引聚合；图片归原作者及相关权利人所有。未镜像图片。
+Version: V3.1 Security
+
+Surge 图标索引聚合。仅引用外部图片，版权归原权利人所有。
 
 ## 订阅
 
 | 图标库 | 数量 | 地址 |
 |---|---:|---|
-| Packs/Apple-Emoji.json | 3587 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Emoji.json) |
-| Packs/Apple-Flags.json | 262 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Flags.json) |
 | All.json | 8585 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
 | Flags.json | 602 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Flags.json) |
-| Streaming.json | 390 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
+| Streaming.json | 402 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
 | AI.json | 59 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/AI.json) |
+| Packs/Apple-Emoji.json | 3587 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Emoji.json) |
+| Packs/Apple-Flags.json | 262 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Flags.json) |
 | Packs/Qure-Color.json | 347 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Color.json) |
 | Packs/Qure-Mini.json | 347 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Mini.json) |
 | Packs/Qure-Light.json | 319 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Light.json) |
@@ -45,7 +47,18 @@ Surge 图标索引聚合；图片归原作者及相关权利人所有。未镜�
 - [KeLee-Flags](https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/ColorfulStaticFlag.json)
 - [Qure-Area](https://raw.githubusercontent.com/Koolson/Qure/master/Other/QureColor-Area.json)
 - [Qure-Media](https://raw.githubusercontent.com/Koolson/Qure/master/Other/QureColor-Media.json)
-- [Custom.json](Custom.json) — 个人补充图标及来源
-- [Apple Color Emoji](https://github.com/iamcal/emoji-data) — Apple Inc. 图像版权；外部链接，非商业用途。固定 Emoji 16.0 数据源。
+- [Custom.json](Custom.json)
+- [Apple Color Emoji](https://github.com/iamcal/emoji-data) — Emoji 16.0
 
-按图片链接去重；保留不同风格。分类由上游分类及关键词辅助整理，可能有遗漏。图片可用性依赖原作者服务器。
+## 安全机制
+
+- HTTPS only
+- Trusted domain and repository paths
+- Image URL validation
+- External index redirects blocked
+- Input size limits
+- Abnormal update detection
+- Fixed GitHub Actions dependency
+- Restricted generated file staging
+
+安全检查仅针对索引及链接，不代表图片内容已经过病毒扫描。
