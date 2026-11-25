@@ -1,3 +1,4 @@
+
 {
   "name": "AllanRita · 自定义图标",
   "description": "个人补充图标及来源",
@@ -6,6 +7,11 @@
       "name": "ADN · selfh.st",
       "url": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/animation-digital-network.png",
       "category": "Media"
+    },
+    {
+      "name": "Mercari",
+      "url": "https://play-lh.googleusercontent.com/wM3TjCM_xvg9V8nw_bAhkYIWszALS0K36WPu_KcyeFTE-JDHFJKMI1_wXnrtmjfUX0qDcItGW90dwDGwg72p=w240-h480",
+      "category": "Shopping"
     }
   ]
 }
