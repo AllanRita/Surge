@@ -1,11 +1,10 @@
-#!name=UnlockDetection V2.1
-#!desc=17 services | Streaming regional availability checks
+#!name=UnlockDetection
+#!desc=16项流媒体平台地区及解锁状态检测
 #!author=AllanRita
-#!category=Panel
+#!category=流媒体
 
 [Panel]
-AllanRitaUnlock = title="UnlockDetection",content="Tap to check 17 services",script-name=AllanRitaUnlockCheck,update-interval=900
+AllanRitaUnlock = title="UnlockDetection",content="点击刷新开始检测",script-name=AllanRitaUnlockCheck,update-interval=900
 
 [Script]
 AllanRitaUnlockCheck = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/AllanRita/Surge/main/Script/UnlockDetection.js,script-update-interval=3600
-
