@@ -1,161 +1,574 @@
-// AI Detection V2.1 | AllanRita | Surge
-// Independent implementation; public probe references:
-// https://github.com/lmc999/RegionRestrictionCheck
-// https://manual.nssurge.com/scripting/api.html
-// No credentials, MITM, rewrites or proxy changes.
-// △ = reachable / region signal only; ☒ = explicit geo restriction; ? = unknown.
+// AI Detection V2.4
+// Author: AllanRita
+// Platform: Surge
+// ChatGPT | Claude | Gemini
+// Global Region Detection
 
 (function () {
-  const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
-  const POLICY = '';
+
+  const UA =
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
+
   const ok = c => '☑' + (c || '');
   const partial = c => '△' + (c || '');
   const no = c => '☒' + (c || '');
   const unknown = '?';
 
-  const geo = /unsupported_country|app-unavailable-in-region|not available in your (?:country|region|location)|not (?:currently )?available in your (?:country|region|location)|outside (?:the )?(?:united states|us)|GEO_CHECK_FAIL|available (?:only )?in South Korea|このサービスは日本国内|日本国外からはご利用|僅限台灣地區|仅限台湾地区/i;
+  // Region Restriction
 
-  const challenge = /cf-chl-|challenge-platform|just a moment\.\.\.|captcha challenge|verify you are human|access denied|security policy has been breached/i;
+  const geo =
+    /unsupported_country|app-unavailable-in-region|unsupported.country.region.territory|not available in your (?:country|region|location)|not (?:currently )?supported in your (?:country|region|location)|目前不支持你所在的|目前不支援你所在的/i;
 
-  const cc = s => /^[a-z]{2}$/i.test(String(s || '')) ? String(s).toUpperCase() : '';
+  const challenge =
+    /cf-chl-|challenge-platform|just a moment\.\.\.|captcha challenge|verify you are human/i;
 
-  const field = (s, k) => { const m = s.match(new RegExp('"' + k + '"\\s*:\\s*"([^"\\r\\n]+)"','i')); return m ? m[1] : ''; };
+  // ISO 3166 Country Code Conversion
+  // Gemini: ISO-3 -> ISO-2
 
-  const flag = (s,k) => { const m=s.match(new RegExp('"'+k+'"\\s*:\\s*(true|false)','i')); return m ? m[1].toLowerCase() : ''; };
+  const isoData = `
+ABWAW AFGAF AGOAO AIAAI ALAAX ALBAL ANDAD AREAE
+ARGAR ARMAM ASMAS ATAAQ ATFTF ATGAG AUSAU AUTAT
+AZEAZ BDIBI BELBE BENBJ BESBQ BFABF BGDBD BGRBG
+BHRBH BHSBS BIHBA BLMBL BLRBY BLZBZ BMUBM BOLBO
+BRABR BRBBB BRNBN BTNBT BVTBV BWABW CAFCF CANCA
+CCKCC CHECH CHLCL CHNCN CIVCI CMRCM CODCD COGCG
+COKCK COLCO COMKM CPVCV CRICR CUBCU CUWCW CXRCX
+CYMKY CYPCY CZECZ DEUDE DJIDJ DMADM DNKDK DOMDO
+DZADZ ECUEC EGYEG ERIER ESHEH ESPES ESTEE ETHET
+FINFI FJIFJ FLKFK FRAFR FROFO FSMFM GABGA GBRGB
+GEOGE GGYGG GHAGH GIBGI GINGN GLPGP GMBGM GNBGW
+GNQGQ GRCGR GRDGD GRLGL GTMGT GUFGF GUMGU GUYGY
+HKGHK HMDHM HNDHN HRVHR HTIHT HUNHU IDNID IMNIM
+INDIN IOTIO IRLIE IRNIR IRQIQ ISLIS ISRIL ITAIT
+JAMJM JEYJE JORJO JPNJP KAZKZ KENKE KGZKG KHMKH
+KIRKI KNAKN KORKR KWTKW LAOLA LBNLB LBRLR LBYLY
+LCALC LIELI LKALK LSOLS LTULT LUXLU LVALV MACMO
+MAFMF MARMA MCOMC MDAMD MDGMG MDVMV MEXMX MHLMH
+MKDMK MLIML MLTMT MMRMM MNEME MNGMN MNPMP MOZMZ
+MRTMR MSRMS MTQMQ MUSMU MWIMW MYSMY MYTYT NAMNA
+NCLNC NERNE NFKNF NGANG NICNI NIUNU NLDNL NORNO
+NPLNP NRUNR NZLNZ OMNOM PAKPK PANPA PCNPN PERPE
+PHLPH PLWPW PNGPG POLPL PRIPR PRKKP PRTPT PRYPY
+PSEPS PYFPF QATQA REURE ROURO RUSRU RWARW SAUSA
+SDNSD SENSN SGPSG SGSGS SHNSH SJMSJ SLBSB SLESL
+SLVSV SMRSM SOMSO SPMPM SRBRS SSDSS STPST SURSR
+SVKSK SVNSI SWESE SWZSZ SXMSX SYCSC SYRSY TCATC
+TCDTD TGOTG THATH TJKTJ TKLTK TKMTM TLSTL TONTO
+TTOTT TUNTN TURTR TUVTV TWNTW TZATZ UGAUG UKRUA
+UMIUM URYUY USAUS UZBUZ VATVA VCTVC VENVE VGBVG
+VIRVI VNMVN VUTVU WLFWF WSMWS YEMYE ZAFZA ZMBZM
+ZWEZW
+`;
+
+  const ISO = {};
+  const ISO2 = new Set();
+
+  isoData.trim().split(/\s+/).forEach(item => {
+    ISO[item.slice(0, 3)] = item.slice(3);
+    ISO2.add(item.slice(3));
+  });
+
+  function cc(value) {
+
+    const s = String(value || '')
+      .trim()
+      .toUpperCase();
+
+    if (s === 'UK') return 'GB';
+
+    if (ISO2.has(s)) return s;
+
+    return ISO[s] || '';
+
+  }
+
+  // HTTP Request
+  // Follow existing Surge routing rules.
+  // No fixed proxy policy.
 
   function request(url, opt) {
+
     opt = opt || {};
+
     return new Promise(resolve => {
-      const o = {
-        url,
+
+      const options = {
+
+        url: url,
+
         timeout: 7,
+
         'auto-redirect': false,
+
         'auto-cookie': false,
+
         headers: Object.assign({
+
           'User-Agent': UA,
-          'Accept-Language':'en-US,en;q=0.9',
-          'Cache-Control':'no-cache'
-        },opt.headers || {})
+
+          'Accept-Language': 'en-US,en;q=0.9',
+
+          'Cache-Control': 'no-cache',
+
+          'Accept':
+            'text/html,application/json,text/plain,*/*'
+
+        }, opt.headers || {})
+
       };
 
-      if (POLICY) o.policy = POLICY;
-      if (opt.body !== undefined) o.body = opt.body;
-      const method = opt.method || 'get';
-
       try {
-        $httpClient[method](o, (e,r,d) => {
-          const h = {};
-          Object.keys((r && r.headers) || {}).forEach(k => h[k.toLowerCase()] = String(r.headers[k]));
 
-          resolve({
-            status: e || !r ? 0 : Number(r.status),
-            text: typeof d === 'string' ? d : '',
-            headers:h,
-            url
-          });
-        });
+        $httpClient.get(
+          options,
+          (error, response, data) => {
+
+            const headers = {};
+
+            Object.keys(
+              (response && response.headers) || {}
+            ).forEach(k => {
+
+              headers[k.toLowerCase()] =
+                String(response.headers[k]);
+
+            });
+
+            resolve({
+
+              status:
+                error || !response
+                  ? 0
+                  : Number(response.status),
+
+              text:
+                typeof data === 'string'
+                  ? data
+                  : '',
+
+              headers: headers,
+
+              url: url
+
+            });
+
+          }
+        );
+
       } catch (_) {
-        resolve({status:0,text:'',headers:{},url});
+
+        resolve({
+          status: 0,
+          text: '',
+          headers: {},
+          url: url
+        });
+
       }
+
     });
+
   }
 
-  function nextURL(r) {
-    const l=r.headers.location || '';
-    if (/^https:\/\//i.test(l)) return l;
-    if (/^\/(?!\/)/.test(l)) return r.url.match(/^https:\/\/[^/]+/i)[0]+l;
-    return '';
-  }
+  // Common Status Detection
 
-  function sameFamily(a,b) {
-    const host=u=>((u.match(/^https:\/\/([a-z0-9.-]+)(?:\/|$)/i)||[])[1]||'').toLowerCase();
-    const x=host(a), y=host(b);
-    return !!x && !!y && (x===y || x.replace(/^www\./,'')===y.replace(/^www\./,''));
-  }
+  function restricted(r) {
 
-  async function page(url) {
-    let r=await request(url);
-    let loc=nextURL(r);
+    if (!r.status) return false;
 
-    if (r.status>=300 && r.status<400 && loc && !geo.test(loc) && !/\/(?:unavailable|intl)(?:[/?#]|$)/i.test(loc) && sameFamily(url,loc)) {
-      const n=await request(loc);
-      n.firstLocation=loc;
-      return n;
+    const loc = r.headers.location || '';
+
+    if (r.status === 451 || geo.test(loc)) {
+      return true;
     }
-    return r;
-  }
 
-  function basic(r) {
-    if (!r.status) return unknown;
-    if (r.status===451 || geo.test(r.headers.location||'') || (r.status<500 && !challenge.test(r.text) && geo.test(r.text))) return no();
-    if (challenge.test(r.text) || [403,429].includes(r.status) || r.status>=500) return unknown;
-    if (r.status>=200 && r.status<400) return partial();
-    return unknown;
+    if (challenge.test(r.text)) {
+      return false;
+    }
+
+    return geo.test(r.text);
+
   }
 
   function usable(r) {
-    return r.status>=200 && r.status<300 && !challenge.test(r.text);
+
+    return r.status >= 200 &&
+      r.status < 300 &&
+      !challenge.test(r.text) &&
+      !restricted(r);
+
   }
 
-  function pathRegion(u) {
-    const m=String(u||'').match(/^https:\/\/[^/]+\/([a-z]{2})(?:-[a-z]{2})?(?:[/?#]|$)/i);
-    return m?cc(m[1]):'';
+  // Same-domain Redirect
+
+  function nextURL(r, domain) {
+
+    let loc = r.headers.location || '';
+
+    if (!loc) return '';
+
+    if (/^\/\//.test(loc)) {
+      loc = 'https:' + loc;
+    }
+
+    if (/^\/(?!\/)/.test(loc)) {
+      loc = 'https://' + domain + loc;
+    }
+
+    const m = loc.match(
+      /^https:\/\/([^/]+)(?:\/|$)/i
+    );
+
+    if (!m) return '';
+
+    if (m[1].toLowerCase() !== domain) {
+      return '';
+    }
+
+    return loc;
+
   }
 
-  // ChatGPT
-  async function gpt() {
-    const r=await request('https://chatgpt.com/cdn-cgi/trace');
-    const b=basic(r);
+  async function page(url, domain) {
 
-    if(b!==partial())return b;
+    let r = await request(url);
 
-    const c=cc((r.text.match(/^loc=([A-Z]{2})\s*$/m)||[])[1]);
+    for (let i = 0; i < 2; i++) {
 
-    return c?partial(c):basic(await page('https://chatgpt.com/'));
+      if (
+        r.status < 300 ||
+        r.status >= 400 ||
+        restricted(r)
+      ) {
+        break;
+      }
+
+      const loc = nextURL(r, domain);
+
+      if (!loc || loc === r.url) break;
+
+      r = await request(loc);
+
+    }
+
+    return r;
+
   }
 
-  // Claude
+  // Cloudflare Region Detection
+
+  function traceRegion(r) {
+
+    if (!usable(r)) return '';
+
+    const m = r.text.match(
+      /^loc=([A-Z]{2})\s*$/im
+    );
+
+    return m ? cc(m[1]) : '';
+
+  }
+
+  // ==================================
+  // 01. ChatGPT
+  // ==================================
+
+  async function chatgpt() {
+
+    const results = await Promise.all([
+
+      request(
+        'https://chatgpt.com/cdn-cgi/trace'
+      ),
+
+      request(
+        'https://chatgpt.com/backend-anon/models',
+        {
+          headers: {
+            'Accept': 'application/json'
+          }
+        }
+      ),
+
+      page(
+        'https://chatgpt.com/',
+        'chatgpt.com'
+      )
+
+    ]);
+
+    const trace = results[0];
+
+    const models = results[1];
+
+    const web = results[2];
+
+    const c = traceRegion(trace);
+
+    if (
+      restricted(models) ||
+      restricted(web)
+    ) {
+
+      return no(c);
+
+    }
+
+    if (usable(models)) {
+
+      try {
+
+        const data = JSON.parse(models.text);
+
+        if (
+          c &&
+          Array.isArray(data.models) &&
+          data.models.length > 0
+        ) {
+
+          return ok(c);
+
+        }
+
+      } catch (_) {}
+
+    }
+
+    if (c) return partial(c);
+
+    if (usable(web)) return partial();
+
+    return unknown;
+
+  }
+
+  // ==================================
+  // 02. Claude
+  // ==================================
+
   async function claude() {
-    const r=await page('https://claude.ai/');
-    return basic(r);
+
+    const results = await Promise.all([
+
+      request(
+        'https://claude.ai/cdn-cgi/trace'
+      ),
+
+      page(
+        'https://claude.ai/',
+        'claude.ai'
+      )
+
+    ]);
+
+    const trace = results[0];
+
+    const web = results[1];
+
+    const c = traceRegion(trace);
+
+    if (
+      restricted(trace) ||
+      restricted(web)
+    ) {
+
+      return no(c);
+
+    }
+
+    // Trace confirms the network region,
+    // not authenticated account access.
+
+    if (c) return partial(c);
+
+    if (usable(web)) return partial();
+
+    return unknown;
+
   }
 
-  // Gemini
-  const reach = url => async () => basic(await page(url));
+  // ==================================
+  // 03. Gemini
+  // ==================================
+
+  async function gemini() {
+
+    const results = await Promise.all([
+
+      page(
+        'https://gemini.google.com/',
+        'gemini.google.com'
+      ),
+
+      page(
+        'https://gemini.google.com/app',
+        'gemini.google.com'
+      )
+
+    ]);
+
+    const regions = [];
+
+    for (const r of results) {
+
+      if (!usable(r)) continue;
+
+      const body = r.text.replace(/\\"/g, '"');
+
+      const matches = body.matchAll(
+        /,\s*2,\s*1,\s*200,\s*"([A-Z]{3})"/g
+      );
+
+      for (const m of matches) {
+
+        const c = cc(m[1]);
+
+        if (c) regions.push(c);
+
+      }
+
+    }
+
+    const unique = [...new Set(regions)];
+
+    const c =
+      unique.length === 1
+        ? unique[0]
+        : '';
+
+    if (results.some(restricted)) {
+
+      return no(c);
+
+    }
+
+    // Conflicting regions are not guessed.
+
+    if (unique.length > 1) {
+      return unknown;
+    }
+
+    // Region signal detected directly
+    // from Gemini's own page.
+
+    if (c) return partial(c);
+
+    if (results.some(usable)) {
+
+      return partial();
+
+    }
+
+    return unknown;
+
+  }
+
+  // ==================================
+  // AI Services
+  // ==================================
 
   const services = [
-    ['GPT',gpt],
-    ['Claude',claude],
-    ['Gemini',reach('https://gemini.google.com/')]
+
+    ['ChatGPT', chatgpt],
+
+    ['Claude', claude],
+
+    ['Gemini', gemini]
+
   ];
 
-  const rows=[3];
-  const values=services.map(()=>unknown);
-  let complete=false;
+  const values = {};
 
-  function finish(){
-    if(complete)return;
-    complete=true;
+  services.forEach(s => {
+    values[s[0]] = unknown;
+  });
 
-    const d=new Date();
-    const pad=n=>('0'+n).slice(-2);
-    let i=0;
+  let complete = false;
 
-    const content=rows.map(n=>services.slice(i,i+n).map((s,j)=>s[0]+': '+values[i+j]).join(' | ')+(i+=n,'')).join('\n');
+  // ==================================
+  // Panel Layout
+  // ==================================
 
-    $done({
-      title:'AI Detection | '+pad(d.getHours())+':'+pad(d.getMinutes()),
-      content,
-      icon:'lock.open.display',
-      'icon-color':'#007AFF'
-    });
+  function result(name) {
+
+    return name + ': ' +
+      (values[name] || unknown);
+
   }
 
-  setTimeout(finish, 24*1000);
+  function finish() {
 
-  Promise.all(services.map((s,i)=>Promise.resolve().then(s[1]).then(v=>{
-    values[i]=v;
-    console.log(s[0]+': '+v);
-  }).catch(()=>{}))).then(finish);
+    if (complete) return;
+
+    complete = true;
+
+    clearTimeout(timer);
+
+    const d = new Date();
+
+    const pad = n =>
+      ('0' + n).slice(-2);
+
+    const content = [
+
+      result('ChatGPT') +
+        ' | ' +
+        result('Claude'),
+
+      result('Gemini')
+
+    ].join('\n');
+
+    $done({
+
+      title:
+        'AI Detection | ' +
+        pad(d.getHours()) + ':' +
+        pad(d.getMinutes()),
+
+      content: content,
+
+      icon: 'lock.open.display',
+
+      'icon-color': '#007AFF'
+
+    });
+
+  }
+
+  // ==================================
+  // Concurrent Detection
+  // ==================================
+
+  const timer = setTimeout(
+    finish,
+    24000
+  );
+
+  Promise.all(
+
+    services.map(s =>
+
+      Promise.resolve()
+
+        .then(s[1])
+
+        .then(v => {
+
+          values[s[0]] = v;
+
+          console.log(s[0] + ': ' + v);
+
+        })
+
+        .catch(() => {
+
+          values[s[0]] = unknown;
+
+        })
+
+    )
+
+  ).then(finish);
 
 })();
