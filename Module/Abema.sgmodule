@@ -1,0 +1,10 @@
+#!name=UnlockDetection
+#!desc=ABEMA Streaming Unlock Detection
+#!author=AllanRita
+#!category=Panel
+
+[Panel]
+ABEMA = script-name=AbemaCheck,update-interval=300
+
+[Script]
+AbemaCheck = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/AllanRita/Surge/main/Script/Abema.js,script-update-interval=300
