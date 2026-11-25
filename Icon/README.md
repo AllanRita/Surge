@@ -1,17 +1,15 @@
 # AllanRita Icon Library
 
-Version 2.0
-
 Surge 图标索引聚合；图片归原作者及相关权利人所有。未镜像图片。
-
-支持第三方图标库及个人补充图标自动合并。
 
 ## 订阅
 
 | 图标库 | 数量 | 地址 |
 |---|---:|---|
-| All.json | 4998 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
-| Flags.json | 340 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Flags.json) |
+| Packs/Apple-Emoji.json | 3587 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Emoji.json) |
+| Packs/Apple-Flags.json | 262 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Flags.json) |
+| All.json | 8585 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
+| Flags.json | 602 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Flags.json) |
 | Streaming.json | 390 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
 | AI.json | 59 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/AI.json) |
 | Packs/Qure-Color.json | 347 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Color.json) |
@@ -28,13 +26,6 @@ Surge 图标索引聚合；图片归原作者及相关权利人所有。未镜�
 | Packs/KeLee.json | 388 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/KeLee.json) |
 | Packs/fmz200.json | 1604 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/fmz200.json) |
 | Packs/KeLee-Flags.json | 262 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/KeLee-Flags.json) |
-| Custom.json | 4 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Custom.json) |
-
-## 个人补充图标
-
-Custom.json 为手动维护文件。
-自动合并进入 All.json 及对应分类图标库。
-不会被自动更新程序覆盖。
 
 ## 上游来源
 
@@ -54,12 +45,7 @@ Custom.json 为手动维护文件。
 - [KeLee-Flags](https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/ColorfulStaticFlag.json)
 - [Qure-Area](https://raw.githubusercontent.com/Koolson/Qure/master/Other/QureColor-Area.json)
 - [Qure-Media](https://raw.githubusercontent.com/Koolson/Qure/master/Other/QureColor-Media.json)
+- [Custom.json](Custom.json) — 个人补充图标及来源
+- [Apple Color Emoji](https://github.com/iamcal/emoji-data) — Apple Inc. 图像版权；外部链接，非商业用途。固定 Emoji 16.0 数据源。
 
-## 自动更新
-
-每周一北京时间 10:17 自动运行。
-支持手动触发 GitHub Actions。
-
-按图片链接去重，保留不同风格及原作者来源。
-分类由上游分类及关键词辅助整理，可能有遗漏。
-图片可用性依赖原作者服务器。
+按图片链接去重；保留不同风格。分类由上游分类及关键词辅助整理，可能有遗漏。图片可用性依赖原作者服务器。

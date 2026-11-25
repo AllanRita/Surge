@@ -3,12 +3,28 @@
   "description": "Original upstream image URLs and source credits retained.",
   "icons": [
     {
+      "name": "AC · Ascension Island Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1e8.png"
+    },
+    {
+      "name": "AD · Andorra Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1e9.png"
+    },
+    {
       "name": "AD · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AD.png"
     },
     {
       "name": "AE · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AE.png"
+    },
+    {
+      "name": "AE · United Arab Emirates Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1ea.png"
+    },
+    {
+      "name": "AF · Afghanistan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1eb.png"
     },
     {
       "name": "AF · KeLee-Flags",
@@ -19,16 +35,32 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Africa_Map.png"
     },
     {
+      "name": "AG · Antigua & Barbuda Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1ec.png"
+    },
+    {
       "name": "AG · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AG.png"
+    },
+    {
+      "name": "AI · Anguilla Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1ee.png"
     },
     {
       "name": "AI · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AI.png"
     },
     {
+      "name": "AL · Albania Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1f1.png"
+    },
+    {
       "name": "AL · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AL.png"
+    },
+    {
+      "name": "AM · Armenia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1f2.png"
     },
     {
       "name": "AM · KeLee-Flags",
@@ -43,8 +75,20 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AN.png"
     },
     {
+      "name": "AO · Angola Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1f4.png"
+    },
+    {
       "name": "AO · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AO.png"
+    },
+    {
+      "name": "AQ · Antarctica Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1f6.png"
+    },
+    {
+      "name": "AR · Argentina Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1f7.png"
     },
     {
       "name": "AR · KeLee-Flags",
@@ -55,6 +99,10 @@
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Country/Argentina/Argentina.png"
     },
     {
+      "name": "AS · American Samoa Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1f8.png"
+    },
+    {
       "name": "AS · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AS.png"
     },
@@ -63,8 +111,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Asia_Map.png"
     },
     {
+      "name": "AT · Austria Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1f9.png"
+    },
+    {
       "name": "AT · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AT.png"
+    },
+    {
+      "name": "AU · Australia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1fa.png"
     },
     {
       "name": "AU · KeLee-Flags",
@@ -83,6 +139,10 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Australia.png"
     },
     {
+      "name": "AW · Aruba Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1fc.png"
+    },
+    {
       "name": "AW · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AW.png"
     },
@@ -91,40 +151,84 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AX.png"
     },
     {
+      "name": "AX · Åland Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1fd.png"
+    },
+    {
+      "name": "AZ · Azerbaijan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1ff.png"
+    },
+    {
       "name": "AZ · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AZ.png"
+    },
+    {
+      "name": "BA · Bosnia & Herzegovina Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1e6.png"
     },
     {
       "name": "BA · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BA.png"
     },
     {
+      "name": "BB · Barbados Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1e7.png"
+    },
+    {
       "name": "BB · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BB.png"
+    },
+    {
+      "name": "BD · Bangladesh Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1e9.png"
     },
     {
       "name": "BD · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BD.png"
     },
     {
+      "name": "BE · Belgium Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1ea.png"
+    },
+    {
       "name": "BE · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BE.png"
+    },
+    {
+      "name": "BF · Burkina Faso Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1eb.png"
     },
     {
       "name": "BF · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BF.png"
     },
     {
+      "name": "BG · Bulgaria Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1ec.png"
+    },
+    {
       "name": "BG · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BG.png"
+    },
+    {
+      "name": "BH · Bahrain Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1ed.png"
     },
     {
       "name": "BH · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BH.png"
     },
     {
+      "name": "BI · Burundi Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1ee.png"
+    },
+    {
       "name": "BI · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BI.png"
+    },
+    {
+      "name": "BJ · Benin Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1ef.png"
     },
     {
       "name": "BJ · KeLee-Flags",
@@ -135,16 +239,40 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BL.png"
     },
     {
+      "name": "BL · St. Barthélemy Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f1.png"
+    },
+    {
+      "name": "BM · Bermuda Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f2.png"
+    },
+    {
       "name": "BM · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BM.png"
+    },
+    {
+      "name": "BN · Brunei Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f3.png"
     },
     {
       "name": "BN · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BN.png"
     },
     {
+      "name": "BO · Bolivia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f4.png"
+    },
+    {
       "name": "BO · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BO.png"
+    },
+    {
+      "name": "BQ · Caribbean Netherlands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f6.png"
+    },
+    {
+      "name": "BR · Brazil Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f7.png"
     },
     {
       "name": "BR · KeLee-Flags",
@@ -159,28 +287,56 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Brazil.png"
     },
     {
+      "name": "BS · Bahamas Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f8.png"
+    },
+    {
       "name": "BS · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BS.png"
+    },
+    {
+      "name": "BT · Bhutan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f9.png"
     },
     {
       "name": "BT · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BT.png"
     },
     {
+      "name": "BV · Bouvet Island Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1fb.png"
+    },
+    {
       "name": "BV · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BV.png"
+    },
+    {
+      "name": "BW · Botswana Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1fc.png"
     },
     {
       "name": "BW · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BW.png"
     },
     {
+      "name": "BY · Belarus Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1fe.png"
+    },
+    {
       "name": "BY · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BY.png"
     },
     {
+      "name": "BZ · Belize Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1ff.png"
+    },
+    {
       "name": "BZ · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BZ.png"
+    },
+    {
+      "name": "CA · Canada Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1e6.png"
     },
     {
       "name": "CA · KeLee-Flags",
@@ -207,8 +363,16 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CAS.png"
     },
     {
+      "name": "CC · Cocos (Keeling) Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1e8.png"
+    },
+    {
       "name": "CC · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CC.png"
+    },
+    {
+      "name": "CD · Congo - Kinshasa Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1e9.png"
     },
     {
       "name": "CD · KeLee-Flags",
@@ -219,8 +383,16 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CEU.png"
     },
     {
+      "name": "CF · Central African Republic Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1eb.png"
+    },
+    {
       "name": "CF · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CF.png"
+    },
+    {
+      "name": "CG · Congo - Brazzaville Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1ec.png"
     },
     {
       "name": "CG · KeLee-Flags",
@@ -229,6 +401,10 @@
     {
       "name": "CH · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CH.png"
+    },
+    {
+      "name": "CH · Switzerland Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1ed.png"
     },
     {
       "name": "China · Oasisic",
@@ -243,20 +419,40 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png"
     },
     {
+      "name": "CI · Côte d’Ivoire Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1ee.png"
+    },
+    {
       "name": "CI · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CI.png"
+    },
+    {
+      "name": "CK · Cook Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f0.png"
     },
     {
       "name": "CK · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CK.png"
     },
     {
+      "name": "CL · Chile Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f1.png"
+    },
+    {
       "name": "CL · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CL.png"
     },
     {
+      "name": "CM · Cameroon Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f2.png"
+    },
+    {
       "name": "CM · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CM.png"
+    },
+    {
+      "name": "CN · China Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f3.png"
     },
     {
       "name": "CN · KeLee-Flags",
@@ -275,12 +471,28 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CNA.png"
     },
     {
+      "name": "CO · Colombia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f4.png"
+    },
+    {
       "name": "CO · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CO.png"
     },
     {
       "name": "COC · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/COC.png"
+    },
+    {
+      "name": "CP · Clipperton Island Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f5.png"
+    },
+    {
+      "name": "CQ · Sark Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f6.png"
+    },
+    {
+      "name": "CR · Costa Rica Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f7.png"
     },
     {
       "name": "CR · KeLee-Flags",
@@ -291,28 +503,56 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CSA.png"
     },
     {
+      "name": "CU · Cuba Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1fa.png"
+    },
+    {
       "name": "CU · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CU.png"
+    },
+    {
+      "name": "CV · Cape Verde Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1fb.png"
     },
     {
       "name": "CV · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CV.png"
     },
     {
+      "name": "CW · Curaçao Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1fc.png"
+    },
+    {
       "name": "CW · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CW.png"
+    },
+    {
+      "name": "CX · Christmas Island Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1fd.png"
     },
     {
       "name": "CX · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CX.png"
     },
     {
+      "name": "CY · Cyprus Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1fe.png"
+    },
+    {
       "name": "CY · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CY.png"
     },
     {
+      "name": "CZ · Czechia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1ff.png"
+    },
+    {
       "name": "CZ · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CZ.png"
+    },
+    {
+      "name": "DE · Germany Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e9-1f1ea.png"
     },
     {
       "name": "DE · KeLee-Flags",
@@ -323,32 +563,72 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DE.png"
     },
     {
+      "name": "DG · Diego Garcia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e9-1f1ec.png"
+    },
+    {
+      "name": "DJ · Djibouti Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e9-1f1ef.png"
+    },
+    {
       "name": "DJ · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/DJ.png"
+    },
+    {
+      "name": "DK · Denmark Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e9-1f1f0.png"
     },
     {
       "name": "DK · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/DK.png"
     },
     {
+      "name": "DM · Dominica Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e9-1f1f2.png"
+    },
+    {
       "name": "DM · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/DM.png"
+    },
+    {
+      "name": "DO · Dominican Republic Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e9-1f1f4.png"
     },
     {
       "name": "DO · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/DO.png"
     },
     {
+      "name": "DZ · Algeria Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e9-1f1ff.png"
+    },
+    {
       "name": "DZ · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/DZ.png"
+    },
+    {
+      "name": "EA · Ceuta & Melilla Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1e6.png"
+    },
+    {
+      "name": "EC · Ecuador Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1e8.png"
     },
     {
       "name": "EC · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/EC.png"
     },
     {
+      "name": "EE · Estonia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1ea.png"
+    },
+    {
       "name": "EE · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/EE.png"
+    },
+    {
+      "name": "EG · Egypt Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1ec.png"
     },
     {
       "name": "EG · KeLee-Flags",
@@ -371,6 +651,18 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/EH.png"
     },
     {
+      "name": "EH · Western Sahara Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1ed.png"
+    },
+    {
+      "name": "England Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f3f4-e0067-e0062-e0065-e006e-e0067-e007f.png"
+    },
+    {
+      "name": "ER · Eritrea Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1f7.png"
+    },
+    {
       "name": "ER · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ER.png"
     },
@@ -379,8 +671,20 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ES.png"
     },
     {
+      "name": "ES · Spain Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1f8.png"
+    },
+    {
+      "name": "ET · Ethiopia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1f9.png"
+    },
+    {
       "name": "ET · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ET.png"
+    },
+    {
+      "name": "EU · European Union Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1fa.png"
     },
     {
       "name": "EU · KeLee-Flags",
@@ -399,6 +703,10 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png"
     },
     {
+      "name": "FI · Finland Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1eb-1f1ee.png"
+    },
+    {
       "name": "FI · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/FI.png"
     },
@@ -411,8 +719,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Finland.png"
     },
     {
+      "name": "FJ · Fiji Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1eb-1f1ef.png"
+    },
+    {
       "name": "FJ · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/FJ.png"
+    },
+    {
+      "name": "FK · Falkland Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1eb-1f1f0.png"
     },
     {
       "name": "FK · KeLee-Flags",
@@ -423,8 +739,20 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/FM.png"
     },
     {
+      "name": "FM · Micronesia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1eb-1f1f2.png"
+    },
+    {
+      "name": "FO · Faroe Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1eb-1f1f4.png"
+    },
+    {
       "name": "FO · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/FO.png"
+    },
+    {
+      "name": "FR · France Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1eb-1f1f7.png"
     },
     {
       "name": "FR · KeLee-Flags",
@@ -439,12 +767,20 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/France.png"
     },
     {
+      "name": "GA · Gabon Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1e6.png"
+    },
+    {
       "name": "GA · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GA.png"
     },
     {
       "name": "GB · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GB.png"
+    },
+    {
+      "name": "GB · United Kingdom Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1e7.png"
     },
     {
       "name": "GB-ENG · KeLee-Flags",
@@ -467,8 +803,16 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GB-ZET.png"
     },
     {
+      "name": "GD · Grenada Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1e9.png"
+    },
+    {
       "name": "GD · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GD.png"
+    },
+    {
+      "name": "GE · Georgia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1ea.png"
     },
     {
       "name": "GE · KeLee-Flags",
@@ -483,40 +827,80 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Germany.png"
     },
     {
+      "name": "GF · French Guiana Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1eb.png"
+    },
+    {
       "name": "GF · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GF.png"
+    },
+    {
+      "name": "GG · Guernsey Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1ec.png"
     },
     {
       "name": "GG · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GG.png"
     },
     {
+      "name": "GH · Ghana Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1ed.png"
+    },
+    {
       "name": "GH · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GH.png"
+    },
+    {
+      "name": "GI · Gibraltar Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1ee.png"
     },
     {
       "name": "GI · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GI.png"
     },
     {
+      "name": "GL · Greenland Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f1.png"
+    },
+    {
       "name": "GL · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GL.png"
+    },
+    {
+      "name": "GM · Gambia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f2.png"
     },
     {
       "name": "GM · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GM.png"
     },
     {
+      "name": "GN · Guinea Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f3.png"
+    },
+    {
       "name": "GN · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GN.png"
+    },
+    {
+      "name": "GP · Guadeloupe Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f5.png"
     },
     {
       "name": "GP · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GP.png"
     },
     {
+      "name": "GQ · Equatorial Guinea Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f6.png"
+    },
+    {
       "name": "GQ · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GQ.png"
+    },
+    {
+      "name": "GR · Greece Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f7.png"
     },
     {
       "name": "GR · KeLee-Flags",
@@ -527,20 +911,44 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GS.png"
     },
     {
+      "name": "GS · South Georgia & South Sandwich Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f8.png"
+    },
+    {
+      "name": "GT · Guatemala Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f9.png"
+    },
+    {
       "name": "GT · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GT.png"
+    },
+    {
+      "name": "GU · Guam Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1fa.png"
     },
     {
       "name": "GU · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GU.png"
     },
     {
+      "name": "GW · Guinea-Bissau Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1fc.png"
+    },
+    {
       "name": "GW · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GW.png"
     },
     {
+      "name": "GY · Guyana Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1fe.png"
+    },
+    {
       "name": "GY · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GY.png"
+    },
+    {
+      "name": "HK · Hong Kong SAR China Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ed-1f1f0.png"
     },
     {
       "name": "HK · KeLee-Flags",
@@ -551,8 +959,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HK.png"
     },
     {
+      "name": "HM · Heard & McDonald Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ed-1f1f2.png"
+    },
+    {
       "name": "HM · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/HM.png"
+    },
+    {
+      "name": "HN · Honduras Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ed-1f1f3.png"
     },
     {
       "name": "HN · KeLee-Flags",
@@ -567,32 +983,68 @@
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Country/HongKong/HongKong.png"
     },
     {
+      "name": "HR · Croatia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ed-1f1f7.png"
+    },
+    {
       "name": "HR · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/HR.png"
+    },
+    {
+      "name": "HT · Haiti Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ed-1f1f9.png"
     },
     {
       "name": "HT · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/HT.png"
     },
     {
+      "name": "HU · Hungary Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ed-1f1fa.png"
+    },
+    {
       "name": "HU · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/HU.png"
+    },
+    {
+      "name": "IC · Canary Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1e8.png"
+    },
+    {
+      "name": "ID · Indonesia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1e9.png"
     },
     {
       "name": "ID · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ID.png"
     },
     {
+      "name": "IE · Ireland Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1ea.png"
+    },
+    {
       "name": "IE · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IE.png"
+    },
+    {
+      "name": "IL · Israel Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f1.png"
     },
     {
       "name": "IL · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IL.png"
     },
     {
+      "name": "IM · Isle of Man Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f2.png"
+    },
+    {
       "name": "IM · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IM.png"
+    },
+    {
+      "name": "IN · India Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f3.png"
     },
     {
       "name": "IN · KeLee-Flags",
@@ -611,20 +1063,40 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/India.png"
     },
     {
+      "name": "IO · British Indian Ocean Territory Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f4.png"
+    },
+    {
       "name": "IO · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IO.png"
+    },
+    {
+      "name": "IQ · Iraq Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f6.png"
     },
     {
       "name": "IQ · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IQ.png"
     },
     {
+      "name": "IR · Iran Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f7.png"
+    },
+    {
       "name": "IR · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IR.png"
     },
     {
+      "name": "IS · Iceland Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f8.png"
+    },
+    {
       "name": "IS · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IS.png"
+    },
+    {
+      "name": "IT · Italy Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f9.png"
     },
     {
       "name": "IT · KeLee-Flags",
@@ -639,16 +1111,32 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png"
     },
     {
+      "name": "JE · Jersey Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ef-1f1ea.png"
+    },
+    {
       "name": "JE · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/JE.png"
+    },
+    {
+      "name": "JM · Jamaica Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ef-1f1f2.png"
     },
     {
       "name": "JM · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/JM.png"
     },
     {
+      "name": "JO · Jordan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ef-1f1f4.png"
+    },
+    {
       "name": "JO · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/JO.png"
+    },
+    {
+      "name": "JP · Japan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ef-1f1f5.png"
     },
     {
       "name": "JP · KeLee-Flags",
@@ -663,8 +1151,20 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KE.png"
     },
     {
+      "name": "KE · Kenya Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1ea.png"
+    },
+    {
       "name": "KG · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KG.png"
+    },
+    {
+      "name": "KG · Kyrgyzstan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1ec.png"
+    },
+    {
+      "name": "KH · Cambodia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1ed.png"
     },
     {
       "name": "KH · KeLee-Flags",
@@ -675,12 +1175,24 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KI.png"
     },
     {
+      "name": "KI · Kiribati Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1ee.png"
+    },
+    {
+      "name": "KM · Comoros Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1f2.png"
+    },
+    {
       "name": "KM · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KM.png"
     },
     {
       "name": "KN · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KN.png"
+    },
+    {
+      "name": "KN · St. Kitts & Nevis Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1f3.png"
     },
     {
       "name": "Korea · Oasisic",
@@ -695,6 +1207,10 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KP.png"
     },
     {
+      "name": "KP · North Korea Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1f5.png"
+    },
+    {
       "name": "KR · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KR.png"
     },
@@ -703,12 +1219,28 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png"
     },
     {
+      "name": "KR · South Korea Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1f7.png"
+    },
+    {
       "name": "KW · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KW.png"
     },
     {
+      "name": "KW · Kuwait Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1fc.png"
+    },
+    {
+      "name": "KY · Cayman Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1fe.png"
+    },
+    {
       "name": "KY · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KY.png"
+    },
+    {
+      "name": "KZ · Kazakhstan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1ff.png"
     },
     {
       "name": "KZ · KeLee-Flags",
@@ -719,12 +1251,24 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LA.png"
     },
     {
+      "name": "LA · Laos Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1e6.png"
+    },
+    {
       "name": "LB · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LB.png"
     },
     {
+      "name": "LB · Lebanon Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1e7.png"
+    },
+    {
       "name": "LC · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LC.png"
+    },
+    {
+      "name": "LC · St. Lucia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1e8.png"
     },
     {
       "name": "LGBT · KeLee-Flags",
@@ -735,36 +1279,72 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LI.png"
     },
     {
+      "name": "LI · Liechtenstein Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1ee.png"
+    },
+    {
       "name": "LK · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LK.png"
+    },
+    {
+      "name": "LK · Sri Lanka Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1f0.png"
     },
     {
       "name": "LR · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LR.png"
     },
     {
+      "name": "LR · Liberia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1f7.png"
+    },
+    {
       "name": "LS · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LS.png"
+    },
+    {
+      "name": "LS · Lesotho Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1f8.png"
     },
     {
       "name": "LT · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LT.png"
     },
     {
+      "name": "LT · Lithuania Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1f9.png"
+    },
+    {
       "name": "LU · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LU.png"
+    },
+    {
+      "name": "LU · Luxembourg Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1fa.png"
     },
     {
       "name": "LV · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LV.png"
     },
     {
+      "name": "LV · Latvia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1fb.png"
+    },
+    {
       "name": "LY · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LY.png"
     },
     {
+      "name": "LY · Libya Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1fe.png"
+    },
+    {
       "name": "MA · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MA.png"
+    },
+    {
+      "name": "MA · Morocco Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1e6.png"
     },
     {
       "name": "Macao · Qure-Area",
@@ -779,44 +1359,88 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MC.png"
     },
     {
+      "name": "MC · Monaco Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1e8.png"
+    },
+    {
       "name": "MD · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MD.png"
+    },
+    {
+      "name": "MD · Moldova Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1e9.png"
     },
     {
       "name": "ME · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ME.png"
     },
     {
+      "name": "ME · Montenegro Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1ea.png"
+    },
+    {
       "name": "MF · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MF.png"
+    },
+    {
+      "name": "MF · St. Martin Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1eb.png"
     },
     {
       "name": "MG · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MG.png"
     },
     {
+      "name": "MG · Madagascar Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1ec.png"
+    },
+    {
       "name": "MH · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MH.png"
+    },
+    {
+      "name": "MH · Marshall Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1ed.png"
     },
     {
       "name": "MK · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MK.png"
     },
     {
+      "name": "MK · North Macedonia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f0.png"
+    },
+    {
       "name": "ML · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ML.png"
+    },
+    {
+      "name": "ML · Mali Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f1.png"
     },
     {
       "name": "MM · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MM.png"
     },
     {
+      "name": "MM · Myanmar (Burma) Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f2.png"
+    },
+    {
       "name": "MN · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MN.png"
     },
     {
+      "name": "MN · Mongolia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f3.png"
+    },
+    {
       "name": "MO · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MO.png"
+    },
+    {
+      "name": "MO · Macao SAR China Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f4.png"
     },
     {
       "name": "MO · Qure-Area",
@@ -827,8 +1451,20 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MP.png"
     },
     {
+      "name": "MP · Northern Mariana Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f5.png"
+    },
+    {
+      "name": "MQ · Martinique Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f6.png"
+    },
+    {
       "name": "MQ_2 · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MQ_2.png"
+    },
+    {
+      "name": "MR · Mauritania Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f7.png"
     },
     {
       "name": "MR_2 · KeLee-Flags",
@@ -839,28 +1475,56 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MS.png"
     },
     {
+      "name": "MS · Montserrat Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f8.png"
+    },
+    {
       "name": "MT · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MT.png"
+    },
+    {
+      "name": "MT · Malta Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f9.png"
     },
     {
       "name": "MU · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MU.png"
     },
     {
+      "name": "MU · Mauritius Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1fa.png"
+    },
+    {
       "name": "MV · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MV.png"
+    },
+    {
+      "name": "MV · Maldives Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1fb.png"
     },
     {
       "name": "MW · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MW.png"
     },
     {
+      "name": "MW · Malawi Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1fc.png"
+    },
+    {
       "name": "MX · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MX.png"
     },
     {
+      "name": "MX · Mexico Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1fd.png"
+    },
+    {
       "name": "MY · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MY.png"
+    },
+    {
+      "name": "MY · Malaysia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1fe.png"
     },
     {
       "name": "MY · Qure-Area",
@@ -871,16 +1535,32 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MZ.png"
     },
     {
+      "name": "MZ · Mozambique Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1ff.png"
+    },
+    {
       "name": "NA · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NA.png"
+    },
+    {
+      "name": "NA · Namibia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1e6.png"
     },
     {
       "name": "NC · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NC.png"
     },
     {
+      "name": "NC · New Caledonia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1e8.png"
+    },
+    {
       "name": "NE · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NE.png"
+    },
+    {
+      "name": "NE · Niger Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1ea.png"
     },
     {
       "name": "Netherlands · Oasisic",
@@ -891,12 +1571,24 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NF.png"
     },
     {
+      "name": "NF · Norfolk Island Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1eb.png"
+    },
+    {
       "name": "NG · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NG.png"
     },
     {
+      "name": "NG · Nigeria Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1ec.png"
+    },
+    {
       "name": "NI · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NI.png"
+    },
+    {
+      "name": "NI · Nicaragua Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1ee.png"
     },
     {
       "name": "Nigeria · Oasisic",
@@ -907,8 +1599,16 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NL.png"
     },
     {
+      "name": "NL · Netherlands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1f1.png"
+    },
+    {
       "name": "NO · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NO.png"
+    },
+    {
+      "name": "NO · Norway Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1f4.png"
     },
     {
       "name": "NorthKorea · Oasisic",
@@ -919,12 +1619,24 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NP.png"
     },
     {
+      "name": "NP · Nepal Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1f5.png"
+    },
+    {
       "name": "NR · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NR.png"
     },
     {
+      "name": "NR · Nauru Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1f7.png"
+    },
+    {
       "name": "NU · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NU.png"
+    },
+    {
+      "name": "NU · Niue Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1fa.png"
     },
     {
       "name": "Null_Nation · Qure-Area",
@@ -935,6 +1647,10 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NZ.png"
     },
     {
+      "name": "NZ · New Zealand Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1ff.png"
+    },
+    {
       "name": "Oceania_Map · Qure-Area",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Oceania_Map.png"
     },
@@ -943,12 +1659,28 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/OM.png"
     },
     {
+      "name": "OM · Oman Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f4-1f1f2.png"
+    },
+    {
       "name": "PA · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PA.png"
     },
     {
+      "name": "PA · Panama Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1e6.png"
+    },
+    {
       "name": "PE · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PE.png"
+    },
+    {
+      "name": "PE · Peru Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1ea.png"
+    },
+    {
+      "name": "PF · French Polynesia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1eb.png"
     },
     {
       "name": "PF · KeLee-Flags",
@@ -959,8 +1691,16 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PG.png"
     },
     {
+      "name": "PG · Papua New Guinea Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1ec.png"
+    },
+    {
       "name": "PH · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PH.png"
+    },
+    {
+      "name": "PH · Philippines Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1ed.png"
     },
     {
       "name": "PH · Qure-Area",
@@ -975,16 +1715,32 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PK.png"
     },
     {
+      "name": "PK · Pakistan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1f0.png"
+    },
+    {
       "name": "PL · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PL.png"
+    },
+    {
+      "name": "PL · Poland Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1f1.png"
     },
     {
       "name": "PM · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PM.png"
     },
     {
+      "name": "PM · St. Pierre & Miquelon Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1f2.png"
+    },
+    {
       "name": "PN · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PN.png"
+    },
+    {
+      "name": "PN · Pitcairn Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1f3.png"
     },
     {
       "name": "Poland · Oasisic",
@@ -995,36 +1751,72 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PR.png"
     },
     {
+      "name": "PR · Puerto Rico Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1f7.png"
+    },
+    {
       "name": "PS · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PS.png"
+    },
+    {
+      "name": "PS · Palestinian Territories Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1f8.png"
     },
     {
       "name": "PT · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PT.png"
     },
     {
+      "name": "PT · Portugal Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1f9.png"
+    },
+    {
       "name": "PW · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PW.png"
+    },
+    {
+      "name": "PW · Palau Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1fc.png"
     },
     {
       "name": "PY · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PY.png"
     },
     {
+      "name": "PY · Paraguay Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1fe.png"
+    },
+    {
       "name": "QA · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/QA.png"
+    },
+    {
+      "name": "QA · Qatar Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f6-1f1e6.png"
     },
     {
       "name": "RE · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/RE.png"
     },
     {
+      "name": "RE · Réunion Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f7-1f1ea.png"
+    },
+    {
       "name": "RO · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/RO.png"
     },
     {
+      "name": "RO · Romania Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f7-1f1f4.png"
+    },
+    {
       "name": "RS · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/RS.png"
+    },
+    {
+      "name": "RS · Serbia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f7-1f1f8.png"
     },
     {
       "name": "RU · KeLee-Flags",
@@ -1035,6 +1827,10 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/RU.png"
     },
     {
+      "name": "RU · Russia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f7-1f1fa.png"
+    },
+    {
       "name": "Russia · Qure-Area",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Russia.png"
     },
@@ -1043,24 +1839,52 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/RW.png"
     },
     {
+      "name": "RW · Rwanda Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f7-1f1fc.png"
+    },
+    {
       "name": "SA · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SA.png"
+    },
+    {
+      "name": "SA · Saudi Arabia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1e6.png"
     },
     {
       "name": "SB · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SB.png"
     },
     {
+      "name": "SB · Solomon Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1e7.png"
+    },
+    {
       "name": "SC · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SC.png"
+    },
+    {
+      "name": "SC · Seychelles Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1e8.png"
+    },
+    {
+      "name": "Scotland Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f3f4-e0067-e0062-e0073-e0063-e0074-e007f.png"
     },
     {
       "name": "SD · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SD.png"
     },
     {
+      "name": "SD · Sudan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1e9.png"
+    },
+    {
       "name": "SE · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SE.png"
+    },
+    {
+      "name": "SE · Sweden Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1ea.png"
     },
     {
       "name": "SG · KeLee-Flags",
@@ -1071,12 +1895,24 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png"
     },
     {
+      "name": "SG · Singapore Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1ec.png"
+    },
+    {
+      "name": "SH · St. Helena Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1ed.png"
+    },
+    {
       "name": "SH_2 · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SH_2.png"
     },
     {
       "name": "SI · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SI.png"
+    },
+    {
+      "name": "SI · Slovenia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1ee.png"
     },
     {
       "name": "Singapore · Oasisic",
@@ -1087,6 +1923,10 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png"
     },
     {
+      "name": "SJ · Svalbard & Jan Mayen Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1ef.png"
+    },
+    {
       "name": "SJ_2 · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SJ_2.png"
     },
@@ -1095,20 +1935,40 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SK.png"
     },
     {
+      "name": "SK · Slovakia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f0.png"
+    },
+    {
       "name": "SL · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SL.png"
+    },
+    {
+      "name": "SL · Sierra Leone Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f1.png"
     },
     {
       "name": "SM · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SM.png"
     },
     {
+      "name": "SM · San Marino Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f2.png"
+    },
+    {
       "name": "SN · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SN.png"
     },
     {
+      "name": "SN · Senegal Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f3.png"
+    },
+    {
       "name": "SO · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SO.png"
+    },
+    {
+      "name": "SO · Somalia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f4.png"
     },
     {
       "name": "Spain · Oasisic",
@@ -1119,12 +1979,28 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SR.png"
     },
     {
+      "name": "SR · Suriname Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f7.png"
+    },
+    {
       "name": "SS · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SS.png"
     },
     {
+      "name": "SS · South Sudan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f8.png"
+    },
+    {
       "name": "ST · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ST.png"
+    },
+    {
+      "name": "ST · São Tomé & Príncipe Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f9.png"
+    },
+    {
+      "name": "SV · El Salvador Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1fb.png"
     },
     {
       "name": "SV · KeLee-Flags",
@@ -1135,12 +2011,28 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SX.png"
     },
     {
+      "name": "SX · Sint Maarten Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1fd.png"
+    },
+    {
       "name": "SY · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SY.png"
     },
     {
+      "name": "SY · Syria Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1fe.png"
+    },
+    {
+      "name": "SZ · Eswatini Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1ff.png"
+    },
+    {
       "name": "SZ · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SZ.png"
+    },
+    {
+      "name": "TA · Tristan da Cunha Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1e6.png"
     },
     {
       "name": "Taiwan · TW · Apple Emoji · Custom",
@@ -1151,12 +2043,28 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TC.png"
     },
     {
+      "name": "TC · Turks & Caicos Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1e8.png"
+    },
+    {
+      "name": "TD · Chad Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1e9.png"
+    },
+    {
       "name": "TD · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TD.png"
     },
     {
+      "name": "TF · French Southern Territories Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1eb.png"
+    },
+    {
       "name": "TG · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TG.png"
+    },
+    {
+      "name": "TG · Togo Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1ec.png"
     },
     {
       "name": "TH · KeLee-Flags",
@@ -1165,6 +2073,10 @@
     {
       "name": "TH · Qure-Area",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TH.png"
+    },
+    {
+      "name": "TH · Thailand Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1ed.png"
     },
     {
       "name": "Thailand · Oasisic",
@@ -1179,24 +2091,48 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TJ.png"
     },
     {
+      "name": "TJ · Tajikistan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1ef.png"
+    },
+    {
       "name": "TK · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TK.png"
+    },
+    {
+      "name": "TK · Tokelau Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1f0.png"
     },
     {
       "name": "TL · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TL.png"
     },
     {
+      "name": "TL · Timor-Leste Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1f1.png"
+    },
+    {
       "name": "TM · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TM.png"
+    },
+    {
+      "name": "TM · Turkmenistan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1f2.png"
     },
     {
       "name": "TN · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TN.png"
     },
     {
+      "name": "TN · Tunisia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1f3.png"
+    },
+    {
       "name": "TO · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TO.png"
+    },
+    {
+      "name": "TO · Tonga Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1f4.png"
     },
     {
       "name": "TR · KeLee-Flags",
@@ -1207,8 +2143,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TR.png"
     },
     {
+      "name": "TR · Türkiye Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1f7.png"
+    },
+    {
       "name": "TT · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TT.png"
+    },
+    {
+      "name": "TT · Trinidad & Tobago Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1f9.png"
     },
     {
       "name": "Turkey · Oasisic",
@@ -1223,20 +2167,40 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TV.png"
     },
     {
+      "name": "TV · Tuvalu Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1fb.png"
+    },
+    {
       "name": "TW · Qure-Area",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png"
+    },
+    {
+      "name": "TW · Taiwan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1fc.png"
     },
     {
       "name": "TZ · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TZ.png"
     },
     {
+      "name": "TZ · Tanzania Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1ff.png"
+    },
+    {
       "name": "UA · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/UA.png"
     },
     {
+      "name": "UA · Ukraine Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fa-1f1e6.png"
+    },
+    {
       "name": "UG · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/UG.png"
+    },
+    {
+      "name": "UG · Uganda Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fa-1f1ec.png"
     },
     {
       "name": "UK · Oasisic",
@@ -1251,8 +2215,16 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/UM.png"
     },
     {
+      "name": "UM · U.S. Outlying Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fa-1f1f2.png"
+    },
+    {
       "name": "UN · Qure-Area",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/UN.png"
+    },
+    {
+      "name": "UN · United Nations Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fa-1f1f3.png"
     },
     {
       "name": "United_Kingdom · Qure-Area",
@@ -1283,6 +2255,10 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png"
     },
     {
+      "name": "US · United States Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fa-1f1f8.png"
+    },
+    {
       "name": "US-CA · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/US-CA.png"
     },
@@ -1291,20 +2267,44 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/UY.png"
     },
     {
+      "name": "UY · Uruguay Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fa-1f1fe.png"
+    },
+    {
       "name": "UZ · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/UZ.png"
+    },
+    {
+      "name": "UZ · Uzbekistan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fa-1f1ff.png"
     },
     {
       "name": "VA · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/VA.png"
     },
     {
+      "name": "VA · Vatican City Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fb-1f1e6.png"
+    },
+    {
       "name": "VC · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/VC.png"
     },
     {
+      "name": "VC · St. Vincent & Grenadines Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fb-1f1e8.png"
+    },
+    {
       "name": "VE · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/VE.png"
+    },
+    {
+      "name": "VE · Venezuela Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fb-1f1ea.png"
+    },
+    {
+      "name": "VG · British Virgin Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fb-1f1ec.png"
     },
     {
       "name": "VG · KeLee-Flags",
@@ -1315,16 +2315,36 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/VI.png"
     },
     {
+      "name": "VI · U.S. Virgin Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fb-1f1ee.png"
+    },
+    {
       "name": "VN · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/VN.png"
+    },
+    {
+      "name": "VN · Vietnam Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fb-1f1f3.png"
     },
     {
       "name": "VU · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/VU.png"
     },
     {
+      "name": "VU · Vanuatu Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fb-1f1fa.png"
+    },
+    {
+      "name": "Wales Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f3f4-e0067-e0062-e0077-e006c-e0073-e007f.png"
+    },
+    {
       "name": "WF · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/WF.png"
+    },
+    {
+      "name": "WF · Wallis & Futuna Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fc-1f1eb.png"
     },
     {
       "name": "World_Map · Qure-Area",
@@ -1335,6 +2355,10 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/WS.png"
     },
     {
+      "name": "WS · Samoa Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fc-1f1f8.png"
+    },
+    {
       "name": "WW · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/WW.png"
     },
@@ -1343,24 +2367,48 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/XK.png"
     },
     {
+      "name": "XK · Kosovo Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fd-1f1f0.png"
+    },
+    {
       "name": "YE · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/YE.png"
+    },
+    {
+      "name": "YE · Yemen Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fe-1f1ea.png"
     },
     {
       "name": "YT · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/YT.png"
     },
     {
+      "name": "YT · Mayotte Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fe-1f1f9.png"
+    },
+    {
       "name": "ZA · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ZA.png"
+    },
+    {
+      "name": "ZA · South Africa Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ff-1f1e6.png"
     },
     {
       "name": "ZM · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ZM.png"
     },
     {
+      "name": "ZM · Zambia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ff-1f1f2.png"
+    },
+    {
       "name": "ZW · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ZW.png"
+    },
+    {
+      "name": "ZW · Zimbabwe Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ff-1f1fc.png"
     }
   ]
 }

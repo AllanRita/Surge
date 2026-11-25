@@ -1,0 +1,1054 @@
+{
+  "name": "AllanRita · Apple 地区旗帜",
+  "description": "Original upstream image URLs and source credits retained.",
+  "icons": [
+    {
+      "name": "AC · Ascension Island Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1e8.png"
+    },
+    {
+      "name": "AD · Andorra Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1e9.png"
+    },
+    {
+      "name": "AE · United Arab Emirates Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1ea.png"
+    },
+    {
+      "name": "AF · Afghanistan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1eb.png"
+    },
+    {
+      "name": "AG · Antigua & Barbuda Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1ec.png"
+    },
+    {
+      "name": "AI · Anguilla Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1ee.png"
+    },
+    {
+      "name": "AL · Albania Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1f1.png"
+    },
+    {
+      "name": "AM · Armenia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1f2.png"
+    },
+    {
+      "name": "AO · Angola Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1f4.png"
+    },
+    {
+      "name": "AQ · Antarctica Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1f6.png"
+    },
+    {
+      "name": "AR · Argentina Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1f7.png"
+    },
+    {
+      "name": "AS · American Samoa Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1f8.png"
+    },
+    {
+      "name": "AT · Austria Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1f9.png"
+    },
+    {
+      "name": "AU · Australia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1fa.png"
+    },
+    {
+      "name": "AW · Aruba Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1fc.png"
+    },
+    {
+      "name": "AX · Åland Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1fd.png"
+    },
+    {
+      "name": "AZ · Azerbaijan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e6-1f1ff.png"
+    },
+    {
+      "name": "BA · Bosnia & Herzegovina Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1e6.png"
+    },
+    {
+      "name": "BB · Barbados Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1e7.png"
+    },
+    {
+      "name": "BD · Bangladesh Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1e9.png"
+    },
+    {
+      "name": "BE · Belgium Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1ea.png"
+    },
+    {
+      "name": "BF · Burkina Faso Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1eb.png"
+    },
+    {
+      "name": "BG · Bulgaria Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1ec.png"
+    },
+    {
+      "name": "BH · Bahrain Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1ed.png"
+    },
+    {
+      "name": "BI · Burundi Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1ee.png"
+    },
+    {
+      "name": "BJ · Benin Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1ef.png"
+    },
+    {
+      "name": "BL · St. Barthélemy Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f1.png"
+    },
+    {
+      "name": "BM · Bermuda Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f2.png"
+    },
+    {
+      "name": "BN · Brunei Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f3.png"
+    },
+    {
+      "name": "BO · Bolivia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f4.png"
+    },
+    {
+      "name": "BQ · Caribbean Netherlands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f6.png"
+    },
+    {
+      "name": "BR · Brazil Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f7.png"
+    },
+    {
+      "name": "BS · Bahamas Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f8.png"
+    },
+    {
+      "name": "BT · Bhutan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1f9.png"
+    },
+    {
+      "name": "BV · Bouvet Island Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1fb.png"
+    },
+    {
+      "name": "BW · Botswana Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1fc.png"
+    },
+    {
+      "name": "BY · Belarus Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1fe.png"
+    },
+    {
+      "name": "BZ · Belize Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e7-1f1ff.png"
+    },
+    {
+      "name": "CA · Canada Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1e6.png"
+    },
+    {
+      "name": "CC · Cocos (Keeling) Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1e8.png"
+    },
+    {
+      "name": "CD · Congo - Kinshasa Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1e9.png"
+    },
+    {
+      "name": "CF · Central African Republic Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1eb.png"
+    },
+    {
+      "name": "CG · Congo - Brazzaville Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1ec.png"
+    },
+    {
+      "name": "CH · Switzerland Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1ed.png"
+    },
+    {
+      "name": "CI · Côte d’Ivoire Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1ee.png"
+    },
+    {
+      "name": "CK · Cook Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f0.png"
+    },
+    {
+      "name": "CL · Chile Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f1.png"
+    },
+    {
+      "name": "CM · Cameroon Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f2.png"
+    },
+    {
+      "name": "CN · China Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f3.png"
+    },
+    {
+      "name": "CO · Colombia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f4.png"
+    },
+    {
+      "name": "CP · Clipperton Island Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f5.png"
+    },
+    {
+      "name": "CQ · Sark Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f6.png"
+    },
+    {
+      "name": "CR · Costa Rica Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1f7.png"
+    },
+    {
+      "name": "CU · Cuba Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1fa.png"
+    },
+    {
+      "name": "CV · Cape Verde Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1fb.png"
+    },
+    {
+      "name": "CW · Curaçao Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1fc.png"
+    },
+    {
+      "name": "CX · Christmas Island Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1fd.png"
+    },
+    {
+      "name": "CY · Cyprus Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1fe.png"
+    },
+    {
+      "name": "CZ · Czechia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e8-1f1ff.png"
+    },
+    {
+      "name": "DE · Germany Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e9-1f1ea.png"
+    },
+    {
+      "name": "DG · Diego Garcia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e9-1f1ec.png"
+    },
+    {
+      "name": "DJ · Djibouti Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e9-1f1ef.png"
+    },
+    {
+      "name": "DK · Denmark Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e9-1f1f0.png"
+    },
+    {
+      "name": "DM · Dominica Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e9-1f1f2.png"
+    },
+    {
+      "name": "DO · Dominican Republic Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e9-1f1f4.png"
+    },
+    {
+      "name": "DZ · Algeria Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1e9-1f1ff.png"
+    },
+    {
+      "name": "EA · Ceuta & Melilla Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1e6.png"
+    },
+    {
+      "name": "EC · Ecuador Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1e8.png"
+    },
+    {
+      "name": "EE · Estonia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1ea.png"
+    },
+    {
+      "name": "EG · Egypt Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1ec.png"
+    },
+    {
+      "name": "EH · Western Sahara Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1ed.png"
+    },
+    {
+      "name": "England Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f3f4-e0067-e0062-e0065-e006e-e0067-e007f.png"
+    },
+    {
+      "name": "ER · Eritrea Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1f7.png"
+    },
+    {
+      "name": "ES · Spain Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1f8.png"
+    },
+    {
+      "name": "ET · Ethiopia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1f9.png"
+    },
+    {
+      "name": "EU · European Union Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ea-1f1fa.png"
+    },
+    {
+      "name": "FI · Finland Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1eb-1f1ee.png"
+    },
+    {
+      "name": "FJ · Fiji Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1eb-1f1ef.png"
+    },
+    {
+      "name": "FK · Falkland Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1eb-1f1f0.png"
+    },
+    {
+      "name": "FM · Micronesia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1eb-1f1f2.png"
+    },
+    {
+      "name": "FO · Faroe Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1eb-1f1f4.png"
+    },
+    {
+      "name": "FR · France Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1eb-1f1f7.png"
+    },
+    {
+      "name": "GA · Gabon Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1e6.png"
+    },
+    {
+      "name": "GB · United Kingdom Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1e7.png"
+    },
+    {
+      "name": "GD · Grenada Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1e9.png"
+    },
+    {
+      "name": "GE · Georgia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1ea.png"
+    },
+    {
+      "name": "GF · French Guiana Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1eb.png"
+    },
+    {
+      "name": "GG · Guernsey Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1ec.png"
+    },
+    {
+      "name": "GH · Ghana Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1ed.png"
+    },
+    {
+      "name": "GI · Gibraltar Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1ee.png"
+    },
+    {
+      "name": "GL · Greenland Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f1.png"
+    },
+    {
+      "name": "GM · Gambia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f2.png"
+    },
+    {
+      "name": "GN · Guinea Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f3.png"
+    },
+    {
+      "name": "GP · Guadeloupe Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f5.png"
+    },
+    {
+      "name": "GQ · Equatorial Guinea Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f6.png"
+    },
+    {
+      "name": "GR · Greece Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f7.png"
+    },
+    {
+      "name": "GS · South Georgia & South Sandwich Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f8.png"
+    },
+    {
+      "name": "GT · Guatemala Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1f9.png"
+    },
+    {
+      "name": "GU · Guam Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1fa.png"
+    },
+    {
+      "name": "GW · Guinea-Bissau Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1fc.png"
+    },
+    {
+      "name": "GY · Guyana Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ec-1f1fe.png"
+    },
+    {
+      "name": "HK · Hong Kong SAR China Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ed-1f1f0.png"
+    },
+    {
+      "name": "HM · Heard & McDonald Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ed-1f1f2.png"
+    },
+    {
+      "name": "HN · Honduras Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ed-1f1f3.png"
+    },
+    {
+      "name": "HR · Croatia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ed-1f1f7.png"
+    },
+    {
+      "name": "HT · Haiti Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ed-1f1f9.png"
+    },
+    {
+      "name": "HU · Hungary Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ed-1f1fa.png"
+    },
+    {
+      "name": "IC · Canary Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1e8.png"
+    },
+    {
+      "name": "ID · Indonesia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1e9.png"
+    },
+    {
+      "name": "IE · Ireland Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1ea.png"
+    },
+    {
+      "name": "IL · Israel Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f1.png"
+    },
+    {
+      "name": "IM · Isle of Man Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f2.png"
+    },
+    {
+      "name": "IN · India Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f3.png"
+    },
+    {
+      "name": "IO · British Indian Ocean Territory Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f4.png"
+    },
+    {
+      "name": "IQ · Iraq Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f6.png"
+    },
+    {
+      "name": "IR · Iran Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f7.png"
+    },
+    {
+      "name": "IS · Iceland Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f8.png"
+    },
+    {
+      "name": "IT · Italy Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ee-1f1f9.png"
+    },
+    {
+      "name": "JE · Jersey Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ef-1f1ea.png"
+    },
+    {
+      "name": "JM · Jamaica Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ef-1f1f2.png"
+    },
+    {
+      "name": "JO · Jordan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ef-1f1f4.png"
+    },
+    {
+      "name": "JP · Japan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ef-1f1f5.png"
+    },
+    {
+      "name": "KE · Kenya Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1ea.png"
+    },
+    {
+      "name": "KG · Kyrgyzstan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1ec.png"
+    },
+    {
+      "name": "KH · Cambodia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1ed.png"
+    },
+    {
+      "name": "KI · Kiribati Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1ee.png"
+    },
+    {
+      "name": "KM · Comoros Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1f2.png"
+    },
+    {
+      "name": "KN · St. Kitts & Nevis Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1f3.png"
+    },
+    {
+      "name": "KP · North Korea Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1f5.png"
+    },
+    {
+      "name": "KR · South Korea Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1f7.png"
+    },
+    {
+      "name": "KW · Kuwait Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1fc.png"
+    },
+    {
+      "name": "KY · Cayman Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1fe.png"
+    },
+    {
+      "name": "KZ · Kazakhstan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1ff.png"
+    },
+    {
+      "name": "LA · Laos Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1e6.png"
+    },
+    {
+      "name": "LB · Lebanon Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1e7.png"
+    },
+    {
+      "name": "LC · St. Lucia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1e8.png"
+    },
+    {
+      "name": "LI · Liechtenstein Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1ee.png"
+    },
+    {
+      "name": "LK · Sri Lanka Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1f0.png"
+    },
+    {
+      "name": "LR · Liberia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1f7.png"
+    },
+    {
+      "name": "LS · Lesotho Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1f8.png"
+    },
+    {
+      "name": "LT · Lithuania Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1f9.png"
+    },
+    {
+      "name": "LU · Luxembourg Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1fa.png"
+    },
+    {
+      "name": "LV · Latvia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1fb.png"
+    },
+    {
+      "name": "LY · Libya Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f1-1f1fe.png"
+    },
+    {
+      "name": "MA · Morocco Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1e6.png"
+    },
+    {
+      "name": "MC · Monaco Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1e8.png"
+    },
+    {
+      "name": "MD · Moldova Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1e9.png"
+    },
+    {
+      "name": "ME · Montenegro Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1ea.png"
+    },
+    {
+      "name": "MF · St. Martin Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1eb.png"
+    },
+    {
+      "name": "MG · Madagascar Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1ec.png"
+    },
+    {
+      "name": "MH · Marshall Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1ed.png"
+    },
+    {
+      "name": "MK · North Macedonia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f0.png"
+    },
+    {
+      "name": "ML · Mali Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f1.png"
+    },
+    {
+      "name": "MM · Myanmar (Burma) Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f2.png"
+    },
+    {
+      "name": "MN · Mongolia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f3.png"
+    },
+    {
+      "name": "MO · Macao SAR China Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f4.png"
+    },
+    {
+      "name": "MP · Northern Mariana Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f5.png"
+    },
+    {
+      "name": "MQ · Martinique Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f6.png"
+    },
+    {
+      "name": "MR · Mauritania Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f7.png"
+    },
+    {
+      "name": "MS · Montserrat Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f8.png"
+    },
+    {
+      "name": "MT · Malta Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1f9.png"
+    },
+    {
+      "name": "MU · Mauritius Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1fa.png"
+    },
+    {
+      "name": "MV · Maldives Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1fb.png"
+    },
+    {
+      "name": "MW · Malawi Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1fc.png"
+    },
+    {
+      "name": "MX · Mexico Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1fd.png"
+    },
+    {
+      "name": "MY · Malaysia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1fe.png"
+    },
+    {
+      "name": "MZ · Mozambique Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f2-1f1ff.png"
+    },
+    {
+      "name": "NA · Namibia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1e6.png"
+    },
+    {
+      "name": "NC · New Caledonia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1e8.png"
+    },
+    {
+      "name": "NE · Niger Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1ea.png"
+    },
+    {
+      "name": "NF · Norfolk Island Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1eb.png"
+    },
+    {
+      "name": "NG · Nigeria Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1ec.png"
+    },
+    {
+      "name": "NI · Nicaragua Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1ee.png"
+    },
+    {
+      "name": "NL · Netherlands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1f1.png"
+    },
+    {
+      "name": "NO · Norway Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1f4.png"
+    },
+    {
+      "name": "NP · Nepal Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1f5.png"
+    },
+    {
+      "name": "NR · Nauru Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1f7.png"
+    },
+    {
+      "name": "NU · Niue Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1fa.png"
+    },
+    {
+      "name": "NZ · New Zealand Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f3-1f1ff.png"
+    },
+    {
+      "name": "OM · Oman Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f4-1f1f2.png"
+    },
+    {
+      "name": "PA · Panama Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1e6.png"
+    },
+    {
+      "name": "PE · Peru Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1ea.png"
+    },
+    {
+      "name": "PF · French Polynesia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1eb.png"
+    },
+    {
+      "name": "PG · Papua New Guinea Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1ec.png"
+    },
+    {
+      "name": "PH · Philippines Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1ed.png"
+    },
+    {
+      "name": "PK · Pakistan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1f0.png"
+    },
+    {
+      "name": "PL · Poland Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1f1.png"
+    },
+    {
+      "name": "PM · St. Pierre & Miquelon Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1f2.png"
+    },
+    {
+      "name": "PN · Pitcairn Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1f3.png"
+    },
+    {
+      "name": "PR · Puerto Rico Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1f7.png"
+    },
+    {
+      "name": "PS · Palestinian Territories Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1f8.png"
+    },
+    {
+      "name": "PT · Portugal Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1f9.png"
+    },
+    {
+      "name": "PW · Palau Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1fc.png"
+    },
+    {
+      "name": "PY · Paraguay Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1fe.png"
+    },
+    {
+      "name": "QA · Qatar Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f6-1f1e6.png"
+    },
+    {
+      "name": "RE · Réunion Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f7-1f1ea.png"
+    },
+    {
+      "name": "RO · Romania Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f7-1f1f4.png"
+    },
+    {
+      "name": "RS · Serbia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f7-1f1f8.png"
+    },
+    {
+      "name": "RU · Russia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f7-1f1fa.png"
+    },
+    {
+      "name": "RW · Rwanda Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f7-1f1fc.png"
+    },
+    {
+      "name": "SA · Saudi Arabia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1e6.png"
+    },
+    {
+      "name": "SB · Solomon Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1e7.png"
+    },
+    {
+      "name": "SC · Seychelles Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1e8.png"
+    },
+    {
+      "name": "Scotland Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f3f4-e0067-e0062-e0073-e0063-e0074-e007f.png"
+    },
+    {
+      "name": "SD · Sudan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1e9.png"
+    },
+    {
+      "name": "SE · Sweden Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1ea.png"
+    },
+    {
+      "name": "SG · Singapore Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1ec.png"
+    },
+    {
+      "name": "SH · St. Helena Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1ed.png"
+    },
+    {
+      "name": "SI · Slovenia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1ee.png"
+    },
+    {
+      "name": "SJ · Svalbard & Jan Mayen Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1ef.png"
+    },
+    {
+      "name": "SK · Slovakia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f0.png"
+    },
+    {
+      "name": "SL · Sierra Leone Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f1.png"
+    },
+    {
+      "name": "SM · San Marino Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f2.png"
+    },
+    {
+      "name": "SN · Senegal Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f3.png"
+    },
+    {
+      "name": "SO · Somalia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f4.png"
+    },
+    {
+      "name": "SR · Suriname Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f7.png"
+    },
+    {
+      "name": "SS · South Sudan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f8.png"
+    },
+    {
+      "name": "ST · São Tomé & Príncipe Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1f9.png"
+    },
+    {
+      "name": "SV · El Salvador Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1fb.png"
+    },
+    {
+      "name": "SX · Sint Maarten Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1fd.png"
+    },
+    {
+      "name": "SY · Syria Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1fe.png"
+    },
+    {
+      "name": "SZ · Eswatini Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f8-1f1ff.png"
+    },
+    {
+      "name": "TA · Tristan da Cunha Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1e6.png"
+    },
+    {
+      "name": "TC · Turks & Caicos Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1e8.png"
+    },
+    {
+      "name": "TD · Chad Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1e9.png"
+    },
+    {
+      "name": "TF · French Southern Territories Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1eb.png"
+    },
+    {
+      "name": "TG · Togo Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1ec.png"
+    },
+    {
+      "name": "TH · Thailand Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1ed.png"
+    },
+    {
+      "name": "TJ · Tajikistan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1ef.png"
+    },
+    {
+      "name": "TK · Tokelau Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1f0.png"
+    },
+    {
+      "name": "TL · Timor-Leste Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1f1.png"
+    },
+    {
+      "name": "TM · Turkmenistan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1f2.png"
+    },
+    {
+      "name": "TN · Tunisia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1f3.png"
+    },
+    {
+      "name": "TO · Tonga Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1f4.png"
+    },
+    {
+      "name": "TR · Türkiye Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1f7.png"
+    },
+    {
+      "name": "TT · Trinidad & Tobago Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1f9.png"
+    },
+    {
+      "name": "TV · Tuvalu Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1fb.png"
+    },
+    {
+      "name": "TW · Taiwan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1fc.png"
+    },
+    {
+      "name": "TZ · Tanzania Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1ff.png"
+    },
+    {
+      "name": "UA · Ukraine Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fa-1f1e6.png"
+    },
+    {
+      "name": "UG · Uganda Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fa-1f1ec.png"
+    },
+    {
+      "name": "UM · U.S. Outlying Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fa-1f1f2.png"
+    },
+    {
+      "name": "UN · United Nations Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fa-1f1f3.png"
+    },
+    {
+      "name": "US · United States Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fa-1f1f8.png"
+    },
+    {
+      "name": "UY · Uruguay Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fa-1f1fe.png"
+    },
+    {
+      "name": "UZ · Uzbekistan Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fa-1f1ff.png"
+    },
+    {
+      "name": "VA · Vatican City Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fb-1f1e6.png"
+    },
+    {
+      "name": "VC · St. Vincent & Grenadines Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fb-1f1e8.png"
+    },
+    {
+      "name": "VE · Venezuela Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fb-1f1ea.png"
+    },
+    {
+      "name": "VG · British Virgin Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fb-1f1ec.png"
+    },
+    {
+      "name": "VI · U.S. Virgin Islands Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fb-1f1ee.png"
+    },
+    {
+      "name": "VN · Vietnam Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fb-1f1f3.png"
+    },
+    {
+      "name": "VU · Vanuatu Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fb-1f1fa.png"
+    },
+    {
+      "name": "Wales Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f3f4-e0067-e0062-e0077-e006c-e0073-e007f.png"
+    },
+    {
+      "name": "WF · Wallis & Futuna Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fc-1f1eb.png"
+    },
+    {
+      "name": "WS · Samoa Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fc-1f1f8.png"
+    },
+    {
+      "name": "XK · Kosovo Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fd-1f1f0.png"
+    },
+    {
+      "name": "YE · Yemen Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fe-1f1ea.png"
+    },
+    {
+      "name": "YT · Mayotte Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fe-1f1f9.png"
+    },
+    {
+      "name": "ZA · South Africa Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ff-1f1e6.png"
+    },
+    {
+      "name": "ZM · Zambia Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ff-1f1f2.png"
+    },
+    {
+      "name": "ZW · Zimbabwe Flag · Apple Emoji",
+      "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1ff-1f1fc.png"
+    }
+  ]
+}
