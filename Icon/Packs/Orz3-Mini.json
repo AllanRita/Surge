@@ -1,0 +1,350 @@
+{
+  "name": "AllanRita · Orz3-Mini",
+  "description": "Original upstream image URLs and source credits retained.",
+  "icons": [
+    {
+      "name": "AAEX · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/AAEX.png"
+    },
+    {
+      "name": "AEX · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/AEX.png"
+    },
+    {
+      "name": "Amy · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Amy.png"
+    },
+    {
+      "name": "Ark · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Ark.png"
+    },
+    {
+      "name": "ASN · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/ASN.png"
+    },
+    {
+      "name": "BitCloud · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Bitcloud.png"
+    },
+    {
+      "name": "Blinkload · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Blink.png"
+    },
+    {
+      "name": "Boom · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Boom.png"
+    },
+    {
+      "name": "Boslife · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Boslife.png"
+    },
+    {
+      "name": "Bywave · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Bywave.png"
+    },
+    {
+      "name": "Catnet · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Catnet.png"
+    },
+    {
+      "name": "CCCat · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/CCCat.png"
+    },
+    {
+      "name": "Cm · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Cm.png"
+    },
+    {
+      "name": "CNIX · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/CNIX.png"
+    },
+    {
+      "name": "CoCo · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Coco.png"
+    },
+    {
+      "name": "Cord · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Cord.png"
+    },
+    {
+      "name": "Cylink · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Cylink.png"
+    },
+    {
+      "name": "Dianliang · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Dianliang.png"
+    },
+    {
+      "name": "Dler · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Dler.png"
+    },
+    {
+      "name": "DLK · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/DLK.png"
+    },
+    {
+      "name": "Duang · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Duang.png"
+    },
+    {
+      "name": "Dukou · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Dukou.png"
+    },
+    {
+      "name": "Element · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Element.png"
+    },
+    {
+      "name": "Enet · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Enet.png"
+    },
+    {
+      "name": "Exflux · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Exflux.png"
+    },
+    {
+      "name": "Fastfish · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Fastfish.png"
+    },
+    {
+      "name": "Fastlink · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Fastlink.png"
+    },
+    {
+      "name": "Fastnode · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Fastnode.png"
+    },
+    {
+      "name": "Flower · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png"
+    },
+    {
+      "name": "Flyint · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flyint.png"
+    },
+    {
+      "name": "FNF · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/FNF.png"
+    },
+    {
+      "name": "FRANXX · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/FRANXX.png"
+    },
+    {
+      "name": "GaCloud · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/GaCloud.png"
+    },
+    {
+      "name": "GLaDOS · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/GLaDOS.png"
+    },
+    {
+      "name": "Godetia · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Godetia.png"
+    },
+    {
+      "name": "GuGuEX · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Guguex.png"
+    },
+    {
+      "name": "Hitun · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Hitun.png"
+    },
+    {
+      "name": "Hxlm · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Hxlm.png"
+    },
+    {
+      "name": "ImmTel · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Imm.png"
+    },
+    {
+      "name": "Kache · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Kache.png"
+    },
+    {
+      "name": "Kafka · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Kafka.png"
+    },
+    {
+      "name": "Kedou · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Kedou.png"
+    },
+    {
+      "name": "Kuai · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Kuai.png"
+    },
+    {
+      "name": "LiYing · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/LiYing.png"
+    },
+    {
+      "name": "Maying · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Maying.png"
+    },
+    {
+      "name": "MDSS · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/MDSS.png"
+    },
+    {
+      "name": "MGNB · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/MGNB.png"
+    },
+    {
+      "name": "Miaona · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Miao.png"
+    },
+    {
+      "name": "Mickey · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Mickey.png"
+    },
+    {
+      "name": "MIMEMI · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Mimemi.png"
+    },
+    {
+      "name": "Muchang · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Muchang.png"
+    },
+    {
+      "name": "Nexitally · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Nex.png"
+    },
+    {
+      "name": "Np · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Np.png"
+    },
+    {
+      "name": "NSFW · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/NSFW.png"
+    },
+    {
+      "name": "Nucleus · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Nucleus.png"
+    },
+    {
+      "name": "OvO · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/OvO.png"
+    },
+    {
+      "name": "Pacifiuue · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Pacifique.png"
+    },
+    {
+      "name": "Paoluz · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Paoluz.png"
+    },
+    {
+      "name": "Prpr · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Prpr.png"
+    },
+    {
+      "name": "Renzhe · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Renzhe.png"
+    },
+    {
+      "name": "Rookie · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Rookie.png"
+    },
+    {
+      "name": "SaySS · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/SaySS.png"
+    },
+    {
+      "name": "SCTC · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/SCTC.png"
+    },
+    {
+      "name": "Shandian · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Shandian.png"
+    },
+    {
+      "name": "Situ · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Situ.png"
+    },
+    {
+      "name": "Skicat · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Skicat.png"
+    },
+    {
+      "name": "Socloud · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Socloud.png"
+    },
+    {
+      "name": "SSlinks · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/SSlinks.png"
+    },
+    {
+      "name": "SSP · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Ssp.png"
+    },
+    {
+      "name": "STC · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/STC.png"
+    },
+    {
+      "name": "Suda · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Suda.png"
+    },
+    {
+      "name": "Suncloud · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Sun.png"
+    },
+    {
+      "name": "SWCloud · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/SWCloud.png"
+    },
+    {
+      "name": "Thunder · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Thunder.png"
+    },
+    {
+      "name": "Touhou · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Touhou.png"
+    },
+    {
+      "name": "Unicorn · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Unicorn.png"
+    },
+    {
+      "name": "V2Tun · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/V2tun.png"
+    },
+    {
+      "name": "Wallless · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Wallless.png"
+    },
+    {
+      "name": "WestData · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/WestData.png"
+    },
+    {
+      "name": "Xair · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Xair.png"
+    },
+    {
+      "name": "Xingmeng · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Xingmeng.png"
+    },
+    {
+      "name": "XTunnel · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/XTunnel.png"
+    },
+    {
+      "name": "YTOO · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Ytoo.png"
+    },
+    {
+      "name": "Yunyi · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Yunyi.png"
+    },
+    {
+      "name": "Ywhl · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Ywhl.png"
+    },
+    {
+      "name": "Zhs · Orz3-Mini",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Zhs.png"
+    }
+  ]
+}

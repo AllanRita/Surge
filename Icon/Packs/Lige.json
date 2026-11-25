@@ -1,0 +1,3026 @@
+{
+  "name": "AllanRita · Lige",
+  "description": "Original upstream image URLs and source credits retained.",
+  "icons": [
+    {
+      "name": "115 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/115.png"
+    },
+    {
+      "name": "12123 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/12123.png"
+    },
+    {
+      "name": "123 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/123.png"
+    },
+    {
+      "name": "12306 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/12306.png"
+    },
+    {
+      "name": "12306(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/12306(1).png"
+    },
+    {
+      "name": "189 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/189.png"
+    },
+    {
+      "name": "52pojie · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/52pojie.png"
+    },
+    {
+      "name": "58tongcheng · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/58tongcheng.png"
+    },
+    {
+      "name": "69yun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/69yun.png"
+    },
+    {
+      "name": "69yun(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/69yun(1).png"
+    },
+    {
+      "name": "98k · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/98k.png"
+    },
+    {
+      "name": "AbemaTV · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/AbemaTV.png"
+    },
+    {
+      "name": "aca · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/aca.png"
+    },
+    {
+      "name": "acfun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/acfun.png"
+    },
+    {
+      "name": "ad · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/ad.png"
+    },
+    {
+      "name": "ad(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/ad(2).png"
+    },
+    {
+      "name": "ad(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/ad(3).png"
+    },
+    {
+      "name": "ad(4) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/ad(4).png"
+    },
+    {
+      "name": "ad(5) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/ad(5).png"
+    },
+    {
+      "name": "ad(6) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/ad(6).png"
+    },
+    {
+      "name": "ad(7) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/ad(7).png"
+    },
+    {
+      "name": "Adobe · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Adobe.png"
+    },
+    {
+      "name": "Adobe(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Adobe(1).png"
+    },
+    {
+      "name": "Adobeaftereffects · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Adobeaftereffects.png"
+    },
+    {
+      "name": "Adobeanimate · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Adobeanimate.png"
+    },
+    {
+      "name": "Adobeaudition · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Adobeaudition.png"
+    },
+    {
+      "name": "Adobecreativecloud · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Adobecreativecloud.png"
+    },
+    {
+      "name": "Adobeillustrator · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Adobeillustrator.png"
+    },
+    {
+      "name": "Adobeincopy · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Adobeincopy.png"
+    },
+    {
+      "name": "Adobeindesign · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Adobeindesign.png"
+    },
+    {
+      "name": "Adobelightroomclassic · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Adobelightroomclassic.png"
+    },
+    {
+      "name": "AdobeMediaEncoder · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/AdobeMediaEncoder.png"
+    },
+    {
+      "name": "Adobephotoshop · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Adobephotoshop.png"
+    },
+    {
+      "name": "Adobepremiere · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Adobepremiere.png"
+    },
+    {
+      "name": "AdobeXD · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/AdobeXD.png"
+    },
+    {
+      "name": "AiDeer · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/AiDeer.png"
+    },
+    {
+      "name": "aifun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/aifun.png"
+    },
+    {
+      "name": "aiqiyi(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/aiqiyi(1).png"
+    },
+    {
+      "name": "aiqiyitiyu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/aiqiyitiyu.png"
+    },
+    {
+      "name": "akkcloud · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/akkcloud.png"
+    },
+    {
+      "name": "AladdinLottery · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/AladdinLottery.png"
+    },
+    {
+      "name": "AladdinLottery(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/AladdinLottery(1).png"
+    },
+    {
+      "name": "alicloud · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/alicloud.png"
+    },
+    {
+      "name": "alidrive · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/alidrive.png"
+    },
+    {
+      "name": "alipay · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/alipay.png"
+    },
+    {
+      "name": "alist · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/alist.png"
+    },
+    {
+      "name": "alist(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/alist(1).png"
+    },
+    {
+      "name": "Alphaio · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Alphaio.png"
+    },
+    {
+      "name": "amazon · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/amazon.png"
+    },
+    {
+      "name": "AmyTelecom · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/AmyTelecom.png"
+    },
+    {
+      "name": "AnrunNetwork · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/AnrunNetwork.png"
+    },
+    {
+      "name": "anyland · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/anyland.png"
+    },
+    {
+      "name": "apple · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/apple.png"
+    },
+    {
+      "name": "apple(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/apple(1).png"
+    },
+    {
+      "name": "applefitness+ · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/applefitness%2B.png"
+    },
+    {
+      "name": "AppleIntelligence · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/AppleIntelligence.png"
+    },
+    {
+      "name": "ApplePodcasts · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/ApplePodcasts.png"
+    },
+    {
+      "name": "ApplePodcasts(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/ApplePodcasts(1).png"
+    },
+    {
+      "name": "AppleTV · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/AppleTV.png"
+    },
+    {
+      "name": "AppStore · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/AppStore.png"
+    },
+    {
+      "name": "AppStore(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/AppStore(1).png"
+    },
+    {
+      "name": "AppStore(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/AppStore(2).png"
+    },
+    {
+      "name": "aqiyi · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/aqiyi.png"
+    },
+    {
+      "name": "Arcline · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Arcline.png"
+    },
+    {
+      "name": "Argentina · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Argentina.png"
+    },
+    {
+      "name": "Argentina(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Argentina(1).png"
+    },
+    {
+      "name": "Argentina(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Argentina(2).png"
+    },
+    {
+      "name": "ash · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ash.png"
+    },
+    {
+      "name": "ash(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ash(1).png"
+    },
+    {
+      "name": "atomlantis · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/atomlantis.png"
+    },
+    {
+      "name": "Australia · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Australia.png"
+    },
+    {
+      "name": "Australia(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Australia(1).png"
+    },
+    {
+      "name": "Australia(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Australia(2).png"
+    },
+    {
+      "name": "bahamute · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bahamute.png"
+    },
+    {
+      "name": "baidunetdisk · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/baidunetdisk.png"
+    },
+    {
+      "name": "baidunetdisk(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/baidunetdisk(1).png"
+    },
+    {
+      "name": "baidutieba · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/baidutieba.png"
+    },
+    {
+      "name": "baidutieba(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/baidutieba(1).png"
+    },
+    {
+      "name": "baidutieba(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/baidutieba(2).png"
+    },
+    {
+      "name": "bbc · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bbc.png"
+    },
+    {
+      "name": "bbc(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bbc(1).png"
+    },
+    {
+      "name": "bbc(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bbc(3).png"
+    },
+    {
+      "name": "BestTelecom · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/BestTelecom.png"
+    },
+    {
+      "name": "bian · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bian.png"
+    },
+    {
+      "name": "bilibili · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/bilibili.png"
+    },
+    {
+      "name": "bilibili(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/bilibili(1).png"
+    },
+    {
+      "name": "bilibili(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/bilibili(2).png"
+    },
+    {
+      "name": "bilibili(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/bilibili(3).png"
+    },
+    {
+      "name": "bilibili(4) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/bilibili(4).png"
+    },
+    {
+      "name": "bing · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bing.png"
+    },
+    {
+      "name": "bing(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bing(1).png"
+    },
+    {
+      "name": "bing(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bing(2).png"
+    },
+    {
+      "name": "bing(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bing(3).png"
+    },
+    {
+      "name": "bishi · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/bishi.png"
+    },
+    {
+      "name": "Bitcoin · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Bitcoin.png"
+    },
+    {
+      "name": "bitget · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bitget.png"
+    },
+    {
+      "name": "bitznet · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bitznet.png"
+    },
+    {
+      "name": "BKCLOUD · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/BKCLOUD.png"
+    },
+    {
+      "name": "blacklist · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/blacklist.png"
+    },
+    {
+      "name": "blacklist(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/blacklist(1).png"
+    },
+    {
+      "name": "BlueskySocial · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/BlueskySocial.png"
+    },
+    {
+      "name": "BlueskySocial(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/BlueskySocial(1).png"
+    },
+    {
+      "name": "bluetile · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/bluetile.png"
+    },
+    {
+      "name": "bodianyinyue · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/bodianyinyue.png"
+    },
+    {
+      "name": "bodianyinyue(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/bodianyinyue(1).png"
+    },
+    {
+      "name": "Brasil · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Brasil.png"
+    },
+    {
+      "name": "Brasil(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Brasil(1).png"
+    },
+    {
+      "name": "Brasil(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Brasil(2).png"
+    },
+    {
+      "name": "bybit · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bybit.png"
+    },
+    {
+      "name": "cainiaoguoguo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/cainiaoguoguo.png"
+    },
+    {
+      "name": "chatgpt(balck) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatgpt(balck).png"
+    },
+    {
+      "name": "chatgpt(white) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatgpt(white).png"
+    },
+    {
+      "name": "chatgpt(white1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatgpt(white1).png"
+    },
+    {
+      "name": "ChatGPT-green · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/ChatGPT-green.png"
+    },
+    {
+      "name": "chatgpt4.0 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatgpt4.0.png"
+    },
+    {
+      "name": "chaxun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/chaxun.png"
+    },
+    {
+      "name": "chaxun(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/chaxun(2).png"
+    },
+    {
+      "name": "chaxun(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/chaxun(3).png"
+    },
+    {
+      "name": "CherrynetWork2 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/CherrynetWork2.png"
+    },
+    {
+      "name": "ChinaBroadcastNetwork · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/ChinaBroadcastNetwork.png"
+    },
+    {
+      "name": "chinamobilemcloud · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/chinamobilemcloud.png"
+    },
+    {
+      "name": "chinaunicomcloud · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/chinaunicomcloud.png"
+    },
+    {
+      "name": "chinese · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/chinese.png"
+    },
+    {
+      "name": "ClashGOU · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ClashGOU.png"
+    },
+    {
+      "name": "claude · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/claude.png"
+    },
+    {
+      "name": "claude(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/claude(1).png"
+    },
+    {
+      "name": "clouddrive2 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/clouddrive2.png"
+    },
+    {
+      "name": "cloudfisher · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/cloudfisher.png"
+    },
+    {
+      "name": "cloudfisher(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/cloudfisher(1).png"
+    },
+    {
+      "name": "Copilot · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Copilot.png"
+    },
+    {
+      "name": "Copilot(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Copilot(1).png"
+    },
+    {
+      "name": "CSsaomiaoquannengwang · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/CSsaomiaoquannengwang.png"
+    },
+    {
+      "name": "ctc · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ctc.png"
+    },
+    {
+      "name": "cursor · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/cursor.png"
+    },
+    {
+      "name": "daishu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/daishu.png"
+    },
+    {
+      "name": "dazhongpingqiu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dazhongpingqiu.png"
+    },
+    {
+      "name": "DCard · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/DCard.png"
+    },
+    {
+      "name": "deepseek · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/deepseek.png"
+    },
+    {
+      "name": "DegYax · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/DegYax.png"
+    },
+    {
+      "name": "dewu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dewu.png"
+    },
+    {
+      "name": "dianxin · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dianxin.png"
+    },
+    {
+      "name": "dianxin(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dianxin(1).png"
+    },
+    {
+      "name": "direct · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/direct.png"
+    },
+    {
+      "name": "direct(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/direct(1).png"
+    },
+    {
+      "name": "direct(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/direct(2).png"
+    },
+    {
+      "name": "discord · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/discord.png"
+    },
+    {
+      "name": "discord(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/discord(1).png"
+    },
+    {
+      "name": "discord(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/discord(2).png"
+    },
+    {
+      "name": "discord(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/discord(3).png"
+    },
+    {
+      "name": "disney · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/disney.png"
+    },
+    {
+      "name": "disney(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/disney(1).png"
+    },
+    {
+      "name": "disney(black) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/disney(black).png"
+    },
+    {
+      "name": "disney(blue) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/disney(blue).png"
+    },
+    {
+      "name": "DJmusic · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/DJmusic.png"
+    },
+    {
+      "name": "DlerCloud · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/DlerCloud.png"
+    },
+    {
+      "name": "DlerCloud(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/DlerCloud(1).png"
+    },
+    {
+      "name": "dlg365 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/dlg365.png"
+    },
+    {
+      "name": "dog · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/dog.png"
+    },
+    {
+      "name": "dog(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/dog(1).png"
+    },
+    {
+      "name": "dog(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/dog(2).png"
+    },
+    {
+      "name": "dongqiudi · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dongqiudi.png"
+    },
+    {
+      "name": "DoriyaNetwork · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/DoriyaNetwork.png"
+    },
+    {
+      "name": "DoriyaNetwork(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/DoriyaNetwork(1).png"
+    },
+    {
+      "name": "douyuzhibo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/douyuzhibo.png"
+    },
+    {
+      "name": "dpdp · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/dpdp.png"
+    },
+    {
+      "name": "Drafts · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Drafts.png"
+    },
+    {
+      "name": "dropbox · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/dropbox.png"
+    },
+    {
+      "name": "dropbox(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/dropbox(1).png"
+    },
+    {
+      "name": "Drunk · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Drunk.png"
+    },
+    {
+      "name": "dual · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/dual.png"
+    },
+    {
+      "name": "duck · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/duck.png"
+    },
+    {
+      "name": "duck(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/duck(1).png"
+    },
+    {
+      "name": "duolingo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/duolingo.png"
+    },
+    {
+      "name": "duolingo(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/duolingo(1).png"
+    },
+    {
+      "name": "EA · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/EA.png"
+    },
+    {
+      "name": "Edge-X · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Edge-X.png"
+    },
+    {
+      "name": "Egern · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Egern.png"
+    },
+    {
+      "name": "egg · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/egg.png"
+    },
+    {
+      "name": "egg(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/egg(1).png"
+    },
+    {
+      "name": "EIX · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/EIX.png"
+    },
+    {
+      "name": "elegant · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/elegant.png"
+    },
+    {
+      "name": "emby · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/emby.png"
+    },
+    {
+      "name": "emby(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/emby(1).png"
+    },
+    {
+      "name": "ENET · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ENET.png"
+    },
+    {
+      "name": "epub · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/epub.png"
+    },
+    {
+      "name": "error · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/error.png"
+    },
+    {
+      "name": "ESNC · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ESNC.png"
+    },
+    {
+      "name": "eton · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/eton.png"
+    },
+    {
+      "name": "EuropeanUnion · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/EuropeanUnion.png"
+    },
+    {
+      "name": "EuropeanUnion(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/EuropeanUnion(1).png"
+    },
+    {
+      "name": "EuropeanUnion(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/EuropeanUnion(2).png"
+    },
+    {
+      "name": "exhentai · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/exhentai.png"
+    },
+    {
+      "name": "facebook · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/facebook.png"
+    },
+    {
+      "name": "facebook(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/facebook(1).png"
+    },
+    {
+      "name": "facebook(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/facebook(2).png"
+    },
+    {
+      "name": "FacMata · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/FacMata.png"
+    },
+    {
+      "name": "FacMata(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/FacMata(1).png"
+    },
+    {
+      "name": "fan · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/fan.png"
+    },
+    {
+      "name": "Fancynetwork · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Fancynetwork.png"
+    },
+    {
+      "name": "Fancynetwork(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Fancynetwork(1).png"
+    },
+    {
+      "name": "fanqiexiaoshuo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/fanqiexiaoshuo.png"
+    },
+    {
+      "name": "FederalRepublicofNigeria · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/FederalRepublicofNigeria.png"
+    },
+    {
+      "name": "FederalRepublicofNigeria(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/FederalRepublicofNigeria(1).png"
+    },
+    {
+      "name": "FederalRepublicofNigeria(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/FederalRepublicofNigeria(2).png"
+    },
+    {
+      "name": "feiniufnOS · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/feiniufnOS.png"
+    },
+    {
+      "name": "feiniufnOS(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/feiniufnOS(1).png"
+    },
+    {
+      "name": "feitu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/feitu.png"
+    },
+    {
+      "name": "feiyue · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/feiyue.png"
+    },
+    {
+      "name": "fengling · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/fengling.png"
+    },
+    {
+      "name": "fengling(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/fengling(1).png"
+    },
+    {
+      "name": "fengling(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/fengling(2).png"
+    },
+    {
+      "name": "fengling(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/fengling(3).png"
+    },
+    {
+      "name": "fengxingshipin · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/fengxingshipin.png"
+    },
+    {
+      "name": "fileball · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/fileball.png"
+    },
+    {
+      "name": "Film · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Film.png"
+    },
+    {
+      "name": "Film(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Film(1).png"
+    },
+    {
+      "name": "filmix · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/filmix.png"
+    },
+    {
+      "name": "Firefox · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Firefox.png"
+    },
+    {
+      "name": "FishPort · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/FishPort.png"
+    },
+    {
+      "name": "flowcast666 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/flowcast666.png"
+    },
+    {
+      "name": "FlowerCloud · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/FlowerCloud.png"
+    },
+    {
+      "name": "Flyint · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Flyint.png"
+    },
+    {
+      "name": "forward · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/forward.png"
+    },
+    {
+      "name": "forward(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/forward(1).png"
+    },
+    {
+      "name": "game · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/game.png"
+    },
+    {
+      "name": "game(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/game(1).png"
+    },
+    {
+      "name": "game(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/game(2).png"
+    },
+    {
+      "name": "game(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/game(3).png"
+    },
+    {
+      "name": "gateio · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/gateio.png"
+    },
+    {
+      "name": "gemini · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/gemini.png"
+    },
+    {
+      "name": "gemini(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/gemini(1).png"
+    },
+    {
+      "name": "Germany · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Germany.png"
+    },
+    {
+      "name": "Germany(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Germany(1).png"
+    },
+    {
+      "name": "Germany(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Germany(2).png"
+    },
+    {
+      "name": "github · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/github.png"
+    },
+    {
+      "name": "github(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/github(1).png"
+    },
+    {
+      "name": "Gnosis · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Gnosis.png"
+    },
+    {
+      "name": "goodnotes · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/goodnotes.png"
+    },
+    {
+      "name": "google · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/google.png"
+    },
+    {
+      "name": "google(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/google(1).png"
+    },
+    {
+      "name": "google(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/google(2).png"
+    },
+    {
+      "name": "Googlemap · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Googlemap.png"
+    },
+    {
+      "name": "GooglePlay · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/GooglePlay.png"
+    },
+    {
+      "name": "GoogleScholar · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/GoogleScholar.png"
+    },
+    {
+      "name": "Googlevoice · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Googlevoice.png"
+    },
+    {
+      "name": "Googlevoice(black1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Googlevoice(black1).png"
+    },
+    {
+      "name": "grok · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/grok.png"
+    },
+    {
+      "name": "HALOCHANEL · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/HALOCHANEL.png"
+    },
+    {
+      "name": "hamhub · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/hamhub.png"
+    },
+    {
+      "name": "hanbingyun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/hanbingyun.png"
+    },
+    {
+      "name": "hanxiaoquan · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/hanxiaoquan.png"
+    },
+    {
+      "name": "HBO · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/HBO.png"
+    },
+    {
+      "name": "HBOmax · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/HBOmax.png"
+    },
+    {
+      "name": "HBOmax(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/HBOmax(1).png"
+    },
+    {
+      "name": "hela · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/hela.png"
+    },
+    {
+      "name": "himalaya · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/himalaya.png"
+    },
+    {
+      "name": "HKBEUP · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/HKBEUP.png"
+    },
+    {
+      "name": "HKBEUP(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/HKBEUP(1).png"
+    },
+    {
+      "name": "hneko · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/hneko.png"
+    },
+    {
+      "name": "home · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/home.png"
+    },
+    {
+      "name": "home(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/home(1).png"
+    },
+    {
+      "name": "home(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/home(2).png"
+    },
+    {
+      "name": "homocloud · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/homocloud.png"
+    },
+    {
+      "name": "Hongkong · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Hongkong.png"
+    },
+    {
+      "name": "Hongkong(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Hongkong(1).png"
+    },
+    {
+      "name": "Hongkong(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Hongkong(2).png"
+    },
+    {
+      "name": "Hongkong(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Hongkong(3).png"
+    },
+    {
+      "name": "hongxingyun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/hongxingyun.png"
+    },
+    {
+      "name": "huyazhibo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/huyazhibo.png"
+    },
+    {
+      "name": "ikuuu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ikuuu.png"
+    },
+    {
+      "name": "ImmTelecom · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ImmTelecom.png"
+    },
+    {
+      "name": "India · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/India.png"
+    },
+    {
+      "name": "India(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/India(1).png"
+    },
+    {
+      "name": "India(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/India(2).png"
+    },
+    {
+      "name": "iNetS · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/iNetS.png"
+    },
+    {
+      "name": "infuse · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/infuse.png"
+    },
+    {
+      "name": "instagram · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/instagram.png"
+    },
+    {
+      "name": "instagram(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/instagram(1).png"
+    },
+    {
+      "name": "instagram(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/instagram(2).png"
+    },
+    {
+      "name": "ip · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/ip.png"
+    },
+    {
+      "name": "Japan · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Japan.png"
+    },
+    {
+      "name": "Japan(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Japan(1).png"
+    },
+    {
+      "name": "Japan(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Japan(2).png"
+    },
+    {
+      "name": "Japan(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Japan(3).png"
+    },
+    {
+      "name": "jellyfin · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jellyfin.png"
+    },
+    {
+      "name": "jianguoyun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jianguoyun.png"
+    },
+    {
+      "name": "jianying · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jianying.png"
+    },
+    {
+      "name": "JIASU · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/JIASU.png"
+    },
+    {
+      "name": "jichang · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/jichang.png"
+    },
+    {
+      "name": "jingdong · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jingdong.png"
+    },
+    {
+      "name": "jingdong(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jingdong(1).png"
+    },
+    {
+      "name": "jingdong(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jingdong(2).png"
+    },
+    {
+      "name": "jinmenyun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/jinmenyun.png"
+    },
+    {
+      "name": "Jinrishuiyinxiangji · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/Jinrishuiyinxiangji.png"
+    },
+    {
+      "name": "jinritoutiao · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jinritoutiao.png"
+    },
+    {
+      "name": "jiuhaochuxing · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jiuhaochuxing.png"
+    },
+    {
+      "name": "jiux · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/jiux.png"
+    },
+    {
+      "name": "kakaotalk · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/kakaotalk.png"
+    },
+    {
+      "name": "kakaotalk(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/kakaotalk(1).png"
+    },
+    {
+      "name": "kaogongleida · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/kaogongleida.png"
+    },
+    {
+      "name": "keep · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/keep.png"
+    },
+    {
+      "name": "KFC · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/KFC.png"
+    },
+    {
+      "name": "Korea · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Korea.png"
+    },
+    {
+      "name": "Korea(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Korea(1).png"
+    },
+    {
+      "name": "Korea(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Korea(2).png"
+    },
+    {
+      "name": "kuaishou · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/kuaishou.png"
+    },
+    {
+      "name": "kuancoolapk · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/kuancoolapk.png"
+    },
+    {
+      "name": "kuancoolapk(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/kuancoolapk(1).png"
+    },
+    {
+      "name": "kugou · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/kugou.png"
+    },
+    {
+      "name": "kugou(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/kugou(1).png"
+    },
+    {
+      "name": "Kuromis · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Kuromis.png"
+    },
+    {
+      "name": "Kuromis0 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Kuromis0.png"
+    },
+    {
+      "name": "lanrentingshu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/lanrentingshu.png"
+    },
+    {
+      "name": "leshishipin · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/leshishipin.png"
+    },
+    {
+      "name": "liangxinyun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/liangxinyun.png"
+    },
+    {
+      "name": "liantong · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/liantong.png"
+    },
+    {
+      "name": "liantong(0) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/liantong(0).png"
+    },
+    {
+      "name": "libhsulife · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/libhsulife.png"
+    },
+    {
+      "name": "lige · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/lige.png"
+    },
+    {
+      "name": "lightning · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/lightning.png"
+    },
+    {
+      "name": "lightning(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/lightning(1).png"
+    },
+    {
+      "name": "lightning(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/lightning(2).png"
+    },
+    {
+      "name": "lightning(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/lightning(3).png"
+    },
+    {
+      "name": "lightning(4) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/lightning(4).png"
+    },
+    {
+      "name": "lightning(5) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/lightning(5).png"
+    },
+    {
+      "name": "linkcube · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/linkcube.png"
+    },
+    {
+      "name": "linkedin · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/linkedin.png"
+    },
+    {
+      "name": "Linkeless · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Linkeless.png"
+    },
+    {
+      "name": "Linkeless(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Linkeless(1).png"
+    },
+    {
+      "name": "lishinianlun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/lishinianlun.png"
+    },
+    {
+      "name": "liuliang · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/liuliang.png"
+    },
+    {
+      "name": "liuliang(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/liuliang(1).png"
+    },
+    {
+      "name": "liuliang(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/liuliang(2).png"
+    },
+    {
+      "name": "liuliang(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/liuliang(3).png"
+    },
+    {
+      "name": "liuliang(4) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/liuliang(4).png"
+    },
+    {
+      "name": "liuliang(5) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/liuliang(5).png"
+    },
+    {
+      "name": "llgjc · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/llgjc.png"
+    },
+    {
+      "name": "Loon · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Loon.png"
+    },
+    {
+      "name": "Loon(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Loon(1).png"
+    },
+    {
+      "name": "Loon(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Loon(2).png"
+    },
+    {
+      "name": "Loon(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Loon(3).png"
+    },
+    {
+      "name": "Loon(4) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Loon(4).png"
+    },
+    {
+      "name": "Loon(5) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Loon(5).png"
+    },
+    {
+      "name": "Loon(6) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Loon(6).png"
+    },
+    {
+      "name": "Loon(7) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Loon(7).png"
+    },
+    {
+      "name": "Loon(8) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Loon(8).png"
+    },
+    {
+      "name": "Lray · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Lray.png"
+    },
+    {
+      "name": "luckin · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/luckin.png"
+    },
+    {
+      "name": "luyuyun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/luyuyun.png"
+    },
+    {
+      "name": "luyuyun(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/luyuyun(1).png"
+    },
+    {
+      "name": "lzymtzpd · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/lzymtzpd.png"
+    },
+    {
+      "name": "M5 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/M5.png"
+    },
+    {
+      "name": "Macao · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Macao.png"
+    },
+    {
+      "name": "Macao(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Macao(1).png"
+    },
+    {
+      "name": "Macao(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Macao(2).png"
+    },
+    {
+      "name": "MagicCloud · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/MagicCloud.png"
+    },
+    {
+      "name": "mail · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/mail.png"
+    },
+    {
+      "name": "mail(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/mail(1).png"
+    },
+    {
+      "name": "mail(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/mail(2).png"
+    },
+    {
+      "name": "mail(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/mail(3).png"
+    },
+    {
+      "name": "Malaysia · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Malaysia.png"
+    },
+    {
+      "name": "mangguotv · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/mangguotv.png"
+    },
+    {
+      "name": "mangguotv(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/mangguotv(1).png"
+    },
+    {
+      "name": "maoxiong · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/maoxiong.png"
+    },
+    {
+      "name": "max · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/max.png"
+    },
+    {
+      "name": "max(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/max(1).png"
+    },
+    {
+      "name": "max(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/max(2).png"
+    },
+    {
+      "name": "mcdonalds · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/mcdonalds.png"
+    },
+    {
+      "name": "mega · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/mega.png"
+    },
+    {
+      "name": "meituan · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/meituan.png"
+    },
+    {
+      "name": "meituan(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/meituan(1).png"
+    },
+    {
+      "name": "mesl · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/mesl.png"
+    },
+    {
+      "name": "mesl(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/mesl(2).png"
+    },
+    {
+      "name": "mesl(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/mesl(3).png"
+    },
+    {
+      "name": "meta · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/meta.png"
+    },
+    {
+      "name": "mexc · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/mexc.png"
+    },
+    {
+      "name": "miaomiaoyun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/miaomiaoyun.png"
+    },
+    {
+      "name": "microsoft · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/microsoft.png"
+    },
+    {
+      "name": "microsoft(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/microsoft(1).png"
+    },
+    {
+      "name": "microsoft(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/microsoft(2).png"
+    },
+    {
+      "name": "migushipin · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/migushipin.png"
+    },
+    {
+      "name": "mihomo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/mihomo.png"
+    },
+    {
+      "name": "milkcat · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/milkcat.png"
+    },
+    {
+      "name": "misakaF · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/misakaF.png"
+    },
+    {
+      "name": "mitce · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/mitce.png"
+    },
+    {
+      "name": "mojie(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/mojie(1).png"
+    },
+    {
+      "name": "N26 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/N26.png"
+    },
+    {
+      "name": "naiu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/naiu.png"
+    },
+    {
+      "name": "naiu(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/naiu(1).png"
+    },
+    {
+      "name": "Nanyun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Nanyun.png"
+    },
+    {
+      "name": "NAS · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/NAS.png"
+    },
+    {
+      "name": "NAS(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/NAS(1).png"
+    },
+    {
+      "name": "NAS(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/NAS(2).png"
+    },
+    {
+      "name": "Nerwo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Nerwo.png"
+    },
+    {
+      "name": "netflix · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/netflix.png"
+    },
+    {
+      "name": "netflix(old) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/netflix(old).png"
+    },
+    {
+      "name": "netflix(red) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/netflix(red).png"
+    },
+    {
+      "name": "netgoldstar · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/netgoldstar.png"
+    },
+    {
+      "name": "Netherlands · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Netherlands.png"
+    },
+    {
+      "name": "Netherlands(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Netherlands(1).png"
+    },
+    {
+      "name": "Netherlands(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Netherlands(2).png"
+    },
+    {
+      "name": "NetLove · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/NetLove.png"
+    },
+    {
+      "name": "NetLove(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/NetLove(1).png"
+    },
+    {
+      "name": "NEX · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/NEX.png"
+    },
+    {
+      "name": "Nexitally · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Nexitally.png"
+    },
+    {
+      "name": "Nexitally(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Nexitally(1).png"
+    },
+    {
+      "name": "nfsq · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/nfsq.png"
+    },
+    {
+      "name": "niceduck · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/niceduck.png"
+    },
+    {
+      "name": "niceduck(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/niceduck(1).png"
+    },
+    {
+      "name": "NieRCloud1 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/NieRCloud1.png"
+    },
+    {
+      "name": "NieRCloud2 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/NieRCloud2.png"
+    },
+    {
+      "name": "nike · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/nike.png"
+    },
+    {
+      "name": "NorthKorea · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/NorthKorea.png"
+    },
+    {
+      "name": "NorthKorea(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/NorthKorea(1).png"
+    },
+    {
+      "name": "NorthKorea(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/NorthKorea(2).png"
+    },
+    {
+      "name": "Notion · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Notion.png"
+    },
+    {
+      "name": "nowplayer · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/nowplayer.png"
+    },
+    {
+      "name": "NutBit · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/NutBit.png"
+    },
+    {
+      "name": "NutBit(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/NutBit(1).png"
+    },
+    {
+      "name": "NutBit(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/NutBit(2).png"
+    },
+    {
+      "name": "Nuts · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Nuts.png"
+    },
+    {
+      "name": "ofonet · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ofonet.png"
+    },
+    {
+      "name": "okanc · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/okanc.png"
+    },
+    {
+      "name": "okanc(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/okanc(1).png"
+    },
+    {
+      "name": "okx · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/okx.png"
+    },
+    {
+      "name": "okx(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/okx(1).png"
+    },
+    {
+      "name": "omofun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/omofun.png"
+    },
+    {
+      "name": "OneDrive · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/OneDrive.png"
+    },
+    {
+      "name": "OneDrive(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/OneDrive(1).png"
+    },
+    {
+      "name": "OpenList · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/OpenList.png"
+    },
+    {
+      "name": "OtterLife · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/OtterLife.png"
+    },
+    {
+      "name": "ouo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ouo.png"
+    },
+    {
+      "name": "outlook · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/outlook.png"
+    },
+    {
+      "name": "outlook(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/outlook(1).png"
+    },
+    {
+      "name": "OverWall · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/OverWall.png"
+    },
+    {
+      "name": "pandaTV · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/pandaTV.png"
+    },
+    {
+      "name": "paypal · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/paypal.png"
+    },
+    {
+      "name": "paypal(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/paypal(1).png"
+    },
+    {
+      "name": "paypal(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/paypal(2).png"
+    },
+    {
+      "name": "pCloud · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/pCloud.png"
+    },
+    {
+      "name": "peiqian · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/peiqian.png"
+    },
+    {
+      "name": "Perplexity · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Perplexity.png"
+    },
+    {
+      "name": "pikpak · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/pikpak.png"
+    },
+    {
+      "name": "pinduoduo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/pinduoduo.png"
+    },
+    {
+      "name": "pinganhaochezhu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/pinganhaochezhu.png"
+    },
+    {
+      "name": "pipixia · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/pipixia.png"
+    },
+    {
+      "name": "pipixia(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/pipixia(1).png"
+    },
+    {
+      "name": "pixiv · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/pixiv.png"
+    },
+    {
+      "name": "pixiv(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/pixiv(1).png"
+    },
+    {
+      "name": "pixiv(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/pixiv(2).png"
+    },
+    {
+      "name": "play · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/play.png"
+    },
+    {
+      "name": "play(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/play(1).png"
+    },
+    {
+      "name": "play(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/play(2).png"
+    },
+    {
+      "name": "plex · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/plex.png"
+    },
+    {
+      "name": "pokemon · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/pokemon.png"
+    },
+    {
+      "name": "PokerCloud · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/PokerCloud.png"
+    },
+    {
+      "name": "Poland · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Poland.png"
+    },
+    {
+      "name": "Poland(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Poland(2).png"
+    },
+    {
+      "name": "Poland(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Poland(3).png"
+    },
+    {
+      "name": "PrimeVideo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/PrimeVideo.png"
+    },
+    {
+      "name": "ProtonMail · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/ProtonMail.png"
+    },
+    {
+      "name": "proxmox · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/proxmox.png"
+    },
+    {
+      "name": "pukoudaixiaoyuan · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/pukoudaixiaoyuan.png"
+    },
+    {
+      "name": "qidian · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/qidian.png"
+    },
+    {
+      "name": "qidian(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/qidian(1).png"
+    },
+    {
+      "name": "qingfengyun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/qingfengyun.png"
+    },
+    {
+      "name": "qingtingfm · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/qingtingfm.png"
+    },
+    {
+      "name": "qingyunti · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/qingyunti.png"
+    },
+    {
+      "name": "qishuiyinyue · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/qishuiyinyue.png"
+    },
+    {
+      "name": "qq · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/qq.png"
+    },
+    {
+      "name": "qq(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/qq(1).png"
+    },
+    {
+      "name": "qq(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/qq(2).png"
+    },
+    {
+      "name": "quanqiu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/quanqiu.png"
+    },
+    {
+      "name": "quanqiu(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/quanqiu(1).png"
+    },
+    {
+      "name": "quanqiu(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/quanqiu(2).png"
+    },
+    {
+      "name": "quanqiu(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/quanqiu(3).png"
+    },
+    {
+      "name": "quanx · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/quanx.png"
+    },
+    {
+      "name": "quanx(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/quanx(1).png"
+    },
+    {
+      "name": "quanx(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/quanx(2).png"
+    },
+    {
+      "name": "quark · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/quark.png"
+    },
+    {
+      "name": "qunhuiguanjia · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/qunhuiguanjia.png"
+    },
+    {
+      "name": "RecMata · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/RecMata.png"
+    },
+    {
+      "name": "Redapricot · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Redapricot.png"
+    },
+    {
+      "name": "Redapricot(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Redapricot(1).png"
+    },
+    {
+      "name": "reddit · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/reddit.png"
+    },
+    {
+      "name": "reddit(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/reddit(1).png"
+    },
+    {
+      "name": "redotpay · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/redotpay.png"
+    },
+    {
+      "name": "reflix · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/reflix.png"
+    },
+    {
+      "name": "RepublicofthePhilippines · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/RepublicofthePhilippines.png"
+    },
+    {
+      "name": "RepublicofthePhilippines(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/RepublicofthePhilippines(1).png"
+    },
+    {
+      "name": "RepublicofthePhilippines(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/RepublicofthePhilippines(2).png"
+    },
+    {
+      "name": "riolu_notice · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/riolu_notice.png"
+    },
+    {
+      "name": "roblox · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/roblox.png"
+    },
+    {
+      "name": "rocket · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/rocket.png"
+    },
+    {
+      "name": "rocket(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/rocket(1).png"
+    },
+    {
+      "name": "rocket(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/rocket(2).png"
+    },
+    {
+      "name": "rocket(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/rocket(3).png"
+    },
+    {
+      "name": "rrgg_inc · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/rrgg_inc.png"
+    },
+    {
+      "name": "Russia · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Russia.png"
+    },
+    {
+      "name": "Russia(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Russia(1).png"
+    },
+    {
+      "name": "Russia(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Russia(2).png"
+    },
+    {
+      "name": "SakuraCat · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/SakuraCat.png"
+    },
+    {
+      "name": "SaturDay · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/SaturDay.png"
+    },
+    {
+      "name": "SaturDay(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/SaturDay(1).png"
+    },
+    {
+      "name": "SaturDay(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/SaturDay(2).png"
+    },
+    {
+      "name": "Sausage · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Sausage.png"
+    },
+    {
+      "name": "SaySS · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/SaySS.png"
+    },
+    {
+      "name": "senplayer · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/senplayer.png"
+    },
+    {
+      "name": "senplayer(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/senplayer(1).png"
+    },
+    {
+      "name": "sensortower · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/sensortower.png"
+    },
+    {
+      "name": "SevenXue · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/SevenXue.png"
+    },
+    {
+      "name": "SevenXue(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/SevenXue(1).png"
+    },
+    {
+      "name": "shanlianVPN · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shanlianVPN.png"
+    },
+    {
+      "name": "Sharon · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Sharon.png"
+    },
+    {
+      "name": "shengshenghuozhu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/shengshenghuozhu.png"
+    },
+    {
+      "name": "shenlongjichang · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shenlongjichang.png"
+    },
+    {
+      "name": "shenluo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shenluo.png"
+    },
+    {
+      "name": "shihuo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/shihuo.png"
+    },
+    {
+      "name": "shouhou · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shouhou.png"
+    },
+    {
+      "name": "shouhou(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shouhou(1).png"
+    },
+    {
+      "name": "shouhou(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shouhou(2).png"
+    },
+    {
+      "name": "shouhou(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shouhou(3).png"
+    },
+    {
+      "name": "shouhou(4) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shouhou(4).png"
+    },
+    {
+      "name": "shouhou(5) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shouhou(5).png"
+    },
+    {
+      "name": "shunfeng · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/shunfeng.png"
+    },
+    {
+      "name": "shutiao · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shutiao.png"
+    },
+    {
+      "name": "shutiao(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shutiao(1).png"
+    },
+    {
+      "name": "sifangcai · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/sifangcai.png"
+    },
+    {
+      "name": "singapore · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/singapore.png"
+    },
+    {
+      "name": "singapore(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/singapore(1).png"
+    },
+    {
+      "name": "singapore(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/singapore(2).png"
+    },
+    {
+      "name": "singbox · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/singbox.png"
+    },
+    {
+      "name": "smoothrase · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/smoothrase.png"
+    },
+    {
+      "name": "soul · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/soul.png"
+    },
+    {
+      "name": "SpaceK · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/SpaceK.png"
+    },
+    {
+      "name": "Spain · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Spain.png"
+    },
+    {
+      "name": "Spain(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Spain(2).png"
+    },
+    {
+      "name": "speedcatc · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/speedcatc.png"
+    },
+    {
+      "name": "speedcatc(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/speedcatc(1).png"
+    },
+    {
+      "name": "speedtest · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/speedtest.png"
+    },
+    {
+      "name": "speedtest(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/speedtest(1).png"
+    },
+    {
+      "name": "speedtest(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/speedtest(2).png"
+    },
+    {
+      "name": "speedtest(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/speedtest(3).png"
+    },
+    {
+      "name": "spotify · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/spotify.png"
+    },
+    {
+      "name": "spotify(green) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/spotify(green).png"
+    },
+    {
+      "name": "spotify(green)(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/spotify(green)(1).png"
+    },
+    {
+      "name": "ssLinks · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ssLinks.png"
+    },
+    {
+      "name": "ssone · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ssone.png"
+    },
+    {
+      "name": "ssrdog · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ssrdog.png"
+    },
+    {
+      "name": "Starshine_CLOUD · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Starshine_CLOUD.png"
+    },
+    {
+      "name": "Starshine_CLOUD(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Starshine_CLOUD(1).png"
+    },
+    {
+      "name": "steam · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/steam.png"
+    },
+    {
+      "name": "steam(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/steam(1).png"
+    },
+    {
+      "name": "stripe · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/stripe.png"
+    },
+    {
+      "name": "sub · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/sub.png"
+    },
+    {
+      "name": "sub(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/sub(1).png"
+    },
+    {
+      "name": "sukiaira · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/sukiaira.png"
+    },
+    {
+      "name": "superbiu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/superbiu.png"
+    },
+    {
+      "name": "superbiu(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/superbiu(1).png"
+    },
+    {
+      "name": "Surge(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Surge(1).png"
+    },
+    {
+      "name": "Surge(10) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Surge(10).png"
+    },
+    {
+      "name": "Surge(11) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Surge(11).png"
+    },
+    {
+      "name": "Surge(12) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Surge(12).png"
+    },
+    {
+      "name": "Surge(13) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Surge(13).png"
+    },
+    {
+      "name": "Surge(14) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Surge(14).png"
+    },
+    {
+      "name": "Surge(15) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Surge(15).png"
+    },
+    {
+      "name": "Surge(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Surge(2).png"
+    },
+    {
+      "name": "Surge(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Surge(3).png"
+    },
+    {
+      "name": "Surge(4) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Surge(4).png"
+    },
+    {
+      "name": "Surge(5) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Surge(5).png"
+    },
+    {
+      "name": "Surge(6) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Surge(6).png"
+    },
+    {
+      "name": "Surge(7) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Surge(7).png"
+    },
+    {
+      "name": "Surge(8) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Surge(8).png"
+    },
+    {
+      "name": "Surge(9) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/02ProxySoftLogo/Surge(9).png"
+    },
+    {
+      "name": "SUYA · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/SUYA.png"
+    },
+    {
+      "name": "suya(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/suya(1).png"
+    },
+    {
+      "name": "swift · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/swift.png"
+    },
+    {
+      "name": "Swiftgram · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram.png"
+    },
+    {
+      "name": "Swiftgram(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(1).png"
+    },
+    {
+      "name": "Swiftgram(10) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(10).png"
+    },
+    {
+      "name": "Swiftgram(11) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(11).png"
+    },
+    {
+      "name": "Swiftgram(12) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(12).png"
+    },
+    {
+      "name": "Swiftgram(13) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(13).png"
+    },
+    {
+      "name": "Swiftgram(14) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(14).png"
+    },
+    {
+      "name": "Swiftgram(15) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(15).png"
+    },
+    {
+      "name": "Swiftgram(16) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(16).png"
+    },
+    {
+      "name": "Swiftgram(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(2).png"
+    },
+    {
+      "name": "Swiftgram(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(3).png"
+    },
+    {
+      "name": "Swiftgram(4) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(4).png"
+    },
+    {
+      "name": "Swiftgram(5) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(5).png"
+    },
+    {
+      "name": "Swiftgram(6) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(6).png"
+    },
+    {
+      "name": "Swiftgram(7) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(7).png"
+    },
+    {
+      "name": "Swiftgram(8) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(8).png"
+    },
+    {
+      "name": "Swiftgram(9) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Swiftgram(9).png"
+    },
+    {
+      "name": "SYN · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/SYN.png"
+    },
+    {
+      "name": "syn(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/syn(1).png"
+    },
+    {
+      "name": "TAG · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/TAG.png"
+    },
+    {
+      "name": "TAG(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/TAG(1).png"
+    },
+    {
+      "name": "tailscale · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/tailscale.png"
+    },
+    {
+      "name": "taiwan · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/taiwan.png"
+    },
+    {
+      "name": "taiwan(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/taiwan(1).png"
+    },
+    {
+      "name": "taiwan(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/taiwan(2).png"
+    },
+    {
+      "name": "taiwan(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/taiwan(3).png"
+    },
+    {
+      "name": "taiwan(4) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/taiwan(4).png"
+    },
+    {
+      "name": "talkatone · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/talkatone.png"
+    },
+    {
+      "name": "taobao · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/taobao.png"
+    },
+    {
+      "name": "taobao(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/taobao(1).png"
+    },
+    {
+      "name": "taoqitu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/taoqitu.png"
+    },
+    {
+      "name": "teams · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/teams.png"
+    },
+    {
+      "name": "teasmoke · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/teasmoke.png"
+    },
+    {
+      "name": "telegram · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/telegram.png"
+    },
+    {
+      "name": "telegram(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/telegram(1).png"
+    },
+    {
+      "name": "telegram(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/telegram(2).png"
+    },
+    {
+      "name": "telegram(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/telegram(3).png"
+    },
+    {
+      "name": "telegram(4) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/telegram(4).png"
+    },
+    {
+      "name": "telegram(blue1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/telegram(blue1).png"
+    },
+    {
+      "name": "Telegrampremium · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Telegrampremium.png"
+    },
+    {
+      "name": "Telegrampremium(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Telegrampremium(1).png"
+    },
+    {
+      "name": "Tencent · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/Tencent.png"
+    },
+    {
+      "name": "tengxunditu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/tengxunditu.png"
+    },
+    {
+      "name": "tengxunshoujiguanjia · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/tengxunshoujiguanjia.png"
+    },
+    {
+      "name": "TERO · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/TERO.png"
+    },
+    {
+      "name": "tesla · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/tesla.png"
+    },
+    {
+      "name": "testflight · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/testflight.png"
+    },
+    {
+      "name": "testflight(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/testflight(1).png"
+    },
+    {
+      "name": "testflight(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/testflight(2).png"
+    },
+    {
+      "name": "Thailand · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Thailand.png"
+    },
+    {
+      "name": "Thailand(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Thailand(1).png"
+    },
+    {
+      "name": "Thailand(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Thailand(2).png"
+    },
+    {
+      "name": "Threads · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Threads.png"
+    },
+    {
+      "name": "tiktok · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/tiktok.png"
+    },
+    {
+      "name": "tiktok((2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/tiktok((2).png"
+    },
+    {
+      "name": "tiktok(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/tiktok(1).png"
+    },
+    {
+      "name": "TIRN · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/TIRN.png"
+    },
+    {
+      "name": "TKV · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/TKV.png"
+    },
+    {
+      "name": "TKV(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/TKV(1).png"
+    },
+    {
+      "name": "TMDB · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/TMDB.png"
+    },
+    {
+      "name": "tmobile · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/tmobile.png"
+    },
+    {
+      "name": "TNET · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/TNET.png"
+    },
+    {
+      "name": "TNET(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/TNET(1).png"
+    },
+    {
+      "name": "topwidge · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/topwidge.png"
+    },
+    {
+      "name": "TouchRetouch · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/TouchRetouch.png"
+    },
+    {
+      "name": "tt · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/tt.png"
+    },
+    {
+      "name": "tt(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/tt(1).png"
+    },
+    {
+      "name": "Turkey · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Turkey.png"
+    },
+    {
+      "name": "Turkey(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Turkey(1).png"
+    },
+    {
+      "name": "Turkey(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Turkey(2).png"
+    },
+    {
+      "name": "Turrit · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Turrit.png"
+    },
+    {
+      "name": "TVBAnywhere · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/TVBAnywhere.png"
+    },
+    {
+      "name": "twitch · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/twitch.png"
+    },
+    {
+      "name": "twitch(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/twitch(1).png"
+    },
+    {
+      "name": "twitter · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/twitter.png"
+    },
+    {
+      "name": "twitter(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/twitter(1).png"
+    },
+    {
+      "name": "twitter(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/twitter(2).png"
+    },
+    {
+      "name": "twitter(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/twitter(3).png"
+    },
+    {
+      "name": "UHD · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/UHD.png"
+    },
+    {
+      "name": "UnitedKingdom · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/UnitedKingdom.png"
+    },
+    {
+      "name": "UnitedKingdom(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/UnitedKingdom(1).png"
+    },
+    {
+      "name": "UnitedKingdom(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/UnitedKingdom(2).png"
+    },
+    {
+      "name": "US · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/US.png"
+    },
+    {
+      "name": "US(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/US(1).png"
+    },
+    {
+      "name": "US(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/US(2).png"
+    },
+    {
+      "name": "USDT · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/USDT.png"
+    },
+    {
+      "name": "v2paw · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/v2paw.png"
+    },
+    {
+      "name": "vidhub · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/vidhub.png"
+    },
+    {
+      "name": "ViKinglinks · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ViKinglinks.png"
+    },
+    {
+      "name": "Vikinglinks(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Vikinglinks(1).png"
+    },
+    {
+      "name": "Vikinglinks(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Vikinglinks(2).png"
+    },
+    {
+      "name": "Vista · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/Vista.png"
+    },
+    {
+      "name": "vmssrNotice · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/vmssrNotice.png"
+    },
+    {
+      "name": "vsco · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/vsco.png"
+    },
+    {
+      "name": "vv · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/vv.png"
+    },
+    {
+      "name": "waixingren · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/waixingren.png"
+    },
+    {
+      "name": "wanda · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/wanda.png"
+    },
+    {
+      "name": "wanda(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/wanda(1).png"
+    },
+    {
+      "name": "wangshangguowang · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/wangshangguowang.png"
+    },
+    {
+      "name": "wanmeishijiedianjing · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/wanmeishijiedianjing.png"
+    },
+    {
+      "name": "wechat · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/wechat.png"
+    },
+    {
+      "name": "wechat(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/wechat(1).png"
+    },
+    {
+      "name": "weibo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/weibo.png"
+    },
+    {
+      "name": "weibo(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/weibo(1).png"
+    },
+    {
+      "name": "westdata · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/westdata.png"
+    },
+    {
+      "name": "westdata(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/westdata(1).png"
+    },
+    {
+      "name": "whatsapp · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/whatsapp.png"
+    },
+    {
+      "name": "whatsapp(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/whatsapp(1).png"
+    },
+    {
+      "name": "whatsapp(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/whatsapp(2).png"
+    },
+    {
+      "name": "wifiwannengyaoshi · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/wifiwannengyaoshi.png"
+    },
+    {
+      "name": "wikipedia · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/wikipedia.png"
+    },
+    {
+      "name": "wuyouxing · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/wuyouxing.png"
+    },
+    {
+      "name": "wuyouyun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/wuyouyun.png"
+    },
+    {
+      "name": "wuyouyun(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/wuyouyun(1).png"
+    },
+    {
+      "name": "wyy · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/wyy.png"
+    },
+    {
+      "name": "wyy(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/wyy(1).png"
+    },
+    {
+      "name": "xianyu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xianyu.png"
+    },
+    {
+      "name": "xiaofeixiang · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/xiaofeixiang.png"
+    },
+    {
+      "name": "xiaohongshu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xiaohongshu.png"
+    },
+    {
+      "name": "xiaohongshu(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xiaohongshu(1).png"
+    },
+    {
+      "name": "xiaohuanRodelPlayer · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xiaohuanRodelPlayer.png"
+    },
+    {
+      "name": "xiaoxiong · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/xiaoxiong.png"
+    },
+    {
+      "name": "xiaoxiong(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/xiaoxiong(1).png"
+    },
+    {
+      "name": "xiaoyi · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/xiaoyi.png"
+    },
+    {
+      "name": "xiaoyi(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/xiaoyi(1).png"
+    },
+    {
+      "name": "xiechenglvxing · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xiechenglvxing.png"
+    },
+    {
+      "name": "xiechenglvxing(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xiechenglvxing(1).png"
+    },
+    {
+      "name": "ximalaya · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/ximalaya.png"
+    },
+    {
+      "name": "xTerm256 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/xTerm256.png"
+    },
+    {
+      "name": "xueshan · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/xueshan.png"
+    },
+    {
+      "name": "XXAI · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/XXAI.png"
+    },
+    {
+      "name": "yawang · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yawang.png"
+    },
+    {
+      "name": "YepNotice · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/YepNotice.png"
+    },
+    {
+      "name": "yeshayun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yeshayun.png"
+    },
+    {
+      "name": "yeshayun(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yeshayun(1).png"
+    },
+    {
+      "name": "yeshayun(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yeshayun(2).png"
+    },
+    {
+      "name": "yeshayun(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yeshayun(3).png"
+    },
+    {
+      "name": "yidong · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/yidong.png"
+    },
+    {
+      "name": "yidong(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/yidong(1).png"
+    },
+    {
+      "name": "yifenjichang · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yifenjichang.png"
+    },
+    {
+      "name": "yiqidazhong · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/yiqidazhong.png"
+    },
+    {
+      "name": "yiyuanjichang · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yiyuanjichang.png"
+    },
+    {
+      "name": "yiyunti · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yiyunti.png"
+    },
+    {
+      "name": "ykkcloud · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ykkcloud.png"
+    },
+    {
+      "name": "yolo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yolo.png"
+    },
+    {
+      "name": "yolo(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yolo(1).png"
+    },
+    {
+      "name": "youf · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/youf.png"
+    },
+    {
+      "name": "youkushipin · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/youkushipin.png"
+    },
+    {
+      "name": "youkushipin(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/youkushipin(1).png"
+    },
+    {
+      "name": "Youtube · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Youtube.png"
+    },
+    {
+      "name": "youtube(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/youtube(1).png"
+    },
+    {
+      "name": "youtube(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/youtube(2).png"
+    },
+    {
+      "name": "youtube(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/youtube(3).png"
+    },
+    {
+      "name": "youtube(4) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/youtube(4).png"
+    },
+    {
+      "name": "ytoo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ytoo.png"
+    },
+    {
+      "name": "yu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/yu.png"
+    },
+    {
+      "name": "yu(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/yu(1).png"
+    },
+    {
+      "name": "yu(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/yu(2).png"
+    },
+    {
+      "name": "yunshanfu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/yunshanfu.png"
+    },
+    {
+      "name": "yunzhiyi · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yunzhiyi.png"
+    },
+    {
+      "name": "yushe · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yushe.png"
+    },
+    {
+      "name": "yutu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yutu.png"
+    },
+    {
+      "name": "yuyanyun · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yuyanyun.png"
+    },
+    {
+      "name": "yybx · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/yybx.png"
+    },
+    {
+      "name": "yztcloud · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yztcloud.png"
+    },
+    {
+      "name": "zhangshanglol · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/zhangshanglol.png"
+    },
+    {
+      "name": "zhangshangshenghuo · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/zhangshangshenghuo.png"
+    },
+    {
+      "name": "zhangshangshenghuo(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/zhangshangshenghuo(1).png"
+    },
+    {
+      "name": "zhaoshangyinhang · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/zhaoshangyinhang.png"
+    },
+    {
+      "name": "zhihu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/zhihu.png"
+    },
+    {
+      "name": "zhuanyi · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/zhuanyi.png"
+    },
+    {
+      "name": "zhuanyi(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/zhuanyi(1).png"
+    },
+    {
+      "name": "zhuanyi(2) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/zhuanyi(2).png"
+    },
+    {
+      "name": "zhuanyi(3) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/zhuanyi(3).png"
+    },
+    {
+      "name": "zhuanyi(4) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/zhuanyi(4).png"
+    },
+    {
+      "name": "zoomearth · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/zoomearth.png"
+    },
+    {
+      "name": "zuimeibizhi · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/zuimeibizhi.png"
+    },
+    {
+      "name": "zuiyou · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/zuiyou.png"
+    }
+  ]
+}

@@ -1,0 +1,1282 @@
+{
+  "name": "AllanRita · Qure-Light",
+  "description": "Original upstream image URLs and source credits retained.",
+  "icons": [
+    {
+      "name": "5iTV · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/5iTV.png"
+    },
+    {
+      "name": "aaex · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/aaex.png"
+    },
+    {
+      "name": "AbemaTV · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AbemaTV.png"
+    },
+    {
+      "name": "AbemaTV_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AbemaTV_Letter.png"
+    },
+    {
+      "name": "AdBlack · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AdBlack.png"
+    },
+    {
+      "name": "Advertising · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Advertising.png"
+    },
+    {
+      "name": "AdWhite · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AdWhite.png"
+    },
+    {
+      "name": "AIA · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AIA.png"
+    },
+    {
+      "name": "AIA_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AIA_Letter.png"
+    },
+    {
+      "name": "Airport · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Airport.png"
+    },
+    {
+      "name": "Alibaba · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Alibaba.png"
+    },
+    {
+      "name": "Alibaba_Cloud · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Alibaba_Cloud.png"
+    },
+    {
+      "name": "All4 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/All4.png"
+    },
+    {
+      "name": "AmyTelecom · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AmyTelecom.png"
+    },
+    {
+      "name": "AmyTelecom_1 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AmyTelecom_1.png"
+    },
+    {
+      "name": "Apol · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apol.png"
+    },
+    {
+      "name": "App_Store · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/App_Store.png"
+    },
+    {
+      "name": "Apple · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png"
+    },
+    {
+      "name": "Apple_Fitness · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple_Fitness.png"
+    },
+    {
+      "name": "Apple_Fitness+ · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple_Fitness+.png"
+    },
+    {
+      "name": "Apple_Mail · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple_Mail.png"
+    },
+    {
+      "name": "Apple_Music · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple_Music.png"
+    },
+    {
+      "name": "Apple_News · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple_News.png"
+    },
+    {
+      "name": "Apple_TV · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple_TV.png"
+    },
+    {
+      "name": "Apple_TV_Plus · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple_TV_Plus.png"
+    },
+    {
+      "name": "Apple_Update · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple_Update.png"
+    },
+    {
+      "name": "Area · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Area.png"
+    },
+    {
+      "name": "ARK · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ARK.png"
+    },
+    {
+      "name": "Auto · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png"
+    },
+    {
+      "name": "Available · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Available.png"
+    },
+    {
+      "name": "Available_Alt · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Available_Alt.png"
+    },
+    {
+      "name": "AWS · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AWS.png"
+    },
+    {
+      "name": "Azure · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Azure.png"
+    },
+    {
+      "name": "Back · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Back.png"
+    },
+    {
+      "name": "Bahamut · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Bahamut.png"
+    },
+    {
+      "name": "Baidu_Cloud · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Baidu_Cloud.png"
+    },
+    {
+      "name": "Bamboo · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Bamboo.png"
+    },
+    {
+      "name": "BBC_iPlayer · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/BBC_iPlayer.png"
+    },
+    {
+      "name": "BBTEC · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/BBTEC.png"
+    },
+    {
+      "name": "BGP · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/BGP.png"
+    },
+    {
+      "name": "bilibili · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/bilibili.png"
+    },
+    {
+      "name": "Blackhole · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Blackhole.png"
+    },
+    {
+      "name": "Blinkload · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Blinkload.png"
+    },
+    {
+      "name": "Blinkload_B · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Blinkload_B.png"
+    },
+    {
+      "name": "Blinkload_SS · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Blinkload_SS.png"
+    },
+    {
+      "name": "Blinkload_V2Ray · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Blinkload_V2Ray.png"
+    },
+    {
+      "name": "Bookpedia · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Bookpedia.png"
+    },
+    {
+      "name": "BosLife · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/BosLife.png"
+    },
+    {
+      "name": "BosLife_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/BosLife_Letter.png"
+    },
+    {
+      "name": "Bot · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Bot.png"
+    },
+    {
+      "name": "Bypass · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Bypass.png"
+    },
+    {
+      "name": "CA · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CA.png"
+    },
+    {
+      "name": "Canada · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Canada.png"
+    },
+    {
+      "name": "Cat · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Cat.png"
+    },
+    {
+      "name": "Catnet · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Catnet.png"
+    },
+    {
+      "name": "CCCAT · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CCCAT.png"
+    },
+    {
+      "name": "CCCAT_C · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CCCAT_C.png"
+    },
+    {
+      "name": "Cellular · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Cellular.png"
+    },
+    {
+      "name": "CEN · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CEN.png"
+    },
+    {
+      "name": "China · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/China.png"
+    },
+    {
+      "name": "China_Map · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/China_Map.png"
+    },
+    {
+      "name": "China_Telecom · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/China_Telecom.png"
+    },
+    {
+      "name": "China_Unicom · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/China_Unicom.png"
+    },
+    {
+      "name": "CHT · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CHT.png"
+    },
+    {
+      "name": "Cloudflare · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Cloudflare.png"
+    },
+    {
+      "name": "CMI · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CMI.png"
+    },
+    {
+      "name": "CN · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CN.png"
+    },
+    {
+      "name": "CN2 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CN2.png"
+    },
+    {
+      "name": "CN2_GIA · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CN2_GIA.png"
+    },
+    {
+      "name": "CN2_GT · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CN2_GT.png"
+    },
+    {
+      "name": "CONAIR · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CONAIR.png"
+    },
+    {
+      "name": "CrossWall · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CrossWall.png"
+    },
+    {
+      "name": "CTM · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CTM.png"
+    },
+    {
+      "name": "Cydia · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Cydia.png"
+    },
+    {
+      "name": "Daily · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Daily.png"
+    },
+    {
+      "name": "DAZN · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/DAZN.png"
+    },
+    {
+      "name": "DE · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/DE.png"
+    },
+    {
+      "name": "deezer · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/deezer.png"
+    },
+    {
+      "name": "deezer_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/deezer_Letter.png"
+    },
+    {
+      "name": "Dinosaur · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Dinosaur.png"
+    },
+    {
+      "name": "Direct · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Direct.png"
+    },
+    {
+      "name": "discovery+ · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/discovery+.png"
+    },
+    {
+      "name": "Disney+ · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Disney+.png"
+    },
+    {
+      "name": "Dler · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Dler.png"
+    },
+    {
+      "name": "DMIT · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/DMIT.png"
+    },
+    {
+      "name": "Domestic · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Domestic.png"
+    },
+    {
+      "name": "DomesticMedia · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/DomesticMedia.png"
+    },
+    {
+      "name": "Download · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Download.png"
+    },
+    {
+      "name": "Drill · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Drill.png"
+    },
+    {
+      "name": "Emby · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Emby.png"
+    },
+    {
+      "name": "encoreTVB · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/encoreTVB.png"
+    },
+    {
+      "name": "ESPN+ · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ESPN+.png"
+    },
+    {
+      "name": "EU · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/EU.png"
+    },
+    {
+      "name": "European_Union · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/European_Union.png"
+    },
+    {
+      "name": "Facebook · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Facebook.png"
+    },
+    {
+      "name": "FI · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/FI.png"
+    },
+    {
+      "name": "Filter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Filter.png"
+    },
+    {
+      "name": "Final · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png"
+    },
+    {
+      "name": "Find_My · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Find_My.png"
+    },
+    {
+      "name": "Flamingo · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Flamingo.png"
+    },
+    {
+      "name": "ForeignMedia · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ForeignMedia.png"
+    },
+    {
+      "name": "FOX · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/FOX.png"
+    },
+    {
+      "name": "friDay · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/friDay.png"
+    },
+    {
+      "name": "Frog · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Frog.png"
+    },
+    {
+      "name": "fuboTV · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/fuboTV.png"
+    },
+    {
+      "name": "G-Core_Labs · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/G-Core_Labs.png"
+    },
+    {
+      "name": "Game · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Game.png"
+    },
+    {
+      "name": "GCP · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GCP.png"
+    },
+    {
+      "name": "Germany · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Germany.png"
+    },
+    {
+      "name": "GIA · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GIA.png"
+    },
+    {
+      "name": "GLaDOS · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GLaDOS.png"
+    },
+    {
+      "name": "Global · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Global.png"
+    },
+    {
+      "name": "GlobalMedia · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GlobalMedia.png"
+    },
+    {
+      "name": "Google · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Google.png"
+    },
+    {
+      "name": "Google_Drive · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Google_Drive.png"
+    },
+    {
+      "name": "Google_Opinion_Rewards · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Google_Opinion_Rewards.png"
+    },
+    {
+      "name": "Google_Search · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Google_Search.png"
+    },
+    {
+      "name": "GT · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GT.png"
+    },
+    {
+      "name": "GuGuEX · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GuGuEX.png"
+    },
+    {
+      "name": "GuGuEX_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GuGuEX_Letter.png"
+    },
+    {
+      "name": "HBO · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/HBO.png"
+    },
+    {
+      "name": "HBO_Max · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/HBO_Max.png"
+    },
+    {
+      "name": "Heart · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Heart.png"
+    },
+    {
+      "name": "Heureka · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Heureka.png"
+    },
+    {
+      "name": "HGC · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/HGC.png"
+    },
+    {
+      "name": "Hijacking · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Hijacking.png"
+    },
+    {
+      "name": "HiNet · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/HiNet.png"
+    },
+    {
+      "name": "hitun · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/hitun.png"
+    },
+    {
+      "name": "HK · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/HK.png"
+    },
+    {
+      "name": "HKBN · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/HKBN.png"
+    },
+    {
+      "name": "HKMTMedia · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/HKMTMedia.png"
+    },
+    {
+      "name": "HKT · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/HKT.png"
+    },
+    {
+      "name": "Hong_Kong · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Hong_Kong.png"
+    },
+    {
+      "name": "Hulu · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Hulu.png"
+    },
+    {
+      "name": "iCloud · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/iCloud.png"
+    },
+    {
+      "name": "IEPL · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/IEPL.png"
+    },
+    {
+      "name": "IIJ · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/IIJ.png"
+    },
+    {
+      "name": "IN · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/IN.png"
+    },
+    {
+      "name": "Ingress · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Ingress.png"
+    },
+    {
+      "name": "Instagram · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Instagram.png"
+    },
+    {
+      "name": "IPLC · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/IPLC.png"
+    },
+    {
+      "name": "iQIYI · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/iQIYI.png"
+    },
+    {
+      "name": "iQIYI&bilibili · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/iQIYI&bilibili.png"
+    },
+    {
+      "name": "ITV_Hub · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ITV_Hub.png"
+    },
+    {
+      "name": "Japan · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Japan.png"
+    },
+    {
+      "name": "JIYOU · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/JIYOU.png"
+    },
+    {
+      "name": "JOOX · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/JOOX.png"
+    },
+    {
+      "name": "JOOX_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/JOOX_Letter.png"
+    },
+    {
+      "name": "JP · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/JP.png"
+    },
+    {
+      "name": "KKBOX · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/KKBOX.png"
+    },
+    {
+      "name": "KKTV · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/KKTV.png"
+    },
+    {
+      "name": "Korea · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Korea.png"
+    },
+    {
+      "name": "KR · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/KR.png"
+    },
+    {
+      "name": "KT · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/KT.png"
+    },
+    {
+      "name": "Lab · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Lab.png"
+    },
+    {
+      "name": "Lambda · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Lambda.png"
+    },
+    {
+      "name": "League_of_Legends · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/League_of_Legends.png"
+    },
+    {
+      "name": "LineTV · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/LineTV.png"
+    },
+    {
+      "name": "LineTV_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/LineTV_Letter.png"
+    },
+    {
+      "name": "LiTV · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/LiTV.png"
+    },
+    {
+      "name": "Lock · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Lock.png"
+    },
+    {
+      "name": "LOL · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/LOL.png"
+    },
+    {
+      "name": "Loop · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Loop.png"
+    },
+    {
+      "name": "Luffy · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Luffy.png"
+    },
+    {
+      "name": "Macao · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Macao.png"
+    },
+    {
+      "name": "Magic · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Magic.png"
+    },
+    {
+      "name": "Mail · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Mail.png"
+    },
+    {
+      "name": "Malaysia · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Malaysia.png"
+    },
+    {
+      "name": "MAYING · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/MAYING.png"
+    },
+    {
+      "name": "Media · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Media.png"
+    },
+    {
+      "name": "Microsoft · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Microsoft.png"
+    },
+    {
+      "name": "MO · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/MO.png"
+    },
+    {
+      "name": "Mouse · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Mouse.png"
+    },
+    {
+      "name": "Music · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Music.png"
+    },
+    {
+      "name": "Music_Enhance · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Music_Enhance.png"
+    },
+    {
+      "name": "MY · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/MY.png"
+    },
+    {
+      "name": "My5 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/My5.png"
+    },
+    {
+      "name": "myTV_SUPER · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/myTV_SUPER.png"
+    },
+    {
+      "name": "N3RO · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/N3RO.png"
+    },
+    {
+      "name": "NBC · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/NBC.png"
+    },
+    {
+      "name": "Netease_Music · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netease_Music.png"
+    },
+    {
+      "name": "Netease_Music_Unlock · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netease_Music_Unlock.png"
+    },
+    {
+      "name": "Netflix · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netflix.png"
+    },
+    {
+      "name": "Netflix_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netflix_Letter.png"
+    },
+    {
+      "name": "Nexitally · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Nexitally.png"
+    },
+    {
+      "name": "Nfcloud · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Nfcloud.png"
+    },
+    {
+      "name": "niconico · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/niconico.png"
+    },
+    {
+      "name": "niconico_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/niconico_Letter.png"
+    },
+    {
+      "name": "Notion · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Notion.png"
+    },
+    {
+      "name": "NTT · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/NTT.png"
+    },
+    {
+      "name": "Null_Nation · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Null_Nation.png"
+    },
+    {
+      "name": "NyanCat · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/NyanCat.png"
+    },
+    {
+      "name": "OneDrive · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/OneDrive.png"
+    },
+    {
+      "name": "Oracle · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Oracle.png"
+    },
+    {
+      "name": "Ox · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Ox.png"
+    },
+    {
+      "name": "Panda · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Panda.png"
+    },
+    {
+      "name": "Pandora · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Pandora.png"
+    },
+    {
+      "name": "PayPal · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/PayPal.png"
+    },
+    {
+      "name": "PBS · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/PBS.png"
+    },
+    {
+      "name": "PCCW · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/PCCW.png"
+    },
+    {
+      "name": "Peacock · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Peacock.png"
+    },
+    {
+      "name": "Peacock_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Peacock_Letter.png"
+    },
+    {
+      "name": "Peacock_P · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Peacock_P.png"
+    },
+    {
+      "name": "PH · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/PH.png"
+    },
+    {
+      "name": "Philippines · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Philippines.png"
+    },
+    {
+      "name": "Pig · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Pig.png"
+    },
+    {
+      "name": "Pornhub · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Pornhub.png"
+    },
+    {
+      "name": "PostBox · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/PostBox.png"
+    },
+    {
+      "name": "PostBox_Alt · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/PostBox_Alt.png"
+    },
+    {
+      "name": "Prime_Video · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Prime_Video.png"
+    },
+    {
+      "name": "Proxy · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Proxy.png"
+    },
+    {
+      "name": "Puzzle · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Puzzle.png"
+    },
+    {
+      "name": "QQ · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/QQ.png"
+    },
+    {
+      "name": "Quantumult_X · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png"
+    },
+    {
+      "name": "Qure · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Qure.png"
+    },
+    {
+      "name": "Reject · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Reject.png"
+    },
+    {
+      "name": "rix · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/rix.png"
+    },
+    {
+      "name": "rixcloud · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/rixcloud.png"
+    },
+    {
+      "name": "Rocket · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Rocket.png"
+    },
+    {
+      "name": "Round_Robin · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Round_Robin.png"
+    },
+    {
+      "name": "Round_Robin_Alt · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Round_Robin_Alt.png"
+    },
+    {
+      "name": "RU · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/RU.png"
+    },
+    {
+      "name": "Russia · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Russia.png"
+    },
+    {
+      "name": "Server · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Server.png"
+    },
+    {
+      "name": "SG · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SG.png"
+    },
+    {
+      "name": "Singapore · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Singapore.png"
+    },
+    {
+      "name": "Siri · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Siri.png"
+    },
+    {
+      "name": "SK · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SK.png"
+    },
+    {
+      "name": "Sling_TV · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Sling_TV.png"
+    },
+    {
+      "name": "SoftBank · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SoftBank.png"
+    },
+    {
+      "name": "SoftBank_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SoftBank_Letter.png"
+    },
+    {
+      "name": "Spark · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Spark.png"
+    },
+    {
+      "name": "Speedtest · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Speedtest.png"
+    },
+    {
+      "name": "Spotify · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Spotify.png"
+    },
+    {
+      "name": "SS · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SS.png"
+    },
+    {
+      "name": "SS_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SS_Letter.png"
+    },
+    {
+      "name": "SSID · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png"
+    },
+    {
+      "name": "SSID_Alt · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID_Alt.png"
+    },
+    {
+      "name": "SSL · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSL.png"
+    },
+    {
+      "name": "SSR · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSR.png"
+    },
+    {
+      "name": "SSR_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSR_Letter.png"
+    },
+    {
+      "name": "ssrcloud · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ssrcloud.png"
+    },
+    {
+      "name": "Stack · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Stack.png"
+    },
+    {
+      "name": "Star · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Star.png"
+    },
+    {
+      "name": "Static · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static.png"
+    },
+    {
+      "name": "Static_Alt · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static_Alt.png"
+    },
+    {
+      "name": "Streaming · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Streaming.png"
+    },
+    {
+      "name": "StreamingCN · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/StreamingCN.png"
+    },
+    {
+      "name": "StreamingSE · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/StreamingSE.png"
+    },
+    {
+      "name": "TAG · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TAG.png"
+    },
+    {
+      "name": "Taiwan · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Taiwan.png"
+    },
+    {
+      "name": "Taobao · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Taobao.png"
+    },
+    {
+      "name": "Telegram · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png"
+    },
+    {
+      "name": "Telegram_X · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram_X.png"
+    },
+    {
+      "name": "Tencent_Cloud · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Tencent_Cloud.png"
+    },
+    {
+      "name": "TestFlight · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TestFlight.png"
+    },
+    {
+      "name": "TH · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TH.png"
+    },
+    {
+      "name": "Thailand · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Thailand.png"
+    },
+    {
+      "name": "TIDAL · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TIDAL.png"
+    },
+    {
+      "name": "TikTok · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TikTok.png"
+    },
+    {
+      "name": "TR · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TR.png"
+    },
+    {
+      "name": "Trojan · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Trojan.png"
+    },
+    {
+      "name": "Trojan_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Trojan_Letter.png"
+    },
+    {
+      "name": "Turkey · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Turkey.png"
+    },
+    {
+      "name": "TVB · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TVB.png"
+    },
+    {
+      "name": "TW · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TW.png"
+    },
+    {
+      "name": "Twitch · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Twitch.png"
+    },
+    {
+      "name": "Twitter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Twitter.png"
+    },
+    {
+      "name": "UK · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/UK.png"
+    },
+    {
+      "name": "ULB · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ULB.png"
+    },
+    {
+      "name": "ULB_Alt · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ULB_Alt.png"
+    },
+    {
+      "name": "UN · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/UN.png"
+    },
+    {
+      "name": "United_Kingdom · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/United_Kingdom.png"
+    },
+    {
+      "name": "United_Nations · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/United_Nations.png"
+    },
+    {
+      "name": "United_States · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/United_States.png"
+    },
+    {
+      "name": "United_States_Map · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/United_States_Map.png"
+    },
+    {
+      "name": "Unlock · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Unlock.png"
+    },
+    {
+      "name": "US · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/US.png"
+    },
+    {
+      "name": "Vimeo · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Vimeo.png"
+    },
+    {
+      "name": "VIP · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VIP.png"
+    },
+    {
+      "name": "VirMach · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VirMach.png"
+    },
+    {
+      "name": "VirMach_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VirMach_Letter.png"
+    },
+    {
+      "name": "ViuTV · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ViuTV.png"
+    },
+    {
+      "name": "VMess · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VMess.png"
+    },
+    {
+      "name": "VMess_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VMess_Letter.png"
+    },
+    {
+      "name": "w8ves · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/w8ves.png"
+    },
+    {
+      "name": "w8ves_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/w8ves_Letter.png"
+    },
+    {
+      "name": "Want_Want · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Want_Want.png"
+    },
+    {
+      "name": "Want_Want_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Want_Want_Letter.png"
+    },
+    {
+      "name": "WeChat · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/WeChat.png"
+    },
+    {
+      "name": "WeTV · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/WeTV.png"
+    },
+    {
+      "name": "WeTV_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/WeTV_Letter.png"
+    },
+    {
+      "name": "WiFi · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/WiFi.png"
+    },
+    {
+      "name": "Windows · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Windows.png"
+    },
+    {
+      "name": "WTT · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/WTT.png"
+    },
+    {
+      "name": "x0 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.png"
+    },
+    {
+      "name": "x0.1 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.1.png"
+    },
+    {
+      "name": "x0.2 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.2.png"
+    },
+    {
+      "name": "x0.3 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.3.png"
+    },
+    {
+      "name": "x0.4 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.4.png"
+    },
+    {
+      "name": "x0.5 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.5.png"
+    },
+    {
+      "name": "x0.7 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x0.7.png"
+    },
+    {
+      "name": "x1 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x1.png"
+    },
+    {
+      "name": "x1.0 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x1.0.png"
+    },
+    {
+      "name": "x2 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x2.png"
+    },
+    {
+      "name": "x2.0 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x2.0.png"
+    },
+    {
+      "name": "x3 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x3.png"
+    },
+    {
+      "name": "x3.0 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x3.0.png"
+    },
+    {
+      "name": "x4.0 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x4.0.png"
+    },
+    {
+      "name": "x5.0 · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/x5.0.png"
+    },
+    {
+      "name": "Yahoo · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Yahoo.png"
+    },
+    {
+      "name": "Yahoo_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Yahoo_Letter.png"
+    },
+    {
+      "name": "YouTube · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/YouTube.png"
+    },
+    {
+      "name": "YouTube_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/YouTube_Letter.png"
+    },
+    {
+      "name": "YouTube_Music · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/YouTube_Music.png"
+    },
+    {
+      "name": "YoYu · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/YoYu.png"
+    },
+    {
+      "name": "YoYu_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/YoYu_Letter.png"
+    },
+    {
+      "name": "YTOO · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/YTOO.png"
+    },
+    {
+      "name": "YTOO_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/YTOO_Letter.png"
+    }
+  ]
+}

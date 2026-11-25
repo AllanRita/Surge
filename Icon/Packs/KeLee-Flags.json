@@ -1,0 +1,1054 @@
+{
+  "name": "AllanRita · KeLee-Flags",
+  "description": "Original upstream image URLs and source credits retained.",
+  "icons": [
+    {
+      "name": "AD · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AD.png"
+    },
+    {
+      "name": "AE · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AE.png"
+    },
+    {
+      "name": "AF · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AF.png"
+    },
+    {
+      "name": "AG · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AG.png"
+    },
+    {
+      "name": "AI · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AI.png"
+    },
+    {
+      "name": "AL · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AL.png"
+    },
+    {
+      "name": "AM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AM.png"
+    },
+    {
+      "name": "AN · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AN.png"
+    },
+    {
+      "name": "AO · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AO.png"
+    },
+    {
+      "name": "AR · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AR.png"
+    },
+    {
+      "name": "AS · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AS.png"
+    },
+    {
+      "name": "AT · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AT.png"
+    },
+    {
+      "name": "AU · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AU.png"
+    },
+    {
+      "name": "AW · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AW.png"
+    },
+    {
+      "name": "AX · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AX.png"
+    },
+    {
+      "name": "AZ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AZ.png"
+    },
+    {
+      "name": "BA · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BA.png"
+    },
+    {
+      "name": "BB · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BB.png"
+    },
+    {
+      "name": "BD · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BD.png"
+    },
+    {
+      "name": "BE · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BE.png"
+    },
+    {
+      "name": "BF · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BF.png"
+    },
+    {
+      "name": "BG · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BG.png"
+    },
+    {
+      "name": "BH · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BH.png"
+    },
+    {
+      "name": "BI · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BI.png"
+    },
+    {
+      "name": "BJ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BJ.png"
+    },
+    {
+      "name": "BL · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BL.png"
+    },
+    {
+      "name": "BM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BM.png"
+    },
+    {
+      "name": "BN · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BN.png"
+    },
+    {
+      "name": "BO · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BO.png"
+    },
+    {
+      "name": "BR · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BR.png"
+    },
+    {
+      "name": "BS · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BS.png"
+    },
+    {
+      "name": "BT · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BT.png"
+    },
+    {
+      "name": "BV · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BV.png"
+    },
+    {
+      "name": "BW · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BW.png"
+    },
+    {
+      "name": "BY · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BY.png"
+    },
+    {
+      "name": "BZ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/BZ.png"
+    },
+    {
+      "name": "CA · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CA.png"
+    },
+    {
+      "name": "CAF · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CAF.png"
+    },
+    {
+      "name": "CAS · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CAS.png"
+    },
+    {
+      "name": "CC · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CC.png"
+    },
+    {
+      "name": "CD · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CD.png"
+    },
+    {
+      "name": "CEU · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CEU.png"
+    },
+    {
+      "name": "CF · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CF.png"
+    },
+    {
+      "name": "CG · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CG.png"
+    },
+    {
+      "name": "CH · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CH.png"
+    },
+    {
+      "name": "CI · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CI.png"
+    },
+    {
+      "name": "CK · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CK.png"
+    },
+    {
+      "name": "CL · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CL.png"
+    },
+    {
+      "name": "CM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CM.png"
+    },
+    {
+      "name": "CN · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CN.png"
+    },
+    {
+      "name": "CNA · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CNA.png"
+    },
+    {
+      "name": "CO · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CO.png"
+    },
+    {
+      "name": "COC · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/COC.png"
+    },
+    {
+      "name": "CR · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CR.png"
+    },
+    {
+      "name": "CSA · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CSA.png"
+    },
+    {
+      "name": "CU · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CU.png"
+    },
+    {
+      "name": "CV · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CV.png"
+    },
+    {
+      "name": "CW · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CW.png"
+    },
+    {
+      "name": "CX · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CX.png"
+    },
+    {
+      "name": "CY · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CY.png"
+    },
+    {
+      "name": "CZ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/CZ.png"
+    },
+    {
+      "name": "DE · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/DE.png"
+    },
+    {
+      "name": "DJ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/DJ.png"
+    },
+    {
+      "name": "DK · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/DK.png"
+    },
+    {
+      "name": "DM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/DM.png"
+    },
+    {
+      "name": "DO · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/DO.png"
+    },
+    {
+      "name": "DZ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/DZ.png"
+    },
+    {
+      "name": "EC · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/EC.png"
+    },
+    {
+      "name": "EE · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/EE.png"
+    },
+    {
+      "name": "EG · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/EG.png"
+    },
+    {
+      "name": "EH · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/EH.png"
+    },
+    {
+      "name": "ER · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ER.png"
+    },
+    {
+      "name": "ES · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ES.png"
+    },
+    {
+      "name": "ET · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ET.png"
+    },
+    {
+      "name": "EU · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/EU.png"
+    },
+    {
+      "name": "FI · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/FI.png"
+    },
+    {
+      "name": "FJ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/FJ.png"
+    },
+    {
+      "name": "FK · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/FK.png"
+    },
+    {
+      "name": "FM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/FM.png"
+    },
+    {
+      "name": "FO · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/FO.png"
+    },
+    {
+      "name": "FR · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/FR.png"
+    },
+    {
+      "name": "GA · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GA.png"
+    },
+    {
+      "name": "GB · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GB.png"
+    },
+    {
+      "name": "GB-ENG · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GB-ENG.png"
+    },
+    {
+      "name": "GB-NIR · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GB-NIR.png"
+    },
+    {
+      "name": "GB-SCT · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GB-SCT.png"
+    },
+    {
+      "name": "GB-WLS · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GB-WLS.png"
+    },
+    {
+      "name": "GB-ZET · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GB-ZET.png"
+    },
+    {
+      "name": "GD · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GD.png"
+    },
+    {
+      "name": "GE · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GE.png"
+    },
+    {
+      "name": "GF · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GF.png"
+    },
+    {
+      "name": "GG · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GG.png"
+    },
+    {
+      "name": "GH · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GH.png"
+    },
+    {
+      "name": "GI · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GI.png"
+    },
+    {
+      "name": "GL · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GL.png"
+    },
+    {
+      "name": "GM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GM.png"
+    },
+    {
+      "name": "GN · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GN.png"
+    },
+    {
+      "name": "GP · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GP.png"
+    },
+    {
+      "name": "GQ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GQ.png"
+    },
+    {
+      "name": "GR · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GR.png"
+    },
+    {
+      "name": "GS · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GS.png"
+    },
+    {
+      "name": "GT · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GT.png"
+    },
+    {
+      "name": "GU · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GU.png"
+    },
+    {
+      "name": "GW · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GW.png"
+    },
+    {
+      "name": "GY · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/GY.png"
+    },
+    {
+      "name": "HK · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/HK.png"
+    },
+    {
+      "name": "HM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/HM.png"
+    },
+    {
+      "name": "HN · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/HN.png"
+    },
+    {
+      "name": "HR · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/HR.png"
+    },
+    {
+      "name": "HT · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/HT.png"
+    },
+    {
+      "name": "HU · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/HU.png"
+    },
+    {
+      "name": "ID · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ID.png"
+    },
+    {
+      "name": "IE · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IE.png"
+    },
+    {
+      "name": "IL · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IL.png"
+    },
+    {
+      "name": "IM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IM.png"
+    },
+    {
+      "name": "IN · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IN.png"
+    },
+    {
+      "name": "IO · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IO.png"
+    },
+    {
+      "name": "IQ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IQ.png"
+    },
+    {
+      "name": "IR · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IR.png"
+    },
+    {
+      "name": "IS · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IS.png"
+    },
+    {
+      "name": "IT · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IT.png"
+    },
+    {
+      "name": "JE · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/JE.png"
+    },
+    {
+      "name": "JM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/JM.png"
+    },
+    {
+      "name": "JO · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/JO.png"
+    },
+    {
+      "name": "JP · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/JP.png"
+    },
+    {
+      "name": "KE · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KE.png"
+    },
+    {
+      "name": "KG · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KG.png"
+    },
+    {
+      "name": "KH · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KH.png"
+    },
+    {
+      "name": "KI · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KI.png"
+    },
+    {
+      "name": "KM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KM.png"
+    },
+    {
+      "name": "KN · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KN.png"
+    },
+    {
+      "name": "KP · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KP.png"
+    },
+    {
+      "name": "KR · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KR.png"
+    },
+    {
+      "name": "KW · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KW.png"
+    },
+    {
+      "name": "KY · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KY.png"
+    },
+    {
+      "name": "KZ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/KZ.png"
+    },
+    {
+      "name": "LA · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LA.png"
+    },
+    {
+      "name": "LB · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LB.png"
+    },
+    {
+      "name": "LC · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LC.png"
+    },
+    {
+      "name": "LGBT · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LGBT.png"
+    },
+    {
+      "name": "LI · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LI.png"
+    },
+    {
+      "name": "LK · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LK.png"
+    },
+    {
+      "name": "LR · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LR.png"
+    },
+    {
+      "name": "LS · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LS.png"
+    },
+    {
+      "name": "LT · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LT.png"
+    },
+    {
+      "name": "LU · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LU.png"
+    },
+    {
+      "name": "LV · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LV.png"
+    },
+    {
+      "name": "LY · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/LY.png"
+    },
+    {
+      "name": "MA · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MA.png"
+    },
+    {
+      "name": "MC · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MC.png"
+    },
+    {
+      "name": "MD · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MD.png"
+    },
+    {
+      "name": "ME · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ME.png"
+    },
+    {
+      "name": "MF · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MF.png"
+    },
+    {
+      "name": "MG · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MG.png"
+    },
+    {
+      "name": "MH · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MH.png"
+    },
+    {
+      "name": "MK · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MK.png"
+    },
+    {
+      "name": "ML · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ML.png"
+    },
+    {
+      "name": "MM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MM.png"
+    },
+    {
+      "name": "MN · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MN.png"
+    },
+    {
+      "name": "MO · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MO.png"
+    },
+    {
+      "name": "MP · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MP.png"
+    },
+    {
+      "name": "MQ_2 · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MQ_2.png"
+    },
+    {
+      "name": "MR_2 · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MR_2.png"
+    },
+    {
+      "name": "MS · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MS.png"
+    },
+    {
+      "name": "MT · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MT.png"
+    },
+    {
+      "name": "MU · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MU.png"
+    },
+    {
+      "name": "MV · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MV.png"
+    },
+    {
+      "name": "MW · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MW.png"
+    },
+    {
+      "name": "MX · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MX.png"
+    },
+    {
+      "name": "MY · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MY.png"
+    },
+    {
+      "name": "MZ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/MZ.png"
+    },
+    {
+      "name": "NA · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NA.png"
+    },
+    {
+      "name": "NC · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NC.png"
+    },
+    {
+      "name": "NE · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NE.png"
+    },
+    {
+      "name": "NF · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NF.png"
+    },
+    {
+      "name": "NG · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NG.png"
+    },
+    {
+      "name": "NI · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NI.png"
+    },
+    {
+      "name": "NL · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NL.png"
+    },
+    {
+      "name": "NO · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NO.png"
+    },
+    {
+      "name": "NP · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NP.png"
+    },
+    {
+      "name": "NR · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NR.png"
+    },
+    {
+      "name": "NU · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NU.png"
+    },
+    {
+      "name": "NZ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/NZ.png"
+    },
+    {
+      "name": "OM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/OM.png"
+    },
+    {
+      "name": "PA · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PA.png"
+    },
+    {
+      "name": "PE · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PE.png"
+    },
+    {
+      "name": "PF · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PF.png"
+    },
+    {
+      "name": "PG · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PG.png"
+    },
+    {
+      "name": "PH · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PH.png"
+    },
+    {
+      "name": "PK · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PK.png"
+    },
+    {
+      "name": "PL · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PL.png"
+    },
+    {
+      "name": "PM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PM.png"
+    },
+    {
+      "name": "PN · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PN.png"
+    },
+    {
+      "name": "PR · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PR.png"
+    },
+    {
+      "name": "PS · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PS.png"
+    },
+    {
+      "name": "PT · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PT.png"
+    },
+    {
+      "name": "PW · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PW.png"
+    },
+    {
+      "name": "PY · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PY.png"
+    },
+    {
+      "name": "QA · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/QA.png"
+    },
+    {
+      "name": "RE · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/RE.png"
+    },
+    {
+      "name": "RO · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/RO.png"
+    },
+    {
+      "name": "RS · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/RS.png"
+    },
+    {
+      "name": "RU · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/RU.png"
+    },
+    {
+      "name": "RW · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/RW.png"
+    },
+    {
+      "name": "SA · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SA.png"
+    },
+    {
+      "name": "SB · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SB.png"
+    },
+    {
+      "name": "SC · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SC.png"
+    },
+    {
+      "name": "SD · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SD.png"
+    },
+    {
+      "name": "SE · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SE.png"
+    },
+    {
+      "name": "SG · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SG.png"
+    },
+    {
+      "name": "SH_2 · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SH_2.png"
+    },
+    {
+      "name": "SI · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SI.png"
+    },
+    {
+      "name": "SJ_2 · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SJ_2.png"
+    },
+    {
+      "name": "SK · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SK.png"
+    },
+    {
+      "name": "SL · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SL.png"
+    },
+    {
+      "name": "SM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SM.png"
+    },
+    {
+      "name": "SN · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SN.png"
+    },
+    {
+      "name": "SO · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SO.png"
+    },
+    {
+      "name": "SR · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SR.png"
+    },
+    {
+      "name": "SS · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SS.png"
+    },
+    {
+      "name": "ST · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ST.png"
+    },
+    {
+      "name": "SV · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SV.png"
+    },
+    {
+      "name": "SX · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SX.png"
+    },
+    {
+      "name": "SY · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SY.png"
+    },
+    {
+      "name": "SZ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/SZ.png"
+    },
+    {
+      "name": "TC · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TC.png"
+    },
+    {
+      "name": "TD · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TD.png"
+    },
+    {
+      "name": "TG · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TG.png"
+    },
+    {
+      "name": "TH · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TH.png"
+    },
+    {
+      "name": "TJ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TJ.png"
+    },
+    {
+      "name": "TK · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TK.png"
+    },
+    {
+      "name": "TL · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TL.png"
+    },
+    {
+      "name": "TM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TM.png"
+    },
+    {
+      "name": "TN · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TN.png"
+    },
+    {
+      "name": "TO · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TO.png"
+    },
+    {
+      "name": "TR · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TR.png"
+    },
+    {
+      "name": "TT · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TT.png"
+    },
+    {
+      "name": "TV · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TV.png"
+    },
+    {
+      "name": "TZ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/TZ.png"
+    },
+    {
+      "name": "UA · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/UA.png"
+    },
+    {
+      "name": "UG · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/UG.png"
+    },
+    {
+      "name": "UM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/UM.png"
+    },
+    {
+      "name": "US · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/US.png"
+    },
+    {
+      "name": "US-CA · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/US-CA.png"
+    },
+    {
+      "name": "UY · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/UY.png"
+    },
+    {
+      "name": "UZ · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/UZ.png"
+    },
+    {
+      "name": "VA · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/VA.png"
+    },
+    {
+      "name": "VC · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/VC.png"
+    },
+    {
+      "name": "VE · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/VE.png"
+    },
+    {
+      "name": "VG · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/VG.png"
+    },
+    {
+      "name": "VI · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/VI.png"
+    },
+    {
+      "name": "VN · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/VN.png"
+    },
+    {
+      "name": "VU · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/VU.png"
+    },
+    {
+      "name": "WF · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/WF.png"
+    },
+    {
+      "name": "WS · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/WS.png"
+    },
+    {
+      "name": "WW · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/WW.png"
+    },
+    {
+      "name": "XK · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/XK.png"
+    },
+    {
+      "name": "YE · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/YE.png"
+    },
+    {
+      "name": "YT · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/YT.png"
+    },
+    {
+      "name": "ZA · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ZA.png"
+    },
+    {
+      "name": "ZM · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ZM.png"
+    },
+    {
+      "name": "ZW · KeLee-Flags",
+      "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/ZW.png"
+    }
+  ]
+}

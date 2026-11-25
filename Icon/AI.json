@@ -1,0 +1,242 @@
+{
+  "name": "AllanRita · 人工智能",
+  "description": "Original upstream image URLs and source credits retained.",
+  "icons": [
+    {
+      "name": "Anthropic · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/AI/Anthropic/Anthropic.png"
+    },
+    {
+      "name": "ChatGPT · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT.png"
+    },
+    {
+      "name": "ChatGPT · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ChatGPT.png"
+    },
+    {
+      "name": "ChatGPT · Qure-Color",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png"
+    },
+    {
+      "name": "chatgpt(balck) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatgpt(balck).png"
+    },
+    {
+      "name": "chatgpt(white) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatgpt(white).png"
+    },
+    {
+      "name": "chatgpt(white1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatgpt(white1).png"
+    },
+    {
+      "name": "ChatGPT-green · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/ChatGPT-green.png"
+    },
+    {
+      "name": "ChatGPT1 · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT1.png"
+    },
+    {
+      "name": "ChatGPT2 · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT2.png"
+    },
+    {
+      "name": "ChatGPT3 · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT3.png"
+    },
+    {
+      "name": "ChatGPT4 · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT4.png"
+    },
+    {
+      "name": "chatgpt4.0 · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatgpt4.0.png"
+    },
+    {
+      "name": "ChatGPT5 · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT5.png"
+    },
+    {
+      "name": "ChatGPT6 · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT6.png"
+    },
+    {
+      "name": "ChatGPT7 · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT7.png"
+    },
+    {
+      "name": "ChatGPT8 · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT8.png"
+    },
+    {
+      "name": "ChatGPT9 · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT9.png"
+    },
+    {
+      "name": "Claude · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Claude.png"
+    },
+    {
+      "name": "claude · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/claude.png"
+    },
+    {
+      "name": "claude(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/claude(1).png"
+    },
+    {
+      "name": "Claude_01 · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Claude_01.png"
+    },
+    {
+      "name": "Claude_02 · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Claude_02.png"
+    },
+    {
+      "name": "Copilot · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Copilot.png"
+    },
+    {
+      "name": "Copilot · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Microsoft/Copilot/Copilot.png"
+    },
+    {
+      "name": "Copilot · Qure-Color",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Copilot.png"
+    },
+    {
+      "name": "Copilot(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Copilot(1).png"
+    },
+    {
+      "name": "DeepSeek · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/DeepSeek.png"
+    },
+    {
+      "name": "DeepSeek · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DeepSeek.png"
+    },
+    {
+      "name": "deepseek · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/deepseek.png"
+    },
+    {
+      "name": "DeepSeek · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/AI/DeepSeek/DeepSeek.png"
+    },
+    {
+      "name": "Doubao · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/ByteDance/Doubao/Doubao.png"
+    },
+    {
+      "name": "Gemini · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Gemini_01.png"
+    },
+    {
+      "name": "Gemini · fmz200 2",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Gemini_02.png"
+    },
+    {
+      "name": "gemini · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/gemini.png"
+    },
+    {
+      "name": "gemini(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/gemini(1).png"
+    },
+    {
+      "name": "GLM · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/AI/GLM/GLM.png"
+    },
+    {
+      "name": "Google Gemini · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/GoogleGemini.png"
+    },
+    {
+      "name": "Grok · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Grok.png"
+    },
+    {
+      "name": "Grok · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Grok.png"
+    },
+    {
+      "name": "grok · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/grok.png"
+    },
+    {
+      "name": "Grok · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/SpaceXAI/xAI/Grok/Grok.png"
+    },
+    {
+      "name": "Kimi · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Kimi.png"
+    },
+    {
+      "name": "Kimi · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/AI/Kimi/Kimi.png"
+    },
+    {
+      "name": "Manus · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/AI/Manus/Manus.png"
+    },
+    {
+      "name": "Microsoft Copilot · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MicrosoftCopilot.png"
+    },
+    {
+      "name": "MiniMax · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/AI/MiniMax/MiniMax.png"
+    },
+    {
+      "name": "Mistral AI · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MistralAI.png"
+    },
+    {
+      "name": "Muse · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/AI/Muse/Muse.png"
+    },
+    {
+      "name": "NousResearch · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/AI/NousResearch/NousResearch.png"
+    },
+    {
+      "name": "OpenAI · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/AI/OpenAI/OpenAI.png"
+    },
+    {
+      "name": "Perplexity · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Perplexity.png"
+    },
+    {
+      "name": "Perplexity · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/AI/Perplexity/Perplexity.png"
+    },
+    {
+      "name": "Poe · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/AI/Poe/Poe.png"
+    },
+    {
+      "name": "Qwen · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Alibaba/Qwen/Qwen.png"
+    },
+    {
+      "name": "SpaceXAI · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/SpaceXAI/SpaceXAI/SpaceXAI.png"
+    },
+    {
+      "name": "X · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/SpaceXAI/X/X.png"
+    },
+    {
+      "name": "xAI · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/SpaceXAI/xAI/xAI.png"
+    },
+    {
+      "name": "通义 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TongYi.png"
+    }
+  ]
+}

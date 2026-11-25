@@ -1,0 +1,1522 @@
+{
+  "name": "AllanRita · Semporia",
+  "description": "Original upstream image URLs and source credits retained.",
+  "icons": [
+    {
+      "name": "Abkhazia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Abkhazia.png"
+    },
+    {
+      "name": "Account · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Account.png"
+    },
+    {
+      "name": "Admin · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Admin.png"
+    },
+    {
+      "name": "Adwords · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Adwords.png"
+    },
+    {
+      "name": "Afghanistan · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Afghanistan.png"
+    },
+    {
+      "name": "Air_Bnb · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Air_Bnb.png"
+    },
+    {
+      "name": "Airport · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Airport.png"
+    },
+    {
+      "name": "Aland_Islands · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Aland_Islands.png"
+    },
+    {
+      "name": "Albania · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Albania.png"
+    },
+    {
+      "name": "Algeria · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Algeria.png"
+    },
+    {
+      "name": "Amazon · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Amazon.png"
+    },
+    {
+      "name": "American_Samoa · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/American_Samoa.png"
+    },
+    {
+      "name": "Andorra · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Andorra.png"
+    },
+    {
+      "name": "Angola · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Angola.png"
+    },
+    {
+      "name": "Anguilla · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Anguilla.png"
+    },
+    {
+      "name": "Antigua_And_Barbuda · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Antigua_And_Barbuda.png"
+    },
+    {
+      "name": "Apple · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Apple.png"
+    },
+    {
+      "name": "Argentina · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Argentina.png"
+    },
+    {
+      "name": "Armenia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Armenia.png"
+    },
+    {
+      "name": "Aruba · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Aruba.png"
+    },
+    {
+      "name": "Australia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Australia.png"
+    },
+    {
+      "name": "Austria · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Austria.png"
+    },
+    {
+      "name": "Auto_Speed · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Auto_Speed.png"
+    },
+    {
+      "name": "Available · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Available.png"
+    },
+    {
+      "name": "Azerbaijan · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Azerbaijan.png"
+    },
+    {
+      "name": "Azores_Islands · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Azores_Islands.png"
+    },
+    {
+      "name": "Badoo · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Badoo.png"
+    },
+    {
+      "name": "Bahamas · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Bahamas.png"
+    },
+    {
+      "name": "Bahrain · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Bahrain.png"
+    },
+    {
+      "name": "Balearic_Islands · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Balearic_Islands.png"
+    },
+    {
+      "name": "Bangladesh · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Bangladesh.png"
+    },
+    {
+      "name": "Barbados · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Barbados.png"
+    },
+    {
+      "name": "Basque_Country · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Basque_Country.png"
+    },
+    {
+      "name": "Bebo · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Bebo.png"
+    },
+    {
+      "name": "Behance · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Behance.png"
+    },
+    {
+      "name": "Belarus · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Belarus.png"
+    },
+    {
+      "name": "Belgium · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Belgium.png"
+    },
+    {
+      "name": "Belize · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Belize.png"
+    },
+    {
+      "name": "BeninBenin · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Benin.png"
+    },
+    {
+      "name": "Bermuda · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Bermuda.png"
+    },
+    {
+      "name": "Bhutan · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Bhutan.png"
+    },
+    {
+      "name": "BiliBili · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/BiliBili.png"
+    },
+    {
+      "name": "Bolivia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Bolivia.png"
+    },
+    {
+      "name": "Bonaire · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Bonaire.png"
+    },
+    {
+      "name": "Bosnia_And_Herzegovina · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Bosnia_And_Herzegovina.png"
+    },
+    {
+      "name": "Botswana · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Botswana.png"
+    },
+    {
+      "name": "Brazil · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Brazil.png"
+    },
+    {
+      "name": "British_Columbia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/British_Columbia.png"
+    },
+    {
+      "name": "British_Indian_Ocean_Territory · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/British_Indian_Ocean_Territory.png"
+    },
+    {
+      "name": "British_Virgin_Islands · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/British_Virgin_Islands.png"
+    },
+    {
+      "name": "Browser · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Browser.png"
+    },
+    {
+      "name": "Browser · Semporia 2",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Business.png"
+    },
+    {
+      "name": "Brunei · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Brunei.png"
+    },
+    {
+      "name": "Bulgaria · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Bulgaria.png"
+    },
+    {
+      "name": "Burkina_Faso · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Burkina_Faso.png"
+    },
+    {
+      "name": "Burundi · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Burundi.png"
+    },
+    {
+      "name": "Buzznet · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Buzznet.png"
+    },
+    {
+      "name": "Calendar · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Calendar.png"
+    },
+    {
+      "name": "Cambodia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Cambodia.png"
+    },
+    {
+      "name": "Cameroon · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Cameroon.png"
+    },
+    {
+      "name": "Canada · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Canada.png"
+    },
+    {
+      "name": "Canary_Islands · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Canary_Islands.png"
+    },
+    {
+      "name": "Cape_Verde · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Cape_Verde.png"
+    },
+    {
+      "name": "Cayman_Islands · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Cayman_Islands.png"
+    },
+    {
+      "name": "Central_African_Republic · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Central_African_Republic.png"
+    },
+    {
+      "name": "Ceuta · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Ceuta.png"
+    },
+    {
+      "name": "Chad · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Chad.png"
+    },
+    {
+      "name": "Chile · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Chile.png"
+    },
+    {
+      "name": "China · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/China.png"
+    },
+    {
+      "name": "Christmas_Island · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Christmas_Island.png"
+    },
+    {
+      "name": "Classmates · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Classmates.png"
+    },
+    {
+      "name": "Clubhouse · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Clubhouse.png"
+    },
+    {
+      "name": "Cocos_Island · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Cocos_Island.png"
+    },
+    {
+      "name": "Colombia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Colombia.png"
+    },
+    {
+      "name": "Comoros · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Comoros.png"
+    },
+    {
+      "name": "Cook_Islands · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Cook_Islands.png"
+    },
+    {
+      "name": "Corsica · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Corsica.png"
+    },
+    {
+      "name": "Costa_Rica · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Costa_Rica.png"
+    },
+    {
+      "name": "Croatia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Croatia.png"
+    },
+    {
+      "name": "Cuba · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Cuba.png"
+    },
+    {
+      "name": "Curacao · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Curacao.png"
+    },
+    {
+      "name": "Cyprus · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Cyprus.png"
+    },
+    {
+      "name": "Czech_Republic · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Czech_Republic.png"
+    },
+    {
+      "name": "Daily_Motion · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Daily_Motion.png"
+    },
+    {
+      "name": "Delicious · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Delicious.png"
+    },
+    {
+      "name": "Democratic_Republic_Of_Congo · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Democratic_Republic_Of_Congo.png"
+    },
+    {
+      "name": "Denmark · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Denmark.png"
+    },
+    {
+      "name": "deviantART · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/deviantART.png"
+    },
+    {
+      "name": "Diaspora · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Diaspora.png"
+    },
+    {
+      "name": "Djibouti · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Djibouti.png"
+    },
+    {
+      "name": "Docs · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Docs.png"
+    },
+    {
+      "name": "Dominica · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Dominica.png"
+    },
+    {
+      "name": "Dominican_Republic · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Dominican_Republic.png"
+    },
+    {
+      "name": "Dots · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Dots.png"
+    },
+    {
+      "name": "Dribbble · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Dribbble.png"
+    },
+    {
+      "name": "Drive · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Drive.png"
+    },
+    {
+      "name": "East_Timor · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/East_Timor.png"
+    },
+    {
+      "name": "Ecuador · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Ecuador.png"
+    },
+    {
+      "name": "Egypt · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Egypt.png"
+    },
+    {
+      "name": "El_Salvador · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/El_Salvador.png"
+    },
+    {
+      "name": "Ello · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Ello.png"
+    },
+    {
+      "name": "England · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/England.png"
+    },
+    {
+      "name": "Equatorial_Guinea · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Equatorial_Guinea.png"
+    },
+    {
+      "name": "Eritrea · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Eritrea.png"
+    },
+    {
+      "name": "Estonia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Estonia.png"
+    },
+    {
+      "name": "Ethiopia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Ethiopia.png"
+    },
+    {
+      "name": "Etsy · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Etsy.png"
+    },
+    {
+      "name": "European_Union · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/European_Union.png"
+    },
+    {
+      "name": "Facebook · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Facebook.png"
+    },
+    {
+      "name": "Falkland_Islands · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Falkland_Islands.png"
+    },
+    {
+      "name": "Faroe_Islands · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Faroe_Islands.png"
+    },
+    {
+      "name": "Fiji · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Fiji.png"
+    },
+    {
+      "name": "FilmAffinity · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/FilmAffinity.png"
+    },
+    {
+      "name": "Final · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Final.png"
+    },
+    {
+      "name": "Finland · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Finland.png"
+    },
+    {
+      "name": "Flickr · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Flickr.png"
+    },
+    {
+      "name": "Forms · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Forms.png"
+    },
+    {
+      "name": "Foursquare · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Foursquare.png"
+    },
+    {
+      "name": "France · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/France.png"
+    },
+    {
+      "name": "French_Polynesia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/French_Polynesia.png"
+    },
+    {
+      "name": "Gabon · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Gabon.png"
+    },
+    {
+      "name": "Galapagos_Islands · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Galapagos_Islands.png"
+    },
+    {
+      "name": "Gambia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Gambia.png"
+    },
+    {
+      "name": "Georgia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Georgia.png"
+    },
+    {
+      "name": "Germany · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Germany.png"
+    },
+    {
+      "name": "Ghana · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Ghana.png"
+    },
+    {
+      "name": "Gibraltar · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Gibraltar.png"
+    },
+    {
+      "name": "GitHub · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/GitHub.png"
+    },
+    {
+      "name": "Gmail · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Gmail.png"
+    },
+    {
+      "name": "Google · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Google.png"
+    },
+    {
+      "name": "Google_Maps · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Google_Maps.png"
+    },
+    {
+      "name": "Google_Plus · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Google_Plus.png"
+    },
+    {
+      "name": "Google_Plus · Semporia 2",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Google_Plus.png"
+    },
+    {
+      "name": "Greece · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Greece.png"
+    },
+    {
+      "name": "Greenland · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Greenland.png"
+    },
+    {
+      "name": "Grenada · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Grenada.png"
+    },
+    {
+      "name": "Guam · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Guam.png"
+    },
+    {
+      "name": "Guatemala · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Guatemala.png"
+    },
+    {
+      "name": "Guinea · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Guinea.png"
+    },
+    {
+      "name": "Guinea_Bissau · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Guinea_Bissau.png"
+    },
+    {
+      "name": "Guyana · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Guyana.png"
+    },
+    {
+      "name": "Haiti · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Haiti.png"
+    },
+    {
+      "name": "Hangouts · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Hangouts.png"
+    },
+    {
+      "name": "Hawaii · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Hawaii.png"
+    },
+    {
+      "name": "Hi5 · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Hi5.png"
+    },
+    {
+      "name": "Honduras · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Honduras.png"
+    },
+    {
+      "name": "Hong_Kong · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Hong_Kong.png"
+    },
+    {
+      "name": "Howcast · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Howcast.png"
+    },
+    {
+      "name": "Hungary · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Hungary.png"
+    },
+    {
+      "name": "Iceland · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Iceland.png"
+    },
+    {
+      "name": "India · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/India.png"
+    },
+    {
+      "name": "Indonesia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Indonesia.png"
+    },
+    {
+      "name": "Instagram · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Instagram.png"
+    },
+    {
+      "name": "Iran · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Iran.png"
+    },
+    {
+      "name": "Iraq · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Iraq.png"
+    },
+    {
+      "name": "Ireland · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Ireland.png"
+    },
+    {
+      "name": "Isle_Of_Man · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Isle_Of_Man.png"
+    },
+    {
+      "name": "Israel · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Israel.png"
+    },
+    {
+      "name": "Italy · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Italy.png"
+    },
+    {
+      "name": "Ivory_Coast · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Ivory_Coast.png"
+    },
+    {
+      "name": "Jamaica · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Jamaica.png"
+    },
+    {
+      "name": "Japan · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Japan.png"
+    },
+    {
+      "name": "Jersey · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Jersey.png"
+    },
+    {
+      "name": "Jordan · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Jordan.png"
+    },
+    {
+      "name": "Kazakhstan · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Kazakhstan.png"
+    },
+    {
+      "name": "Kenya · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Kenya.png"
+    },
+    {
+      "name": "Kickstarter · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Kickstarter.png"
+    },
+    {
+      "name": "Kiribati · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Kiribati.png"
+    },
+    {
+      "name": "KittyLink · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/KittyLink.png"
+    },
+    {
+      "name": "Kosovo · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Kosovo.png"
+    },
+    {
+      "name": "Kuwait · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Kuwait.png"
+    },
+    {
+      "name": "Kyrgyzstan · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Kyrgyzstan.png"
+    },
+    {
+      "name": "Laos · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Laos.png"
+    },
+    {
+      "name": "Lastfm · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Lastfm.png"
+    },
+    {
+      "name": "Latvia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Latvia.png"
+    },
+    {
+      "name": "Lebanon · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Lebanon.png"
+    },
+    {
+      "name": "Lesotho · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Lesotho.png"
+    },
+    {
+      "name": "Liberia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Liberia.png"
+    },
+    {
+      "name": "Libya · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Libya.png"
+    },
+    {
+      "name": "Liechtenstein · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Liechtenstein.png"
+    },
+    {
+      "name": "Line · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Line.png"
+    },
+    {
+      "name": "Linkedin · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Linkedin.png"
+    },
+    {
+      "name": "Lithuania · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Lithuania.png"
+    },
+    {
+      "name": "LiveJournal · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/LiveJournal.png"
+    },
+    {
+      "name": "Luxembourg · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Luxembourg.png"
+    },
+    {
+      "name": "Macao · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Macao.png"
+    },
+    {
+      "name": "Madagascar · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Madagascar.png"
+    },
+    {
+      "name": "Madeira · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Madeira.png"
+    },
+    {
+      "name": "Malasya · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Malasya.png"
+    },
+    {
+      "name": "Malawi · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Malawi.png"
+    },
+    {
+      "name": "Maldives · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Maldives.png"
+    },
+    {
+      "name": "Mali · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Mali.png"
+    },
+    {
+      "name": "Malta · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Malta.png"
+    },
+    {
+      "name": "Map · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Map.png"
+    },
+    {
+      "name": "Marshall_Island · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Marshall_Island.png"
+    },
+    {
+      "name": "Martinique · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Martinique.png"
+    },
+    {
+      "name": "Mauritania · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Mauritania.png"
+    },
+    {
+      "name": "Mauritius · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Mauritius.png"
+    },
+    {
+      "name": "Medium · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Medium.png"
+    },
+    {
+      "name": "Meetup · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Meetup.png"
+    },
+    {
+      "name": "Melilla · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Melilla.png"
+    },
+    {
+      "name": "Mexico · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Mexico.png"
+    },
+    {
+      "name": "Micronesia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Micronesia.png"
+    },
+    {
+      "name": "Microsoft · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Microsoft.png"
+    },
+    {
+      "name": "Moldova · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Moldova.png"
+    },
+    {
+      "name": "Monaco · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Monaco.png"
+    },
+    {
+      "name": "Mongolia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Mongolia.png"
+    },
+    {
+      "name": "Montenegro · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Montenegro.png"
+    },
+    {
+      "name": "Montserrat · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Montserrat.png"
+    },
+    {
+      "name": "Morocco · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Morocco.png"
+    },
+    {
+      "name": "Mozambique · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Mozambique.png"
+    },
+    {
+      "name": "Myanmar · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Myanmar.png"
+    },
+    {
+      "name": "Myspace · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Myspace.png"
+    },
+    {
+      "name": "Nagorno_Karabakh_Republic · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Nagorno_Karabakh_Republic.png"
+    },
+    {
+      "name": "Namibia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Namibia.png"
+    },
+    {
+      "name": "Nauru · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Nauru.png"
+    },
+    {
+      "name": "Nepal · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Nepal.png"
+    },
+    {
+      "name": "NetEase_Music · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/NetEase_Music.png"
+    },
+    {
+      "name": "Netflix · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Netflix.png"
+    },
+    {
+      "name": "Netherlands · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Netherlands.png"
+    },
+    {
+      "name": "New_Zealand · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/New_Zealand.png"
+    },
+    {
+      "name": "News · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/News.png"
+    },
+    {
+      "name": "NextDoor · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/NextDoor.png"
+    },
+    {
+      "name": "Nicaragua · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Nicaragua.png"
+    },
+    {
+      "name": "Niger · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Niger.png"
+    },
+    {
+      "name": "Nigeria · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Nigeria.png"
+    },
+    {
+      "name": "Niue · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Niue.png"
+    },
+    {
+      "name": "Norfolk_Island · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Norfolk_Island.png"
+    },
+    {
+      "name": "North_Korea · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/North_Korea.png"
+    },
+    {
+      "name": "Northern_Cyprus · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Northern_Cyprus.png"
+    },
+    {
+      "name": "Northern_Marianas_Islands · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Northern_Marianas_Islands.png"
+    },
+    {
+      "name": "Norway · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Norway.png"
+    },
+    {
+      "name": "Oman · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Oman.png"
+    },
+    {
+      "name": "Ossetia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Ossetia.png"
+    },
+    {
+      "name": "Otan · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Otan.png"
+    },
+    {
+      "name": "Pakistan · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Pakistan.png"
+    },
+    {
+      "name": "Palau · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Palau.png"
+    },
+    {
+      "name": "Palestine · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Palestine.png"
+    },
+    {
+      "name": "Panama · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Panama.png"
+    },
+    {
+      "name": "Papua_New_Guinea · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Papua_New_Guinea.png"
+    },
+    {
+      "name": "Paraguay · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Paraguay.png"
+    },
+    {
+      "name": "Path · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Path.png"
+    },
+    {
+      "name": "Paypal · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Paypal.png"
+    },
+    {
+      "name": "Periscope · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Periscope.png"
+    },
+    {
+      "name": "Peru · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Peru.png"
+    },
+    {
+      "name": "Philippines · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Philippines.png"
+    },
+    {
+      "name": "Photos · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Photos.png"
+    },
+    {
+      "name": "Pinterest · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Pinterest.png"
+    },
+    {
+      "name": "Pitcairn_Islands · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Pitcairn_Islands.png"
+    },
+    {
+      "name": "PlayStore · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/PlayStore.png"
+    },
+    {
+      "name": "Portugal · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Portugal.png"
+    },
+    {
+      "name": "Puerto_Rico · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Puerto_Rico.png"
+    },
+    {
+      "name": "Qatar · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Qatar.png"
+    },
+    {
+      "name": "Quora · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Quora.png"
+    },
+    {
+      "name": "Rapa_Nui · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Rapa_Nui.png"
+    },
+    {
+      "name": "Reddit · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Reddit.png"
+    },
+    {
+      "name": "Reject · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Reject.png"
+    },
+    {
+      "name": "Reject.orig · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Reject.orig.png"
+    },
+    {
+      "name": "RenRen · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/RenRen.png"
+    },
+    {
+      "name": "Republic_Of_Macedonia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Republic_Of_Macedonia.png"
+    },
+    {
+      "name": "Republic_Of_Poland · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Republic_Of_Poland.png"
+    },
+    {
+      "name": "Republic_Of_The_Congo · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Republic_Of_The_Congo.png"
+    },
+    {
+      "name": "ReverbNation · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/ReverbNation.png"
+    },
+    {
+      "name": "Romania · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Romania.png"
+    },
+    {
+      "name": "RoundRobin · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/RoundRobin.png"
+    },
+    {
+      "name": "Russia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Russia.png"
+    },
+    {
+      "name": "Rwanda · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Rwanda.png"
+    },
+    {
+      "name": "Saba_Island · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Saba_Island.png"
+    },
+    {
+      "name": "Sahrawi_Arab_Democratic_Republic · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Sahrawi_Arab_Democratic_Republic.png"
+    },
+    {
+      "name": "Saint_Kitts_And_Nevis · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Saint_Kitts_And_Nevis.png"
+    },
+    {
+      "name": "Samoa · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Samoa.png"
+    },
+    {
+      "name": "San_Marino · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/San_Marino.png"
+    },
+    {
+      "name": "Sao_Tome_And_Prince · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Sao_Tome_And_Prince.png"
+    },
+    {
+      "name": "Sardinia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Sardinia.png"
+    },
+    {
+      "name": "Saudi_Arabia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Saudi_Arabia.png"
+    },
+    {
+      "name": "Scotland · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Scotland.png"
+    },
+    {
+      "name": "Select · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Select.png"
+    },
+    {
+      "name": "Senegal · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Senegal.png"
+    },
+    {
+      "name": "Serbia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Serbia.png"
+    },
+    {
+      "name": "Seychelles · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Seychelles.png"
+    },
+    {
+      "name": "Sheets · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Sheets.png"
+    },
+    {
+      "name": "Sicily · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Sicily.png"
+    },
+    {
+      "name": "Sierra_Leone · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Sierra_Leone.png"
+    },
+    {
+      "name": "Sina_Weibo · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Sina_Weibo.png"
+    },
+    {
+      "name": "Singapore · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Singapore.png"
+    },
+    {
+      "name": "Sint_Eustatius · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Sint_Eustatius.png"
+    },
+    {
+      "name": "Sint_Maarten · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Sint_Maarten.png"
+    },
+    {
+      "name": "Skype · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Skype.png"
+    },
+    {
+      "name": "Skyrock · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Skyrock.png"
+    },
+    {
+      "name": "Slides · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Slides.png"
+    },
+    {
+      "name": "Slovakia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Slovakia.png"
+    },
+    {
+      "name": "Slovenia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Slovenia.png"
+    },
+    {
+      "name": "Snapchat · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Snapchat.png"
+    },
+    {
+      "name": "Snapfish · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Snapfish.png"
+    },
+    {
+      "name": "Solomon_Islands · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Solomon_Islands.png"
+    },
+    {
+      "name": "Somalia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Somalia.png"
+    },
+    {
+      "name": "Somaliland · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Somaliland.png"
+    },
+    {
+      "name": "SoundCloud · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/SoundCloud.png"
+    },
+    {
+      "name": "South_Africa · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/South_Africa.png"
+    },
+    {
+      "name": "South_Korea · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/South_Korea.png"
+    },
+    {
+      "name": "South_Sudan · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/South_Sudan.png"
+    },
+    {
+      "name": "Spain · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Spain.png"
+    },
+    {
+      "name": "Speedtest · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Speedtest.png"
+    },
+    {
+      "name": "Spotify · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Spotify.png"
+    },
+    {
+      "name": "Sri_Lanka · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Sri_Lanka.png"
+    },
+    {
+      "name": "SSID · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/SSID.png"
+    },
+    {
+      "name": "St_Barts · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/St_Barts.png"
+    },
+    {
+      "name": "St_Lucia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/St_Lucia.png"
+    },
+    {
+      "name": "St_Vincent_And_The_Grenadines · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/St_Vincent_And_The_Grenadines.png"
+    },
+    {
+      "name": "Steam · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Steam.png"
+    },
+    {
+      "name": "Streaming · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Streaming.png"
+    },
+    {
+      "name": "StreamingSE · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/StreamingSE.png"
+    },
+    {
+      "name": "StumbleUpon · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/StumbleUpon.png"
+    },
+    {
+      "name": "Sudan · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Sudan.png"
+    },
+    {
+      "name": "Suriname · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Suriname.png"
+    },
+    {
+      "name": "Swaziland · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Swaziland.png"
+    },
+    {
+      "name": "Sweden · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Sweden.png"
+    },
+    {
+      "name": "Switzerland · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Switzerland.png"
+    },
+    {
+      "name": "Syria · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Syria.png"
+    },
+    {
+      "name": "TAG · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/TAG.png"
+    },
+    {
+      "name": "Tagged · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Tagged.png"
+    },
+    {
+      "name": "Taiwan · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Taiwan.png"
+    },
+    {
+      "name": "Tajikistan · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Tajikistan.png"
+    },
+    {
+      "name": "Tanzania · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Tanzania.png"
+    },
+    {
+      "name": "Taringa · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Taringa.png"
+    },
+    {
+      "name": "Telegram · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Telegram.png"
+    },
+    {
+      "name": "Tencent · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Tencent.png"
+    },
+    {
+      "name": "TencentVideo · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/TencentVideo.png"
+    },
+    {
+      "name": "Thailand · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Thailand.png"
+    },
+    {
+      "name": "Tibet · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Tibet.png"
+    },
+    {
+      "name": "TikTok · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/TikTok.png"
+    },
+    {
+      "name": "Tinder · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Tinder.png"
+    },
+    {
+      "name": "Togo · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Togo.png"
+    },
+    {
+      "name": "Tokelau · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Tokelau.png"
+    },
+    {
+      "name": "Tonga · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Tonga.png"
+    },
+    {
+      "name": "Tout · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Tout.png"
+    },
+    {
+      "name": "Translate · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Translate.png"
+    },
+    {
+      "name": "Transnistria · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Transnistria.png"
+    },
+    {
+      "name": "Trinidad_And_Tobago · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Trinidad_And_Tobago.png"
+    },
+    {
+      "name": "TripAdvisor · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/TripAdvisor.png"
+    },
+    {
+      "name": "Tumblr · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Tumblr.png"
+    },
+    {
+      "name": "Tunisia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Tunisia.png"
+    },
+    {
+      "name": "Turkey · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Turkey.png"
+    },
+    {
+      "name": "Turkmenistan · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Turkmenistan.png"
+    },
+    {
+      "name": "Turks_And_Caicos · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Turks_And_Caicos.png"
+    },
+    {
+      "name": "Tuvalu · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Tuvalu.png"
+    },
+    {
+      "name": "Twitter · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Twitter.png"
+    },
+    {
+      "name": "Uber · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Uber.png"
+    },
+    {
+      "name": "Uganda · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Uganda.png"
+    },
+    {
+      "name": "Ukraine · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Ukraine.png"
+    },
+    {
+      "name": "United_Arab_Emirates · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/United_Arab_Emirates.png"
+    },
+    {
+      "name": "United_Kingdom · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/United_Kingdom.png"
+    },
+    {
+      "name": "United_Nations · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/United_Nations.png"
+    },
+    {
+      "name": "United_States · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/United_States.png"
+    },
+    {
+      "name": "Uruguay · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Uruguay.png"
+    },
+    {
+      "name": "Uzbekistn · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Uzbekistn.png"
+    },
+    {
+      "name": "Vanuatu · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Vanuatu.png"
+    },
+    {
+      "name": "Vatican_City · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Vatican_City.png"
+    },
+    {
+      "name": "Vault · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Vault.png"
+    },
+    {
+      "name": "Venezuela · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Venezuela.png"
+    },
+    {
+      "name": "Viadeo · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Viadeo.png"
+    },
+    {
+      "name": "Video · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Video.png"
+    },
+    {
+      "name": "Vietnam · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Vietnam.png"
+    },
+    {
+      "name": "Vimeo · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Vimeo.png"
+    },
+    {
+      "name": "Virgin_Islands · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Virgin_Islands.png"
+    },
+    {
+      "name": "VK · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/VK.png"
+    },
+    {
+      "name": "Voice · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Voice.png"
+    },
+    {
+      "name": "Wales · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Wales.png"
+    },
+    {
+      "name": "We_Heart_It · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/We_Heart_It.png"
+    },
+    {
+      "name": "WeChat · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/WeChat.png"
+    },
+    {
+      "name": "Whatsapp · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Whatsapp.png"
+    },
+    {
+      "name": "XING · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/XING.png"
+    },
+    {
+      "name": "Yelp · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Yelp.png"
+    },
+    {
+      "name": "Yemen · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Yemen.png"
+    },
+    {
+      "name": "YouTube · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/YouTube.png"
+    },
+    {
+      "name": "YouTube · Semporia 2",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/YouTube.png"
+    },
+    {
+      "name": "YTOO · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/YTOO.png"
+    },
+    {
+      "name": "Zambia · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Zambia.png"
+    },
+    {
+      "name": "Zimbabwe · Semporia",
+      "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Zimbabwe.png"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "name": "AllanRita · Orz3-Alpha",
+  "description": "Original upstream image URLs and source credits retained.",
+  "icons": [
+    {
+      "name": "Adblock · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Adblock.png"
+    },
+    {
+      "name": "Apple · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Apple.png"
+    },
+    {
+      "name": "AppleTV · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/AppleTV.png"
+    },
+    {
+      "name": "AU · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/AU.png"
+    },
+    {
+      "name": "Available · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Available.png"
+    },
+    {
+      "name": "Bahamut · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Bahamut.png"
+    },
+    {
+      "name": "Bilibili · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Bili.png"
+    },
+    {
+      "name": "CA · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/CA.png"
+    },
+    {
+      "name": "China · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/China.png"
+    },
+    {
+      "name": "Clubhouse · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Clubhouse.png"
+    },
+    {
+      "name": "CN · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/CN.png"
+    },
+    {
+      "name": "Discovery+ · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Discovery.png"
+    },
+    {
+      "name": "Disney+ · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/DisneyPlus.png"
+    },
+    {
+      "name": "Emby · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Emby.png"
+    },
+    {
+      "name": "Final · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Final.png"
+    },
+    {
+      "name": "FR · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/FR.png"
+    },
+    {
+      "name": "GAME · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/GAME.png"
+    },
+    {
+      "name": "Global · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Global.png"
+    },
+    {
+      "name": "Google · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Google.png"
+    },
+    {
+      "name": "GoogleDrive · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/GoogleDrive.png"
+    },
+    {
+      "name": "HBO · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/HBO.png"
+    },
+    {
+      "name": "HK · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/HK.png"
+    },
+    {
+      "name": "Hulu · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Hulu.png"
+    },
+    {
+      "name": "Instagram · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Instagram.png"
+    },
+    {
+      "name": "JP · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/JP.png"
+    },
+    {
+      "name": "LineTV · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/LineTV.png"
+    },
+    {
+      "name": "Microsoft · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Microsoft.png"
+    },
+    {
+      "name": "MO · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/MO.png"
+    },
+    {
+      "name": "NeteaseMusic · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Netease.png"
+    },
+    {
+      "name": "Paramount · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Paramount.png"
+    },
+    {
+      "name": "Paypal · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Paypal.png"
+    },
+    {
+      "name": "Roundrobin · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Roundrobin.png"
+    },
+    {
+      "name": "RU · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/RU.png"
+    },
+    {
+      "name": "SG · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/SG.png"
+    },
+    {
+      "name": "Speedtest · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Speedtest.png"
+    },
+    {
+      "name": "Spotify · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Spotify.png"
+    },
+    {
+      "name": "SSID · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/SSID.png"
+    },
+    {
+      "name": "Static · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Static.png"
+    },
+    {
+      "name": "Streaming · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Streaming.png"
+    },
+    {
+      "name": "StreamingCN · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/StreamingCN.png"
+    },
+    {
+      "name": "StreamingSE · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/StreamingSE.png"
+    },
+    {
+      "name": "Telegram · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Telegram.png"
+    },
+    {
+      "name": "TH · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/TH.png"
+    },
+    {
+      "name": "TR · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/TR.png"
+    },
+    {
+      "name": "TW · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/TW.png"
+    },
+    {
+      "name": "Twitter · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Twitter.png"
+    },
+    {
+      "name": "UK · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/UK.png"
+    },
+    {
+      "name": "UN · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/UN.png"
+    },
+    {
+      "name": "Urltest · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Urltest.png"
+    },
+    {
+      "name": "US · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/US.png"
+    },
+    {
+      "name": "VN · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/VN.png"
+    },
+    {
+      "name": "XD · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/XD.png"
+    },
+    {
+      "name": "YouTube · Orz3-Alpha",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/YouTube.png"
+    }
+  ]
+}

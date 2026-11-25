@@ -1,0 +1,350 @@
+{
+  "name": "AllanRita · Orz3-ColorPlus",
+  "description": "Original upstream image URLs and source credits retained.",
+  "icons": [
+    {
+      "name": "AAEX · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/AAEX.png"
+    },
+    {
+      "name": "AEX · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/AEX.png"
+    },
+    {
+      "name": "Amy · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Amy.png"
+    },
+    {
+      "name": "Ark · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Ark.png"
+    },
+    {
+      "name": "ASN · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/ASN.png"
+    },
+    {
+      "name": "BitCloud · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bitcloud.png"
+    },
+    {
+      "name": "Blinkload · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Blink.png"
+    },
+    {
+      "name": "Boom · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Boom.png"
+    },
+    {
+      "name": "Boslife · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Boslife.png"
+    },
+    {
+      "name": "Bywave · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bywave.png"
+    },
+    {
+      "name": "Catnet · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Catnet.png"
+    },
+    {
+      "name": "CCCat · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/CCCat.png"
+    },
+    {
+      "name": "Cm · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Cm.png"
+    },
+    {
+      "name": "CNIX · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/CNIX.png"
+    },
+    {
+      "name": "CoCo · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Coco.png"
+    },
+    {
+      "name": "Cord · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Cord.png"
+    },
+    {
+      "name": "Cylink · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Cylink.png"
+    },
+    {
+      "name": "Dianliang · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Dianliang.png"
+    },
+    {
+      "name": "Dler · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Dler.png"
+    },
+    {
+      "name": "DLK · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/DLK.png"
+    },
+    {
+      "name": "Duang · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Duang.png"
+    },
+    {
+      "name": "Dukou · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Dukou.png"
+    },
+    {
+      "name": "Element · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Element.png"
+    },
+    {
+      "name": "Enet · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Enet.png"
+    },
+    {
+      "name": "Exflux · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Exflux.png"
+    },
+    {
+      "name": "Fastfish · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Fastfish.png"
+    },
+    {
+      "name": "Fastlink · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Fastlink.png"
+    },
+    {
+      "name": "Fastnode · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Fastnode.png"
+    },
+    {
+      "name": "Flower · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Flower.png"
+    },
+    {
+      "name": "Flyint · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Flyint.png"
+    },
+    {
+      "name": "FNF · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/FNF.png"
+    },
+    {
+      "name": "FRANXX · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/FRANXX.png"
+    },
+    {
+      "name": "GaCloud · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/GaCloud.png"
+    },
+    {
+      "name": "GLaDOS · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/GLaDOS.png"
+    },
+    {
+      "name": "Godetia · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Godetia.png"
+    },
+    {
+      "name": "GuGuEX · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Guguex.png"
+    },
+    {
+      "name": "Hitun · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Hitun.png"
+    },
+    {
+      "name": "Hxlm · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Hxlm.png"
+    },
+    {
+      "name": "ImmTel · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Imm.png"
+    },
+    {
+      "name": "Kache · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Kache.png"
+    },
+    {
+      "name": "Kafka · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Kafka.png"
+    },
+    {
+      "name": "Kedou · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Kedou.png"
+    },
+    {
+      "name": "Kuai · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Kuai.png"
+    },
+    {
+      "name": "LiYing · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/LiYing.png"
+    },
+    {
+      "name": "Maying · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Maying.png"
+    },
+    {
+      "name": "MDSS · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/MDSS.png"
+    },
+    {
+      "name": "MGNB · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/MGNB.png"
+    },
+    {
+      "name": "Miaona · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Miao.png"
+    },
+    {
+      "name": "Mickey · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Mickey.png"
+    },
+    {
+      "name": "MIMEMI · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Mimemi.png"
+    },
+    {
+      "name": "Muchang · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Muchang.png"
+    },
+    {
+      "name": "Nexitally · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Nex.png"
+    },
+    {
+      "name": "Np · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Np.png"
+    },
+    {
+      "name": "NSFW · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/NSFW.png"
+    },
+    {
+      "name": "Nucleus · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Nucleus.png"
+    },
+    {
+      "name": "OvO · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/OvO.png"
+    },
+    {
+      "name": "Pacifiuue · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Pacifique.png"
+    },
+    {
+      "name": "Paoluz · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Paoluz.png"
+    },
+    {
+      "name": "Prpr · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Prpr.png"
+    },
+    {
+      "name": "Renzhe · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Renzhe.png"
+    },
+    {
+      "name": "Rookie · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Rookie.png"
+    },
+    {
+      "name": "SaySS · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/SaySS.png"
+    },
+    {
+      "name": "SCTC · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/SCTC.png"
+    },
+    {
+      "name": "Shandian · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Shandian.png"
+    },
+    {
+      "name": "Situ · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Situ.png"
+    },
+    {
+      "name": "Skicat · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Skicat.png"
+    },
+    {
+      "name": "Socloud · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Socloud.png"
+    },
+    {
+      "name": "SSlinks · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSlinks.png"
+    },
+    {
+      "name": "SSP · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Ssp.png"
+    },
+    {
+      "name": "STC · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/STC.png"
+    },
+    {
+      "name": "Suda · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Suda.png"
+    },
+    {
+      "name": "Suncloud · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Sun.png"
+    },
+    {
+      "name": "SWCloud · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/SWCloud.png"
+    },
+    {
+      "name": "Thunder · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Thunder.png"
+    },
+    {
+      "name": "Touhou · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Touhou.png"
+    },
+    {
+      "name": "Unicorn · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Unicorn.png"
+    },
+    {
+      "name": "V2Tun · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/V2tun.png"
+    },
+    {
+      "name": "Wallless · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Wallless.png"
+    },
+    {
+      "name": "WestData · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/WestData.png"
+    },
+    {
+      "name": "Xair · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Xair.png"
+    },
+    {
+      "name": "Xingmeng · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Xingmeng.png"
+    },
+    {
+      "name": "XTunnel · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/XTunnel.png"
+    },
+    {
+      "name": "YTOO · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Ytoo.png"
+    },
+    {
+      "name": "Yunyi · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Yunyi.png"
+    },
+    {
+      "name": "Ywhl · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Ywhl.png"
+    },
+    {
+      "name": "Zhs · Orz3-ColorPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Zhs.png"
+    }
+  ]
+}

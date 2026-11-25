@@ -1,0 +1,246 @@
+{
+  "name": "AllanRita · Orz3-Color",
+  "description": "Original upstream image URLs and source credits retained.",
+  "icons": [
+    {
+      "name": "Adblock · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png"
+    },
+    {
+      "name": "Apple · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png"
+    },
+    {
+      "name": "AppleTV · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/AppleTV.png"
+    },
+    {
+      "name": "AU · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/AU.png"
+    },
+    {
+      "name": "Available · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png"
+    },
+    {
+      "name": "Bahamut · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bahamut.png"
+    },
+    {
+      "name": "Bilibili · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bili.png"
+    },
+    {
+      "name": "CA · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/CA.png"
+    },
+    {
+      "name": "China · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/China.png"
+    },
+    {
+      "name": "Clubhouse · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Clubhouse.png"
+    },
+    {
+      "name": "CN · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/CN.png"
+    },
+    {
+      "name": "DE · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/DE.png"
+    },
+    {
+      "name": "Discovery+ · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Discovery.png"
+    },
+    {
+      "name": "Disney+ · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/DisneyPlus.png"
+    },
+    {
+      "name": "Emby · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png"
+    },
+    {
+      "name": "Final · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png"
+    },
+    {
+      "name": "FR · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/FR.png"
+    },
+    {
+      "name": "GAME · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/GAME.png"
+    },
+    {
+      "name": "Global · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png"
+    },
+    {
+      "name": "Google · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png"
+    },
+    {
+      "name": "GoogleDrive · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/GoogleDrive.png"
+    },
+    {
+      "name": "HBO · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/HBO.png"
+    },
+    {
+      "name": "HK · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png"
+    },
+    {
+      "name": "Hulu · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Hulu.png"
+    },
+    {
+      "name": "Instagram · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Instagram.png"
+    },
+    {
+      "name": "JP · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png"
+    },
+    {
+      "name": "KR · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png"
+    },
+    {
+      "name": "LineTV · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/LineTV.png"
+    },
+    {
+      "name": "Microsoft · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png"
+    },
+    {
+      "name": "MO · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/MO.png"
+    },
+    {
+      "name": "NeteaseMusic · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Netease.png"
+    },
+    {
+      "name": "Netflix · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Netflix.png"
+    },
+    {
+      "name": "Paramount · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Paramount.png"
+    },
+    {
+      "name": "Paypal · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Paypal.png"
+    },
+    {
+      "name": "PLUS · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/PLUS.png"
+    },
+    {
+      "name": "Pornhub · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Pornhub.png"
+    },
+    {
+      "name": "PrimeVideo · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/PrimeVideo.png"
+    },
+    {
+      "name": "Roundrobin · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Roundrobin.png"
+    },
+    {
+      "name": "RU · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/RU.png"
+    },
+    {
+      "name": "SG · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png"
+    },
+    {
+      "name": "Speedtest · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Speedtest.png"
+    },
+    {
+      "name": "Spotify · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png"
+    },
+    {
+      "name": "SSID · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png"
+    },
+    {
+      "name": "Static · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png"
+    },
+    {
+      "name": "Streaming · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png"
+    },
+    {
+      "name": "StreamingCN · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/StreamingCN.png"
+    },
+    {
+      "name": "StreamingSE · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/StreamingSE.png"
+    },
+    {
+      "name": "Telegram · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png"
+    },
+    {
+      "name": "TH · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/TH.png"
+    },
+    {
+      "name": "TikTok · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/TikTok.png"
+    },
+    {
+      "name": "TR · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/TR.png"
+    },
+    {
+      "name": "TW · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png"
+    },
+    {
+      "name": "Twitter · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Twitter.png"
+    },
+    {
+      "name": "UK · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/UK.png"
+    },
+    {
+      "name": "UN · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/UN.png"
+    },
+    {
+      "name": "Urltest · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png"
+    },
+    {
+      "name": "US · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png"
+    },
+    {
+      "name": "VN · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/VN.png"
+    },
+    {
+      "name": "XD · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png"
+    },
+    {
+      "name": "YouTube · Orz3-Color",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png"
+    }
+  ]
+}

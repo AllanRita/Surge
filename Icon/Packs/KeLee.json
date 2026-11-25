@@ -1,0 +1,1558 @@
+{
+  "name": "AllanRita · KeLee",
+  "description": "Original upstream image URLs and source credits retained.",
+  "icons": [
+    {
+      "name": "1.1.1.1 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/1.1.1.1.png"
+    },
+    {
+      "name": "12306 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/12306.png"
+    },
+    {
+      "name": "123云盘 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/123NetWorkDisk.png"
+    },
+    {
+      "name": "1919 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/1919.png"
+    },
+    {
+      "name": "360摄像机 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/360SmartCamera.png"
+    },
+    {
+      "name": "360智慧生活 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SafetyHome.png"
+    },
+    {
+      "name": "36氪 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/36Kr.png"
+    },
+    {
+      "name": "555电影 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/555DY.png"
+    },
+    {
+      "name": "5EPlay · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/5EPlay.png"
+    },
+    {
+      "name": "Adobe Creative Cloud · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Adobe_Creative_Cloud.png"
+    },
+    {
+      "name": "Agenda · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Agenda.png"
+    },
+    {
+      "name": "App Store · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/AppStore.png"
+    },
+    {
+      "name": "AppRaven · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AppRaven.png"
+    },
+    {
+      "name": "Audiomack · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Audiomack.png"
+    },
+    {
+      "name": "B612咔叽 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SnowCamera.png"
+    },
+    {
+      "name": "Bluesky · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Bluesky.png"
+    },
+    {
+      "name": "BoxJS · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/BoxJS.png"
+    },
+    {
+      "name": "CC直播 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CCLive.png"
+    },
+    {
+      "name": "ChatGPT · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ChatGPT.png"
+    },
+    {
+      "name": "Claude · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Claude.png"
+    },
+    {
+      "name": "Cubox · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Cubox.png"
+    },
+    {
+      "name": "Darkroom · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Darkroom.png"
+    },
+    {
+      "name": "Dazn · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Dazn.png"
+    },
+    {
+      "name": "DeepL · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DeepL.png"
+    },
+    {
+      "name": "DeepSeek · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DeepSeek.png"
+    },
+    {
+      "name": "DigitalHeartbeat · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DigitalHeartbeat.png"
+    },
+    {
+      "name": "Discord · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Discord.png"
+    },
+    {
+      "name": "Discovery+ · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Discovery+.png"
+    },
+    {
+      "name": "Disney+ · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Disney+.png"
+    },
+    {
+      "name": "DJ多多 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DjDuoDuo.png"
+    },
+    {
+      "name": "Dlabel云标签 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Dlabel.png"
+    },
+    {
+      "name": "DNS防泄露 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Prevent_DNS_Leaks.png"
+    },
+    {
+      "name": "Documents · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Documents.png"
+    },
+    {
+      "name": "Drafts · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Drafts.png"
+    },
+    {
+      "name": "DREAME · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DREAME.png"
+    },
+    {
+      "name": "ECOVACS HOME · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/EcovacsHome.png"
+    },
+    {
+      "name": "Elk · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Elk.png"
+    },
+    {
+      "name": "Emby · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Emby.png"
+    },
+    {
+      "name": "Enpass Password Manager · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Enpass_Password_Manager.png"
+    },
+    {
+      "name": "e充电 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/EasyCharge.png"
+    },
+    {
+      "name": "Fileball · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Fileball.png"
+    },
+    {
+      "name": "Filen · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Filen.png"
+    },
+    {
+      "name": "FollowRSS · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/FollowRSS.png"
+    },
+    {
+      "name": "Foodie · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Foodie.png"
+    },
+    {
+      "name": "giffgaff · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/giffgaff.png"
+    },
+    {
+      "name": "GitHub · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/GitHub.png"
+    },
+    {
+      "name": "Google Gemini · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/GoogleGemini.png"
+    },
+    {
+      "name": "Google · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Google.png"
+    },
+    {
+      "name": "Grok · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Grok.png"
+    },
+    {
+      "name": "Grow · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Grow.png"
+    },
+    {
+      "name": "Happy:Days · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/HappyDays.png"
+    },
+    {
+      "name": "Hong Kong Toolbar · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/HongKongToolbar.png"
+    },
+    {
+      "name": "HTTPDNS · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png"
+    },
+    {
+      "name": "Instagram · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Instagram.png"
+    },
+    {
+      "name": "Instapaper · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Instapaper.png"
+    },
+    {
+      "name": "IPATool · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/IPATool.png"
+    },
+    {
+      "name": "IT之家 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/IThome.png"
+    },
+    {
+      "name": "JavaScript转换器 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JavaScriptConverter.png"
+    },
+    {
+      "name": "Keep · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Keep.png"
+    },
+    {
+      "name": "Kimi · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Kimi.png"
+    },
+    {
+      "name": "KOOK · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KOOK.png"
+    },
+    {
+      "name": "Line · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Line.png"
+    },
+    {
+      "name": "Loon · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Loon.png"
+    },
+    {
+      "name": "Microsoft Copilot · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MicrosoftCopilot.png"
+    },
+    {
+      "name": "Mistral AI · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MistralAI.png"
+    },
+    {
+      "name": "Netflix · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Netflix.png"
+    },
+    {
+      "name": "Nicegram · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Nicegram.png"
+    },
+    {
+      "name": "Nike · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Nike.png"
+    },
+    {
+      "name": "Notability · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Notability.png"
+    },
+    {
+      "name": "OKOK · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/OKOK.png"
+    },
+    {
+      "name": "OKX · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/OKX.png"
+    },
+    {
+      "name": "OneKey · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/OneKey.png"
+    },
+    {
+      "name": "Oopz · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Oopz.png"
+    },
+    {
+      "name": "Paramount+ · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Paramount+.png"
+    },
+    {
+      "name": "PayPal · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PayPal.png"
+    },
+    {
+      "name": "PDF点睛 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PDF_Expert.png"
+    },
+    {
+      "name": "PICOOC · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PICOOC.png"
+    },
+    {
+      "name": "Picsart · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Picsart.png"
+    },
+    {
+      "name": "PikPak · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PikPak.png"
+    },
+    {
+      "name": "Pinterest · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Pinterest.png"
+    },
+    {
+      "name": "Prime Video · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PrimeVideo.png"
+    },
+    {
+      "name": "ProCamera · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ProCamera.png"
+    },
+    {
+      "name": "Proton Calendar · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ProtonCalendar.png"
+    },
+    {
+      "name": "Proton Drive · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ProtonDrive.png"
+    },
+    {
+      "name": "Proton Mail · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ProtonMail.png"
+    },
+    {
+      "name": "Proton Pass · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ProtonPass.png"
+    },
+    {
+      "name": "Proton VPN · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ProtonVPN.png"
+    },
+    {
+      "name": "QQ · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QQ.png"
+    },
+    {
+      "name": "QQ音乐 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QQMusic.png"
+    },
+    {
+      "name": "Reddit · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Reddit.png"
+    },
+    {
+      "name": "ReelShort · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ReelShort.png"
+    },
+    {
+      "name": "RevenueCat · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/RevenueCat.png"
+    },
+    {
+      "name": "Roborock · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Roborock.png"
+    },
+    {
+      "name": "RQrun · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/RQrun.png"
+    },
+    {
+      "name": "Safari · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Safari.png"
+    },
+    {
+      "name": "Scanner Pro · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Scanner_Pro.png"
+    },
+    {
+      "name": "Script-Hub · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Script-Hub.png"
+    },
+    {
+      "name": "Signal · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Signal.png"
+    },
+    {
+      "name": "Sofascore · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Sofascore.png"
+    },
+    {
+      "name": "Soul · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Soul.png"
+    },
+    {
+      "name": "Spark · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Spark.png"
+    },
+    {
+      "name": "Speedtest · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/OoklaSpeedtest.png"
+    },
+    {
+      "name": "Spotify · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Spotify.png"
+    },
+    {
+      "name": "Stay · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Stay.png"
+    },
+    {
+      "name": "Sub-Store · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Sub-Store.png"
+    },
+    {
+      "name": "Switch · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Switch.png"
+    },
+    {
+      "name": "Talkatone · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Talkatone.png"
+    },
+    {
+      "name": "TapTap · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TapTap.png"
+    },
+    {
+      "name": "Telegram · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Telegram.png"
+    },
+    {
+      "name": "TeraBox · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TeraBox.png"
+    },
+    {
+      "name": "TestFlight · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TestFlight.png"
+    },
+    {
+      "name": "TikTok · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TikTok.png"
+    },
+    {
+      "name": "TubeMax · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TubeMax.png"
+    },
+    {
+      "name": "Tumblr · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Tumblr.png"
+    },
+    {
+      "name": "Uki · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Uki.png"
+    },
+    {
+      "name": "UpNote · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/UpNote.png"
+    },
+    {
+      "name": "VVebo · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/VVebo.png"
+    },
+    {
+      "name": "WakeUp课程表 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WakeupSchedule.png"
+    },
+    {
+      "name": "WebDAV · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/WebDAV.png"
+    },
+    {
+      "name": "Wind金融终端 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WindInfo.png"
+    },
+    {
+      "name": "WPS · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WPS.png"
+    },
+    {
+      "name": "WPS文档 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WPS_Documents.png"
+    },
+    {
+      "name": "X · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/X.png"
+    },
+    {
+      "name": "Xmind · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Xmind.png"
+    },
+    {
+      "name": "Yealico · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Yealico.png"
+    },
+    {
+      "name": "YouTube Music · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YouTubeMusic.png"
+    },
+    {
+      "name": "YouTube · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YouTube.png"
+    },
+    {
+      "name": "YY · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YY_Voice.png"
+    },
+    {
+      "name": "YY语音 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YYVoiceTool.png"
+    },
+    {
+      "name": "ZAKER · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ZAKER.png"
+    },
+    {
+      "name": "一刻相册 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BaiduPhoto.png"
+    },
+    {
+      "name": "一甜相机 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Yitian.png"
+    },
+    {
+      "name": "一键抠图 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/OneClickCutout.png"
+    },
+    {
+      "name": "七猫小说 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SevenCat.png"
+    },
+    {
+      "name": "万年历 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/iReaderCityZHWNL.png"
+    },
+    {
+      "name": "下厨房 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/XiaChuFang.png"
+    },
+    {
+      "name": "两步路户外助手 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/2bulu.png"
+    },
+    {
+      "name": "中华万年历 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/EtouchEcalendar.png"
+    },
+    {
+      "name": "中国人保 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PICC_Insurance.png"
+    },
+    {
+      "name": "中国天气 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WeatherChina.png"
+    },
+    {
+      "name": "中国电信 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ChinaTetlcom.png"
+    },
+    {
+      "name": "中国移动 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ChinaMobile.png"
+    },
+    {
+      "name": "中国移动云盘 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/mobileClouds.png"
+    },
+    {
+      "name": "中国联通 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ChinaUnicom.png"
+    },
+    {
+      "name": "丰巢 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/FC_Box.png"
+    },
+    {
+      "name": "乐播投屏 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TV_Assistant.png"
+    },
+    {
+      "name": "书旗小说 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ShuQiCenterReader.png"
+    },
+    {
+      "name": "云闪付 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/UnionPay.png"
+    },
+    {
+      "name": "云鲸智能 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/NarwelRobots.png"
+    },
+    {
+      "name": "京东 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JD.png"
+    },
+    {
+      "name": "京东外卖 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JDWaimai.png"
+    },
+    {
+      "name": "京东金融 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JDJinRong.png"
+    },
+    {
+      "name": "亲宝宝 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Qbb.png"
+    },
+    {
+      "name": "人人追剧 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/EveryoneVideo.png"
+    },
+    {
+      "name": "什么值得买 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/smzdm.png"
+    },
+    {
+      "name": "他趣 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Taqu.png"
+    },
+    {
+      "name": "优酷视频 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YouKu_Video.png"
+    },
+    {
+      "name": "健康160 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/91160.png"
+    },
+    {
+      "name": "催眠大师 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Hypnotist.png"
+    },
+    {
+      "name": "全民K歌 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QQKSong.png"
+    },
+    {
+      "name": "凤凰新闻 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ifengNews.png"
+    },
+    {
+      "name": "创维智慧云 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SkyworthDigitalPicamera.png"
+    },
+    {
+      "name": "前程无忧 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/51Job.png"
+    },
+    {
+      "name": "剑网三无界 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SeasunJX3.png"
+    },
+    {
+      "name": "医考帮 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YiKaoBang.png"
+    },
+    {
+      "name": "半次元 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Bcy.png"
+    },
+    {
+      "name": "华住会 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/HantingHotels.png"
+    },
+    {
+      "name": "华尔街见闻 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/FinanceNews.png"
+    },
+    {
+      "name": "南网在线 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CSG.png"
+    },
+    {
+      "name": "口袋壁纸 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ShoujiDesk.png"
+    },
+    {
+      "name": "叮咚买菜 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DingdongMaicai.png"
+    },
+    {
+      "name": "可莉 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/KeLee.png"
+    },
+    {
+      "name": "向日葵 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/OraySunlogin.png"
+    },
+    {
+      "name": "启信宝 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QiXinBao.png"
+    },
+    {
+      "name": "和平营地 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PUBGMHD_Bible.png"
+    },
+    {
+      "name": "哔哩哔哩 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Bilibili.png"
+    },
+    {
+      "name": "哔哩哔哩漫画 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BiliComic.png"
+    },
+    {
+      "name": "唱吧 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Changba.png"
+    },
+    {
+      "name": "喜马拉雅 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Himalaya.png"
+    },
+    {
+      "name": "图怪兽 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TuGuaiShou.png"
+    },
+    {
+      "name": "堆糖 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DuiTang.png"
+    },
+    {
+      "name": "墨迹天气 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MojiWeather.png"
+    },
+    {
+      "name": "多屏互动 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TCLnScreen.png"
+    },
+    {
+      "name": "大姨妈月经期助手 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Dayima.png"
+    },
+    {
+      "name": "大麦 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Damai.png"
+    },
+    {
+      "name": "天天跳绳 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CrazyRope.png"
+    },
+    {
+      "name": "天气 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AppleWeather.png"
+    },
+    {
+      "name": "天气通 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TianQiTong.png"
+    },
+    {
+      "name": "天气预报 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/iReaderCityWeather.png"
+    },
+    {
+      "name": "天猫校园 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TmallCampus.png"
+    },
+    {
+      "name": "央视频 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YangShiPin.png"
+    },
+    {
+      "name": "夸克 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QuarkBrowser.png"
+    },
+    {
+      "name": "夸克扫描王 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QuarkScanking.png"
+    },
+    {
+      "name": "好轻 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YunmaiScale.png"
+    },
+    {
+      "name": "威锋 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WPForum.png"
+    },
+    {
+      "name": "字节跳动广告 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/ByteDanceAd.png"
+    },
+    {
+      "name": "学习通 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ChaoXingStudy.png"
+    },
+    {
+      "name": "完美世界电竞 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PerfectWorldEsport.png"
+    },
+    {
+      "name": "宝宝树孕育 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BabyTree.png"
+    },
+    {
+      "name": "小喵看书 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MiaoRead.png"
+    },
+    {
+      "name": "小宇宙 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CosmosPodcast.png"
+    },
+    {
+      "name": "小店掌柜 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ShopKeeperAdmin.png"
+    },
+    {
+      "name": "小桔充电 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/XiaojukejiCharge.png"
+    },
+    {
+      "name": "小白智慧打印 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/XiaobaiPrint.png"
+    },
+    {
+      "name": "小睡眠 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/HeartideBrainWave.png"
+    },
+    {
+      "name": "小米音箱 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/XiaomiSpeaker.png"
+    },
+    {
+      "name": "小红书 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/RedPaper.png"
+    },
+    {
+      "name": "小蚕霸王餐 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/XiaoCan.png"
+    },
+    {
+      "name": "小象买菜 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/iMaiCai.png"
+    },
+    {
+      "name": "小黑盒 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/XiaoHeiHe.png"
+    },
+    {
+      "name": "帆书 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KebidaDushu.png"
+    },
+    {
+      "name": "广告拦截 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/RemoveAds.png"
+    },
+    {
+      "name": "库街区 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KuroBBS.png"
+    },
+    {
+      "name": "彩云天气 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ColorfulClouds.png"
+    },
+    {
+      "name": "彩云天气Pro · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ColorfulCloudsPro.png"
+    },
+    {
+      "name": "得物 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Dewu.png"
+    },
+    {
+      "name": "得间小说 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/iReaderDejian.png"
+    },
+    {
+      "name": "微信 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weixin.png"
+    },
+    {
+      "name": "微信小程序 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WeixinMiniPrograms.png"
+    },
+    {
+      "name": "微博 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weibo.png"
+    },
+    {
+      "name": "微博轻享版 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weibo_intl.png"
+    },
+    {
+      "name": "微店 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weidian.png"
+    },
+    {
+      "name": "微脉圈 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weimai.png"
+    },
+    {
+      "name": "必应 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Bing.png"
+    },
+    {
+      "name": "快对 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KuaiDuiZuoYe.png"
+    },
+    {
+      "name": "快影 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KwaiVideoeditor.png"
+    },
+    {
+      "name": "快手 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KuaiShou.png"
+    },
+    {
+      "name": "快看漫画 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KuaiKanComic.png"
+    },
+    {
+      "name": "快递100 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KuaiDi100.png"
+    },
+    {
+      "name": "悟空浏览器 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WukongBrowser.png"
+    },
+    {
+      "name": "慧生活798 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SmartLife.png"
+    },
+    {
+      "name": "懒人听书 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/LazyAudio.png"
+    },
+    {
+      "name": "成分喵 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ChengFenMiao.png"
+    },
+    {
+      "name": "拼多多 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PinDuoDuo.png"
+    },
+    {
+      "name": "挖财记账 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WaCaiJiZhang.png"
+    },
+    {
+      "name": "挖财记账 · KeLee 2",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Wacai.png"
+    },
+    {
+      "name": "掌上公交 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SouguMyBus.png"
+    },
+    {
+      "name": "掌上无畏契约 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ValorantBible.png"
+    },
+    {
+      "name": "掌上穿越火线 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CF_Bible.png"
+    },
+    {
+      "name": "掌上英雄联盟 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/LOL_Bible.png"
+    },
+    {
+      "name": "掌阅 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/iReader.png"
+    },
+    {
+      "name": "排班日历 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AxWorkSchedule.png"
+    },
+    {
+      "name": "推栏 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Daily.png"
+    },
+    {
+      "name": "搜图神器 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SearchPicture.png"
+    },
+    {
+      "name": "携程旅行 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Ctrip.png"
+    },
+    {
+      "name": "摩天轮 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/FerrisWheel.png"
+    },
+    {
+      "name": "摩托范 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MotorFans.png"
+    },
+    {
+      "name": "支付宝 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AliPay.png"
+    },
+    {
+      "name": "收银通商户端 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ShouYinTongMerchant.png"
+    },
+    {
+      "name": "斗鱼 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Douyu.png"
+    },
+    {
+      "name": "新浪财经 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SinaStock.png"
+    },
+    {
+      "name": "无他相机 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WutaCamera.png"
+    },
+    {
+      "name": "易校园 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YiSchool.png"
+    },
+    {
+      "name": "智慧苏州 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SuZhouCitizenCard.png"
+    },
+    {
+      "name": "智联招聘 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ZhiLianZhaoPin.png"
+    },
+    {
+      "name": "智行火车票 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ZhixingHC.png"
+    },
+    {
+      "name": "智谱清言 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ZhiPuChatGLM.png"
+    },
+    {
+      "name": "最右 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ZuiYou.png"
+    },
+    {
+      "name": "最美壁纸 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BestWall.png"
+    },
+    {
+      "name": "最美壁纸 · KeLee 2",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/iWallBiZhi.png"
+    },
+    {
+      "name": "有道云笔记 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YoudaoNote.png"
+    },
+    {
+      "name": "有道翻译官 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YoudaoTrans.png"
+    },
+    {
+      "name": "朴朴超市 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PuPuMall.png"
+    },
+    {
+      "name": "每日赛车 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MeiRiSaiChe.png"
+    },
+    {
+      "name": "比心 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Bixin.png"
+    },
+    {
+      "name": "比特球云盘 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BitqiuPan.png"
+    },
+    {
+      "name": "汽水音乐 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SodaMusic.png"
+    },
+    {
+      "name": "汽车之家 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AutoHome.png"
+    },
+    {
+      "name": "沃尔玛 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Walmart.png"
+    },
+    {
+      "name": "河马剧场 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/HMJC.png"
+    },
+    {
+      "name": "波点音乐 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BodianMusic.png"
+    },
+    {
+      "name": "测测 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Cece.png"
+    },
+    {
+      "name": "海螺AI · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AIWanJuan.png"
+    },
+    {
+      "name": "海雀 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AlcidaeVideo.png"
+    },
+    {
+      "name": "淘宝 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Taobao.png"
+    },
+    {
+      "name": "淘票票 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Taopiaopiao.png"
+    },
+    {
+      "name": "深圳地铁 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SZMetro.png"
+    },
+    {
+      "name": "滴滴出行 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DiDi.png"
+    },
+    {
+      "name": "滴答出行 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DidaPincheTaxi.png"
+    },
+    {
+      "name": "漫客栈 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MKZ.png"
+    },
+    {
+      "name": "爱企查 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Aiinquiry.png"
+    },
+    {
+      "name": "爱啪思道 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Asspp.png"
+    },
+    {
+      "name": "爱奇艺 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/iQiYi_Video.png"
+    },
+    {
+      "name": "爱思助手 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/i4Assistant.png"
+    },
+    {
+      "name": "特来电 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/GotoCharge.png"
+    },
+    {
+      "name": "猫耳FM · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CatEarFM.png"
+    },
+    {
+      "name": "王者营地 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/HonorOfKingsGameHelper.png"
+    },
+    {
+      "name": "瑞幸咖啡 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/LuckinCoffee.png"
+    },
+    {
+      "name": "番茄小说 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DragonRead.png"
+    },
+    {
+      "name": "番茄畅听 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/NovelFM.png"
+    },
+    {
+      "name": "百度 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Baidu.png"
+    },
+    {
+      "name": "百度地图 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BaiduMap.png"
+    },
+    {
+      "name": "百度文库 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BaiduWenku.png"
+    },
+    {
+      "name": "百度网盘 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BaiduNetDisk.png"
+    },
+    {
+      "name": "百度翻译 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BaiduTranslate.png"
+    },
+    {
+      "name": "百度输入法 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Baidu_input_method.png"
+    },
+    {
+      "name": "百词斩 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BaiCiZhan.png"
+    },
+    {
+      "name": "皮皮虾 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PiPiXia.png"
+    },
+    {
+      "name": "盒马 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MrHema.png"
+    },
+    {
+      "name": "盖得排行 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/GuideRank.png"
+    },
+    {
+      "name": "直播吧 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Zhibo8.png"
+    },
+    {
+      "name": "省钱快报 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YueDanBa.png"
+    },
+    {
+      "name": "看天 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Kantian.png"
+    },
+    {
+      "name": "看家王 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ChatCam.png"
+    },
+    {
+      "name": "知乎 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Zhihu.png"
+    },
+    {
+      "name": "知识星球 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/UnnooQuan.png"
+    },
+    {
+      "name": "磁力宅播放器 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/XFuse.png"
+    },
+    {
+      "name": "稿定设计 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/GaoDing.png"
+    },
+    {
+      "name": "米家 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MiHome.png"
+    },
+    {
+      "name": "米游社 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/miHoYoBBS.png"
+    },
+    {
+      "name": "粉笔 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/FenBi.png"
+    },
+    {
+      "name": "粉象生活 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/FenxiangLife.png"
+    },
+    {
+      "name": "红果短剧 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PhoenixVideo.png"
+    },
+    {
+      "name": "纵横小说 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ZongHeng.png"
+    },
+    {
+      "name": "纷玩岛 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/LiveLab.png"
+    },
+    {
+      "name": "网易云音乐 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/NeteaseCloudMusic.png"
+    },
+    {
+      "name": "网易大神 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/NetEaseGodlike.png"
+    },
+    {
+      "name": "网易新闻 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/NeteaseNews.png"
+    },
+    {
+      "name": "网易有道词典 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YoudaoDict.png"
+    },
+    {
+      "name": "网易邮箱大师 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MailMaster.png"
+    },
+    {
+      "name": "美丽修行 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Meizhixiuxing.png"
+    },
+    {
+      "name": "美团外卖 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MeiTuanItakeaway.png"
+    },
+    {
+      "name": "美图秀秀 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MeiTu.png"
+    },
+    {
+      "name": "美柚 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MeetYou.png"
+    },
+    {
+      "name": "美颜相机 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MeituMYXJ.png"
+    },
+    {
+      "name": "美食杰 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MeiShiJie.png"
+    },
+    {
+      "name": "联掌门户 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/LZMH.png"
+    },
+    {
+      "name": "胖乖生活 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PangguaiLife.png"
+    },
+    {
+      "name": "脉脉 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MaiMai.png"
+    },
+    {
+      "name": "腾讯动漫 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TencentComic.png"
+    },
+    {
+      "name": "腾讯广告 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png"
+    },
+    {
+      "name": "腾讯文档 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TXDocs.png"
+    },
+    {
+      "name": "腾讯视频 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Tencent_Video.png"
+    },
+    {
+      "name": "航旅纵横 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Umetrip.png"
+    },
+    {
+      "name": "节点检测工具 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Node_detection_tool.png"
+    },
+    {
+      "name": "芒果TV · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Mango_TV.png"
+    },
+    {
+      "name": "菜鸟 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Cainiao.png"
+    },
+    {
+      "name": "萌娘百科 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MoeGirlWiki.png"
+    },
+    {
+      "name": "萝卜快跑 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/RoboTaxi.png"
+    },
+    {
+      "name": "萤石云视频 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/VideoGo.png"
+    },
+    {
+      "name": "薄荷健康 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BooHee.png"
+    },
+    {
+      "name": "虎嗅 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Huxiu.png"
+    },
+    {
+      "name": "虎扑 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/HUPU.png"
+    },
+    {
+      "name": "蜗牛睡眠 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SnailSleep.png"
+    },
+    {
+      "name": "蜻蜓FM · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QtingFM.png"
+    },
+    {
+      "name": "行者户外 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/OnTheWay.png"
+    },
+    {
+      "name": "视频盒子 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AnyVideoBox.png"
+    },
+    {
+      "name": "触站 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Chuzhan.png"
+    },
+    {
+      "name": "豆瓣 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DouBan.png"
+    },
+    {
+      "name": "豆瓣阅读 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DoubanRead.png"
+    },
+    {
+      "name": "贝壳找房 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Beike.png"
+    },
+    {
+      "name": "财新 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CaixinMedia.png"
+    },
+    {
+      "name": "财联社 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CaiLianShe.png"
+    },
+    {
+      "name": "贴吧 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Tieba.png"
+    },
+    {
+      "name": "起点读书 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QiDian.png"
+    },
+    {
+      "name": "超级课程表 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MyFriday.png"
+    },
+    {
+      "name": "车来了 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Chelaile.png"
+    },
+    {
+      "name": "转转 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ZhuanZhuan.png"
+    },
+    {
+      "name": "迅雷 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/XunLei.png"
+    },
+    {
+      "name": "远程资源转换器 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/RemoteResourceConverter.png"
+    },
+    {
+      "name": "通义 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TongYi.png"
+    },
+    {
+      "name": "配音秀 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DubbingShow.png"
+    },
+    {
+      "name": "酷安 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CoolApk.png"
+    },
+    {
+      "name": "酷我音乐 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Kuwo.png"
+    },
+    {
+      "name": "酷狗概念版 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KuGouYouth.png"
+    },
+    {
+      "name": "酷狗铃声 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KGRing.png"
+    },
+    {
+      "name": "酷狗音乐 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KuGou.png"
+    },
+    {
+      "name": "金十数据 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Jin10Data.png"
+    },
+    {
+      "name": "银行 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Bank.png"
+    },
+    {
+      "name": "闪动校园 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ShandongSchool.png"
+    },
+    {
+      "name": "闲鱼 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/FleaMarket.png"
+    },
+    {
+      "name": "阅友 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Yueyou.png"
+    },
+    {
+      "name": "阿里云盘 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AliYunDrive.png"
+    },
+    {
+      "name": "陌陌 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MOMO.png"
+    },
+    {
+      "name": "随手记 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KingdeeMyMoney.png"
+    },
+    {
+      "name": "雪球 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Snowball.png"
+    },
+    {
+      "name": "韩小圈 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/HanXiaoQuan.png"
+    },
+    {
+      "name": "顺丰速运 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SF-Express.png"
+    },
+    {
+      "name": "风鸟 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/RiskBird.png"
+    },
+    {
+      "name": "飞客 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/FlyerTea.png"
+    },
+    {
+      "name": "飞常准 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/FeeyoVeryZhunLITE.png"
+    },
+    {
+      "name": "飞猪旅行 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/TaobaoTravel.png"
+    },
+    {
+      "name": "饿了么 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/eleme.png"
+    },
+    {
+      "name": "马克水印相机 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/marki.png"
+    },
+    {
+      "name": "马蜂窝 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MaFengWo.png"
+    },
+    {
+      "name": "驾校一点通 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JiaXiaoDrive.png"
+    },
+    {
+      "name": "驾考宝典 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JiaKaoBaoDian.png"
+    },
+    {
+      "name": "高德地图 · KeLee",
+      "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Amap.png"
+    }
+  ]
+}

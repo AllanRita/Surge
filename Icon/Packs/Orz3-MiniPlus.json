@@ -1,0 +1,46 @@
+{
+  "name": "AllanRita · Orz3-MiniPlus",
+  "description": "Original upstream image URLs and source credits retained.",
+  "icons": [
+    {
+      "name": "Enterprise · Orz3-MiniPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Enterprise.png"
+    },
+    {
+      "name": "Personal · Orz3-MiniPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Personal.png"
+    },
+    {
+      "name": "Piao · Orz3-MiniPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Piao.png"
+    },
+    {
+      "name": "RIP · Orz3-MiniPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/RIP.png"
+    },
+    {
+      "name": "SS · Orz3-MiniPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/SS.png"
+    },
+    {
+      "name": "SSR · Orz3-MiniPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/SSR.png"
+    },
+    {
+      "name": "Team · Orz3-MiniPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Team.png"
+    },
+    {
+      "name": "Trojan · Orz3-MiniPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Trojan.png"
+    },
+    {
+      "name": "V2aray · Orz3-MiniPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/V2ray.png"
+    },
+    {
+      "name": "Vpn · Orz3-MiniPlus",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Vpn.png"
+    }
+  ]
+}
