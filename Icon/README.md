@@ -8,7 +8,7 @@ Surge 图标索引聚合。仅引用外部图片，版权归原权利人所有�
 
 | 图标库 | 数量 | 地址 |
 |---|---:|---|
-| All.json | 8587 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
+| All.json | 8588 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
 | Flags.json | 602 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Flags.json) |
 | Streaming.json | 403 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
 | AI.json | 59 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/AI.json) |
