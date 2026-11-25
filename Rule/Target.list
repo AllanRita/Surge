@@ -1,0 +1,9 @@
+
+# NAME: Target
+# AUTHOR: AllanRita
+# UPDATED: 2026-11-26
+# TYPE: Surge RULE-SET
+DOMAIN-SUFFIX,target.com
+DOMAIN-SUFFIX,targetimg1.com
+DOMAIN-SUFFIX,targetimg2.com
+DOMAIN,target.scene7.com
