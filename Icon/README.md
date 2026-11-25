@@ -1,6 +1,6 @@
 # AllanRita Icon Library
 
-Version: V3.1 Security
+Version: V3.2 Security + iOS
 
 Surge 图标索引聚合。仅引用外部图片，版权归原权利人所有。
 
@@ -8,12 +8,13 @@ Surge 图标索引聚合。仅引用外部图片，版权归原权利人所有�
 
 | 图标库 | 数量 | 地址 |
 |---|---:|---|
-| All.json | 8590 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
+| All.json | 8600 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
 | Flags.json | 602 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Flags.json) |
-| Streaming.json | 405 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
+| Streaming.json | 415 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
 | AI.json | 59 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/AI.json) |
 | Packs/Apple-Emoji.json | 3587 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Emoji.json) |
 | Packs/Apple-Flags.json | 262 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Flags.json) |
+| Packs/Apple-iOS.json | 9 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-iOS.json) |
 | Packs/Qure-Color.json | 347 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Color.json) |
 | Packs/Qure-Mini.json | 347 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Mini.json) |
 | Packs/Qure-Light.json | 319 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Light.json) |
@@ -50,11 +51,26 @@ Surge 图标索引聚合。仅引用外部图片，版权归原权利人所有�
 - [Custom.json](Custom.json)
 - [Apple Color Emoji](https://github.com/iamcal/emoji-data) — Emoji 16.0
 
+## Apple App Store
+
+App Store artwork references. All rights belong to their respective owners.
+
+- [ADN](https://apps.apple.com/fr/app/id667935767)
+- [Mercari](https://apps.apple.com/jp/app/id667861049)
+- [Rakuten Viki](https://apps.apple.com/us/app/id445553058)
+- [FOX One](https://apps.apple.com/us/app/id6746049430)
+- [Amazon Shopping](https://apps.apple.com/us/app/id297606951)
+- [Target](https://apps.apple.com/us/app/id297430070)
+- [STARZ](https://apps.apple.com/us/app/id550221096)
+- [myTV SUPER](https://apps.apple.com/hk/app/id1080187984)
+- [Now TV](https://apps.apple.com/hk/app/id501956183)
+
 ## 安全机制
 
 - HTTPS only
 - Trusted domain and repository paths
-- Image URL validation
+- Restricted Apple artwork CDN
+- Exact Apple application ID validation
 - External index redirects blocked
 - Input size limits
 - Abnormal update detection

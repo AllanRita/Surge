@@ -691,6 +691,10 @@
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f39f-fe0f.png"
     },
     {
+      "name": "ADN · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f0/8b/77/f08b7789-5936-1806-ecef-da03c02782aa/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "ADN · selfh.st · Custom",
       "url": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/animation-digital-network.png"
     },
@@ -1101,6 +1105,10 @@
     {
       "name": "Amazon Shopping App · Custom",
       "url": "https://play-lh.googleusercontent.com/UIYZ9hTFNg-zZUg_uzLS9YdyDpvoo1VHNFb6VlzHy5JqNMq9Uq-p2S1VPwzXCipHTFacfGKhJkyAuKL19VVlcWA=w240-h480"
+    },
+    {
+      "name": "Amazon Shopping · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/87/2c/05/872c0572-ddd5-ee40-23af-41860e79bf16/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "Amazon · fmz200",
@@ -9291,6 +9299,10 @@
       "url": "https://play-lh.googleusercontent.com/ebCaN5awfvgyVRQ2mgjbp1gcoPaMttdHOe-cM1KXEw2jZe2HHbomLpcKjNswM8yKc4qXGtCLNyZnmraY0AZhhCQ=w240-h480"
     },
     {
+      "name": "FOX One · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b7/21/ad/b721adcb-9e98-85a0-4df6-383c84379dfd/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "FOX · Qure-Color",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/FOX.png"
     },
@@ -16967,6 +16979,10 @@
       "url": "https://play-lh.googleusercontent.com/wM3TjCM_xvg9V8nw_bAhkYIWszALS0K36WPu_KcyeFTE-JDHFJKMI1_wXnrtmjfUX0qDcItGW90dwDGwg72p=w240-h480"
     },
     {
+      "name": "Mercari · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/57/47/dd/5747dd71-6703-864c-8e9c-b00e6f581681/AppIcon-0-0-1x_U007epad-0-5-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "Merlion · fmz200",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Merlion.png"
     },
@@ -17827,6 +17843,10 @@
       "url": "https://play-lh.googleusercontent.com/7Mc5CG3ml3zyaDGx6gCAg81Gm8Ygjqvgs4w6cK5rZUeZvBOZvYEjX4Q9TsT46ZsYHRIO1jtJ4RNVpCUi_RB7=w240-h480"
     },
     {
+      "name": "myTV SUPER · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/98/69/db9869ec-1af2-5e29-d80e-e36efd8c9f7c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "myTV_SUPER · Qure-Color",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/myTV_SUPER.png"
     },
@@ -18665,6 +18685,14 @@
     {
       "name": "NousResearch · Oasisic",
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/AI/NousResearch/NousResearch.png"
+    },
+    {
+      "name": "Now TV Official App · Custom",
+      "url": "https://play-lh.googleusercontent.com/oQsfk5g9HQL0meOU8eJ3gjEojwGkGI8woZresbvo8_XlxrAGrrYXpobA6GzfpFBS7YV3el2u7m9N6BSjUE_Asw=w240-h480"
+    },
+    {
+      "name": "Now TV · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/28/6e/12/286e1259-dc5f-074e-c340-06b580f22b61/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "NowE · Oasisic",
@@ -21779,6 +21807,10 @@
       "url": "https://play-lh.googleusercontent.com/UEsYcM2VWWJOW1GfrzMPVVReav7gf2TKQVYPr_H-rAKc8FPv0DrxVYGAk-4M3aQ_BXrwg0gRaoFK6dT_BOU_tQ=w240-h480"
     },
     {
+      "name": "Rakuten Viki · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5f/52/c6/5f52c69e-b248-18e0-1c7e-c068a0dc217d/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "RakutenTV · Oasisic",
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/RakutenTV/RakutenTV.png"
     },
@@ -24831,6 +24863,10 @@
       "url": "https://play-lh.googleusercontent.com/TQRIRBXk3GFDHxa8FTNKbxFT_Qn7Xa89HkeJRCQugyuoBJLKyP4e_3UUl9SbLnJicB69Jpxaj_n286GMp7Vu=w240-h480"
     },
     {
+      "name": "STARZ · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/39/c1/d7/39c1d7da-30df-cf0d-d896-8c36327f87f5/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "STARZ · Oasisic",
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/STARZ/STARZ.png"
     },
@@ -27037,6 +27073,10 @@
     {
       "name": "Target Shopping App · Custom",
       "url": "https://play-lh.googleusercontent.com/PMEO7Vf0nxncQTi6r9K-Buo9GS0Vc5aCJcyzaJ_p0zR7Tirkjzo_OhnprTD6ccKK-eA5pf_dq4IT598ZzrV__w=w240-h480"
+    },
+    {
+      "name": "Target · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0e/36/51/0e365168-537a-6c36-29fc-f5faed8b810b/2026_Holiday_AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "Taringa · Semporia",
