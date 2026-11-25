@@ -1,0 +1,9 @@
+# NAME: Grok
+# AUTHOR: AllanRita
+# TYPE: Surge RULE-SET
+
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grokusercontent.com
+DOMAIN-SUFFIX,grokcli.io
+DOMAIN-SUFFIX,g.ai
