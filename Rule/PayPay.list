@@ -1,0 +1,10 @@
+
+# NAME: PayPay
+# AUTHOR: AllanRita
+# UPDATED: 2026-11-26
+# TYPE: Surge RULE-SET
+
+DOMAIN-SUFFIX,paypay.ne.jp
+DOMAIN-SUFFIX,paypay-corp.co.jp
+DOMAIN-SUFFIX,paypay.co.jp
+DOMAIN-SUFFIX,paypay-business.jp
