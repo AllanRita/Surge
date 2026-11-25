@@ -1,0 +1,10 @@
+#!name=IPQuality
+#!desc=全球IP质量检测 | ASN | IP类型 | VPN | Proxy | 风险评分
+#!author=AllanRita
+#!category=网络检测
+
+[Panel]
+AllanRitaIPQuality = title="IPQuality",content="点击刷新开始检测",script-name=AllanRitaIPQualityCheck,update-interval=900
+
+[Script]
+AllanRitaIPQualityCheck = type=generic,timeout=20,script-path=https://raw.githubusercontent.com/AllanRita/Surge/main/Script/IPQuality.js,script-update-interval=3600,argument=AUTO
