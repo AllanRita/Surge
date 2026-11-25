@@ -22,6 +22,16 @@
       "name": "Taiwan · TW · Apple Emoji",
       "url": "https://www.emojiall.com/images/240/apple/1f1f9-1f1fc.png",
       "category": "Country"
+    },
+    {
+      "name": "FOX One",
+      "url": "https://play-lh.googleusercontent.com/ebCaN5awfvgyVRQ2mgjbp1gcoPaMttdHOe-cM1KXEw2jZe2HHbomLpcKjNswM8yKc4qXGtCLNyZnmraY0AZhhCQ=w240-h480",
+      "category": "Media"
+    },
+    {
+      "name": "Amazon Shopping App",
+      "url": "https://play-lh.googleusercontent.com/UIYZ9hTFNg-zZUg_uzLS9YdyDpvoo1VHNFb6VlzHy5JqNMq9Uq-p2S1VPwzXCipHTFacfGKhJkyAuKL19VVlcWA=w240-h480",
+      "category": "Shopping"
     }
   ]
 }
