@@ -1,0 +1,320 @@
+
+name: Build Icon Library
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 2 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-icon-library
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Merge icon indexes
+        run: |
+          python3 - <<'PY'
+          import json, re, time
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          from urllib.parse import urlsplit, unquote
+
+          RAW = 'https://raw.githubusercontent.com/'
+
+          SOURCES = [
+              ('Qure-Color', RAW+'Koolson/Qure/master/Other/QureColor.json'),
+              ('Qure-Mini', RAW+'Koolson/Qure/master/Other/Quremini.json'),
+              ('Qure-Light', RAW+'Koolson/Qure/master/Other/QureLight-All.json'),
+              ('Orz3-Color', RAW+'Orz-3/mini/master/miniColor.json'),
+              ('Orz3-Alpha', RAW+'Orz-3/mini/master/miniAlpha.json'),
+              ('Orz3-Mini', RAW+'Orz-3/mini/master/mini.json'),
+              ('Orz3-ColorPlus', RAW+'Orz-3/mini/master/Color%2B.json'),
+              ('Orz3-MiniPlus', RAW+'Orz-3/mini/master/mini%2B.json'),
+              ('Lige', RAW+'lige47/lige_icon/main/ligeicon-surge.json'),
+              ('Semporia', RAW+'Semporia/Hand-Painted-icon/master/Semporia.json'),
+              ('Oasisic', RAW+'Hawaiine/Oasisic-Icons/main/config/surge-icon.json'),
+              ('KeLee', RAW+'luestr/IconResource/main/KeLee_icon.json'),
+              ('fmz200', RAW+'fmz200/wool_scripts/main/icons/icons-all.json'),
+              ('KeLee-Flags', 'https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/ColorfulStaticFlag.json'),
+          ]
+
+          EXTRA = [
+              ('Qure-Area', RAW+'Koolson/Qure/master/Other/QureColor-Area.json'),
+              ('Qure-Media', RAW+'Koolson/Qure/master/Other/QureColor-Media.json'),
+          ]
+
+          def fetch(url):
+              for attempt in range(3):
+                  try:
+                      req = Request(
+                          url,
+                          headers={
+                              'User-Agent': 'AllanRita-IconIndex/1.0',
+                              'Accept': 'application/json,*/*'
+                          }
+                      )
+                      with urlopen(req, timeout=45) as response:
+                          data = json.load(response)
+                      rows = data['icons']
+                      if not isinstance(rows, list) or not rows:
+                          raise ValueError('Empty or invalid icon list')
+                      return rows
+                  except Exception:
+                      if attempt == 2:
+                          raise
+                      time.sleep(2 ** attempt)
+
+          def clean(source, rows):
+              result = []
+
+              for row in rows:
+                  if not isinstance(row, dict):
+                      continue
+
+                  name = str(row.get('name') or '').strip()
+                  url = str(row.get('url') or '').strip()
+
+                  if not name or urlsplit(url).scheme != 'https' or not urlsplit(url).netloc:
+                      continue
+
+                  name = re.sub(
+                      r'\.(png|jpe?g|webp|svg|gif)$',
+                      '',
+                      name,
+                      flags=re.I
+                  )
+
+                  result.append({
+                      'name': name,
+                      'url': url,
+                      'source': source,
+                      'category': str(row.get('category') or '')
+                  })
+
+              if not result:
+                  raise ValueError('No valid icons: '+source)
+
+              return result
+
+          def pack(rows):
+              result = []
+              seen = set()
+              names = set()
+
+              for row in rows:
+                  url = row['url']
+                  key = unquote(url)
+
+                  if key in seen:
+                      continue
+
+                  seen.add(key)
+
+                  base = row['name']+' · '+row['source']
+                  name, i = base, 2
+
+                  while name.casefold() in names:
+                      name = base+' '+str(i)
+                      i += 1
+
+                  names.add(name.casefold())
+
+                  result.append({
+                      'name': name,
+                      'url': url
+                  })
+
+              return sorted(
+                  result,
+                  key=lambda r: (
+                      r['name'].casefold(),
+                      r['url']
+                  )
+              )
+
+          def write_pack(file, title, rows):
+              icons = pack(rows)
+
+              if not icons:
+                  raise ValueError('Empty output: '+file)
+
+              out = {
+                  'name': 'AllanRita · '+title,
+                  'description': 'Original upstream image URLs and source credits retained.',
+                  'icons': icons
+              }
+
+              path = Path('Icon') / file
+
+              path.parent.mkdir(
+                  parents=True,
+                  exist_ok=True
+              )
+
+              path.write_text(
+                  json.dumps(
+                      out,
+                      ensure_ascii=False,
+                      indent=2
+                  )+'\n',
+                  encoding='utf-8'
+              )
+
+              print(file, len(icons))
+
+              return len(icons)
+
+          # Never overwrite an existing library
+          # with incomplete upstream data.
+
+          data = {
+              s: clean(s, fetch(u))
+              for s,u in SOURCES+EXTRA
+          }
+
+          all_rows = [
+              r
+              for s,_ in SOURCES+EXTRA
+              for r in data[s]
+          ]
+
+          # Global Country & Region Flags
+
+          flags = (
+              data['KeLee-Flags']
+              + data['Qure-Area']
+              + [
+                  r for r in all_rows
+                  if r['category'] == 'Country'
+              ]
+          )
+
+          # Streaming & Music
+
+          streaming = re.compile(
+              r'youtube|netflix|disney|hbo|\bmax\b|hulu|prime.?video|amazon.?video|spotify|paramount|\bviu\b|abema|u.?next|bahamut|baha|巴哈|动画疯|動畫瘋|emby|plex|tver|peacock|dazn|bilibili|twitch|crunchyroll|apple.?tv',
+              re.I
+          )
+
+          media = (
+              data['Qure-Media']
+              + [
+                  r for r in all_rows
+                  if r['category'] in {
+                      'Media',
+                      'Music',
+                      'Disney',
+                      'WarnerBrosDiscovery',
+                      'NBCUniversal'
+                  }
+                  or streaming.search(r['name'])
+              ]
+          )
+
+          # Artificial Intelligence
+
+          ai = re.compile(
+              r'chat.?gpt|open.?ai|claude|anthropic|gemini|deep.?seek|grok|copilot|perplexity|midjourney|doubao|豆包|通义|通義|kimi|qwen|mistral|poe|sora',
+              re.I
+          )
+
+          ai_rows = [
+              r for r in all_rows
+              if r['category'] in {
+                  'AI',
+                  'SpaceXAI'
+              }
+              or ai.search(r['name'])
+          ]
+
+          # Generate Icon Libraries
+
+          outputs = {}
+
+          for file,title,rows in [
+              ('All.json','全部图标',all_rows),
+              ('Flags.json','全球地区',flags),
+              ('Streaming.json','流媒体与音乐',media),
+              ('AI.json','人工智能',ai_rows),
+          ]:
+              outputs[file] = write_pack(
+                  file,
+                  title,
+                  rows
+              )
+
+          # Generate Individual Packs
+
+          for source,_ in SOURCES:
+
+              file = 'Packs/'+source+'.json'
+
+              outputs[file] = write_pack(
+                  file,
+                  source,
+                  data[source]
+              )
+
+          # Generate README
+
+          base = 'https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/'
+
+          lines = [
+              '# AllanRita Icon Library',
+              '',
+              'Surge 图标索引聚合；图片归原作者及相关权利人所有。未镜像图片。',
+              '',
+              '## 订阅',
+              '',
+              '| 图标库 | 数量 | 地址 |',
+              '|---|---:|---|'
+          ]
+
+          for file,count in outputs.items():
+              lines.append(
+                  f'| {file} | {count} | [JSON]({base+file}) |'
+              )
+
+          lines += [
+              '',
+              '## 上游来源',
+              ''
+          ]
+
+          for source,url in SOURCES+EXTRA:
+              lines.append(
+                  f'- [{source}]({url})'
+              )
+
+          lines += [
+              '',
+              '按图片链接去重；保留不同风格。分类由上游分类及关键词辅助整理，可能有遗漏。图片可用性依赖原作者服务器。',
+              ''
+          ]
+
+          Path('Icon/README.md').write_text(
+              '\n'.join(lines),
+              encoding='utf-8'
+          )
+          PY
+
+      - name: Commit indexes
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Icon/
+          if git diff --cached --quiet; then
+            echo 'No changes'
+          else
+            git commit -m 'Update Surge icon library'
+            git push origin HEAD:main
+          fi
