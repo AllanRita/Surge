@@ -43,8 +43,20 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/AcEmby1.png"
     },
     {
+      "name": "ADN · selfh.st · Custom",
+      "url": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/animation-digital-network.png"
+    },
+    {
       "name": "AfreecaTV · Qure-Media",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AfreecaTV.png"
+    },
+    {
+      "name": "aiqiyi(1) · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/aiqiyi(1).png"
+    },
+    {
+      "name": "aiqiyitiyu · Lige",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/aiqiyitiyu.png"
     },
     {
       "name": "All4 · Qure-Media",
@@ -683,8 +695,24 @@
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/Infuse/Infuse.png"
     },
     {
+      "name": "iqiyi · fmz200",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/iqiyi.png"
+    },
+    {
+      "name": "iQIYI · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Baidu/iQIYI/iQIYI.png"
+    },
+    {
+      "name": "iQIYI · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/iQIYI.png"
+    },
+    {
       "name": "iQIYI · Qure-Media",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iQIYI.png"
+    },
+    {
+      "name": "iQIYI · Qure-Mini",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/iQIYI.png"
     },
     {
       "name": "iQIYI&bilibili · Qure-Light",
@@ -697,6 +725,14 @@
     {
       "name": "iQIYI&bilibili · Qure-Mini",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/iQIYI&bilibili.png"
+    },
+    {
+      "name": "iQIYI_1 · Qure-Color",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iQIYI_1.png"
+    },
+    {
+      "name": "iQIYI_1 · Qure-Mini",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/iQIYI_1.png"
     },
     {
       "name": "ITV · Qure-Media",
@@ -739,8 +775,16 @@
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/KKTV/KKTV.png"
     },
     {
+      "name": "KKTV · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/KKTV.png"
+    },
+    {
       "name": "KKTV · Qure-Media",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KKTV.png"
+    },
+    {
+      "name": "KKTV · Qure-Mini",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/KKTV.png"
     },
     {
       "name": "KshtEmby · fmz200",
@@ -1355,12 +1399,32 @@
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/WarnerBrosDiscovery/WarnerBrosDiscovery/WarnerBrosDiscovery.png"
     },
     {
+      "name": "WeTV · Oasisic",
+      "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Tencent/WeTV/WeTV.png"
+    },
+    {
+      "name": "WeTV · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/WeTV.png"
+    },
+    {
       "name": "WeTV · Qure-Media",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeTV.png"
     },
     {
+      "name": "WeTV · Qure-Mini",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/WeTV.png"
+    },
+    {
+      "name": "WeTV_Letter · Qure-Light",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/WeTV_Letter.png"
+    },
+    {
       "name": "WeTV_Letter · Qure-Media",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeTV_Letter.png"
+    },
+    {
+      "name": "WeTV_Letter · Qure-Mini",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/WeTV_Letter.png"
     },
     {
       "name": "WOWOW · Oasisic",

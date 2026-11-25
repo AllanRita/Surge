@@ -1,14 +1,18 @@
 # AllanRita Icon Library
 
+Version 2.0
+
 Surge 图标索引聚合；图片归原作者及相关权利人所有。未镜像图片。
+
+支持第三方图标库及个人补充图标自动合并。
 
 ## 订阅
 
 | 图标库 | 数量 | 地址 |
 |---|---:|---|
-| All.json | 4994 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
+| All.json | 4995 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
 | Flags.json | 339 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Flags.json) |
-| Streaming.json | 373 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
+| Streaming.json | 389 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
 | AI.json | 59 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/AI.json) |
 | Packs/Qure-Color.json | 347 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Color.json) |
 | Packs/Qure-Mini.json | 347 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Mini.json) |
@@ -24,6 +28,13 @@ Surge 图标索引聚合；图片归原作者及相关权利人所有。未镜�
 | Packs/KeLee.json | 388 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/KeLee.json) |
 | Packs/fmz200.json | 1604 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/fmz200.json) |
 | Packs/KeLee-Flags.json | 262 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/KeLee-Flags.json) |
+| Custom.json | 1 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Custom.json) |
+
+## 个人补充图标
+
+Custom.json 为手动维护文件。
+自动合并进入 All.json 及对应分类图标库。
+不会被自动更新程序覆盖。
 
 ## 上游来源
 
@@ -44,4 +55,11 @@ Surge 图标索引聚合；图片归原作者及相关权利人所有。未镜�
 - [Qure-Area](https://raw.githubusercontent.com/Koolson/Qure/master/Other/QureColor-Area.json)
 - [Qure-Media](https://raw.githubusercontent.com/Koolson/Qure/master/Other/QureColor-Media.json)
 
-按图片链接去重；保留不同风格。分类由上游分类及关键词辅助整理，可能有遗漏。图片可用性依赖原作者服务器。
+## 自动更新
+
+每周一北京时间 10:17 自动运行。
+支持手动触发 GitHub Actions。
+
+按图片链接去重，保留不同风格及原作者来源。
+分类由上游分类及关键词辅助整理，可能有遗漏。
+图片可用性依赖原作者服务器。
