@@ -1,0 +1,10 @@
+#!name=AI Detection V2.1
+#!desc=3 services | AI regional availability checks
+#!author=AllanRita
+#!category=Panel
+
+[Panel]
+AllanRitaAI = title="AI Detection",content="Tap to check 3 services",script-name=AllanRitaAICheck,update-interval=900
+
+[Script]
+AllanRitaAICheck = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/AllanRita/Surge/main/Script/AIDetection.js,script-update-interval=3600
