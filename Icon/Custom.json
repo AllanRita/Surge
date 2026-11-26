@@ -1,7 +1,6 @@
-
 {
   "name": "AllanRita · 自定义图标",
-  "description": "Apple App Store 优先，Google Play 次之",
+  "description": "Apple App Store 优先，Google Play 并行收录",
   "icons": [
     {
       "name": "ADN · selfh.st",
@@ -12,6 +11,46 @@
       "name": "Taiwan · TW · Apple Emoji",
       "url": "https://www.emojiall.com/images/240/apple/1f1f9-1f1fc.png",
       "category": "Country"
+    },
+    {
+      "name": "Mercari · Google Play",
+      "url": "https://play-lh.googleusercontent.com/wM3TjCM_xvg9V8nw_bAhkYIWszALS0K36WPu_KcyeFTE-JDHFJKMI1_wXnrtmjfUX0qDcItGW90dwDGwg72p=w240-h480",
+      "category": "Shopping"
+    },
+    {
+      "name": "Rakuten Viki · Google Play",
+      "url": "https://play-lh.googleusercontent.com/UEsYcM2VWWJOW1GfrzMPVVReav7gf2TKQVYPr_H-rAKc8FPv0DrxVYGAk-4M3aQ_BXrwg0gRaoFK6dT_BOU_tQ=w240-h480",
+      "category": "Media"
+    },
+    {
+      "name": "FOX One · Google Play",
+      "url": "https://play-lh.googleusercontent.com/ebCaN5awfvgyVRQ2mgjbp1gcoPaMttdHOe-cM1KXEw2jZe2HHbomLpcKjNswM8yKc4qXGtCLNyZnmraY0AZhhCQ=w240-h480",
+      "category": "Media"
+    },
+    {
+      "name": "Amazon Shopping App · Google Play",
+      "url": "https://play-lh.googleusercontent.com/UIYZ9hTFNg-zZUg_uzLS9YdyDpvoo1VHNFb6VlzHy5JqNMq9Uq-p2S1VPwzXCipHTFacfGKhJkyAuKL19VVlcWA=w240-h480",
+      "category": "Shopping"
+    },
+    {
+      "name": "Target Shopping App · Google Play",
+      "url": "https://play-lh.googleusercontent.com/PMEO7Vf0nxncQTi6r9K-Buo9GS0Vc5aCJcyzaJ_p0zR7Tirkjzo_OhnprTD6ccKK-eA5pf_dq4IT598ZzrV__w=w240-h480",
+      "category": "Shopping"
+    },
+    {
+      "name": "STARZ Official App · Google Play",
+      "url": "https://play-lh.googleusercontent.com/TQRIRBXk3GFDHxa8FTNKbxFT_Qn7Xa89HkeJRCQugyuoBJLKyP4e_3UUl9SbLnJicB69Jpxaj_n286GMp7Vu=w240-h480",
+      "category": "Media"
+    },
+    {
+      "name": "myTV SUPER Official App · Google Play",
+      "url": "https://play-lh.googleusercontent.com/7Mc5CG3ml3zyaDGx6gCAg81Gm8Ygjqvgs4w6cK5rZUeZvBOZvYEjX4Q9TsT46ZsYHRIO1jtJ4RNVpCUi_RB7=w240-h480",
+      "category": "Media"
+    },
+    {
+      "name": "Now TV Official App · Google Play",
+      "url": "https://play-lh.googleusercontent.com/oQsfk5g9HQL0meOU8eJ3gjEojwGkGI8woZresbvo8_XlxrAGrrYXpobA6GzfpFBS7YV3el2u7m9N6BSjUE_Asw=w240-h480",
+      "category": "Media"
     }
   ],
   "ios_apps": [
