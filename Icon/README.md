@@ -1,16 +1,14 @@
 # AllanRita Icon Library
 
-Version: V3.2 Security + iOS
+Version: V3.2.1 Security + iOS Custom
 
-Surge 图标索引聚合。仅引用外部图片，版权归原权利人所有。
+External icon links only. No image mirroring.
 
-## 订阅
-
-| 图标库 | 数量 | 地址 |
+| Index | Icons | Link |
 |---|---:|---|
-| All.json | 8600 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
+| All.json | 8592 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
 | Flags.json | 602 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Flags.json) |
-| Streaming.json | 415 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
+| Streaming.json | 410 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
 | AI.json | 59 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/AI.json) |
 | Packs/Apple-Emoji.json | 3587 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Emoji.json) |
 | Packs/Apple-Flags.json | 262 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Flags.json) |
@@ -30,7 +28,7 @@ Surge 图标索引聚合。仅引用外部图片，版权归原权利人所有�
 | Packs/fmz200.json | 1604 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/fmz200.json) |
 | Packs/KeLee-Flags.json | 262 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/KeLee-Flags.json) |
 
-## 上游来源
+## Sources
 
 - [Qure-Color](https://raw.githubusercontent.com/Koolson/Qure/master/Other/QureColor.json)
 - [Qure-Mini](https://raw.githubusercontent.com/Koolson/Qure/master/Other/Quremini.json)
@@ -49,32 +47,22 @@ Surge 图标索引聚合。仅引用外部图片，版权归原权利人所有�
 - [Qure-Area](https://raw.githubusercontent.com/Koolson/Qure/master/Other/QureColor-Area.json)
 - [Qure-Media](https://raw.githubusercontent.com/Koolson/Qure/master/Other/QureColor-Media.json)
 - [Custom.json](Custom.json)
-- [Apple Color Emoji](https://github.com/iamcal/emoji-data) — Emoji 16.0
+- [Apple Emoji](https://github.com/iamcal/emoji-data) — Emoji 16.0
 
 ## Apple App Store
 
-App Store artwork references. All rights belong to their respective owners.
+- [667935767](https://apps.apple.com/fr/app/id667935767)
+- [667861049](https://apps.apple.com/jp/app/id667861049)
+- [445553058](https://apps.apple.com/us/app/id445553058)
+- [6746049430](https://apps.apple.com/us/app/id6746049430)
+- [297606951](https://apps.apple.com/us/app/id297606951)
+- [297430070](https://apps.apple.com/us/app/id297430070)
+- [550221096](https://apps.apple.com/us/app/id550221096)
+- [1080187984](https://apps.apple.com/hk/app/id1080187984)
+- [501956183](https://apps.apple.com/hk/app/id501956183)
 
-- [ADN](https://apps.apple.com/fr/app/id667935767)
-- [Mercari](https://apps.apple.com/jp/app/id667861049)
-- [Rakuten Viki](https://apps.apple.com/us/app/id445553058)
-- [FOX One](https://apps.apple.com/us/app/id6746049430)
-- [Amazon Shopping](https://apps.apple.com/us/app/id297606951)
-- [Target](https://apps.apple.com/us/app/id297430070)
-- [STARZ](https://apps.apple.com/us/app/id550221096)
-- [myTV SUPER](https://apps.apple.com/hk/app/id1080187984)
-- [Now TV](https://apps.apple.com/hk/app/id501956183)
+Only manually registered apps are queried.
 
-## 安全机制
+## Security
 
-- HTTPS only
-- Trusted domain and repository paths
-- Restricted Apple artwork CDN
-- Exact Apple application ID validation
-- External index redirects blocked
-- Input size limits
-- Abnormal update detection
-- Fixed GitHub Actions dependency
-- Restricted generated file staging
-
-安全检查仅针对索引及链接，不代表图片内容已经过病毒扫描。
+HTTPS, trusted domains and paths, exact app IDs, no index redirects, size and change limits, fixed checkout, restricted staging. Image binaries are not virus-scanned.

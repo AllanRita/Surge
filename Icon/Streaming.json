@@ -1,6 +1,6 @@
 {
   "name": "AllanRita · 流媒体与音乐",
-  "description": "Original upstream image URLs and source credits retained.",
+  "description": "Original external image URLs; rights remain with their owners.",
   "icons": [
     {
       "name": "5iTV · Qure-Media",
@@ -575,10 +575,6 @@
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/Fileball/Fileball.png"
     },
     {
-      "name": "FOX One · Custom",
-      "url": "https://play-lh.googleusercontent.com/ebCaN5awfvgyVRQ2mgjbp1gcoPaMttdHOe-cM1KXEw2jZe2HHbomLpcKjNswM8yKc4qXGtCLNyZnmraY0AZhhCQ=w240-h480"
-    },
-    {
       "name": "FOX One · iOS",
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b7/21/ad/b721adcb-9e98-85a0-4df6-383c84379dfd/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
     },
@@ -891,10 +887,6 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/My5.png"
     },
     {
-      "name": "myTV SUPER Official App · Custom",
-      "url": "https://play-lh.googleusercontent.com/7Mc5CG3ml3zyaDGx6gCAg81Gm8Ygjqvgs4w6cK5rZUeZvBOZvYEjX4Q9TsT46ZsYHRIO1jtJ4RNVpCUi_RB7=w240-h480"
-    },
-    {
       "name": "myTV SUPER · iOS",
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/98/69/db9869ec-1af2-5e29-d80e-e36efd8c9f7c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
     },
@@ -1037,10 +1029,6 @@
     {
       "name": "NmEmby · fmz200",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/NmEmby.png"
-    },
-    {
-      "name": "Now TV Official App · Custom",
-      "url": "https://play-lh.googleusercontent.com/oQsfk5g9HQL0meOU8eJ3gjEojwGkGI8woZresbvo8_XlxrAGrrYXpobA6GzfpFBS7YV3el2u7m9N6BSjUE_Asw=w240-h480"
     },
     {
       "name": "Now TV · iOS",
@@ -1227,10 +1215,6 @@
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/Radiko/Radiko.png"
     },
     {
-      "name": "Rakuten Viki · Custom",
-      "url": "https://play-lh.googleusercontent.com/UEsYcM2VWWJOW1GfrzMPVVReav7gf2TKQVYPr_H-rAKc8FPv0DrxVYGAk-4M3aQ_BXrwg0gRaoFK6dT_BOU_tQ=w240-h480"
-    },
-    {
       "name": "Rakuten Viki · iOS",
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5f/52/c6/5f52c69e-b248-18e0-1c7e-c068a0dc217d/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/512x512bb.jpg"
     },
@@ -1353,10 +1337,6 @@
     {
       "name": "StarPlus · Oasisic",
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/StarPlus/StarPlus.png"
-    },
-    {
-      "name": "STARZ Official App · Custom",
-      "url": "https://play-lh.googleusercontent.com/TQRIRBXk3GFDHxa8FTNKbxFT_Qn7Xa89HkeJRCQugyuoBJLKyP4e_3UUl9SbLnJicB69Jpxaj_n286GMp7Vu=w240-h480"
     },
     {
       "name": "STARZ · iOS",
