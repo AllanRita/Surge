@@ -1,6 +1,6 @@
 # AllanRita Icon Library
 
-Version: V3.2.1 Security + iOS Custom
+Version: V3.2.3 Security + iOS History Cleanup
 
 External icon links only. No image mirroring.
 
@@ -13,6 +13,7 @@ External icon links only. No image mirroring.
 | Packs/Apple-Emoji.json | 3587 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Emoji.json) |
 | Packs/Apple-Flags.json | 262 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Flags.json) |
 | Packs/Apple-iOS.json | 9 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-iOS.json) |
+| Packs/Apple-iOS-History.json | 0 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-iOS-History.json) |
 | Packs/Qure-Color.json | 347 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Color.json) |
 | Packs/Qure-Mini.json | 347 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Mini.json) |
 | Packs/Qure-Light.json | 319 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Light.json) |
@@ -61,8 +62,15 @@ External icon links only. No image mirroring.
 - [1080187984](https://apps.apple.com/hk/app/id1080187984)
 - [501956183](https://apps.apple.com/hk/app/id501956183)
 
-Only manually registered apps are queried.
+## Apple icon history
+
+Current apps: 9
+Visible historical URLs: 0
+Hidden historical URLs: 0
+Archived versions: 9
+
+Three consecutive 404/410 checks on distinct UTC days hide a historical URL. Successful image HEAD restores it. Temporary errors do not cause hiding. Hidden URLs remain archived. Current icons are not hidden.
 
 ## Security
 
-HTTPS, trusted domains and paths, exact app IDs, no index redirects, size and change limits, fixed checkout, restricted staging. Image binaries are not virus-scanned.
+HTTPS, trusted domains and paths, exact app IDs, blocked redirects, size limits, abnormal non-archive change detection, fixed checkout and restricted staging. Image binaries are not downloaded or virus-scanned.
