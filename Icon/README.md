@@ -1,19 +1,21 @@
 # AllanRita Icon Library
 
-Version: V3.2.3 Security + iOS History Cleanup
+Version: V3.2.4 Security + Apple and Google History
 
 External icon links only. No image mirroring.
 
 | Index | Icons | Link |
 |---|---:|---|
-| All.json | 8592 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
+| All.json | 8600 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
 | Flags.json | 602 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Flags.json) |
-| Streaming.json | 410 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
+| Streaming.json | 415 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
 | AI.json | 59 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/AI.json) |
 | Packs/Apple-Emoji.json | 3587 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Emoji.json) |
 | Packs/Apple-Flags.json | 262 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Flags.json) |
 | Packs/Apple-iOS.json | 9 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-iOS.json) |
 | Packs/Apple-iOS-History.json | 0 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-iOS-History.json) |
+| Packs/Google-Play.json | 8 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Google-Play.json) |
+| Packs/Google-Play-History.json | 0 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Google-Play-History.json) |
 | Packs/Qure-Color.json | 347 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Color.json) |
 | Packs/Qure-Mini.json | 347 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Mini.json) |
 | Packs/Qure-Light.json | 319 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Light.json) |
@@ -69,8 +71,18 @@ Visible historical URLs: 0
 Hidden historical URLs: 0
 Archived versions: 9
 
-Three consecutive 404/410 checks on distinct UTC days hide a historical URL. Successful image HEAD restores it. Temporary errors do not cause hiding. Hidden URLs remain archived. Current icons are not hidden.
+## Google Play
+
+Manual registered URLs: 8
+Visible current URLs: 8
+Visible historical URLs: 0
+Hidden URLs: 0
+Archived URLs: 8
+
+Google Play icons are registered manually in Custom.json. No store scraping. Removing a registered URL makes it historical; the archive is retained.
+
+Three consecutive 404/410 checks on distinct UTC days hide an eligible URL. Successful image HEAD restores it. Temporary errors do not cause hiding. Hidden URLs remain archived. Apple current icons are not hidden. Google current and historical URLs are checked.
 
 ## Security
 
-HTTPS, trusted domains and paths, exact app IDs, blocked redirects, size limits, abnormal non-archive change detection, fixed checkout and restricted staging. Image binaries are not downloaded or virus-scanned.
+HTTPS, trusted domains and paths, exact Apple app IDs, blocked redirects, size limits, abnormal non-archive change detection, fixed checkout and restricted staging. Image binaries are not downloaded or virus-scanned.
