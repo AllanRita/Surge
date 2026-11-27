@@ -82,6 +82,61 @@ jobs:
           retained=sum(1 for p in dst.rglob('*') if p.is_file() and p.name not in {'LICENSE','UPSTREAM.md'} and not (src/p.relative_to(dst)).exists())
           with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as report:
               report.write(f'Upstream files: {len(files)}\nRule files: {len(rules)}\nRetained removed files: {retained}\nSkipped empty files: {len(skipped)}\n')
+          import ipaddress, unicodedata, collections
+          allowed={'DOMAIN','DOMAIN-SUFFIX','DOMAIN-KEYWORD','DOMAIN-WILDCARD','DOMAIN-REGEX','IP-CIDR','IP-CIDR6','IP-ASN','GEOIP','USER-AGENT','URL-REGEX','PROCESS-NAME','DEST-PORT','SRC-PORT','SRC-IP','IN-PORT','PROTOCOL','AND','OR','NOT','RULE-SET','DOMAIN-SET','SUBNET','DEVICE-NAME','HOST','HOST-SUFFIX','HOST-KEYWORD'}
+          findings=collections.Counter()
+          examples=[]
+          def flag(kind,path,num):
+              findings[kind]+=1
+              if len(examples)<80:
+                  examples.append(f'{kind}: {path}:{num}')
+          def audit_line(line,path,num):
+              if any(unicodedata.category(c) in {'Cc','Cf','Cs'} and c!='\t' for c in line):
+                  flag('hidden-control',path,num)
+              if '://' in line:
+                  flag('external-reference',path,num)
+              parts=line.split(',')
+              kind=parts[0].strip().upper()
+              if kind not in allowed:
+                  flag('unknown-rule-type',path,num)
+                  return
+              if len(parts)<2 or not parts[1].strip():
+                  flag('missing-operand',path,num)
+                  return
+              value=parts[1].strip()
+              if kind in {'IP-CIDR','IP-CIDR6'}:
+                  try:
+                      net=ipaddress.ip_network(value,strict=False)
+                      if net.version!=(6 if kind=='IP-CIDR6' else 4):
+                          flag('ip-family-mismatch',path,num)
+                      if net.prefixlen==0:
+                          flag('catch-all-network',path,num)
+                  except ValueError:
+                      flag('invalid-network',path,num)
+              if kind in {'DOMAIN','DOMAIN-SUFFIX','HOST','HOST-SUFFIX'}:
+                  try:
+                      labels=value.rstrip('.').encode('idna').decode('ascii').split('.')
+                      if any(not re.fullmatch(r'[A-Za-z0-9_](?:[A-Za-z0-9_-]{0,61}[A-Za-z0-9_])?',x) for x in labels):
+                          flag('invalid-domain',path,num)
+                  except UnicodeError:
+                      flag('invalid-domain',path,num)
+                  if len(labels if 'labels' in locals() else [])<2:
+                      flag('broad-domain',path,num)
+              if re.search(r'(?i)(?:^|[.,/])(?:paypal\.com|alipay\.com|stripe\.com|unionpay\.com|visa\.com|icbc\.com\.cn|boc\.cn|paypay\.ne\.jp)(?:$|[.,/])',line):
+                  flag('sensitive-domain',path,num)
+          for p in sorted(dst.rglob('*.list')):
+              for num,line in enumerate(p.read_text(encoding='utf-8-sig').splitlines(),1):
+                  line=line.strip()
+                  if line and not line.startswith(('#',';','//')):
+                      audit_line(line,str(p.relative_to(dst)),num)
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as report:
+              report.write('\n### V2.1 full rule audit\n')
+              for kind,count in sorted(findings.items()):
+                  report.write(f'- {kind}: {count}\n')
+              for example in examples:
+                  report.write(f'- {example}\n')
+          if any(findings[k] for k in ('hidden-control','invalid-network','ip-family-mismatch','catch-all-network','missing-operand')):
+              raise SystemExit('Critical rule audit findings; publication blocked')
           manifest={str(p.relative_to(dst)):hashlib.sha256(p.read_bytes()).hexdigest() for p in dst.rglob('*') if p.is_file()}
           Path('rule-manifest.json').write_text(json.dumps(manifest,sort_keys=True))
           print('Upstream commit:',subprocess.check_output(['git','-C',str(root),'rev-parse','HEAD'],text=True).strip())
