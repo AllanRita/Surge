@@ -39,6 +39,8 @@ jobs:
           files=[p for p in src.rglob('*') if p.is_file() and p.suffix.lower() in {'.list','.txt','.md','.json','.conf'}]
           if not files or any(p.is_symlink() for p in src.rglob('*')):
               raise SystemExit('Invalid upstream tree')
+          excluded=set(["AliPay","BOC","BOCOM","CCB","CEB","CGB","CMB","ICBC","PSBC","PayPal","Stripe","UnionPay","VISA","PingAn"])
+          files=[p for p in files if p.relative_to(src).parts[0] not in excluded]
           rules=[p for p in files if p.suffix.lower() in {'.list','.txt','.conf'}]
           old_rules=[p for p in dst.rglob('*') if p.is_file() and p.suffix.lower() in {'.list','.txt','.conf'}]
           if len(rules)<100 or (old_rules and len(rules)<len(old_rules)*0.75):
