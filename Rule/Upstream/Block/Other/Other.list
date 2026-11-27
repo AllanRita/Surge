@@ -1,0 +1,5 @@
+# NAME: Other
+# TYPE: Surge RULE-SET
+# SOURCE: https://github.com/Aoang/Surge
+# LICENSE: MIT
+DOMAIN,report.analyze.x2ox.com

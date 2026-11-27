@@ -1,0 +1,5 @@
+# NAME: Unavailable
+# TYPE: Surge RULE-SET
+# SOURCE: https://github.com/Aoang/Surge
+# LICENSE: MIT
+DOMAIN-SUFFIX,grazie.aws.intellij.net

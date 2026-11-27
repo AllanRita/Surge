@@ -1,0 +1,21 @@
+{
+  "source": "https://github.com/Aoang/Surge",
+  "commit": "a57dccbf14a0a10f33fa7e95ef5bb3d2af04a6f0",
+  "path": "output/Ruleset/Block/Parallels.list",
+  "license": "MIT",
+  "notices": [],
+  "rules": [
+    "DOMAIN,download.parallels.com",
+    "DOMAIN,update.parallels.com",
+    "DOMAIN,desktop.parallels.com",
+    "DOMAIN,download.parallels.com.cdn.cloudflare.net",
+    "DOMAIN,update.parallels.com.cdn.cloudflare.net",
+    "DOMAIN,desktop.parallels.com.cdn.cloudflare.net",
+    "DOMAIN-SUFFIX,parallels.cn",
+    "DOMAIN,www.parallels.com",
+    "DOMAIN,reportus.parallels.com",
+    "DOMAIN,parallels.com",
+    "DOMAIN-SUFFIX,myparallels.com",
+    "DOMAIN-SUFFIX,my.parallels.com"
+  ]
+}

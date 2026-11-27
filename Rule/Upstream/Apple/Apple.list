@@ -85,3 +85,14 @@ DOMAIN-SUFFIX,itunes.com
 DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,organicfruitapps.com
 DOMAIN-SUFFIX,push-apple.com.akadns.net
+# BEGIN MERGED SUPPLEMENT: Aoang/Surge
+# Source: https://github.com/Aoang/Surge
+# License: MIT; notices in SourceMetadata/Aoang-Apple.json
+DOMAIN-SUFFIX,itunes-apple.com.akadns.net
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,mail.icloud.com.cn
+DOMAIN-SUFFIX,applemusic.com
+DOMAIN,tv.applemusic.com
+DOMAIN-SUFFIX,apple-livephotoskit.com
+DOMAIN-SUFFIX,apzones.com
+DOMAIN-SUFFIX,icloud.com.cn
