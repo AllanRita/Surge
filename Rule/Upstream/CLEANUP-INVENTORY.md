@@ -18,7 +18,7 @@ Scope: existing rule files and cached source metadata only. No new rule authors 
 
 ## Bank/payment App folders
 
-This classifies dedicated App folders by folder name only. Financial-service domains inside other App or aggregate lists are not removed.
+This classifies dedicated App folders by folder name only. All 14 listed folders are currently present in `Rule/Upstream`; the exact deletion manifest is empty. They have no category-based keep/delete exemption. Financial-service domains inside other App or aggregate lists are not removed.
 - AliPay
 - BOC
 - BOCOM
