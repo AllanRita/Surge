@@ -11,9 +11,9 @@ This file records manual interpretation of the static audit. It does not replace
 
 - Historical manual snapshot: 912 broad-domain rows and 79 distinct single-label suffix values.
 - Historical IANA check: `2026112503` (updated 2026-11-26 UTC) found 78 delegated values covering 895 rows; `xihuan` was absent from the root-zone list and was previously reported in 17 rows.
-- Current generated cleanup inventory: 894 single-label suffix occurrences; it records no `stale_or_private_root_suffix` finding.
+- Current generated cleanup inventory: 896 single-label suffix occurrences; it records no `stale_or_private_root_suffix` finding.
 - The latest cleanup workflow completed successfully. Its IANA-gated remediation script reports 0 `DOMAIN-SUFFIX,xihuan` occurrences removed and no files changed. Therefore, the historical 17-row `xihuan` count is not current; the exact rule was already absent when that remediation pass ran.
-- The historical 912-row broad-domain metric and the current 894-row single-label metric come from different snapshots/labels and should not be compared as if they were the same counter.
+- The historical 912-row broad-domain metric and the current 896-row single-label metric come from different snapshots/labels and should not be compared as if they were the same counter.
 
 Interpretation:
 - A one-label suffix is not automatically malformed. Many are real delegated TLDs, including brand TLDs and IDN/punycode TLDs.
@@ -22,12 +22,13 @@ Interpretation:
 
 ## Financial-domain audit
 
-- 238 upstream financial-domain review matches.
+- 244 upstream financial-domain keyword matches across 30 distinct domain values.
 - 1 personal financial-rule match in `Rule/Personal/PayPay.list`.
-- 29 distinct domain values across the report.
 - The personal PayPay file remains unchanged.
 
-### Location of the 238 upstream financial-domain matches
+### Location of the 244 upstream financial-domain keyword matches
+
+These are keyword-based inventory flags, not proof of malicious activity or proof that payment traffic is blocked. The matches include advertising/telemetry, privacy/filter entries, aggregate lists, and dedicated App rule sets. They are not deleted automatically.
 
 | Rule folder | Matched lines |
 |---|---:|
@@ -47,9 +48,13 @@ Interpretation:
 | ChinaMaxNoMedia | 3 |
 | Copilot | 2 |
 | OpenAI | 2 |
-| **Total** | **238** |
-
-Most matches are in advertising, privacy, or filter-category lists; the remainder are in aggregate or other App lists. A domain-name match does not by itself prove that a payment/checkout endpoint is being blocked. The current inventory finds 14 dedicated bank/payment App folders, all present in the upstream library. These 238 upstream domain entries were not deleted. The single personal PayPay match was also left untouched.
+| AliPay | 1 |
+| BOC | 1 |
+| ICBC | 1 |
+| PayPal | 1 |
+| UnionPay | 1 |
+| VISA | 1 |
+| **Total** | **244** |
 
 ### Dedicated bank and payment App folders — currently present
 
@@ -74,7 +79,7 @@ The current inventory identifies 14 dedicated bank/payment App folders:
 
 All 14 folders are currently present in `Rule/Upstream`. The exact exclusion manifest `.github/explicit-rule-exclusions.json` has an empty `exclusions` list. The earlier category-based deletion instruction was withdrawn. These folders have no special protection or deletion status and follow the same evidence-based security policy as every other App.
 
-The 238 upstream financial-domain review matches were not deleted by category. Matching domains in unrelated App, Global, advertising, privacy, or filter rule sets are assessed in their own routing context. `Rule/Personal/PayPay.list` remains outside upstream automation and unchanged.
+The 244 upstream financial-domain keyword matches were not deleted by category. Matching domains in unrelated App, Global, advertising, privacy, or filter rule sets are assessed in their own routing context. `Rule/Personal/PayPay.list` remains outside upstream automation and unchanged.
 
 ### Trading, cryptocurrency and securities rule folders — retained
 
@@ -142,7 +147,7 @@ No broad-domain or financial-domain rule was automatically deleted. Keep potenti
 
 ## Curated shared-platform suffix inventory (full upstream scan)
 
-The latest inventory checks 42 curated shared CDN/hosting, dynamic-DNS, and URL-shortener suffixes across all 828 upstream rule files. It found **34 suffixes** with **159 rule occurrences**. Of these, **33 occurrences across 21 suffixes** appear in App/service folders; the other **126 occurrences** are in the aggregate folders Global, GlobalMedia, Proxy, and ProxyLite.
+The latest inventory checks 42 curated shared CDN/hosting, dynamic-DNS, and URL-shortener suffixes across all 842 upstream rule files. It found **34 suffixes** with **159 rule occurrences**. Of these, **33 occurrences across 21 suffixes** appear in App/service folders; the other **126 occurrences** are in the aggregate folders Global, GlobalMedia, Proxy, and ProxyLite.
 
 | Suffix | App/service folders | Rule occurrences |
 |---|---|---:|
