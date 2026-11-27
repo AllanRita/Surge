@@ -8,9 +8,7 @@ Default branch: `main`
 
 ## 1. Project priority
 
-**Current priority: harden the workflows first, then process `Rule/Upstream` in deterministic batches of exactly 100 top-level rule-set folders.**
-
-Run a read-only preflight on each batch, inspect the report, fix workflow/script issues, and only then approve any content remediation for that batch. Do not start the next batch until the current batch is reviewed and accepted.
+**Current priority: automatic Surge rule maintenance under the user-approved Workflow V1.0.** Process all eligible `Rule/Upstream` folders in sequential batches of 100 in one automatic run; only the final batch may be smaller. Use existing cached author sources only; broad new-author collection remains paused.
 
 ## 2. Confirmed target structure
 
@@ -26,29 +24,32 @@ Run a read-only preflight on each batch, inspect the report, fix workflow/script
 
 ## 3. Preserve / do-not-delete rules
 
-- The latest user instruction says bank, payment, and other finance-related rule folders are **not to be deleted as a category** during the current rule-library optimization.
-- Do not delete bank/payment/finance folders merely because their names or contents match a category.
-- Do not delete financial/payment domains embedded in other Apps' rule sets.
-- Never modify `Rule/Personal` without a direct, specific user instruction.
-- Do not delete any other App folder or rule based only on overlap, shared infrastructure, threat-feed matches, or an automated classification.
+- There are no category-based keep/delete exemptions: bank, payment, securities, exchange, finance, and all other App folders are subject to the same evidence-based security policy.
+- No folder is deleted solely because of its category or name.
+- Confirmed malicious exact-domain rules may be automatically removed under the high-confidence two-feed rule; deterministic malformed domain/IP rules and exact duplicate lines may be automatically repaired.
+- Suspected issues, single-feed matches, shared-hosting parent suffixes, and ambiguous rules are quarantined for review, not automatically deleted.
+- Never modify `Rule/Personal` during automated maintenance.
 
 ## 4. Permanent no-restore policy
 
 The repository has an exact tombstone manifest at `.github/explicit-rule-exclusions.json`. The automation in `.github/scripts/enforce_explicit_exclusions.py` enforces only entries still present in that manifest.
 
-The user explicitly authorized restoration of all 14 historical exclusions on 2026-11-27. They were restored as current author-source rule files under `Rule/Upstream`: `BOC`, `BOCOM`, `CCB`, `CEB`, `CGB`, `CMB`, `ICBC`, `PSBC`, `AliPay`, `PayPal`, `Stripe`, `UnionPay`, `VISA`, `PingAn`. The 14 entries were removed from the exact tombstone manifest. All 14 files were re-verified in the current Git tree. Their restored folders must not be deleted again by category-based cleanup.
+The user later explicitly withdrew any category-specific retention policy for bank/payment/securities/exchange/finance folders. The 14 restored folders are not specially protected; they are subject to the same evidence-based security remediation as every other App. Only exact user-directed tombstones remain protected from restoration.
 
-There is no unresolved disposition conflict for these 14: the latest explicit instruction restored all of them and they are no longer tombstoned. Do not re-delete them by category-based cleanup. Do not add new bank/payment/finance exclusions without a direct, specific user instruction. Any future exact tombstone can only be removed after an explicit restoration request for that folder. Git history is audit/recovery only, never automatic restoration authority.
+The 14 restored folders remain present but have no special keep/delete status. Do not create category-based tombstones. Any exact user-directed tombstone can only be removed after an explicit restoration request for that item. Git history is audit/recovery only, never automatic restoration authority.
 
 ## 5. Workflow responsibilities
 
 Workflows must:
-1. Enforce the exact tombstone manifest before and after inventory/consolidation.
-2. Fail safely if the manifest is missing, malformed, or unsafe.
-3. Never infer new deletions from category names or security matches.
-4. Never restore tombstoned folders from upstream feeds, caches, snapshots, backups, or Git history.
-5. Keep `Rule/Personal` outside automated remediation.
-6. Clearly distinguish a failed/unavailable security feed from a clean result.
+1. Enforce exact user tombstones before each batch; fail closed if the manifest is missing, malformed, or unsafe.
+2. Never infer exclusions from App categories.
+3. Never restore tombstoned content from upstream feeds, caches, snapshots, backups, or Git history without explicit user authorization.
+4. Keep `Rule/Personal` outside automated remediation.
+5. Automatically remove exact duplicate lines and deterministic malformed domain/IP rules, preserving a per-change audit log.
+6. Automatically remove a routing-list `DOMAIN` rule only when the exact hostname is independently present in both OpenPhish and URLhaus; never auto-delete from block/filter lists.
+7. Treat single-feed matches, parent suffixes, shared hosting, and ambiguous findings as quarantine/review items.
+8. If either security feed is unavailable, report incomplete coverage and disable threat-based automatic deletion; deterministic syntax repairs may continue.
+9. Process all 100-folder batches sequentially, committing each batch separately for rollback.
 
 Workflow optimization is the current first priority. All rule-set changes must be batch-scoped and reviewed.
 
@@ -141,3 +142,16 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - Artifact: `surge-rule-batches-1`, artifact ID `15203898521`, 30-day retention. It contains JSON and Markdown reports for all 7 batches.
 - Important distinction: this success confirms the batch workflow and static preflight completed. It does not mean all 902 review items are security defects or that rule content optimization is complete.
 - Next: refine false-positive review heuristics (especially single-label/TLD suffixes and aggregate folder format labels), then begin actual rule-content review and safe improvements in 100-folder batches. Keep changes reversible and log every added/removed rule; no automatic deletion based only on static heuristics.
+
+
+## 12. User-approved automatic maintenance V1.0 (2026-11-27)
+
+- User explicitly approved Workflow V1.0: one automatic run processes all 100-folder batches sequentially; automatic deterministic repairs; only existing cached author sources (new broad author collection remains paused); confirmed malicious rules may be automatically deleted; suspected findings are quarantined for review; exact user-deleted content is never automatically restored.
+- Removed the former category-specific protection for bank, payment, securities, exchanges, and finance. No App category has a special keep/delete exemption. The 14 previously restored folders remain in the library but are subject to the same evidence-based policy as all other folders.
+- Updated `.github/explicit-rule-exclusions.json`: only exact user-directed tombstones remain. Category-based deletion policy is explicitly disabled; all categories share the same security policy.
+- Updated `Rule/CONSOLIDATION-PLAN.json` security policy: exact malicious hostname corroborated by both OpenPhish and URLhaus may be removed only from an exact `DOMAIN` routing rule; block/filter lists are excluded; parent suffixes/shared hosting and single-feed hits remain review-only; `Rule/Personal` is excluded.
+- Added `.github/scripts/batch_maintain.py`: deterministic duplicate-line removal; removal of clearly malformed `DOMAIN`, `HOST`, `IP-CIDR`, and `IP-CIDR6` operands; narrow dual-feed exact-host threat deletion; JSON change log and review findings; verifies `Rule/Personal` digest unchanged. It never deletes whole App folders, never modifies personal rules, and never treats unknown rule types as malicious.
+- Upgraded `.github/workflows/batch-preflight.yml` to a scheduled + push-triggered automatic maintenance workflow with write permission, sequential 100-folder batches, per-batch commit/push (Git history rollback point), 90-day report artifacts, and manual dispatch fallback. If URLhaus is unavailable, threat-based deletion is disabled; deterministic repairs may continue and the report marks incomplete coverage.
+- The workflow has not yet been declared successful. Validate its first actual run, script execution, and resulting commits/reports before claiming end-to-end success. Any syntax or workflow error must be corrected before subsequent scheduled runs.
+- Cached author sources remain the only permitted author comparison corpus. This maintenance script currently performs safe deterministic cleanup and security triage; it does not yet perform full cached-author gap-fill/format-union merging. That capability remains a distinct follow-on implementation and must preserve format semantics.
+- Next: inspect the first run triggered by these workflow changes; verify batch counts, changes, quarantined findings, personal-file digest, tombstone enforcement, and Git commit history. Then add the cached-source merge stage with per-format safety gates.
