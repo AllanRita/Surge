@@ -277,6 +277,8 @@ def main():
        scope="block_or_filter" if any(x in rel.parts for x in ("Block","Advertising","AdvertisingLite","AdvertisingTest","AdGuardSDNSFilter","Privacy","Hijacking")) else "app_or_routing"
        threat_scope[scope]+=1
        if len(threat)<500: threat.append({"feed":feed_name,"scope":scope,"path":str(rel),"line":num,"rule":s,"matched_domain":match})
+ for key in ("hidden_control","invalid_native_filter","unsupported_or_missing_operand","ip_family_mismatch","catch_all_network","invalid_network","invalid_domain","stale_or_private_root_suffix","single_label_suffix","duplicate_rule_lines","recognized_native_filter","recognized_native_regex","recognized_native_domain"):
+  findings.setdefault(key,0)
  financial_folders=[]
  for folder in folders:
   norm=re.sub(r"[^a-z0-9]+","",folder.split("/")[-1].lower())
