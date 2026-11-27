@@ -1,6 +1,11 @@
 name: Build Icon Library
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'Icon/Custom.json'
+      - '.github/workflows/BuildIcons.yml'
   schedule:
     - cron: '17 2 * * 1'
 permissions:
@@ -30,8 +35,8 @@ jobs:
           from urllib.error import HTTPError
           from urllib.parse import urlsplit, unquote
 
-          VERSION = '3.2.4 Security + Apple and Google History'
-          UA = 'AllanRita-IconIndex/3.2.4'
+          VERSION = '3.3.0 Smart Build + Enhanced Security'
+          UA = 'AllanRita-IconIndex/3.3.0'
           RAW = 'https://raw.githubusercontent.com/'
           APPLE = 'https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/'
           BASE = RAW+'AllanRita/Surge/main/Icon/'
@@ -144,6 +149,14 @@ jobs:
                   out.append({'name':name,'url':r['url']})
               return sorted(out,key=lambda r:(r['name'].casefold(),r['url']))
 
+          def unique_object(pairs):
+              result={}
+              for k,v in pairs:
+                  if k in result:
+                      raise ValueError('Duplicate JSON key')
+                  result[k]=v
+              return result
+
           def safe_path(file):
               p=Path('Icon')/file
               if any(x.is_symlink() for x in [p,*p.parents]):
@@ -156,7 +169,7 @@ jobs:
                   return default
               if p.stat().st_size>MAX_BYTES:
                   raise ValueError('File too large: '+file)
-              return json.loads(p.read_text(encoding='utf-8'))
+              return json.loads(p.read_text(encoding='utf-8'),object_pairs_hook=unique_object)
 
           custom=read('Custom.json')
           if not isinstance(custom,dict) or not isinstance(custom.get('ios_apps'),list):
@@ -236,7 +249,7 @@ jobs:
                       if len(raw)>MAX_BYTES:
                           raise ValueError('Input too large')
 
-                      return json.loads(raw)
+                      return json.loads(raw,object_pairs_hook=unique_object)
 
                   except Exception:
                       if i+1==attempts:
@@ -317,6 +330,7 @@ jobs:
           current_rows=[]
           history_rows=[]
           warnings=[]
+          skipped=[]
           new_versions=0
 
           for a in apps:
@@ -363,6 +377,10 @@ jobs:
                   artwork=old_cache.get(key) or a.get('fallback_url')
 
                   if not valid_url('iOS',artwork):
+                      if not versions:
+                          history.pop(key,None)
+                          skipped.append(str(a['app_id']))
+                          continue
                       raise ValueError('No trusted fallback for '+a['name']) from None
 
                   warnings.append(a['name'])
@@ -940,6 +958,8 @@ jobs:
               f'Apple newly hidden: {hidden_now}',
               f'Apple restored: {restored_now}',
               f'Apple fallback used: {len(warnings)}',
+              f'Apple new apps deferred: {len(skipped)}',
+              *[f'- Deferred Apple app ID: {x}' for x in skipped],
               f'Google registered URLs: {len(google_active)}',
               f'Visible Google current: {len(google_current)}',
               f'Visible Google history: {len(google_history)}',
@@ -1050,7 +1070,7 @@ jobs:
 
           else
 
-            git commit -m 'Update Surge icon library V3.2.4 Apple and Google History'
+            git commit -m 'Update Surge icon library V3.3.0 Smart Build + Enhanced Security'
 
             auth=$(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)
 
