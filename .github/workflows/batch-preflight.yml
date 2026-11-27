@@ -109,7 +109,7 @@ jobs:
         if: always()
         run: |
           if [ -f batch-output/BATCH-STATUS.txt ]; then cat batch-output/BATCH-STATUS.txt >> "$GITHUB_STEP_SUMMARY"; fi
-          for report in batch-output/batch-*-maintenance.json; do
+          for report in batch-output/batch-*-maintenance.json batch-output/batch-*-cached-sources.json; do
             [ -f "$report" ] || continue
             echo '### ' "$report" >> "$GITHUB_STEP_SUMMARY"
             cat "$report" >> "$GITHUB_STEP_SUMMARY"
