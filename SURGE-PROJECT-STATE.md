@@ -8,9 +8,9 @@ Default branch: `main`
 
 ## 1. Project priority
 
-**Primary work: optimize the actual Surge rule-set folders and rule files under `Rule/Upstream`.**
+**Current priority: harden the workflows first, then process `Rule/Upstream` in deterministic batches of exactly 100 top-level rule-set folders.**
 
-GitHub Actions, scripts, inventories, and reports are supporting tools only. Do not let workflow maintenance displace the actual rule-file work.
+Run a read-only preflight on each batch, inspect the report, fix workflow/script issues, and only then approve any content remediation for that batch. Do not start the next batch until the current batch is reviewed and accepted.
 
 ## 2. Confirmed target structure
 
@@ -18,7 +18,7 @@ GitHub Actions, scripts, inventories, and reports are supporting tools only. Do 
 - Country/region selection belongs in the Surge policy group, not in duplicate country-specific App folders.
 - Merge regional/author variants only when they are the same App and their rule semantics are compatible.
 - Keep different Apps separate even if they share a CDN, parent company, login provider, or cloud platform.
-- Compare already-cached author snapshots; do not fetch new authors while the collection pause is in force.
+- Compare already-cached author snapshots; broad new-author collection remains paused. A narrowly targeted source fetch is allowed only when the user explicitly requests restoration or comparison for named folders.
 - For every App, compare the available formats and complete each format independently.
 - Keep one complete file per distinct format. Do not collapse Standard, Resolve, All, All_No_Resolve, Domain-only, No-IPv6, or other intentional variants merely because payloads currently overlap.
 - Remove duplicates only after verifying the canonical file contains the required union and the format semantics are preserved.
@@ -36,15 +36,9 @@ GitHub Actions, scripts, inventories, and reports are supporting tools only. Do 
 
 The repository has an exact tombstone manifest at `.github/explicit-rule-exclusions.json`. The automation in `.github/scripts/enforce_explicit_exclusions.py` enforces only entries still present in that manifest.
 
-The user explicitly authorized restoration of all 14 historical exclusions on 2026-11-27. They were restored as current author-source rule files under `Rule/Upstream`: `BOC`, `BOCOM`, `CCB`, `CEB`, `CGB`, `CMB`, `ICBC`, `PSBC`, `AliPay`, `PayPal`, `Stripe`, `UnionPay`, `VISA`, `PingAn`. The 14 entries were removed from the exact tombstone manifest. Their restored files must not be deleted again by category-based cleanup.
+The user explicitly authorized restoration of all 14 historical exclusions on 2026-11-27. They were restored as current author-source rule files under `Rule/Upstream`: `BOC`, `BOCOM`, `CCB`, `CEB`, `CGB`, `CMB`, `ICBC`, `PSBC`, `AliPay`, `PayPal`, `Stripe`, `UnionPay`, `VISA`, `PingAn`. The 14 entries were removed from the exact tombstone manifest. All 14 files were re-verified in the current Git tree. Their restored folders must not be deleted again by category-based cleanup.
 
-**Decision conflict requiring explicit resolution:** the repository's historical manifest/index records the 14 folders above as explicitly deleted at the user's direction on 2026-11-27. The user's latest instruction now says bank/payment/finance folders should not be deleted. Until the user explicitly clarifies the disposition of these exact 14 historical entries:
-- The 14 named folders have been explicitly restored at the user's request and are no longer tombstoned.
-- Do not re-delete these 14 by category-based cleanup.
-- Do not add any new bank/payment/finance exclusions without a direct, specific user instruction.
-- Continue protecting any future exact tombstones from automatic restoration.
-
-A tombstoned folder may be restored only after the user explicitly requests restoration of that specific folder. Git history is a source for audit/recovery only, never automatic restoration authority.
+There is no unresolved disposition conflict for these 14: the latest explicit instruction restored all of them and they are no longer tombstoned. Do not re-delete them by category-based cleanup. Do not add new bank/payment/finance exclusions without a direct, specific user instruction. Any future exact tombstone can only be removed after an explicit restoration request for that folder. Git history is audit/recovery only, never automatic restoration authority.
 
 ## 5. Workflow responsibilities
 
@@ -56,7 +50,7 @@ Workflows must:
 5. Keep `Rule/Personal` outside automated remediation.
 6. Clearly distinguish a failed/unavailable security feed from a clean result.
 
-Workflow optimization is secondary to rule-set file optimization.
+Workflow optimization is the current first priority. All rule-set changes must be batch-scoped and reviewed.
 
 ## 6. Completed work recorded in repository reports
 
@@ -87,18 +81,18 @@ Verified against the current `main` tree and the latest inventory generated at 1
 - The library contains 34 curated shared-hosting suffixes across 159 rule occurrences.
 - 238 upstream financial-domain matches across 29 domain values remain untouched. Seven crypto/securities/finance review folders (322 rule entries) remain present and are not deletion targets.
 - The three files in `Rule/Personal` remain untouched.
-- The 14 exact historical tombstones remain unchanged and protected. No `.list` rule files were changed in this verification batch.
+- The 14 historical exclusions were subsequently explicitly restored by the user on 2026-11-27; see Section 9. They are not current tombstones.
 
 ## 7. Next work — resume here
 
-1. Continue with the actual `Rule/Upstream` rule files. Do not repeat the completed 14-group consolidation, 107-folder format uniqueness check, or 15-snapshot cached-source comparison unless one of their inputs changes.
-2. Manually review the 77 OpenPhish parent-suffix matches and the 34 shared-hosting suffixes in their App-specific versus aggregate-list contexts. Do not delete a parent suffix solely because a feed hostname exists beneath it.
-3. Review the 238 financial-domain matches and the 894 bare public-TLD suffix occurrences in their intended rule-set/scenario context. Do not delete financial domains from unrelated Apps or broad rules solely because of their shape.
-4. Preserve all existing bank/payment/finance folders. The 14 exact historical tombstones remain no-restore until the user explicitly clarifies whether any specific one should be restored; do not silently change the manifest.
-5. Keep new author fetching paused. Use only the 15 already-cached author snapshots until the user changes that instruction.
-6. Never modify `Rule/Personal` without a direct, specific user instruction.
-7. After the manual rule-content review is stable, perform final workflow hardening and end-to-end verification.
-8. At the end of each batch, update this file with paths changed, rules added/removed, checks performed, unresolved findings, and the exact next task.
+1. Finish workflow hardening and validate the new batch preflight implementation.
+2. Run Batch 1 (first 100 eligible top-level folders in deterministic case-insensitive alphabetical order) in read-only mode.
+3. Review all blockers and review-only findings; refine the validator based on real Batch 1 output.
+4. Only after approval, perform any rule-content optimization for Batch 1. Keep a full change log and verify before/after rule counts and protected paths.
+5. Repeat with batches 2, 3, and onward, exactly 100 folders each (final batch may contain fewer), without starting the next batch before the current one passes review.
+6. Keep broad new-author fetching paused; compare cached snapshots. Do not modify `Rule/Personal`.
+7. Do not repeat completed 14-group consolidation or earlier audit work unless source files or decisions change.
+8. At the end of each batch, update this file with folder range, files/rules checked, paths changed, checks, findings, and next batch.
 
 ## 8. Session-resume protocol
 
@@ -119,3 +113,17 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - Primary source: blackmatrix7/ios_rule_script Surge-format rule files. Each restored file includes its source URL and source author in the header.
 - The 14 exact tombstones were removed from `.github/explicit-rule-exclusions.json` after the explicit user instruction.
 - Follow-up: compare these 14 against other established author sources, inspect rule safety and completeness, then update the audit inventory. Do not delete the restored folders.
+
+
+## 10. Workflow-first and 100-folder batch protocol (2026-11-27)
+
+- User directed that workflow problems be optimized first, then run the project library in batches of 100 rule-set folders, continuously refining between batches.
+- Current tree count: 666 direct child folders under `Rule/Upstream`; 665 eligible top-level folders after excluding `SourceMetadata`.
+- Added `.github/scripts/batch_preflight.py`: deterministic alphabetical 100-folder read-only validator. It checks UTF-8 readability, symlinks, duplicate rule lines, unsupported/missing rule operands, invalid IP networks, invalid domain operands, hidden control characters, broad single-label suffixes (review only), exact tombstones, and a before/after digest of `Rule/Personal`. It does not edit or delete rules.
+- Added `.github/workflows/batch-preflight.yml`: manual `workflow_dispatch`, batch number input, fixed batch size 100, read-only repository permission, serialized concurrency, and 30-day report artifact.
+- Disabled automatic push triggers on the previous full-library audit and App-consolidation workflows. They now require manual dispatch; this prevents every rule-file push from starting an unbounded full-library job.
+- Removed the automatic call to `remove_invalid_public_tld_rules.py` from the audit workflow. Broad-TLD findings must be review-only; the workflow must not silently delete rules as part of an audit.
+- First trial target: Batch 1, first 100 eligible folders sorted by casefolded folder name. No batch has been run yet; the workflow is prepared but must be manually dispatched from GitHub Actions because this connection supports reading/writing repository files but not dispatching a workflow.
+- Do not run the full consolidation workflow as part of batch preflight. Do not merge or delete any folder during preflight.
+- The 14 restored bank/payment/finance folders are verified present; the tombstone manifest is empty. The exclusion enforcer accepts an empty list safely.
+- Next action: dispatch `Surge 100-Folder Batch Trial` with `batch_number=1`, inspect its JSON/Markdown artifact, fix the validator/workflow based on actual output, then decide whether Batch 1 is approved for any content changes.
