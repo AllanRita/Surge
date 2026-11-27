@@ -154,15 +154,24 @@ def source_coverage():
   if not tp.is_file(): out.append({"source":name,"target":target_rel,"error":"mapped target missing"}); continue
   try: meta=json.loads(mp.read_text(encoding="utf-8"))
   except (OSError,ValueError) as e: out.append({"source":name,"target":target_rel,"error":str(e)}); continue
-  target_rules=rules(tp); counts=Counter(); missing=[]
-  for rule in meta.get("rules",[]):
-   if rule.lower() in {x.lower() for x in target_rules}: counts["exact"]+=1
-   elif domain_covered(rule,target_rules): counts["parent_suffix"]+=1
-   elif ip_covered(rule,target_rules): counts["ip_range"]+=1
-   else:
-    counts["missing"]+=1
-    if len(missing)<100: missing.append(rule)
-  out.append({"source":name,"source_url":meta.get("source"),"license":meta.get("license"),"source_commit":meta.get("commit"),"source_path":meta.get("path"),"source_rules":len(meta.get("rules",[])),"target":target_rel,"target_rules":len(target_rules),"exact":counts["exact"],"parent_suffix":counts["parent_suffix"],"ip_range":counts["ip_range"],"missing_count":counts["missing"],"missing_examples":missing})
+  source_rules=meta.get("rules",[])
+  targets=[("standard",target_rel,tp)]
+  resolve_path=tp.with_name(tp.stem+"_Resolve"+tp.suffix)
+  if resolve_path.is_file():
+   targets.append(("resolve",str(resolve_path.relative_to(ROOT)),resolve_path))
+  format_coverage=[]
+  for format_name,format_rel,format_path in targets:
+   target_rules=rules(format_path); counts=Counter(); missing=[]
+   for rule in source_rules:
+    if rule.lower() in {x.lower() for x in target_rules}: counts["exact"]+=1
+    elif domain_covered(rule,target_rules): counts["parent_suffix"]+=1
+    elif ip_covered(rule,target_rules): counts["ip_range"]+=1
+    else:
+     counts["missing"]+=1
+     if len(missing)<100: missing.append(rule)
+   format_coverage.append({"format":format_name,"target":format_rel,"target_rules":len(target_rules),"exact":counts["exact"],"parent_suffix":counts["parent_suffix"],"ip_range":counts["ip_range"],"missing_count":counts["missing"],"missing_examples":missing})
+  primary=format_coverage[0]
+  out.append({"source":name,"source_url":meta.get("source"),"license":meta.get("license"),"source_commit":meta.get("commit"),"source_path":meta.get("path"),"source_rules":len(source_rules),"target":primary["target"],"target_rules":primary["target_rules"],"exact":primary["exact"],"parent_suffix":primary["parent_suffix"],"ip_range":primary["ip_range"],"missing_count":primary["missing_count"],"missing_examples":primary["missing_examples"],"format_coverage":format_coverage})
  return out
 def alias_report():
  out=[]
@@ -297,10 +306,10 @@ def main():
  data={
   "generated_utc":datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
   "scope":"Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
-  "summary":{"rule_files":len(files),"app_or_category_folders":len(folders),"top_level_folders":len({p.relative_to(ROOT).parts[0] for p in files}),"total_rule_bytes":sum(p.stat().st_size for p in files),"multi_file_folders":len(multi),"exact_raw_duplicate_file_groups":len(rawdups),"same_rule_payload_file_groups":len(payloaddups),"duplicate_rule_lines":findings["duplicate_rule_lines"],"domain_rule_count":domain_count,"personal_files_seen_not_modified":len(personal),"bank_payment_app_folders_found":len(financial_folders),"finance_app_review_candidates":len(finance_review),"cached_author_source_count":len(coverage),"cached_author_source_rule_count":sum(x.get("source_rules",0) for x in coverage),"cached_author_source_missing_count":sum(x.get("missing_count",0) for x in coverage),"shared_hosting_suffixes_found":len(shared_hosting_hits),"shared_hosting_suffix_rule_occurrences":sum(x["count"] for x in shared_hosting_hits.values())},
+  "summary":{"rule_files":len(files),"app_or_category_folders":len(folders),"top_level_folders":len({p.relative_to(ROOT).parts[0] for p in files}),"total_rule_bytes":sum(p.stat().st_size for p in files),"multi_file_folders":len(multi),"exact_raw_duplicate_file_groups":len(rawdups),"same_rule_payload_file_groups":len(payloaddups),"duplicate_rule_lines":findings["duplicate_rule_lines"],"domain_rule_count":domain_count,"personal_files_seen_not_modified":len(personal),"bank_payment_app_folders_found":len(financial_folders),"finance_app_review_candidates":len(finance_review),"cached_author_source_count":len(coverage),"cached_author_source_rule_count":sum(x.get("source_rules",0) for x in coverage),"cached_author_source_missing_count":sum(x.get("missing_count",0) for x in coverage),"cached_author_source_format_target_count":sum(len(x.get("format_coverage",[])) for x in coverage),"cached_author_source_format_missing_count":sum(y.get("missing_count",0) for x in coverage for y in x.get("format_coverage",[])),"shared_hosting_suffixes_found":len(shared_hosting_hits),"shared_hosting_suffix_rule_occurrences":sum(x["count"] for x in shared_hosting_hits.values())},
   "bank_payment_app_folders":financial_folders,"finance_app_review_candidates":finance_review,"personal_files_seen_not_modified":personal,"multi_format_folders":multi,
   "exact_raw_duplicate_file_groups":rawdups,"same_rule_payload_file_groups":payloaddups,"alias_candidates":aliases,
-  "cached_source_coverage":coverage,"static_security_findings":dict(findings),"static_security_examples":{k:v[:50] for k,v in examples.items()},"financial_domain_matches_not_deleted":financial[:500],
+  "cached_source_coverage":coverage,"cached_source_format_coverage":[{"source":x["source"],**y} for x in coverage for y in x.get("format_coverage",[])],"static_security_findings":dict(findings),"static_security_examples":{k:v[:50] for k,v in examples.items()},"financial_domain_matches_not_deleted":financial[:500],
   "shared_hosting_suffix_matches":[{"suffix":suffix,"classification":SHARED_HOSTING_SUFFIXES[suffix],"rule_occurrences":hit["count"],"folders":sorted(hit["folders"]),"files":sorted(hit["paths"]),"examples":hit["examples"]} for suffix,hit in sorted(shared_hosting_hits.items())],
   "reputation_feed_status":{"urlhaus_domains":len(urlhaus),"openphish_domains":len(openphish),"feeds_available":bool(urlhaus or openphish),"urlhaus_file_present":bool(a.urlhaus and Path(a.urlhaus).is_file()),"openphish_file_present":bool(a.openphish and Path(a.openphish).is_file()),"urlhaus_status":"loaded" if urlhaus else ("downloaded file is empty or invalid" if a.urlhaus and Path(a.urlhaus).is_file() else "not loaded; URLHAUS_AUTH_KEY is missing or download failed"),"openphish_status":"loaded" if openphish else ("downloaded file is empty or invalid" if a.openphish and Path(a.openphish).is_file() else "not loaded; download failed or file missing"),"note":"Reputation matches are review flags, not automatic deletions. Matches in block/filter lists may be expected; an unavailable feed is not a clean result."},
   "reputation_matches":threat,"reputation_match_counts_by_scope":dict(threat_scope),"files":file_rows,
@@ -327,6 +336,10 @@ def main():
   else:
    md.append(f"| {r['source']} | {r['target']} | {r['source_rules']} | {r['exact']} | {r['parent_suffix']} | {r['ip_range']} | {r['missing_count']} |")
    for x in r["missing_examples"][:15]: md.append(f"  - Missing candidate for {r['source']}: {x}")
+ md += ["","### Cached source coverage by available routing format","","- Available standard and Resolve files are checked separately; this does not imply that every App has a cached author snapshot.","","| Cached source | Format | Target | Source rules | Missing |","|---|---|---|---:|---:|"]
+ for r in coverage:
+  for f in r.get("format_coverage",[]):
+   md.append(f"| {r['source']} | {f['format']} | {f['target']} | {r['source_rules']} | {f['missing_count']} |")
  md += ["","## Static security checks",""]
  for k,v in sorted(findings.items()): md.append(f"- {k}: {v}")
  for x in examples.get("unsupported_or_missing_operand",[])[:30]: md.append(f"  - {x}")
