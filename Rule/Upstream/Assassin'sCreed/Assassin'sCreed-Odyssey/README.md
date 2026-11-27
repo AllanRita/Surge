@@ -77,3 +77,11 @@ https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@releaseE:\Projects\Rule
 ### 其他
 
 请不要对外宣传本项目。
+
+## App policy group
+
+This folder is the single Surge rule folder for Assassin's Creed Odyssey. Select the country/region in the App's Surge policy group; regional variants are not separate rule folders.
+
+Consolidated regional/alternate folders: Game/Assassin'sCreed-Odyssey.
+
+Retained formats: resolve, standard.

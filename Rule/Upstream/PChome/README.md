@@ -80,3 +80,11 @@ https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_scri
 ### 其他
 
 请不要对外宣传本项目。
+
+## App policy group
+
+This folder is the single Surge rule folder for PChome. Select the country/region in the App's Surge policy group; regional variants are not separate rule folders.
+
+Consolidated regional/alternate folders: PChomeTW.
+
+Retained formats: standard.
