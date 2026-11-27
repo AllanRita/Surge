@@ -66,7 +66,7 @@ def feed_hosts(path):
     """Parse URL feeds and URLhaus hostfiles, including IP-prefixed host rows."""
     if not path or not Path(path).is_file():
         return set()
-    domain_pattern = re.compile(r"(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z]{2,63}")
+    domain_pattern = re.compile(r"(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}")
 
     def candidate_host(token):
         value = token.strip().lower().strip("[](){}<>,;\\\"'")

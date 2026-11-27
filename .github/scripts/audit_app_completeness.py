@@ -40,7 +40,7 @@ def classify_entry(line):
         return "native_filter"
     if "," in value:
         return "surge_rule"
-    if re.fullmatch(r"(?i)[a-z0-9_-]+(?:\\.[a-z0-9_-]+)+", value.lstrip(".")):
+    if re.fullmatch(r"(?i)[a-z0-9_-]+(?:\.[a-z0-9_-]+)+", value.lstrip(".")):
         return "native_domain"
     return "unclassified"
 

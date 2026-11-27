@@ -274,7 +274,7 @@ class SurgeMaintenanceTests(unittest.TestCase):
             mapped.mkdir()
             unmapped.mkdir()
             (mapped / 'README.md').write_text('Apple scope', encoding='utf-8')
-            (mapped / 'Apple.list').write_text('DOMAIN-SUFFIX,apple.com\n', encoding='utf-8')
+            (mapped / 'Apple.list').write_text('DOMAIN-SUFFIX,apple.com\n||ads.example^\napi.example.com\n', encoding='utf-8')
             (unmapped / 'UnmappedApp.list').write_text('DOMAIN,api.example.com\n', encoding='utf-8')
             (source_root / 'Apple.json').write_text('{}', encoding='utf-8')
             source_map = {'Apple.json': ['Apple/Apple.list']}
@@ -294,9 +294,9 @@ class SurgeMaintenanceTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as td:
             feed = Path(td) / "urlhaus.txt"
             feed.write_text(
-                "evil.example CNAME . ; malware download\\n"
-                "127.0.0.1 prefixed.example\\n"
-                "https://url.example/path\\n",
+                "evil.example CNAME . ; malware download\n"
+                "127.0.0.1 prefixed.example\n"
+                "https://url.example/path\n",
                 encoding="utf-8"
             )
             self.assertEqual(MAINTAIN.feed_hosts(str(feed)), {"evil.example", "prefixed.example", "url.example"})
@@ -314,10 +314,10 @@ class SurgeMaintenanceTests(unittest.TestCase):
             manifest.parent.mkdir(parents=True)
             manifest.write_text(json.dumps({"exclusions": []}), encoding="utf-8")
             target = folder / "ThreatApp.list"
-            original = "DOMAIN-SUFFIX,shared.example\\nHOST-SUFFIX,shared.example\\n"
+            original = "DOMAIN-SUFFIX,shared.example\nHOST-SUFFIX,shared.example\n"
             target.write_text(original, encoding="utf-8")
             openphish = base / "openphish.txt"
-            openphish.write_text("https://tenant.shared.example/path\\n", encoding="utf-8")
+            openphish.write_text("https://tenant.shared.example/path\n", encoding="utf-8")
             argv = ["batch_maintain.py", "--batch", "1", "--batch-size", "100", "--openphish", str(openphish), "--output-dir", str(out)]
             with patch.object(MAINTAIN, "ROOT", root), patch.object(MAINTAIN, "PERSONAL", personal), patch.object(MAINTAIN, "MANIFEST", manifest), patch.object(sys, "argv", argv):
                 MAINTAIN.main()
