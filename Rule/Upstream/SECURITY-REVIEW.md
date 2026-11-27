@@ -1,6 +1,6 @@
 # Security reputation review
 
-Generated: 2026-11-27 11:10 UTC
+Generated: 2026-11-27 11:13 UTC
 
 This report compares current domain rules against public threat-intelligence feeds. A feed match is a review signal, not proof that the rule's parent domain is malicious. No rules are automatically removed.
 
@@ -17,7 +17,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Google/Google.list, Google/Google_Resolve.list
-- Matched feed host examples: metamask173.blogspot.com
+- Matched feed host examples: www.lazada0277.blogspot.com
 - Classification: Blogger shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,cloudfront.net
@@ -45,14 +45,14 @@ This report compares current domain rules against public threat-intelligence fee
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: GitBook/GitBook.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: cripthcomlogin.gitbook.io
+- Matched feed host examples: metamasiuklogin.gitbook.io
 - Classification: GitBook hosted content; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,github.io
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: GitHub/GitHub.list, Global/Global_All.list, Global/Global_All_No_Resolve.list
-- Matched feed host examples: meenakshi-cse.github.io
+- Matched feed host examples: dank1ngzzz.github.io
 - Classification: GitHub Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,is.gd
@@ -66,21 +66,21 @@ This report compares current domain rules against public threat-intelligence fee
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: b41382317-e93d-48f1-8e5b-812d31bf809d.netlify.app
+- Matched feed host examples: ingprsonasvrtal.netlify.app
 - Classification: Netlify shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,pages.dev
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: xfm31-z75-urmp-7tlst-07-10-2026-hh.pages.dev
+- Matched feed host examples: 02796960-nmc6bvvpedys-tabefjvb-prs8y9b-v25qyixzuz5.pages.dev
 - Classification: Cloudflare Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,vercel.app
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list, Vercel/Vercel.list
-- Matched feed host examples: www.zimbra-auth-adm-old.vercel.app
+- Matched feed host examples: dataserver-kappa.vercel.app
 - Classification: Vercel shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,web.app
@@ -94,28 +94,12 @@ This report compares current domain rules against public threat-intelligence fee
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: taskorynex-velnoryx-371c.s2504191-f02.workers.dev
+- Matched feed host examples: supplemental-insert-259e.andrew-andrew23.workers.dev
 - Classification: Cloudflare Workers shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ## Stale/private single-label suffixes
 
-- ChinaMax/ChinaMax.list:30: DOMAIN-SUFFIX,xihuan
-- ChinaMax/ChinaMax_All.list:97388: DOMAIN-SUFFIX,xihuan
-- ChinaMax/ChinaMax_All_No_Resolve.list:97388: DOMAIN-SUFFIX,xihuan
-- ChinaMax/ChinaMax_No_IPv6.list:30: DOMAIN-SUFFIX,xihuan
-- ChinaMax/ChinaMax_No_IPv6_Resolve.list:30: DOMAIN-SUFFIX,xihuan
-- ChinaMax/ChinaMax_Resolve.list:30: DOMAIN-SUFFIX,xihuan
-- ChinaMaxNoIP/ChinaMaxNoIP.list:23: DOMAIN-SUFFIX,xihuan
-- ChinaMaxNoIP/ChinaMaxNoIP_All.list:97063: DOMAIN-SUFFIX,xihuan
-- ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:97063: DOMAIN-SUFFIX,xihuan
-- ChinaMaxNoMedia/ChinaMaxNoMedia.list:26: DOMAIN-SUFFIX,xihuan
-- ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:96972: DOMAIN-SUFFIX,xihuan
-- ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:96972: DOMAIN-SUFFIX,xihuan
-- ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:26: DOMAIN-SUFFIX,xihuan
-- ChinaTest/ChinaTest.list:28: DOMAIN-SUFFIX,xihuan
-- ChinaTest/ChinaTest_All.list:97997: DOMAIN-SUFFIX,xihuan
-- ChinaTest/ChinaTest_All_No_Resolve.list:97997: DOMAIN-SUFFIX,xihuan
-- ChinaTest/ChinaTest_Resolve.list:28: DOMAIN-SUFFIX,xihuan
+- None detected or IANA TLD feed unavailable.
 
 ## Financial-service domains
 

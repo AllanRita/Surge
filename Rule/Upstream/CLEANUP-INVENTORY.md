@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 11:10 UTC
+Generated: 2026-11-27 11:13 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -9,7 +9,7 @@ Scope: existing rule files and cached source metadata only. No new rule authors 
 - Rule files: **828**
 - App/category folders: **663**
 - Top-level folders: **640**
-- Rule data size: **116,049,803 bytes**
+- Rule data size: **116,049,252 bytes**
 - Folders with multiple files/formats: **107**
 - Exact byte-identical file groups: **2**
 - Identical rule-payload groups (headers ignored): **3**
@@ -104,8 +104,7 @@ This classifies dedicated App folders by folder name only. Financial-service dom
 
 - duplicate_rule_lines: 0
 - recognized_native_domain: 1330757
-- single_label_suffix: 911
-- stale_or_private_root_suffix: 17
+- single_label_suffix: 894
 
 - Detailed threat-feed and broad shared-hosting review: see SECURITY-REVIEW.md.
 - Financial-domain matches: 238 (review only; not deleted)

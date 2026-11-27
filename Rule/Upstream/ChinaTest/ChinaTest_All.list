@@ -4,11 +4,12 @@
 # UPDATED: 2026-10-28 05:42:29
 # DOMAIN: 92
 # DOMAIN-KEYWORD: 9
-# DOMAIN-SUFFIX: 109937
+# DOMAIN-SUFFIX: 109936
 # IP-CIDR: 11
 # IP-CIDR6: 4
 # USER-AGENT: 31
-# TOTAL: 110084
+# TOTAL: 110083
+
 DOMAIN,analytics.strava.com
 DOMAIN,blzddist1-a.akamaihd.net
 DOMAIN,cdn.angruo.com
@@ -97994,7 +97995,6 @@ DOMAIN-SUFFIX,xihaxueche.com
 DOMAIN-SUFFIX,xihazsww.com
 DOMAIN-SUFFIX,xihegp.com
 DOMAIN-SUFFIX,xiherencai.com
-DOMAIN-SUFFIX,xihuan
 DOMAIN-SUFFIX,xihuan.me
 DOMAIN-SUFFIX,xihusgh.com
 DOMAIN-SUFFIX,xiimoon.com
