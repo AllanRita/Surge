@@ -19,10 +19,10 @@ Microsoft规则由《RULE GENERATOR 规则生成器》自动生成。
 | ---- | ----  |
 | DOMAIN | 1  | 
 | DOMAIN-KEYWORD | 4  | 
-| DOMAIN-SUFFIX | 663  | 
+| DOMAIN-SUFFIX | 664  | 
 | PROCESS-NAME | 2  | 
 | USER-AGENT | 3  | 
-| TOTAL | 673  | 
+| TOTAL | 674  | 
 
 
 ## Surge 
