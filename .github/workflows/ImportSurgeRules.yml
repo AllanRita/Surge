@@ -161,8 +161,11 @@ jobs:
           allowed={'DOMAIN','DOMAIN-SUFFIX','DOMAIN-KEYWORD','DOMAIN-WILDCARD','DOMAIN-REGEX','IP-CIDR','IP-CIDR6','IP-ASN','GEOIP','USER-AGENT','URL-REGEX','PROCESS-NAME','DEST-PORT','SRC-PORT','SRC-IP','IN-PORT','PROTOCOL','AND','OR','NOT','RULE-SET','DOMAIN-SET','SUBNET','DEVICE-NAME','HOST','HOST-SUFFIX','HOST-KEYWORD'}
           findings=collections.Counter()
           examples=[]
+          finding_by_category=collections.defaultdict(collections.Counter)
           def flag(kind,path,num):
               findings[kind]+=1
+              category=Path(path).parts[0] if Path(path).parts else 'unknown'
+              finding_by_category[kind][category]+=1
               if len(examples)<80:
                   examples.append(f'{kind}: {path}:{num}')
           def audit_line(line,path,num):
@@ -304,11 +307,24 @@ jobs:
                   report_lines.append(f'- {kind}: {count}')
           else:
               report_lines.append('- No findings recorded.')
+          report_lines += ['', '## Findings by rule category']
+          for kind in ('financial-domain-review','broad-domain','unsupported-rule-syntax'):
+              report_lines.append(f'### {kind}')
+              breakdown=finding_by_category.get(kind,{})
+              if breakdown:
+                  report_lines += [f'- {category}: {count}' for category,count in sorted(breakdown.items())]
+              else:
+                  report_lines.append('- None')
+          report_lines += ['', '## Identical rule-set groups (review only; not merged)']
+          for group in groups:
+              report_lines.append('- ' + ' | '.join(group))
+          if not groups:
+              report_lines.append('- None')
           report_lines += ['', '## Finding examples']
           report_lines += [f'- {item}' for item in examples] if examples else ['- None']
           report_lines += ['', '## Scope and limitations',
               '- Personal rules are audited but not rewritten or merged into upstream lists.',
-              '- Different rule types and routing scenarios are preserved; exact-row deduplication is not semantic equivalence.',
+              '- Exact duplicate rows are removed only within each individual file; cross-file semantic deduplication is not claimed. Identical rule-set groups are reported for review and are not automatically merged.',
               '- Source license notices are retained in SourceMetadata where available.',
               '- Manual review is still required for source relevance, financial exclusions, broad matches, and real Surge subscription behavior.',
               '']
