@@ -24,6 +24,7 @@ jobs:
           set -euo pipefail
           git clone --depth 1 --filter=blob:none --sparse https://github.com/blackmatrix7/ios_rule_script.git "$RUNNER_TEMP/upstream"
           git -C "$RUNNER_TEMP/upstream" sparse-checkout set rule/Surge
+          curl -fsSL --retry 3 https://data.iana.org/TLD/tlds-alpha-by-domain.txt -o "$RUNNER_TEMP/iana-tlds.txt"
           python3 - <<'PY'
           import os, shutil, subprocess, hashlib, re, json
           from pathlib import Path
@@ -158,11 +159,14 @@ jobs:
               else:
                   target.write_text(base,encoding='utf-8')
           import ipaddress, unicodedata, collections
+          root_tlds={line.strip().lower() for line in (Path(os.environ['RUNNER_TEMP'])/'iana-tlds.txt').read_text().splitlines() if line.strip() and not line.startswith('#')}
           allowed={'DOMAIN','DOMAIN-SUFFIX','DOMAIN-KEYWORD','DOMAIN-WILDCARD','DOMAIN-REGEX','IP-CIDR','IP-CIDR6','IP-ASN','GEOIP','USER-AGENT','URL-REGEX','PROCESS-NAME','DEST-PORT','SRC-PORT','SRC-IP','IN-PORT','PROTOCOL','AND','OR','NOT','RULE-SET','DOMAIN-SET','SUBNET','DEVICE-NAME','HOST','HOST-SUFFIX','HOST-KEYWORD'}
           findings=collections.Counter()
           examples=[]
           financial_matches=[]
           broad_matches=[]
+          active_tld_matches=[]
+          non_current_tld_matches=[]
           finding_by_category=collections.defaultdict(collections.Counter)
           def flag(kind,path,num):
               findings[kind]+=1
@@ -230,6 +234,10 @@ jobs:
                   if len(labels)<2:
                       flag('broad-domain',path,num)
                       broad_matches.append((path,num,line.strip()))
+                      if value.lower() in root_tlds:
+                          active_tld_matches.append((path,num,line.strip()))
+                      else:
+                          non_current_tld_matches.append((path,num,line.strip()))
               # Report exact financial-service host matches for manual scope review.
               # A match in an ad/tracker blocklist is not evidence that the service is routed.
               if kind in {'DOMAIN','DOMAIN-SUFFIX','HOST','HOST-SUFFIX'} and re.fullmatch(
@@ -347,6 +355,10 @@ jobs:
               report_lines.append('- None')
           report_lines += ['', '## Broad-domain matches (exact lines; review before changing)']
           report_lines += [f'- {path}:{num}: {rule}' for path,num,rule in broad_matches] if broad_matches else ['- None']
+          report_lines += ['', '## IANA-current TLD suffixes (broad scope; review routing intent)']
+          report_lines += [f'- {path}:{num}: {rule}' for path,num,rule in active_tld_matches] if active_tld_matches else ['- None']
+          report_lines += ['', '## Single-label suffixes absent from current IANA root (stale or private-name review)']
+          report_lines += [f'- {path}:{num}: {rule}' for path,num,rule in non_current_tld_matches] if non_current_tld_matches else ['- None']
           report_lines += ['', '## Financial-domain matches (exact lines; manual review, no automatic deletion)']
           report_lines += [f'- {path}:{num}: {rule}' for path,num,rule in financial_matches] if financial_matches else ['- None']
           report_lines += ['', '## Finding examples']
