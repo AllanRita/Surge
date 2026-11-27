@@ -164,7 +164,7 @@ def domain_set_rules(path):
   value=raw.strip().lower().rstrip(".")
   is_suffix=value.startswith(".")
   domain=value[1:] if is_suffix else value
-  if re.fullmatch(r"(?i)[a-z0-9_-]+(?:\\.[a-z0-9_-]+)+",domain):
+  if re.fullmatch(r"(?i)[a-z0-9_-]+(?:\.[a-z0-9_-]+)+",domain):
    out.append(("DOMAIN-SUFFIX," if is_suffix else "DOMAIN,")+domain)
  return out
 
