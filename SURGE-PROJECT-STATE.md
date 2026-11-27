@@ -273,12 +273,15 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - Next: use the 78 valid single-label TLD suffixes and 34 shared-hosting suffixes for scenario-aware scope review, prioritizing broad aggregate lists (China/ChinaMax variants) and avoiding automatic deletion. Continue app-by-app completeness checks using only existing cached author snapshots; no new author fetching.
 
 
-## 20. Shared-hosting scope review completed (2026-11-27)
 
-- Added Rule/Upstream/SHARED-HOSTING-SCOPE-REVIEW.md using the latest cleanup inventory snapshot.
-- Reviewed all 34 curated shared CDN/hosting, dynamic-DNS, and URL-shortener suffixes across 159 rule occurrences.
-- 21 suffixes appear in App/service folders, accounting for 33 occurrences. The other 126 occurrences are in aggregate folders Global, GlobalMedia, Proxy, and ProxyLite.
-- The 77 OpenPhish hits in SECURITY-REVIEW.md are parent-suffix matches. A listed malicious host under a shared parent does not prove the parent itself is malicious. No shared-hosting suffix was removed.
-- URLhaus remains unavailable; no exact-domain dual-feed confirmation was possible. Threat-based automatic deletion remains disabled.
-- Together with BROAD-SUFFIX-SCOPE-REVIEW.md, the current scope-review stage now covers all 78 valid single-label TLD suffixes and all 34 curated shared-hosting suffixes. No production rule files were changed by either review.
-- Next: continue App-specific completeness and routing-scope validation, keeping aggregate and App folders separate, preserving all formats, and using only the existing 15 cached author snapshots.
+
+## 20. Latest successful parity and sequential maintenance verification (2026-11-27 15:06–15:07 UTC)
+
+- Latest verified run: [46021896550](https://github.com/AllanRita/Surge/actions/runs/46021896550), commit `b38bd3e9ec8cb3644cca602bb870ee60d0cb9659`. All workflow steps completed successfully, including the offline regression suite, read-only semantic format audit, exact tombstone enforcement, seven sequential maintenance batches, summary generation, and artifact upload.
+- Processed all 654 eligible top-level folders in order: 6 batches of 100 and a final batch of 54. All 842 upstream rule files and 2,691,526 domain rules were in the current inventory snapshot. No maintenance changes or deletions were made; all seven reports confirm `personal_unchanged=true`.
+- Cached-only author coverage: all 15 existing author snapshots were processed; across batch reports 576 source-rule occurrences were evaluated (337 exact matches and 239 semantically covered). There were 0 missing rules, 0 review-only findings, 0 additions, and 0 changed files. No new author source was fetched.
+- Semantic format audit: 842 files scanned and 132 compatible pairs compared: 104 Standard/Resolve, 19 All/All_No_Resolve, 3 No_IPv6/No_IPv6_Resolve, 3 Standard/No_IPv6, and 3 Resolve/No_IPv6_Resolve. All 132 pairs have identical normalized rule multisets; 0 left-only and 0 right-only rules. The 123 expected resolution-option differences were reported separately. No format was merged or rewritten.
+- Exact tombstone manifest remains empty (0 exclusions). All 14 bank/payment App folders and the seven finance/trading/crypto review folders remain present with no category-based exemption. `Rule/Personal` was not changed.
+- Artifact: `surge-automatic-maintenance-36`, ID `15210275136`; it contains all seven maintenance/preflight reports plus `format-parity-audit.json`, `format-parity-audit.md`, and `format-coverage.json`.
+- Security remains intentionally fail-closed for threat deletion: OpenPhish loaded 280 hosts, URLhaus loaded 0 because `URLHAUS_AUTH_KEY` is unavailable. Security coverage is explicitly marked incomplete and no threat-based automatic deletion occurred. The successful run is not a complete dual-feed security clearance.
+- Next work: perform scenario-aware, report-only review of the 78 IANA-delegated bare public-TLD suffixes (896 rule occurrences) and 34 shared-hosting suffixes (159 occurrences), especially broad aggregate lists. Then continue per-App completeness review against existing cached sources only. No category-based deletion, no new author fetching, and no automatic change to routing semantics.
