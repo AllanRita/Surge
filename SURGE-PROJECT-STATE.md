@@ -1,6 +1,6 @@
 # Surge Project State
 
-Last updated: 2026-11-27 13:43 UTC (21:43 Asia/Shanghai)
+Last updated: 2026-11-27 15:02 UTC
 Repository: `AllanRita/Surge`
 Default branch: `main`
 
@@ -249,3 +249,11 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - URLhaus's official Community API documentation states an Auth-Key is required for feed downloads. The GitHub Actions workflow cannot add repository secrets through the connected GitHub interface. To enable the second independent feed, the repository owner must create a free abuse.ch Auth-Key and add it as the GitHub Actions repository secret named `URLHAUS_AUTH_KEY`. Until then, dual-feed threat deletion remains disabled; this is fail-closed by design.
 - Official URLhaus documentation: https://urlhaus.abuse.ch/api/ (Auth-Key required); see also the IANA root-zone reference already recorded in Section 17.
 - Next: continue App-by-App cross-format coverage checks and review security matches; do not change rule semantics or delete anything based on App category. Revalidate the next automatic run after any script/workflow changes.
+
+
+## 14. Verified V1.0 maintenance run (2026-11-27 15:02 UTC)
+
+- Run 46015832021 / job 140562599029 completed successfully at 14:26:12 UTC. All seven batches passed in order, 654 unique alphabetically sorted folders (100 x 6 + 54), 842 files, 4,335,128 rules, zero blockers and zero maintenance changes. Review counts 30/845/7/10/5/1/4 (902 total). No maintenance commits in inspected history; all seven reports confirm personal_unchanged=true. Exact exclusion checks passed each batch (0 entries enforced).
+- Downloaded artifact 15205653215: 22 files, seven maintenance JSON, seven preflight JSON, seven Markdown and status file. All maintenance reports show OpenPhish 280, URLhaus 0, coverage incomplete; no threat deletions. URLHAUS_AUTH_KEY missing. Do not interpret green status as complete security coverage.
+- Code inspection found parent suffix review checks only corroborated hosts, so single-feed suffix hits are silently omitted (all seven maintenance reports show zero review findings). URLhaus hostfile parser takes first token rather than hostname in IP-prefixed rows. Block/filter classification is path-substring based and should be replaced by explicit reviewed routing scope before enabling threat deletion. Cached author format-aware gap-fill remains unimplemented.
+- Proposed next upgrade (not applied): validate feed schema and counts, review suffix hits against union of feeds, keep exact-host dual-feed deletion disabled unless both valid and explicit routing scope; add fixture tests, fail on missing expected reports, compare protected paths and batch-scoped diff before push. Implement cached-only format comparison in report-only mode first, then approved compatible additions. No new author fetch, no rule semantics change, no permission expansion. Section 7 and historical category-specific statements are superseded by sections 12–14. Resume with these outstanding issues, not completed batch verification.
