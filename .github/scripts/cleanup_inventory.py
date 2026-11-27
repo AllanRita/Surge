@@ -36,6 +36,50 @@ SOURCE_TARGETS={
 }
 KNOWN_FINANCIAL={"alipay","boc","bocom","ccb","ceb","cgb","cmb","icbc","psbc","paypal","stripe","unionpay","visa","pingan","paypay","wechatpay","applepay","googlepay","samsungpay","mastercard","amex","americanexpress","discover","jcb","paytm","phonepe","cashapp","venmo","payoneer","revolut","wise","adyen","worldpay","klarna","afterpay","affirm","square","paddle","checkout","wallet"}
 FINANCIAL_RE=re.compile(r"(?i)(?:[a-z0-9_-]+\.)*(?:paypal\.com|alipay\.com|stripe\.com|unionpay\.com|visa\.com|icbc\.com\.cn|boc\.cn|paypay\.ne\.jp)$")
+SHARED_HOSTING_SUFFIXES={
+ "cloudfront.net":"shared CDN / Amazon CloudFront",
+ "amazonaws.com":"shared cloud infrastructure / AWS",
+ "pages.dev":"Cloudflare Pages shared hosting",
+ "workers.dev":"Cloudflare Workers shared hosting",
+ "trycloudflare.com":"Cloudflare temporary tunnel",
+ "gitbook.io":"shared documentation hosting",
+ "github.io":"GitHub Pages shared hosting",
+ "gitlab.io":"GitLab Pages shared hosting",
+ "bitbucket.io":"Bitbucket Pages hosting",
+ "blogspot.com":"Blogger shared hosting",
+ "web.app":"Firebase Hosting",
+ "firebaseapp.com":"Firebase Hosting",
+ "appspot.com":"Google App Engine hosting",
+ "vercel.app":"Vercel shared hosting",
+ "netlify.app":"Netlify shared hosting",
+ "herokuapp.com":"Heroku shared hosting",
+ "onrender.com":"Render shared hosting",
+ "fly.dev":"Fly.io shared hosting",
+ "railway.app":"Railway shared hosting",
+ "replit.app":"Replit shared hosting",
+ "replit.dev":"Replit shared hosting",
+ "glitch.me":"Glitch shared hosting",
+ "surge.sh":"Surge.sh shared hosting",
+ "azurewebsites.net":"Azure App Service hosting",
+ "azurestaticapps.net":"Azure Static Web Apps",
+ "cloudapp.net":"Azure Cloud Services",
+ "azureedge.net":"Azure CDN",
+ "azurefd.net":"Azure Front Door shared CDN",
+ "weebly.com":"Weebly shared website hosting",
+ "duckdns.org":"dynamic DNS",
+ "no-ip.org":"dynamic DNS",
+ "ddns.net":"dynamic DNS",
+ "dynu.net":"Dynu dynamic DNS",
+ "eu.org":"subdomain hosting",
+ "is.gd":"URL shortener",
+ "bit.ly":"URL shortener",
+ "tinyurl.com":"URL shortener",
+ "t.co":"URL shortener",
+ "cutt.ly":"URL shortener",
+ "rebrand.ly":"URL shortener",
+ "shorturl.at":"URL shortener",
+ "linktr.ee":"link-in-bio / redirect platform",
+}
 ALLOWED={"DOMAIN","DOMAIN-SUFFIX","DOMAIN-KEYWORD","DOMAIN-WILDCARD","DOMAIN-REGEX","IP-CIDR","IP-CIDR6","IP-ASN","GEOIP","USER-AGENT","URL-REGEX","PROCESS-NAME","DEST-PORT","SRC-PORT","SRC-IP","IN-PORT","PROTOCOL","AND","OR","NOT","RULE-SET","DOMAIN-SET","SUBNET","DEVICE-NAME","HOST","HOST-SUFFIX","HOST-KEYWORD"}
 DOMAIN_TYPES={"DOMAIN","DOMAIN-SUFFIX","HOST","HOST-SUFFIX"}; IP_TYPES={"IP-CIDR","IP-CIDR6"}
 
@@ -149,7 +193,7 @@ def main():
   return out
  urlhaus_suffix=suffix_index(urlhaus); openphish_suffix=suffix_index(openphish)
  files=sorted(p for p in ROOT.rglob("*.list") if p.is_file()); folders=defaultdict(list); rawhash=defaultdict(list); payloadhash=defaultdict(list)
- file_rows=[]; findings=Counter(); examples=defaultdict(list); financial=[]; threat=[]; threat_scope=Counter(); domain_count=0
+ file_rows=[]; findings=Counter(); examples=defaultdict(list); financial=[]; threat=[]; threat_scope=Counter(); domain_count=0; shared_hosting_hits=defaultdict(lambda:{"count":0,"paths":set(),"folders":set(),"examples":[]})
  for path in files:
   rel=path.relative_to(ROOT); folder=str(rel.parent); folders[folder].append(path)
   raw=path.read_bytes(); row_rules=rules(path); payload="\n".join(row_rules).encode()
@@ -201,6 +245,12 @@ def main():
      if len(examples["invalid_network"])<30: examples["invalid_network"].append(f"{rel}:{num}: {s[:140]}")
    if kind in DOMAIN_TYPES:
     domain=value.lower().rstrip("."); domain_count+=1
+    if kind in {"DOMAIN-SUFFIX","HOST-SUFFIX"} and domain in SHARED_HOSTING_SUFFIXES:
+     hit=shared_hosting_hits[domain]
+     hit["count"]+=1
+     hit["paths"].add(str(rel))
+     hit["folders"].add(str(rel.parent))
+     if len(hit["examples"])<20: hit["examples"].append(f"{rel}:{num}: {s}")
     if not re.fullmatch(r"[a-z0-9_-]+(?:\.[a-z0-9_-]+)*",domain):
      findings["invalid_domain"]+=1
      if len(examples["invalid_domain"])<30: examples["invalid_domain"].append(f"{rel}:{num}: {s[:140]}")
@@ -232,10 +282,11 @@ def main():
  data={
   "generated_utc":datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
   "scope":"Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
-  "summary":{"rule_files":len(files),"app_or_category_folders":len(folders),"top_level_folders":len({p.relative_to(ROOT).parts[0] for p in files}),"total_rule_bytes":sum(p.stat().st_size for p in files),"multi_file_folders":len(multi),"exact_raw_duplicate_file_groups":len(rawdups),"same_rule_payload_file_groups":len(payloaddups),"duplicate_rule_lines":findings["duplicate_rule_lines"],"domain_rule_count":domain_count,"personal_files_seen_not_modified":len(personal),"bank_payment_app_folders_found":len(financial_folders)},
+  "summary":{"rule_files":len(files),"app_or_category_folders":len(folders),"top_level_folders":len({p.relative_to(ROOT).parts[0] for p in files}),"total_rule_bytes":sum(p.stat().st_size for p in files),"multi_file_folders":len(multi),"exact_raw_duplicate_file_groups":len(rawdups),"same_rule_payload_file_groups":len(payloaddups),"duplicate_rule_lines":findings["duplicate_rule_lines"],"domain_rule_count":domain_count,"personal_files_seen_not_modified":len(personal),"bank_payment_app_folders_found":len(financial_folders),"shared_hosting_suffixes_found":len(shared_hosting_hits),"shared_hosting_suffix_rule_occurrences":sum(x["count"] for x in shared_hosting_hits.values())},
   "bank_payment_app_folders":financial_folders,"personal_files_seen_not_modified":personal,"multi_format_folders":multi,
   "exact_raw_duplicate_file_groups":rawdups,"same_rule_payload_file_groups":payloaddups,"alias_candidates":aliases,
   "cached_source_coverage":coverage,"static_security_findings":dict(findings),"static_security_examples":{k:v[:50] for k,v in examples.items()},"financial_domain_matches_not_deleted":financial[:500],
+  "shared_hosting_suffix_matches":[{"suffix":suffix,"classification":SHARED_HOSTING_SUFFIXES[suffix],"rule_occurrences":hit["count"],"folders":sorted(hit["folders"]),"files":sorted(hit["paths"]),"examples":hit["examples"]} for suffix,hit in sorted(shared_hosting_hits.items())],
   "reputation_feed_status":{"urlhaus_domains":len(urlhaus),"openphish_domains":len(openphish),"feeds_available":bool(urlhaus or openphish),"urlhaus_file_present":bool(a.urlhaus and Path(a.urlhaus).is_file()),"openphish_file_present":bool(a.openphish and Path(a.openphish).is_file()),"urlhaus_status":"loaded" if urlhaus else "not loaded; authenticated hostfile export requires the URLHAUS_AUTH_KEY repository secret","note":"Reputation matches are review flags, not automatic deletions. Matches in block/filter lists may be expected."},
   "reputation_matches":threat,"reputation_match_counts_by_scope":dict(threat_scope),"files":file_rows,
  }
@@ -248,6 +299,10 @@ def main():
   for c in g["comparisons"]:
    md.append(f"- {c['format']}: canonical {c['canonical_lines']} lines; aliases {c['alias_lines']} lines; union {c['union_unique_lines']} unique; new semantic lines {c['new_semantic_lines']}")
    for x in c["new_examples"][:10]: md.append(f"  - {x}")
+ md += ["","## Known shared-hosting, dynamic-DNS, and URL-shortener suffixes","","This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upstream lists. It is a review inventory, not an automatic deletion list; a platform suffix may be intentional in a particular scenario.","","| Suffix | Classification | Rule occurrences | Folders |","|---|---|---:|---|"]
+ for x in data["shared_hosting_suffix_matches"]:
+  md.append(f"| {x['suffix']} | {x['classification']} | {x['rule_occurrences']} | {', '.join(x['folders'])} |")
+ if not data["shared_hosting_suffix_matches"]: md.append("| — | No curated suffix matches | 0 | — |")
  md += ["","## Cached author-source coverage","","| Cached source | Target | Source rules | Exact | Parent suffix | IP covered | Missing |","|---|---|---:|---:|---:|---:|---:|"]
  for r in coverage:
   if r.get("error"): md.append(f"| {r['source']} | {r['target']} | — | — | — | — | {r['error']} |")
@@ -271,20 +326,7 @@ def main():
  # Separate review of threat-feed matches. A parent suffix match means a known
  # phishing/malware host exists beneath the suffix; it does not mean the suffix
  # itself is malicious or should be deleted.
- shared_hosting={
-  "cloudfront.net":"Amazon CloudFront shared CDN",
-  "pages.dev":"Cloudflare Pages shared hosting",
-  "workers.dev":"Cloudflare Workers shared hosting",
-  "gitbook.io":"GitBook hosted content",
-  "github.io":"GitHub Pages shared hosting",
-  "blogspot.com":"Blogger shared hosting",
-  "eu.org":"EU.org subdomain hosting",
-  "web.app":"Firebase Hosting",
-  "duckdns.org":"DuckDNS dynamic DNS",
-  "is.gd":"URL shortener",
-  "netlify.app":"Netlify shared hosting",
-  "vercel.app":"Vercel shared hosting",
- }
+ shared_hosting=SHARED_HOSTING_SUFFIXES
  grouped=defaultdict(lambda:{"matched_domains":set(),"paths":set(),"feeds":set(),"scopes":set()})
  for item in threat:
   key=item["rule"]
@@ -323,6 +365,10 @@ def main():
   else:
    sec.append("- Classification: app/routing match; verify that the domain is genuinely required by the App and is not an overly broad shared service.")
   sec.append("")
+ sec += ["","## Known shared-hosting suffixes in the rule library","","The curated suffix scan covers all upstream rule files, not only threat-feed matches. These are broad multi-tenant or shared-platform namespaces; presence is not proof of maliciousness and no rule is automatically removed.","","| Suffix | Classification | Rule occurrences | Folders |","|---|---|---:|---|"]
+ for x in data["shared_hosting_suffix_matches"]:
+  sec.append(f"| {x['suffix']} | {x['classification']} | {x['rule_occurrences']} | {', '.join(x['folders'])} |")
+ if not data["shared_hosting_suffix_matches"]: sec.append("| — | No curated suffix matches | 0 | — |")
  sec += ["## Stale/private single-label suffixes",""]
  sec += [f"- {x}" for x in examples.get("stale_or_private_root_suffix",[])] if examples.get("stale_or_private_root_suffix") else ["- None detected or IANA TLD feed unavailable."]
  sec += ["","## Financial-service domains","",

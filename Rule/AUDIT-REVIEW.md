@@ -94,42 +94,46 @@ The 19 old alias folders were physically removed after the canonical union was v
 
 No broad-domain or financial-domain rule was automatically deleted. Keep potentially useful rules pending scenario-aware and live behavior verification.
 
-## OpenPhish shared-hosting review (2026-11-27)
+## OpenPhish shared-hosting review (2026-11-27; refreshed feed snapshot)
 
-The current cleanup inventory contains 61 rule-to-feed match rows. These collapse to 12 distinct matched hostnames and 12 distinct suffix rules; repeated rows come from the same rule being present in Standard/Resolve variants or aggregate lists. They are not 61 independent malicious parent domains.
+The refreshed OpenPhish comparison contains **77 rule-to-feed match rows**, representing **15 distinct matched hostnames under 15 suffix rules**. Repeated rows come from the same suffix appearing in Standard/Resolve variants or aggregate lists; they are not 77 independent malicious parent domains. All 77 matches are classified as app/routing scope.
 
-| Suffix rule | Matched host example | Match rows | Current rule context |
+| Suffix rule | Matched host example | Match rows | Rule folders |
 |---|---|---:|---|
-| `blogspot.com` | `www.infoundianshopee98.blogspot.com` | 4 | Google, Global |
-| `cloudfront.net` | `d33wubrfki0l68.cloudfront.net` | 10 | Amazon, Global, GlobalMedia, Proxy, ProxyLite |
-| `duckdns.org` | `www.yeninesilhizli.duckdns.org` | 6 | NaSDDNS, Global, Proxy |
-| `eu.org` | `five.seafn.eu.org` | 2 | Global |
-| `gitbook.io` | `robinhxnoodlogin.gitbook.io` | 5 | GitBook, Global, Proxy |
-| `github.io` | `sugosh1.github.io` | 3 | GitHub, Global |
-| `is.gd` | `is.gd` | 6 | Global, Proxy, ProxyLite |
-| `netlify.app` | `netflis-gpt.netlify.app` | 4 | Global, Proxy |
-| `pages.dev` | `5ywlo-sem-pief-p3s1m-21-10-2026-aa.pages.dev` | 6 | Cloudflare, Global, Proxy |
-| `vercel.app` | `www.netflix-clone-rust-zeta.vercel.app` | 5 | Vercel, Global, Proxy |
-| `web.app` | `netflix-bobby.web.app` | 4 | Google, Global |
-| `workers.dev` | `huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev` | 6 | Cloudflare, Global, Proxy |
+| `amazonaws.com` | `n8turz.s3.us-east-1.amazonaws.com` | 10 | Amazon, Global, GlobalMedia, Proxy, ProxyLite |
+| `cloudfront.net` | `d1by761p31t71v.cloudfront.net` | 10 | Amazon, Global, GlobalMedia, Proxy, ProxyLite |
+| `pages.dev` | `brige-traezor-io.pages.dev` | 6 | Cloudflare, Global, Proxy |
+| `trycloudflare.com` | `drainage-possess-unavailable-focal.trycloudflare.com` | 4 | Cloudflare, Global |
+| `workers.dev` | `substantiating-proof-f2d1.63186834.workers.dev` | 6 | Cloudflare, Global, Proxy |
+| `gitbook.io` | `matumasklogie.gitbook.io` | 5 | GitBook, Global, Proxy |
+| `github.io` | `wargreymon9.github.io` | 3 | GitHub, Global |
+| `azurefd.net` | `35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net` | 3 | Global, Microsoft |
+| `blogspot.com` | `rejekishopee23.blogspot.com` | 4 | Google, Global |
+| `eu.org` | `wisayq9065.embih.eu.org` | 2 | Global |
+| `azurewebsites.net` | `forrit-tb-csmr-prod-dev-02.azurewebsites.net` | 5 | Global, Microsoft, Proxy |
+| `duckdns.org` | `hizliyapiyoruzherseyi.duckdns.org` | 6 | NaSDDNS, Global, Proxy |
+| `netlify.app` | `boisterous-sprite-d1fe49.netlify.app` | 4 | Global, Proxy |
+| `vercel.app` | `www.vakifbank.vercel.app` | 5 | Global, Proxy, Vercel |
+| `weebly.com` | `www.xhdfh7hfnrrjjjff.weebly.com` | 4 | Global, Proxy |
 
-### App-specific shared-hosting scope
+### App-specific shared-platform scope
 
-Eight shared-platform suffixes appear in six brand-named App rule sets:
+The refreshed matches place broad shared-platform suffixes in these named App folders:
 
-- Amazon: `cloudfront.net` (Standard and Resolve).
-- Cloudflare: `pages.dev` and `workers.dev` (Standard and Resolve).
+- Amazon: `amazonaws.com` and `cloudfront.net`.
+- Cloudflare: `pages.dev`, `trycloudflare.com`, and `workers.dev`.
 - GitBook: `gitbook.io`.
 - GitHub: `github.io`.
+- Microsoft: `azurefd.net` and `azurewebsites.net`.
+- Google: `blogspot.com`.
 - Vercel: `vercel.app`.
-- Google: `blogspot.com` and `web.app` (Standard and Resolve).
 
-These are platform-owned namespaces, but they are shared across many customer projects or tenants. An OpenPhish match on one tenant hostname does not prove that the parent suffix is malicious or that the parent rule should be deleted. At the same time, retaining a broad suffix in an App-specific policy group can route unrelated tenants through that App's selected country/region.
+These are multi-tenant cloud, hosting, CDN, or temporary-tunnel namespaces. A phishing hostname under one tenant does not prove the parent suffix is malicious, but a broad suffix in an App policy group can route unrelated tenants through that App's selected country/region.
 
 ### Disposition
 
-- No parent suffix was deleted or rewritten. The current evidence confirms multi-tenant scope, but does not establish the user's desired routing for every tenant; keep the existing rules pending an explicit policy decision rather than silently changing App routing.
-- The exact matched hostnames remain audit evidence only; they were not added to an App routing list or a block list.
-- The other shared/utility suffixes (`duckdns.org`, `eu.org`, `is.gd`, and `netlify.app`) occur in DDNS, Global, Proxy, or ProxyLite contexts rather than a brand-named App folder; retain their current scenario separation.
-- URLhaus contributed no domains because its authenticated hostfile was unavailable without the repository secret `URLHAUS_AUTH_KEY`. This pass therefore used 278 OpenPhish domains only and is not a complete multi-feed reputation check.
-- No App rule file, scenario format, personal rule, or cached author-source file was modified during this manual review.
+- No parent suffix was deleted or rewritten. The rules remain pending scenario-aware routing review; no change is made solely from a feed match.
+- Exact matched hostnames remain audit evidence only and were not added to App routing or block lists.
+- The refreshed scan adds `amazonaws.com`, `trycloudflare.com`, `azurefd.net`, `azurewebsites.net`, and `weebly.com` to the known shared-platform review set.
+- URLhaus remains unavailable in this run because the repository secret `URLHAUS_AUTH_KEY` is not configured. The feed status is **not loaded**, not clean.
+- No new author rule sets were fetched, and no rule files were modified by this manual review.

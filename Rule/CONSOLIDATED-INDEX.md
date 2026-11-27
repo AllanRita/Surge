@@ -119,3 +119,8 @@ The repository does not contain the user's active Surge profile/configuration, s
 - `ClubhouseIP` remains separate from `Clubhouse`: its README specifies direct routing for the IP list and proxy routing for the Clubhouse domain list.
 - `DuoWan` and `HuanJu` remain separate. HuanJu's 20 rules are a subset of DuoWan's 27, but their READMEs describe distinct rule scopes; overlap alone is not sufficient reason to merge them.
 - The 18 cross-App overlap boundaries remain separate. Shared CDN, parent-company, login, or analytics domains do not establish that two folders represent one App.
+
+
+## Expanded shared-hosting audit
+
+The cleanup inventory now scans a curated set of shared CDN/hosting, dynamic-DNS, and URL-shortener suffixes across every upstream rule file, not only those suffixes that happen to match OpenPhish. The result is recorded in `CLEANUP-INVENTORY.json` and `CLEANUP-INVENTORY.md`, with the affected folders and rule occurrences. This is a review-only scan: no rule is automatically removed because a suffix is shared or multi-tenant.
