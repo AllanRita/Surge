@@ -3630,7 +3630,7 @@
       "path": "Amazon/Amazon.list",
       "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3646,7 +3646,7 @@
       "path": "Amazon/Amazon_Resolve.list",
       "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3654,7 +3654,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
+      "matched_domain": "bid39-kx4-1dcx-fl4fe-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3670,7 +3670,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3678,7 +3678,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
+      "matched_domain": "bid39-kx4-1dcx-fl4fe-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3694,7 +3694,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3702,7 +3702,7 @@
       "path": "GitBook/GitBook.list",
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3718,7 +3718,7 @@
       "path": "Global/Global_All.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
+      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3726,7 +3726,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3774,7 +3774,7 @@
       "path": "Global/Global_All.list",
       "line": 29514,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3790,7 +3790,7 @@
       "path": "Global/Global_All.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3806,7 +3806,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
+      "matched_domain": "bid39-kx4-1dcx-fl4fe-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3814,7 +3814,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "zweb-new-mail-adm.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3830,7 +3830,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3838,7 +3838,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
+      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3846,7 +3846,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3894,7 +3894,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 29514,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3910,7 +3910,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3926,7 +3926,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
+      "matched_domain": "bid39-kx4-1dcx-fl4fe-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3934,7 +3934,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "zweb-new-mail-adm.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3950,7 +3950,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3966,7 +3966,7 @@
       "path": "GlobalMedia/GlobalMedia_All.list",
       "line": 189,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3982,7 +3982,7 @@
       "path": "GlobalMedia/GlobalMedia_All_No_Resolve.list",
       "line": 189,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3990,7 +3990,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3998,7 +3998,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4006,7 +4006,7 @@
       "path": "Microsoft/Microsoft.list",
       "line": 86,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
+      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -4054,7 +4054,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 1202,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4070,7 +4070,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4086,7 +4086,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
+      "matched_domain": "bid39-kx4-1dcx-fl4fe-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4094,7 +4094,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "zweb-new-mail-adm.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4110,7 +4110,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4134,7 +4134,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 1202,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4150,7 +4150,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4166,7 +4166,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
+      "matched_domain": "bid39-kx4-1dcx-fl4fe-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4174,7 +4174,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "zweb-new-mail-adm.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4190,7 +4190,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4206,7 +4206,7 @@
       "path": "ProxyLite/ProxyLite.list",
       "line": 172,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4222,7 +4222,7 @@
       "path": "ProxyLite/ProxyLite_Resolve.list",
       "line": 172,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4230,7 +4230,7 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "zweb-new-mail-adm.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {
