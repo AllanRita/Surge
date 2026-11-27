@@ -398,3 +398,16 @@ Reviewed the current Apple folder and its two existing cached author snapshots. 
 - README format instructions are consistent with the actual file layout: use the All variants independently on supported Surge versions, or standard/Resolve plus the Domain set for the documented older-version mode.
 - Conclusion: Apple is structurally consistent, formats are intentional, and no changes are required. Do not collapse its five files into one or remove the DOMAIN-SET variant.
 - Next App review: proceed to BiliBili using its existing local files and the already-cached BiliBiliIntl snapshot; preserve Standard and Resolve as distinct formats.
+
+
+## 26. App-by-App review — BiliBili rule set (2026-11-28)
+
+Reviewed Rule/Upstream/BiliBili and the existing cached BiliBiliIntl author snapshot. No new sources were fetched and no rule entries were added or removed.
+
+- BiliBili.list and BiliBili_Resolve.list each contain 134 entries, all unique; both have the same type counts: DOMAIN 53, DOMAIN-SUFFIX 62, IP-CIDR 8, USER-AGENT 4, PROCESS-NAME 7.
+- The two files differ only by the no-resolve option on the same eight IP-CIDR rules. Preserve both formats.
+- README statistics were stale (reported 133 total and 6 PROCESS-NAME). Corrected to 134 total and 7 PROCESS-NAME; no rule contents changed.
+- Existing BiliBiliIntl snapshot contains five rules. Four are exact matches in the target; apm-misaka.biliapi.net is semantically covered by the existing DOMAIN-SUFFIX,biliapi.net rule. Therefore all five cached source rules are covered; no additions required.
+- The folder README already documents BiliBili as the single canonical App folder and BiliBiliIntl as a consolidated regional variant. Keep one folder and retain the regional domains in this unified App rule set; the user's country/region choice remains in the App policy group.
+- Conclusion: BiliBili rule content and format variants are consistent with the existing cached evidence. No rule-file changes required. README metadata corrected only.
+- Next App review: proceed to iQIYI using existing local files and any already-cached matching source metadata. Do not fetch new author sources.
