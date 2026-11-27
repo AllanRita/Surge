@@ -290,6 +290,9 @@ def main():
     if len(domain.split("."))<2:
      findings["single_label_suffix"]+=1
      if len(examples["single_label_suffix"])<50: examples["single_label_suffix"].append(f"{rel}:{num}: {s}")
+     if kind in {"DOMAIN-SUFFIX","HOST-SUFFIX"} and tlds and domain in tlds:
+      findings["bare_public_tld_suffix"]+=1
+      if len(examples["bare_public_tld_suffix"])<50: examples["bare_public_tld_suffix"].append(f"{rel}:{num}: {s}")
      if tlds and domain not in tlds:
       findings["stale_or_private_root_suffix"]+=1
       if len(examples["stale_or_private_root_suffix"])<50: examples["stale_or_private_root_suffix"].append(f"{rel}:{num}: {s}")
@@ -304,7 +307,7 @@ def main():
        threat_scope[scope]+=1
        threat_match_type[match_type]+=1
        if len(threat)<500: threat.append({"feed":feed_name,"scope":scope,"match_type":match_type,"path":str(rel),"line":num,"rule":s,"rule_domain":domain,"matched_domain":match})
- for key in ("hidden_control","invalid_native_filter","unsupported_or_missing_operand","ip_family_mismatch","catch_all_network","invalid_network","invalid_domain","stale_or_private_root_suffix","single_label_suffix","duplicate_rule_lines","recognized_native_filter","recognized_native_regex","recognized_native_domain"):
+ for key in ("hidden_control","invalid_native_filter","unsupported_or_missing_operand","ip_family_mismatch","catch_all_network","invalid_network","invalid_domain","stale_or_private_root_suffix","bare_public_tld_suffix","single_label_suffix","duplicate_rule_lines","recognized_native_filter","recognized_native_regex","recognized_native_domain"):
   findings.setdefault(key,0)
  financial_folders=[]
  for folder in folders:
@@ -324,7 +327,7 @@ def main():
  data={
   "generated_utc":datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
   "scope":"Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
-  "summary":{"rule_files":len(files),"app_or_category_folders":len(folders),"top_level_folders":len({p.relative_to(ROOT).parts[0] for p in files}),"total_rule_bytes":sum(p.stat().st_size for p in files),"multi_file_folders":len(multi),"exact_raw_duplicate_file_groups":len(rawdups),"same_rule_payload_file_groups":len(payloaddups),"duplicate_rule_lines":findings["duplicate_rule_lines"],"domain_rule_count":domain_count,"personal_files_seen_not_modified":len(personal),"bank_payment_app_folders_found":len(financial_folders),"finance_app_review_candidates":len(finance_review),"cached_author_source_count":len(coverage),"cached_author_source_rule_count":sum(x.get("source_rules",0) for x in coverage),"cached_author_source_missing_count":sum(x.get("missing_count",0) for x in coverage),"cached_author_source_format_target_count":sum(len(x.get("format_coverage",[])) for x in coverage),"cached_author_source_format_missing_count":sum(y.get("missing_count",0) for x in coverage for y in x.get("format_coverage",[])),"shared_hosting_suffixes_found":len(shared_hosting_hits),"shared_hosting_suffix_rule_occurrences":sum(x["count"] for x in shared_hosting_hits.values())},
+  "summary":{"rule_files":len(files),"app_or_category_folders":len(folders),"top_level_folders":len({p.relative_to(ROOT).parts[0] for p in files}),"total_rule_bytes":sum(p.stat().st_size for p in files),"multi_file_folders":len(multi),"exact_raw_duplicate_file_groups":len(rawdups),"same_rule_payload_file_groups":len(payloaddups),"duplicate_rule_lines":findings["duplicate_rule_lines"],"domain_rule_count":domain_count,"bare_public_tld_suffix_rule_occurrences":findings["bare_public_tld_suffix"],"personal_files_seen_not_modified":len(personal),"bank_payment_app_folders_found":len(financial_folders),"finance_app_review_candidates":len(finance_review),"cached_author_source_count":len(coverage),"cached_author_source_rule_count":sum(x.get("source_rules",0) for x in coverage),"cached_author_source_missing_count":sum(x.get("missing_count",0) for x in coverage),"cached_author_source_format_target_count":sum(len(x.get("format_coverage",[])) for x in coverage),"cached_author_source_format_missing_count":sum(y.get("missing_count",0) for x in coverage for y in x.get("format_coverage",[])),"shared_hosting_suffixes_found":len(shared_hosting_hits),"shared_hosting_suffix_rule_occurrences":sum(x["count"] for x in shared_hosting_hits.values())},
   "bank_payment_app_folders":financial_folders,"finance_app_review_candidates":finance_review,"personal_files_seen_not_modified":personal,"multi_format_folders":multi,
   "exact_raw_duplicate_file_groups":rawdups,"same_rule_payload_file_groups":payloaddups,"alias_candidates":aliases,
   "cached_source_coverage":coverage,"cached_source_format_coverage":[{"source":x["source"],**y} for x in coverage for y in x.get("format_coverage",[])],"static_security_findings":dict(findings),"static_security_examples":{k:v[:50] for k,v in examples.items()},"financial_domain_matches_not_deleted":financial[:500],
@@ -361,6 +364,7 @@ def main():
  md += ["","## Static security checks",""]
  for k,v in sorted(findings.items()): md.append(f"- {k}: {v}")
  for x in examples.get("unsupported_or_missing_operand",[])[:30]: md.append(f"  - {x}")
+ for x in examples.get("bare_public_tld_suffix",[])[:50]: md.append(f"  - IANA public-TLD suffix (broad match): {x}")
  for x in examples.get("invalid_domain",[])[:30]: md.append(f"  - {x}")
  for x in examples.get("invalid_network",[])[:30]: md.append(f"  - {x}")
  md += ["","- Detailed threat-feed and broad shared-hosting review: see SECURITY-REVIEW.md.",f"- Financial-domain matches: {len(financial)} (review only; not deleted)",f"- URLhaus domains loaded: {len(urlhaus)}",f"- URLhaus status: {data['reputation_feed_status']['urlhaus_status']}",f"- OpenPhish domains loaded: {len(openphish)}",f"- OpenPhish status: {data['reputation_feed_status']['openphish_status']}",f"- Reputation matches shown: {len(threat)} (max 500); scope counts: {dict(threat_scope)}",f"- Match type counts: {dict(threat_match_type)}","- Exact-domain matches and parent-suffix coverage matches are reported separately. A parent-suffix hit means a feed-listed host exists beneath a broad suffix; it does not mean the suffix root itself is malicious.","- Reputation-feed matches are review flags, not automatic deletions. Matches in block/filter lists may be intentional; app/routing matches need manual review.",""]
@@ -422,7 +426,9 @@ def main():
  for x in data["shared_hosting_suffix_matches"]:
   sec.append(f"| {x['suffix']} | {x['classification']} | {x['rule_occurrences']} | {', '.join(x['folders'])} |")
  if not data["shared_hosting_suffix_matches"]: sec.append("| — | No curated suffix matches | 0 | — |")
- sec += ["## Stale/private single-label suffixes",""]
+ sec += ["","## Bare IANA public-TLD suffix rules","",f"- Rule occurrences: {findings['bare_public_tld_suffix']}","- These operands are valid IANA top-level domains, but a suffix rule at the TLD root can match every domain beneath that TLD. They are review-only; no rules are automatically removed."]
+ sec += [f"- {x}" for x in examples.get("bare_public_tld_suffix",[])] if examples.get("bare_public_tld_suffix") else ["- None found."]
+ sec += ["","## Stale/private single-label suffixes",""]
  sec += [f"- {x}" for x in examples.get("stale_or_private_root_suffix",[])] if examples.get("stale_or_private_root_suffix") else ["- None detected or IANA TLD feed unavailable."]
  sec += ["","## Financial-service domains","",
   f"- Financial-domain rule matches found: {len(financial)}",
