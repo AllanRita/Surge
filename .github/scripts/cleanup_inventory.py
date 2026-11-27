@@ -133,6 +133,14 @@ def main():
  ap=argparse.ArgumentParser(); ap.add_argument("--iana-tlds"); ap.add_argument("--urlhaus"); ap.add_argument("--openphish"); a=ap.parse_args()
  tlds={x.strip().lower() for x in lines(Path(a.iana_tlds)) if x.strip() and not x.startswith("#")} if a.iana_tlds and Path(a.iana_tlds).is_file() else set()
  urlhaus=feed_domains(a.urlhaus,"hosts"); openphish=feed_domains(a.openphish,"url")
+ def suffix_index(domains):
+  out={}
+  for bad in domains:
+   parts=bad.split(".")
+   for i in range(len(parts)):
+    out.setdefault(".".join(parts[i:]),bad)
+  return out
+ urlhaus_suffix=suffix_index(urlhaus); openphish_suffix=suffix_index(openphish)
  files=sorted(p for p in ROOT.rglob("*.list") if p.is_file()); folders=defaultdict(list); rawhash=defaultdict(list); payloadhash=defaultdict(list)
  file_rows=[]; findings=Counter(); examples=defaultdict(list); financial=[]; threat=[]; threat_scope=Counter(); domain_count=0
  for path in files:
@@ -173,9 +181,8 @@ def main():
      if len(examples["single_label_suffix"])<50: examples["single_label_suffix"].append(f"{rel}:{num}: {s}")
      if tlds and domain not in tlds: findings["stale_or_private_root_suffix"]+=1
     if FINANCIAL_RE.fullmatch(domain): financial.append(f"{rel}:{num}: {s}")
-    for feed_name,feed in (("URLhaus",urlhaus),("OpenPhish",openphish)):
-     match=None
-     if kind in {"DOMAIN-SUFFIX","HOST-SUFFIX"}: match=next((bad for bad in feed if bad==domain or bad.endswith("."+domain)),None)
+    for feed_name,feed,suffixes in (("URLhaus",urlhaus,urlhaus_suffix),("OpenPhish",openphish,openphish_suffix)):
+     if kind in {"DOMAIN-SUFFIX","HOST-SUFFIX"}: match=suffixes.get(domain)
      else: match=domain if domain in feed else None
      if match:
       scope="block_or_filter" if any(x in rel.parts for x in ("Block","Advertising","AdvertisingLite","AdvertisingTest","AdGuardSDNSFilter","Privacy","Hijacking")) else "app_or_routing"
