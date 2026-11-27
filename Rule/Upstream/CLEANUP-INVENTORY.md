@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 10:42 UTC
+Generated: 2026-11-27 10:45 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -19,7 +19,7 @@ Scope: existing rule files and cached source metadata only. No new rule authors 
 ## Bank/payment App folders
 
 This classifies dedicated App folders by folder name only. Financial-service domains inside other App or aggregate lists are not removed.
-- DiscoveryPlus
+- No dedicated bank/payment App folders found under Rule/Upstream. Rule/Personal/PayPay.list remains untouched.
 
 ## Same-App / regional alias candidates
 
@@ -27,85 +27,70 @@ This classifies dedicated App folders by folder name only. Financial-service dom
 - Candidate folders: AbemaTV
 - Present aliases: AbemaTV
 - Rationale: Same service under former/alternate name; prior union verified.
-- standard: canonical 29 lines; aliases 29 lines; union 29 unique; new exact lines 0
+- standard: canonical 29 lines; aliases 29 lines; union 29 unique; new semantic lines 0
 ### Gemini
 - Candidate folders: BardAI
 - Present aliases: BardAI
 - Rationale: Same Google assistant service after renaming; prior union verified.
-- standard: canonical 14 lines; aliases 14 lines; union 14 unique; new exact lines 0
+- standard: canonical 14 lines; aliases 14 lines; union 14 unique; new semantic lines 0
 ### PChome
 - Candidate folders: PChomeTW
 - Present aliases: PChomeTW
 - Rationale: Same PChome Online service; prior union verified.
-- standard: canonical 5 lines; aliases 5 lines; union 5 unique; new exact lines 0
+- standard: canonical 5 lines; aliases 5 lines; union 5 unique; new semantic lines 0
 ### GlobalScholar
 - Candidate folders: Scholar
 - Present aliases: Scholar
 - Rationale: GlobalScholar README explicitly says Scholar is included; prior union adds cnki.net.
-- standard: canonical 231 lines; aliases 231 lines; union 231 unique; new exact lines 0
+- standard: canonical 231 lines; aliases 231 lines; union 231 unique; new semantic lines 0
 ### BiliBili
 - Candidate folders: BiliBiliIntl
 - Present aliases: BiliBiliIntl
 - Rationale: Same Bilibili service family with international variant.
-- standard: canonical 133 lines; aliases 6 lines; union 135 unique; new exact lines 2
-  - DOMAIN,apm-misaka.biliapi.net
+- standard: canonical 133 lines; aliases 6 lines; union 135 unique; new semantic lines 1
   - PROCESS-NAME,com.bstar.intl
 ### iQIYI
 - Candidate folders: iQIYIIntl
 - Present aliases: iQIYIIntl
 - Rationale: Same iQIYI service family with international variant.
-- resolve: canonical 63 lines; aliases 21 lines; union 80 unique; new exact lines 17
-  - DOMAIN,cache.video.iqiyi.com
-  - DOMAIN-SUFFIX,inter.iqiyi.com
-  - DOMAIN-SUFFIX,intl-rcd.iqiyi.com
-  - DOMAIN-SUFFIX,intl-subscription.iqiyi.com
-  - DOMAIN-SUFFIX,intl.iqiyi.com
+- resolve: canonical 63 lines; aliases 21 lines; union 80 unique; new semantic lines 11
   - IP-CIDR,104.85.165.17/32
-  - IP-CIDR,118.26.32.162/32
   - IP-CIDR,159.138.102.146/32
   - IP-CIDR,184.51.102.0/24
   - IP-CIDR,203.80.97.203/32
-- standard: canonical 63 lines; aliases 21 lines; union 80 unique; new exact lines 17
-  - DOMAIN,cache.video.iqiyi.com
-  - DOMAIN-SUFFIX,inter.iqiyi.com
-  - DOMAIN-SUFFIX,intl-rcd.iqiyi.com
-  - DOMAIN-SUFFIX,intl-subscription.iqiyi.com
-  - DOMAIN-SUFFIX,intl.iqiyi.com
+  - IP-CIDR,23.200.145.146/32
+  - IP-CIDR,23.210.215.186/32
+  - IP-CIDR,23.211.15.0/24
+  - IP-CIDR,23.219.172.0/24
+  - IP-CIDR,23.59.252.0/24
+  - PROCESS-NAME,com.iqiyi.i18n
+- standard: canonical 63 lines; aliases 21 lines; union 80 unique; new semantic lines 11
   - IP-CIDR,104.85.165.17/32,no-resolve
-  - IP-CIDR,118.26.32.162/32,no-resolve
   - IP-CIDR,159.138.102.146/32,no-resolve
   - IP-CIDR,184.51.102.0/24,no-resolve
   - IP-CIDR,203.80.97.203/32,no-resolve
+  - IP-CIDR,23.200.145.146/32,no-resolve
+  - IP-CIDR,23.210.215.186/32,no-resolve
+  - IP-CIDR,23.211.15.0/24,no-resolve
+  - IP-CIDR,23.219.172.0/24,no-resolve
+  - IP-CIDR,23.59.252.0/24,no-resolve
+  - PROCESS-NAME,com.iqiyi.i18n
 ### Hulu
 - Candidate folders: HuluUSA, HuluJP
 - Present aliases: HuluUSA, HuluJP
 - Rationale: Same Hulu app/service with US and Japan regional domains.
-- standard: canonical 59 lines; aliases 58 lines; union 59 unique; new exact lines 0
+- standard: canonical 59 lines; aliases 58 lines; union 59 unique; new semantic lines 0
 ### Telegram
 - Candidate folders: TelegramNL, TelegramSG, TelegramUS
 - Present aliases: TelegramNL, TelegramSG, TelegramUS
 - Rationale: Same Telegram app; regional files are IP-range subsets.
-- resolve: canonical 46 lines; aliases 10 lines; union 53 unique; new exact lines 7
-  - IP-CIDR,91.108.12.0/22
-  - IP-CIDR,91.108.16.0/22
-  - IP-CIDR,91.108.4.0/22
-  - IP-CIDR,91.108.56.0/22
-  - IP-CIDR,91.108.8.0/22
-  - IP-CIDR6,2001:b28:f23c::/48
-  - IP-CIDR6,2001:b28:f23d::/48
-- standard: canonical 46 lines; aliases 10 lines; union 53 unique; new exact lines 7
-  - IP-CIDR,91.108.12.0/22,no-resolve
-  - IP-CIDR,91.108.16.0/22,no-resolve
-  - IP-CIDR,91.108.4.0/22,no-resolve
-  - IP-CIDR,91.108.56.0/22,no-resolve
-  - IP-CIDR,91.108.8.0/22,no-resolve
-  - IP-CIDR6,2001:b28:f23c::/48,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,no-resolve
+- resolve: canonical 46 lines; aliases 10 lines; union 53 unique; new semantic lines 0
+- standard: canonical 46 lines; aliases 10 lines; union 53 unique; new semantic lines 0
 ### Amazon
 - Candidate folders: AmazonCN
 - Present aliases: AmazonCN
 - Rationale: Same Amazon service family with China-region domains.
-- standard: canonical 206 lines; aliases 47 lines; union 223 unique; new exact lines 17
+- standard: canonical 206 lines; aliases 47 lines; union 223 unique; new semantic lines 17
   - DOMAIN-SUFFIX,a2z.org.cn
   - DOMAIN-SUFFIX,amazonaws.cn
   - DOMAIN-SUFFIX,amazonwebservices.com.cn
@@ -120,49 +105,39 @@ This classifies dedicated App folders by folder name only. Financial-service dom
 - Candidate folders: HBOAsia, HBOHK, HBOUSA
 - Present aliases: HBOAsia, HBOHK, HBOUSA
 - Rationale: Same HBO/Max service family with regional rules.
-- standard: canonical 50 lines; aliases 56 lines; union 70 unique; new exact lines 20
-  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
-  - DOMAIN,bcbolthboa-a.akamaihd.net
-  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net
-  - DOMAIN,dai3fd1oh325y.cloudfront.net
-  - DOMAIN,hboasia1-i.akamaihd.net
-  - DOMAIN,hboasia2-i.akamaihd.net
-  - DOMAIN,hboasia3-i.akamaihd.net
-  - DOMAIN,hboasia4-i.akamaihd.net
-  - DOMAIN,hboasia5-i.akamaihd.net
-  - DOMAIN,hboasialive.akamaized.net
+- standard: canonical 50 lines; aliases 56 lines; union 70 unique; new semantic lines 5
+  - DOMAIN,s3-ap-southeast-1.amazonaws.com
+  - DOMAIN-KEYWORD,.hbogoasia.
+  - DOMAIN-SUFFIX,discomax.com
+  - DOMAIN-SUFFIX,h264.io
+  - USER-AGENT,HBO%20GO%20PROD*
 ### Cloudflare
 - Candidate folders: Cloudflarecn
 - Present aliases: Cloudflarecn
 - Rationale: Same Cloudflare service with China-specific domain subset.
-- standard: canonical 65 lines; aliases 14 lines; union 65 unique; new exact lines 0
+- standard: canonical 65 lines; aliases 14 lines; union 65 unique; new semantic lines 0
 ### Steam
 - Candidate folders: SteamCN
 - Present aliases: SteamCN
 - Rationale: Same Steam service family with China-region domains.
-- standard: canonical 69 lines; aliases 17 lines; union 86 unique; new exact lines 17
-  - DOMAIN,csgo.wmsj.cn
-  - DOMAIN,dl.steam.clngaa.com
-  - DOMAIN,dl.steam.ksyna.com
-  - DOMAIN,dota2.wmsj.cn
-  - DOMAIN,st.dl.bscstorage.net
-  - DOMAIN,st.dl.eccdnx.com
-  - DOMAIN,st.dl.pinyuncloud.com
-  - DOMAIN,steampipe.steamcontent.tnkjmec.com
-  - DOMAIN,steampowered.com.8686c.com
-  - DOMAIN,steamstatic.com.8686c.com
+- standard: canonical 69 lines; aliases 17 lines; union 86 unique; new semantic lines 5
+  - DOMAIN,xz.pphimalayanrt.com
+  - DOMAIN-SUFFIX,steamchina.com
+  - DOMAIN-SUFFIX,steamcontent.com
+  - DOMAIN-SUFFIX,steamserver.net
+  - DOMAIN-SUFFIX,steamusercontent.com
 ### Assassin'sCreed/Assassin'sCreed-Odyssey
 - Candidate folders: Game/Assassin'sCreed-Odyssey
 - Present aliases: Game/Assassin'sCreed-Odyssey
 - Rationale: Same game duplicated under two categories; Standard and Resolve stay separate.
-- resolve: canonical 15 lines; aliases 15 lines; union 15 unique; new exact lines 0
-- standard: canonical 15 lines; aliases 15 lines; union 15 unique; new exact lines 0
+- resolve: canonical 15 lines; aliases 15 lines; union 15 unique; new semantic lines 0
+- standard: canonical 15 lines; aliases 15 lines; union 15 unique; new semantic lines 0
 ### Assassin'sCreed/Assassin'sCreed-Origins
 - Candidate folders: Game/Assassin'sCreed-Origins
 - Present aliases: Game/Assassin'sCreed-Origins
 - Rationale: Same game duplicated under two categories; Standard and Resolve stay separate.
-- resolve: canonical 16 lines; aliases 16 lines; union 16 unique; new exact lines 0
-- standard: canonical 16 lines; aliases 16 lines; union 16 unique; new exact lines 0
+- resolve: canonical 16 lines; aliases 16 lines; union 16 unique; new semantic lines 0
+- standard: canonical 16 lines; aliases 16 lines; union 16 unique; new semantic lines 0
 
 ## Cached author-source coverage
 
@@ -190,17 +165,61 @@ This classifies dedicated App folders by folder name only. Financial-service dom
 - single_label_suffix: 912
 - stale_or_private_root_suffix: 17
 - unsupported_or_missing_operand: 1330757
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:8: .0.101tubeporn.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:9: .0.code.cotsta.ru
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:10: .0.cosmicnewspulse.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:11: .0.myikas.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:12: .0.net.easyjet.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:13: .0000.5clo0xmbf.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:14: .0000.833enmhob.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:15: .0006.4puuqeh41.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:16: .0012.4puuqeh41.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:17: .0013.79j68qav2.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:18: .0015.cosmicnewspulse.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:19: .0018.5clo0xmbf.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:20: .0019.833enmhob.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:21: .0019x.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:22: .0023.5clo0xmbf.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:23: .0024.seponews.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:24: .0025.4puuqeh41.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:25: .002777.xyz
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:26: .0033.5clo0xmbf.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:27: .0035.bestinterestings.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:28: .0038.79j68qav2.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:29: .0039.k3718qw08.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:30: .003store.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:31: .0040.5clo0xmbf.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:32: .00404850.xyz
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:33: .0041.5clo0xmbf.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:34: .0049.ohhmyoffers.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:35: .0054.4puuqeh41.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:36: .0058.4puuqeh41.com
+  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:37: .0072.4puuqeh41.com
 
 - Financial-domain matches: 160 (review only; not deleted)
 - URLhaus domains loaded: 0
 - OpenPhish domains loaded: 278
-- Reputation matches shown: 111 (max 500); scope counts: {'app_or_routing': 111}
+- Reputation matches shown: 61 (max 500); scope counts: {'app_or_routing': 61}
 - Reputation-feed matches are review flags, not automatic deletions. Matches in block/filter lists may be intentional; app/routing matches need manual review.
 
 ## Exact duplicate files
 
 ChinaMaxNoIP/ChinaMaxNoIP_All.list, ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list
 EasyPrivacy/EasyPrivacy_All.list, EasyPrivacy/EasyPrivacy_All_No_Resolve.list
+
+## Identical rule payloads with headers ignored
+
+Abema/Abema.list, AbemaTV/AbemaTV.list
+AdGuardSDNSFilter/AdGuardSDNSFilter_All.list, AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list
+Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list, Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list
+Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list, Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list
+Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list, Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list
+Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list, Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list
+BardAI/BardAI.list, Gemini/Gemini.list
+ChinaMaxNoIP/ChinaMaxNoIP_All.list, ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list
+EasyPrivacy/EasyPrivacy_All.list, EasyPrivacy/EasyPrivacy_All_No_Resolve.list
+GlobalScholar/GlobalScholar.list, Scholar/Scholar.list
+PChome/PChome.list, PChomeTW/PChomeTW.list
 
 ## Multi-format folders
 

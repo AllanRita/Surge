@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 10:42 UTC",
+  "generated_utc": "2026-11-27 10:45 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 853,
@@ -12,11 +12,9 @@
     "duplicate_rule_lines": 0,
     "domain_rule_count": 2691377,
     "personal_files_seen_not_modified": 3,
-    "bank_payment_app_folders_found": 1
+    "bank_payment_app_folders_found": 0
   },
-  "bank_payment_app_folders": [
-    "DiscoveryPlus"
-  ],
+  "bank_payment_app_folders": [],
   "personal_files_seen_not_modified": [
     "Rule/Personal/Grok.list",
     "Rule/Personal/PayPay.list",
@@ -1573,7 +1571,7 @@
           "canonical_lines": 29,
           "alias_lines": 29,
           "union_unique_lines": 29,
-          "new_exact_lines": 0,
+          "new_semantic_lines": 0,
           "new_examples": []
         }
       ]
@@ -1598,7 +1596,7 @@
           "canonical_lines": 14,
           "alias_lines": 14,
           "union_unique_lines": 14,
-          "new_exact_lines": 0,
+          "new_semantic_lines": 0,
           "new_examples": []
         }
       ]
@@ -1623,7 +1621,7 @@
           "canonical_lines": 5,
           "alias_lines": 5,
           "union_unique_lines": 5,
-          "new_exact_lines": 0,
+          "new_semantic_lines": 0,
           "new_examples": []
         }
       ]
@@ -1648,7 +1646,7 @@
           "canonical_lines": 231,
           "alias_lines": 231,
           "union_unique_lines": 231,
-          "new_exact_lines": 0,
+          "new_semantic_lines": 0,
           "new_examples": []
         }
       ]
@@ -1673,9 +1671,8 @@
           "canonical_lines": 133,
           "alias_lines": 6,
           "union_unique_lines": 135,
-          "new_exact_lines": 2,
+          "new_semantic_lines": 1,
           "new_examples": [
-            "DOMAIN,apm-misaka.biliapi.net",
             "PROCESS-NAME,com.bstar.intl"
           ]
         }
@@ -1701,15 +1698,9 @@
           "canonical_lines": 63,
           "alias_lines": 21,
           "union_unique_lines": 80,
-          "new_exact_lines": 17,
+          "new_semantic_lines": 11,
           "new_examples": [
-            "DOMAIN,cache.video.iqiyi.com",
-            "DOMAIN-SUFFIX,inter.iqiyi.com",
-            "DOMAIN-SUFFIX,intl-rcd.iqiyi.com",
-            "DOMAIN-SUFFIX,intl-subscription.iqiyi.com",
-            "DOMAIN-SUFFIX,intl.iqiyi.com",
             "IP-CIDR,104.85.165.17/32",
-            "IP-CIDR,118.26.32.162/32",
             "IP-CIDR,159.138.102.146/32",
             "IP-CIDR,184.51.102.0/24",
             "IP-CIDR,203.80.97.203/32",
@@ -1731,15 +1722,9 @@
           "canonical_lines": 63,
           "alias_lines": 21,
           "union_unique_lines": 80,
-          "new_exact_lines": 17,
+          "new_semantic_lines": 11,
           "new_examples": [
-            "DOMAIN,cache.video.iqiyi.com",
-            "DOMAIN-SUFFIX,inter.iqiyi.com",
-            "DOMAIN-SUFFIX,intl-rcd.iqiyi.com",
-            "DOMAIN-SUFFIX,intl-subscription.iqiyi.com",
-            "DOMAIN-SUFFIX,intl.iqiyi.com",
             "IP-CIDR,104.85.165.17/32,no-resolve",
-            "IP-CIDR,118.26.32.162/32,no-resolve",
             "IP-CIDR,159.138.102.146/32,no-resolve",
             "IP-CIDR,184.51.102.0/24,no-resolve",
             "IP-CIDR,203.80.97.203/32,no-resolve",
@@ -1777,7 +1762,7 @@
           "canonical_lines": 59,
           "alias_lines": 58,
           "union_unique_lines": 59,
-          "new_exact_lines": 0,
+          "new_semantic_lines": 0,
           "new_examples": []
         }
       ]
@@ -1808,16 +1793,8 @@
           "canonical_lines": 46,
           "alias_lines": 10,
           "union_unique_lines": 53,
-          "new_exact_lines": 7,
-          "new_examples": [
-            "IP-CIDR,91.108.12.0/22",
-            "IP-CIDR,91.108.16.0/22",
-            "IP-CIDR,91.108.4.0/22",
-            "IP-CIDR,91.108.56.0/22",
-            "IP-CIDR,91.108.8.0/22",
-            "IP-CIDR6,2001:b28:f23c::/48",
-            "IP-CIDR6,2001:b28:f23d::/48"
-          ]
+          "new_semantic_lines": 0,
+          "new_examples": []
         },
         {
           "format": "standard",
@@ -1830,16 +1807,8 @@
           "canonical_lines": 46,
           "alias_lines": 10,
           "union_unique_lines": 53,
-          "new_exact_lines": 7,
-          "new_examples": [
-            "IP-CIDR,91.108.12.0/22,no-resolve",
-            "IP-CIDR,91.108.16.0/22,no-resolve",
-            "IP-CIDR,91.108.4.0/22,no-resolve",
-            "IP-CIDR,91.108.56.0/22,no-resolve",
-            "IP-CIDR,91.108.8.0/22,no-resolve",
-            "IP-CIDR6,2001:b28:f23c::/48,no-resolve",
-            "IP-CIDR6,2001:b28:f23d::/48,no-resolve"
-          ]
+          "new_semantic_lines": 0,
+          "new_examples": []
         }
       ]
     },
@@ -1863,7 +1832,7 @@
           "canonical_lines": 206,
           "alias_lines": 47,
           "union_unique_lines": 223,
-          "new_exact_lines": 17,
+          "new_semantic_lines": 17,
           "new_examples": [
             "DOMAIN-SUFFIX,a2z.org.cn",
             "DOMAIN-SUFFIX,amazonaws.cn",
@@ -1912,24 +1881,9 @@
           "canonical_lines": 50,
           "alias_lines": 56,
           "union_unique_lines": 70,
-          "new_exact_lines": 20,
+          "new_semantic_lines": 5,
           "new_examples": [
-            "DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com",
-            "DOMAIN,bcbolthboa-a.akamaihd.net",
-            "DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net",
-            "DOMAIN,dai3fd1oh325y.cloudfront.net",
-            "DOMAIN,hboasia1-i.akamaihd.net",
-            "DOMAIN,hboasia2-i.akamaihd.net",
-            "DOMAIN,hboasia3-i.akamaihd.net",
-            "DOMAIN,hboasia4-i.akamaihd.net",
-            "DOMAIN,hboasia5-i.akamaihd.net",
-            "DOMAIN,hboasialive.akamaized.net",
-            "DOMAIN,hbogoprod-vod.akamaized.net",
-            "DOMAIN,hbolb.onwardsmg.com",
-            "DOMAIN,hbounify-prod.evergent.com",
-            "DOMAIN,players.brightcove.net",
             "DOMAIN,s3-ap-southeast-1.amazonaws.com",
-            "DOMAIN,wmff.warnermediacdn.com",
             "DOMAIN-KEYWORD,.hbogoasia.",
             "DOMAIN-SUFFIX,discomax.com",
             "DOMAIN-SUFFIX,h264.io",
@@ -1958,7 +1912,7 @@
           "canonical_lines": 65,
           "alias_lines": 14,
           "union_unique_lines": 65,
-          "new_exact_lines": 0,
+          "new_semantic_lines": 0,
           "new_examples": []
         }
       ]
@@ -1983,21 +1937,9 @@
           "canonical_lines": 69,
           "alias_lines": 17,
           "union_unique_lines": 86,
-          "new_exact_lines": 17,
+          "new_semantic_lines": 5,
           "new_examples": [
-            "DOMAIN,csgo.wmsj.cn",
-            "DOMAIN,dl.steam.clngaa.com",
-            "DOMAIN,dl.steam.ksyna.com",
-            "DOMAIN,dota2.wmsj.cn",
-            "DOMAIN,st.dl.bscstorage.net",
-            "DOMAIN,st.dl.eccdnx.com",
-            "DOMAIN,st.dl.pinyuncloud.com",
-            "DOMAIN,steampipe.steamcontent.tnkjmec.com",
-            "DOMAIN,steampowered.com.8686c.com",
-            "DOMAIN,steamstatic.com.8686c.com",
-            "DOMAIN,wmsjsteam.com",
             "DOMAIN,xz.pphimalayanrt.com",
-            "DOMAIN-SUFFIX,cm.steampowered.com",
             "DOMAIN-SUFFIX,steamchina.com",
             "DOMAIN-SUFFIX,steamcontent.com",
             "DOMAIN-SUFFIX,steamserver.net",
@@ -2026,7 +1968,7 @@
           "canonical_lines": 15,
           "alias_lines": 15,
           "union_unique_lines": 15,
-          "new_exact_lines": 0,
+          "new_semantic_lines": 0,
           "new_examples": []
         },
         {
@@ -2038,7 +1980,7 @@
           "canonical_lines": 15,
           "alias_lines": 15,
           "union_unique_lines": 15,
-          "new_exact_lines": 0,
+          "new_semantic_lines": 0,
           "new_examples": []
         }
       ]
@@ -2063,7 +2005,7 @@
           "canonical_lines": 16,
           "alias_lines": 16,
           "union_unique_lines": 16,
-          "new_exact_lines": 0,
+          "new_semantic_lines": 0,
           "new_examples": []
         },
         {
@@ -2075,7 +2017,7 @@
           "canonical_lines": 16,
           "alias_lines": 16,
           "union_unique_lines": 16,
-          "new_exact_lines": 0,
+          "new_semantic_lines": 0,
           "new_examples": []
         }
       ]
@@ -2314,6 +2256,92 @@
     "single_label_suffix": 912,
     "stale_or_private_root_suffix": 17
   },
+  "static_security_examples": {
+    "unsupported_or_missing_operand": [
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:8: .0.101tubeporn.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:9: .0.code.cotsta.ru",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:10: .0.cosmicnewspulse.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:11: .0.myikas.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:12: .0.net.easyjet.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:13: .0000.5clo0xmbf.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:14: .0000.833enmhob.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:15: .0006.4puuqeh41.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:16: .0012.4puuqeh41.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:17: .0013.79j68qav2.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:18: .0015.cosmicnewspulse.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:19: .0018.5clo0xmbf.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:20: .0019.833enmhob.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:21: .0019x.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:22: .0023.5clo0xmbf.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:23: .0024.seponews.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:24: .0025.4puuqeh41.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:25: .002777.xyz",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:26: .0033.5clo0xmbf.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:27: .0035.bestinterestings.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:28: .0038.79j68qav2.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:29: .0039.k3718qw08.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:30: .003store.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:31: .0040.5clo0xmbf.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:32: .00404850.xyz",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:33: .0041.5clo0xmbf.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:34: .0049.ohhmyoffers.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:35: .0054.4puuqeh41.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:36: .0058.4puuqeh41.com",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:37: .0072.4puuqeh41.com"
+    ],
+    "single_label_suffix": [
+      "Alibaba/Alibaba.list:10: DOMAIN-SUFFIX,alibaba",
+      "Alibaba/Alibaba.list:11: DOMAIN-SUFFIX,taobao",
+      "Alibaba/Alibaba.list:12: DOMAIN-SUFFIX,tmall",
+      "Alibaba/Alibaba_All.list:34: DOMAIN-SUFFIX,alibaba",
+      "Alibaba/Alibaba_All.list:1122: DOMAIN-SUFFIX,taobao",
+      "Alibaba/Alibaba_All.list:1158: DOMAIN-SUFFIX,tmall",
+      "Alibaba/Alibaba_All_No_Resolve.list:34: DOMAIN-SUFFIX,alibaba",
+      "Alibaba/Alibaba_All_No_Resolve.list:1122: DOMAIN-SUFFIX,taobao",
+      "Alibaba/Alibaba_All_No_Resolve.list:1158: DOMAIN-SUFFIX,tmall",
+      "Alibaba/Alibaba_Resolve.list:10: DOMAIN-SUFFIX,alibaba",
+      "Alibaba/Alibaba_Resolve.list:11: DOMAIN-SUFFIX,taobao",
+      "Alibaba/Alibaba_Resolve.list:12: DOMAIN-SUFFIX,tmall",
+      "Amazon/Amazon.list:35: DOMAIN-SUFFIX,amazon",
+      "Amazon/Amazon.list:117: DOMAIN-SUFFIX,aws",
+      "Amazon/Amazon.list:144: DOMAIN-SUFFIX,imdb",
+      "Amazon/Amazon.list:147: DOMAIN-SUFFIX,kindle",
+      "Amazon/Amazon.list:192: DOMAIN-SUFFIX,xn--cckwcxetd",
+      "Amazon/Amazon.list:193: DOMAIN-SUFFIX,xn--jlq480n2rg",
+      "Amazon/Amazon.list:194: DOMAIN-SUFFIX,yamaxun",
+      "Amazon/Amazon.list:198: DOMAIN-SUFFIX,zappos",
+      "Amazon/Amazon_Resolve.list:35: DOMAIN-SUFFIX,amazon",
+      "Amazon/Amazon_Resolve.list:117: DOMAIN-SUFFIX,aws",
+      "Amazon/Amazon_Resolve.list:144: DOMAIN-SUFFIX,imdb",
+      "Amazon/Amazon_Resolve.list:147: DOMAIN-SUFFIX,kindle",
+      "Amazon/Amazon_Resolve.list:192: DOMAIN-SUFFIX,xn--cckwcxetd",
+      "Amazon/Amazon_Resolve.list:193: DOMAIN-SUFFIX,xn--jlq480n2rg",
+      "Amazon/Amazon_Resolve.list:194: DOMAIN-SUFFIX,yamaxun",
+      "Amazon/Amazon_Resolve.list:198: DOMAIN-SUFFIX,zappos",
+      "BBC/BBC.list:21: DOMAIN-SUFFIX,bbc",
+      "BMW/BMW.list:77: DOMAIN-SUFFIX,bmw",
+      "BMW/BMW.list:494: DOMAIN-SUFFIX,mini",
+      "China/China.list:12: DOMAIN-SUFFIX,cn",
+      "China/China.list:13: DOMAIN-SUFFIX,ms",
+      "China/China_All.list:969: DOMAIN-SUFFIX,cn",
+      "China/China_All.list:2373: DOMAIN-SUFFIX,ms",
+      "China/China_All_No_Resolve.list:969: DOMAIN-SUFFIX,cn",
+      "China/China_All_No_Resolve.list:2373: DOMAIN-SUFFIX,ms",
+      "China/China_Resolve.list:12: DOMAIN-SUFFIX,cn",
+      "China/China_Resolve.list:13: DOMAIN-SUFFIX,ms",
+      "ChinaMax/ChinaMax.list:14: DOMAIN-SUFFIX,cn",
+      "ChinaMax/ChinaMax.list:15: DOMAIN-SUFFIX,ms",
+      "ChinaMax/ChinaMax.list:16: DOMAIN-SUFFIX,alibaba",
+      "ChinaMax/ChinaMax.list:17: DOMAIN-SUFFIX,alipay",
+      "ChinaMax/ChinaMax.list:18: DOMAIN-SUFFIX,anquan",
+      "ChinaMax/ChinaMax.list:19: DOMAIN-SUFFIX,baidu",
+      "ChinaMax/ChinaMax.list:20: DOMAIN-SUFFIX,citic",
+      "ChinaMax/ChinaMax.list:21: DOMAIN-SUFFIX,icbc",
+      "ChinaMax/ChinaMax.list:22: DOMAIN-SUFFIX,shouji",
+      "ChinaMax/ChinaMax.list:23: DOMAIN-SUFFIX,sina",
+      "ChinaMax/ChinaMax.list:24: DOMAIN-SUFFIX,sohu"
+    ]
+  },
   "financial_domain_matches_not_deleted": [
     "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list:19872: DOMAIN-SUFFIX,collect.alipay.com",
     "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list:26921: DOMAIN-SUFFIX,data.fastlane-email.paypal.com",
@@ -2504,410 +2532,10 @@
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
-      "path": "China/China.list",
-      "line": 12,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "China/China.list",
-      "line": 13,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "China/China_All.list",
-      "line": 969,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "China/China_All.list",
-      "line": 2373,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "China/China_All_No_Resolve.list",
-      "line": 969,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "China/China_All_No_Resolve.list",
-      "line": 2373,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "China/China_Resolve.list",
-      "line": 12,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "China/China_Resolve.list",
-      "line": 13,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMax/ChinaMax.list",
-      "line": 14,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMax/ChinaMax.list",
-      "line": 15,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMax/ChinaMax_All.list",
-      "line": 1949,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMax/ChinaMax_All.list",
-      "line": 3280,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMax/ChinaMax_All_No_Resolve.list",
-      "line": 1949,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMax/ChinaMax_All_No_Resolve.list",
-      "line": 3280,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMax/ChinaMax_No_IPv6.list",
-      "line": 14,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMax/ChinaMax_No_IPv6.list",
-      "line": 15,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
-      "line": 14,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
-      "line": 15,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMax/ChinaMax_Resolve.list",
-      "line": 14,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMax/ChinaMax_Resolve.list",
-      "line": 15,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMaxNoIP/ChinaMaxNoIP.list",
-      "line": 11,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMaxNoIP/ChinaMaxNoIP.list",
-      "line": 12,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
-      "line": 1905,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
-      "line": 3233,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
-      "line": 1905,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
-      "line": 3233,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
-      "line": 14,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
-      "line": 15,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
-      "line": 1863,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
-      "line": 3178,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
-      "line": 1863,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
-      "line": 3178,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
-      "line": 14,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
-      "line": 15,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaNoMedia/ChinaNoMedia.list",
-      "line": 12,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaNoMedia/ChinaNoMedia.list",
-      "line": 13,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaNoMedia/ChinaNoMedia_All.list",
-      "line": 932,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaNoMedia/ChinaNoMedia_All.list",
-      "line": 2310,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaNoMedia/ChinaNoMedia_All_No_Resolve.list",
-      "line": 932,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaNoMedia/ChinaNoMedia_All_No_Resolve.list",
-      "line": 2310,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaNoMedia/ChinaNoMedia_Resolve.list",
-      "line": 12,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaNoMedia/ChinaNoMedia_Resolve.list",
-      "line": 13,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaTest/ChinaTest.list",
-      "line": 12,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaTest/ChinaTest.list",
-      "line": 13,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaTest/ChinaTest_All.list",
-      "line": 1041,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaTest/ChinaTest_All.list",
-      "line": 2435,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaTest/ChinaTest_All_No_Resolve.list",
-      "line": 1041,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaTest/ChinaTest_All_No_Resolve.list",
-      "line": 2435,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaTest/ChinaTest_Resolve.list",
-      "line": 12,
-      "rule": "DOMAIN-SUFFIX,cn",
-      "matched_domain": "i9p3.aolade.cn"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ChinaTest/ChinaTest_Resolve.list",
-      "line": 13,
-      "rule": "DOMAIN-SUFFIX,ms",
-      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-kavzaro-biz.pages.dev"
+      "matched_domain": "web-bugfix.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2915,7 +2543,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2923,7 +2551,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-kavzaro-biz.pages.dev"
+      "matched_domain": "web-bugfix.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2931,7 +2559,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2939,7 +2567,7 @@
       "path": "GitBook/GitBook.list",
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "cripthcomlogin.gitbook.io"
+      "matched_domain": "metamasiuklogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2947,7 +2575,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "evansrich92-afk.github.io"
+      "matched_domain": "meenakshi-cse.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2971,7 +2599,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "evansrich92-afk.github.io"
+      "matched_domain": "meenakshi-cse.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2995,7 +2623,7 @@
       "path": "Global/Global_All.list",
       "line": 29921,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -3003,7 +2631,7 @@
       "path": "Global/Global_All.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "cripthcomlogin.gitbook.io"
+      "matched_domain": "metamasiuklogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3019,7 +2647,7 @@
       "path": "Global/Global_All.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "ingprsonasvrtal.netlify.app"
+      "matched_domain": "virtlsucrsalpsns.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -3027,7 +2655,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-kavzaro-biz.pages.dev"
+      "matched_domain": "web-bugfix.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3035,7 +2663,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.zimbra-auth-adm-old.vercel.app"
+      "matched_domain": "orego-six.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3043,7 +2671,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3067,7 +2695,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "evansrich92-afk.github.io"
+      "matched_domain": "meenakshi-cse.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3091,7 +2719,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 29921,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -3099,7 +2727,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "cripthcomlogin.gitbook.io"
+      "matched_domain": "metamasiuklogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3115,7 +2743,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "ingprsonasvrtal.netlify.app"
+      "matched_domain": "virtlsucrsalpsns.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -3123,7 +2751,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-kavzaro-biz.pages.dev"
+      "matched_domain": "web-bugfix.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3131,7 +2759,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.zimbra-auth-adm-old.vercel.app"
+      "matched_domain": "orego-six.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3139,7 +2767,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3195,7 +2823,7 @@
       "path": "NaSDDNS/NaSDDNS.list",
       "line": 23,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -3203,7 +2831,7 @@
       "path": "NaSDDNS/NaSDDNS_Resolve.list",
       "line": 23,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -3219,7 +2847,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 1615,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -3227,7 +2855,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "cripthcomlogin.gitbook.io"
+      "matched_domain": "metamasiuklogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3243,7 +2871,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "ingprsonasvrtal.netlify.app"
+      "matched_domain": "virtlsucrsalpsns.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -3251,7 +2879,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-kavzaro-biz.pages.dev"
+      "matched_domain": "web-bugfix.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3259,7 +2887,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.zimbra-auth-adm-old.vercel.app"
+      "matched_domain": "orego-six.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3267,7 +2895,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3283,7 +2911,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 1615,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -3291,7 +2919,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "cripthcomlogin.gitbook.io"
+      "matched_domain": "metamasiuklogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3307,7 +2935,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "ingprsonasvrtal.netlify.app"
+      "matched_domain": "virtlsucrsalpsns.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -3315,7 +2943,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-kavzaro-biz.pages.dev"
+      "matched_domain": "web-bugfix.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3323,7 +2951,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.zimbra-auth-adm-old.vercel.app"
+      "matched_domain": "orego-six.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3331,7 +2959,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3371,11 +2999,11 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.zimbra-auth-adm-old.vercel.app"
+      "matched_domain": "orego-six.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {
-    "app_or_routing": 111
+    "app_or_routing": 61
   },
   "files": []
 }
