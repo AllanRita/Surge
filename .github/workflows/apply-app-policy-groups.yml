@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: surge-app-policy-consolidation
+  group: surge-rule-maintenance
   cancel-in-progress: false
 
 jobs:
