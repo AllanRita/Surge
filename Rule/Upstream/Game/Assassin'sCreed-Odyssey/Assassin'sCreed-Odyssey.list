@@ -2,8 +2,11 @@
 # AUTHOR: FQrabbit
 # REPO: https://github.com/FQrabbit/SSTap-Rule
 # UPDATED: 2025-06-06 09:18:26
+# CANONICAL-RULESET: Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list
+# MERGED-ALIASES: Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list
 # IP-CIDR: 15
 # TOTAL: 15
+
 IP-CIDR,104.75.245.0/24,no-resolve
 IP-CIDR,104.95.207.169/32,no-resolve
 IP-CIDR,18.204.105.0/24,no-resolve

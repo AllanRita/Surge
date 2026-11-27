@@ -1,6 +1,6 @@
 # App-level rule overlap report
 
-Generated: 2026-11-27 09:45 UTC
+Generated: 2026-11-27 09:51 UTC
 
 - Rule files scanned: 853
 - App/scenario candidate groups across categories: 11
@@ -12,27 +12,11 @@ Grouped by normalized app-folder name and scenario. A match is a review candidat
 
 ### abema (standard)
 - Categories: Abema, AbemaTV
-- Exact shared rule lines: 15; union: 29
-- Same full rule set: no
-- Exact shared domain rules: 15; domain union: 27
-- File: Rule/Upstream/Abema/Abema.list (20 total rules; 20 domain rules)
-- File: Rule/Upstream/AbemaTV/AbemaTV.list (24 total rules; 22 domain rules)
-- Only in Rule/Upstream/Abema/Abema.list: 5
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-- Only in Rule/Upstream/AbemaTV/AbemaTV.list: 9
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - U,S
+- Exact shared rule lines: 29; union: 29
+- Same full rule set: yes
+- Exact shared domain rules: 27; domain union: 27
+- File: Rule/Upstream/Abema/Abema.list (29 total rules; 27 domain rules)
+- File: Rule/Upstream/AbemaTV/AbemaTV.list (29 total rules; 27 domain rules)
 
 ### assassinscreedodyssey (resolve)
 - Categories: Assassin'sCreed, Game
@@ -136,28 +120,19 @@ Grouped by normalized app-folder name and scenario. A match is a review candidat
 
 ### gemini (standard)
 - Categories: BardAI, Gemini
-- Exact shared rule lines: 9; union: 14
-- Same full rule set: no
-- Exact shared domain rules: 9; domain union: 11
-- File: Rule/Upstream/BardAI/BardAI.list (10 total rules; 10 domain rules)
-- File: Rule/Upstream/Gemini/Gemini.list (13 total rules; 10 domain rules)
-- Only in Rule/Upstream/BardAI/BardAI.list: 1
-  - D,O
-- Only in Rule/Upstream/Gemini/Gemini.list: 4
-  - D,O
-  - D,O
-  - D,O
-  - D,O
+- Exact shared rule lines: 14; union: 14
+- Same full rule set: yes
+- Exact shared domain rules: 11; domain union: 11
+- File: Rule/Upstream/BardAI/BardAI.list (14 total rules; 11 domain rules)
+- File: Rule/Upstream/Gemini/Gemini.list (14 total rules; 11 domain rules)
 
 ### globalscholar (standard)
 - Categories: GlobalScholar, Scholar
-- Exact shared rule lines: 230; union: 231
-- Same full rule set: no
-- Exact shared domain rules: 230; domain union: 231
-- File: Rule/Upstream/GlobalScholar/GlobalScholar.list (230 total rules; 230 domain rules)
+- Exact shared rule lines: 231; union: 231
+- Same full rule set: yes
+- Exact shared domain rules: 231; domain union: 231
+- File: Rule/Upstream/GlobalScholar/GlobalScholar.list (231 total rules; 231 domain rules)
 - File: Rule/Upstream/Scholar/Scholar.list (231 total rules; 231 domain rules)
-- Only in Rule/Upstream/Scholar/Scholar.list: 1
-  - D,O
 
 ### pchome (standard)
 - Categories: PChome, PChomeTW
