@@ -424,3 +424,15 @@ Reviewed Rule/Upstream/iQIYI local files and README. No matching author-source m
 - No local author snapshot exists for iQIYIIntl, so completeness against alternate author sources cannot be established under the current source-pause policy. The existing README identifies iQIYIIntl as the regional variant consolidated into this single App folder; preserve this organization and the region choice in the App policy group.
 - Conclusion: paired formats are structurally consistent; two case-only USER-AGENT overlaps remain review-only; source completeness is not verifiable from current cache. No rule-file changes.
 - Next App review: continue to the next eligible canonical App with existing cached evidence, starting with Telegram only if its cached source metadata is present; otherwise perform local structural/format checks and record the source-evidence limitation.
+
+
+## 28. App-by-App review — Telegram rule set (2026-11-28)
+
+Reviewed Rule/Upstream/Telegram, the existing Telegram source snapshot, and the documented TelegramNL/SG/US regional consolidation. No new author sources were fetched and no rule files were modified.
+
+- Telegram.list and Telegram_Resolve.list each contain 46 entries, all unique, with identical type counts: DOMAIN 2, DOMAIN-KEYWORD 1, DOMAIN-SUFFIX 22, IP-CIDR 6, IP-CIDR6 4, IP-ASN 5, OR 1, PROCESS-NAME 5.
+- The files differ only by the no-resolve option on the same 15 IP-CIDR/IP-CIDR6/IP-ASN entries. Preserve both formats.
+- All 14 rules in the existing SukkaLab Telegram snapshot are exactly covered by the canonical Telegram rule set. No additions or review-only rules are needed from this snapshot.
+- README statistics match the actual file contents (46 total); regional child variants TelegramNL, TelegramSG, and TelegramUS are documented as included in the single canonical folder. Preserve this single-folder organization and country/region selection in the App policy group.
+- Conclusion: Telegram passes the available structural and cached-source coverage checks. No changes required.
+- Next App review: continue to Amazon using only existing local files and cached metadata, preserving any intentional formats.
