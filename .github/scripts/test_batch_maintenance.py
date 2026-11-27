@@ -142,8 +142,8 @@ class SurgeMaintenanceTests(unittest.TestCase):
             folder.mkdir()
             standard = folder / "Example.list"
             resolve = folder / "Example_Resolve.list"
-            standard.write_text("# standard\\nDOMAIN,api.example.com\\nIP-CIDR,10.0.0.0/8,no-resolve\\n", encoding="utf-8")
-            resolve.write_text("# resolve\\nDOMAIN,api.example.com\\nIP-CIDR,10.0.0.0/8\\n", encoding="utf-8")
+            standard.write_text("# standard\nDOMAIN,api.example.com\nIP-CIDR,10.0.0.0/8,no-resolve\n", encoding="utf-8")
+            resolve.write_text("# resolve\nDOMAIN,api.example.com\nIP-CIDR,10.0.0.0/8\n", encoding="utf-8")
             with patch.object(FORMAT, "ROOT", root):
                 result = FORMAT.compare_files(standard, resolve, "Standard vs Resolve")
             self.assertEqual(result["status"], "MATCH")
@@ -158,8 +158,8 @@ class SurgeMaintenanceTests(unittest.TestCase):
             folder.mkdir()
             standard = folder / "Example.list"
             resolve = folder / "Example_Resolve.list"
-            standard.write_text("DOMAIN,api.example.com,policy=Proxy\\n", encoding="utf-8")
-            resolve.write_text("DOMAIN,api.example.com,policy=Direct\\n", encoding="utf-8")
+            standard.write_text("DOMAIN,api.example.com,policy=Proxy\n", encoding="utf-8")
+            resolve.write_text("DOMAIN,api.example.com,policy=Direct\n", encoding="utf-8")
             with patch.object(FORMAT, "ROOT", root):
                 result = FORMAT.compare_files(standard, resolve, "Standard vs Resolve")
             self.assertEqual(result["status"], "REVIEW")
