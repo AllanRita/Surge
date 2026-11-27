@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 11:42 UTC
+Generated: 2026-11-27 11:43 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -109,6 +109,7 @@ This classifies dedicated App folders by folder name only. Financial-service dom
 - Detailed threat-feed and broad shared-hosting review: see SECURITY-REVIEW.md.
 - Financial-domain matches: 238 (review only; not deleted)
 - URLhaus domains loaded: 0
+- URLhaus status: authenticated hostfile not loaded; configure the GitHub Actions secret URLHAUS_AUTH_KEY to enable it
 - OpenPhish domains loaded: 278
 - Reputation matches shown: 61 (max 500); scope counts: {'app_or_routing': 61}
 - Reputation-feed matches are review flags, not automatic deletions. Matches in block/filter lists may be intentional; app/routing matches need manual review.
