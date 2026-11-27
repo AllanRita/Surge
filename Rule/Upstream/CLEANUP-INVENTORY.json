@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 13:06 UTC",
+  "generated_utc": "2026-11-27 13:08 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 828,
@@ -3736,622 +3736,779 @@
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Amazon/Amazon.list",
       "line": 67,
       "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "rule_domain": "amazonaws.com",
       "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Amazon/Amazon.list",
       "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "rule_domain": "cloudfront.net",
       "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Amazon/Amazon_Resolve.list",
       "line": 67,
       "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "rule_domain": "amazonaws.com",
       "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Amazon/Amazon_Resolve.list",
       "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "rule_domain": "cloudfront.net",
       "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "8s2y5-cp0-1vnf-5ee82-08-10-2026-aa.pages.dev"
+      "rule_domain": "pages.dev",
+      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Cloudflare/Cloudflare.list",
       "line": 48,
       "rule": "DOMAIN-SUFFIX,trycloudflare.com",
+      "rule_domain": "trycloudflare.com",
       "matched_domain": "drainage-possess-unavailable-focal.trycloudflare.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "rule_domain": "workers.dev",
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "8s2y5-cp0-1vnf-5ee82-08-10-2026-aa.pages.dev"
+      "rule_domain": "pages.dev",
+      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 48,
       "rule": "DOMAIN-SUFFIX,trycloudflare.com",
+      "rule_domain": "trycloudflare.com",
       "matched_domain": "drainage-possess-unavailable-focal.trycloudflare.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "rule_domain": "workers.dev",
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "GitBook/GitBook.list",
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "treozarwalletf.gitbook.io"
+      "rule_domain": "gitbook.io",
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "wargreymon9.github.io"
+      "rule_domain": "github.io",
+      "matched_domain": "b-chunchun.github.io"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
+      "rule_domain": "azurefd.net",
+      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "rule_domain": "blogspot.com",
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All.list",
       "line": 8966,
       "rule": "DOMAIN-SUFFIX,eu.org",
+      "rule_domain": "eu.org",
       "matched_domain": "wisayq9065.embih.eu.org"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "wargreymon9.github.io"
+      "rule_domain": "github.io",
+      "matched_domain": "b-chunchun.github.io"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All.list",
       "line": 24717,
       "rule": "DOMAIN-SUFFIX,trycloudflare.com",
+      "rule_domain": "trycloudflare.com",
       "matched_domain": "drainage-possess-unavailable-focal.trycloudflare.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All.list",
       "line": 28653,
       "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "rule_domain": "amazonaws.com",
       "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All.list",
       "line": 28862,
       "rule": "DOMAIN-SUFFIX,azurewebsites.net",
+      "rule_domain": "azurewebsites.net",
       "matched_domain": "forrit-tb-csmr-prod-dev-02.azurewebsites.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All.list",
       "line": 29514,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "rule_domain": "cloudfront.net",
       "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All.list",
       "line": 29921,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
+      "rule_domain": "duckdns.org",
       "matched_domain": "hizliyapiyoruzherseyi.duckdns.org"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "treozarwalletf.gitbook.io"
+      "rule_domain": "gitbook.io",
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
+      "rule_domain": "netlify.app",
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "8s2y5-cp0-1vnf-5ee82-08-10-2026-aa.pages.dev"
+      "rule_domain": "pages.dev",
+      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "rule_domain": "vercel.app",
+      "matched_domain": "www.dataserver-kappa.vercel.app"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All.list",
       "line": 34650,
       "rule": "DOMAIN-SUFFIX,weebly.com",
+      "rule_domain": "weebly.com",
       "matched_domain": "www.xhdfh7hfnrrjjjff.weebly.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "rule_domain": "workers.dev",
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All_No_Resolve.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
+      "rule_domain": "azurefd.net",
+      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "rule_domain": "blogspot.com",
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All_No_Resolve.list",
       "line": 8966,
       "rule": "DOMAIN-SUFFIX,eu.org",
+      "rule_domain": "eu.org",
       "matched_domain": "wisayq9065.embih.eu.org"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "wargreymon9.github.io"
+      "rule_domain": "github.io",
+      "matched_domain": "b-chunchun.github.io"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All_No_Resolve.list",
       "line": 24717,
       "rule": "DOMAIN-SUFFIX,trycloudflare.com",
+      "rule_domain": "trycloudflare.com",
       "matched_domain": "drainage-possess-unavailable-focal.trycloudflare.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All_No_Resolve.list",
       "line": 28653,
       "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "rule_domain": "amazonaws.com",
       "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All_No_Resolve.list",
       "line": 28862,
       "rule": "DOMAIN-SUFFIX,azurewebsites.net",
+      "rule_domain": "azurewebsites.net",
       "matched_domain": "forrit-tb-csmr-prod-dev-02.azurewebsites.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All_No_Resolve.list",
       "line": 29514,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "rule_domain": "cloudfront.net",
       "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All_No_Resolve.list",
       "line": 29921,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
+      "rule_domain": "duckdns.org",
       "matched_domain": "hizliyapiyoruzherseyi.duckdns.org"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All_No_Resolve.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "treozarwalletf.gitbook.io"
+      "rule_domain": "gitbook.io",
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
+      "rule_domain": "netlify.app",
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "8s2y5-cp0-1vnf-5ee82-08-10-2026-aa.pages.dev"
+      "rule_domain": "pages.dev",
+      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "rule_domain": "vercel.app",
+      "matched_domain": "www.dataserver-kappa.vercel.app"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34650,
       "rule": "DOMAIN-SUFFIX,weebly.com",
+      "rule_domain": "weebly.com",
       "matched_domain": "www.xhdfh7hfnrrjjjff.weebly.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "rule_domain": "workers.dev",
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "GlobalMedia/GlobalMedia_All.list",
       "line": 76,
       "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "rule_domain": "amazonaws.com",
       "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "GlobalMedia/GlobalMedia_All.list",
       "line": 189,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "rule_domain": "cloudfront.net",
       "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "GlobalMedia/GlobalMedia_All_No_Resolve.list",
       "line": 76,
       "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "rule_domain": "amazonaws.com",
       "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "GlobalMedia/GlobalMedia_All_No_Resolve.list",
       "line": 189,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "rule_domain": "cloudfront.net",
       "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "rule_domain": "blogspot.com",
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "rule_domain": "blogspot.com",
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Microsoft/Microsoft.list",
       "line": 86,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
+      "rule_domain": "azurefd.net",
+      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Microsoft/Microsoft.list",
       "line": 103,
       "rule": "DOMAIN-SUFFIX,azurewebsites.net",
+      "rule_domain": "azurewebsites.net",
       "matched_domain": "forrit-tb-csmr-prod-dev-02.azurewebsites.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "NaSDDNS/NaSDDNS.list",
       "line": 23,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
+      "rule_domain": "duckdns.org",
       "matched_domain": "hizliyapiyoruzherseyi.duckdns.org"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "NaSDDNS/NaSDDNS_Resolve.list",
       "line": 23,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
+      "rule_domain": "duckdns.org",
       "matched_domain": "hizliyapiyoruzherseyi.duckdns.org"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All.list",
       "line": 319,
       "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "rule_domain": "amazonaws.com",
       "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All.list",
       "line": 534,
       "rule": "DOMAIN-SUFFIX,azurewebsites.net",
+      "rule_domain": "azurewebsites.net",
       "matched_domain": "forrit-tb-csmr-prod-dev-02.azurewebsites.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All.list",
       "line": 1202,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "rule_domain": "cloudfront.net",
       "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All.list",
       "line": 1615,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
+      "rule_domain": "duckdns.org",
       "matched_domain": "hizliyapiyoruzherseyi.duckdns.org"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "treozarwalletf.gitbook.io"
+      "rule_domain": "gitbook.io",
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
+      "rule_domain": "netlify.app",
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "8s2y5-cp0-1vnf-5ee82-08-10-2026-aa.pages.dev"
+      "rule_domain": "pages.dev",
+      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "rule_domain": "vercel.app",
+      "matched_domain": "www.dataserver-kappa.vercel.app"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All.list",
       "line": 6378,
       "rule": "DOMAIN-SUFFIX,weebly.com",
+      "rule_domain": "weebly.com",
       "matched_domain": "www.xhdfh7hfnrrjjjff.weebly.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "rule_domain": "workers.dev",
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 319,
       "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "rule_domain": "amazonaws.com",
       "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 534,
       "rule": "DOMAIN-SUFFIX,azurewebsites.net",
+      "rule_domain": "azurewebsites.net",
       "matched_domain": "forrit-tb-csmr-prod-dev-02.azurewebsites.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 1202,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "rule_domain": "cloudfront.net",
       "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 1615,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
+      "rule_domain": "duckdns.org",
       "matched_domain": "hizliyapiyoruzherseyi.duckdns.org"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "treozarwalletf.gitbook.io"
+      "rule_domain": "gitbook.io",
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
+      "rule_domain": "netlify.app",
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "8s2y5-cp0-1vnf-5ee82-08-10-2026-aa.pages.dev"
+      "rule_domain": "pages.dev",
+      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "rule_domain": "vercel.app",
+      "matched_domain": "www.dataserver-kappa.vercel.app"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6378,
       "rule": "DOMAIN-SUFFIX,weebly.com",
+      "rule_domain": "weebly.com",
       "matched_domain": "www.xhdfh7hfnrrjjjff.weebly.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "rule_domain": "workers.dev",
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "ProxyLite/ProxyLite.list",
       "line": 65,
       "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "rule_domain": "amazonaws.com",
       "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "ProxyLite/ProxyLite.list",
       "line": 172,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "rule_domain": "cloudfront.net",
       "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "ProxyLite/ProxyLite_Resolve.list",
       "line": 65,
       "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "rule_domain": "amazonaws.com",
       "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "ProxyLite/ProxyLite_Resolve.list",
       "line": 172,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "rule_domain": "cloudfront.net",
       "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
+      "match_type": "parent_suffix",
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "rule_domain": "vercel.app",
+      "matched_domain": "www.dataserver-kappa.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {
     "app_or_routing": 77
+  },
+  "reputation_match_counts_by_match_type": {
+    "parent_suffix": 77
   },
   "files": []
 }

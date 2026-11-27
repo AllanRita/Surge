@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 13:06 UTC
+Generated: 2026-11-27 13:08 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -216,6 +216,8 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 - OpenPhish domains loaded: 280
 - OpenPhish status: loaded
 - Reputation matches shown: 77 (max 500); scope counts: {'app_or_routing': 77}
+- Match type counts: {'parent_suffix': 77}
+- Exact-domain matches and parent-suffix coverage matches are reported separately. A parent-suffix hit means a feed-listed host exists beneath a broad suffix; it does not mean the suffix root itself is malicious.
 - Reputation-feed matches are review flags, not automatic deletions. Matches in block/filter lists may be intentional; app/routing matches need manual review.
 
 - Feed coverage is incomplete; zero matches must not be interpreted as clean.
