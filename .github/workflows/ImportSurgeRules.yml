@@ -1,6 +1,12 @@
 name: Sync Upstream Surge Rules
 on:
   workflow_dispatch:
+    inputs:
+      confirm_blackmatrix7_refresh:
+        description: "Set true only when intentionally refreshing the existing Blackmatrix7 source."
+        type: boolean
+        required: true
+        default: false
 permissions:
   contents: read
 concurrency:
@@ -8,6 +14,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   validate:
+    if: inputs.confirm_blackmatrix7_refresh == true
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -187,7 +194,7 @@ Cached author metadata retained: {len(cached_sources)}\
               ):
                   financial_matches.append((path,num,line.strip()))
                   flag('personal-financial-rule' if path.startswith('Rule/Personal/') else 'financial-domain-review',path,num)
-          exec(compile(Path('.github/scripts/apply_canonical_app_merges.py').read_text(encoding='utf-8'), '.github/scripts/apply_canonical_app_merges.py', 'exec'))
+          exec(compile(Path('.github/scripts/apply_app_policy_groups.py').read_text(encoding='utf-8'), '.github/scripts/apply_app_policy_groups.py', 'exec'))
           # Whole-library consolidation: preserve rule order, options and comments.
           dedup_count=0
           duplicate_files=collections.defaultdict(list)
@@ -355,7 +362,7 @@ Cached author metadata retained: {len(cached_sources)}\
           report_path.write_text('
 '.join(report_lines)+'
 ',encoding='utf-8')
-          exec(compile(Path('.github/scripts/analyze_app_rule_overlap.py').read_text(encoding='utf-8'), '.github/scripts/analyze_app_rule_overlap.py', 'exec'))
+          # Cached author-source coverage is handled by cleanup_inventory.py; no additional author repos are fetched.
           manifest={str(p.relative_to(dst)):hashlib.sha256(p.read_bytes()).hexdigest() for p in dst.rglob('*') if p.is_file()}
           Path('rule-manifest.json').write_text(json.dumps(manifest,sort_keys=True))
           print('Upstream commit:',subprocess.check_output(['git','-C',str(root),'rev-parse','HEAD'],text=True).strip())
@@ -369,7 +376,7 @@ Cached author metadata retained: {len(cached_sources)}\
           retention-days: 3
   publish:
     needs: validate
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && inputs.confirm_blackmatrix7_refresh == true
     permissions:
       contents: write
     runs-on: ubuntu-latest
@@ -423,9 +430,9 @@ Cached author metadata retained: {len(cached_sources)}\
           changed=subprocess.check_output(['git','diff','--name-only',base+'..origin/main'],text=True).splitlines()
           allowed={
               'Rule/Upstream/AUDIT-REPORT.md',
-              'Rule/Upstream/APP-OVERLAP-REPORT.md',
-              'Rule/Upstream/SOURCE-MERGE-REPORT.md',
-              'Rule/Upstream/CANONICAL-MERGE-REPORT.md',
+              'Rule/Upstream/CLEANUP-INVENTORY.md',
+              'Rule/Upstream/CLEANUP-INVENTORY.json',
+              'Rule/Upstream/APP-POLICY-MERGE-REPORT.md',
           }
           unexpected=[p for p in changed if p not in allowed]
           if unexpected:
