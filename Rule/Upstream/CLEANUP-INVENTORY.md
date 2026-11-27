@@ -502,3 +502,8 @@ Format labels are inferred from filename suffixes; distinct formats are preserve
 ## Broad public-TLD suffix scope review
 
 See [BROAD-SUFFIX-SCOPE-REVIEW.md](BROAD-SUFFIX-SCOPE-REVIEW.md) for a scenario-aware classification of the 78 IANA-valid single-label suffixes. The review covers 896 occurrences: 45 suffixes / 767 occurrences are present only in China aggregate folders, 5 suffixes / 85 occurrences are shared between China aggregate and named App folders, and 28 suffixes / 44 occurrences appear in other App/aggregate folders. No rules were modified or deleted by this review. These are broad-scope review items, not malformed rules or threat verdicts.
+
+
+## Shared-hosting and multi-tenant suffix scope review
+
+See [SHARED-HOSTING-SCOPE-REVIEW.md](SHARED-HOSTING-SCOPE-REVIEW.md) for the 34 shared CDN/hosting, dynamic-DNS, and URL-shortener suffixes found across 159 rule occurrences. 21 suffixes appear in App/service folders (33 occurrences); 126 occurrences are in aggregate folders. Parent-suffix threat-feed hits are review signals, not evidence that the shared parent itself is malicious. No rules were deleted.
