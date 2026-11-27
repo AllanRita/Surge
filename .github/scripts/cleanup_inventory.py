@@ -226,7 +226,7 @@ def main():
   return out
  urlhaus_suffix=suffix_index(urlhaus); openphish_suffix=suffix_index(openphish)
  files=sorted(p for p in ROOT.rglob("*.list") if p.is_file()); folders=defaultdict(list); rawhash=defaultdict(list); payloadhash=defaultdict(list)
- file_rows=[]; findings=Counter(); examples=defaultdict(list); financial=[]; threat=[]; threat_scope=Counter(); domain_count=0; shared_hosting_hits=defaultdict(lambda:{"count":0,"paths":set(),"folders":set(),"examples":[]})
+ file_rows=[]; findings=Counter(); examples=defaultdict(list); financial=[]; threat=[]; threat_scope=Counter(); threat_match_type=Counter(); domain_count=0; shared_hosting_hits=defaultdict(lambda:{"count":0,"paths":set(),"folders":set(),"examples":[]})
  for path in files:
   rel=path.relative_to(ROOT); folder=str(rel.parent); folders[folder].append(path)
   raw=path.read_bytes(); row_rules=rules(path); payload="\n".join(row_rules).encode()
@@ -300,8 +300,10 @@ def main():
       else: match=domain if domain in feed else None
       if match:
        scope="block_or_filter" if any(x in rel.parts for x in ("Block","Advertising","AdvertisingLite","AdvertisingTest","AdGuardSDNSFilter","Privacy","Hijacking")) else "app_or_routing"
+       match_type="parent_suffix" if kind in {"DOMAIN-SUFFIX","HOST-SUFFIX"} and match!=domain else "exact_domain"
        threat_scope[scope]+=1
-       if len(threat)<500: threat.append({"feed":feed_name,"scope":scope,"path":str(rel),"line":num,"rule":s,"matched_domain":match})
+       threat_match_type[match_type]+=1
+       if len(threat)<500: threat.append({"feed":feed_name,"scope":scope,"match_type":match_type,"path":str(rel),"line":num,"rule":s,"rule_domain":domain,"matched_domain":match})
  for key in ("hidden_control","invalid_native_filter","unsupported_or_missing_operand","ip_family_mismatch","catch_all_network","invalid_network","invalid_domain","stale_or_private_root_suffix","single_label_suffix","duplicate_rule_lines","recognized_native_filter","recognized_native_regex","recognized_native_domain"):
   findings.setdefault(key,0)
  financial_folders=[]
@@ -328,7 +330,7 @@ def main():
   "cached_source_coverage":coverage,"cached_source_format_coverage":[{"source":x["source"],**y} for x in coverage for y in x.get("format_coverage",[])],"static_security_findings":dict(findings),"static_security_examples":{k:v[:50] for k,v in examples.items()},"financial_domain_matches_not_deleted":financial[:500],
   "shared_hosting_suffix_matches":[{"suffix":suffix,"classification":SHARED_HOSTING_SUFFIXES[suffix],"rule_occurrences":hit["count"],"folders":sorted(hit["folders"]),"files":sorted(hit["paths"]),"examples":hit["examples"]} for suffix,hit in sorted(shared_hosting_hits.items())],
   "reputation_feed_status":{"urlhaus_domains":len(urlhaus),"openphish_domains":len(openphish),"feeds_available":bool(urlhaus or openphish),"urlhaus_file_present":bool(a.urlhaus and Path(a.urlhaus).is_file()),"openphish_file_present":bool(a.openphish and Path(a.openphish).is_file()),"urlhaus_status":"loaded" if urlhaus else ("downloaded file is empty or invalid" if a.urlhaus and Path(a.urlhaus).is_file() else "not loaded; URLHAUS_AUTH_KEY is missing or download failed"),"openphish_status":"loaded" if openphish else ("downloaded file is empty or invalid" if a.openphish and Path(a.openphish).is_file() else "not loaded; download failed or file missing"),"note":"Reputation matches are review flags, not automatic deletions. Matches in block/filter lists may be expected; an unavailable feed is not a clean result."},
-  "reputation_matches":threat,"reputation_match_counts_by_scope":dict(threat_scope),"files":file_rows,
+  "reputation_matches":threat,"reputation_match_counts_by_scope":dict(threat_scope),"reputation_match_counts_by_match_type":dict(threat_match_type),"files":file_rows,
  }
  (ROOT/"CLEANUP-INVENTORY.json").write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
  md=["# Surge rule cleanup inventory and security audit","",f"Generated: {data['generated_utc']}","","Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.","","## Inventory","",f"- Rule files: **{len(files)}**",f"- App/category folders: **{len(folders)}**",f"- Top-level folders: **{data['summary']['top_level_folders']}**",f"- Rule data size: **{data['summary']['total_rule_bytes']:,} bytes**",f"- Folders with multiple files/formats: **{len(multi)}**",f"- Exact byte-identical file groups: **{len(rawdups)}**",f"- Identical rule-payload groups (headers ignored): **{len(payloaddups)}**",f"- Duplicate rule lines inside files: **{findings['duplicate_rule_lines']}**",f"- Personal files inspected but not modified: **{len(personal)}**","","## Bank/payment App folders","","This classifies dedicated App folders by folder name only. Financial-service domains inside other App or aggregate lists are not removed."]
@@ -361,7 +363,7 @@ def main():
  for x in examples.get("unsupported_or_missing_operand",[])[:30]: md.append(f"  - {x}")
  for x in examples.get("invalid_domain",[])[:30]: md.append(f"  - {x}")
  for x in examples.get("invalid_network",[])[:30]: md.append(f"  - {x}")
- md += ["","- Detailed threat-feed and broad shared-hosting review: see SECURITY-REVIEW.md.",f"- Financial-domain matches: {len(financial)} (review only; not deleted)",f"- URLhaus domains loaded: {len(urlhaus)}",f"- URLhaus status: {data['reputation_feed_status']['urlhaus_status']}",f"- OpenPhish domains loaded: {len(openphish)}",f"- OpenPhish status: {data['reputation_feed_status']['openphish_status']}",f"- Reputation matches shown: {len(threat)} (max 500); scope counts: {dict(threat_scope)}","- Reputation-feed matches are review flags, not automatic deletions. Matches in block/filter lists may be intentional; app/routing matches need manual review.",""]
+ md += ["","- Detailed threat-feed and broad shared-hosting review: see SECURITY-REVIEW.md.",f"- Financial-domain matches: {len(financial)} (review only; not deleted)",f"- URLhaus domains loaded: {len(urlhaus)}",f"- URLhaus status: {data['reputation_feed_status']['urlhaus_status']}",f"- OpenPhish domains loaded: {len(openphish)}",f"- OpenPhish status: {data['reputation_feed_status']['openphish_status']}",f"- Reputation matches shown: {len(threat)} (max 500); scope counts: {dict(threat_scope)}",f"- Match type counts: {dict(threat_match_type)}","- Exact-domain matches and parent-suffix coverage matches are reported separately. A parent-suffix hit means a feed-listed host exists beneath a broad suffix; it does not mean the suffix root itself is malicious.","- Reputation-feed matches are review flags, not automatic deletions. Matches in block/filter lists may be intentional; app/routing matches need manual review.",""]
  if not urlhaus or not openphish: md.append("- Feed coverage is incomplete; zero matches must not be interpreted as clean.")
  md += [", ".join(x) for x in rawdups] if rawdups else ["- None"]
  md += ["","## Identical rule payloads with headers ignored",""]
@@ -382,6 +384,7 @@ def main():
   grouped[key]["paths"].add(item["path"])
   grouped[key]["feeds"].add(item["feed"])
   grouped[key]["scopes"].add(item["scope"])
+  grouped[key].setdefault("match_types",set()).add(item.get("match_type","unknown"))
  sec=[
   "# Security reputation review","",
   f"Generated: {data['generated_utc']}","",
@@ -389,7 +392,7 @@ def main():
   f"- URLhaus domains loaded: {len(urlhaus)}",
   f"- OpenPhish domains loaded: {len(openphish)}",
   f"- Rule-to-feed matches: {len(threat)} (up to 500 retained in the JSON report)",
-  f"- Scope counts: {dict(threat_scope)}","",
+  f"- Scope counts: {dict(threat_scope)}",f"- Exact-domain matches: {threat_match_type.get('exact_domain',0)}",f"- Parent-suffix coverage matches: {threat_match_type.get('parent_suffix',0)}","- A parent-suffix hit means a feed-listed host exists beneath a broad suffix; it does not mean the suffix root itself is malicious.","",
  ]
  if not urlhaus: sec.append(f"- URLhaus status: {data['reputation_feed_status']['urlhaus_status']}.")
  if not openphish: sec.append(f"- OpenPhish status: {data['reputation_feed_status']['openphish_status']}.")
@@ -404,6 +407,7 @@ def main():
    f"### {rule}",
    f"- Scope: {', '.join(sorted(info['scopes']))}",
    f"- Feed(s): {', '.join(sorted(info['feeds']))}",
+   f"- Match type(s): {', '.join(sorted(info.get('match_types',set())))}",
    f"- Rule files: {', '.join(sorted(info['paths']))}",
    f"- Matched feed host examples: {', '.join(sorted(info['matched_domains'])[:12])}",
   ]
