@@ -513,8 +513,9 @@
     }
   ],
   "bank_payment_policy": {
-    "dedicated_app_folders_found": 0,
-    "action": "no dedicated bank/payment folders currently exist under Rule/Upstream; do not delete payment-related domains embedded in other App lists; preserve Rule/Personal/PayPay.list"
+    "category_based_protection": false,
+    "automatic_security_remediation_applies_equally": true,
+    "only_exact_user_tombstones_block_restoration": true
   },
   "cached_author_sources": {
     "count": 15,
@@ -523,11 +524,15 @@
   },
   "generated_by": "cleanup inventory 2026-11-27; final user-confirmed Surge App-policy structure",
   "security_review_policy": {
-    "threat_feed_matches_are_review_only": true,
+    "threat_feed_matches_are_review_only_unless_exact_host_is_independently_confirmed_in_both_openphish_and_urlhaus": true,
     "shared_hosting_parent_suffixes_require_manual_review": true,
     "never_auto_delete_shared_hosting_suffixes_from_feed_matches": true,
     "feed_unavailable_must_be_reported_not_treated_as_zero": true,
-    "personal_rules_excluded_from_automated_remediation": true
+    "personal_rules_excluded_from_automated_remediation": true,
+    "auto_delete_exact_domain_rule_only_when_exact_hostname_is_in_both_feeds": true,
+    "block_and_filter_lists_are_excluded_from_threat_rule_deletion": true,
+    "deterministic_duplicate_and_invalid_domain_or_ip_rules_may_be_auto_repaired": true,
+    "uncertain_findings_are_quarantined_for_review": true
   },
   "separate_scope_groups": [
     {
