@@ -19,7 +19,6 @@ def load_module(name, filename):
 MERGE = load_module("merge_cached_sources", "merge_cached_sources.py")
 MAINTAIN = load_module("batch_maintain", "batch_maintain.py")
 PREFLIGHT = load_module("batch_preflight", "batch_preflight.py")
-FORMAT_AUDIT = load_module("audit_format_coverage", "audit_format_coverage.py")
 FORMAT = load_module("audit_format_parity", "audit_format_parity.py")
 
 class SurgeMaintenanceTests(unittest.TestCase):
@@ -170,32 +169,35 @@ class SurgeMaintenanceTests(unittest.TestCase):
         self.assertEqual(FORMAT.classify(Path("App/App_All_No_Resolve.list")), ("App", "all_no_resolve"))
         self.assertEqual(FORMAT.classify(Path("App/App_Resolve.list")), ("App", "resolve"))
         self.assertEqual(FORMAT.classify(Path("App/App.list")), ("App", "standard"))
-    def test_format_coverage_pairs_respect_documented_variants(self):
+    def test_no_ipv6_format_only_omits_ipv6_rules(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
-            app = root / "Example"
-            app.mkdir()
-            (app / "Example.list").write_text("DOMAIN-SUFFIX,example.com\nIP-CIDR,10.0.0.0/8,no-resolve\nIP-CIDR6,2001:db8::/32,no-resolve\n", encoding="utf-8")
-            (app / "Example_Resolve.list").write_text("DOMAIN-SUFFIX,example.com\nIP-CIDR,10.0.0.0/8\nIP-CIDR6,2001:db8::/32\n", encoding="utf-8")
-            (app / "Example_No_IPv6.list").write_text("DOMAIN-SUFFIX,example.com\nIP-CIDR,10.0.0.0/8,no-resolve\n", encoding="utf-8")
-            report = FORMAT_AUDIT.audit(root)
-            self.assertEqual(report["format_pairs_checked"], 2)
-            self.assertEqual(report["matching_pairs"], 2)
-            self.assertEqual(report["pairs_with_differences"], 0)
+            folder = root / "Example"
+            folder.mkdir()
+            standard = folder / "Example.list"
+            no_ipv6 = folder / "Example_No_IPv6.list"
+            standard.write_text("DOMAIN,api.example.com\nIP-CIDR,10.0.0.0/8\nIP-CIDR6,2001:db8::/32\n", encoding="utf-8")
+            no_ipv6.write_text("DOMAIN,api.example.com\nIP-CIDR,10.0.0.0/8\n", encoding="utf-8")
+            with patch.object(FORMAT, "ROOT", root):
+                result = FORMAT.compare_files(standard, no_ipv6, "Standard vs No_IPv6", ignore_ipv6_left=True)
+            self.assertEqual(result["status"], "MATCH")
+            self.assertEqual(result["left_only_count"], 0)
+            self.assertEqual(result["right_only_count"], 0)
 
-    def test_format_coverage_reports_missing_rules_without_editing(self):
+    def test_no_ipv6_pair_does_not_hide_missing_ipv4_rules(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
-            app = root / "Example"
-            app.mkdir()
-            standard = app / "Example.list"
-            resolve = app / "Example_Resolve.list"
-            standard.write_text("DOMAIN-SUFFIX,example.com\n", encoding="utf-8")
-            resolve.write_text("DOMAIN-SUFFIX,example.net\n", encoding="utf-8")
-            before = (standard.read_bytes(), resolve.read_bytes())
-            report = FORMAT_AUDIT.audit(root)
-            self.assertEqual(report["pairs_with_differences"], 1)
-            self.assertEqual((standard.read_bytes(), resolve.read_bytes()), before)
+            folder = root / "Example"
+            folder.mkdir()
+            standard = folder / "Example.list"
+            no_ipv6 = folder / "Example_No_IPv6.list"
+            standard.write_text("DOMAIN,api.example.com\nIP-CIDR,10.0.0.0/8\nIP-CIDR6,2001:db8::/32\n", encoding="utf-8")
+            no_ipv6.write_text("DOMAIN,api.example.com\n", encoding="utf-8")
+            with patch.object(FORMAT, "ROOT", root):
+                result = FORMAT.compare_files(standard, no_ipv6, "Standard vs No_IPv6", ignore_ipv6_left=True)
+            self.assertEqual(result["status"], "REVIEW")
+            self.assertEqual(result["left_only_count"], 1)
+            self.assertEqual(result["left_only_examples"][0]["rule"], "IP-CIDR,10.0.0.0/8")
     def test_urlhaus_hostfile_first_column(self):
         with tempfile.TemporaryDirectory() as td:
             feed = Path(td) / "urlhaus.txt"
