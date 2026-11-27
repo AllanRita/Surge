@@ -103,8 +103,8 @@ def audit(root):
             ("standard", "resolve", True, False, False, "standard_vs_resolve"),
             ("all", "all_no_resolve", True, False, False, "all_vs_all_no_resolve"),
             ("no_ipv6", "no_ipv6_resolve", True, False, False, "no_ipv6_vs_no_ipv6_resolve"),
-            ("standard", "no_ipv6", False, False, True, "standard_vs_no_ipv6"),
-            ("resolve", "no_ipv6_resolve", False, False, True, "resolve_vs_no_ipv6_resolve"),
+            ("standard", "no_ipv6", False, True, False, "standard_vs_no_ipv6"),
+            ("resolve", "no_ipv6_resolve", False, True, False, "resolve_vs_no_ipv6_resolve"),
         ]
         found = False
         for left, right, strip_nr, rm_left6, rm_right6, label in pair_specs:
