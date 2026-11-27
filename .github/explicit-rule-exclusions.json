@@ -94,55 +94,6 @@
       "path": "Rule/Upstream/PingAn",
       "category": "financial_services",
       "authorization": "explicit user deletion instruction (2026-11-27)"
-    },
-    {
-      "folder": "Binance",
-      "path": "Rule/Upstream/Binance",
-      "category": "crypto_exchange",
-      "rule_entries": 12,
-      "authorization": "user's explicit category-level instruction to delete exchange, cryptocurrency and securities rule folders (2026-11-27)"
-    },
-    {
-      "folder": "OKX",
-      "path": "Rule/Upstream/OKX",
-      "category": "crypto_exchange",
-      "rule_entries": 3,
-      "authorization": "user's explicit category-level instruction to delete exchange, cryptocurrency and securities rule folders (2026-11-27)"
-    },
-    {
-      "folder": "Crypto",
-      "path": "Rule/Upstream/Crypto",
-      "category": "cryptocurrency_category",
-      "rule_entries": 201,
-      "authorization": "user's explicit category-level instruction to delete exchange, cryptocurrency and securities rule folders (2026-11-27)"
-    },
-    {
-      "folder": "Cryptocurrency",
-      "path": "Rule/Upstream/Cryptocurrency",
-      "category": "cryptocurrency_category",
-      "rule_entries": 43,
-      "authorization": "user's explicit category-level instruction to delete exchange, cryptocurrency and securities rule folders (2026-11-27)"
-    },
-    {
-      "folder": "EastMoney",
-      "path": "Rule/Upstream/EastMoney",
-      "category": "securities_brokerage",
-      "rule_entries": 33,
-      "authorization": "user's explicit category-level instruction to delete exchange, cryptocurrency and securities rule folders (2026-11-27)"
-    },
-    {
-      "folder": "TigerFintech",
-      "path": "Rule/Upstream/TigerFintech",
-      "category": "securities_brokerage",
-      "rule_entries": 19,
-      "authorization": "user's explicit category-level instruction to delete exchange, cryptocurrency and securities rule folders (2026-11-27)"
-    },
-    {
-      "folder": "XueQiu",
-      "path": "Rule/Upstream/XueQiu",
-      "category": "securities_investment_community",
-      "rule_entries": 11,
-      "authorization": "user's explicit category-level instruction to delete exchange, cryptocurrency and securities rule folders (2026-11-27)"
     }
   ]
 }

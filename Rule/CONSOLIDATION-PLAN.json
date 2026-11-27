@@ -15,11 +15,12 @@
     "personal_rules_are_never_modified": true,
     "remove_alias_folders_after_verified_union": true,
     "retain_source_provenance_in_SourceMetadata": true,
-    "user_explicitly_approved_crypto_exchange_and_securities_folder_removal": true,
+    "user_explicitly_approved_crypto_exchange_and_securities_folder_removal": false,
     "explicit_deletion_manifest_enforced_by_automation": true,
     "never_restore_user_deleted_rule_folders": true,
     "restore_excluded_folders_only_on_explicit_user_request": true,
-    "do_not_restore_from_author_feeds_cached_snapshots_backups_or_git_history": true
+    "do_not_restore_from_author_feeds_cached_snapshots_backups_or_git_history": true,
+    "do_not_delete_crypto_exchange_and_securities_without_explicit_user_request": true
   },
   "scenario_variants": [
     {

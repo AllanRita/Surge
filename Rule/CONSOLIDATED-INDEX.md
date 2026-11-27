@@ -132,10 +132,10 @@ The repository does not contain the user's active Surge profile/configuration, s
 The cleanup inventory now scans a curated set of 42 shared CDN/hosting, dynamic-DNS, and URL-shortener suffixes across every upstream rule file, not only those suffixes that happen to match OpenPhish. The latest run found 34 suffixes in 159 rule occurrences: 33 occurrences in App/service folders across 21 suffixes and 126 in aggregate folders (Global, GlobalMedia, Proxy, ProxyLite). The result is recorded in `CLEANUP-INVENTORY.json` and `CLEANUP-INVENTORY.md`, with the affected folders and rule occurrences. This is a review-only scan: no rule is automatically removed because a suffix is shared or multi-tenant. The plan records these App/service-folder candidates for manual routing review.
 
 
-## Excluded finance, trading, cryptocurrency and securities folders
+## Trading, cryptocurrency and securities folders — retained
 
-At the user's explicit direction, these seven dedicated folders were removed from `Rule/Upstream`: `Binance`, `OKX`, `Crypto`, `Cryptocurrency`, `EastMoney`, `TigerFintech`, and `XueQiu`. This removes seven rule lists (322 rule entries) and seven README files.
+The user's confirmed deletion instruction applies only to the 14 dedicated bank/payment App folders in `.github/explicit-rule-exclusions.json`. It does not include `Binance`, `OKX`, `Crypto`, `Cryptocurrency`, `EastMoney`, `TigerFintech`, or `XueQiu`. These seven folders (322 rule entries and seven README files) are retained.
 
-The consolidation plan records the user's explicit approval. The permanent exclusion manifest is enforced before audits and App consolidation. If any excluded folder is reintroduced by a sync, snapshot, merge, or retry, automation removes it again; restoration requires an explicit new user instruction.
+A previous automation change incorrectly added these folders to the deletion manifest and removed them. Their original files have now been restored byte-for-byte from the repository snapshot immediately preceding that change. The seven folders have been removed from the permanent exclusion manifest. Future automation may delete only the 14 explicitly authorized bank/payment folders; it must not infer additional deletions from broad financial categories.
 
-The removal does not delete matching domains from unrelated App, Global, advertising, privacy, or filter lists. `Rule/Personal` remains untouched. `Stackexchange` remains because it is a Q&A/community service, not a financial exchange.
+The removal policy does not delete matching domains from unrelated App, Global, advertising, privacy, or filter lists. `Rule/Personal` remains untouched. `Stackexchange` remains because it is a Q&A/community service, not a financial exchange.

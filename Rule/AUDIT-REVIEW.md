@@ -74,11 +74,11 @@ The user explicitly instructed deletion of these 14 dedicated folders. They rema
 
 This deletion is limited to the dedicated folders. Matching domains in unrelated App, Global, advertising, privacy, or filter rule sets were not removed. `Rule/Personal/PayPay.list` remains untouched. The permanent exclusion manifest is `.github/explicit-rule-exclusions.json`; automation enforces it before audits and consolidation.
 
-### Dedicated trading-exchange, cryptocurrency and securities folders — removed
+### Trading, cryptocurrency and securities rule folders — retained
 
-The user explicitly confirmed removal of all dedicated trading-exchange, cryptocurrency-category, securities-brokerage, and stock-investment community rule folders. The following seven folders were removed from `Rule/Upstream`:
+The user's confirmed deletion instruction applies to the 14 dedicated bank/payment App folders listed in `.github/explicit-rule-exclusions.json`. It does not authorize deletion of crypto exchanges, cryptocurrency category lists, securities brokers, or investment communities. These seven folders therefore remain part of the upstream library and are not tombstoned:
 
-| Folder | Classification | Rule entries removed |
+| Folder | Classification | Rule entries |
 |---|---|---:|
 | Binance | Crypto exchange | 12 |
 | OKX | Crypto exchange | 3 |
@@ -89,9 +89,9 @@ The user explicitly confirmed removal of all dedicated trading-exchange, cryptoc
 | XueQiu | Securities / stock-investment information community | 11 |
 | **Total** | **7 folders / 7 rule lists** | **322** |
 
-All seven `.list` files and their seven `README.md` files were deleted and are protected by the permanent exclusion manifest. The permanent exclusion manifest records these user-directed deletions. Audit and consolidation automation removes any reintroduced copy before processing; historical snapshots and author feeds are never restoration sources.
+A previous automation change incorrectly treated these seven folders as user-deleted and removed them. Their original seven `.list` files and seven `README.md` files have now been restored byte-for-byte from the repository snapshot immediately preceding that unauthorized removal. They are excluded from the permanent deletion manifest and must not be deleted or restored again without an explicit user instruction.
 
-This is a folder-level removal only: matching domains embedded in unrelated App, Global, advertising, privacy, or filter lists were not deleted. `Rule/Personal` remains untouched.
+This is a folder-level distinction only. It does not add these services to the bank/payment category. The 14 bank/payment folders remain excluded; matching domains in unrelated App, Global, advertising, privacy, or filter lists remain untouched. `Rule/Personal` remains untouched.
 
 `Stackexchange` remains because it is a Q&A/community service, not a financial securities exchange. The 238 general-purpose financial-domain matches elsewhere in the library remain subject to their own scenario-aware review.
 
