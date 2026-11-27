@@ -1,6 +1,6 @@
 # App-level rule overlap report
 
-Generated: 2026-11-27 09:51 UTC
+Generated: 2026-11-27 09:57 UTC
 
 - Rule files scanned: 853
 - App/scenario candidate groups across categories: 11
@@ -58,31 +58,31 @@ Grouped by normalized app-folder name and scenario. A match is a review candidat
 - File: Rule/Upstream/AdGuardSDNSFilter/Direct/Direct.list (149 total rules; 149 domain rules)
 - File: Rule/Upstream/Direct/Direct.list (268 total rules; 195 domain rules)
 - Only in Rule/Upstream/AdGuardSDNSFilter/Direct/Direct.list: 145
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
+  - DOMAIN,5471782.fls.doubleclick.net
+  - DOMAIN,79423.analytics.edgekey.net
+  - DOMAIN,a.adwolf.ru
+  - DOMAIN,a.sellpoint.net
+  - DOMAIN,ac.ebis.ne.jp
+  - DOMAIN,acs-m.daraz.com.bd
+  - DOMAIN,acs-m.daraz.pk
+  - DOMAIN,action.metaffiliation.com
+  - DOMAIN,ad.abchina.com
+  - DOMAIN,ad.kazakinfo.com
+  - DOMAIN,ad.ourgame.com
+  - DOMAIN,adcdn.pingan.com
 - Only in Rule/Upstream/Direct/Direct.list: 264
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
+  - DOMAIN,ad.12306.cn
+  - DOMAIN,ain.bgm.tv
+  - DOMAIN,alt1-mtalk.google.com
+  - DOMAIN,alt2-mtalk.google.com
+  - DOMAIN,alt3-mtalk.google.com
+  - DOMAIN,alt4-mtalk.google.com
+  - DOMAIN,alt5-mtalk.google.com
+  - DOMAIN,alt6-mtalk.google.com
+  - DOMAIN,alt7-mtalk.google.com
+  - DOMAIN,alt8-mtalk.google.com
+  - DOMAIN,analytics.95516.com
+  - DOMAIN,analytics.strava.com
 
 ### dns (standard)
 - Categories: Block, DNS
@@ -92,31 +92,31 @@ Grouped by normalized app-folder name and scenario. A match is a review candidat
 - File: Rule/Upstream/Block/DNS/DNS.list (53 total rules; 32 domain rules)
 - File: Rule/Upstream/DNS/DNS.list (119 total rules; 93 domain rules)
 - Only in Rule/Upstream/Block/DNS/DNS.list: 53
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
+  - DOMAIN,3dns-1.adobe.com
+  - DOMAIN,3dns-2.adobe.com
+  - DOMAIN,3dns-3.adobe.com
+  - DOMAIN,3dns-4.adobe.com
+  - DOMAIN,adobe-dns-1.adobe.com
+  - DOMAIN,adobe-dns-2.adobe.com
+  - DOMAIN,adobe-dns-3.adobe.com
+  - DOMAIN,adobe-dns-4.adobe.com
+  - DOMAIN,adobe-dns.adobe.com
+  - DOMAIN,dns.jd.com
+  - DOMAIN,dns.weibo.cn
+  - DOMAIN,dns.weixin.qq.com
 - Only in Rule/Upstream/DNS/DNS.list: 119
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
+  - DOMAIN,1dot1dot1dot1.cloudflare-dns.com
+  - DOMAIN,8888.google
+  - DOMAIN,adblock.mydns.network
+  - DOMAIN,applied-privacy.net
+  - DOMAIN,cdn-doh.ssnm.xyz
+  - DOMAIN,chrome.cloudflare-dns.com
+  - DOMAIN,cloudflare-dns.com
+  - DOMAIN,dns-family.adguard.com
+  - DOMAIN,dns-nyc.aaflalo.me
+  - DOMAIN,dns-tls.qis.io
+  - DOMAIN,dns-unfiltered.adguard.com
+  - DOMAIN,dns.aa.net.uk
 
 ### gemini (standard)
 - Categories: BardAI, Gemini
@@ -150,31 +150,31 @@ Grouped by normalized app-folder name and scenario. A match is a review candidat
 - File: Rule/Upstream/Block/YouTube/YouTube.list (15 total rules; 0 domain rules)
 - File: Rule/Upstream/YouTube/YouTube.list (190 total rules; 179 domain rules)
 - Only in Rule/Upstream/Block/YouTube/YouTube.list: 15
-  - U,R
-  - U,R
-  - U,R
-  - U,R
-  - U,R
-  - U,R
-  - U,R
-  - U,R
-  - U,R
-  - U,R
-  - U,R
-  - U,R
+  - URL-REGEX,^https?://(www|s).youtube.com/(pagead|ptracking)
+  - URL-REGEX,^https?://(www|s).youtube.com/api/stats/ads
+  - URL-REGEX,^https?://.+.youtube.com/api/stats/.+adformat
+  - URL-REGEX,^https?://.+.youtube.com/api/stats/ads
+  - URL-REGEX,^https?://.+.youtube.com/get_midroll
+  - URL-REGEX,^https?://.+.youtube.com/get_midroll_
+  - URL-REGEX,^https?://.+.youtube.com/pagead/
+  - URL-REGEX,^https?://.+.youtube.com/ptracking
+  - URL-REGEX,^https?://.+.youtube.com/ptracking\?
+  - URL-REGEX,^https?://[\w-]+.googlevideo.com/((?!(dclk_video_ads|videoplayback)).)+&(oad|ctier)
+  - URL-REGEX,^https?://premiumyva.appspot.com/vmclickstoadvertisersite
+  - URL-REGEX,^https?://s.youtube.com/api/stats/qoe?.*adformat
 - Only in Rule/Upstream/YouTube/YouTube.list: 190
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
-  - D,O
+  - DOMAIN-KEYWORD,youtube
+  - DOMAIN-SUFFIX,ggpht.cn
+  - DOMAIN-SUFFIX,ggpht.com
+  - DOMAIN-SUFFIX,googlevideo.com
+  - DOMAIN-SUFFIX,gvt1.com
+  - DOMAIN-SUFFIX,gvt2.com
+  - DOMAIN-SUFFIX,video.google.com
+  - DOMAIN-SUFFIX,wide-youtube.l.google.com
+  - DOMAIN-SUFFIX,withyoutube.com
+  - DOMAIN-SUFFIX,youtu.be
+  - DOMAIN-SUFFIX,youtube
+  - DOMAIN-SUFFIX,youtube-nocookie.com
 
 ## High-overlap cross-App candidates
 

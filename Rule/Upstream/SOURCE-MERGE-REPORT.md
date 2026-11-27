@@ -1,6 +1,6 @@
 # Additional-source merge coverage report
 
-Generated: 2026-11-27 09:51 UTC
+Generated: 2026-11-27 09:57 UTC
 
 Coverage is measured against the final target rule list. Exact matches and matches covered by a parent DOMAIN-SUFFIX are distinguished. This is a static coverage check, not proof of routing correctness.
 
