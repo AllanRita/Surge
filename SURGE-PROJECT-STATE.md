@@ -364,3 +364,11 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 3. Continue App-by-App review only where existing local evidence supports a decision. The 663 unmapped folders remain explicitly not verifiable from cached author sources.
 4. Keep all production rule changes protected by the per-batch backup/scope verifier and preserve the no-restore tombstone policy.
 5. After the repository owner adds URLHAUS_AUTH_KEY in GitHub Actions Secrets, re-run the workflow and verify both feed counts before allowing any exact-host dual-feed deletion.
+
+
+## 23. No-restore protection scope boundary (2026-11-27)
+
+- The current exact tombstone manifest and enforcer protect direct-child folders under Rule/Upstream. They prevent a folder explicitly listed by the user from being automatically restored.
+- They do not yet persist tombstones for an individual deleted .list file or a deleted rule line inside an existing file.
+- Run #45 did not re-add any cached rule (0 cached-source additions and 0 changed rule files), so there was no observed restoration in this run. However, that result does not prove that individual line/file deletions are protected in future runs.
+- If the user's no-restore requirement includes individual files or individual rule lines, extend the manifest with exact file-level and rule-line tombstones, capture deletions from user commits, enforce them before cached-source merge, and add regression tests. Do not broaden the manifest or restore anything without preserving the user's explicit restore-only-on-request policy.
