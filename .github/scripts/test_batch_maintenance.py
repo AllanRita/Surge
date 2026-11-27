@@ -26,10 +26,14 @@ class SurgeMaintenanceTests(unittest.TestCase):
         self.assertTrue(MERGE.is_covered(MERGE.parse_rule("DOMAIN-SUFFIX,sub.example.com"), parent))
         self.assertFalse(MERGE.is_covered(MERGE.parse_rule("DOMAIN-SUFFIX,example.com"), [MERGE.parse_rule("DOMAIN,example.com")]))
 
-    def test_ip_network_containment(self):
+    def test_ip_network_containment_respects_no_resolve(self):
         broader = [MERGE.parse_rule("IP-CIDR,10.0.0.0/8,no-resolve")]
-        self.assertTrue(MERGE.is_covered(MERGE.parse_rule("IP-CIDR,10.1.0.0/16"), broader))
-        self.assertFalse(MERGE.is_covered(MERGE.parse_rule("IP-CIDR6,2001:db8::/32"), broader))
+        same_mode = [MERGE.parse_rule("IP-CIDR,10.0.0.0/8,no-resolve")]
+        different_mode = [MERGE.parse_rule("IP-CIDR,10.0.0.0/8")]
+        self.assertTrue(MERGE.is_covered(MERGE.parse_rule("IP-CIDR,10.1.0.0/16,no-resolve"), same_mode))
+        self.assertFalse(MERGE.is_covered(MERGE.parse_rule("IP-CIDR,10.1.0.0/16"), broader))
+        self.assertFalse(MERGE.is_covered(MERGE.parse_rule("IP-CIDR,10.1.0.0/16,no-resolve"), different_mode))
+        self.assertFalse(MERGE.is_covered(MERGE.parse_rule("IP-CIDR6,2001:db8::/32,no-resolve"), broader))
 
     def test_resolve_format_adaptation(self):
         standard = MERGE.adapt_for_target("IP-CIDR,192.0.2.0/24", "Example/Example.list", "IP-CIDR,198.51.100.0/24,no-resolve\n")
