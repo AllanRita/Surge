@@ -194,3 +194,13 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - Validation of the new cached-source stage and backup path is pending the latest post-change Actions run. No new author fetching has been enabled. No rule content has been intentionally merged or deleted by this chat session.
 - Remaining blocker: add a valid URLHAUS_AUTH_KEY as a GitHub Actions repository secret to enable dual-feed threat confirmation. Without it, the workflow may perform deterministic repair and cached-source comparisons, but must report incomplete threat-intelligence coverage and must not automatically delete threat-feed matches.
 - Next: inspect the latest post-change workflow run; confirm all 15 snapshots are processed across their respective batches, no semantic duplicates are added, all reports/backups are present, and personal rules remain unchanged. Then test an isolated controlled change/rollback scenario without modifying production rule content.
+
+
+## 15. Post-refinement validation completed (2026-11-27)
+
+- Validation run [46018472264](https://github.com/AllanRita/Surge/actions/runs/46018472264) completed with conclusion `success`; all workflow steps passed, including sequential processing and artifact upload.
+- Reprocessed all 654 eligible folders in 7 batches (100×6 + 54). Every batch preflight returned PASS with 0 blockers. Review-only findings remain: 30, 845, 7, 10, 5, 1, and 4 respectively (902 total); these are not automatic deletion instructions.
+- The no-resolve semantic-coverage refinement was included in this successful run. Cached-source comparison again found 0 additions and 0 files changed; all batch reports show the personal directory unchanged.
+- URLhaus was still unavailable (`URLHAUS_AVAILABLE=false`); threat-based deletion remained disabled. Do not mark security intelligence coverage complete.
+- Artifact: `surge-automatic-maintenance-15`, artifact ID `15206941994`.
+- Next: improve URLhaus feed availability/credential handling without weakening fail-closed behavior; review the 902 static preflight findings with false-positive-aware classification; then continue deeper app-specific domain completeness checks and per-format comparisons. Keep all author fetching paused and preserve exact deletion tombstones.
