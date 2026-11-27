@@ -117,17 +117,28 @@ def feed_domains(path,kind):
     except ValueError: pass
     if re.fullmatch(r"(?i)[a-z0-9-]+(?:\.[a-z0-9-]+)+",token): out.add(token)
  return out
-def domain_covered(rule,target_rules):
+def domain_entry(rule):
  p=rule.split(",")
- if len(p)<2 or p[0].upper() not in DOMAIN_TYPES: return False
- value=p[1].strip().lower().rstrip(".")
+ if len(p)>=2 and p[0].strip().upper() in DOMAIN_TYPES:
+  kind=p[0].strip().upper(); value=p[1].strip().lower().rstrip(".")
+  return (value,kind in {"DOMAIN-SUFFIX","HOST-SUFFIX"}) if value else None
+ if len(p)==1:
+  value=p[0].strip().lower().rstrip(".")
+  if value.startswith(".") and re.fullmatch(r"[a-z0-9_-]+(?:\\.[a-z0-9_-]+)+",value[1:]):
+   return value[1:],True
+  if re.fullmatch(r"[a-z0-9_-]+(?:\\.[a-z0-9_-]+)+",value):
+   return value,False
+ return None
+def domain_covered(rule,target_rules):
+ source=domain_entry(rule)
+ if not source: return False
+ value,is_suffix=source
  for target in target_rules:
-  q=target.split(",")
-  if len(q)<2: continue
-  if target.lower()==rule.lower(): return True
-  if q[0].upper() in {"DOMAIN-SUFFIX","HOST-SUFFIX"}:
-   d=q[1].strip().lower().rstrip(".")
-   if value==d or value.endswith("."+d): return True
+  candidate=domain_entry(target)
+  if not candidate: continue
+  domain,target_suffix=candidate
+  if target_suffix and (value==domain or value.endswith("."+domain)): return True
+  if not target_suffix and not is_suffix and value==domain: return True
  return False
 def ip_covered(rule,target_rules):
  p=rule.split(",")
@@ -155,10 +166,13 @@ def source_coverage():
   try: meta=json.loads(mp.read_text(encoding="utf-8"))
   except (OSError,ValueError) as e: out.append({"source":name,"target":target_rel,"error":str(e)}); continue
   source_rules=meta.get("rules",[])
-  targets=[("standard",target_rel,tp)]
-  resolve_path=tp.with_name(tp.stem+"_Resolve"+tp.suffix)
-  if resolve_path.is_file():
-   targets.append(("resolve",str(resolve_path.relative_to(ROOT)),resolve_path))
+  base_name,_=fmt(tp.stem)
+  targets=[]
+  for candidate in sorted(tp.parent.glob("*.list")):
+   candidate_base,format_name=fmt(candidate.stem)
+   if candidate_base==base_name:
+    targets.append((format_name,str(candidate.relative_to(ROOT)),candidate))
+  if not targets: targets=[("standard",target_rel,tp)]
   format_coverage=[]
   for format_name,format_rel,format_path in targets:
    target_rules=rules(format_path); counts=Counter(); missing=[]
@@ -170,7 +184,7 @@ def source_coverage():
      counts["missing"]+=1
      if len(missing)<100: missing.append(rule)
    format_coverage.append({"format":format_name,"target":format_rel,"target_rules":len(target_rules),"exact":counts["exact"],"parent_suffix":counts["parent_suffix"],"ip_range":counts["ip_range"],"missing_count":counts["missing"],"missing_examples":missing})
-  primary=format_coverage[0]
+  primary=next((x for x in format_coverage if x["format"]=="standard"),format_coverage[0])
   out.append({"source":name,"source_url":meta.get("source"),"license":meta.get("license"),"source_commit":meta.get("commit"),"source_path":meta.get("path"),"source_rules":len(source_rules),"target":primary["target"],"target_rules":primary["target_rules"],"exact":primary["exact"],"parent_suffix":primary["parent_suffix"],"ip_range":primary["ip_range"],"missing_count":primary["missing_count"],"missing_examples":primary["missing_examples"],"format_coverage":format_coverage})
  return out
 def alias_report():
