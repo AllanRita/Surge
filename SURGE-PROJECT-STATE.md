@@ -128,3 +128,16 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - Do not run the full consolidation workflow as part of batch preflight. Do not merge or delete any folder during preflight.
 - The 14 restored bank/payment/finance folders are verified present; the tombstone manifest is empty. The exclusion enforcer accepts an empty list safely.
 - Next action: monitor automatic run `46012159743`; inspect the first batch report and any blockers. The workflow is read-only, so even a fully passing run does not itself authorize rule deletion or rewriting. Use the results to refine the workflow, then begin content optimization in reviewed 100-folder batches.
+
+
+## 11. First automatic end-to-end batch run (2026-11-27)
+
+- Automatic workflow run: [46012159743](https://github.com/AllanRita/Surge/actions/runs/46012159743), event `push`, commit `51300f8be5fc38e21146dcebe794f827cd141163`; conclusion: **success**.
+- All 654 eligible folders were processed in one sequential run: 6 batches of 100 and a final batch of 54. Total: 842 .list files and 4,695,128 rule entries (sum of batch reports).
+- All 7 batches reported 0 blockers. Review-only findings: 902 total. Breakdown: batch 1 = 30; batch 2 = 845; batch 3 = 7; batch 4 = 10; batch 5 = 5; batch 6 = 1; batch 7 = 4.
+- Most review-only findings are single-label suffix operands (especially ChinaMax, ChinaTest, ChinaMaxNoMedia, and ChinaMaxNoIP); these may be intentional broad regional/TLD routing rules and must be reviewed in context, not automatically deleted.
+- Six folders were flagged for multiple files sharing a recognized format label. The current heuristic may over-flag aggregate/multi-category folders; inspect the exact paths and refine classification before treating these as true duplicate formats.
+- The run is read-only: no rule files were modified, deleted, renamed, merged, or restored. The 14 restored bank/payment/finance folders remain protected. `Rule/Personal` remained unchanged according to the per-run digest check.
+- Artifact: `surge-rule-batches-1`, artifact ID `15203898521`, 30-day retention. It contains JSON and Markdown reports for all 7 batches.
+- Important distinction: this success confirms the batch workflow and static preflight completed. It does not mean all 902 review items are security defects or that rule content optimization is complete.
+- Next: refine false-positive review heuristics (especially single-label/TLD suffixes and aggregate folder format labels), then begin actual rule-content review and safe improvements in 100-folder batches. Keep changes reversible and log every added/removed rule; no automatic deletion based only on static heuristics.
