@@ -1,0 +1,26 @@
+{
+  "source": "https://github.com/SukkaLab/ruleset.skk.moe",
+  "commit": "8341913ec29f036fafb8886be88769487a7f3989",
+  "path": "List/non_ip/stream_biliintl.conf",
+  "license": "AGPL-3.0",
+  "notices": [
+    "#########################################",
+    "# Sukka's Ruleset - Stream Services: Bilibili International",
+    "# Last Updated: 2025-01-17T12:44:34.353Z",
+    "# Size: 7",
+    "# License: AGPL 3.0",
+    "# Homepage: https://ruleset.skk.moe",
+    "# GitHub: https://github.com/SukkaW/Surge",
+    "#",
+    "# - Bilibili International",
+    "#########################################",
+    "################## EOF ##################"
+  ],
+  "rules": [
+    "DOMAIN,apm-misaka.biliapi.net",
+    "DOMAIN,upos-bstar-mirrorakam.akamaized.net",
+    "DOMAIN,upos-bstar1-mirrorakam.akamaized.net",
+    "DOMAIN-SUFFIX,bilibili.tv",
+    "DOMAIN-SUFFIX,biliintl.com"
+  ]
+}

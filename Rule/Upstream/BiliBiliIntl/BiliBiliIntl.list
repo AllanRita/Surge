@@ -7,3 +7,10 @@
 # TOTAL: 2
 DOMAIN-SUFFIX,bilibili.tv
 PROCESS-NAME,com.bstar.intl
+# BEGIN MERGED SUPPLEMENT
+# Source: https://github.com/SukkaLab/ruleset.skk.moe
+# License: AGPL-3.0; notices in SourceMetadata/BiliBiliIntl.json
+DOMAIN,apm-misaka.biliapi.net
+DOMAIN,upos-bstar-mirrorakam.akamaized.net
+DOMAIN,upos-bstar1-mirrorakam.akamaized.net
+DOMAIN-SUFFIX,biliintl.com
