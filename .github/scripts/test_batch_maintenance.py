@@ -20,6 +20,7 @@ MERGE = load_module("merge_cached_sources", "merge_cached_sources.py")
 MAINTAIN = load_module("batch_maintain", "batch_maintain.py")
 PREFLIGHT = load_module("batch_preflight", "batch_preflight.py")
 FORMAT = load_module("audit_format_parity", "audit_format_parity.py")
+APP_AUDIT = load_module("audit_app_completeness", "audit_app_completeness.py")
 
 class SurgeMaintenanceTests(unittest.TestCase):
     def test_domain_suffix_semantic_coverage(self):
@@ -261,6 +262,29 @@ class SurgeMaintenanceTests(unittest.TestCase):
             self.assertEqual(report["summary"].get("threats_removed", 0), 0)
             self.assertFalse(report["security_coverage_complete"])
             self.assertEqual(len(report["review_findings"]), 1)
+    def test_app_completeness_matrix_distinguishes_mapped_and_unmapped_sources(self):
+        with tempfile.TemporaryDirectory() as td:
+            base = Path(td)
+            root = base / 'Rule' / 'Upstream'
+            source_root = root / 'SourceMetadata'
+            source_root.mkdir(parents=True)
+            mapped = root / 'Apple'
+            unmapped = root / 'UnmappedApp'
+            mapped.mkdir()
+            unmapped.mkdir()
+            (mapped / 'README.md').write_text('Apple scope', encoding='utf-8')
+            (mapped / 'Apple.list').write_text('DOMAIN-SUFFIX,apple.com\n', encoding='utf-8')
+            (unmapped / 'UnmappedApp.list').write_text('DOMAIN,api.example.com\n', encoding='utf-8')
+            (source_root / 'Apple.json').write_text('{}', encoding='utf-8')
+            source_map = {'Apple.json': ['Apple/Apple.list']}
+            report = APP_AUDIT.inventory(root, source_root, source_map)
+            self.assertEqual(report['folder_count'], 2)
+            self.assertEqual(report['folders_with_cached_source_mapping'], 1)
+            self.assertEqual(report['folders_not_verifiable_from_cached_sources'], 1)
+            by_name = {row['folder']: row for row in report['folders']}
+            self.assertEqual(by_name['Apple']['author_source_coverage'], 'CACHED_SOURCE_COMPARISON_CONFIGURED')
+            self.assertEqual(by_name['UnmappedApp']['author_source_coverage'], 'NOT_VERIFIABLE_FROM_CACHED_SOURCES')
+            self.assertTrue(by_name['Apple']['readme_present'])
     def test_urlhaus_hostfile_first_column(self):
         with tempfile.TemporaryDirectory() as td:
             feed = Path(td) / "urlhaus.txt"
