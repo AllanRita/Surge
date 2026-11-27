@@ -1,0 +1,10 @@
+# NAME: CGB
+# AUTHOR: blackmatrix7
+# SOURCE: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/CGB/CGB.list
+# RESTORED: 2026-11-27
+# RULES: 4
+
+DOMAIN-SUFFIX,95508.com
+DOMAIN-SUFFIX,cgbchina.cn
+DOMAIN-SUFFIX,cgbchina.com.cn
+DOMAIN-SUFFIX,gdb.com.cn
