@@ -448,7 +448,7 @@ jobs:
           report_lines += [f'- {item}' for item in examples] if examples else ['- None']
           report_lines += ['', '## Scope and limitations',
               '- Personal rules are audited but not rewritten or merged into upstream lists.',
-              '- Exact duplicate rows are removed only within each individual file; cross-file semantic deduplication is not claimed. Identical rule-set groups are reported for review and are not automatically merged.',
+              '- Exact duplicate rows are removed within each file. Explicitly approved same-app groups are unioned and mirrored; similarity-only overlaps remain review candidates and are never merged automatically.',
               '- Source license notices are retained in SourceMetadata where available.',
               '- Manual review is still required for source relevance, financial exclusions, broad matches, and real Surge subscription behavior.',
               '']

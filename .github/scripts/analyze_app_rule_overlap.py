@@ -240,7 +240,7 @@ for item in same_app_candidates:
     for path, only in item["differences"]:
         app_lines.append(f"- Only in {path}: {len(only)}")
         for rule in only[:12]:
-            app_lines.append(f"  - {rule[0]},{rule[1]}")
+            app_lines.append(f"  - {rule}")
 if not overlap_candidates:
     app_lines += ["", "## High-overlap cross-App candidates", "",
                   "- None met the conservative threshold (at least 5 exact domain-rule overlaps and high Jaccard/containment)."]
@@ -294,11 +294,40 @@ source_lines += [
 ]
 (ROOT / "SOURCE-MERGE-REPORT.md").write_text("\n".join(source_lines), encoding="utf-8")
 
+# Verify every explicitly approved canonical/legacy pair has identical ordered rule payloads.
+plan_path = Path("Rule/CONSOLIDATION-PLAN.json")
+merge_groups = json.loads(plan_path.read_text(encoding="utf-8")).get("merge_groups", [])
+
+def ordered_rule_lines(path):
+    return [
+        line.strip()
+        for line in path.read_text(encoding="utf-8-sig").splitlines()
+        if line.strip() and not line.lstrip().startswith(("#", ";", "//"))
+    ]
+
+for group in merge_groups:
+    paths = [group["canonical_path"]] + group.get("legacy_paths", [])
+    payloads = [ordered_rule_lines(Path(path)) for path in paths]
+    if not payloads or any(payload != payloads[0] for payload in payloads[1:]):
+        raise SystemExit("Canonical/legacy rule payload mismatch: " + group.get("app", "unknown"))
+
 audit = ROOT / "AUDIT-REPORT.md"
 if audit.is_file():
+    audit_text = audit.read_text(encoding="utf-8")
+    audit_text = re.sub(
+        r"- Identical rule-set groups \(review only\): \d+",
+        f"- Canonical same-app merge groups: {len(merge_groups)} (legacy paths retained and mirror-verified)",
+        audit_text,
+    )
+    audit_text = audit_text.replace(
+        "- Exact duplicate rows are removed only within each individual file; cross-file semantic deduplication is not claimed. Identical rule-set groups are reported for review and are not automatically merged.",
+        "- Exact duplicate rows are removed within each file. Explicitly approved same-app groups are unioned and mirrored; similarity-only overlaps remain review candidates and are never merged automatically."
+    )
+    audit.write_text(audit_text, encoding="utf-8")
     with audit.open("a", encoding="utf-8") as handle:
         handle.write(
             "\n## Further app-level analysis\n"
+            f"- Canonical/legacy ordered rule payloads verified for {len(merge_groups)} approved groups.\n"
             "- See CANONICAL-MERGE-REPORT.md for approved same-App unions and legacy URL mirrors.\n"
             "- See APP-OVERLAP-REPORT.md for cross-category App candidates and conservative domain-overlap review.\n"
             "- See SOURCE-MERGE-REPORT.md for cross-author source-rule coverage against final target lists.\n"
