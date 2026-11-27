@@ -374,7 +374,7 @@ def main():
  md += [", ".join(x) for x in payloaddups] if payloaddups else ["- None"]
  md += ["","## Multi-format folders","","Format labels are inferred from filename suffixes; distinct formats are preserved unless explicitly approved after content comparison.",""]
  for x in multi: md.append(f"- {x['folder']}: {', '.join(x['formats'])} ({x['file_count']} files)")
- md += ["","## Safety boundaries","- No rule files or personal files are deleted, renamed, or rewritten by this audit.","- Bank/payment classification applies to dedicated App folders only; domains embedded in other Apps remain untouched.","- Regional variants are candidates for consolidation into one App policy group; country selection belongs in the Surge policy group, not separate rule folders.","- Resolve / non-Resolve and other distinct formats are compared and preserved separately.","- Similarity, shared CDN domains, or parent-company ownership alone never authorizes cross-App merging.",""]
+ md += ["","## Safety boundaries","- No rule files or personal files are deleted, renamed, or rewritten by this audit.","- Dedicated bank/payment, crypto-exchange, cryptocurrency-category, securities-brokerage, and stock-investment folders explicitly excluded by the user are absent; matching domains embedded in unrelated Apps, aggregate lists, advertising, privacy, and filter lists remain untouched.","- Regional variants are candidates for consolidation into one App policy group; country selection belongs in the Surge policy group, not separate rule folders.","- Resolve / non-Resolve and other distinct formats are compared and preserved separately.","- Similarity, shared CDN domains, or parent-company ownership alone never authorizes cross-App merging.",""]
  (ROOT/"CLEANUP-INVENTORY.md").write_text("\n".join(md),encoding="utf-8")
 
  # Separate review of threat-feed matches. A parent suffix match means a known
@@ -432,7 +432,7 @@ def main():
  sec += [f"- {x}" for x in examples.get("stale_or_private_root_suffix",[])] if examples.get("stale_or_private_root_suffix") else ["- None detected or IANA TLD feed unavailable."]
  sec += ["","## Financial-service domains","",
   f"- Financial-domain rule matches found: {len(financial)}",
-  "- These are retained. The user's rule is to remove dedicated bank/payment App folders only, not payment-related domains embedded in other App or block/filter lists.",
+  "- Dedicated bank/payment, crypto-exchange, cryptocurrency-category, securities-brokerage, and stock-investment folders were removed per user direction. Financial-service domains embedded in unrelated App, aggregate, advertising, privacy, or filter lists remain unchanged.",
   "- Rule/Personal was not modified.","",
   "## Interpretation",
   "- OpenPhish/URLhaus matches under a shared CDN or hosting suffix are not direct evidence that the App rule itself is malicious.",
