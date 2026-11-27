@@ -383,3 +383,18 @@ The user explicitly decided to defer the following items. They are not current b
 3. Fine-grained no-restore tombstones: do not implement individual .list-file or individual rule-line tombstones for now. Retain existing exact folder-level tombstone protection.
 
 Resume focus: continue the approved App/rule-set organization and quality work within existing evidence and sources. Keep author-source collection paused. Preserve existing user deletions and Rule/Personal. Do not reopen deferred items unless the user explicitly asks.
+
+
+## 25. App-by-App review — Apple rule set (2026-11-28)
+
+Reviewed the current Apple folder and its two existing cached author snapshots. No new author sources were fetched and no rule files were modified.
+
+- Folder contains five intentional files: Apple.list (80 entries), Apple_Resolve.list (80), Apple_All.list (1,615), Apple_All_No_Resolve.list (1,615), and Apple_Domain.list (1,559).
+- All five files have zero duplicate entries.
+- Apple.list and Apple_Resolve.list differ only in the 13 IP-CIDR/IP-CIDR6 no-resolve options, as documented in the README.
+- Apple_All.list and Apple_All_No_Resolve.list likewise differ only in those 13 IP rule options. Preserve both variants.
+- Apple_Domain.list exactly matches the domain projection of Apple_All.list: 1,559 entries, with zero missing and zero extra domains. Preserve as the separate DOMAIN-SET format for older Surge usage.
+- The 69 rules in the existing Aoang Apple snapshot and 16 rules in the existing SukkaLab Apple snapshot are all already covered by the applicable four mapped target files; zero additions and zero review-only source rules. This only validates against these two cached snapshots, not every possible author.
+- README format instructions are consistent with the actual file layout: use the All variants independently on supported Surge versions, or standard/Resolve plus the Domain set for the documented older-version mode.
+- Conclusion: Apple is structurally consistent, formats are intentional, and no changes are required. Do not collapse its five files into one or remove the DOMAIN-SET variant.
+- Next App review: proceed to BiliBili using its existing local files and the already-cached BiliBiliIntl snapshot; preserve Standard and Resolve as distinct formats.
