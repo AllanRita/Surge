@@ -1,154 +1,214 @@
 # App-level rule overlap report
 
-Generated: 2026-11-27 09:34 UTC
+Generated: 2026-11-27 09:45 UTC
 
 - Rule files scanned: 853
-- App/scenario candidate groups across categories: 8
-- High-overlap cross-App pairs for manual review: 22
+- App/scenario candidate groups across categories: 11
+- High-overlap cross-App pairs for manual review: 19
 
 ## Same App candidates across categories
 
 Grouped by normalized app-folder name and scenario. A match is a review candidate, not permission to merge. Standard and Resolve are analyzed separately.
 
+### abema (standard)
+- Categories: Abema, AbemaTV
+- Exact shared rule lines: 15; union: 29
+- Same full rule set: no
+- Exact shared domain rules: 15; domain union: 27
+- File: Rule/Upstream/Abema/Abema.list (20 total rules; 20 domain rules)
+- File: Rule/Upstream/AbemaTV/AbemaTV.list (24 total rules; 22 domain rules)
+- Only in Rule/Upstream/Abema/Abema.list: 5
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+- Only in Rule/Upstream/AbemaTV/AbemaTV.list: 9
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - U,S
+
 ### assassinscreedodyssey (resolve)
 - Categories: Assassin'sCreed, Game
-- Exact shared domain rules: 0; union: 0
-- Same domain-rule set: yes
-- File: Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list (0 domain rules)
-- File: Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list (0 domain rules)
+- Exact shared rule lines: 15; union: 15
+- Same full rule set: yes
+- Exact shared domain rules: 0; domain union: 0
+- File: Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list (15 total rules; 0 domain rules)
+- File: Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list (15 total rules; 0 domain rules)
 
 ### assassinscreedodyssey (standard)
 - Categories: Assassin'sCreed, Game
-- Exact shared domain rules: 0; union: 0
-- Same domain-rule set: yes
-- File: Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list (0 domain rules)
-- File: Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list (0 domain rules)
+- Exact shared rule lines: 15; union: 15
+- Same full rule set: yes
+- Exact shared domain rules: 0; domain union: 0
+- File: Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list (15 total rules; 0 domain rules)
+- File: Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list (15 total rules; 0 domain rules)
 
 ### assassinscreedorigins (resolve)
 - Categories: Assassin'sCreed, Game
-- Exact shared domain rules: 0; union: 0
-- Same domain-rule set: yes
-- File: Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list (0 domain rules)
-- File: Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list (0 domain rules)
+- Exact shared rule lines: 16; union: 16
+- Same full rule set: yes
+- Exact shared domain rules: 0; domain union: 0
+- File: Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list (16 total rules; 0 domain rules)
+- File: Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list (16 total rules; 0 domain rules)
 
 ### assassinscreedorigins (standard)
 - Categories: Assassin'sCreed, Game
-- Exact shared domain rules: 0; union: 0
-- Same domain-rule set: yes
-- File: Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list (0 domain rules)
-- File: Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list (0 domain rules)
+- Exact shared rule lines: 16; union: 16
+- Same full rule set: yes
+- Exact shared domain rules: 0; domain union: 0
+- File: Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list (16 total rules; 0 domain rules)
+- File: Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list (16 total rules; 0 domain rules)
 
 ### direct (standard)
 - Categories: AdGuardSDNSFilter, Direct
-- Exact shared domain rules: 4; union: 340
-- Same domain-rule set: no
-- File: Rule/Upstream/AdGuardSDNSFilter/Direct/Direct.list (149 domain rules)
-- File: Rule/Upstream/Direct/Direct.list (195 domain rules)
+- Exact shared rule lines: 4; union: 413
+- Same full rule set: no
+- Exact shared domain rules: 4; domain union: 340
+- File: Rule/Upstream/AdGuardSDNSFilter/Direct/Direct.list (149 total rules; 149 domain rules)
+- File: Rule/Upstream/Direct/Direct.list (268 total rules; 195 domain rules)
 - Only in Rule/Upstream/AdGuardSDNSFilter/Direct/Direct.list: 145
-  - DOMAIN,5471782.fls.doubleclick.net
-  - DOMAIN,79423.analytics.edgekey.net
-  - DOMAIN,a.adwolf.ru
-  - DOMAIN,a.sellpoint.net
-  - DOMAIN,ac.ebis.ne.jp
-  - DOMAIN,acs-m.daraz.com.bd
-  - DOMAIN,acs-m.daraz.pk
-  - DOMAIN,action.metaffiliation.com
-  - DOMAIN,ad.abchina.com
-  - DOMAIN,ad.kazakinfo.com
-  - DOMAIN,ad.ourgame.com
-  - DOMAIN,adcdn.pingan.com
-- Only in Rule/Upstream/Direct/Direct.list: 191
-  - DOMAIN,ad.12306.cn
-  - DOMAIN,ain.bgm.tv
-  - DOMAIN,alt1-mtalk.google.com
-  - DOMAIN,alt2-mtalk.google.com
-  - DOMAIN,alt3-mtalk.google.com
-  - DOMAIN,alt4-mtalk.google.com
-  - DOMAIN,alt5-mtalk.google.com
-  - DOMAIN,alt6-mtalk.google.com
-  - DOMAIN,alt7-mtalk.google.com
-  - DOMAIN,alt8-mtalk.google.com
-  - DOMAIN,analytics.95516.com
-  - DOMAIN,analytics.strava.com
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+- Only in Rule/Upstream/Direct/Direct.list: 264
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
 
 ### dns (standard)
 - Categories: Block, DNS
-- Exact shared domain rules: 0; union: 125
-- Same domain-rule set: no
-- File: Rule/Upstream/Block/DNS/DNS.list (32 domain rules)
-- File: Rule/Upstream/DNS/DNS.list (93 domain rules)
-- Only in Rule/Upstream/Block/DNS/DNS.list: 32
-  - DOMAIN,3dns-1.adobe.com
-  - DOMAIN,3dns-2.adobe.com
-  - DOMAIN,3dns-3.adobe.com
-  - DOMAIN,3dns-4.adobe.com
-  - DOMAIN,adobe-dns-1.adobe.com
-  - DOMAIN,adobe-dns-2.adobe.com
-  - DOMAIN,adobe-dns-3.adobe.com
-  - DOMAIN,adobe-dns-4.adobe.com
-  - DOMAIN,adobe-dns.adobe.com
-  - DOMAIN,dns.jd.com
-  - DOMAIN,dns.weibo.cn
-  - DOMAIN,dns.weixin.qq.com
-- Only in Rule/Upstream/DNS/DNS.list: 93
-  - DOMAIN,1dot1dot1dot1.cloudflare-dns.com
-  - DOMAIN,8888.google
-  - DOMAIN,adblock.mydns.network
-  - DOMAIN,applied-privacy.net
-  - DOMAIN,cdn-doh.ssnm.xyz
-  - DOMAIN,chrome.cloudflare-dns.com
-  - DOMAIN,cloudflare-dns.com
-  - DOMAIN,dns-family.adguard.com
-  - DOMAIN,dns-nyc.aaflalo.me
-  - DOMAIN,dns-tls.qis.io
-  - DOMAIN,dns-unfiltered.adguard.com
-  - DOMAIN,dns.aa.net.uk
+- Exact shared rule lines: 0; union: 172
+- Same full rule set: no
+- Exact shared domain rules: 0; domain union: 125
+- File: Rule/Upstream/Block/DNS/DNS.list (53 total rules; 32 domain rules)
+- File: Rule/Upstream/DNS/DNS.list (119 total rules; 93 domain rules)
+- Only in Rule/Upstream/Block/DNS/DNS.list: 53
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+- Only in Rule/Upstream/DNS/DNS.list: 119
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+
+### gemini (standard)
+- Categories: BardAI, Gemini
+- Exact shared rule lines: 9; union: 14
+- Same full rule set: no
+- Exact shared domain rules: 9; domain union: 11
+- File: Rule/Upstream/BardAI/BardAI.list (10 total rules; 10 domain rules)
+- File: Rule/Upstream/Gemini/Gemini.list (13 total rules; 10 domain rules)
+- Only in Rule/Upstream/BardAI/BardAI.list: 1
+  - D,O
+- Only in Rule/Upstream/Gemini/Gemini.list: 4
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+
+### globalscholar (standard)
+- Categories: GlobalScholar, Scholar
+- Exact shared rule lines: 230; union: 231
+- Same full rule set: no
+- Exact shared domain rules: 230; domain union: 231
+- File: Rule/Upstream/GlobalScholar/GlobalScholar.list (230 total rules; 230 domain rules)
+- File: Rule/Upstream/Scholar/Scholar.list (231 total rules; 231 domain rules)
+- Only in Rule/Upstream/Scholar/Scholar.list: 1
+  - D,O
 
 ### pchome (standard)
 - Categories: PChome, PChomeTW
-- Exact shared domain rules: 5; union: 5
-- Same domain-rule set: yes
-- File: Rule/Upstream/PChome/PChome.list (5 domain rules)
-- File: Rule/Upstream/PChomeTW/PChomeTW.list (5 domain rules)
+- Exact shared rule lines: 5; union: 5
+- Same full rule set: yes
+- Exact shared domain rules: 5; domain union: 5
+- File: Rule/Upstream/PChome/PChome.list (5 total rules; 5 domain rules)
+- File: Rule/Upstream/PChomeTW/PChomeTW.list (5 total rules; 5 domain rules)
 
 ### youtube (standard)
 - Categories: Block, YouTube
-- Exact shared domain rules: 0; union: 179
-- Same domain-rule set: no
-- File: Rule/Upstream/Block/YouTube/YouTube.list (0 domain rules)
-- File: Rule/Upstream/YouTube/YouTube.list (179 domain rules)
-- Only in Rule/Upstream/YouTube/YouTube.list: 179
-  - DOMAIN-SUFFIX,ggpht.cn
-  - DOMAIN-SUFFIX,ggpht.com
-  - DOMAIN-SUFFIX,googlevideo.com
-  - DOMAIN-SUFFIX,gvt1.com
-  - DOMAIN-SUFFIX,gvt2.com
-  - DOMAIN-SUFFIX,video.google.com
-  - DOMAIN-SUFFIX,wide-youtube.l.google.com
-  - DOMAIN-SUFFIX,withyoutube.com
-  - DOMAIN-SUFFIX,youtu.be
-  - DOMAIN-SUFFIX,youtube
-  - DOMAIN-SUFFIX,youtube-nocookie.com
-  - DOMAIN-SUFFIX,youtube-ui.l.google.com
+- Exact shared rule lines: 0; union: 205
+- Same full rule set: no
+- Exact shared domain rules: 0; domain union: 179
+- File: Rule/Upstream/Block/YouTube/YouTube.list (15 total rules; 0 domain rules)
+- File: Rule/Upstream/YouTube/YouTube.list (190 total rules; 179 domain rules)
+- Only in Rule/Upstream/Block/YouTube/YouTube.list: 15
+  - U,R
+  - U,R
+  - U,R
+  - U,R
+  - U,R
+  - U,R
+  - U,R
+  - U,R
+  - U,R
+  - U,R
+  - U,R
+  - U,R
+- Only in Rule/Upstream/YouTube/YouTube.list: 190
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
+  - D,O
 
 ## High-overlap cross-App candidates
 
 Shared domains may be CDNs, identity providers, analytics, or other common infrastructure. Do not merge these lists solely because of overlap.
 
-### GlobalScholar vs Scholar
-- Files: Rule/Upstream/GlobalScholar/GlobalScholar.list and Rule/Upstream/Scholar/Scholar.list
-- Shared exact domain rules: 230; Jaccard: 1.00; smaller-set coverage: 1.00
-- Examples: DOMAIN,scholar.google.com, DOMAIN-SUFFIX,1lib.cloud, DOMAIN-SUFFIX,1lib.domains, DOMAIN-SUFFIX,1lib.education, DOMAIN-SUFFIX,1lib.eu, DOMAIN-SUFFIX,1lib.limited, DOMAIN-SUFFIX,1lib.pl, DOMAIN-SUFFIX,1lib.to
-
 ### Hulu vs HuluUSA
 - Files: Rule/Upstream/Hulu/Hulu.list and Rule/Upstream/HuluUSA/HuluUSA.list
 - Shared exact domain rules: 52; Jaccard: 0.90; smaller-set coverage: 1.00
 - Examples: DOMAIN-SUFFIX,112263.com, DOMAIN-SUFFIX,assetshuluimcom-a.akamaihd.net, DOMAIN-SUFFIX,callhulu.com, DOMAIN-SUFFIX,cws-hulu.conviva.com, DOMAIN-SUFFIX,findyourlimits.com, DOMAIN-SUFFIX,freehulu.com, DOMAIN-SUFFIX,hooloo.tv, DOMAIN-SUFFIX,hoolu.com
-
-### BardAI vs Gemini
-- Files: Rule/Upstream/BardAI/BardAI.list and Rule/Upstream/Gemini/Gemini.list
-- Shared exact domain rules: 9; Jaccard: 0.82; smaller-set coverage: 0.90
-- Examples: DOMAIN,ai.google.dev, DOMAIN,alkalimakersuite-pa.clients6.google.com, DOMAIN,makersuite.google.com, DOMAIN-SUFFIX,bard.google.com, DOMAIN-SUFFIX,deepmind.com, DOMAIN-SUFFIX,deepmind.google, DOMAIN-SUFFIX,gemini.google.com, DOMAIN-SUFFIX,generativeai.google
 
 ### DuoWan vs HuanJu
 - Files: Rule/Upstream/DuoWan/DuoWan.list and Rule/Upstream/HuanJu/HuanJu.list
@@ -164,11 +224,6 @@ Shared domains may be CDNs, identity providers, analytics, or other common infra
 - Files: Rule/Upstream/Copilot/Copilot.list and Rule/Upstream/OpenAI/OpenAI.list
 - Shared exact domain rules: 28; Jaccard: 0.57; smaller-set coverage: 0.90
 - Examples: DOMAIN,browser-intake-datadoghq.com, DOMAIN,chat.openai.com.cdn.cloudflare.net, DOMAIN,openai-api.arkoselabs.com, DOMAIN,openaicomproductionae4b.blob.core.windows.net, DOMAIN,production-openaicom-storage.azureedge.net, DOMAIN,static.cloudflareinsights.com, DOMAIN-SUFFIX,algolia.net, DOMAIN-SUFFIX,auth0.com
-
-### Abema vs AbemaTV
-- Files: Rule/Upstream/Abema/Abema.list and Rule/Upstream/AbemaTV/AbemaTV.list
-- Shared exact domain rules: 15; Jaccard: 0.56; smaller-set coverage: 0.75
-- Examples: DOMAIN-SUFFIX,abema-tv.com, DOMAIN-SUFFIX,abema.io, DOMAIN-SUFFIX,abema.tv, DOMAIN-SUFFIX,adx.promo, DOMAIN-SUFFIX,ameba.jp, DOMAIN-SUFFIX,amebame.com, DOMAIN-SUFFIX,amebaownd.com, DOMAIN-SUFFIX,amebaowndme.com
 
 ### HBO vs HBOHK
 - Files: Rule/Upstream/HBO/HBO.list and Rule/Upstream/HBOHK/HBOHK.list
@@ -200,15 +255,15 @@ Shared domains may be CDNs, identity providers, analytics, or other common infra
 - Shared exact domain rules: 37; Jaccard: 0.12; smaller-set coverage: 1.00
 - Examples: DOMAIN-SUFFIX,cctv.cn, DOMAIN-SUFFIX,cctv.com, DOMAIN-SUFFIX,cctvlib.cn, DOMAIN-SUFFIX,cctvlib.com.cn, DOMAIN-SUFFIX,cctvlibrary.cn, DOMAIN-SUFFIX,cctvlibrary.com.cn, DOMAIN-SUFFIX,cctvpic.com, DOMAIN-SUFFIX,cctvpro.cn
 
-### ChinaMedia vs iQIYI
-- Files: Rule/Upstream/ChinaMedia/ChinaMedia.list and Rule/Upstream/iQIYI/iQIYI.list
-- Shared exact domain rules: 34; Jaccard: 0.11; smaller-set coverage: 1.00
-- Examples: DOMAIN-SUFFIX,71.am, DOMAIN-SUFFIX,71.am.com, DOMAIN-SUFFIX,71edge.com, DOMAIN-SUFFIX,71edge.net, DOMAIN-SUFFIX,aianno.cn, DOMAIN-SUFFIX,aianno.com, DOMAIN-SUFFIX,aiqiyicloud-mgmt.com, DOMAIN-SUFFIX,aiqiyicloud.com
-
 ### ChinaMedia vs Youku
 - Files: Rule/Upstream/ChinaMedia/ChinaMedia.list and Rule/Upstream/Youku/Youku.list
 - Shared exact domain rules: 34; Jaccard: 0.11; smaller-set coverage: 1.00
 - Examples: DOMAIN-SUFFIX,0co3geye.cn, DOMAIN-SUFFIX,2isbbess.cn, DOMAIN-SUFFIX,33lwhaoinc.cn, DOMAIN-SUFFIX,52mtkvideo.cn, DOMAIN-SUFFIX,9xsecndns.cn, DOMAIN-SUFFIX,b82yxres.cn, DOMAIN-SUFFIX,e8h2ty.tdum.alibaba.com, DOMAIN-SUFFIX,gamenow.club
+
+### ChinaMedia vs iQIYI
+- Files: Rule/Upstream/ChinaMedia/ChinaMedia.list and Rule/Upstream/iQIYI/iQIYI.list
+- Shared exact domain rules: 34; Jaccard: 0.11; smaller-set coverage: 1.00
+- Examples: DOMAIN-SUFFIX,71.am, DOMAIN-SUFFIX,71.am.com, DOMAIN-SUFFIX,71edge.com, DOMAIN-SUFFIX,71edge.net, DOMAIN-SUFFIX,aianno.cn, DOMAIN-SUFFIX,aianno.com, DOMAIN-SUFFIX,aiqiyicloud-mgmt.com, DOMAIN-SUFFIX,aiqiyicloud.com
 
 ### Hulu vs HuluJP
 - Files: Rule/Upstream/Hulu/Hulu.list and Rule/Upstream/HuluJP/HuluJP.list
