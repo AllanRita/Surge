@@ -43,6 +43,7 @@ FINANCIAL_APP_REVIEW_CANDIDATES={
  "TigerFintech":"securities brokerage / investment platform",
  "Crypto":"cryptocurrency category list (not a single App)",
  "Cryptocurrency":"cryptocurrency category list (not a single App)",
+ "XueQiu":"securities / stock-investment information community",
 }
 SHARED_HOSTING_SUFFIXES={
  "cloudfront.net":"shared CDN / Amazon CloudFront",

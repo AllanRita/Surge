@@ -129,9 +129,8 @@ The repository does not contain the user's active Surge profile/configuration, s
 The cleanup inventory now scans a curated set of 42 shared CDN/hosting, dynamic-DNS, and URL-shortener suffixes across every upstream rule file, not only those suffixes that happen to match OpenPhish. The latest run found 34 suffixes in 159 rule occurrences: 33 occurrences in App/service folders across 21 suffixes and 126 in aggregate folders (Global, GlobalMedia, Proxy, ProxyLite). The result is recorded in `CLEANUP-INVENTORY.json` and `CLEANUP-INVENTORY.md`, with the affected folders and rule occurrences. This is a review-only scan: no rule is automatically removed because a suffix is shared or multi-tenant. The plan records these App/service-folder candidates for manual routing review.
 
 
-## Finance, trading, cryptocurrency and securities folders — review only
+## Excluded finance, trading, cryptocurrency and securities folders
 
-The dedicated folders `Binance`, `OKX`, `Crypto`, `Cryptocurrency`, `EastMoney`, and `TigerFintech` are retained pending explicit user classification. They contain six rule lists (311 rule entries) and six README files.
+At the user's explicit direction, these dedicated folders were removed from `Rule/Upstream`: `Binance`, `OKX`, `Crypto`, `Cryptocurrency`, `EastMoney`, `TigerFintech`, and `XueQiu`. This removes seven rule lists (322 rule entries) and seven README files.
 
-A prior change removed these folders without explicit confirmation; all 12 original files have been restored byte-for-byte from the preceding repository snapshot. They are not classified as bank/payment Apps by the current policy and will not be removed unless the user explicitly confirms. `Rule/Personal` remains untouched. `Stackexchange` remains because it is a Q&A service, not a financial exchange.
-
+The removal does not delete matching domains from unrelated App, Global, advertising, privacy, or filter lists. `Rule/Personal` remains untouched. `Stackexchange` remains because it is a Q&A/community service, not a financial exchange.
