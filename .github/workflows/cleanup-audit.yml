@@ -81,4 +81,8 @@ jobs:
             exit 0
           fi
           git commit -m 'Generate frozen Surge cleanup inventory and security audit'
+          # Another authorized documentation or maintenance commit may land after checkout.
+          # Rebase the generated report commit instead of failing with a non-fast-forward push.
+          git fetch origin main
+          git rebase origin/main
           git push origin HEAD:main
