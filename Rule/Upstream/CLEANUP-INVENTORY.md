@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 13:13 UTC
+Generated: 2026-11-27 13:14 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -389,7 +389,7 @@ Format labels are inferred from filename suffixes; distinct formats are preserve
 
 ## Safety boundaries
 - No rule files or personal files are deleted, renamed, or rewritten by this audit.
-- Bank/payment classification applies to dedicated App folders only; domains embedded in other Apps remain untouched.
+- Dedicated bank/payment, crypto-exchange, cryptocurrency-category, securities-brokerage, and stock-investment folders explicitly excluded by the user are absent; matching domains embedded in unrelated Apps, aggregate lists, advertising, privacy, and filter lists remain untouched.
 - Regional variants are candidates for consolidation into one App policy group; country selection belongs in the Surge policy group, not separate rule folders.
 - Resolve / non-Resolve and other distinct formats are compared and preserved separately.
 - Similarity, shared CDN domains, or parent-company ownership alone never authorizes cross-App merging.
