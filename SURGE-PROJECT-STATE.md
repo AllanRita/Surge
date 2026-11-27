@@ -225,3 +225,17 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - The 14 bank/payment/finance folders have no category-based protection; all App categories follow the same evidence-based policy. Exact user tombstones remain the only no-restore protection. Rule/Personal remains excluded from automation.
 - Next required external setup: add a valid URLHAUS_AUTH_KEY in GitHub repository Settings -> Secrets and variables -> Actions. Do not send the key in chat. After the secret is available, the next scheduled/push run can validate dual-feed threat coverage. Until then, keep threat-based automatic deletion disabled.
 - Next project task: continue app-by-app rule completeness review and format-aware cached-source maintenance, using only the 15 existing snapshots. Do not fetch new author sources.
+
+
+## 17. Preflight false-positive reduction and validation (2026-11-27)
+
+- Corrected `.github/scripts/batch_preflight.py` format detection: compare recognized format variants only within the same immediate App directory, not across different nested Apps under category containers. This removes false positives such as Cloud, Game, Block, Process, Assassin'sCreed, and ChinaIPs without changing or deleting any files.
+- Added optional IANA root-zone TLD reference support. The workflow downloads the official `https://data.iana.org/TLD/tlds-alpha-by-domain.txt` file, validates its version header, and passes it to each batch preflight. Delegated single-label TLD suffixes are no longer incorrectly reported as unregistered/special-use; labels absent from the IANA root zone remain review-only. If the reference is unavailable, the workflow falls back to conservative review-only flags.
+- Added offline tests for nested App format grouping and IANA TLD parsing. A fixture escaping issue was corrected; latest validation passed all 8 self-tests.
+- Latest full validation run [46020030494](https://github.com/AllanRita/Surge/actions/runs/46020030494) completed successfully. All 654 folders (6×100 + 54), 842 rule files, and 4,357,128 rule entries were scanned. All 7 batches passed with 0 blockers and 0 review findings. Duplicate rule lines, unsupported types, invalid IP networks, and invalid domain operands were all 0.
+- IANA reference used in every batch: `Version 2026112700, Last Updated Fri Nov 27 07:07:01 2026 UTC`. The previous 896 single-label TLD review findings were cleared by validating delegated TLDs against this official root-zone list; no rule content was removed or rewritten for this change.
+- The previous 6 nested-container format warnings were eliminated by scoping comparison per App directory; the actual format variants remain untouched.
+- Cached author comparison again processed the 15 existing snapshots, with 0 additions and 0 changed target files; `Rule/Personal` remained unchanged. No new author source was fetched.
+- Security limitation remains: `URLHAUS_AUTH_KEY` is not configured, so URLhaus is unavailable and dual-feed threat-based automatic deletion remains disabled. OpenPhish-only hits do not authorize deletion. The artifact status explicitly records incomplete security coverage.
+- Artifact: `surge-automatic-maintenance-24`, ID `15207447770`.
+- Next: continue deeper App-by-App coverage checks against existing cached sources and already-present rule files, preserve each format independently, and investigate URLhaus credential provisioning. Do not broaden author collection or modify any rule unless a verified gap or deterministic safety defect is found.
