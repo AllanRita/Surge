@@ -121,7 +121,7 @@ def main():
                 totals["duplicate_lines"] += dups
                 findings.append({"severity":"REVIEW","folder":folder.name,"path":str(path),"issue":f"{dups} duplicate rule lines"})
             for line_no, raw_line in enumerate(raw.splitlines(), 1):
-                if any(ord(c) < 32 and c not in "\\t" for c in raw_line):
+                if any(ord(c) < 32 and c not in "\t" for c in raw_line):
                     fr["control_chars"] += 1
                     totals["control_chars"] += 1
                     findings.append({"severity":"BLOCKER","folder":folder.name,"path":str(path),"line":line_no,"issue":"hidden control character"})
@@ -192,13 +192,13 @@ def main():
     }
     out=Path(a.output_dir); out.mkdir(parents=True,exist_ok=True)
     stem=f"batch-{a.batch:03d}"
-    (out/(stem+".json")).write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    (out/(stem+".json")).write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     md=["# Surge rule-set batch preflight", "",f"- Batch: {a.batch}",f"- Mode: {report['mode']}",f"- Eligible top-level folders: {len(top)}",f"- Selected folders: {len(selected)}",f"- Rule files: {totals['files']}",f"- Rule entries: {totals['rules']}",f"- Blockers: {blockers}",f"- Review items: {reviews}",f"- Tombstones: {len(tombstones)}",f"- Rule/Personal unchanged: {personal_before==personal_after}","","## Selected folders",""]
     md += [f"- {x['folder']}: {x.get('files',0)} files, {x.get('rules',0)} rules" for x in folder_rows]
     md += ["","## Findings",""]
     md += [f"- **{x['severity']}** {x.get('path',x.get('folder',''))}{(':'+str(x['line'])) if x.get('line') else ''}: {x['issue']}" for x in findings] or ["- None"]
     md += ["","## Safety","- No rule file was modified, deleted, renamed, merged, or restored.","- This is a preflight only. No batch is approved for remediation automatically.",""]
-    (out/(stem+".md")).write_text("\\n".join(md),encoding="utf-8")
+    (out/(stem+".md")).write_text("\n".join(md),encoding="utf-8")
     summary = f"Surge batch {a.batch}: {len(selected)} folders, {totals['files']} files, {totals['rules']} rules, {blockers} blockers, {reviews} review items."
     print(json.dumps({"status":"PASS" if blockers==0 else "BLOCKED","summary":summary,"report_json":str(out/(stem+".json")),"report_markdown":str(out/(stem+".md"))},ensure_ascii=False))
     if blockers:
