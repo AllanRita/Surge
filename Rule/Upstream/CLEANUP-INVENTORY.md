@@ -497,3 +497,8 @@ Format labels are inferred from filename suffixes; distinct formats are preserve
 - Regional variants are candidates for consolidation into one App policy group; country selection belongs in the Surge policy group, not separate rule folders.
 - Resolve / non-Resolve and other distinct formats are compared and preserved separately.
 - Similarity, shared CDN domains, or parent-company ownership alone never authorizes cross-App merging.
+
+
+## Broad public-TLD suffix scope review
+
+See [BROAD-SUFFIX-SCOPE-REVIEW.md](BROAD-SUFFIX-SCOPE-REVIEW.md) for a scenario-aware classification of the 78 IANA-valid single-label suffixes. The review covers 896 occurrences: 45 suffixes / 767 occurrences are present only in China aggregate folders, 5 suffixes / 85 occurrences are shared between China aggregate and named App folders, and 28 suffixes / 44 occurrences appear in other App/aggregate folders. No rules were modified or deleted by this review. These are broad-scope review items, not malformed rules or threat verdicts.
