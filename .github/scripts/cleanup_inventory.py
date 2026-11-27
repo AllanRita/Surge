@@ -350,7 +350,7 @@ def main():
   else:
    md.append(f"| {r['source']} | {r['target']} | {r['source_rules']} | {r['exact']} | {r['parent_suffix']} | {r['ip_range']} | {r['missing_count']} |")
    for x in r["missing_examples"][:15]: md.append(f"  - Missing candidate for {r['source']}: {x}")
- md += ["","### Cached source coverage by available routing format","","- Available standard and Resolve files are checked separately; this does not imply that every App has a cached author snapshot.","","| Cached source | Format | Target | Source rules | Missing |","|---|---|---|---:|---:|"]
+ md += ["","### Cached source coverage by available routing format","","- Every available same-App format in the mapped folder (including Standard, Resolve, All, All_No_Resolve, and Domain when present) is checked separately; this does not imply that every App has a cached author snapshot.","","| Cached source | Format | Target | Source rules | Missing |","|---|---|---|---:|---:|"]
  for r in coverage:
   for f in r.get("format_coverage",[]):
    md.append(f"| {r['source']} | {f['format']} | {f['target']} | {r['source_rules']} | {f['missing_count']} |")
