@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "generated": "2026-11-27",
+  "purpose": "Track verified duplicate rule-set bodies and scenario variants without breaking existing raw subscription URLs.",
+  "policy": {
+    "personal_rules_are_never_auto_merged": true,
+    "scenario_variants_are_never_merged_across_resolution_modes": true,
+    "legacy_paths_are_preserved_until_subscriber_migration_is_verified": true,
+    "only_exact_rule_body_matches_are_candidates_for_aliasing": true
+  },
+  "scenario_variants": [
+    {
+      "app": "AdGuardSDNSFilter",
+      "mode": "All vs All_No_Resolve",
+      "paths": [
+        "Rule/Upstream/AdGuardSDNSFilter/AdGuardSDNSFilter_All.list",
+        "Rule/Upstream/AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list"
+      ],
+      "decision": "keep_separate",
+      "reason": "Different DNS resolution behavior."
+    },
+    {
+      "app": "ChinaMaxNoIP",
+      "mode": "All vs All_No_Resolve",
+      "paths": [
+        "Rule/Upstream/ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "Rule/Upstream/ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list"
+      ],
+      "decision": "keep_separate",
+      "reason": "Different DNS resolution behavior."
+    },
+    {
+      "app": "EasyPrivacy",
+      "mode": "All vs All_No_Resolve",
+      "paths": [
+        "Rule/Upstream/EasyPrivacy/EasyPrivacy_All.list",
+        "Rule/Upstream/EasyPrivacy/EasyPrivacy_All_No_Resolve.list"
+      ],
+      "decision": "keep_separate",
+      "reason": "Different DNS resolution behavior."
+    }
+  ],
+  "exact_duplicate_candidates": [
+    {
+      "app": "AssassinsCreedOdyssey",
+      "paths": [
+        "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list",
+        "Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list"
+      ],
+      "decision": "preserve_both_legacy_paths",
+      "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
+    },
+    {
+      "app": "AssassinsCreedOdysseyResolve",
+      "paths": [
+        "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list",
+        "Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list"
+      ],
+      "decision": "preserve_both_legacy_paths",
+      "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
+    },
+    {
+      "app": "AssassinsCreedOrigins",
+      "paths": [
+        "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list",
+        "Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list"
+      ],
+      "decision": "preserve_both_legacy_paths",
+      "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
+    },
+    {
+      "app": "AssassinsCreedOriginsResolve",
+      "paths": [
+        "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list",
+        "Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list"
+      ],
+      "decision": "preserve_both_legacy_paths",
+      "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
+    },
+    {
+      "app": "PChome",
+      "paths": [
+        "Rule/Upstream/PChome/PChome.list",
+        "Rule/Upstream/PChomeTW/PChomeTW.list"
+      ],
+      "decision": "preserve_both_legacy_paths",
+      "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
+    }
+  ]
+}
