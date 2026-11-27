@@ -1,6 +1,8 @@
 name: Import Blackmatrix7 Surge Rules
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '43 3 * * *'
   push:
     branches: [main]
     paths: ['.github/workflows/ImportSurgeRules.yml']
@@ -28,16 +30,26 @@ jobs:
           root=Path(os.environ['RUNNER_TEMP'])/'upstream'
           src=root/'rule/Surge'
           dst=Path('Rule/Blackmatrix7')
-          if dst.exists() or dst.is_symlink():
-              raise SystemExit('Destination already exists; refusing overwrite')
+          if dst.is_symlink() or (dst.exists() and not dst.is_dir()):
+              raise SystemExit('Unsafe destination')
+          if dst.exists() and any(p.is_symlink() for p in dst.rglob('*')):
+              raise SystemExit('Unsafe existing tree')
           if Path('Rule').is_symlink():
               raise SystemExit('Unsafe destination')
           files=[p for p in src.rglob('*') if p.is_file() and p.suffix.lower() in {'.list','.txt','.md','.json','.conf'}]
           if not files or any(p.is_symlink() for p in src.rglob('*')):
               raise SystemExit('Invalid upstream tree')
+          rules=[p for p in files if p.suffix.lower() in {'.list','.txt','.conf'}]
+          old_rules=[p for p in dst.rglob('*') if p.is_file() and p.suffix.lower() in {'.list','.txt','.conf'}]
+          if len(rules)<100 or (old_rules and len(rules)<len(old_rules)*0.75):
+              raise SystemExit('Abnormal upstream rule count; retaining previous snapshot')
+          if any(p.stat().st_size>50*1024*1024 for p in files):
+              raise SystemExit('Oversized upstream file')
           for p in files:
               target=dst/p.relative_to(src)
               target.parent.mkdir(parents=True,exist_ok=True)
+              if p.stat().st_size==0 and target.exists():
+                  continue
               shutil.copyfile(p,target)
           license_file=next(p for p in root.glob('LICENSE*') if p.is_file() and not p.is_symlink())
           shutil.copyfile(license_file,dst/'LICENSE')
@@ -51,7 +63,11 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- Rule/Blackmatrix7
-          git commit -m 'Import Blackmatrix7 Surge rules with upstream license'
+          if git diff --cached --quiet; then
+            echo 'No changes'
+            exit 0
+          fi
+          git commit -m 'Sync Blackmatrix7 Surge rules; retain removed upstream files'
           auth=$(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)
           echo "::add-mask::$auth"
           git -c http.https://github.com/.extraheader="AUTHORIZATION: basic $auth" push origin HEAD:main
