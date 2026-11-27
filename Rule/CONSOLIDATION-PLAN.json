@@ -291,6 +291,86 @@
       ],
       "decision": "manual review only",
       "reason": "High domain overlap alone does not establish identical app purpose."
+    },
+    {
+      "apps": [
+        "Line",
+        "Naver"
+      ],
+      "decision": "keep_separate",
+      "reason": "Distinct apps; overlapping Line/NHN ecosystem domains do not establish one App policy group."
+    },
+    {
+      "apps": [
+        "BritboxUK",
+        "UKMedia"
+      ],
+      "decision": "keep_separate",
+      "reason": "BritBox is a specific streaming service; UKMedia is an aggregate regional-media list."
+    },
+    {
+      "apps": [
+        "CCTV",
+        "ChinaMedia"
+      ],
+      "decision": "keep_separate",
+      "reason": "CCTV is a specific broadcaster; ChinaMedia is an aggregate media list."
+    },
+    {
+      "apps": [
+        "ChinaMedia",
+        "Youku"
+      ],
+      "decision": "keep_separate",
+      "reason": "ChinaMedia is an aggregate media list; Youku is a specific video service."
+    },
+    {
+      "apps": [
+        "ChinaMedia",
+        "iQIYI"
+      ],
+      "decision": "keep_separate",
+      "reason": "ChinaMedia is an aggregate media list; iQIYI is a specific video service."
+    },
+    {
+      "apps": [
+        "ChinaMedia",
+        "TencentVideo"
+      ],
+      "decision": "keep_separate",
+      "reason": "ChinaMedia is an aggregate media list; TencentVideo is a specific video service."
+    },
+    {
+      "apps": [
+        "ByteDance",
+        "LianMeng"
+      ],
+      "decision": "keep_separate",
+      "reason": "Distinct app/ad-network rule sets; shared advertising and analytics domains are not proof of the same App."
+    },
+    {
+      "apps": [
+        "Baidu",
+        "TaiheMusic"
+      ],
+      "decision": "keep_separate",
+      "reason": "Distinct search-platform and music-service rule sets; overlapping domains do not establish one App."
+    },
+    {
+      "apps": [
+        "ChinaMedia",
+        "HunanTV"
+      ],
+      "decision": "keep_separate",
+      "reason": "ChinaMedia is an aggregate media list; HunanTV is a specific broadcaster/streaming service."
+    },
+    {
+      "apps": [
+        "Bing",
+        "Microsoft"
+      ],
+      "decision": "keep_separate",
+      "reason": "Bing-specific service rules and the broader Microsoft platform list remain separate products."
     }
   ],
   "app_policy_groups": [
@@ -421,5 +501,12 @@
     "missing_rules": 0,
     "action": "compare existing cached SourceMetadata only; do not fetch new author rule sets"
   },
-  "generated_by": "cleanup inventory 2026-11-27; final user-confirmed Surge App-policy structure"
+  "generated_by": "cleanup inventory 2026-11-27; final user-confirmed Surge App-policy structure",
+  "security_review_policy": {
+    "threat_feed_matches_are_review_only": true,
+    "shared_hosting_parent_suffixes_require_manual_review": true,
+    "never_auto_delete_shared_hosting_suffixes_from_feed_matches": true,
+    "feed_unavailable_must_be_reported_not_treated_as_zero": true,
+    "personal_rules_excluded_from_automated_remediation": true
+  }
 }
