@@ -7,12 +7,12 @@ on:
     branches: [main]
     paths: ['.github/workflows/ImportSurgeRules.yml']
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: import-surge-rules
   cancel-in-progress: false
 jobs:
-  import:
+  validate:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -25,7 +25,7 @@ jobs:
           git clone --depth 1 --filter=blob:none --sparse https://github.com/blackmatrix7/ios_rule_script.git "$RUNNER_TEMP/upstream"
           git -C "$RUNNER_TEMP/upstream" sparse-checkout set rule/Surge
           python3 - <<'PY'
-          import os, shutil, subprocess
+          import os, shutil, subprocess, hashlib, re, json
           from pathlib import Path
           root=Path(os.environ['RUNNER_TEMP'])/'upstream'
           src=root/'rule/Surge'
@@ -45,6 +45,8 @@ jobs:
               raise SystemExit('Abnormal upstream rule count; retaining previous snapshot')
           if any(p.stat().st_size>50*1024*1024 for p in files):
               raise SystemExit('Oversized upstream file')
+          if sum(p.stat().st_size for p in files)>1024*1024*1024:
+              raise SystemExit('Total size exceeds limit')
           skipped=[]
           for p in files:
               target=dst/p.relative_to(src)
@@ -56,7 +58,21 @@ jobs:
                   raw=p.read_bytes()
                   if b'\x00' in raw:
                       raise SystemExit('Binary data in rule file')
-                  raw.decode('utf-8-sig')
+                  decoded=raw.decode('utf-8-sig')
+                  if p.suffix.lower()=='.list':
+                      lines=[l.strip() for l in decoded.splitlines() if l.strip() and not l.lstrip().startswith(('#',';','//'))]
+                      if any(re.search(r'[\x00-\x08\x0b-\x1f\x7f]',l) or l.startswith('[') for l in lines):
+                          raise SystemExit(f'Invalid rule content: {p.name}')
+                      if target.exists():
+                          old=target.read_text(encoding='utf-8-sig').splitlines()
+                          oldset={l.strip() for l in old if l.strip() and not l.lstrip().startswith(('#',';','//'))}
+                          newset=set(lines)
+                          if len(oldset)>=20 and len(oldset-newset)>max(10,len(oldset)*0.35):
+                              raise SystemExit(f'Abnormal rule removal: {p.name}')
+                          if len(newset-oldset)>max(100,len(oldset)*0.75):
+                              raise SystemExit(f'Abnormal rule addition: {p.name}')
+                          if any('://' in l for l in newset-oldset):
+                              raise SystemExit(f'New external reference: {p.name}')
               shutil.copyfile(p,target)
           license_file=next(p for p in root.glob('LICENSE*') if p.is_file() and not p.is_symlink())
           shutil.copyfile(license_file,dst/'LICENSE')
@@ -64,6 +80,53 @@ jobs:
           retained=sum(1 for p in dst.rglob('*') if p.is_file() and p.name not in {'LICENSE','UPSTREAM.md'} and not (src/p.relative_to(dst)).exists())
           with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as report:
               report.write(f'Upstream files: {len(files)}\nRule files: {len(rules)}\nRetained removed files: {retained}\nSkipped empty files: {len(skipped)}\n')
+          manifest={str(p.relative_to(dst)):hashlib.sha256(p.read_bytes()).hexdigest() for p in dst.rglob('*') if p.is_file()}
+          Path('rule-manifest.json').write_text(json.dumps(manifest,sort_keys=True))
+          print('Upstream commit:',subprocess.check_output(['git','-C',str(root),'rev-parse','HEAD'],text=True).strip())
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: validated-rules
+          path: |
+            Rule/Blackmatrix7
+            rule-manifest.json
+          retention-days: 3
+  publish:
+    needs: validate
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: validated-rules
+          path: ${{ runner.temp }}/validated-rules
+      - name: Verify and install validated snapshot
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os, json, hashlib, shutil
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])/'validated-rules'
+          src=root/'Rule/Blackmatrix7'
+          dst=Path('Rule/Blackmatrix7')
+          expected=json.loads((root/'rule-manifest.json').read_text())
+          if any(p.is_symlink() for p in src.rglob('*')):
+              raise SystemExit('Unsafe artifact')
+          actual={str(p.relative_to(src)):hashlib.sha256(p.read_bytes()).hexdigest() for p in src.rglob('*') if p.is_file()}
+          if not actual or actual!=expected:
+              raise SystemExit('Artifact integrity failure')
+          if Path('Rule').is_symlink() or dst.is_symlink() or any(p.is_symlink() for p in dst.rglob('*')):
+              raise SystemExit('Unsafe destination')
+          if any(str(p.relative_to(dst)) not in actual for p in dst.rglob('*') if p.is_file()):
+              raise SystemExit('Unexpected deletion')
+          shutil.copytree(src,dst,dirs_exist_ok=True)
           PY
       - name: Publish imported rules
         env:
@@ -73,6 +136,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- Rule/Blackmatrix7
+          git diff --cached --name-only -z | python3 -c 'import sys; assert all(p.startswith(b"Rule/Blackmatrix7/") for p in sys.stdin.buffer.read().split(b"\x00") if p)'
           if git diff --cached --quiet; then
             echo 'No changes'
             exit 0
