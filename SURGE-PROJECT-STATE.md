@@ -80,20 +80,19 @@ Verified against the current `main` tree and the latest inventory generated at 1
 - OpenPhish loaded 280 domains and matched 77 rule rows across 15 hostnames and 15 parent-suffix rules. These are shared-hosting parent-suffix matches, not proof that the parent suffix itself is malicious. No parent suffix was removed.
 - URLhaus was not loaded because `URLHAUS_AUTH_KEY` is unavailable. This is incomplete feed coverage, not a clean result.
 - The library contains 34 curated shared-hosting suffixes across 159 rule occurrences.
-- 238 upstream financial-domain matches across 29 domain values remain untouched. Seven crypto/securities/finance review folders (322 rule entries) remain present and are not deletion targets.
+- 238 upstream financial-domain matches across 29 domain values remain untouched by category-based rules. Seven crypto/securities/finance review folders (322 rule entries) remain present and are subject to the same evidence-based security policy as all other folders.
 - The three files in `Rule/Personal` remain untouched.
 - The 14 historical exclusions were subsequently explicitly restored by the user on 2026-11-27; see Section 9. They are not current tombstones.
 
 ## 7. Next work — resume here
 
-1. Finish workflow hardening and validate the new batch preflight implementation.
-2. Run Batch 1 (first 100 eligible top-level folders in deterministic case-insensitive alphabetical order) in read-only mode.
-3. Review all blockers and review-only findings; refine the validator based on real Batch 1 output.
-4. Only after approval, perform any rule-content optimization for Batch 1. Keep a full change log and verify before/after rule counts and protected paths.
-5. Repeat with batches 2, 3, and onward, exactly 100 folders each (final batch may contain fewer), without starting the next batch before the current one passes review.
-6. Keep broad new-author fetching paused; compare cached snapshots. Do not modify `Rule/Personal`.
-7. Do not repeat completed 14-group consolidation or earlier audit work unless source files or decisions change.
-8. At the end of each batch, update this file with folder range, files/rules checked, paths changed, checks, findings, and next batch.
+1. Keep the automatic 100-folder maintenance workflow running sequentially on push/schedule.
+2. Validate the latest regression-tested run and preserve its per-batch reports.
+3. Keep the 15 cached author snapshots as the only author sources; no new author fetching.
+4. Continue App-specific rule completeness checks and preserve distinct formats and App boundaries.
+5. URLhaus threat-based deletion remains disabled until a valid URLHAUS_AUTH_KEY repository secret is configured; never downgrade the evidence threshold.
+6. Keep Rule/Personal excluded from all automatic modifications.
+7. Update this file after each verified maintenance cycle; new chats must resume from the latest section.
 
 ## 8. Session-resume protocol
 
@@ -113,7 +112,7 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - Restored files: `BOC/BOC.list` (22 rules), `BOCOM/BOCOM.list` (6), `CCB/CCB.list` (18), `CEB/CEB.list` (15), `CGB/CGB.list` (4), `CMB/CMB.list` (38), `ICBC/ICBC.list` (58), `PSBC/PSBC.list` (3), `AliPay/AliPay.list` (21), `PayPal/PayPal.list` (248), `Stripe/Stripe.list` (1), `UnionPay/UnionPay.list` (16), `VISA/VISA.list` (99), `PingAn/PingAn.list` (27).
 - Primary source: blackmatrix7/ios_rule_script Surge-format rule files. Each restored file includes its source URL and source author in the header.
 - The 14 exact tombstones were removed from `.github/explicit-rule-exclusions.json` after the explicit user instruction.
-- Follow-up: compare these 14 against other established author sources, inspect rule safety and completeness, then update the audit inventory. Do not delete the restored folders.
+- The 14 restored folders have no category-specific keep/delete exemption. Apply the same evidence-based security policy as every other App; do not fetch new authors.
 
 
 ## 10. Workflow-first and 100-folder batch protocol (2026-11-27)
@@ -138,7 +137,7 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - All 7 batches reported 0 blockers. Review-only findings: 902 total. Breakdown: batch 1 = 30; batch 2 = 845; batch 3 = 7; batch 4 = 10; batch 5 = 5; batch 6 = 1; batch 7 = 4.
 - Most review-only findings are single-label suffix operands (especially ChinaMax, ChinaTest, ChinaMaxNoMedia, and ChinaMaxNoIP); these may be intentional broad regional/TLD routing rules and must be reviewed in context, not automatically deleted.
 - Six folders were flagged for multiple files sharing a recognized format label. The current heuristic may over-flag aggregate/multi-category folders; inspect the exact paths and refine classification before treating these as true duplicate formats.
-- The run is read-only: no rule files were modified, deleted, renamed, merged, or restored. The 14 restored bank/payment/finance folders remain protected. `Rule/Personal` remained unchanged according to the per-run digest check.
+- The run was read-only: no rule files were modified, deleted, renamed, merged, or restored. The 14 restored bank/payment/finance folders remained present but had no category-specific protection. `Rule/Personal` remained unchanged according to the per-run digest check.
 - Artifact: `surge-rule-batches-1`, artifact ID `15203898521`, 30-day retention. It contains JSON and Markdown reports for all 7 batches.
 - Important distinction: this success confirms the batch workflow and static preflight completed. It does not mean all 902 review items are security defects or that rule content optimization is complete.
 - Next: refine false-positive review heuristics (especially single-label/TLD suffixes and aggregate folder format labels), then begin actual rule-content review and safe improvements in 100-folder batches. Keep changes reversible and log every added/removed rule; no automatic deletion based only on static heuristics.
@@ -170,7 +169,7 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 ## 14. Cached-author merge implementation and first full execution (2026-11-27)
 
 - Added `.github/scripts/merge_cached_sources.py` and integrated it into the sequential 100-folder maintenance workflow. It uses only the 15 existing `Rule/Upstream/SourceMetadata/*.json` snapshots (Aoang/Surge and SukkaLab); no new author sources were fetched.
-- The first full execution completed successfully in workflow run [46018103558](https://github.com/AllanRita/Surge/actions/runs/46018103558), with a later report-only workflow run [46018194196](https://github.com/AllanRita/Surge/actions/runs/46018194196). All 654 eligible folders were processed as 6 batches of 100 and a final batch of 54. Each batch passed preflight; the latest artifact is `surge-automatic-maintenance-11`, artifact ID `15206981569`.
+- The validated full execution completed successfully in workflow run [46019188959](https://github.com/AllanRita/Surge/actions/runs/46019188959). All 654 eligible folders were processed as 6 batches of 100 and a final batch of 54. Each batch passed preflight; artifact `surge-automatic-maintenance-18`, ID `15208210927`, contains all reports.
 - Cached-source comparison processed all 15 snapshots across batches 1–6. It compared 576 source rule entries across the applicable matching target formats: 257 exact matches and 240 semantically covered entries in the reports, with 0 additions, 0 review-only source rules, and 0 target files changed. The remaining source-rule count in the aggregate 576 is accounted for in per-target results; do not interpret source-rule totals as unique rules across formats because the same source snapshot is intentionally compared against multiple output formats.
 - Examples of semantic coverage: `DOMAIN,apm-misaka.biliapi.net` is already covered by `DOMAIN-SUFFIX,biliapi.net`; `DOMAIN,oneclient.sfx.ms` is covered by `DOMAIN-SUFFIX,oneclient.sfx.ms`; Apple source domains are substantially covered by the existing Apple parent suffix rules. Do not add redundant exact child rules when an existing suffix rule already covers them.
 - No rule files needed changes in this pass. All 7 batch reports show `Rule/Personal` unchanged. The exact deletion tombstone check passed in every batch; no user-deleted folders were restored. The 14 finance/bank/payment-related folders were not subjected to any category-based deletion rule.
@@ -179,7 +178,7 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - Next: verify the validation run after the `no-resolve` refinement; keep author-source collection paused; continue reviewing only existing snapshots and actual app-rule gaps. Do not claim that rules were supplemented unless the reports show additions and corresponding committed file changes. Continue to keep URLhaus-dependent deletion disabled until the feed is successfully available.
 
 
-## 14. Continued V1.0 implementation and first-run verification (2026-11-27)
+## 15. Continued V1.0 implementation and first-run verification (2026-11-27)
 
 - Verified first automatic maintenance run [46015832021](https://github.com/AllanRita/Surge/actions/runs/46015832021): all 7 batches completed (6 x 100 + 54). Every batch reported zero deterministic cleanup changes; Rule/Upstream had no automated edits in this run. The run's Git comparison after completion showed only project-state bookkeeping commits, not rule-file changes. Therefore the run validates orchestration and report generation, but does not yet test real rule mutation or rollback.
 - All 7 maintenance reports recorded security_coverage_complete=false: OpenPhish loaded 280 hosts, URLhaus loaded 0 because URLHAUS_AUTH_KEY was not available. Consequently corroborated hosts = 0 and threat-based automatic deletion was disabled in every batch. The green Actions conclusion must not be interpreted as a complete security pass.
@@ -196,7 +195,7 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - Next: inspect the latest post-change workflow run; confirm all 15 snapshots are processed across their respective batches, no semantic duplicates are added, all reports/backups are present, and personal rules remain unchanged. Then test an isolated controlled change/rollback scenario without modifying production rule content.
 
 
-## 15. Post-refinement validation completed (2026-11-27)
+## 16. Post-refinement validation completed (2026-11-27)
 
 - Validation run [46018472264](https://github.com/AllanRita/Surge/actions/runs/46018472264) completed with conclusion `success`; all workflow steps passed, including sequential processing and artifact upload.
 - Reprocessed all 654 eligible folders in 7 batches (100×6 + 54). Every batch preflight returned PASS with 0 blockers. Review-only findings remain: 30, 845, 7, 10, 5, 1, and 4 respectively (902 total); these are not automatic deletion instructions.
@@ -206,9 +205,9 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - Next: improve URLhaus feed availability/credential handling without weakening fail-closed behavior; review the 902 static preflight findings with false-positive-aware classification; then continue deeper app-specific domain completeness checks and per-format comparisons. Keep all author fetching paused and preserve exact deletion tombstones.
 
 
-## 16. Self-test failure diagnosis and correction (2026-11-27)
+## 17. Self-test failure diagnosis and correction (2026-11-27)
 
 - Two push-triggered runs [46018937181](https://github.com/AllanRita/Surge/actions/runs/46018937181) and [46019010062](https://github.com/AllanRita/Surge/actions/runs/46019010062) failed before any production maintenance began. The failure was an outdated unit test expecting an IP subnet with different `no-resolve` behavior to count as semantically covered.
 - The implementation's stricter behavior is intentional and safer: IP network containment only counts when both source and existing rules have the same `no-resolve` option. The unit test was corrected to cover same-mode positive and different-mode negative cases. No production rule files were modified by the failed runs.
-- New validation run [46019188959](https://github.com/AllanRita/Surge/actions/runs/46019188959) passed all offline self-tests, security-feed download step, and exact tombstone enforcement, and entered the sequential batch stage. Final batch completion and URLhaus availability still need verification.
+- Run [46019188959](https://github.com/AllanRita/Surge/actions/runs/46019188959) passed all six offline self-tests and completed all seven batches. A subsequent test-only run [46019218420](https://github.com/AllanRita/Surge/actions/runs/46019218420) exposed a second assertion typo in the no-resolve test fixture; production maintenance did not run in that failed job. The assertion was corrected. Follow-up run [46019533469](https://github.com/AllanRita/Surge/actions/runs/46019533469) passed the self-test step and is processing the batches.
 - Continue to fail closed on URLhaus unavailability. Keep all production rule changes protected by per-batch backup and preflight.
