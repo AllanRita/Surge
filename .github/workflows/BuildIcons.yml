@@ -9,7 +9,7 @@ on:
   schedule:
     - cron: '17 2 * * 1'
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: build-icon-library
   cancel-in-progress: false
@@ -22,13 +22,13 @@ jobs:
       - name: Secure checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          ref: main
+          ref: ${{ github.sha }}
           persist-credentials: false
 
       - name: Build secure icon indexes
         run: |
           python3 - <<'PY'
-          import json, re, time, os, math
+          import json, re, time, os, math, unicodedata
           from datetime import datetime, timezone
           from pathlib import Path
           from urllib.request import Request, build_opener, HTTPRedirectHandler
@@ -92,13 +92,21 @@ jobs:
                   return False
               if p.scheme!='https' or p.query or p.fragment or re.search(r'%(2f|5c|00|25)',url,re.I):
                   return False
-              path=unquote(p.path)
+              if re.search(r'%(?![0-9a-fA-F]{2})',url):
+                  return False
+              try:
+                  path=unquote(p.path,errors='strict')
+              except UnicodeError:
+                  return False
+              if any(unicodedata.category(c) in {'Cc','Cf','Cs'} for c in path):
+                  return False
               if re.search(r'[\x00-\x1f\x7f\\?#]',path) or any(x in {'.','..'} for x in path.split('/')):
                   return False
               if re.fullmatch(r'is[1-5](?:-ssl)?\.mzstatic\.com',p.netloc):
                   return source in {'iOS','Custom'} and path.startswith('/image/thumb/') and bool(re.search(r'\.(png|jpe?g|webp)$',path,re.I))
               if p.netloc=='play-lh.googleusercontent.com':
-                  return source in {'Google Play','Custom'} and bool(re.fullmatch(r'/[A-Za-z0-9_-]+(?:=w\d+-h\d+)?',path))
+                  m=re.fullmatch(r'/[A-Za-z0-9_-]+(?:=w([0-9]{1,4})-h([0-9]{1,4}))?',path)
+                  return source in {'Google Play','Custom'} and bool(m) and (m.group(1) is None or all(1<=int(v)<=4096 for v in m.groups()))
               if source in {'iOS','Google Play'}:
                   return False
               if not re.search(r'\.(png|jpe?g)$',path,re.I):
@@ -273,10 +281,27 @@ jobs:
               if not set(checks).issubset(archive):
                   raise ValueError('Unexpected history check URL')
 
-          data={
-              s:clean(s,fetch(u)['icons'])
-              for s,u in SOURCES+EXTRA
-          }
+          source_cache=read('Source-Cache.json',{})
+          if not isinstance(source_cache,dict) or not set(source_cache).issubset({s for s,_ in SOURCES+EXTRA}):
+              raise ValueError('Invalid source cache')
+          data={}
+          source_warnings=[]
+          for source,url in SOURCES+EXTRA:
+              previous=clean(source,source_cache[source]) if source in source_cache else None
+              try:
+                  rows=clean(source,fetch(url)['icons'])
+                  if previous is not None:
+                      old={unquote(r['url']) for r in previous}
+                      new={unquote(r['url']) for r in rows}
+                      if len(old-new)>max(10,math.ceil(len(old)*.25)) or len(new-old)>max(20,math.ceil(len(old)*.50)):
+                          raise ValueError('Abnormal source change')
+              except Exception:
+                  if previous is None:
+                      raise
+                  rows=previous
+                  source_warnings.append(source)
+              data[source]=rows
+
 
           core=custom_icons+[
               r for s,_ in SOURCES+EXTRA
@@ -822,7 +847,7 @@ jobs:
               if len(old_urls-new_urls)>max(10,math.ceil(len(old_urls)*.25)) or len(new_urls-old_urls)>max(20,math.ceil(len(old_urls)*.50)):
                   raise ValueError('SECURITY BLOCK: abnormal change in '+file)
 
-          prepared={}
+          prepared={'Source-Cache.json':data}
 
           for file,title,rows in plans:
               icons=pack(rows)
@@ -913,6 +938,8 @@ jobs:
               '',
               '## Security',
               '',
+              'Source cache fallback is revalidated; first-time source failures stop publication. Build and publish permissions are separated.',
+              '',
               'HTTPS, trusted domains and paths, exact Apple app IDs, blocked redirects, size limits, abnormal non-archive change detection, fixed checkout and restricted staging. Image binaries are not downloaded or virus-scanned.'
           ]
 
@@ -949,6 +976,7 @@ jobs:
           report=[
               '## V'+VERSION,
               '',
+              *[f'- Source fallback: {x}' for x in source_warnings],
               f'All icons: {len(prepared["All.json"]["icons"])}',
               f'Current Apple apps: {len(current)}',
               f'Visible Apple history: {len(visible_history)}',
@@ -986,6 +1014,41 @@ jobs:
 
           PY
 
+      - name: Upload validated indexes
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: validated-indexes
+          path: |
+            Icon/All.json
+            Icon/Flags.json
+            Icon/Streaming.json
+            Icon/AI.json
+            Icon/README.md
+            Icon/Apple-iOS-Cache.json
+            Icon/Apple-iOS-History.json
+            Icon/Google-Play-History.json
+            Icon/Source-Cache.json
+            Icon/Packs/*.json
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    needs: build
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Secure checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Download validated indexes
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: validated-indexes
+          path: Icon
       - name: Commit validated indexes only
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -1008,7 +1071,8 @@ jobs:
                   'README.md',
                   'Apple-iOS-Cache.json',
                   'Apple-iOS-History.json',
-                  'Google-Play-History.json'
+                  'Google-Play-History.json',
+                  'Source-Cache.json'
               )
           ]
 
