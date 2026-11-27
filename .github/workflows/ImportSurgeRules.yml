@@ -66,7 +66,7 @@ jobs:
                       if any(re.search(r'[\x00-\x08\x0b-\x1f\x7f]',l) or l.startswith('[') for l in lines):
                           raise SystemExit(f'Invalid rule content: {p.name}')
                       if target.exists():
-                          old=target.read_text(encoding='utf-8-sig').splitlines()
+                          old=target.read_text(encoding='utf-8-sig').split('\n# BEGIN MERGED SUPPLEMENT\n',1)[0].splitlines()
                           oldset={l.strip() for l in old if l.strip() and not l.lstrip().startswith(('#',';','//'))}
                           newset=set(lines)
                           if len(oldset)>=20 and len(oldset-newset)>max(10,len(oldset)*0.35):
@@ -82,6 +82,70 @@ jobs:
           retained=sum(1 for p in dst.rglob('*') if p.is_file() and p.name not in {'LICENSE','UPSTREAM.md'} and not (src/p.relative_to(dst)).exists())
           with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as report:
               report.write(f'Upstream files: {len(files)}\nRule files: {len(rules)}\nRetained removed files: {retained}\nSkipped empty files: {len(skipped)}\n')
+          # Merge only explicitly matched service scopes. Keep independent cached contributions.
+          extra=Path(os.environ['RUNNER_TEMP'])/'extra-source'
+          cache=dst/'SourceMetadata'
+          mapping={'microsoft':'Microsoft','apple_services':'Apple','gitlab':'GitLab','neteasemusic':'NetEaseMusic','telegram':'Telegram','stream_biliintl':'BiliBiliIntl'}
+          try:
+              subprocess.run(['git','clone','--depth','1','--filter=blob:none','--sparse','https://github.com/SukkaLab/ruleset.skk.moe.git',str(extra)],check=True)
+              subprocess.run(['git','-C',str(extra),'sparse-checkout','set','List/non_ip'],check=True)
+              lic=extra/'LICENSE'
+              if not lic.is_file() or lic.is_symlink() or 'GNU AFFERO GENERAL PUBLIC LICENSE' not in lic.read_text():
+                  raise ValueError('Unexpected license')
+              commit=subprocess.check_output(['git','-C',str(extra),'rev-parse','HEAD'],text=True).strip()
+              for stem,category in mapping.items():
+                  p=extra/'List/non_ip'/f'{stem}.conf'
+                  try:
+                      if not p.is_file() or p.is_symlink() or not 0<p.stat().st_size<=50*1024*1024:
+                          raise ValueError('Invalid source file')
+                      raw=p.read_text(encoding='utf-8-sig')
+                      rows=[]
+                      for line in raw.splitlines():
+                          line=line.strip()
+                          if not line or line.startswith(('#',';','//')):
+                              continue
+                          parts=line.split(',')
+                          if len(parts)!=2 or parts[0] not in {'DOMAIN','DOMAIN-SUFFIX'} or not re.fullmatch(r'[A-Za-z0-9_-]+(?:\.[A-Za-z0-9_-]+)+',parts[1]):
+                              raise ValueError('Unsupported rule syntax')
+                          domain=parts[1].lower()
+                          if domain=='skk.moe' or domain.endswith('.skk.moe'):
+                              continue
+                          rows.append(parts[0]+','+domain)
+                      if not rows:
+                          raise ValueError('Empty contribution')
+                      cache.mkdir(exist_ok=True)
+                      oldfile=cache/f'{category}.json'
+                      old=json.loads(oldfile.read_text()) if oldfile.exists() else {}
+                      previous=set(old.get('rules',[]))
+                      if previous and len(previous-set(rows))>max(10,len(previous)*0.35):
+                          raise ValueError('Abnormal contribution removal')
+                      if previous and len(set(rows)-previous)>max(30,len(previous)*0.75):
+                          raise ValueError('Abnormal contribution addition')
+                      oldfile.write_text(json.dumps({'source':'https://github.com/SukkaLab/ruleset.skk.moe','commit':commit,'path':str(p.relative_to(extra)),'license':'AGPL-3.0','notices':[l for l in raw.splitlines() if l.startswith('#')],'rules':sorted(set(rows))},ensure_ascii=False,indent=2))
+                  except (OSError,ValueError) as e:
+                      print('Contribution deferred:',category,str(e))
+              shutil.copyfile(lic,dst/'LICENSE-AGPL-3.0')
+          except (OSError,ValueError,subprocess.CalledProcessError) as e:
+              print('Additional source deferred:',str(e))
+          for category in mapping.values():
+              meta=cache/f'{category}.json'
+              target=dst/category/f'{category}.list'
+              if not meta.exists() or not target.exists():
+                  continue
+              info=json.loads(meta.read_text())
+              base=target.read_text(encoding='utf-8-sig').split('\n# BEGIN MERGED SUPPLEMENT\n',1)[0]
+              existing={l.strip().lower() for l in base.splitlines()}
+              suffixes={l.split(',')[1].lower() for l in base.splitlines() if l.startswith('DOMAIN-SUFFIX,') and len(l.split(','))==2}
+              added=[]
+              for line in info['rules']:
+                  kind,domain=line.split(',')
+                  if line.lower() in existing or any('.'.join(domain.split('.')[i:]) in suffixes for i in range(len(domain.split('.')))):
+                      continue
+                  added.append(line)
+              if added:
+                  target.write_text(base.rstrip()+'\n# BEGIN MERGED SUPPLEMENT\n# Source: '+info['source']+'\n# License: AGPL-3.0; notices in SourceMetadata/'+category+'.json\n'+'\n'.join(added)+'\n',encoding='utf-8')
+              else:
+                  target.write_text(base,encoding='utf-8')
           import ipaddress, unicodedata, collections
           allowed={'DOMAIN','DOMAIN-SUFFIX','DOMAIN-KEYWORD','DOMAIN-WILDCARD','DOMAIN-REGEX','IP-CIDR','IP-CIDR6','IP-ASN','GEOIP','USER-AGENT','URL-REGEX','PROCESS-NAME','DEST-PORT','SRC-PORT','SRC-IP','IN-PORT','PROTOCOL','AND','OR','NOT','RULE-SET','DOMAIN-SET','SUBNET','DEVICE-NAME','HOST','HOST-SUFFIX','HOST-KEYWORD'}
           findings=collections.Counter()
@@ -137,42 +201,6 @@ jobs:
                   report.write(f'- {example}\n')
           if any(findings[k] for k in ('hidden-control','invalid-network','ip-family-mismatch','catch-all-network','missing-operand')):
               raise SystemExit('Critical rule audit findings; publication blocked')
-          # Additional source: only explicit non-IP rule sets, never execute source code.
-          extra=Path(os.environ['RUNNER_TEMP'])/'extra-source'
-          try:
-              subprocess.run(['git','clone','--depth','1','--filter=blob:none','--sparse','https://github.com/SukkaLab/ruleset.skk.moe.git',str(extra)],check=True)
-              subprocess.run(['git','-C',str(extra),'sparse-checkout','set','List/non_ip'],check=True)
-              selected={'apple_cdn':'AppleCDN','apple_intelligence':'AppleIntelligence','microsoft_cdn':'MicrosoftCDN','cloudmounter':'CloudMounter','gitlab':'GitLabSupplement','stream_jp':'StreamingJapan','stream_kr':'StreamingKorea','stream_hk':'StreamingHongKong','stream_tw':'StreamingTaiwan'}
-              candidates=[]
-              for stem,category in selected.items():
-                  p=extra/'List/non_ip'/f'{stem}.conf'
-                  if not p.is_file() or p.is_symlink() or p.stat().st_size==0 or p.stat().st_size>50*1024*1024:
-                      raise ValueError('Invalid additional source file')
-                  raw=p.read_bytes()
-                  lines=raw.decode('utf-8-sig').splitlines()
-                  for line in lines:
-                      line=line.strip()
-                      if not line or line.startswith(('#',';','//')):
-                          continue
-                      parts=line.split(',')
-                      if len(parts)!=2 or parts[0] not in {'DOMAIN','DOMAIN-SUFFIX','DOMAIN-KEYWORD'} or not re.fullmatch(r'[A-Za-z0-9_.-]+',parts[1]):
-                          raise ValueError('Unsupported additional rule syntax')
-                  target=dst/category/f'{category}.list'
-                  if target.exists() and not target.with_suffix('.source.json').exists():
-                      raise ValueError('Source name collision')
-                  candidates.append((target,raw,p))
-              lic=extra/'LICENSE'
-              if not lic.is_file() or lic.is_symlink() or 'GNU AFFERO GENERAL PUBLIC LICENSE' not in lic.read_text():
-                  raise ValueError('Unexpected additional source license')
-              commit=subprocess.check_output(['git','-C',str(extra),'rev-parse','HEAD'],text=True).strip()
-              for target,raw,p in candidates:
-                  target.parent.mkdir(parents=True,exist_ok=True)
-                  provenance={'repository':'https://github.com/SukkaLab/ruleset.skk.moe','source_repository':'https://github.com/SukkaW/Surge','commit':commit,'path':str(p.relative_to(extra)),'license':'AGPL-3.0'}
-                  target.write_bytes(raw)
-                  target.with_suffix('.source.json').write_text(json.dumps(provenance,indent=2))
-              shutil.copyfile(lic,dst/'LICENSE-AGPL-3.0')
-          except (OSError,ValueError,subprocess.CalledProcessError) as e:
-              print('Additional source deferred:',str(e))
           manifest={str(p.relative_to(dst)):hashlib.sha256(p.read_bytes()).hexdigest() for p in dst.rglob('*') if p.is_file()}
           Path('rule-manifest.json').write_text(json.dumps(manifest,sort_keys=True))
           print('Upstream commit:',subprocess.check_output(['git','-C',str(root),'rev-parse','HEAD'],text=True).strip())
