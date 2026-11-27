@@ -17,10 +17,12 @@ HBO规则由《RULE GENERATOR 规则生成器》自动生成。
 各类型规则统计：
 | 类型 | 数量(条)  | 
 | ---- | ----  |
-| DOMAIN-SUFFIX | 47  | 
+| DOMAIN | 1  |
+| DOMAIN-KEYWORD | 1  |
+| DOMAIN-SUFFIX | 49  | 
 | PROCESS-NAME | 1  | 
-| USER-AGENT | 2  | 
-| TOTAL | 50  | 
+| USER-AGENT | 3  | 
+| TOTAL | 55  | 
 
 
 ## Surge 
