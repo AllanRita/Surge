@@ -6,13 +6,13 @@ External icon links only. No image mirroring.
 
 | Index | Icons | Link |
 |---|---:|---|
-| All.json | 8600 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
+| All.json | 8601 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
 | Flags.json | 602 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Flags.json) |
-| Streaming.json | 415 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
+| Streaming.json | 416 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
 | AI.json | 59 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/AI.json) |
 | Packs/Apple-Emoji.json | 3587 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Emoji.json) |
 | Packs/Apple-Flags.json | 262 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Flags.json) |
-| Packs/Apple-iOS.json | 9 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-iOS.json) |
+| Packs/Apple-iOS.json | 10 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-iOS.json) |
 | Packs/Apple-iOS-History.json | 0 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-iOS-History.json) |
 | Packs/Google-Play.json | 8 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Google-Play.json) |
 | Packs/Google-Play-History.json | 0 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Google-Play-History.json) |
@@ -63,13 +63,14 @@ External icon links only. No image mirroring.
 - [550221096](https://apps.apple.com/us/app/id550221096)
 - [1080187984](https://apps.apple.com/hk/app/id1080187984)
 - [501956183](https://apps.apple.com/hk/app/id501956183)
+- [945077360](https://apps.apple.com/us/app/id945077360)
 
 ## Apple icon history
 
-Current apps: 9
+Current apps: 10
 Visible historical URLs: 0
 Hidden historical URLs: 0
-Archived versions: 9
+Archived versions: 10
 
 ## Google Play
 
