@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 13:22 UTC
+Generated: 2026-11-27 13:29 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -19,7 +19,7 @@ Scope: existing rule files and cached source metadata only. No new rule authors 
 ## Bank/payment App folders
 
 This classifies dedicated App folders by folder name only. Financial-service domains inside other App or aggregate lists are not removed.
-- No dedicated bank/payment App folders found under Rule/Upstream. Rule/Personal/PayPay.list remains untouched.
+- No dedicated bank/payment App folders are currently present under Rule/Upstream. The 14 exact previously deleted paths remain tombstoned in .github/explicit-rule-exclusions.json; no other bank/payment or finance folders are removed automatically. Rule/Personal/PayPay.list remains untouched.
 
 ## Other finance/trading/crypto folders — review only
 
@@ -480,7 +480,7 @@ Format labels are inferred from filename suffixes; distinct formats are preserve
 
 ## Safety boundaries
 - No rule files or personal files are deleted, renamed, or rewritten by this audit.
-- Dedicated bank/payment, crypto-exchange, cryptocurrency-category, securities-brokerage, and stock-investment folders explicitly excluded by the user are absent; matching domains embedded in unrelated Apps, aggregate lists, advertising, privacy, and filter lists remain untouched.
+- Only the exact folder paths in .github/explicit-rule-exclusions.json are tombstoned. No additional bank/payment, crypto, securities, or other finance folders are deleted by this audit; matching domains embedded in other rule sets remain untouched.
 - Regional variants are candidates for consolidation into one App policy group; country selection belongs in the Surge policy group, not separate rule folders.
 - Resolve / non-Resolve and other distinct formats are compared and preserved separately.
 - Similarity, shared CDN domains, or parent-company ownership alone never authorizes cross-App merging.
