@@ -5,7 +5,7 @@ on:
     - cron: '43 3 * * *'
   push:
     branches: [main]
-    paths: ['.github/workflows/ImportSurgeRules.yml', '.github/scripts/analyze_app_rule_overlap.py']
+    paths: ['.github/workflows/ImportSurgeRules.yml', '.github/scripts/analyze_app_rule_overlap.py', '.github/scripts/apply_canonical_app_merges.py']
 permissions:
   contents: read
 concurrency:
@@ -326,6 +326,7 @@ jobs:
               ):
                   financial_matches.append((path,num,line.strip()))
                   flag('personal-financial-rule' if path.startswith('Rule/Personal/') else 'financial-domain-review',path,num)
+          exec(compile(Path('.github/scripts/apply_canonical_app_merges.py').read_text(encoding='utf-8'), '.github/scripts/apply_canonical_app_merges.py', 'exec'))
           # Whole-library consolidation: preserve rule order, options and comments.
           dedup_count=0
           duplicate_files=collections.defaultdict(list)
