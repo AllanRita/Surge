@@ -157,6 +157,17 @@ def rule_covered(rule,target_rules):
  if rule.lower() in {x.lower() for x in target_rules}: return True
  return domain_covered(rule,target_rules) or ip_covered(rule,target_rules)
 
+def domain_set_rules(path):
+ out=[]
+ if not path or not path.is_file(): return out
+ for raw in rules(path):
+  value=raw.strip().lower().rstrip(".")
+  is_suffix=value.startswith(".")
+  domain=value[1:] if is_suffix else value
+  if re.fullmatch(r"(?i)[a-z0-9_-]+(?:\\.[a-z0-9_-]+)+",domain):
+   out.append(("DOMAIN-SUFFIX," if is_suffix else "DOMAIN,")+domain)
+ return out
+
 def source_coverage():
  out=[]
  for name,target_rel in sorted(SOURCE_TARGETS.items()):
@@ -166,16 +177,24 @@ def source_coverage():
   try: meta=json.loads(mp.read_text(encoding="utf-8"))
   except (OSError,ValueError) as e: out.append({"source":name,"target":target_rel,"error":str(e)}); continue
   source_rules=meta.get("rules",[])
-  base_name,_=fmt(tp.stem)
-  targets=[]
-  for candidate in sorted(tp.parent.glob("*.list")):
-   candidate_base,format_name=fmt(candidate.stem)
-   if candidate_base==base_name:
-    targets.append((format_name,str(candidate.relative_to(ROOT)),candidate))
-  if not targets: targets=[("standard",target_rel,tp)]
+  domain_path=tp.with_name(tp.stem+"_Domain"+tp.suffix)
+  has_domain=domain_path.is_file()
+  shared_domain_rules=domain_set_rules(domain_path) if has_domain else []
+  targets=[("standard",tp,has_domain)]
+  resolve_path=tp.with_name(tp.stem+"_Resolve"+tp.suffix)
+  if resolve_path.is_file(): targets.append(("resolve",resolve_path,has_domain))
+  all_path=tp.with_name(tp.stem+"_All"+tp.suffix)
+  if all_path.is_file(): targets.append(("all",all_path,False))
+  all_no_resolve_path=tp.with_name(tp.stem+"_All_No_Resolve"+tp.suffix)
+  if all_no_resolve_path.is_file(): targets.append(("all_no_resolve",all_no_resolve_path,False))
   format_coverage=[]
-  for format_name,format_rel,format_path in targets:
-   target_rules=rules(format_path); counts=Counter(); missing=[]
+  for format_name,format_path,include_domain in targets:
+   target_rules=rules(format_path)
+   components=[str(format_path.relative_to(ROOT))]
+   if include_domain:
+    target_rules.extend(shared_domain_rules)
+    components.append(str(domain_path.relative_to(ROOT)))
+   counts=Counter(); missing=[]
    for rule in source_rules:
     if rule.lower() in {x.lower() for x in target_rules}: counts["exact"]+=1
     elif domain_covered(rule,target_rules): counts["parent_suffix"]+=1
@@ -183,7 +202,7 @@ def source_coverage():
     else:
      counts["missing"]+=1
      if len(missing)<100: missing.append(rule)
-   format_coverage.append({"format":format_name,"target":format_rel,"target_rules":len(target_rules),"exact":counts["exact"],"parent_suffix":counts["parent_suffix"],"ip_range":counts["ip_range"],"missing_count":counts["missing"],"missing_examples":missing})
+   format_coverage.append({"format":format_name,"target":" + ".join(components),"components":components,"target_rules":len(target_rules),"exact":counts["exact"],"parent_suffix":counts["parent_suffix"],"ip_range":counts["ip_range"],"missing_count":counts["missing"],"missing_examples":missing})
   primary=next((x for x in format_coverage if x["format"]=="standard"),format_coverage[0])
   out.append({"source":name,"source_url":meta.get("source"),"license":meta.get("license"),"source_commit":meta.get("commit"),"source_path":meta.get("path"),"source_rules":len(source_rules),"target":primary["target"],"target_rules":primary["target_rules"],"exact":primary["exact"],"parent_suffix":primary["parent_suffix"],"ip_range":primary["ip_range"],"missing_count":primary["missing_count"],"missing_examples":primary["missing_examples"],"format_coverage":format_coverage})
  return out
