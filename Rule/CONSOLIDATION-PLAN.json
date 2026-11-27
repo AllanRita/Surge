@@ -371,6 +371,14 @@
       ],
       "decision": "keep_separate",
       "reason": "Bing-specific service rules and the broader Microsoft platform list remain separate products."
+    },
+    {
+      "apps": [
+        "Heroku",
+        "Salesforce"
+      ],
+      "decision": "keep separate",
+      "reason": "Heroku and Salesforce are distinct products. Both lists contain herokuapp.com, a shared multi-tenant Heroku hosting suffix; shared platform infrastructure does not make them one App policy group. Keep the folders separate and review the broad suffix's routing scope independently."
     }
   ],
   "app_policy_groups": [
@@ -526,5 +534,185 @@
       "decision": "keep separate",
       "reason": "ClubhouseIP's README explicitly says it is used with Clubhouse but routes IP ranges direct while Clubhouse domains are proxied. This is an intentional routing-scenario split."
     }
-  ]
+  ],
+  "shared_platform_suffix_review": {
+    "generated_from": "Rule/Upstream/CLEANUP-INVENTORY.json",
+    "curated_suffixes_checked": 42,
+    "suffixes_found": 34,
+    "total_rule_occurrences": 159,
+    "app_or_service_folder_occurrences": 33,
+    "aggregate_folder_occurrences": 126,
+    "decision": "review_only_keep",
+    "items": [
+      {
+        "suffix": "amazonaws.com",
+        "classification": "shared cloud infrastructure / AWS",
+        "occurrences": 2,
+        "folders": [
+          "Amazon"
+        ]
+      },
+      {
+        "suffix": "appspot.com",
+        "classification": "Google App Engine hosting",
+        "occurrences": 2,
+        "folders": [
+          "Google"
+        ]
+      },
+      {
+        "suffix": "azureedge.net",
+        "classification": "Azure CDN",
+        "occurrences": 1,
+        "folders": [
+          "Microsoft"
+        ]
+      },
+      {
+        "suffix": "azurefd.net",
+        "classification": "Azure Front Door shared CDN",
+        "occurrences": 1,
+        "folders": [
+          "Microsoft"
+        ]
+      },
+      {
+        "suffix": "azurewebsites.net",
+        "classification": "Azure App Service hosting",
+        "occurrences": 1,
+        "folders": [
+          "Microsoft"
+        ]
+      },
+      {
+        "suffix": "blogspot.com",
+        "classification": "Blogger shared hosting",
+        "occurrences": 2,
+        "folders": [
+          "Google"
+        ]
+      },
+      {
+        "suffix": "cloudapp.net",
+        "classification": "Azure Cloud Services",
+        "occurrences": 1,
+        "folders": [
+          "Microsoft"
+        ]
+      },
+      {
+        "suffix": "cloudfront.net",
+        "classification": "shared CDN / Amazon CloudFront",
+        "occurrences": 2,
+        "folders": [
+          "Amazon"
+        ]
+      },
+      {
+        "suffix": "duckdns.org",
+        "classification": "dynamic DNS",
+        "occurrences": 2,
+        "folders": [
+          "NaSDDNS"
+        ]
+      },
+      {
+        "suffix": "dynu.net",
+        "classification": "Dynu dynamic DNS",
+        "occurrences": 1,
+        "folders": [
+          "Dynu"
+        ]
+      },
+      {
+        "suffix": "firebaseapp.com",
+        "classification": "Firebase Hosting",
+        "occurrences": 2,
+        "folders": [
+          "Google"
+        ]
+      },
+      {
+        "suffix": "gitbook.io",
+        "classification": "shared documentation hosting",
+        "occurrences": 1,
+        "folders": [
+          "GitBook"
+        ]
+      },
+      {
+        "suffix": "github.io",
+        "classification": "GitHub Pages shared hosting",
+        "occurrences": 1,
+        "folders": [
+          "GitHub"
+        ]
+      },
+      {
+        "suffix": "gitlab.io",
+        "classification": "GitLab Pages shared hosting",
+        "occurrences": 1,
+        "folders": [
+          "Developer"
+        ]
+      },
+      {
+        "suffix": "herokuapp.com",
+        "classification": "Heroku shared hosting",
+        "occurrences": 2,
+        "folders": [
+          "Heroku",
+          "Salesforce"
+        ]
+      },
+      {
+        "suffix": "pages.dev",
+        "classification": "Cloudflare Pages shared hosting",
+        "occurrences": 2,
+        "folders": [
+          "Cloudflare"
+        ]
+      },
+      {
+        "suffix": "t.co",
+        "classification": "URL shortener",
+        "occurrences": 2,
+        "folders": [
+          "Twitter"
+        ]
+      },
+      {
+        "suffix": "trycloudflare.com",
+        "classification": "Cloudflare temporary tunnel",
+        "occurrences": 2,
+        "folders": [
+          "Cloudflare"
+        ]
+      },
+      {
+        "suffix": "vercel.app",
+        "classification": "Vercel shared hosting",
+        "occurrences": 1,
+        "folders": [
+          "Vercel"
+        ]
+      },
+      {
+        "suffix": "web.app",
+        "classification": "Firebase Hosting",
+        "occurrences": 2,
+        "folders": [
+          "Google"
+        ]
+      },
+      {
+        "suffix": "workers.dev",
+        "classification": "Cloudflare Workers shared hosting",
+        "occurrences": 2,
+        "folders": [
+          "Cloudflare"
+        ]
+      }
+    ]
+  }
 }

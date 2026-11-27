@@ -66,7 +66,7 @@ The earlier preliminary duplicate-candidate report has been superseded by the co
 - 73 rule entries were added across canonical files/formats; these represent 39 unique App-level additions after counting Standard/Resolve mirrors once.
 - All 14 canonical folders exist in the current `main` tree, and all 19 alias folders are absent.
 - The current inventory reports 2 byte-identical file groups and 3 identical rule-payload groups. These are the intended `All` / `All_No_Resolve` pairs in AdGuardSDNSFilter, ChinaMaxNoIP, and EasyPrivacy. They remain separate because the format/resolution intent is distinct.
-- The current plan records 18 cross-App overlap boundaries as keep-separate. DuoWan/HuanJu were manually checked: HuanJu's 20 domain rules are all contained in DuoWan's 27 rules, with 7 additional DuoWan rules; their READMEs describe distinct named rule scopes, so they remain separate.
+- The current plan records 19 cross-App overlap boundaries as keep-separate. DuoWan/HuanJu were manually checked: HuanJu's 20 domain rules are all contained in DuoWan's 27 rules, with 7 additional DuoWan rules; their READMEs describe distinct named rule scopes, so they remain separate.
 - AmazonIP and ClubhouseIP also remain separate from their similarly named App folders. AmazonIP is a broad 1,521-entry IP-CIDR inventory; ClubhouseIP's README explicitly specifies direct routing while Clubhouse's domain rules are proxied.
 
 ### Subscription path compatibility
@@ -93,6 +93,36 @@ The 19 old alias folders were physically removed after the canonical union was v
 ## Safety decision
 
 No broad-domain or financial-domain rule was automatically deleted. Keep potentially useful rules pending scenario-aware and live behavior verification.
+
+## Curated shared-platform suffix inventory (full upstream scan)
+
+The latest inventory checks 42 curated shared CDN/hosting, dynamic-DNS, and URL-shortener suffixes across all 828 upstream rule files. It found **34 suffixes** with **159 rule occurrences**. Of these, **33 occurrences across 21 suffixes** appear in App/service folders; the other **126 occurrences** are in the aggregate folders Global, GlobalMedia, Proxy, and ProxyLite.
+
+| Suffix | App/service folders | Rule occurrences |
+|---|---|---:|
+| `amazonaws.com` | Amazon | 2 |
+| `appspot.com` | Google | 2 |
+| `azureedge.net` | Microsoft | 1 |
+| `azurefd.net` | Microsoft | 1 |
+| `azurewebsites.net` | Microsoft | 1 |
+| `blogspot.com` | Google | 2 |
+| `cloudapp.net` | Microsoft | 1 |
+| `cloudfront.net` | Amazon | 2 |
+| `duckdns.org` | NaSDDNS | 2 |
+| `dynu.net` | Dynu | 1 |
+| `firebaseapp.com` | Google | 2 |
+| `gitbook.io` | GitBook | 1 |
+| `github.io` | GitHub | 1 |
+| `gitlab.io` | Developer | 1 |
+| `herokuapp.com` | Heroku, Salesforce | 2 |
+| `pages.dev` | Cloudflare | 2 |
+| `t.co` | Twitter | 2 |
+| `trycloudflare.com` | Cloudflare | 2 |
+| `vercel.app` | Vercel | 1 |
+| `web.app` | Google | 2 |
+| `workers.dev` | Cloudflare | 2 |
+
+These 21 suffixes are review candidates, not automatic deletion targets. The broad platform namespaces may be intentionally used by the corresponding service, but can also include unrelated tenants. In particular, Heroku and Salesforce remain separate App rule sets even though both contain `herokuapp.com`; that shared hosting suffix must not be used as a reason to merge the products. The detailed 34-suffix inventory and all matching file paths are in `CLEANUP-INVENTORY.md` and `CLEANUP-INVENTORY.json`.
 
 ## OpenPhish shared-hosting review (2026-11-27; refreshed feed snapshot)
 

@@ -55,7 +55,7 @@ The 15 author-source snapshots already cached in SourceMetadata have been compar
 
 ## Security and review records
 
-- The current plan records 18 cross-App overlap pairs as keep-separate/manual-review boundaries. Similarity alone never authorizes a merge.
+- The current plan records 19 cross-App overlap pairs as keep-separate/manual-review boundaries. Similarity alone never authorizes a merge.
 - SECURITY-REVIEW.md records the current threat-feed matches and broad shared-hosting suffixes. Feed matches are review signals only; no shared-hosting parent suffix is automatically removed.
 - SECURITY-REMEDIATION-REPORT.md records the latest IANA-gated check for `DOMAIN-SUFFIX,xihuan`: zero matching occurrences were found, so no rule files were changed. The earlier 17-occurrence figure is historical and is not the current repository state.
 - The latest OpenPhish comparison found 77 rule-to-feed matches (all classified as app/routing scope) under shared hosting/CDN suffixes; these are review flags, not proof that the parent domains are malicious. URLhaus's old keyless hostfile endpoint is retired; authenticated checks run only when the GitHub Actions secret URLHAUS_AUTH_KEY is configured. Without it, URLhaus is explicitly marked as not loaded, not clean.
@@ -118,9 +118,9 @@ The repository does not contain the user's active Surge profile/configuration, s
 - `AmazonIP` remains separate from `Amazon`: it is a 1,521-entry IP-CIDR inventory, not an Amazon retail App-only domain list.
 - `ClubhouseIP` remains separate from `Clubhouse`: its README specifies direct routing for the IP list and proxy routing for the Clubhouse domain list.
 - `DuoWan` and `HuanJu` remain separate. HuanJu's 20 rules are a subset of DuoWan's 27, but their READMEs describe distinct rule scopes; overlap alone is not sufficient reason to merge them.
-- The 18 cross-App overlap boundaries remain separate. Shared CDN, parent-company, login, or analytics domains do not establish that two folders represent one App.
+- The 19 cross-App overlap boundaries remain separate. Shared CDN, parent-company, login, or analytics domains do not establish that two folders represent one App.
 
 
 ## Expanded shared-hosting audit
 
-The cleanup inventory now scans a curated set of shared CDN/hosting, dynamic-DNS, and URL-shortener suffixes across every upstream rule file, not only those suffixes that happen to match OpenPhish. The result is recorded in `CLEANUP-INVENTORY.json` and `CLEANUP-INVENTORY.md`, with the affected folders and rule occurrences. This is a review-only scan: no rule is automatically removed because a suffix is shared or multi-tenant.
+The cleanup inventory now scans a curated set of 42 shared CDN/hosting, dynamic-DNS, and URL-shortener suffixes across every upstream rule file, not only those suffixes that happen to match OpenPhish. The latest run found 34 suffixes in 159 rule occurrences: 33 occurrences in App/service folders across 21 suffixes and 126 in aggregate folders (Global, GlobalMedia, Proxy, ProxyLite). The result is recorded in `CLEANUP-INVENTORY.json` and `CLEANUP-INVENTORY.md`, with the affected folders and rule occurrences. This is a review-only scan: no rule is automatically removed because a suffix is shared or multi-tenant. The plan records these App/service-folder candidates for manual routing review.
