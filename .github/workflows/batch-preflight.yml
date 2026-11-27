@@ -1,13 +1,14 @@
-name: Surge 100-Folder Batch Trial
+name: Surge Automatic 100-Folder Batch Preflight
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'Rule/Upstream/**/*.list'
+      - '.github/scripts/batch_preflight.py'
+      - '.github/workflows/batch-preflight.yml'
+      - '.github/explicit-rule-exclusions.json'
   workflow_dispatch:
-    inputs:
-      batch_number:
-        description: "Batch number (1 = first 100 folders, 2 = next 100, etc.)"
-        required: true
-        default: "1"
-        type: string
 
 permissions:
   contents: read
@@ -19,7 +20,7 @@ concurrency:
 jobs:
   preflight:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 45
     steps:
       - name: Checkout repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
@@ -29,30 +30,63 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Run read-only 100-folder preflight
-        id: batch
+      - name: Run all 100-folder batches in sequence
+        id: batches
+        shell: bash
         run: |
-          set -euo pipefail
-          python3 .github/scripts/batch_preflight.py \
-            --batch "${{ inputs.batch_number }}" \
-            --batch-size 100 \
-            --output-dir batch-output | tee batch-output-result.json
+          set -uo pipefail
+          mkdir -p batch-output
+          TOTAL=$(python3 -c 'from pathlib import Path; p=Path("Rule/Upstream"); print(sum(1 for x in p.iterdir() if x.is_dir() and not x.is_symlink() and x.name != "SourceMetadata"))')
+          BATCHES=$(((TOTAL + 99) / 100))
+          echo "Eligible folders: $TOTAL; batches: $BATCHES"
+          FAILED=0
+          for ((BATCH=1; BATCH<=BATCHES; BATCH++)); do
+            echo "::group::Batch $BATCH of $BATCHES"
+            python3 .github/scripts/batch_preflight.py \
+              --batch "$BATCH" \
+              --batch-size 100 \
+              --output-dir batch-output
+            RESULT=$?
+            echo "::endgroup::"
+            if [ "$RESULT" -ne 0 ]; then
+              echo "BLOCKED_AT_BATCH=$BATCH" > batch-output/BATCH-STATUS.txt
+              echo "Preflight stopped at batch $BATCH; later batches were not started." >> batch-output/BATCH-STATUS.txt
+              FAILED=1
+              break
+            fi
+          done
+          if [ "$FAILED" -eq 0 ]; then
+            echo "ALL_BATCHES_PASSED=$BATCHES" > batch-output/BATCH-STATUS.txt
+            echo "All $BATCHES batches completed read-only preflight." >> batch-output/BATCH-STATUS.txt
+          fi
+          echo "Preflight loop finished; blocked=$FAILED"
+          exit 0
 
-      - name: Add batch summary
+      - name: Add combined batch summary
         if: always()
         run: |
-          BATCH_ID=$(printf "%03d" "${{ inputs.batch_number }}")
-          if [ -f "batch-output/batch-$BATCH_ID.md" ]; then
-            cat "batch-output/batch-$BATCH_ID.md" >> "$GITHUB_STEP_SUMMARY"
-          elif [ -f batch-output-result.json ]; then
-            cat batch-output-result.json >> "$GITHUB_STEP_SUMMARY"
+          if [ -f batch-output/BATCH-STATUS.txt ]; then
+            cat batch-output/BATCH-STATUS.txt >> "$GITHUB_STEP_SUMMARY"
           fi
+          for report in batch-output/batch-*.md; do
+            [ -f "$report" ] || continue
+            cat "$report" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+          done
 
-      - name: Upload immutable batch report
+      - name: Upload all batch reports
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: surge-rule-batch-${{ inputs.batch_number }}
+          name: surge-rule-batches-${{ github.run_number }}
           path: batch-output/
-          if-no-files-found: warn
+          if-no-files-found: error
           retention-days: 30
+
+      - name: Mark workflow failed if a batch was blocked
+        if: always()
+        run: |
+          if grep -q '^BLOCKED_AT_BATCH=' batch-output/BATCH-STATUS.txt 2>/dev/null; then
+            echo "One batch has blocking findings. Reports are uploaded; inspect and fix before retrying."
+            exit 1
+          fi
