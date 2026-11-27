@@ -1,15 +1,15 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 12:57 UTC
+Generated: 2026-11-27 12:59 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
 ## Inventory
 
-- Rule files: **828**
-- App/category folders: **663**
-- Top-level folders: **640**
-- Rule data size: **116,049,252 bytes**
+- Rule files: **822**
+- App/category folders: **657**
+- Top-level folders: **634**
+- Rule data size: **116,039,933 bytes**
 - Folders with multiple files/formats: **107**
 - Exact byte-identical file groups: **2**
 - Identical rule-payload groups (headers ignored): **3**
@@ -27,12 +27,7 @@ These folders are not automatically classified as bank/payment Apps. They are li
 
 | Folder | Classification | Rule files | Rule entries | Status |
 |---|---|---:|---:|---|
-| Binance | crypto exchange | 1 | 12 | Review only |
-| Crypto | cryptocurrency category list (not a single App) | 1 | 201 | Review only |
-| Cryptocurrency | cryptocurrency category list (not a single App) | 1 | 43 | Review only |
-| EastMoney | securities brokerage / investment platform | 1 | 33 | Review only |
-| OKX | crypto exchange | 1 | 3 | Review only |
-| TigerFintech | securities brokerage / investment platform | 1 | 19 | Review only |
+| — | No additional finance candidates | 0 | 0 | — |
 
 ## Same-App / regional alias candidates
 
@@ -161,7 +156,7 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 
 ### Cached source coverage by available routing format
 
-- Available standard and Resolve files are checked separately; this does not imply that every App has a cached author snapshot.
+- Every available same-App format in the mapped folder (including Standard, Resolve, All, All_No_Resolve, and Domain when present) is checked separately; this does not imply that every App has a cached author snapshot.
 
 | Cached source | Format | Target | Source rules | Missing |
 |---|---|---|---:|---:|

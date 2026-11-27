@@ -1,19 +1,19 @@
 {
-  "generated_utc": "2026-11-27 12:57 UTC",
+  "generated_utc": "2026-11-27 12:59 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
-    "rule_files": 828,
-    "app_or_category_folders": 663,
-    "top_level_folders": 640,
-    "total_rule_bytes": 116049252,
+    "rule_files": 822,
+    "app_or_category_folders": 657,
+    "top_level_folders": 634,
+    "total_rule_bytes": 116039933,
     "multi_file_folders": 107,
     "exact_raw_duplicate_file_groups": 2,
     "same_rule_payload_file_groups": 3,
     "duplicate_rule_lines": 0,
-    "domain_rule_count": 2690929,
+    "domain_rule_count": 2690622,
     "personal_files_seen_not_modified": 3,
     "bank_payment_app_folders_found": 0,
-    "finance_app_review_candidates": 6,
+    "finance_app_review_candidates": 0,
     "cached_author_source_count": 15,
     "cached_author_source_rule_count": 300,
     "cached_author_source_missing_count": 0,
@@ -23,68 +23,7 @@
     "shared_hosting_suffix_rule_occurrences": 159
   },
   "bank_payment_app_folders": [],
-  "finance_app_review_candidates": [
-    {
-      "folder": "Binance",
-      "classification": "crypto exchange",
-      "rule_file_count": 1,
-      "rule_occurrences": 12,
-      "files": [
-        "Binance/Binance.list"
-      ],
-      "status": "review_only_not_removed"
-    },
-    {
-      "folder": "Crypto",
-      "classification": "cryptocurrency category list (not a single App)",
-      "rule_file_count": 1,
-      "rule_occurrences": 201,
-      "files": [
-        "Crypto/Crypto.list"
-      ],
-      "status": "review_only_not_removed"
-    },
-    {
-      "folder": "Cryptocurrency",
-      "classification": "cryptocurrency category list (not a single App)",
-      "rule_file_count": 1,
-      "rule_occurrences": 43,
-      "files": [
-        "Cryptocurrency/Cryptocurrency.list"
-      ],
-      "status": "review_only_not_removed"
-    },
-    {
-      "folder": "EastMoney",
-      "classification": "securities brokerage / investment platform",
-      "rule_file_count": 1,
-      "rule_occurrences": 33,
-      "files": [
-        "EastMoney/EastMoney.list"
-      ],
-      "status": "review_only_not_removed"
-    },
-    {
-      "folder": "OKX",
-      "classification": "crypto exchange",
-      "rule_file_count": 1,
-      "rule_occurrences": 3,
-      "files": [
-        "OKX/OKX.list"
-      ],
-      "status": "review_only_not_removed"
-    },
-    {
-      "folder": "TigerFintech",
-      "classification": "securities brokerage / investment platform",
-      "rule_file_count": 1,
-      "rule_occurrences": 19,
-      "files": [
-        "TigerFintech/TigerFintech.list"
-      ],
-      "status": "review_only_not_removed"
-    }
-  ],
+  "finance_app_review_candidates": [],
   "personal_files_seen_not_modified": [
     "Rule/Personal/Grok.list",
     "Rule/Personal/PayPay.list",
@@ -3779,7 +3718,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
+      "matched_domain": "1v2wj-ud2-nchy-26kds-08-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3795,7 +3734,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3803,7 +3742,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
+      "matched_domain": "1v2wj-ud2-nchy-26kds-08-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3819,7 +3758,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3835,7 +3774,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "bridge-cdnn-web.github.io"
+      "matched_domain": "paivudinho.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3851,7 +3790,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.shopee-677.blogspot.com"
+      "matched_domain": "instagram-baittouts-login.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3867,7 +3806,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "bridge-cdnn-web.github.io"
+      "matched_domain": "paivudinho.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3931,7 +3870,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
+      "matched_domain": "1v2wj-ud2-nchy-26kds-08-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3955,7 +3894,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3971,7 +3910,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.shopee-677.blogspot.com"
+      "matched_domain": "instagram-baittouts-login.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3987,7 +3926,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "bridge-cdnn-web.github.io"
+      "matched_domain": "paivudinho.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -4051,7 +3990,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
+      "matched_domain": "1v2wj-ud2-nchy-26kds-08-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4075,7 +4014,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4115,7 +4054,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.shopee-677.blogspot.com"
+      "matched_domain": "instagram-baittouts-login.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4123,7 +4062,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.shopee-677.blogspot.com"
+      "matched_domain": "instagram-baittouts-login.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4211,7 +4150,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
+      "matched_domain": "1v2wj-ud2-nchy-26kds-08-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4235,7 +4174,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4291,7 +4230,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
+      "matched_domain": "1v2wj-ud2-nchy-26kds-08-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4315,7 +4254,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
