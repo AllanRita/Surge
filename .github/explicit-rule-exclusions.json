@@ -9,13 +9,13 @@
     "restore_requires_explicit_user_request": true,
     "do_not_remove_matching_domains_from_other_rule_sets": true,
     "do_not_modify_rule_personal": true,
-    "automatic_new_bank_payment_deletion_allowed": true,
-    "automatic_new_finance_folder_deletion_allowed": true,
     "only_exact_manifest_entries_may_be_removed": true,
     "do_not_infer_deletions_from_folder_category": true,
     "tombstones_remain_until_explicit_restore_request": true,
     "automatic_security_deletion_allowed": true,
-    "category_based_exclusions": false
+    "category_based_exclusions": false,
+    "category_based_deletion_rules": false,
+    "all_app_categories_subject_to_same_security_policy": true
   },
   "exclusions": []
 }
