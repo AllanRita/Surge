@@ -51,6 +51,21 @@ Interpretation:
 
 Most matches are in advertising, privacy, or filter-category lists; the remainder are in aggregate or other App lists. A domain-name match does not by itself prove that a payment/checkout endpoint is being blocked. The current inventory finds zero dedicated bank/payment App folders, and the 14 dedicated folders removed earlier remain absent. These 238 upstream domain entries were not deleted. The single personal PayPay match was also left untouched.
 
+### Other finance/trading/crypto folders — review only
+
+The latest inventory found no dedicated bank/payment App folders under `Rule/Upstream`, but it separately identified six finance/trading/crypto folders for manual classification. None was deleted or rewritten.
+
+| Folder | Classification | Rule entries | Status |
+|---|---|---:|---|
+| Binance | Crypto exchange | 12 | Review only |
+| Crypto | Cryptocurrency category list, not a single App | 201 | Review only |
+| Cryptocurrency | Cryptocurrency category list, not a single App | 43 | Review only |
+| EastMoney | Securities brokerage / investment platform | 33 | Review only |
+| OKX | Crypto exchange | 3 | Review only |
+| TigerFintech | Securities brokerage / investment platform | 19 | Review only |
+
+These are not automatically treated as bank/payment Apps. They remain intact because the confirmed instruction was to remove dedicated bank/payment App rule folders, not to remove every finance-related, crypto, or investment rule set.
+
 
 Important interpretation:
 - Matches in advertising, privacy, or AdGuard-native lists may represent tracking, telemetry, email, or measurement endpoints; they do not by themselves prove that payment or checkout traffic is blocked.

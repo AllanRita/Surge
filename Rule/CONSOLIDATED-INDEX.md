@@ -43,6 +43,7 @@ The current inventory found no dedicated bank/payment App folders under Rule/Ups
 
 - Keep payment-related domains that are part of other App rule sets.
 - Keep Rule/Personal/PayPay.list unchanged.
+- The current inventory also flags six other finance/trading/crypto folders for review only: Binance (12 entries), Crypto (201), Cryptocurrency (43), EastMoney (33), OKX (3), and TigerFintech (19). They are not classified as dedicated bank/payment App folders and were not removed.
 - Future bank/payment domains belong in the user's personal rule set, not in the shared App library.
 
 ## File formats
