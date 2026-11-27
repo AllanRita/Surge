@@ -1,6 +1,6 @@
 # Security reputation review
 
-Generated: 2026-11-27 13:29 UTC
+Generated: 2026-11-27 13:46 UTC
 
 This report compares current domain rules against public threat-intelligence feeds. A feed match is a review signal, not proof that the rule's parent domain is malicious. No rules are automatically removed.
 
@@ -30,7 +30,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Microsoft/Microsoft.list
-- Matched feed host examples: 35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net
+- Matched feed host examples: jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net
 - Classification: Azure Front Door shared CDN; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,azurewebsites.net
@@ -46,7 +46,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Google/Google.list, Google/Google_Resolve.list
-- Matched feed host examples: watchtheviralvideosonline.blogspot.com
+- Matched feed host examples: www.gcashgiftivnalw.blogspot.com
 - Classification: Blogger shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,cloudfront.net
@@ -54,7 +54,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Amazon/Amazon.list, Amazon/Amazon_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, GlobalMedia/GlobalMedia_All.list, GlobalMedia/GlobalMedia_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list, ProxyLite/ProxyLite.list, ProxyLite/ProxyLite_Resolve.list
-- Matched feed host examples: d1by761p31t71v.cloudfront.net
+- Matched feed host examples: d33wubrfki0l68.cloudfront.net
 - Classification: shared CDN / Amazon CloudFront; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,duckdns.org
@@ -86,7 +86,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: GitHub/GitHub.list, Global/Global_All.list, Global/Global_All_No_Resolve.list
-- Matched feed host examples: zhouxiaoka.github.io
+- Matched feed host examples: kauongit.github.io
 - Classification: GitHub Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,netlify.app
@@ -102,7 +102,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: 95mpz-8o7-wzj6-px62j-08-10-2026-aa.pages.dev
+- Matched feed host examples: jpo00-yqg-rihi-jhf9i-04-10-2026-hh.pages.dev
 - Classification: Cloudflare Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,trycloudflare.com
@@ -118,7 +118,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list, Vercel/Vercel.list
-- Matched feed host examples: www.ads-z63a.vercel.app
+- Matched feed host examples: ore45.vercel.app
 - Classification: Vercel shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,weebly.com
@@ -134,7 +134,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: substantiating-evidence-cfe1.63186834.workers.dev
+- Matched feed host examples: taskorynex-velnoryx-371c.s2504191-f02.workers.dev
 - Classification: Cloudflare Workers shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 
@@ -181,13 +181,13 @@ The curated suffix scan covers all upstream rule files, not only threat-feed mat
 
 ## Bare IANA public-TLD suffix rules
 
-- Rule occurrences: 894 across 78 distinct TLD suffixes.
+- Rule occurrences: 896 across 78 distinct TLD suffixes.
 - These operands are valid IANA top-level domains, but a suffix rule at the TLD root can match every domain beneath that TLD. They are review-only; no rules are automatically removed.
 
 | TLD suffix | Rule occurrences | Folders |
 |---|---:|---|
 | alibaba | 21 | Alibaba, ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
-| alipay | 10 | ChinaMax, ChinaTest |
+| alipay | 11 | AliPay, ChinaMax, ChinaTest |
 | amazon | 2 | Amazon |
 | anquan | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
 | aws | 2 | Amazon |
@@ -203,7 +203,7 @@ The curated suffix scan covers all upstream rule files, not only threat-feed mat
 | google | 2 | ProxyLite |
 | hotmail | 1 | Microsoft |
 | ibm | 1 | IBM |
-| icbc | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| icbc | 18 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest, ICBC |
 | imdb | 2 | Amazon |
 | java | 1 | Oracle |
 | kindle | 2 | Amazon |
@@ -271,7 +271,7 @@ The curated suffix scan covers all upstream rule files, not only threat-feed mat
 
 ## Financial-service domains
 
-- Financial-domain rule matches found: 238
+- Financial-domain rule matches found: 244
 - Only the exact 14 folder paths listed in .github/explicit-rule-exclusions.json remain tombstoned from earlier explicit deletions. No additional bank/payment, crypto, securities, or other finance folders are deleted. Financial-service domains embedded in unrelated rule sets remain unchanged.
 - Rule/Personal was not modified.
 

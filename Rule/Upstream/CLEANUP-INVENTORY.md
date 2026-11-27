@@ -1,15 +1,15 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 13:29 UTC
+Generated: 2026-11-27 13:46 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
 ## Inventory
 
-- Rule files: **828**
-- App/category folders: **663**
-- Top-level folders: **640**
-- Rule data size: **116,049,942 bytes**
+- Rule files: **842**
+- App/category folders: **677**
+- Top-level folders: **654**
+- Rule data size: **116,068,809 bytes**
 - Folders with multiple files/formats: **107**
 - Exact byte-identical file groups: **2**
 - Identical rule-payload groups (headers ignored): **3**
@@ -19,7 +19,20 @@ Scope: existing rule files and cached source metadata only. No new rule authors 
 ## Bank/payment App folders
 
 This classifies dedicated App folders by folder name only. Financial-service domains inside other App or aggregate lists are not removed.
-- No dedicated bank/payment App folders are currently present under Rule/Upstream. The 14 exact previously deleted paths remain tombstoned in .github/explicit-rule-exclusions.json; no other bank/payment or finance folders are removed automatically. Rule/Personal/PayPay.list remains untouched.
+- AliPay
+- BOC
+- BOCOM
+- CCB
+- CEB
+- CGB
+- CMB
+- ICBC
+- PSBC
+- PayPal
+- PingAn
+- Stripe
+- UnionPay
+- VISA
 
 ## Other finance/trading/crypto folders — review only
 
@@ -101,7 +114,7 @@ These are valid public top-level domains used directly as DOMAIN-SUFFIX / HOST-S
 | TLD suffix | Rule occurrences | Folders |
 |---|---:|---|
 | alibaba | 21 | Alibaba, ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
-| alipay | 10 | ChinaMax, ChinaTest |
+| alipay | 11 | AliPay, ChinaMax, ChinaTest |
 | amazon | 2 | Amazon |
 | anquan | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
 | aws | 2 | Amazon |
@@ -117,7 +130,7 @@ These are valid public top-level domains used directly as DOMAIN-SUFFIX / HOST-S
 | google | 2 | ProxyLite |
 | hotmail | 1 | Microsoft |
 | ibm | 1 | IBM |
-| icbc | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| icbc | 18 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest, ICBC |
 | imdb | 2 | Amazon |
 | java | 1 | Oracle |
 | kindle | 2 | Amazon |
@@ -280,7 +293,7 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 
 ## Static security checks
 
-- bare_public_tld_suffix: 894
+- bare_public_tld_suffix: 896
 - catch_all_network: 0
 - duplicate_rule_lines: 0
 - hidden_control: 0
@@ -291,9 +304,10 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 - recognized_native_domain: 1330757
 - recognized_native_filter: 0
 - recognized_native_regex: 0
-- single_label_suffix: 894
+- single_label_suffix: 896
 - stale_or_private_root_suffix: 0
 - unsupported_or_missing_operand: 0
+  - IANA public-TLD suffix (broad match): AliPay/AliPay.list:7: DOMAIN-SUFFIX,alipay
   - IANA public-TLD suffix (broad match): Alibaba/Alibaba.list:10: DOMAIN-SUFFIX,alibaba
   - IANA public-TLD suffix (broad match): Alibaba/Alibaba.list:11: DOMAIN-SUFFIX,taobao
   - IANA public-TLD suffix (broad match): Alibaba/Alibaba.list:12: DOMAIN-SUFFIX,tmall
@@ -343,10 +357,9 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
   - IANA public-TLD suffix (broad match): ChinaMax/ChinaMax.list:21: DOMAIN-SUFFIX,icbc
   - IANA public-TLD suffix (broad match): ChinaMax/ChinaMax.list:22: DOMAIN-SUFFIX,shouji
   - IANA public-TLD suffix (broad match): ChinaMax/ChinaMax.list:23: DOMAIN-SUFFIX,sina
-  - IANA public-TLD suffix (broad match): ChinaMax/ChinaMax.list:24: DOMAIN-SUFFIX,sohu
 
 - Detailed threat-feed and broad shared-hosting review: see SECURITY-REVIEW.md.
-- Financial-domain matches: 238 (review only; not deleted)
+- Financial-domain matches: 244 (review only; not deleted)
 - URLhaus domains loaded: 0
 - URLhaus status: not loaded; URLHAUS_AUTH_KEY is missing or download failed
 - OpenPhish domains loaded: 280
