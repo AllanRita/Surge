@@ -1,6 +1,6 @@
 # Surge Project State
 
-Last updated: 2026-11-27 13:36 UTC (21:36 Asia/Shanghai)
+Last updated: 2026-11-27 13:43 UTC (21:43 Asia/Shanghai)
 Repository: `AllanRita/Surge`
 Default branch: `main`
 
@@ -79,6 +79,7 @@ Verified against the current `main` tree and the latest inventory generated at 1
 
 - Current upstream library: 828 `.list` files, 663 App/category folders, and 640 top-level folders.
 - 107 multi-file folders were checked. Every folder has exactly one file per recognized format; there are no same-format duplicate files.
+- The 14 canonical App folders all exist and all 19 approved alias folders are absent. The plan has 0 exact duplicate candidates and the audit has no unapproved identical-content candidates. Its 19 cross-App overlap pairs and 2 separate-scope groups remain explicitly keep-separate; the 3 All / All_No_Resolve pairs also remain separate by design.
 - The 2 byte-identical groups and 3 same-payload groups are intentional `All` / `All_No_Resolve` format pairs in AdGuardSDNSFilter, ChinaMaxNoIP, and EasyPrivacy. Keep each format separately; do not delete these pairs.
 - 15 cached author snapshots (300 source rules) were compared against 26 mapped format targets. Missing source rules: 0. Missing format targets: 0. This only certifies the cached 15 snapshots, not every possible author.
 - Static checks report 0 duplicate rule lines, 0 hidden control characters, 0 invalid native filters, 0 unsupported/missing operands, 0 invalid networks/domains, 0 IP-family mismatches, 0 catch-all networks, and 0 stale/private root suffixes.
