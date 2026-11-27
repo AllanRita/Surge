@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 12:48 UTC",
+  "generated_utc": "2026-11-27 12:51 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 828,
@@ -17,6 +17,8 @@
     "cached_author_source_count": 15,
     "cached_author_source_rule_count": 300,
     "cached_author_source_missing_count": 0,
+    "cached_author_source_format_target_count": 20,
+    "cached_author_source_format_missing_count": 85,
     "shared_hosting_suffixes_found": 34,
     "shared_hosting_suffix_rule_occurrences": 159
   },
@@ -1675,7 +1677,99 @@
       "parent_suffix": 57,
       "ip_range": 0,
       "missing_count": 0,
-      "missing_examples": []
+      "missing_examples": [],
+      "format_coverage": [
+        {
+          "format": "standard",
+          "target": "Apple/Apple.list",
+          "target_rules": 80,
+          "exact": 12,
+          "parent_suffix": 57,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        },
+        {
+          "format": "resolve",
+          "target": "Apple/Apple_Resolve.list",
+          "target_rules": 56,
+          "exact": 0,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 69,
+          "missing_examples": [
+            "DOMAIN-SUFFIX,apps.apple.com",
+            "DOMAIN-SUFFIX,itunes.apple.com",
+            "DOMAIN-SUFFIX,itunes-apple.com.akadns.net",
+            "DOMAIN-SUFFIX,mzstatic.com",
+            "DOMAIN,ppq.apple.com",
+            "DOMAIN,appstoreconnect.apple.com",
+            "DOMAIN,iosapps-ssl.itunes.apple.com",
+            "DOMAIN,itcmobile.itunes.apple.com",
+            "DOMAIN,buy.itunes.apple.com",
+            "DOMAIN-SUFFIX,books.apple.com",
+            "DOMAIN,books.itunes.apple.com",
+            "DOMAIN,bookkeeper.itunes.apple.com",
+            "DOMAIN,books-analytics-events.apple.com",
+            "DOMAIN,fmfmobile.icloud.com",
+            "DOMAIN,fmipmobile.icloud.com",
+            "DOMAIN,statici.icloud.com",
+            "DOMAIN,hls-svod.itunes.apple.com",
+            "DOMAIN,amp-api.fitness.apple.com",
+            "DOMAIN-SUFFIX,mail.icloud.com.cn",
+            "DOMAIN-SUFFIX,mail.me.com",
+            "DOMAIN-SUFFIX,applemusic.com",
+            "DOMAIN-SUFFIX,music.apple.com",
+            "DOMAIN,aod.itunes.apple.com",
+            "DOMAIN,aod-ssl.itunes.apple.com",
+            "DOMAIN,audio.itunes.apple.com",
+            "DOMAIN,audio-ssl.itunes.apple.com",
+            "DOMAIN,mvod.itunes.apple.com",
+            "DOMAIN,streamingaudio.itunes.apple.com",
+            "DOMAIN-SUFFIX,blobstore.apple.com",
+            "DOMAIN,guzzoni.apple.com",
+            "DOMAIN,tv.applemusic.com",
+            "DOMAIN,configuration.apple.com",
+            "DOMAIN,gnf-mdn.apple.com",
+            "DOMAIN,gnf-mr.apple.com",
+            "DOMAIN,gs.apple.com",
+            "DOMAIN,ig.apple.com",
+            "DOMAIN,skl.apple.com",
+            "DOMAIN,swcdn.apple.com",
+            "DOMAIN,swdist.apple.com",
+            "DOMAIN,swdownload.apple.com",
+            "DOMAIN,swpost.apple.com",
+            "DOMAIN,swscan.apple.com",
+            "DOMAIN,oscdn.apple.com",
+            "DOMAIN,osrecovery.apple.com",
+            "DOMAIN,appldnld.apple.com",
+            "DOMAIN,ns.itunes.apple.com",
+            "DOMAIN,gg.apple.com",
+            "DOMAIN,gdmf.apple.com",
+            "DOMAIN,mesu.apple.com",
+            "DOMAIN,updates.cdn-apple.com",
+            "DOMAIN,updates-http.cdn-apple.com",
+            "DOMAIN,xp.apple.com",
+            "DOMAIN-SUFFIX,apple-cloudkit.com",
+            "DOMAIN-SUFFIX,apple-livephotoskit.com",
+            "DOMAIN-SUFFIX,apzones.com",
+            "DOMAIN-SUFFIX,cdn-apple.com",
+            "DOMAIN-SUFFIX,gc.apple.com",
+            "DOMAIN-SUFFIX,icloud.apple.com",
+            "DOMAIN-SUFFIX,icloud.com",
+            "DOMAIN-SUFFIX,icloud.com.cn",
+            "DOMAIN-SUFFIX,icloud-content.com",
+            "DOMAIN-SUFFIX,iwork.apple.com",
+            "DOMAIN,beta.apple.com",
+            "DOMAIN,testflight.apple.com",
+            "DOMAIN-SUFFIX,tv.apple.com",
+            "DOMAIN,hls.itunes.apple.com",
+            "DOMAIN,hls-amt.itunes.apple.com",
+            "DOMAIN,play-edge.itunes.apple.com",
+            "DOMAIN,uts-api.itunes.apple.com"
+          ]
+        }
+      ]
     },
     {
       "source": "Aoang-DNS",
@@ -1690,7 +1784,19 @@
       "parent_suffix": 0,
       "ip_range": 0,
       "missing_count": 0,
-      "missing_examples": []
+      "missing_examples": [],
+      "format_coverage": [
+        {
+          "format": "standard",
+          "target": "Block/DNS/DNS.list",
+          "target_rules": 53,
+          "exact": 53,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        }
+      ]
     },
     {
       "source": "Aoang-OneDrive",
@@ -1705,7 +1811,19 @@
       "parent_suffix": 1,
       "ip_range": 0,
       "missing_count": 0,
-      "missing_examples": []
+      "missing_examples": [],
+      "format_coverage": [
+        {
+          "format": "standard",
+          "target": "OneDrive/OneDrive.list",
+          "target_rules": 18,
+          "exact": 3,
+          "parent_suffix": 1,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        }
+      ]
     },
     {
       "source": "Aoang-Other",
@@ -1720,7 +1838,19 @@
       "parent_suffix": 0,
       "ip_range": 0,
       "missing_count": 0,
-      "missing_examples": []
+      "missing_examples": [],
+      "format_coverage": [
+        {
+          "format": "standard",
+          "target": "Block/Other/Other.list",
+          "target_rules": 1,
+          "exact": 1,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        }
+      ]
     },
     {
       "source": "Aoang-Parallels",
@@ -1735,7 +1865,19 @@
       "parent_suffix": 0,
       "ip_range": 0,
       "missing_count": 0,
-      "missing_examples": []
+      "missing_examples": [],
+      "format_coverage": [
+        {
+          "format": "standard",
+          "target": "Block/Parallels/Parallels.list",
+          "target_rules": 12,
+          "exact": 12,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        }
+      ]
     },
     {
       "source": "Aoang-Process",
@@ -1750,7 +1892,19 @@
       "parent_suffix": 0,
       "ip_range": 0,
       "missing_count": 0,
-      "missing_examples": []
+      "missing_examples": [],
+      "format_coverage": [
+        {
+          "format": "standard",
+          "target": "Process/Process/Process.list",
+          "target_rules": 23,
+          "exact": 23,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        }
+      ]
     },
     {
       "source": "Aoang-Teams",
@@ -1765,7 +1919,19 @@
       "parent_suffix": 0,
       "ip_range": 0,
       "missing_count": 0,
-      "missing_examples": []
+      "missing_examples": [],
+      "format_coverage": [
+        {
+          "format": "standard",
+          "target": "Teams/Teams.list",
+          "target_rules": 4,
+          "exact": 4,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        }
+      ]
     },
     {
       "source": "Aoang-Unavailable",
@@ -1780,7 +1946,19 @@
       "parent_suffix": 0,
       "ip_range": 0,
       "missing_count": 0,
-      "missing_examples": []
+      "missing_examples": [],
+      "format_coverage": [
+        {
+          "format": "standard",
+          "target": "Process/Unavailable/Unavailable.list",
+          "target_rules": 1,
+          "exact": 1,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        }
+      ]
     },
     {
       "source": "Aoang-YouTube",
@@ -1795,7 +1973,19 @@
       "parent_suffix": 0,
       "ip_range": 0,
       "missing_count": 0,
-      "missing_examples": []
+      "missing_examples": [],
+      "format_coverage": [
+        {
+          "format": "standard",
+          "target": "Block/YouTube/YouTube.list",
+          "target_rules": 15,
+          "exact": 15,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        }
+      ]
     },
     {
       "source": "Apple",
@@ -1810,7 +2000,46 @@
       "parent_suffix": 0,
       "ip_range": 0,
       "missing_count": 0,
-      "missing_examples": []
+      "missing_examples": [],
+      "format_coverage": [
+        {
+          "format": "standard",
+          "target": "Apple/Apple.list",
+          "target_rules": 80,
+          "exact": 16,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        },
+        {
+          "format": "resolve",
+          "target": "Apple/Apple_Resolve.list",
+          "target_rules": 56,
+          "exact": 0,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 16,
+          "missing_examples": [
+            "DOMAIN-SUFFIX,aaplimg.com",
+            "DOMAIN-SUFFIX,apple-cloudkit.com",
+            "DOMAIN-SUFFIX,apple-dns.net",
+            "DOMAIN-SUFFIX,apple-mapkit.com",
+            "DOMAIN-SUFFIX,apple.co",
+            "DOMAIN-SUFFIX,apple.com",
+            "DOMAIN-SUFFIX,apple.news",
+            "DOMAIN-SUFFIX,appsto.re",
+            "DOMAIN-SUFFIX,appstore.com",
+            "DOMAIN-SUFFIX,cdn-apple.com",
+            "DOMAIN-SUFFIX,icloud-content.com",
+            "DOMAIN-SUFFIX,icloud.com",
+            "DOMAIN-SUFFIX,itunes.com",
+            "DOMAIN-SUFFIX,me.com",
+            "DOMAIN-SUFFIX,organicfruitapps.com",
+            "DOMAIN-SUFFIX,push-apple.com.akadns.net"
+          ]
+        }
+      ]
     },
     {
       "source": "BiliBiliIntl",
@@ -1825,7 +2054,29 @@
       "parent_suffix": 1,
       "ip_range": 0,
       "missing_count": 0,
-      "missing_examples": []
+      "missing_examples": [],
+      "format_coverage": [
+        {
+          "format": "standard",
+          "target": "BiliBili/BiliBili.list",
+          "target_rules": 134,
+          "exact": 4,
+          "parent_suffix": 1,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        },
+        {
+          "format": "resolve",
+          "target": "BiliBili/BiliBili_Resolve.list",
+          "target_rules": 134,
+          "exact": 4,
+          "parent_suffix": 1,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        }
+      ]
     },
     {
       "source": "GitLab",
@@ -1840,7 +2091,19 @@
       "parent_suffix": 0,
       "ip_range": 0,
       "missing_count": 0,
-      "missing_examples": []
+      "missing_examples": [],
+      "format_coverage": [
+        {
+          "format": "standard",
+          "target": "GitLab/GitLab.list",
+          "target_rules": 6,
+          "exact": 1,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        }
+      ]
     },
     {
       "source": "Microsoft",
@@ -1855,7 +2118,19 @@
       "parent_suffix": 0,
       "ip_range": 0,
       "missing_count": 0,
-      "missing_examples": []
+      "missing_examples": [],
+      "format_coverage": [
+        {
+          "format": "standard",
+          "target": "Microsoft/Microsoft.list",
+          "target_rules": 674,
+          "exact": 80,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        }
+      ]
     },
     {
       "source": "NetEaseMusic",
@@ -1870,7 +2145,29 @@
       "parent_suffix": 0,
       "ip_range": 0,
       "missing_count": 0,
-      "missing_examples": []
+      "missing_examples": [],
+      "format_coverage": [
+        {
+          "format": "standard",
+          "target": "NetEaseMusic/NetEaseMusic.list",
+          "target_rules": 30,
+          "exact": 2,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        },
+        {
+          "format": "resolve",
+          "target": "NetEaseMusic/NetEaseMusic_Resolve.list",
+          "target_rules": 30,
+          "exact": 2,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        }
+      ]
     },
     {
       "source": "Telegram",
@@ -1880,6 +2177,337 @@
       "source_path": "List/non_ip/telegram.conf",
       "source_rules": 14,
       "target": "Telegram/Telegram.list",
+      "target_rules": 46,
+      "exact": 14,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": [],
+      "format_coverage": [
+        {
+          "format": "standard",
+          "target": "Telegram/Telegram.list",
+          "target_rules": 46,
+          "exact": 14,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        },
+        {
+          "format": "resolve",
+          "target": "Telegram/Telegram_Resolve.list",
+          "target_rules": 46,
+          "exact": 14,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        }
+      ]
+    }
+  ],
+  "cached_source_format_coverage": [
+    {
+      "source": "Aoang-Apple",
+      "format": "standard",
+      "target": "Apple/Apple.list",
+      "target_rules": 80,
+      "exact": 12,
+      "parent_suffix": 57,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-Apple",
+      "format": "resolve",
+      "target": "Apple/Apple_Resolve.list",
+      "target_rules": 56,
+      "exact": 0,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 69,
+      "missing_examples": [
+        "DOMAIN-SUFFIX,apps.apple.com",
+        "DOMAIN-SUFFIX,itunes.apple.com",
+        "DOMAIN-SUFFIX,itunes-apple.com.akadns.net",
+        "DOMAIN-SUFFIX,mzstatic.com",
+        "DOMAIN,ppq.apple.com",
+        "DOMAIN,appstoreconnect.apple.com",
+        "DOMAIN,iosapps-ssl.itunes.apple.com",
+        "DOMAIN,itcmobile.itunes.apple.com",
+        "DOMAIN,buy.itunes.apple.com",
+        "DOMAIN-SUFFIX,books.apple.com",
+        "DOMAIN,books.itunes.apple.com",
+        "DOMAIN,bookkeeper.itunes.apple.com",
+        "DOMAIN,books-analytics-events.apple.com",
+        "DOMAIN,fmfmobile.icloud.com",
+        "DOMAIN,fmipmobile.icloud.com",
+        "DOMAIN,statici.icloud.com",
+        "DOMAIN,hls-svod.itunes.apple.com",
+        "DOMAIN,amp-api.fitness.apple.com",
+        "DOMAIN-SUFFIX,mail.icloud.com.cn",
+        "DOMAIN-SUFFIX,mail.me.com",
+        "DOMAIN-SUFFIX,applemusic.com",
+        "DOMAIN-SUFFIX,music.apple.com",
+        "DOMAIN,aod.itunes.apple.com",
+        "DOMAIN,aod-ssl.itunes.apple.com",
+        "DOMAIN,audio.itunes.apple.com",
+        "DOMAIN,audio-ssl.itunes.apple.com",
+        "DOMAIN,mvod.itunes.apple.com",
+        "DOMAIN,streamingaudio.itunes.apple.com",
+        "DOMAIN-SUFFIX,blobstore.apple.com",
+        "DOMAIN,guzzoni.apple.com",
+        "DOMAIN,tv.applemusic.com",
+        "DOMAIN,configuration.apple.com",
+        "DOMAIN,gnf-mdn.apple.com",
+        "DOMAIN,gnf-mr.apple.com",
+        "DOMAIN,gs.apple.com",
+        "DOMAIN,ig.apple.com",
+        "DOMAIN,skl.apple.com",
+        "DOMAIN,swcdn.apple.com",
+        "DOMAIN,swdist.apple.com",
+        "DOMAIN,swdownload.apple.com",
+        "DOMAIN,swpost.apple.com",
+        "DOMAIN,swscan.apple.com",
+        "DOMAIN,oscdn.apple.com",
+        "DOMAIN,osrecovery.apple.com",
+        "DOMAIN,appldnld.apple.com",
+        "DOMAIN,ns.itunes.apple.com",
+        "DOMAIN,gg.apple.com",
+        "DOMAIN,gdmf.apple.com",
+        "DOMAIN,mesu.apple.com",
+        "DOMAIN,updates.cdn-apple.com",
+        "DOMAIN,updates-http.cdn-apple.com",
+        "DOMAIN,xp.apple.com",
+        "DOMAIN-SUFFIX,apple-cloudkit.com",
+        "DOMAIN-SUFFIX,apple-livephotoskit.com",
+        "DOMAIN-SUFFIX,apzones.com",
+        "DOMAIN-SUFFIX,cdn-apple.com",
+        "DOMAIN-SUFFIX,gc.apple.com",
+        "DOMAIN-SUFFIX,icloud.apple.com",
+        "DOMAIN-SUFFIX,icloud.com",
+        "DOMAIN-SUFFIX,icloud.com.cn",
+        "DOMAIN-SUFFIX,icloud-content.com",
+        "DOMAIN-SUFFIX,iwork.apple.com",
+        "DOMAIN,beta.apple.com",
+        "DOMAIN,testflight.apple.com",
+        "DOMAIN-SUFFIX,tv.apple.com",
+        "DOMAIN,hls.itunes.apple.com",
+        "DOMAIN,hls-amt.itunes.apple.com",
+        "DOMAIN,play-edge.itunes.apple.com",
+        "DOMAIN,uts-api.itunes.apple.com"
+      ]
+    },
+    {
+      "source": "Aoang-DNS",
+      "format": "standard",
+      "target": "Block/DNS/DNS.list",
+      "target_rules": 53,
+      "exact": 53,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-OneDrive",
+      "format": "standard",
+      "target": "OneDrive/OneDrive.list",
+      "target_rules": 18,
+      "exact": 3,
+      "parent_suffix": 1,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-Other",
+      "format": "standard",
+      "target": "Block/Other/Other.list",
+      "target_rules": 1,
+      "exact": 1,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-Parallels",
+      "format": "standard",
+      "target": "Block/Parallels/Parallels.list",
+      "target_rules": 12,
+      "exact": 12,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-Process",
+      "format": "standard",
+      "target": "Process/Process/Process.list",
+      "target_rules": 23,
+      "exact": 23,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-Teams",
+      "format": "standard",
+      "target": "Teams/Teams.list",
+      "target_rules": 4,
+      "exact": 4,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-Unavailable",
+      "format": "standard",
+      "target": "Process/Unavailable/Unavailable.list",
+      "target_rules": 1,
+      "exact": 1,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-YouTube",
+      "format": "standard",
+      "target": "Block/YouTube/YouTube.list",
+      "target_rules": 15,
+      "exact": 15,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Apple",
+      "format": "standard",
+      "target": "Apple/Apple.list",
+      "target_rules": 80,
+      "exact": 16,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Apple",
+      "format": "resolve",
+      "target": "Apple/Apple_Resolve.list",
+      "target_rules": 56,
+      "exact": 0,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 16,
+      "missing_examples": [
+        "DOMAIN-SUFFIX,aaplimg.com",
+        "DOMAIN-SUFFIX,apple-cloudkit.com",
+        "DOMAIN-SUFFIX,apple-dns.net",
+        "DOMAIN-SUFFIX,apple-mapkit.com",
+        "DOMAIN-SUFFIX,apple.co",
+        "DOMAIN-SUFFIX,apple.com",
+        "DOMAIN-SUFFIX,apple.news",
+        "DOMAIN-SUFFIX,appsto.re",
+        "DOMAIN-SUFFIX,appstore.com",
+        "DOMAIN-SUFFIX,cdn-apple.com",
+        "DOMAIN-SUFFIX,icloud-content.com",
+        "DOMAIN-SUFFIX,icloud.com",
+        "DOMAIN-SUFFIX,itunes.com",
+        "DOMAIN-SUFFIX,me.com",
+        "DOMAIN-SUFFIX,organicfruitapps.com",
+        "DOMAIN-SUFFIX,push-apple.com.akadns.net"
+      ]
+    },
+    {
+      "source": "BiliBiliIntl",
+      "format": "standard",
+      "target": "BiliBili/BiliBili.list",
+      "target_rules": 134,
+      "exact": 4,
+      "parent_suffix": 1,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "BiliBiliIntl",
+      "format": "resolve",
+      "target": "BiliBili/BiliBili_Resolve.list",
+      "target_rules": 134,
+      "exact": 4,
+      "parent_suffix": 1,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "GitLab",
+      "format": "standard",
+      "target": "GitLab/GitLab.list",
+      "target_rules": 6,
+      "exact": 1,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Microsoft",
+      "format": "standard",
+      "target": "Microsoft/Microsoft.list",
+      "target_rules": 674,
+      "exact": 80,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "NetEaseMusic",
+      "format": "standard",
+      "target": "NetEaseMusic/NetEaseMusic.list",
+      "target_rules": 30,
+      "exact": 2,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "NetEaseMusic",
+      "format": "resolve",
+      "target": "NetEaseMusic/NetEaseMusic_Resolve.list",
+      "target_rules": 30,
+      "exact": 2,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Telegram",
+      "format": "standard",
+      "target": "Telegram/Telegram.list",
+      "target_rules": 46,
+      "exact": 14,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Telegram",
+      "format": "resolve",
+      "target": "Telegram/Telegram_Resolve.list",
       "target_rules": 46,
       "exact": 14,
       "parent_suffix": 0,
@@ -3001,7 +3629,7 @@
       "path": "Amazon/Amazon.list",
       "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3017,7 +3645,7 @@
       "path": "Amazon/Amazon_Resolve.list",
       "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3041,7 +3669,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3065,7 +3693,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3081,7 +3709,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "b-chunchun.github.io"
+      "matched_domain": "wargreymon9.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3089,7 +3717,7 @@
       "path": "Global/Global_All.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
+      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3097,7 +3725,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.mobilelegendsdailyupdates.blogspot.com"
+      "matched_domain": "rejekishopee23.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3113,7 +3741,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "b-chunchun.github.io"
+      "matched_domain": "wargreymon9.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3145,7 +3773,7 @@
       "path": "Global/Global_All.list",
       "line": 29514,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3185,7 +3813,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "spotify-react-omega-murex.vercel.app"
+      "matched_domain": "zweb-new-mail-adm.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3201,7 +3829,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3209,7 +3837,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
+      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3217,7 +3845,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.mobilelegendsdailyupdates.blogspot.com"
+      "matched_domain": "rejekishopee23.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3233,7 +3861,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "b-chunchun.github.io"
+      "matched_domain": "wargreymon9.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3265,7 +3893,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 29514,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3305,7 +3933,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "spotify-react-omega-murex.vercel.app"
+      "matched_domain": "zweb-new-mail-adm.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3321,7 +3949,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3337,7 +3965,7 @@
       "path": "GlobalMedia/GlobalMedia_All.list",
       "line": 189,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3353,7 +3981,7 @@
       "path": "GlobalMedia/GlobalMedia_All_No_Resolve.list",
       "line": 189,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3361,7 +3989,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.mobilelegendsdailyupdates.blogspot.com"
+      "matched_domain": "rejekishopee23.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3369,7 +3997,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.mobilelegendsdailyupdates.blogspot.com"
+      "matched_domain": "rejekishopee23.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3377,7 +4005,7 @@
       "path": "Microsoft/Microsoft.list",
       "line": 86,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
+      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3425,7 +4053,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 1202,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3465,7 +4093,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "spotify-react-omega-murex.vercel.app"
+      "matched_domain": "zweb-new-mail-adm.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3481,7 +4109,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3505,7 +4133,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 1202,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3545,7 +4173,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "spotify-react-omega-murex.vercel.app"
+      "matched_domain": "zweb-new-mail-adm.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3561,7 +4189,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3577,7 +4205,7 @@
       "path": "ProxyLite/ProxyLite.list",
       "line": 172,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3593,7 +4221,7 @@
       "path": "ProxyLite/ProxyLite_Resolve.list",
       "line": 172,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3601,7 +4229,7 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "spotify-react-omega-murex.vercel.app"
+      "matched_domain": "zweb-new-mail-adm.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {

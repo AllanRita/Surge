@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 12:48 UTC
+Generated: 2026-11-27 12:51 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -158,6 +158,33 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 | Microsoft | Microsoft/Microsoft.list | 80 | 80 | 0 | 0 | 0 |
 | NetEaseMusic | NetEaseMusic/NetEaseMusic.list | 2 | 2 | 0 | 0 | 0 |
 | Telegram | Telegram/Telegram.list | 14 | 14 | 0 | 0 | 0 |
+
+### Cached source coverage by available routing format
+
+- Available standard and Resolve files are checked separately; this does not imply that every App has a cached author snapshot.
+
+| Cached source | Format | Target | Source rules | Missing |
+|---|---|---|---:|---:|
+| Aoang-Apple | standard | Apple/Apple.list | 69 | 0 |
+| Aoang-Apple | resolve | Apple/Apple_Resolve.list | 69 | 69 |
+| Aoang-DNS | standard | Block/DNS/DNS.list | 53 | 0 |
+| Aoang-OneDrive | standard | OneDrive/OneDrive.list | 4 | 0 |
+| Aoang-Other | standard | Block/Other/Other.list | 1 | 0 |
+| Aoang-Parallels | standard | Block/Parallels/Parallels.list | 12 | 0 |
+| Aoang-Process | standard | Process/Process/Process.list | 23 | 0 |
+| Aoang-Teams | standard | Teams/Teams.list | 4 | 0 |
+| Aoang-Unavailable | standard | Process/Unavailable/Unavailable.list | 1 | 0 |
+| Aoang-YouTube | standard | Block/YouTube/YouTube.list | 15 | 0 |
+| Apple | standard | Apple/Apple.list | 16 | 0 |
+| Apple | resolve | Apple/Apple_Resolve.list | 16 | 16 |
+| BiliBiliIntl | standard | BiliBili/BiliBili.list | 5 | 0 |
+| BiliBiliIntl | resolve | BiliBili/BiliBili_Resolve.list | 5 | 0 |
+| GitLab | standard | GitLab/GitLab.list | 1 | 0 |
+| Microsoft | standard | Microsoft/Microsoft.list | 80 | 0 |
+| NetEaseMusic | standard | NetEaseMusic/NetEaseMusic.list | 2 | 0 |
+| NetEaseMusic | resolve | NetEaseMusic/NetEaseMusic_Resolve.list | 2 | 0 |
+| Telegram | standard | Telegram/Telegram.list | 14 | 0 |
+| Telegram | resolve | Telegram/Telegram_Resolve.list | 14 | 0 |
 
 ## Static security checks
 
