@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 12:41 UTC",
+  "generated_utc": "2026-11-27 12:42 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 828,
@@ -2972,8 +2972,9 @@
     "feeds_available": true,
     "urlhaus_file_present": false,
     "openphish_file_present": true,
-    "urlhaus_status": "not loaded; authenticated hostfile export requires the URLHAUS_AUTH_KEY repository secret",
-    "note": "Reputation matches are review flags, not automatic deletions. Matches in block/filter lists may be expected."
+    "urlhaus_status": "not loaded; URLHAUS_AUTH_KEY is missing or download failed",
+    "openphish_status": "loaded",
+    "note": "Reputation matches are review flags, not automatic deletions. Matches in block/filter lists may be expected; an unavailable feed is not a clean result."
   },
   "reputation_matches": [
     {
@@ -3014,7 +3015,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "y5uf3y31k3-4746176-jbmorw-lnwfs-3htbp6e.pages.dev"
+      "matched_domain": "7sq3l-4jj-bf9x-19xgi-10-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3030,7 +3031,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3038,7 +3039,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "y5uf3y31k3-4746176-jbmorw-lnwfs-3htbp6e.pages.dev"
+      "matched_domain": "7sq3l-4jj-bf9x-19xgi-10-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3054,7 +3055,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3062,7 +3063,7 @@
       "path": "GitBook/GitBook.list",
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3070,7 +3071,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "zhouxiaoka.github.io"
+      "matched_domain": "bridge-cdnn-web.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3078,7 +3079,7 @@
       "path": "Global/Global_All.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
+      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3086,7 +3087,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3102,7 +3103,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "zhouxiaoka.github.io"
+      "matched_domain": "bridge-cdnn-web.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3150,7 +3151,7 @@
       "path": "Global/Global_All.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3158,7 +3159,7 @@
       "path": "Global/Global_All.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -3166,7 +3167,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "y5uf3y31k3-4746176-jbmorw-lnwfs-3htbp6e.pages.dev"
+      "matched_domain": "7sq3l-4jj-bf9x-19xgi-10-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3190,7 +3191,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3198,7 +3199,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
+      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3206,7 +3207,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3222,7 +3223,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "zhouxiaoka.github.io"
+      "matched_domain": "bridge-cdnn-web.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3270,7 +3271,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3278,7 +3279,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -3286,7 +3287,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "y5uf3y31k3-4746176-jbmorw-lnwfs-3htbp6e.pages.dev"
+      "matched_domain": "7sq3l-4jj-bf9x-19xgi-10-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3310,7 +3311,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3350,7 +3351,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3358,7 +3359,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3366,7 +3367,7 @@
       "path": "Microsoft/Microsoft.list",
       "line": 86,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
+      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3430,7 +3431,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3438,7 +3439,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -3446,7 +3447,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "y5uf3y31k3-4746176-jbmorw-lnwfs-3htbp6e.pages.dev"
+      "matched_domain": "7sq3l-4jj-bf9x-19xgi-10-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3470,7 +3471,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3510,7 +3511,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3518,7 +3519,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -3526,7 +3527,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "y5uf3y31k3-4746176-jbmorw-lnwfs-3htbp6e.pages.dev"
+      "matched_domain": "7sq3l-4jj-bf9x-19xgi-10-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3550,7 +3551,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",

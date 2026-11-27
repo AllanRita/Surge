@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 12:41 UTC
+Generated: 2026-11-27 12:42 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -168,13 +168,13 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 - Detailed threat-feed and broad shared-hosting review: see SECURITY-REVIEW.md.
 - Financial-domain matches: 238 (review only; not deleted)
 - URLhaus domains loaded: 0
-- URLhaus status: authenticated hostfile not loaded; configure the GitHub Actions secret URLHAUS_AUTH_KEY to enable it
+- URLhaus status: not loaded; URLHAUS_AUTH_KEY is missing or download failed
 - OpenPhish domains loaded: 280
+- OpenPhish status: loaded
 - Reputation matches shown: 77 (max 500); scope counts: {'app_or_routing': 77}
 - Reputation-feed matches are review flags, not automatic deletions. Matches in block/filter lists may be intentional; app/routing matches need manual review.
 
-## Exact duplicate files
-
+- Feed coverage is incomplete; zero matches must not be interpreted as clean.
 ChinaMaxNoIP/ChinaMaxNoIP_All.list, ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list
 EasyPrivacy/EasyPrivacy_All.list, EasyPrivacy/EasyPrivacy_All_No_Resolve.list
 
