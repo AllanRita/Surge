@@ -60,3 +60,43 @@ No cross-category file was deleted. Keeping both paths avoids silently breaking 
 ## Safety decision
 
 No broad-domain or financial-domain rule was automatically deleted. Keep potentially useful rules pending scenario-aware and live behavior verification.
+
+## OpenPhish shared-hosting review (2026-11-27)
+
+The current cleanup inventory contains 61 rule-to-feed match rows. These collapse to 12 distinct matched hostnames and 12 distinct suffix rules; repeated rows come from the same rule being present in Standard/Resolve variants or aggregate lists. They are not 61 independent malicious parent domains.
+
+| Suffix rule | Matched host example | Match rows | Current rule context |
+|---|---|---:|---|
+| `blogspot.com` | `www.infoundianshopee98.blogspot.com` | 4 | Google, Global |
+| `cloudfront.net` | `d33wubrfki0l68.cloudfront.net` | 10 | Amazon, Global, GlobalMedia, Proxy, ProxyLite |
+| `duckdns.org` | `www.yeninesilhizli.duckdns.org` | 6 | NaSDDNS, Global, Proxy |
+| `eu.org` | `five.seafn.eu.org` | 2 | Global |
+| `gitbook.io` | `robinhxnoodlogin.gitbook.io` | 5 | GitBook, Global, Proxy |
+| `github.io` | `sugosh1.github.io` | 3 | GitHub, Global |
+| `is.gd` | `is.gd` | 6 | Global, Proxy, ProxyLite |
+| `netlify.app` | `netflis-gpt.netlify.app` | 4 | Global, Proxy |
+| `pages.dev` | `5ywlo-sem-pief-p3s1m-21-10-2026-aa.pages.dev` | 6 | Cloudflare, Global, Proxy |
+| `vercel.app` | `www.netflix-clone-rust-zeta.vercel.app` | 5 | Vercel, Global, Proxy |
+| `web.app` | `netflix-bobby.web.app` | 4 | Google, Global |
+| `workers.dev` | `huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev` | 6 | Cloudflare, Global, Proxy |
+
+### App-specific shared-hosting scope
+
+Eight shared-platform suffixes appear in six brand-named App rule sets:
+
+- Amazon: `cloudfront.net` (Standard and Resolve).
+- Cloudflare: `pages.dev` and `workers.dev` (Standard and Resolve).
+- GitBook: `gitbook.io`.
+- GitHub: `github.io`.
+- Vercel: `vercel.app`.
+- Google: `blogspot.com` and `web.app` (Standard and Resolve).
+
+These are platform-owned namespaces, but they are shared across many customer projects or tenants. An OpenPhish match on one tenant hostname does not prove that the parent suffix is malicious or that the parent rule should be deleted. At the same time, retaining a broad suffix in an App-specific policy group can route unrelated tenants through that App's selected country/region.
+
+### Disposition
+
+- No parent suffix was deleted or rewritten. The current evidence confirms multi-tenant scope, but does not establish the user's desired routing for every tenant; keep the existing rules pending an explicit policy decision rather than silently changing App routing.
+- The exact matched hostnames remain audit evidence only; they were not added to an App routing list or a block list.
+- The other shared/utility suffixes (`duckdns.org`, `eu.org`, `is.gd`, and `netlify.app`) occur in DDNS, Global, Proxy, or ProxyLite contexts rather than a brand-named App folder; retain their current scenario separation.
+- URLhaus contributed no domains because its authenticated hostfile was unavailable without the repository secret `URLHAUS_AUTH_KEY`. This pass therefore used 278 OpenPhish domains only and is not a complete multi-feed reputation check.
+- No App rule file, scenario format, personal rule, or cached author-source file was modified during this manual review.
