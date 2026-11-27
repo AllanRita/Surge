@@ -259,7 +259,7 @@ def main():
  for x in examples.get("unsupported_or_missing_operand",[])[:30]: md.append(f"  - {x}")
  for x in examples.get("invalid_domain",[])[:30]: md.append(f"  - {x}")
  for x in examples.get("invalid_network",[])[:30]: md.append(f"  - {x}")
- md += ["",f"- Financial-domain matches: {len(financial)} (review only; not deleted)",f"- URLhaus domains loaded: {len(urlhaus)}",f"- OpenPhish domains loaded: {len(openphish)}",f"- Reputation matches shown: {len(threat)} (max 500); scope counts: {dict(threat_scope)}","- Reputation-feed matches are review flags, not automatic deletions. Matches in block/filter lists may be intentional; app/routing matches need manual review.","","## Exact duplicate files",""]
+ md += ["","- Detailed threat-feed and broad shared-hosting review: see SECURITY-REVIEW.md.",f"- Financial-domain matches: {len(financial)} (review only; not deleted)",f"- URLhaus domains loaded: {len(urlhaus)}",f"- OpenPhish domains loaded: {len(openphish)}",f"- Reputation matches shown: {len(threat)} (max 500); scope counts: {dict(threat_scope)}","- Reputation-feed matches are review flags, not automatic deletions. Matches in block/filter lists may be intentional; app/routing matches need manual review.","","## Exact duplicate files",""]
  md += [", ".join(x) for x in rawdups] if rawdups else ["- None"]
  md += ["","## Identical rule payloads with headers ignored",""]
  md += [", ".join(x) for x in payloaddups] if payloaddups else ["- None"]
