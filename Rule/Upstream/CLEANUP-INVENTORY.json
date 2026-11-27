@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-11-27 10:47 UTC",
+  "generated_utc": "2026-11-27 11:03 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
-    "rule_files": 853,
-    "app_or_category_folders": 682,
-    "top_level_folders": 657,
-    "total_rule_bytes": 116070619,
-    "multi_file_folders": 113,
+    "rule_files": 828,
+    "app_or_category_folders": 663,
+    "top_level_folders": 640,
+    "total_rule_bytes": 116049803,
+    "multi_file_folders": 107,
     "exact_raw_duplicate_file_groups": 2,
-    "same_rule_payload_file_groups": 11,
+    "same_rule_payload_file_groups": 3,
     "duplicate_rule_lines": 0,
-    "domain_rule_count": 2691377,
+    "domain_rule_count": 2690946,
     "personal_files_seen_not_modified": 3,
     "bank_payment_app_folders_found": 0
   },
@@ -726,30 +726,6 @@
       ]
     },
     {
-      "folder": "Game/Assassin'sCreed-Odyssey",
-      "file_count": 2,
-      "formats": [
-        "resolve",
-        "standard"
-      ],
-      "files": [
-        "Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list",
-        "Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list"
-      ]
-    },
-    {
-      "folder": "Game/Assassin'sCreed-Origins",
-      "file_count": 2,
-      "formats": [
-        "resolve",
-        "standard"
-      ],
-      "files": [
-        "Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list",
-        "Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list"
-      ]
-    },
-    {
       "folder": "Game/Nikke",
       "file_count": 2,
       "formats": [
@@ -1260,42 +1236,6 @@
       ]
     },
     {
-      "folder": "TelegramNL",
-      "file_count": 2,
-      "formats": [
-        "resolve",
-        "standard"
-      ],
-      "files": [
-        "TelegramNL/TelegramNL.list",
-        "TelegramNL/TelegramNL_Resolve.list"
-      ]
-    },
-    {
-      "folder": "TelegramSG",
-      "file_count": 2,
-      "formats": [
-        "resolve",
-        "standard"
-      ],
-      "files": [
-        "TelegramSG/TelegramSG.list",
-        "TelegramSG/TelegramSG_Resolve.list"
-      ]
-    },
-    {
-      "folder": "TelegramUS",
-      "file_count": 2,
-      "formats": [
-        "resolve",
-        "standard"
-      ],
-      "files": [
-        "TelegramUS/TelegramUS.list",
-        "TelegramUS/TelegramUS_Resolve.list"
-      ]
-    },
-    {
       "folder": "Tencent",
       "file_count": 5,
       "formats": [
@@ -1480,18 +1420,6 @@
         "iQIYI/iQIYI.list",
         "iQIYI/iQIYI_Resolve.list"
       ]
-    },
-    {
-      "folder": "iQIYIIntl",
-      "file_count": 2,
-      "formats": [
-        "resolve",
-        "standard"
-      ],
-      "files": [
-        "iQIYIIntl/iQIYIIntl.list",
-        "iQIYIIntl/iQIYIIntl_Resolve.list"
-      ]
     }
   ],
   "exact_raw_duplicate_file_groups": [
@@ -1506,32 +1434,8 @@
   ],
   "same_rule_payload_file_groups": [
     [
-      "Abema/Abema.list",
-      "AbemaTV/AbemaTV.list"
-    ],
-    [
       "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list",
       "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list"
-    ],
-    [
-      "Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list",
-      "Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list"
-    ],
-    [
-      "Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list",
-      "Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list"
-    ],
-    [
-      "Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list",
-      "Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list"
-    ],
-    [
-      "Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list",
-      "Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list"
-    ],
-    [
-      "BardAI/BardAI.list",
-      "Gemini/Gemini.list"
     ],
     [
       "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
@@ -1540,14 +1444,6 @@
     [
       "EasyPrivacy/EasyPrivacy_All.list",
       "EasyPrivacy/EasyPrivacy_All_No_Resolve.list"
-    ],
-    [
-      "GlobalScholar/GlobalScholar.list",
-      "Scholar/Scholar.list"
-    ],
-    [
-      "PChome/PChome.list",
-      "PChomeTW/PChomeTW.list"
     ]
   ],
   "alias_candidates": [
@@ -1558,23 +1454,8 @@
       ],
       "reason": "Same service under former/alternate name; prior union verified.",
       "canonical_exists": true,
-      "existing_aliases": [
-        "AbemaTV"
-      ],
-      "comparisons": [
-        {
-          "format": "standard",
-          "canonical_file": "Abema/Abema.list",
-          "alias_files": [
-            "AbemaTV/AbemaTV.list"
-          ],
-          "canonical_lines": 29,
-          "alias_lines": 29,
-          "union_unique_lines": 29,
-          "new_semantic_lines": 0,
-          "new_examples": []
-        }
-      ]
+      "existing_aliases": [],
+      "comparisons": []
     },
     {
       "canonical": "Gemini",
@@ -1583,23 +1464,8 @@
       ],
       "reason": "Same Google assistant service after renaming; prior union verified.",
       "canonical_exists": true,
-      "existing_aliases": [
-        "BardAI"
-      ],
-      "comparisons": [
-        {
-          "format": "standard",
-          "canonical_file": "Gemini/Gemini.list",
-          "alias_files": [
-            "BardAI/BardAI.list"
-          ],
-          "canonical_lines": 14,
-          "alias_lines": 14,
-          "union_unique_lines": 14,
-          "new_semantic_lines": 0,
-          "new_examples": []
-        }
-      ]
+      "existing_aliases": [],
+      "comparisons": []
     },
     {
       "canonical": "PChome",
@@ -1608,23 +1474,8 @@
       ],
       "reason": "Same PChome Online service; prior union verified.",
       "canonical_exists": true,
-      "existing_aliases": [
-        "PChomeTW"
-      ],
-      "comparisons": [
-        {
-          "format": "standard",
-          "canonical_file": "PChome/PChome.list",
-          "alias_files": [
-            "PChomeTW/PChomeTW.list"
-          ],
-          "canonical_lines": 5,
-          "alias_lines": 5,
-          "union_unique_lines": 5,
-          "new_semantic_lines": 0,
-          "new_examples": []
-        }
-      ]
+      "existing_aliases": [],
+      "comparisons": []
     },
     {
       "canonical": "GlobalScholar",
@@ -1633,23 +1484,8 @@
       ],
       "reason": "GlobalScholar README explicitly says Scholar is included; prior union adds cnki.net.",
       "canonical_exists": true,
-      "existing_aliases": [
-        "Scholar"
-      ],
-      "comparisons": [
-        {
-          "format": "standard",
-          "canonical_file": "GlobalScholar/GlobalScholar.list",
-          "alias_files": [
-            "Scholar/Scholar.list"
-          ],
-          "canonical_lines": 231,
-          "alias_lines": 231,
-          "union_unique_lines": 231,
-          "new_semantic_lines": 0,
-          "new_examples": []
-        }
-      ]
+      "existing_aliases": [],
+      "comparisons": []
     },
     {
       "canonical": "BiliBili",
@@ -1658,25 +1494,8 @@
       ],
       "reason": "Same Bilibili service family with international variant.",
       "canonical_exists": true,
-      "existing_aliases": [
-        "BiliBiliIntl"
-      ],
-      "comparisons": [
-        {
-          "format": "standard",
-          "canonical_file": "BiliBili/BiliBili.list",
-          "alias_files": [
-            "BiliBiliIntl/BiliBiliIntl.list"
-          ],
-          "canonical_lines": 133,
-          "alias_lines": 6,
-          "union_unique_lines": 135,
-          "new_semantic_lines": 1,
-          "new_examples": [
-            "PROCESS-NAME,com.bstar.intl"
-          ]
-        }
-      ]
+      "existing_aliases": [],
+      "comparisons": []
     },
     {
       "canonical": "iQIYI",
@@ -1685,59 +1504,8 @@
       ],
       "reason": "Same iQIYI service family with international variant.",
       "canonical_exists": true,
-      "existing_aliases": [
-        "iQIYIIntl"
-      ],
-      "comparisons": [
-        {
-          "format": "resolve",
-          "canonical_file": "iQIYI/iQIYI_Resolve.list",
-          "alias_files": [
-            "iQIYIIntl/iQIYIIntl_Resolve.list"
-          ],
-          "canonical_lines": 63,
-          "alias_lines": 21,
-          "union_unique_lines": 80,
-          "new_semantic_lines": 11,
-          "new_examples": [
-            "IP-CIDR,104.85.165.17/32",
-            "IP-CIDR,159.138.102.146/32",
-            "IP-CIDR,184.51.102.0/24",
-            "IP-CIDR,203.80.97.203/32",
-            "IP-CIDR,23.200.145.146/32",
-            "IP-CIDR,23.210.215.186/32",
-            "IP-CIDR,23.211.15.0/24",
-            "IP-CIDR,23.219.172.0/24",
-            "IP-CIDR,23.59.252.0/24",
-            "PROCESS-NAME,com.iqiyi.i18n",
-            "PROCESS-NAME,com.iqiyi.i18n.tv"
-          ]
-        },
-        {
-          "format": "standard",
-          "canonical_file": "iQIYI/iQIYI.list",
-          "alias_files": [
-            "iQIYIIntl/iQIYIIntl.list"
-          ],
-          "canonical_lines": 63,
-          "alias_lines": 21,
-          "union_unique_lines": 80,
-          "new_semantic_lines": 11,
-          "new_examples": [
-            "IP-CIDR,104.85.165.17/32,no-resolve",
-            "IP-CIDR,159.138.102.146/32,no-resolve",
-            "IP-CIDR,184.51.102.0/24,no-resolve",
-            "IP-CIDR,203.80.97.203/32,no-resolve",
-            "IP-CIDR,23.200.145.146/32,no-resolve",
-            "IP-CIDR,23.210.215.186/32,no-resolve",
-            "IP-CIDR,23.211.15.0/24,no-resolve",
-            "IP-CIDR,23.219.172.0/24,no-resolve",
-            "IP-CIDR,23.59.252.0/24,no-resolve",
-            "PROCESS-NAME,com.iqiyi.i18n",
-            "PROCESS-NAME,com.iqiyi.i18n.tv"
-          ]
-        }
-      ]
+      "existing_aliases": [],
+      "comparisons": []
     },
     {
       "canonical": "Hulu",
@@ -1747,25 +1515,8 @@
       ],
       "reason": "Same Hulu app/service with US and Japan regional domains.",
       "canonical_exists": true,
-      "existing_aliases": [
-        "HuluUSA",
-        "HuluJP"
-      ],
-      "comparisons": [
-        {
-          "format": "standard",
-          "canonical_file": "Hulu/Hulu.list",
-          "alias_files": [
-            "HuluUSA/HuluUSA.list",
-            "HuluJP/HuluJP.list"
-          ],
-          "canonical_lines": 59,
-          "alias_lines": 58,
-          "union_unique_lines": 59,
-          "new_semantic_lines": 0,
-          "new_examples": []
-        }
-      ]
+      "existing_aliases": [],
+      "comparisons": []
     },
     {
       "canonical": "Telegram",
@@ -1776,41 +1527,8 @@
       ],
       "reason": "Same Telegram app; regional files are IP-range subsets.",
       "canonical_exists": true,
-      "existing_aliases": [
-        "TelegramNL",
-        "TelegramSG",
-        "TelegramUS"
-      ],
-      "comparisons": [
-        {
-          "format": "resolve",
-          "canonical_file": "Telegram/Telegram_Resolve.list",
-          "alias_files": [
-            "TelegramNL/TelegramNL_Resolve.list",
-            "TelegramSG/TelegramSG_Resolve.list",
-            "TelegramUS/TelegramUS_Resolve.list"
-          ],
-          "canonical_lines": 46,
-          "alias_lines": 10,
-          "union_unique_lines": 53,
-          "new_semantic_lines": 0,
-          "new_examples": []
-        },
-        {
-          "format": "standard",
-          "canonical_file": "Telegram/Telegram.list",
-          "alias_files": [
-            "TelegramNL/TelegramNL.list",
-            "TelegramSG/TelegramSG.list",
-            "TelegramUS/TelegramUS.list"
-          ],
-          "canonical_lines": 46,
-          "alias_lines": 10,
-          "union_unique_lines": 53,
-          "new_semantic_lines": 0,
-          "new_examples": []
-        }
-      ]
+      "existing_aliases": [],
+      "comparisons": []
     },
     {
       "canonical": "Amazon",
@@ -1819,41 +1537,8 @@
       ],
       "reason": "Same Amazon service family with China-region domains.",
       "canonical_exists": true,
-      "existing_aliases": [
-        "AmazonCN"
-      ],
-      "comparisons": [
-        {
-          "format": "standard",
-          "canonical_file": "Amazon/Amazon.list",
-          "alias_files": [
-            "AmazonCN/AmazonCN.list"
-          ],
-          "canonical_lines": 206,
-          "alias_lines": 47,
-          "union_unique_lines": 223,
-          "new_semantic_lines": 17,
-          "new_examples": [
-            "DOMAIN-SUFFIX,a2z.org.cn",
-            "DOMAIN-SUFFIX,amazonaws.cn",
-            "DOMAIN-SUFFIX,amazonwebservices.com.cn",
-            "DOMAIN-SUFFIX,asfiovnxocqpcry.com.cn",
-            "DOMAIN-SUFFIX,aws-border.cn",
-            "DOMAIN-SUFFIX,aws-icp-domain-manager.cn",
-            "DOMAIN-SUFFIX,awsapps.cn",
-            "DOMAIN-SUFFIX,awsapps.com.cn",
-            "DOMAIN-SUFFIX,awsstatic.cn",
-            "DOMAIN-SUFFIX,cloudfront-test.cn",
-            "DOMAIN-SUFFIX,cloudfront.cn",
-            "DOMAIN-SUFFIX,nwcdcloud.cn",
-            "DOMAIN-SUFFIX,nwcdcloud.com.cn",
-            "DOMAIN-SUFFIX,nwcddns.cn",
-            "DOMAIN-SUFFIX,nwcdinfosec.cn",
-            "DOMAIN-SUFFIX,route53.cn",
-            "DOMAIN-SUFFIX,sagemaker.com.cn"
-          ]
-        }
-      ]
+      "existing_aliases": [],
+      "comparisons": []
     },
     {
       "canonical": "HBO",
@@ -1864,33 +1549,8 @@
       ],
       "reason": "Same HBO/Max service family with regional rules.",
       "canonical_exists": true,
-      "existing_aliases": [
-        "HBOAsia",
-        "HBOHK",
-        "HBOUSA"
-      ],
-      "comparisons": [
-        {
-          "format": "standard",
-          "canonical_file": "HBO/HBO.list",
-          "alias_files": [
-            "HBOAsia/HBOAsia.list",
-            "HBOHK/HBOHK.list",
-            "HBOUSA/HBOUSA.list"
-          ],
-          "canonical_lines": 50,
-          "alias_lines": 56,
-          "union_unique_lines": 70,
-          "new_semantic_lines": 5,
-          "new_examples": [
-            "DOMAIN,s3-ap-southeast-1.amazonaws.com",
-            "DOMAIN-KEYWORD,.hbogoasia.",
-            "DOMAIN-SUFFIX,discomax.com",
-            "DOMAIN-SUFFIX,h264.io",
-            "USER-AGENT,HBO%20GO%20PROD*"
-          ]
-        }
-      ]
+      "existing_aliases": [],
+      "comparisons": []
     },
     {
       "canonical": "Cloudflare",
@@ -1899,23 +1559,8 @@
       ],
       "reason": "Same Cloudflare service with China-specific domain subset.",
       "canonical_exists": true,
-      "existing_aliases": [
-        "Cloudflarecn"
-      ],
-      "comparisons": [
-        {
-          "format": "standard",
-          "canonical_file": "Cloudflare/Cloudflare.list",
-          "alias_files": [
-            "Cloudflarecn/Cloudflarecn.list"
-          ],
-          "canonical_lines": 65,
-          "alias_lines": 14,
-          "union_unique_lines": 65,
-          "new_semantic_lines": 0,
-          "new_examples": []
-        }
-      ]
+      "existing_aliases": [],
+      "comparisons": []
     },
     {
       "canonical": "Steam",
@@ -1924,29 +1569,8 @@
       ],
       "reason": "Same Steam service family with China-region domains.",
       "canonical_exists": true,
-      "existing_aliases": [
-        "SteamCN"
-      ],
-      "comparisons": [
-        {
-          "format": "standard",
-          "canonical_file": "Steam/Steam.list",
-          "alias_files": [
-            "SteamCN/SteamCN.list"
-          ],
-          "canonical_lines": 69,
-          "alias_lines": 17,
-          "union_unique_lines": 86,
-          "new_semantic_lines": 5,
-          "new_examples": [
-            "DOMAIN,xz.pphimalayanrt.com",
-            "DOMAIN-SUFFIX,steamchina.com",
-            "DOMAIN-SUFFIX,steamcontent.com",
-            "DOMAIN-SUFFIX,steamserver.net",
-            "DOMAIN-SUFFIX,steamusercontent.com"
-          ]
-        }
-      ]
+      "existing_aliases": [],
+      "comparisons": []
     },
     {
       "canonical": "Assassin'sCreed/Assassin'sCreed-Odyssey",
@@ -1955,35 +1579,8 @@
       ],
       "reason": "Same game duplicated under two categories; Standard and Resolve stay separate.",
       "canonical_exists": true,
-      "existing_aliases": [
-        "Game/Assassin'sCreed-Odyssey"
-      ],
-      "comparisons": [
-        {
-          "format": "resolve",
-          "canonical_file": "Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list",
-          "alias_files": [
-            "Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list"
-          ],
-          "canonical_lines": 15,
-          "alias_lines": 15,
-          "union_unique_lines": 15,
-          "new_semantic_lines": 0,
-          "new_examples": []
-        },
-        {
-          "format": "standard",
-          "canonical_file": "Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list",
-          "alias_files": [
-            "Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list"
-          ],
-          "canonical_lines": 15,
-          "alias_lines": 15,
-          "union_unique_lines": 15,
-          "new_semantic_lines": 0,
-          "new_examples": []
-        }
-      ]
+      "existing_aliases": [],
+      "comparisons": []
     },
     {
       "canonical": "Assassin'sCreed/Assassin'sCreed-Origins",
@@ -1992,35 +1589,8 @@
       ],
       "reason": "Same game duplicated under two categories; Standard and Resolve stay separate.",
       "canonical_exists": true,
-      "existing_aliases": [
-        "Game/Assassin'sCreed-Origins"
-      ],
-      "comparisons": [
-        {
-          "format": "resolve",
-          "canonical_file": "Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list",
-          "alias_files": [
-            "Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list"
-          ],
-          "canonical_lines": 16,
-          "alias_lines": 16,
-          "union_unique_lines": 16,
-          "new_semantic_lines": 0,
-          "new_examples": []
-        },
-        {
-          "format": "standard",
-          "canonical_file": "Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list",
-          "alias_files": [
-            "Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list"
-          ],
-          "canonical_lines": 16,
-          "alias_lines": 16,
-          "union_unique_lines": 16,
-          "new_semantic_lines": 0,
-          "new_examples": []
-        }
-      ]
+      "existing_aliases": [],
+      "comparisons": []
     }
   ],
   "cached_source_coverage": [
@@ -2182,7 +1752,7 @@
       "source_path": "List/non_ip/stream_biliintl.conf",
       "source_rules": 5,
       "target": "BiliBili/BiliBili.list",
-      "target_rules": 133,
+      "target_rules": 134,
       "exact": 4,
       "parent_suffix": 1,
       "ip_range": 0,
@@ -2253,7 +1823,7 @@
   "static_security_findings": {
     "duplicate_rule_lines": 0,
     "recognized_native_domain": 1330757,
-    "single_label_suffix": 912,
+    "single_label_suffix": 911,
     "stale_or_private_root_suffix": 17
   },
   "static_security_examples": {
@@ -2270,22 +1840,22 @@
       "Alibaba/Alibaba_Resolve.list:10: DOMAIN-SUFFIX,alibaba",
       "Alibaba/Alibaba_Resolve.list:11: DOMAIN-SUFFIX,taobao",
       "Alibaba/Alibaba_Resolve.list:12: DOMAIN-SUFFIX,tmall",
-      "Amazon/Amazon.list:35: DOMAIN-SUFFIX,amazon",
-      "Amazon/Amazon.list:117: DOMAIN-SUFFIX,aws",
-      "Amazon/Amazon.list:144: DOMAIN-SUFFIX,imdb",
-      "Amazon/Amazon.list:147: DOMAIN-SUFFIX,kindle",
-      "Amazon/Amazon.list:192: DOMAIN-SUFFIX,xn--cckwcxetd",
-      "Amazon/Amazon.list:193: DOMAIN-SUFFIX,xn--jlq480n2rg",
-      "Amazon/Amazon.list:194: DOMAIN-SUFFIX,yamaxun",
-      "Amazon/Amazon.list:198: DOMAIN-SUFFIX,zappos",
-      "Amazon/Amazon_Resolve.list:35: DOMAIN-SUFFIX,amazon",
-      "Amazon/Amazon_Resolve.list:117: DOMAIN-SUFFIX,aws",
-      "Amazon/Amazon_Resolve.list:144: DOMAIN-SUFFIX,imdb",
-      "Amazon/Amazon_Resolve.list:147: DOMAIN-SUFFIX,kindle",
-      "Amazon/Amazon_Resolve.list:192: DOMAIN-SUFFIX,xn--cckwcxetd",
-      "Amazon/Amazon_Resolve.list:193: DOMAIN-SUFFIX,xn--jlq480n2rg",
-      "Amazon/Amazon_Resolve.list:194: DOMAIN-SUFFIX,yamaxun",
-      "Amazon/Amazon_Resolve.list:198: DOMAIN-SUFFIX,zappos",
+      "Amazon/Amazon.list:37: DOMAIN-SUFFIX,amazon",
+      "Amazon/Amazon.list:119: DOMAIN-SUFFIX,aws",
+      "Amazon/Amazon.list:146: DOMAIN-SUFFIX,imdb",
+      "Amazon/Amazon.list:149: DOMAIN-SUFFIX,kindle",
+      "Amazon/Amazon.list:194: DOMAIN-SUFFIX,xn--cckwcxetd",
+      "Amazon/Amazon.list:195: DOMAIN-SUFFIX,xn--jlq480n2rg",
+      "Amazon/Amazon.list:196: DOMAIN-SUFFIX,yamaxun",
+      "Amazon/Amazon.list:200: DOMAIN-SUFFIX,zappos",
+      "Amazon/Amazon_Resolve.list:37: DOMAIN-SUFFIX,amazon",
+      "Amazon/Amazon_Resolve.list:119: DOMAIN-SUFFIX,aws",
+      "Amazon/Amazon_Resolve.list:146: DOMAIN-SUFFIX,imdb",
+      "Amazon/Amazon_Resolve.list:149: DOMAIN-SUFFIX,kindle",
+      "Amazon/Amazon_Resolve.list:194: DOMAIN-SUFFIX,xn--cckwcxetd",
+      "Amazon/Amazon_Resolve.list:195: DOMAIN-SUFFIX,xn--jlq480n2rg",
+      "Amazon/Amazon_Resolve.list:196: DOMAIN-SUFFIX,yamaxun",
+      "Amazon/Amazon_Resolve.list:200: DOMAIN-SUFFIX,zappos",
       "BBC/BBC.list:21: DOMAIN-SUFFIX,bbc",
       "BMW/BMW.list:77: DOMAIN-SUFFIX,bmw",
       "BMW/BMW.list:494: DOMAIN-SUFFIX,mini",
@@ -2563,7 +2133,7 @@
       "feed": "OpenPhish",
       "scope": "app_or_routing",
       "path": "Amazon/Amazon.list",
-      "line": 137,
+      "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
@@ -2571,7 +2141,7 @@
       "feed": "OpenPhish",
       "scope": "app_or_routing",
       "path": "Amazon/Amazon_Resolve.list",
-      "line": 137,
+      "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
@@ -2581,7 +2151,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "gzz91-vhe-vcra-ctc11-07-10-2026-hh.pages.dev"
+      "matched_domain": "sp33ct-rumeko-biz-talavi-zenuto.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2589,7 +2159,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2597,7 +2167,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "gzz91-vhe-vcra-ctc11-07-10-2026-hh.pages.dev"
+      "matched_domain": "sp33ct-rumeko-biz-talavi-zenuto.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2605,7 +2175,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2613,7 +2183,7 @@
       "path": "GitBook/GitBook.list",
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "cripthcomlogin.gitbook.io"
+      "matched_domain": "robinhxnoodlogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2621,7 +2191,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "evansrich92-afk.github.io"
+      "matched_domain": "meenakshi-cse.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2645,7 +2215,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "evansrich92-afk.github.io"
+      "matched_domain": "meenakshi-cse.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2669,7 +2239,7 @@
       "path": "Global/Global_All.list",
       "line": 29921,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2677,7 +2247,7 @@
       "path": "Global/Global_All.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "cripthcomlogin.gitbook.io"
+      "matched_domain": "robinhxnoodlogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2693,7 +2263,7 @@
       "path": "Global/Global_All.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "astonishing-dolphin-805ffe.netlify.app"
+      "matched_domain": "netflis-gpt.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2701,7 +2271,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "gzz91-vhe-vcra-ctc11-07-10-2026-hh.pages.dev"
+      "matched_domain": "sp33ct-rumeko-biz-talavi-zenuto.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2709,7 +2279,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
+      "matched_domain": "orego-six.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2717,7 +2287,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2741,7 +2311,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "evansrich92-afk.github.io"
+      "matched_domain": "meenakshi-cse.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2765,7 +2335,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 29921,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2773,7 +2343,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "cripthcomlogin.gitbook.io"
+      "matched_domain": "robinhxnoodlogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2789,7 +2359,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "astonishing-dolphin-805ffe.netlify.app"
+      "matched_domain": "netflis-gpt.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2797,7 +2367,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "gzz91-vhe-vcra-ctc11-07-10-2026-hh.pages.dev"
+      "matched_domain": "sp33ct-rumeko-biz-talavi-zenuto.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2805,7 +2375,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
+      "matched_domain": "orego-six.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2813,7 +2383,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2869,7 +2439,7 @@
       "path": "NaSDDNS/NaSDDNS.list",
       "line": 23,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2877,7 +2447,7 @@
       "path": "NaSDDNS/NaSDDNS_Resolve.list",
       "line": 23,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2893,7 +2463,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 1615,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2901,7 +2471,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "cripthcomlogin.gitbook.io"
+      "matched_domain": "robinhxnoodlogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2917,7 +2487,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "astonishing-dolphin-805ffe.netlify.app"
+      "matched_domain": "netflis-gpt.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2925,7 +2495,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "gzz91-vhe-vcra-ctc11-07-10-2026-hh.pages.dev"
+      "matched_domain": "sp33ct-rumeko-biz-talavi-zenuto.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2933,7 +2503,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
+      "matched_domain": "orego-six.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2941,7 +2511,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2957,7 +2527,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 1615,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2965,7 +2535,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "cripthcomlogin.gitbook.io"
+      "matched_domain": "robinhxnoodlogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2981,7 +2551,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "astonishing-dolphin-805ffe.netlify.app"
+      "matched_domain": "netflis-gpt.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2989,7 +2559,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "gzz91-vhe-vcra-ctc11-07-10-2026-hh.pages.dev"
+      "matched_domain": "sp33ct-rumeko-biz-talavi-zenuto.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2997,7 +2567,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
+      "matched_domain": "orego-six.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3005,7 +2575,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3045,7 +2615,7 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
+      "matched_domain": "orego-six.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {

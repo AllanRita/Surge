@@ -1,18 +1,18 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 10:47 UTC
+Generated: 2026-11-27 11:03 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
 ## Inventory
 
-- Rule files: **853**
-- App/category folders: **682**
-- Top-level folders: **657**
-- Rule data size: **116,070,619 bytes**
-- Folders with multiple files/formats: **113**
+- Rule files: **828**
+- App/category folders: **663**
+- Top-level folders: **640**
+- Rule data size: **116,049,803 bytes**
+- Folders with multiple files/formats: **107**
 - Exact byte-identical file groups: **2**
-- Identical rule-payload groups (headers ignored): **11**
+- Identical rule-payload groups (headers ignored): **3**
 - Duplicate rule lines inside files: **0**
 - Personal files inspected but not modified: **3**
 
@@ -25,119 +25,60 @@ This classifies dedicated App folders by folder name only. Financial-service dom
 
 ### Abema
 - Candidate folders: AbemaTV
-- Present aliases: AbemaTV
+- Present aliases: none
 - Rationale: Same service under former/alternate name; prior union verified.
-- standard: canonical 29 lines; aliases 29 lines; union 29 unique; new semantic lines 0
 ### Gemini
 - Candidate folders: BardAI
-- Present aliases: BardAI
+- Present aliases: none
 - Rationale: Same Google assistant service after renaming; prior union verified.
-- standard: canonical 14 lines; aliases 14 lines; union 14 unique; new semantic lines 0
 ### PChome
 - Candidate folders: PChomeTW
-- Present aliases: PChomeTW
+- Present aliases: none
 - Rationale: Same PChome Online service; prior union verified.
-- standard: canonical 5 lines; aliases 5 lines; union 5 unique; new semantic lines 0
 ### GlobalScholar
 - Candidate folders: Scholar
-- Present aliases: Scholar
+- Present aliases: none
 - Rationale: GlobalScholar README explicitly says Scholar is included; prior union adds cnki.net.
-- standard: canonical 231 lines; aliases 231 lines; union 231 unique; new semantic lines 0
 ### BiliBili
 - Candidate folders: BiliBiliIntl
-- Present aliases: BiliBiliIntl
+- Present aliases: none
 - Rationale: Same Bilibili service family with international variant.
-- standard: canonical 133 lines; aliases 6 lines; union 135 unique; new semantic lines 1
-  - PROCESS-NAME,com.bstar.intl
 ### iQIYI
 - Candidate folders: iQIYIIntl
-- Present aliases: iQIYIIntl
+- Present aliases: none
 - Rationale: Same iQIYI service family with international variant.
-- resolve: canonical 63 lines; aliases 21 lines; union 80 unique; new semantic lines 11
-  - IP-CIDR,104.85.165.17/32
-  - IP-CIDR,159.138.102.146/32
-  - IP-CIDR,184.51.102.0/24
-  - IP-CIDR,203.80.97.203/32
-  - IP-CIDR,23.200.145.146/32
-  - IP-CIDR,23.210.215.186/32
-  - IP-CIDR,23.211.15.0/24
-  - IP-CIDR,23.219.172.0/24
-  - IP-CIDR,23.59.252.0/24
-  - PROCESS-NAME,com.iqiyi.i18n
-- standard: canonical 63 lines; aliases 21 lines; union 80 unique; new semantic lines 11
-  - IP-CIDR,104.85.165.17/32,no-resolve
-  - IP-CIDR,159.138.102.146/32,no-resolve
-  - IP-CIDR,184.51.102.0/24,no-resolve
-  - IP-CIDR,203.80.97.203/32,no-resolve
-  - IP-CIDR,23.200.145.146/32,no-resolve
-  - IP-CIDR,23.210.215.186/32,no-resolve
-  - IP-CIDR,23.211.15.0/24,no-resolve
-  - IP-CIDR,23.219.172.0/24,no-resolve
-  - IP-CIDR,23.59.252.0/24,no-resolve
-  - PROCESS-NAME,com.iqiyi.i18n
 ### Hulu
 - Candidate folders: HuluUSA, HuluJP
-- Present aliases: HuluUSA, HuluJP
+- Present aliases: none
 - Rationale: Same Hulu app/service with US and Japan regional domains.
-- standard: canonical 59 lines; aliases 58 lines; union 59 unique; new semantic lines 0
 ### Telegram
 - Candidate folders: TelegramNL, TelegramSG, TelegramUS
-- Present aliases: TelegramNL, TelegramSG, TelegramUS
+- Present aliases: none
 - Rationale: Same Telegram app; regional files are IP-range subsets.
-- resolve: canonical 46 lines; aliases 10 lines; union 53 unique; new semantic lines 0
-- standard: canonical 46 lines; aliases 10 lines; union 53 unique; new semantic lines 0
 ### Amazon
 - Candidate folders: AmazonCN
-- Present aliases: AmazonCN
+- Present aliases: none
 - Rationale: Same Amazon service family with China-region domains.
-- standard: canonical 206 lines; aliases 47 lines; union 223 unique; new semantic lines 17
-  - DOMAIN-SUFFIX,a2z.org.cn
-  - DOMAIN-SUFFIX,amazonaws.cn
-  - DOMAIN-SUFFIX,amazonwebservices.com.cn
-  - DOMAIN-SUFFIX,asfiovnxocqpcry.com.cn
-  - DOMAIN-SUFFIX,aws-border.cn
-  - DOMAIN-SUFFIX,aws-icp-domain-manager.cn
-  - DOMAIN-SUFFIX,awsapps.cn
-  - DOMAIN-SUFFIX,awsapps.com.cn
-  - DOMAIN-SUFFIX,awsstatic.cn
-  - DOMAIN-SUFFIX,cloudfront-test.cn
 ### HBO
 - Candidate folders: HBOAsia, HBOHK, HBOUSA
-- Present aliases: HBOAsia, HBOHK, HBOUSA
+- Present aliases: none
 - Rationale: Same HBO/Max service family with regional rules.
-- standard: canonical 50 lines; aliases 56 lines; union 70 unique; new semantic lines 5
-  - DOMAIN,s3-ap-southeast-1.amazonaws.com
-  - DOMAIN-KEYWORD,.hbogoasia.
-  - DOMAIN-SUFFIX,discomax.com
-  - DOMAIN-SUFFIX,h264.io
-  - USER-AGENT,HBO%20GO%20PROD*
 ### Cloudflare
 - Candidate folders: Cloudflarecn
-- Present aliases: Cloudflarecn
+- Present aliases: none
 - Rationale: Same Cloudflare service with China-specific domain subset.
-- standard: canonical 65 lines; aliases 14 lines; union 65 unique; new semantic lines 0
 ### Steam
 - Candidate folders: SteamCN
-- Present aliases: SteamCN
+- Present aliases: none
 - Rationale: Same Steam service family with China-region domains.
-- standard: canonical 69 lines; aliases 17 lines; union 86 unique; new semantic lines 5
-  - DOMAIN,xz.pphimalayanrt.com
-  - DOMAIN-SUFFIX,steamchina.com
-  - DOMAIN-SUFFIX,steamcontent.com
-  - DOMAIN-SUFFIX,steamserver.net
-  - DOMAIN-SUFFIX,steamusercontent.com
 ### Assassin'sCreed/Assassin'sCreed-Odyssey
 - Candidate folders: Game/Assassin'sCreed-Odyssey
-- Present aliases: Game/Assassin'sCreed-Odyssey
+- Present aliases: none
 - Rationale: Same game duplicated under two categories; Standard and Resolve stay separate.
-- resolve: canonical 15 lines; aliases 15 lines; union 15 unique; new semantic lines 0
-- standard: canonical 15 lines; aliases 15 lines; union 15 unique; new semantic lines 0
 ### Assassin'sCreed/Assassin'sCreed-Origins
 - Candidate folders: Game/Assassin'sCreed-Origins
-- Present aliases: Game/Assassin'sCreed-Origins
+- Present aliases: none
 - Rationale: Same game duplicated under two categories; Standard and Resolve stay separate.
-- resolve: canonical 16 lines; aliases 16 lines; union 16 unique; new semantic lines 0
-- standard: canonical 16 lines; aliases 16 lines; union 16 unique; new semantic lines 0
 
 ## Cached author-source coverage
 
@@ -163,7 +104,7 @@ This classifies dedicated App folders by folder name only. Financial-service dom
 
 - duplicate_rule_lines: 0
 - recognized_native_domain: 1330757
-- single_label_suffix: 912
+- single_label_suffix: 911
 - stale_or_private_root_suffix: 17
 
 - Financial-domain matches: 238 (review only; not deleted)
@@ -179,17 +120,9 @@ EasyPrivacy/EasyPrivacy_All.list, EasyPrivacy/EasyPrivacy_All_No_Resolve.list
 
 ## Identical rule payloads with headers ignored
 
-Abema/Abema.list, AbemaTV/AbemaTV.list
 AdGuardSDNSFilter/AdGuardSDNSFilter_All.list, AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list
-Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list, Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list
-Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list, Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list
-Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list, Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list
-Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list, Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list
-BardAI/BardAI.list, Gemini/Gemini.list
 ChinaMaxNoIP/ChinaMaxNoIP_All.list, ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list
 EasyPrivacy/EasyPrivacy_All.list, EasyPrivacy/EasyPrivacy_All_No_Resolve.list
-GlobalScholar/GlobalScholar.list, Scholar/Scholar.list
-PChome/PChome.list, PChomeTW/PChomeTW.list
 
 ## Multi-format folders
 
@@ -247,8 +180,6 @@ Format labels are inferred from filename suffixes; distinct formats are preserve
 - EasyPrivacy: all, all_no_resolve, domain_only (3 files)
 - Facebook: resolve, standard (2 files)
 - Game: resolve, standard (2 files)
-- Game/Assassin'sCreed-Odyssey: resolve, standard (2 files)
-- Game/Assassin'sCreed-Origins: resolve, standard (2 files)
 - Game/Nikke: resolve, standard (2 files)
 - Global: all, all_no_resolve, domain_only, resolve, standard (5 files)
 - GlobalMedia: all, all_no_resolve, domain_only, resolve, standard (5 files)
@@ -289,9 +220,6 @@ Format labels are inferred from filename suffixes; distinct formats are preserve
 - Supercell: resolve, standard (2 files)
 - TeamViewer: resolve, standard (2 files)
 - Telegram: resolve, standard (2 files)
-- TelegramNL: resolve, standard (2 files)
-- TelegramSG: resolve, standard (2 files)
-- TelegramUS: resolve, standard (2 files)
 - Tencent: all, all_no_resolve, domain_only, resolve, standard (5 files)
 - TencentVideo: resolve, standard (2 files)
 - Twitch: resolve, standard (2 files)
@@ -307,7 +235,6 @@ Format labels are inferred from filename suffixes; distinct formats are preserve
 - Zhihu: resolve, standard (2 files)
 - ZhihuAds: resolve, standard (2 files)
 - iQIYI: resolve, standard (2 files)
-- iQIYIIntl: resolve, standard (2 files)
 
 ## Safety boundaries
 - No rule files or personal files are deleted, renamed, or rewritten by this audit.
