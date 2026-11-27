@@ -1,24 +1,24 @@
 {
-  "generated_utc": "2026-11-27 12:59 UTC",
+  "generated_utc": "2026-11-27 13:00 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 822,
     "app_or_category_folders": 657,
     "top_level_folders": 634,
-    "total_rule_bytes": 116039933,
+    "total_rule_bytes": 116040623,
     "multi_file_folders": 107,
     "exact_raw_duplicate_file_groups": 2,
     "same_rule_payload_file_groups": 3,
     "duplicate_rule_lines": 0,
-    "domain_rule_count": 2690622,
+    "domain_rule_count": 2690646,
     "personal_files_seen_not_modified": 3,
     "bank_payment_app_folders_found": 0,
     "finance_app_review_candidates": 0,
     "cached_author_source_count": 15,
     "cached_author_source_rule_count": 300,
     "cached_author_source_missing_count": 0,
-    "cached_author_source_format_target_count": 26,
-    "cached_author_source_format_missing_count": 85,
+    "cached_author_source_format_target_count": 24,
+    "cached_author_source_format_missing_count": 0,
     "shared_hosting_suffixes_found": 34,
     "shared_hosting_suffix_rule_occurrences": 159
   },
@@ -1610,8 +1610,8 @@
       "source_commit": "a57dccbf14a0a10f33fa7e95ef5bb3d2af04a6f0",
       "source_path": "output/Ruleset/Apple/Apple.list",
       "source_rules": 69,
-      "target": "Apple/Apple.list",
-      "target_rules": 80,
+      "target": "Apple/Apple.list + Apple/Apple_Domain.list",
+      "target_rules": 1639,
       "exact": 12,
       "parent_suffix": 57,
       "ip_range": 0,
@@ -1620,8 +1620,26 @@
       "format_coverage": [
         {
           "format": "standard",
-          "target": "Apple/Apple.list",
-          "target_rules": 80,
+          "target": "Apple/Apple.list + Apple/Apple_Domain.list",
+          "components": [
+            "Apple/Apple.list",
+            "Apple/Apple_Domain.list"
+          ],
+          "target_rules": 1639,
+          "exact": 12,
+          "parent_suffix": 57,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        },
+        {
+          "format": "resolve",
+          "target": "Apple/Apple_Resolve.list + Apple/Apple_Domain.list",
+          "components": [
+            "Apple/Apple_Resolve.list",
+            "Apple/Apple_Domain.list"
+          ],
+          "target_rules": 1639,
           "exact": 12,
           "parent_suffix": 57,
           "ip_range": 0,
@@ -1631,6 +1649,9 @@
         {
           "format": "all",
           "target": "Apple/Apple_All.list",
+          "components": [
+            "Apple/Apple_All.list"
+          ],
           "target_rules": 1615,
           "exact": 9,
           "parent_suffix": 60,
@@ -1641,102 +1662,15 @@
         {
           "format": "all_no_resolve",
           "target": "Apple/Apple_All_No_Resolve.list",
+          "components": [
+            "Apple/Apple_All_No_Resolve.list"
+          ],
           "target_rules": 1615,
           "exact": 9,
           "parent_suffix": 60,
           "ip_range": 0,
           "missing_count": 0,
           "missing_examples": []
-        },
-        {
-          "format": "domain_only",
-          "target": "Apple/Apple_Domain.list",
-          "target_rules": 1559,
-          "exact": 0,
-          "parent_suffix": 69,
-          "ip_range": 0,
-          "missing_count": 0,
-          "missing_examples": []
-        },
-        {
-          "format": "resolve",
-          "target": "Apple/Apple_Resolve.list",
-          "target_rules": 56,
-          "exact": 0,
-          "parent_suffix": 0,
-          "ip_range": 0,
-          "missing_count": 69,
-          "missing_examples": [
-            "DOMAIN-SUFFIX,apps.apple.com",
-            "DOMAIN-SUFFIX,itunes.apple.com",
-            "DOMAIN-SUFFIX,itunes-apple.com.akadns.net",
-            "DOMAIN-SUFFIX,mzstatic.com",
-            "DOMAIN,ppq.apple.com",
-            "DOMAIN,appstoreconnect.apple.com",
-            "DOMAIN,iosapps-ssl.itunes.apple.com",
-            "DOMAIN,itcmobile.itunes.apple.com",
-            "DOMAIN,buy.itunes.apple.com",
-            "DOMAIN-SUFFIX,books.apple.com",
-            "DOMAIN,books.itunes.apple.com",
-            "DOMAIN,bookkeeper.itunes.apple.com",
-            "DOMAIN,books-analytics-events.apple.com",
-            "DOMAIN,fmfmobile.icloud.com",
-            "DOMAIN,fmipmobile.icloud.com",
-            "DOMAIN,statici.icloud.com",
-            "DOMAIN,hls-svod.itunes.apple.com",
-            "DOMAIN,amp-api.fitness.apple.com",
-            "DOMAIN-SUFFIX,mail.icloud.com.cn",
-            "DOMAIN-SUFFIX,mail.me.com",
-            "DOMAIN-SUFFIX,applemusic.com",
-            "DOMAIN-SUFFIX,music.apple.com",
-            "DOMAIN,aod.itunes.apple.com",
-            "DOMAIN,aod-ssl.itunes.apple.com",
-            "DOMAIN,audio.itunes.apple.com",
-            "DOMAIN,audio-ssl.itunes.apple.com",
-            "DOMAIN,mvod.itunes.apple.com",
-            "DOMAIN,streamingaudio.itunes.apple.com",
-            "DOMAIN-SUFFIX,blobstore.apple.com",
-            "DOMAIN,guzzoni.apple.com",
-            "DOMAIN,tv.applemusic.com",
-            "DOMAIN,configuration.apple.com",
-            "DOMAIN,gnf-mdn.apple.com",
-            "DOMAIN,gnf-mr.apple.com",
-            "DOMAIN,gs.apple.com",
-            "DOMAIN,ig.apple.com",
-            "DOMAIN,skl.apple.com",
-            "DOMAIN,swcdn.apple.com",
-            "DOMAIN,swdist.apple.com",
-            "DOMAIN,swdownload.apple.com",
-            "DOMAIN,swpost.apple.com",
-            "DOMAIN,swscan.apple.com",
-            "DOMAIN,oscdn.apple.com",
-            "DOMAIN,osrecovery.apple.com",
-            "DOMAIN,appldnld.apple.com",
-            "DOMAIN,ns.itunes.apple.com",
-            "DOMAIN,gg.apple.com",
-            "DOMAIN,gdmf.apple.com",
-            "DOMAIN,mesu.apple.com",
-            "DOMAIN,updates.cdn-apple.com",
-            "DOMAIN,updates-http.cdn-apple.com",
-            "DOMAIN,xp.apple.com",
-            "DOMAIN-SUFFIX,apple-cloudkit.com",
-            "DOMAIN-SUFFIX,apple-livephotoskit.com",
-            "DOMAIN-SUFFIX,apzones.com",
-            "DOMAIN-SUFFIX,cdn-apple.com",
-            "DOMAIN-SUFFIX,gc.apple.com",
-            "DOMAIN-SUFFIX,icloud.apple.com",
-            "DOMAIN-SUFFIX,icloud.com",
-            "DOMAIN-SUFFIX,icloud.com.cn",
-            "DOMAIN-SUFFIX,icloud-content.com",
-            "DOMAIN-SUFFIX,iwork.apple.com",
-            "DOMAIN,beta.apple.com",
-            "DOMAIN,testflight.apple.com",
-            "DOMAIN-SUFFIX,tv.apple.com",
-            "DOMAIN,hls.itunes.apple.com",
-            "DOMAIN,hls-amt.itunes.apple.com",
-            "DOMAIN,play-edge.itunes.apple.com",
-            "DOMAIN,uts-api.itunes.apple.com"
-          ]
         }
       ]
     },
@@ -1758,6 +1692,9 @@
         {
           "format": "standard",
           "target": "Block/DNS/DNS.list",
+          "components": [
+            "Block/DNS/DNS.list"
+          ],
           "target_rules": 53,
           "exact": 53,
           "parent_suffix": 0,
@@ -1785,6 +1722,9 @@
         {
           "format": "standard",
           "target": "OneDrive/OneDrive.list",
+          "components": [
+            "OneDrive/OneDrive.list"
+          ],
           "target_rules": 18,
           "exact": 3,
           "parent_suffix": 1,
@@ -1812,6 +1752,9 @@
         {
           "format": "standard",
           "target": "Block/Other/Other.list",
+          "components": [
+            "Block/Other/Other.list"
+          ],
           "target_rules": 1,
           "exact": 1,
           "parent_suffix": 0,
@@ -1839,6 +1782,9 @@
         {
           "format": "standard",
           "target": "Block/Parallels/Parallels.list",
+          "components": [
+            "Block/Parallels/Parallels.list"
+          ],
           "target_rules": 12,
           "exact": 12,
           "parent_suffix": 0,
@@ -1866,6 +1812,9 @@
         {
           "format": "standard",
           "target": "Process/Process/Process.list",
+          "components": [
+            "Process/Process/Process.list"
+          ],
           "target_rules": 23,
           "exact": 23,
           "parent_suffix": 0,
@@ -1893,6 +1842,9 @@
         {
           "format": "standard",
           "target": "Teams/Teams.list",
+          "components": [
+            "Teams/Teams.list"
+          ],
           "target_rules": 4,
           "exact": 4,
           "parent_suffix": 0,
@@ -1920,6 +1872,9 @@
         {
           "format": "standard",
           "target": "Process/Unavailable/Unavailable.list",
+          "components": [
+            "Process/Unavailable/Unavailable.list"
+          ],
           "target_rules": 1,
           "exact": 1,
           "parent_suffix": 0,
@@ -1947,6 +1902,9 @@
         {
           "format": "standard",
           "target": "Block/YouTube/YouTube.list",
+          "components": [
+            "Block/YouTube/YouTube.list"
+          ],
           "target_rules": 15,
           "exact": 15,
           "parent_suffix": 0,
@@ -1963,8 +1921,8 @@
       "source_commit": "8341913ec29f036fafb8886be88769487a7f3989",
       "source_path": "List/non_ip/apple_services.conf",
       "source_rules": 16,
-      "target": "Apple/Apple.list",
-      "target_rules": 80,
+      "target": "Apple/Apple.list + Apple/Apple_Domain.list",
+      "target_rules": 1639,
       "exact": 16,
       "parent_suffix": 0,
       "ip_range": 0,
@@ -1973,8 +1931,26 @@
       "format_coverage": [
         {
           "format": "standard",
-          "target": "Apple/Apple.list",
-          "target_rules": 80,
+          "target": "Apple/Apple.list + Apple/Apple_Domain.list",
+          "components": [
+            "Apple/Apple.list",
+            "Apple/Apple_Domain.list"
+          ],
+          "target_rules": 1639,
+          "exact": 16,
+          "parent_suffix": 0,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        },
+        {
+          "format": "resolve",
+          "target": "Apple/Apple_Resolve.list + Apple/Apple_Domain.list",
+          "components": [
+            "Apple/Apple_Resolve.list",
+            "Apple/Apple_Domain.list"
+          ],
+          "target_rules": 1639,
           "exact": 16,
           "parent_suffix": 0,
           "ip_range": 0,
@@ -1984,6 +1960,9 @@
         {
           "format": "all",
           "target": "Apple/Apple_All.list",
+          "components": [
+            "Apple/Apple_All.list"
+          ],
           "target_rules": 1615,
           "exact": 15,
           "parent_suffix": 1,
@@ -1994,49 +1973,15 @@
         {
           "format": "all_no_resolve",
           "target": "Apple/Apple_All_No_Resolve.list",
+          "components": [
+            "Apple/Apple_All_No_Resolve.list"
+          ],
           "target_rules": 1615,
           "exact": 15,
           "parent_suffix": 1,
           "ip_range": 0,
           "missing_count": 0,
           "missing_examples": []
-        },
-        {
-          "format": "domain_only",
-          "target": "Apple/Apple_Domain.list",
-          "target_rules": 1559,
-          "exact": 0,
-          "parent_suffix": 16,
-          "ip_range": 0,
-          "missing_count": 0,
-          "missing_examples": []
-        },
-        {
-          "format": "resolve",
-          "target": "Apple/Apple_Resolve.list",
-          "target_rules": 56,
-          "exact": 0,
-          "parent_suffix": 0,
-          "ip_range": 0,
-          "missing_count": 16,
-          "missing_examples": [
-            "DOMAIN-SUFFIX,aaplimg.com",
-            "DOMAIN-SUFFIX,apple-cloudkit.com",
-            "DOMAIN-SUFFIX,apple-dns.net",
-            "DOMAIN-SUFFIX,apple-mapkit.com",
-            "DOMAIN-SUFFIX,apple.co",
-            "DOMAIN-SUFFIX,apple.com",
-            "DOMAIN-SUFFIX,apple.news",
-            "DOMAIN-SUFFIX,appsto.re",
-            "DOMAIN-SUFFIX,appstore.com",
-            "DOMAIN-SUFFIX,cdn-apple.com",
-            "DOMAIN-SUFFIX,icloud-content.com",
-            "DOMAIN-SUFFIX,icloud.com",
-            "DOMAIN-SUFFIX,itunes.com",
-            "DOMAIN-SUFFIX,me.com",
-            "DOMAIN-SUFFIX,organicfruitapps.com",
-            "DOMAIN-SUFFIX,push-apple.com.akadns.net"
-          ]
         }
       ]
     },
@@ -2058,6 +2003,9 @@
         {
           "format": "standard",
           "target": "BiliBili/BiliBili.list",
+          "components": [
+            "BiliBili/BiliBili.list"
+          ],
           "target_rules": 134,
           "exact": 4,
           "parent_suffix": 1,
@@ -2068,6 +2016,9 @@
         {
           "format": "resolve",
           "target": "BiliBili/BiliBili_Resolve.list",
+          "components": [
+            "BiliBili/BiliBili_Resolve.list"
+          ],
           "target_rules": 134,
           "exact": 4,
           "parent_suffix": 1,
@@ -2095,6 +2046,9 @@
         {
           "format": "standard",
           "target": "GitLab/GitLab.list",
+          "components": [
+            "GitLab/GitLab.list"
+          ],
           "target_rules": 6,
           "exact": 1,
           "parent_suffix": 0,
@@ -2122,6 +2076,9 @@
         {
           "format": "standard",
           "target": "Microsoft/Microsoft.list",
+          "components": [
+            "Microsoft/Microsoft.list"
+          ],
           "target_rules": 674,
           "exact": 80,
           "parent_suffix": 0,
@@ -2149,6 +2106,9 @@
         {
           "format": "standard",
           "target": "NetEaseMusic/NetEaseMusic.list",
+          "components": [
+            "NetEaseMusic/NetEaseMusic.list"
+          ],
           "target_rules": 30,
           "exact": 2,
           "parent_suffix": 0,
@@ -2159,6 +2119,9 @@
         {
           "format": "resolve",
           "target": "NetEaseMusic/NetEaseMusic_Resolve.list",
+          "components": [
+            "NetEaseMusic/NetEaseMusic_Resolve.list"
+          ],
           "target_rules": 30,
           "exact": 2,
           "parent_suffix": 0,
@@ -2186,6 +2149,9 @@
         {
           "format": "standard",
           "target": "Telegram/Telegram.list",
+          "components": [
+            "Telegram/Telegram.list"
+          ],
           "target_rules": 46,
           "exact": 14,
           "parent_suffix": 0,
@@ -2196,6 +2162,9 @@
         {
           "format": "resolve",
           "target": "Telegram/Telegram_Resolve.list",
+          "components": [
+            "Telegram/Telegram_Resolve.list"
+          ],
           "target_rules": 46,
           "exact": 14,
           "parent_suffix": 0,
@@ -2210,8 +2179,27 @@
     {
       "source": "Aoang-Apple",
       "format": "standard",
-      "target": "Apple/Apple.list",
-      "target_rules": 80,
+      "target": "Apple/Apple.list + Apple/Apple_Domain.list",
+      "components": [
+        "Apple/Apple.list",
+        "Apple/Apple_Domain.list"
+      ],
+      "target_rules": 1639,
+      "exact": 12,
+      "parent_suffix": 57,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-Apple",
+      "format": "resolve",
+      "target": "Apple/Apple_Resolve.list + Apple/Apple_Domain.list",
+      "components": [
+        "Apple/Apple_Resolve.list",
+        "Apple/Apple_Domain.list"
+      ],
+      "target_rules": 1639,
       "exact": 12,
       "parent_suffix": 57,
       "ip_range": 0,
@@ -2222,6 +2210,9 @@
       "source": "Aoang-Apple",
       "format": "all",
       "target": "Apple/Apple_All.list",
+      "components": [
+        "Apple/Apple_All.list"
+      ],
       "target_rules": 1615,
       "exact": 9,
       "parent_suffix": 60,
@@ -2233,6 +2224,9 @@
       "source": "Aoang-Apple",
       "format": "all_no_resolve",
       "target": "Apple/Apple_All_No_Resolve.list",
+      "components": [
+        "Apple/Apple_All_No_Resolve.list"
+      ],
       "target_rules": 1615,
       "exact": 9,
       "parent_suffix": 60,
@@ -2241,101 +2235,12 @@
       "missing_examples": []
     },
     {
-      "source": "Aoang-Apple",
-      "format": "domain_only",
-      "target": "Apple/Apple_Domain.list",
-      "target_rules": 1559,
-      "exact": 0,
-      "parent_suffix": 69,
-      "ip_range": 0,
-      "missing_count": 0,
-      "missing_examples": []
-    },
-    {
-      "source": "Aoang-Apple",
-      "format": "resolve",
-      "target": "Apple/Apple_Resolve.list",
-      "target_rules": 56,
-      "exact": 0,
-      "parent_suffix": 0,
-      "ip_range": 0,
-      "missing_count": 69,
-      "missing_examples": [
-        "DOMAIN-SUFFIX,apps.apple.com",
-        "DOMAIN-SUFFIX,itunes.apple.com",
-        "DOMAIN-SUFFIX,itunes-apple.com.akadns.net",
-        "DOMAIN-SUFFIX,mzstatic.com",
-        "DOMAIN,ppq.apple.com",
-        "DOMAIN,appstoreconnect.apple.com",
-        "DOMAIN,iosapps-ssl.itunes.apple.com",
-        "DOMAIN,itcmobile.itunes.apple.com",
-        "DOMAIN,buy.itunes.apple.com",
-        "DOMAIN-SUFFIX,books.apple.com",
-        "DOMAIN,books.itunes.apple.com",
-        "DOMAIN,bookkeeper.itunes.apple.com",
-        "DOMAIN,books-analytics-events.apple.com",
-        "DOMAIN,fmfmobile.icloud.com",
-        "DOMAIN,fmipmobile.icloud.com",
-        "DOMAIN,statici.icloud.com",
-        "DOMAIN,hls-svod.itunes.apple.com",
-        "DOMAIN,amp-api.fitness.apple.com",
-        "DOMAIN-SUFFIX,mail.icloud.com.cn",
-        "DOMAIN-SUFFIX,mail.me.com",
-        "DOMAIN-SUFFIX,applemusic.com",
-        "DOMAIN-SUFFIX,music.apple.com",
-        "DOMAIN,aod.itunes.apple.com",
-        "DOMAIN,aod-ssl.itunes.apple.com",
-        "DOMAIN,audio.itunes.apple.com",
-        "DOMAIN,audio-ssl.itunes.apple.com",
-        "DOMAIN,mvod.itunes.apple.com",
-        "DOMAIN,streamingaudio.itunes.apple.com",
-        "DOMAIN-SUFFIX,blobstore.apple.com",
-        "DOMAIN,guzzoni.apple.com",
-        "DOMAIN,tv.applemusic.com",
-        "DOMAIN,configuration.apple.com",
-        "DOMAIN,gnf-mdn.apple.com",
-        "DOMAIN,gnf-mr.apple.com",
-        "DOMAIN,gs.apple.com",
-        "DOMAIN,ig.apple.com",
-        "DOMAIN,skl.apple.com",
-        "DOMAIN,swcdn.apple.com",
-        "DOMAIN,swdist.apple.com",
-        "DOMAIN,swdownload.apple.com",
-        "DOMAIN,swpost.apple.com",
-        "DOMAIN,swscan.apple.com",
-        "DOMAIN,oscdn.apple.com",
-        "DOMAIN,osrecovery.apple.com",
-        "DOMAIN,appldnld.apple.com",
-        "DOMAIN,ns.itunes.apple.com",
-        "DOMAIN,gg.apple.com",
-        "DOMAIN,gdmf.apple.com",
-        "DOMAIN,mesu.apple.com",
-        "DOMAIN,updates.cdn-apple.com",
-        "DOMAIN,updates-http.cdn-apple.com",
-        "DOMAIN,xp.apple.com",
-        "DOMAIN-SUFFIX,apple-cloudkit.com",
-        "DOMAIN-SUFFIX,apple-livephotoskit.com",
-        "DOMAIN-SUFFIX,apzones.com",
-        "DOMAIN-SUFFIX,cdn-apple.com",
-        "DOMAIN-SUFFIX,gc.apple.com",
-        "DOMAIN-SUFFIX,icloud.apple.com",
-        "DOMAIN-SUFFIX,icloud.com",
-        "DOMAIN-SUFFIX,icloud.com.cn",
-        "DOMAIN-SUFFIX,icloud-content.com",
-        "DOMAIN-SUFFIX,iwork.apple.com",
-        "DOMAIN,beta.apple.com",
-        "DOMAIN,testflight.apple.com",
-        "DOMAIN-SUFFIX,tv.apple.com",
-        "DOMAIN,hls.itunes.apple.com",
-        "DOMAIN,hls-amt.itunes.apple.com",
-        "DOMAIN,play-edge.itunes.apple.com",
-        "DOMAIN,uts-api.itunes.apple.com"
-      ]
-    },
-    {
       "source": "Aoang-DNS",
       "format": "standard",
       "target": "Block/DNS/DNS.list",
+      "components": [
+        "Block/DNS/DNS.list"
+      ],
       "target_rules": 53,
       "exact": 53,
       "parent_suffix": 0,
@@ -2347,6 +2252,9 @@
       "source": "Aoang-OneDrive",
       "format": "standard",
       "target": "OneDrive/OneDrive.list",
+      "components": [
+        "OneDrive/OneDrive.list"
+      ],
       "target_rules": 18,
       "exact": 3,
       "parent_suffix": 1,
@@ -2358,6 +2266,9 @@
       "source": "Aoang-Other",
       "format": "standard",
       "target": "Block/Other/Other.list",
+      "components": [
+        "Block/Other/Other.list"
+      ],
       "target_rules": 1,
       "exact": 1,
       "parent_suffix": 0,
@@ -2369,6 +2280,9 @@
       "source": "Aoang-Parallels",
       "format": "standard",
       "target": "Block/Parallels/Parallels.list",
+      "components": [
+        "Block/Parallels/Parallels.list"
+      ],
       "target_rules": 12,
       "exact": 12,
       "parent_suffix": 0,
@@ -2380,6 +2294,9 @@
       "source": "Aoang-Process",
       "format": "standard",
       "target": "Process/Process/Process.list",
+      "components": [
+        "Process/Process/Process.list"
+      ],
       "target_rules": 23,
       "exact": 23,
       "parent_suffix": 0,
@@ -2391,6 +2308,9 @@
       "source": "Aoang-Teams",
       "format": "standard",
       "target": "Teams/Teams.list",
+      "components": [
+        "Teams/Teams.list"
+      ],
       "target_rules": 4,
       "exact": 4,
       "parent_suffix": 0,
@@ -2402,6 +2322,9 @@
       "source": "Aoang-Unavailable",
       "format": "standard",
       "target": "Process/Unavailable/Unavailable.list",
+      "components": [
+        "Process/Unavailable/Unavailable.list"
+      ],
       "target_rules": 1,
       "exact": 1,
       "parent_suffix": 0,
@@ -2413,6 +2336,9 @@
       "source": "Aoang-YouTube",
       "format": "standard",
       "target": "Block/YouTube/YouTube.list",
+      "components": [
+        "Block/YouTube/YouTube.list"
+      ],
       "target_rules": 15,
       "exact": 15,
       "parent_suffix": 0,
@@ -2423,8 +2349,27 @@
     {
       "source": "Apple",
       "format": "standard",
-      "target": "Apple/Apple.list",
-      "target_rules": 80,
+      "target": "Apple/Apple.list + Apple/Apple_Domain.list",
+      "components": [
+        "Apple/Apple.list",
+        "Apple/Apple_Domain.list"
+      ],
+      "target_rules": 1639,
+      "exact": 16,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Apple",
+      "format": "resolve",
+      "target": "Apple/Apple_Resolve.list + Apple/Apple_Domain.list",
+      "components": [
+        "Apple/Apple_Resolve.list",
+        "Apple/Apple_Domain.list"
+      ],
+      "target_rules": 1639,
       "exact": 16,
       "parent_suffix": 0,
       "ip_range": 0,
@@ -2435,6 +2380,9 @@
       "source": "Apple",
       "format": "all",
       "target": "Apple/Apple_All.list",
+      "components": [
+        "Apple/Apple_All.list"
+      ],
       "target_rules": 1615,
       "exact": 15,
       "parent_suffix": 1,
@@ -2446,6 +2394,9 @@
       "source": "Apple",
       "format": "all_no_resolve",
       "target": "Apple/Apple_All_No_Resolve.list",
+      "components": [
+        "Apple/Apple_All_No_Resolve.list"
+      ],
       "target_rules": 1615,
       "exact": 15,
       "parent_suffix": 1,
@@ -2454,48 +2405,12 @@
       "missing_examples": []
     },
     {
-      "source": "Apple",
-      "format": "domain_only",
-      "target": "Apple/Apple_Domain.list",
-      "target_rules": 1559,
-      "exact": 0,
-      "parent_suffix": 16,
-      "ip_range": 0,
-      "missing_count": 0,
-      "missing_examples": []
-    },
-    {
-      "source": "Apple",
-      "format": "resolve",
-      "target": "Apple/Apple_Resolve.list",
-      "target_rules": 56,
-      "exact": 0,
-      "parent_suffix": 0,
-      "ip_range": 0,
-      "missing_count": 16,
-      "missing_examples": [
-        "DOMAIN-SUFFIX,aaplimg.com",
-        "DOMAIN-SUFFIX,apple-cloudkit.com",
-        "DOMAIN-SUFFIX,apple-dns.net",
-        "DOMAIN-SUFFIX,apple-mapkit.com",
-        "DOMAIN-SUFFIX,apple.co",
-        "DOMAIN-SUFFIX,apple.com",
-        "DOMAIN-SUFFIX,apple.news",
-        "DOMAIN-SUFFIX,appsto.re",
-        "DOMAIN-SUFFIX,appstore.com",
-        "DOMAIN-SUFFIX,cdn-apple.com",
-        "DOMAIN-SUFFIX,icloud-content.com",
-        "DOMAIN-SUFFIX,icloud.com",
-        "DOMAIN-SUFFIX,itunes.com",
-        "DOMAIN-SUFFIX,me.com",
-        "DOMAIN-SUFFIX,organicfruitapps.com",
-        "DOMAIN-SUFFIX,push-apple.com.akadns.net"
-      ]
-    },
-    {
       "source": "BiliBiliIntl",
       "format": "standard",
       "target": "BiliBili/BiliBili.list",
+      "components": [
+        "BiliBili/BiliBili.list"
+      ],
       "target_rules": 134,
       "exact": 4,
       "parent_suffix": 1,
@@ -2507,6 +2422,9 @@
       "source": "BiliBiliIntl",
       "format": "resolve",
       "target": "BiliBili/BiliBili_Resolve.list",
+      "components": [
+        "BiliBili/BiliBili_Resolve.list"
+      ],
       "target_rules": 134,
       "exact": 4,
       "parent_suffix": 1,
@@ -2518,6 +2436,9 @@
       "source": "GitLab",
       "format": "standard",
       "target": "GitLab/GitLab.list",
+      "components": [
+        "GitLab/GitLab.list"
+      ],
       "target_rules": 6,
       "exact": 1,
       "parent_suffix": 0,
@@ -2529,6 +2450,9 @@
       "source": "Microsoft",
       "format": "standard",
       "target": "Microsoft/Microsoft.list",
+      "components": [
+        "Microsoft/Microsoft.list"
+      ],
       "target_rules": 674,
       "exact": 80,
       "parent_suffix": 0,
@@ -2540,6 +2464,9 @@
       "source": "NetEaseMusic",
       "format": "standard",
       "target": "NetEaseMusic/NetEaseMusic.list",
+      "components": [
+        "NetEaseMusic/NetEaseMusic.list"
+      ],
       "target_rules": 30,
       "exact": 2,
       "parent_suffix": 0,
@@ -2551,6 +2478,9 @@
       "source": "NetEaseMusic",
       "format": "resolve",
       "target": "NetEaseMusic/NetEaseMusic_Resolve.list",
+      "components": [
+        "NetEaseMusic/NetEaseMusic_Resolve.list"
+      ],
       "target_rules": 30,
       "exact": 2,
       "parent_suffix": 0,
@@ -2562,6 +2492,9 @@
       "source": "Telegram",
       "format": "standard",
       "target": "Telegram/Telegram.list",
+      "components": [
+        "Telegram/Telegram.list"
+      ],
       "target_rules": 46,
       "exact": 14,
       "parent_suffix": 0,
@@ -2573,6 +2506,9 @@
       "source": "Telegram",
       "format": "resolve",
       "target": "Telegram/Telegram_Resolve.list",
+      "components": [
+        "Telegram/Telegram_Resolve.list"
+      ],
       "target_rules": 46,
       "exact": 14,
       "parent_suffix": 0,
@@ -3718,7 +3654,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "1v2wj-ud2-nchy-26kds-08-10-2026-aa.pages.dev"
+      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3734,7 +3670,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3742,7 +3678,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "1v2wj-ud2-nchy-26kds-08-10-2026-aa.pages.dev"
+      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3758,7 +3694,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3774,7 +3710,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "paivudinho.github.io"
+      "matched_domain": "zhouxiaoka.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3782,7 +3718,7 @@
       "path": "Global/Global_All.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
+      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3790,7 +3726,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3806,7 +3742,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "paivudinho.github.io"
+      "matched_domain": "zhouxiaoka.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3870,7 +3806,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "1v2wj-ud2-nchy-26kds-08-10-2026-aa.pages.dev"
+      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3878,7 +3814,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
+      "matched_domain": "zweb-new-mail-adm.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3894,7 +3830,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3902,7 +3838,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
+      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3910,7 +3846,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3926,7 +3862,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "paivudinho.github.io"
+      "matched_domain": "zhouxiaoka.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3990,7 +3926,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "1v2wj-ud2-nchy-26kds-08-10-2026-aa.pages.dev"
+      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3998,7 +3934,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
+      "matched_domain": "zweb-new-mail-adm.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4014,7 +3950,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4054,7 +3990,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4062,7 +3998,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4070,7 +4006,7 @@
       "path": "Microsoft/Microsoft.list",
       "line": 86,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
+      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -4150,7 +4086,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "1v2wj-ud2-nchy-26kds-08-10-2026-aa.pages.dev"
+      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4158,7 +4094,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
+      "matched_domain": "zweb-new-mail-adm.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4174,7 +4110,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4230,7 +4166,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "1v2wj-ud2-nchy-26kds-08-10-2026-aa.pages.dev"
+      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4238,7 +4174,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
+      "matched_domain": "zweb-new-mail-adm.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4254,7 +4190,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4294,7 +4230,7 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
+      "matched_domain": "zweb-new-mail-adm.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {

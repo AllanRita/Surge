@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 12:59 UTC
+Generated: 2026-11-27 13:00 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -9,7 +9,7 @@ Scope: existing rule files and cached source metadata only. No new rule authors 
 - Rule files: **822**
 - App/category folders: **657**
 - Top-level folders: **634**
-- Rule data size: **116,039,933 bytes**
+- Rule data size: **116,040,623 bytes**
 - Folders with multiple files/formats: **107**
 - Exact byte-identical file groups: **2**
 - Identical rule-payload groups (headers ignored): **3**
@@ -138,7 +138,7 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 
 | Cached source | Target | Source rules | Exact | Parent suffix | IP covered | Missing |
 |---|---|---:|---:|---:|---:|---:|
-| Aoang-Apple | Apple/Apple.list | 69 | 12 | 57 | 0 | 0 |
+| Aoang-Apple | Apple/Apple.list + Apple/Apple_Domain.list | 69 | 12 | 57 | 0 | 0 |
 | Aoang-DNS | Block/DNS/DNS.list | 53 | 53 | 0 | 0 | 0 |
 | Aoang-OneDrive | OneDrive/OneDrive.list | 4 | 3 | 1 | 0 | 0 |
 | Aoang-Other | Block/Other/Other.list | 1 | 1 | 0 | 0 | 0 |
@@ -147,7 +147,7 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 | Aoang-Teams | Teams/Teams.list | 4 | 4 | 0 | 0 | 0 |
 | Aoang-Unavailable | Process/Unavailable/Unavailable.list | 1 | 1 | 0 | 0 | 0 |
 | Aoang-YouTube | Block/YouTube/YouTube.list | 15 | 15 | 0 | 0 | 0 |
-| Apple | Apple/Apple.list | 16 | 16 | 0 | 0 | 0 |
+| Apple | Apple/Apple.list + Apple/Apple_Domain.list | 16 | 16 | 0 | 0 | 0 |
 | BiliBiliIntl | BiliBili/BiliBili.list | 5 | 4 | 1 | 0 | 0 |
 | GitLab | GitLab/GitLab.list | 1 | 1 | 0 | 0 | 0 |
 | Microsoft | Microsoft/Microsoft.list | 80 | 80 | 0 | 0 | 0 |
@@ -160,11 +160,10 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 
 | Cached source | Format | Target | Source rules | Missing |
 |---|---|---|---:|---:|
-| Aoang-Apple | standard | Apple/Apple.list | 69 | 0 |
+| Aoang-Apple | standard | Apple/Apple.list + Apple/Apple_Domain.list | 69 | 0 |
+| Aoang-Apple | resolve | Apple/Apple_Resolve.list + Apple/Apple_Domain.list | 69 | 0 |
 | Aoang-Apple | all | Apple/Apple_All.list | 69 | 0 |
 | Aoang-Apple | all_no_resolve | Apple/Apple_All_No_Resolve.list | 69 | 0 |
-| Aoang-Apple | domain_only | Apple/Apple_Domain.list | 69 | 0 |
-| Aoang-Apple | resolve | Apple/Apple_Resolve.list | 69 | 69 |
 | Aoang-DNS | standard | Block/DNS/DNS.list | 53 | 0 |
 | Aoang-OneDrive | standard | OneDrive/OneDrive.list | 4 | 0 |
 | Aoang-Other | standard | Block/Other/Other.list | 1 | 0 |
@@ -173,11 +172,10 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 | Aoang-Teams | standard | Teams/Teams.list | 4 | 0 |
 | Aoang-Unavailable | standard | Process/Unavailable/Unavailable.list | 1 | 0 |
 | Aoang-YouTube | standard | Block/YouTube/YouTube.list | 15 | 0 |
-| Apple | standard | Apple/Apple.list | 16 | 0 |
+| Apple | standard | Apple/Apple.list + Apple/Apple_Domain.list | 16 | 0 |
+| Apple | resolve | Apple/Apple_Resolve.list + Apple/Apple_Domain.list | 16 | 0 |
 | Apple | all | Apple/Apple_All.list | 16 | 0 |
 | Apple | all_no_resolve | Apple/Apple_All_No_Resolve.list | 16 | 0 |
-| Apple | domain_only | Apple/Apple_Domain.list | 16 | 0 |
-| Apple | resolve | Apple/Apple_Resolve.list | 16 | 16 |
 | BiliBiliIntl | standard | BiliBili/BiliBili.list | 5 | 0 |
 | BiliBiliIntl | resolve | BiliBili/BiliBili_Resolve.list | 5 | 0 |
 | GitLab | standard | GitLab/GitLab.list | 1 | 0 |
