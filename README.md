@@ -23,6 +23,6 @@ This repository keeps the shared rule library separate from personal additions.
 - Existing cached author snapshots may be compared, but no claim is made that every App has been compared against every possible author.
 - Personal rule files are not rewritten by upstream consolidation.
 - App consolidation is restricted to approved same-App/regional aliases and is guarded by the exact deletion manifest; deleted folders cannot be used as canonical or alias sources.
-- The 14 exact bank/payment folders previously deleted by explicit instruction remain tombstoned and are never restored automatically. No additional bank/payment, finance, trading, crypto, or securities folders are automatically deleted; matching domains in other rule sets remain untouched.
+- The 14 dedicated bank/payment App folders are currently present in `Rule/Upstream`. The exact deletion manifest currently contains zero entries. No category-based keep/delete exemption exists; every App follows the same evidence-based security policy. Only a future exact user-directed deletion may create a tombstone. Matching domains in other rule sets are not removed by category.
 - Shared CDN/hosting suffixes and threat-feed matches are reviewed manually; they are never deleted solely because of a feed match.
 - Regional country/area selection belongs in the corresponding Surge policy group, not in separate regional App folders.
