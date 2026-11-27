@@ -36,6 +36,14 @@ SOURCE_TARGETS={
 }
 KNOWN_FINANCIAL={"alipay","boc","bocom","ccb","ceb","cgb","cmb","icbc","psbc","paypal","stripe","unionpay","visa","pingan","paypay","wechatpay","applepay","googlepay","samsungpay","mastercard","amex","americanexpress","discover","jcb","paytm","phonepe","cashapp","venmo","payoneer","revolut","wise","adyen","worldpay","klarna","afterpay","affirm","square","paddle","checkout","wallet"}
 FINANCIAL_RE=re.compile(r"(?i)(?:[a-z0-9_-]+\.)*(?:paypal\.com|alipay\.com|stripe\.com|unionpay\.com|visa\.com|icbc\.com\.cn|boc\.cn|paypay\.ne\.jp)$")
+FINANCIAL_APP_REVIEW_CANDIDATES={
+ "Binance":"crypto exchange",
+ "OKX":"crypto exchange",
+ "EastMoney":"securities brokerage / investment platform",
+ "TigerFintech":"securities brokerage / investment platform",
+ "Crypto":"cryptocurrency category list (not a single App)",
+ "Cryptocurrency":"cryptocurrency category list (not a single App)",
+}
 SHARED_HOSTING_SUFFIXES={
  "cloudfront.net":"shared CDN / Amazon CloudFront",
  "amazonaws.com":"shared cloud infrastructure / AWS",
@@ -274,6 +282,11 @@ def main():
   norm=re.sub(r"[^a-z0-9]+","",folder.split("/")[-1].lower())
   if norm in KNOWN_FINANCIAL or any(x in norm for x in ("alipay","paypal","stripe","unionpay","visa","mastercard","paypay","wechatpay","applepay","googlepay","samsungpay","bank","paytm","phonepe","cashapp","venmo","payoneer","revolut","klarna","afterpay","affirm","adyen","worldpay","americanexpress","jcb")):
    financial_folders.append(folder)
+ finance_review=[]
+ for folder,members in sorted(folders.items()):
+  name=folder.split("/")[-1]
+  if name in FINANCIAL_APP_REVIEW_CANDIDATES:
+   finance_review.append({"folder":folder,"classification":FINANCIAL_APP_REVIEW_CANDIDATES[name],"rule_file_count":len(members),"rule_occurrences":sum(len(rules(p)) for p in members),"files":[str(p.relative_to(ROOT)) for p in sorted(members)],"status":"review_only_not_removed"})
  rawdups=[x for x in rawhash.values() if len(x)>1]; payloaddups=[x for x in payloadhash.values() if len(x)>1]
  multi=[]
  for folder,members in sorted(folders.items()):
@@ -282,8 +295,8 @@ def main():
  data={
   "generated_utc":datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
   "scope":"Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
-  "summary":{"rule_files":len(files),"app_or_category_folders":len(folders),"top_level_folders":len({p.relative_to(ROOT).parts[0] for p in files}),"total_rule_bytes":sum(p.stat().st_size for p in files),"multi_file_folders":len(multi),"exact_raw_duplicate_file_groups":len(rawdups),"same_rule_payload_file_groups":len(payloaddups),"duplicate_rule_lines":findings["duplicate_rule_lines"],"domain_rule_count":domain_count,"personal_files_seen_not_modified":len(personal),"bank_payment_app_folders_found":len(financial_folders),"shared_hosting_suffixes_found":len(shared_hosting_hits),"shared_hosting_suffix_rule_occurrences":sum(x["count"] for x in shared_hosting_hits.values())},
-  "bank_payment_app_folders":financial_folders,"personal_files_seen_not_modified":personal,"multi_format_folders":multi,
+  "summary":{"rule_files":len(files),"app_or_category_folders":len(folders),"top_level_folders":len({p.relative_to(ROOT).parts[0] for p in files}),"total_rule_bytes":sum(p.stat().st_size for p in files),"multi_file_folders":len(multi),"exact_raw_duplicate_file_groups":len(rawdups),"same_rule_payload_file_groups":len(payloaddups),"duplicate_rule_lines":findings["duplicate_rule_lines"],"domain_rule_count":domain_count,"personal_files_seen_not_modified":len(personal),"bank_payment_app_folders_found":len(financial_folders),"finance_app_review_candidates":len(finance_review),"cached_author_source_count":len(coverage),"cached_author_source_rule_count":sum(x.get("source_rules",0) for x in coverage),"cached_author_source_missing_count":sum(x.get("missing_count",0) for x in coverage),"shared_hosting_suffixes_found":len(shared_hosting_hits),"shared_hosting_suffix_rule_occurrences":sum(x["count"] for x in shared_hosting_hits.values())},
+  "bank_payment_app_folders":financial_folders,"finance_app_review_candidates":finance_review,"personal_files_seen_not_modified":personal,"multi_format_folders":multi,
   "exact_raw_duplicate_file_groups":rawdups,"same_rule_payload_file_groups":payloaddups,"alias_candidates":aliases,
   "cached_source_coverage":coverage,"static_security_findings":dict(findings),"static_security_examples":{k:v[:50] for k,v in examples.items()},"financial_domain_matches_not_deleted":financial[:500],
   "shared_hosting_suffix_matches":[{"suffix":suffix,"classification":SHARED_HOSTING_SUFFIXES[suffix],"rule_occurrences":hit["count"],"folders":sorted(hit["folders"]),"files":sorted(hit["paths"]),"examples":hit["examples"]} for suffix,hit in sorted(shared_hosting_hits.items())],
@@ -293,6 +306,9 @@ def main():
  (ROOT/"CLEANUP-INVENTORY.json").write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
  md=["# Surge rule cleanup inventory and security audit","",f"Generated: {data['generated_utc']}","","Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.","","## Inventory","",f"- Rule files: **{len(files)}**",f"- App/category folders: **{len(folders)}**",f"- Top-level folders: **{data['summary']['top_level_folders']}**",f"- Rule data size: **{data['summary']['total_rule_bytes']:,} bytes**",f"- Folders with multiple files/formats: **{len(multi)}**",f"- Exact byte-identical file groups: **{len(rawdups)}**",f"- Identical rule-payload groups (headers ignored): **{len(payloaddups)}**",f"- Duplicate rule lines inside files: **{findings['duplicate_rule_lines']}**",f"- Personal files inspected but not modified: **{len(personal)}**","","## Bank/payment App folders","","This classifies dedicated App folders by folder name only. Financial-service domains inside other App or aggregate lists are not removed."]
  md += [f"- {x}" for x in financial_folders] if financial_folders else ["- No dedicated bank/payment App folders found under Rule/Upstream. Rule/Personal/PayPay.list remains untouched."]
+ md += ["","## Other finance/trading/crypto folders — review only","","These folders are not automatically classified as bank/payment Apps. They are listed for manual classification only; no rule files are deleted or modified.","","| Folder | Classification | Rule files | Rule entries | Status |","|---|---|---:|---:|---|"]
+ for x in finance_review: md.append(f"| {x['folder']} | {x['classification']} | {x['rule_file_count']} | {x['rule_occurrences']} | Review only |")
+ if not finance_review: md.append("| — | No additional finance candidates | 0 | 0 | — |")
  md += ["","## Same-App / regional alias candidates",""]
  for g in aliases:
   md += [f"### {g['canonical']}",f"- Candidate folders: {', '.join(g['aliases'])}",f"- Present aliases: {', '.join(g['existing_aliases']) if g['existing_aliases'] else 'none'}",f"- Rationale: {g['reason']}"]
@@ -303,7 +319,7 @@ def main():
  for x in data["shared_hosting_suffix_matches"]:
   md.append(f"| {x['suffix']} | {x['classification']} | {x['rule_occurrences']} | {', '.join(x['folders'])} |")
  if not data["shared_hosting_suffix_matches"]: md.append("| — | No curated suffix matches | 0 | — |")
- md += ["","## Cached author-source coverage","","| Cached source | Target | Source rules | Exact | Parent suffix | IP covered | Missing |","|---|---|---:|---:|---:|---:|---:|"]
+ md += ["","## Cached author-source coverage","","- Cached source snapshots compared: **"+str(len(coverage))+"**","- Source rule entries checked: **"+str(sum(x.get('source_rules',0) for x in coverage))+"**","- Missing source rules: **"+str(sum(x.get('missing_count',0) for x in coverage))+"**","- Scope limitation: only cached author snapshots are compared. This does not establish that every App has been compared against every author. No new authors or rule lists were fetched.","","| Cached source | Target | Source rules | Exact | Parent suffix | IP covered | Missing |","|---|---|---:|---:|---:|---:|---:|"]
  for r in coverage:
   if r.get("error"): md.append(f"| {r['source']} | {r['target']} | — | — | — | — | {r['error']} |")
   else:
