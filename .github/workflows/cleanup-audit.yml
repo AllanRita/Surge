@@ -2,19 +2,6 @@ name: Surge Cleanup Inventory and Security Audit
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/scripts/cleanup_inventory.py'
-      - '.github/scripts/enforce_explicit_exclusions.py'
-      - '.github/explicit-rule-exclusions.json'
-      - '.github/scripts/remove_invalid_public_tld_rules.py'
-      - '.github/workflows/cleanup-audit.yml'
-      - 'Rule/Upstream/**/*.list'
-      - 'Rule/Upstream/**/README.md'
-      - 'Rule/Upstream/SourceMetadata/**'
-      - 'Rule/CONSOLIDATION-PLAN.json'
-      - 'Rule/CONSOLIDATED-INDEX.md'
 
 permissions:
   contents: write
@@ -66,9 +53,6 @@ jobs:
             echo "::warning::URLHAUS_AUTH_KEY is not configured; URLhaus coverage will be reported as incomplete."
             echo "URLhaus skipped: repository Actions secret URLHAUS_AUTH_KEY is not configured." >> "$GITHUB_STEP_SUMMARY"
           fi
-      - name: Remove verified non-IANA root suffix
-        run: python3 .github/scripts/remove_invalid_public_tld_rules.py --iana-tlds "$RUNNER_TEMP/iana-tlds.txt"
-
       - name: Re-enforce permanent exclusions before inventory
         run: python3 .github/scripts/enforce_explicit_exclusions.py
 
@@ -93,7 +77,6 @@ jobs:
 
             # A concurrent update or old snapshot must never resurrect a tombstoned folder.
             python3 .github/scripts/enforce_explicit_exclusions.py
-            python3 .github/scripts/remove_invalid_public_tld_rules.py --iana-tlds "$RUNNER_TEMP/iana-tlds.txt"
             python3 .github/scripts/cleanup_inventory.py \
               --iana-tlds "$RUNNER_TEMP/iana-tlds.txt" \
               --urlhaus "$RUNNER_TEMP/urlhaus-hostfile.txt" \
