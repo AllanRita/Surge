@@ -509,6 +509,42 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main
+          python3 - <<'PY'
+          import os, json, hashlib, shutil, subprocess
+          from pathlib import Path
+          base=os.environ['GITHUB_SHA']
+          root=Path(os.environ['RUNNER_TEMP'])/'validated-rules'
+          src=root/'Rule/Upstream'
+          dst=Path('Rule/Upstream')
+          expected=json.loads((root/'rule-manifest.json').read_text())
+          changed=subprocess.check_output(['git','diff','--name-only',base+'..origin/main'],text=True).splitlines()
+          allowed={
+              'Rule/Upstream/AUDIT-REPORT.md',
+              'Rule/Upstream/APP-OVERLAP-REPORT.md',
+              'Rule/Upstream/SOURCE-MERGE-REPORT.md',
+              'Rule/Upstream/CANONICAL-MERGE-REPORT.md',
+          }
+          unexpected=[p for p in changed if p not in allowed]
+          if unexpected:
+              raise SystemExit('Main changed outside generated reports during validation; refusing stale snapshot: '+', '.join(unexpected[:20]))
+          if any(p.is_symlink() for p in src.rglob('*')):
+              raise SystemExit('Unsafe validated artifact')
+          actual={str(p.relative_to(src)):hashlib.sha256(p.read_bytes()).hexdigest() for p in src.rglob('*') if p.is_file()}
+          if not actual or actual!=expected:
+              raise SystemExit('Validated artifact integrity failure')
+          git_reset=subprocess.run(['git','reset','--hard','origin/main'],text=True,capture_output=True)
+          if git_reset.returncode:
+              raise SystemExit(git_reset.stderr)
+          if Path('Rule').is_symlink() or dst.is_symlink() or any(p.is_symlink() for p in dst.rglob('*')):
+              raise SystemExit('Unsafe destination')
+          if any(str(p.relative_to(dst)) not in actual for p in dst.rglob('*') if p.is_file()):
+              raise SystemExit('Unexpected deletion from current main')
+          shutil.copytree(src,dst,dirs_exist_ok=True)
+          installed={str(p.relative_to(dst)):hashlib.sha256(p.read_bytes()).hexdigest() for p in dst.rglob('*') if p.is_file()}
+          if installed!=expected:
+              raise SystemExit('Installed snapshot does not match validated manifest')
+          PY
           git add -- Rule/Upstream
           git diff --cached --name-only -z | python3 -c 'import sys; assert all(p.startswith(b"Rule/Upstream/") for p in sys.stdin.buffer.read().split(b"\x00") if p)'
           if git diff --cached --quiet; then
@@ -518,6 +554,4 @@ jobs:
           git commit -m 'Sync Blackmatrix7 Surge rules; retain removed upstream files'
           auth=$(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)
           echo "::add-mask::$auth"
-          git fetch origin main
-          git rebase origin/main
           git -c http.https://github.com/.extraheader="AUTHORIZATION: basic $auth" push origin HEAD:main
