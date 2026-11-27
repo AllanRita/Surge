@@ -236,6 +236,7 @@ jobs:
                       broad_matches.append((path,num,line.strip()))
                       if value.lower() in root_tlds:
                           active_tld_matches.append((path,num,line.strip()))
+                          flag('active-root-tld-suffix',path,num)
                       else:
                           non_current_tld_matches.append((path,num,line.strip()))
                           flag('stale-root-tld',path,num)
