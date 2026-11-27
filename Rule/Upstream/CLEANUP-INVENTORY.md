@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 12:51 UTC
+Generated: 2026-11-27 12:57 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -166,6 +166,9 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 | Cached source | Format | Target | Source rules | Missing |
 |---|---|---|---:|---:|
 | Aoang-Apple | standard | Apple/Apple.list | 69 | 0 |
+| Aoang-Apple | all | Apple/Apple_All.list | 69 | 0 |
+| Aoang-Apple | all_no_resolve | Apple/Apple_All_No_Resolve.list | 69 | 0 |
+| Aoang-Apple | domain_only | Apple/Apple_Domain.list | 69 | 69 |
 | Aoang-Apple | resolve | Apple/Apple_Resolve.list | 69 | 69 |
 | Aoang-DNS | standard | Block/DNS/DNS.list | 53 | 0 |
 | Aoang-OneDrive | standard | OneDrive/OneDrive.list | 4 | 0 |
@@ -176,6 +179,9 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 | Aoang-Unavailable | standard | Process/Unavailable/Unavailable.list | 1 | 0 |
 | Aoang-YouTube | standard | Block/YouTube/YouTube.list | 15 | 0 |
 | Apple | standard | Apple/Apple.list | 16 | 0 |
+| Apple | all | Apple/Apple_All.list | 16 | 0 |
+| Apple | all_no_resolve | Apple/Apple_All_No_Resolve.list | 16 | 0 |
+| Apple | domain_only | Apple/Apple_Domain.list | 16 | 16 |
 | Apple | resolve | Apple/Apple_Resolve.list | 16 | 16 |
 | BiliBiliIntl | standard | BiliBili/BiliBili.list | 5 | 0 |
 | BiliBiliIntl | resolve | BiliBili/BiliBili_Resolve.list | 5 | 0 |
