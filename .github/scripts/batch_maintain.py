@@ -60,6 +60,7 @@ def main():
  ap.add_argument("--openphish")
  ap.add_argument("--urlhaus")
  ap.add_argument("--output-dir",default="batch-output")
+ ap.add_argument("--backup-dir",default="batch-output/backups")
  a=ap.parse_args()
  if a.batch<1 or a.batch_size!=100: raise SystemExit("Batch size must be 100")
  if ROOT.is_symlink() or not ROOT.is_dir(): raise SystemExit("Unsafe or missing upstream root")
