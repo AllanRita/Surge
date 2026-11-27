@@ -100,7 +100,7 @@ def render_markdown(report):
     lines = [
         "# Surge paired-format semantic parity audit", "",
         f"Generated: {report['generated_utc']}", "",
-        "Read-only comparison. Only the no-resolve option is ignored for rule identity; all other rule types, operands, and options remain significant. Differences are review findings, not automatic repair instructions.", "",
+        "Read-only comparison. Standard/Resolve and All/All_No_Resolve pairs ignore only the no-resolve option. Standard/No_IPv6 and Resolve/No_IPv6_Resolve pairs additionally omit IPv6 rules from the IPv6-capable side. All other rule types, operands, and options remain significant. Differences are review findings, not automatic repair instructions.", "",
         f"- Upstream rule files scanned: {s['rule_files_scanned']}",
         f"- Paired-format comparisons: {s['pairs_compared']}",
         f"- Pairs with content differences: {s['pairs_needing_review']}",
@@ -131,7 +131,7 @@ def render_markdown(report):
                     lines.append(f"  - {example['rule']} (count difference {example['count_difference']})")
         lines.append("")
     lines.extend(["## Interpretation", "",
-        "- MATCH means both files contain the same normalized rule multiset after ignoring only no-resolve; it does not prove correctness or completeness.",
+        "- MATCH means both files contain the same normalized rule multiset under the documented comparison: no-resolve differences are ignored, and IPv6 entries are omitted only when comparing to the corresponding No_IPv6 format; it does not prove correctness or completeness.",
         "- REVIEW means one format has rules not present in its paired format. Do not copy or delete entries automatically; first confirm whether the format has an intentional scope difference.",
         "- Resolution-option differences are reported separately and are expected where formats intentionally vary DNS resolution behavior.",
         "- Aggregate lists, domain-only lists, and unrelated App folders are not compared as if interchangeable.", ""])
