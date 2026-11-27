@@ -24,6 +24,8 @@ PAIRINGS = (
     ("all", "all_no_resolve", "All vs All_No_Resolve"),
     ("no_ipv6", "no_ipv6_resolve", "No_IPv6 vs No_IPv6_Resolve"),
     ("standard", "no_resolve", "Standard vs No_Resolve"),
+    ("standard", "no_ipv6", "Standard vs No_IPv6"),
+    ("resolve", "no_ipv6_resolve", "Resolve vs No_IPv6_Resolve"),
 )
 
 def classify(path):
@@ -57,9 +59,13 @@ def load_file(path):
             rules.append(parsed)
     return rules
 
-def compare_files(left_path, right_path, label):
+def compare_files(left_path, right_path, label, ignore_ipv6_left=False, ignore_ipv6_right=False):
     left = load_file(left_path)
     right = load_file(right_path)
+    if ignore_ipv6_left:
+        left = [rule for rule in left if rule[0][0] != "IP-CIDR6"]
+    if ignore_ipv6_right:
+        right = [rule for rule in right if rule[0][0] != "IP-CIDR6"]
     left_counts = Counter(rule[0] for rule in left)
     right_counts = Counter(rule[0] for rule in right)
     left_modes, right_modes = {}, {}
@@ -163,7 +169,11 @@ def main():
     for (folder, stem), formats in sorted(groups.items(), key=lambda item: (str(item[0][0]).casefold(), item[0][1].casefold())):
         for left_fmt, right_fmt, label in PAIRINGS:
             if left_fmt in formats and right_fmt in formats:
-                pairs.append(compare_files(formats[left_fmt], formats[right_fmt], label))
+                ignore_left_ipv6 = label in {"Standard vs No_IPv6", "Resolve vs No_IPv6_Resolve"}
+                pairs.append(compare_files(
+                    formats[left_fmt], formats[right_fmt], label,
+                    ignore_ipv6_left=ignore_left_ipv6
+                ))
     summary = {
         "rule_files_scanned": files_scanned, "pairs_compared": len(pairs),
         "pairs_needing_review": sum(1 for item in pairs if item["status"] == "REVIEW"),
