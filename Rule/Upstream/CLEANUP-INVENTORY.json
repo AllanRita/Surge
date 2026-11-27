@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 11:44 UTC",
+  "generated_utc": "2026-11-27 11:45 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 828,
@@ -2151,7 +2151,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "0jxz6-z7h-y3yu-wtobu-07-10-2026-hh.pages.dev"
+      "matched_domain": "5ywlo-sem-pief-p3s1m-21-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2159,7 +2159,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2167,7 +2167,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "0jxz6-z7h-y3yu-wtobu-07-10-2026-hh.pages.dev"
+      "matched_domain": "5ywlo-sem-pief-p3s1m-21-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2175,7 +2175,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2191,7 +2191,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "taojin1122.github.io"
+      "matched_domain": "sugosh1.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2199,7 +2199,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.lazada0277.blogspot.com"
+      "matched_domain": "www.infoundianshopee98.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2215,7 +2215,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "taojin1122.github.io"
+      "matched_domain": "sugosh1.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2239,7 +2239,7 @@
       "path": "Global/Global_All.list",
       "line": 29921,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "yeninesilhizli.duckdns.org"
+      "matched_domain": "www.yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2263,7 +2263,7 @@
       "path": "Global/Global_All.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "astonishing-dolphin-805ffe.netlify.app"
+      "matched_domain": "netflis-gpt.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2271,7 +2271,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "0jxz6-z7h-y3yu-wtobu-07-10-2026-hh.pages.dev"
+      "matched_domain": "5ywlo-sem-pief-p3s1m-21-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2279,7 +2279,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.tlktok.vercel.app"
+      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2287,7 +2287,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2295,7 +2295,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.lazada0277.blogspot.com"
+      "matched_domain": "www.infoundianshopee98.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2311,7 +2311,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "taojin1122.github.io"
+      "matched_domain": "sugosh1.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2335,7 +2335,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 29921,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "yeninesilhizli.duckdns.org"
+      "matched_domain": "www.yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2359,7 +2359,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "astonishing-dolphin-805ffe.netlify.app"
+      "matched_domain": "netflis-gpt.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2367,7 +2367,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "0jxz6-z7h-y3yu-wtobu-07-10-2026-hh.pages.dev"
+      "matched_domain": "5ywlo-sem-pief-p3s1m-21-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2375,7 +2375,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.tlktok.vercel.app"
+      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2383,7 +2383,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2407,7 +2407,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.lazada0277.blogspot.com"
+      "matched_domain": "www.infoundianshopee98.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2423,7 +2423,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.lazada0277.blogspot.com"
+      "matched_domain": "www.infoundianshopee98.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2439,7 +2439,7 @@
       "path": "NaSDDNS/NaSDDNS.list",
       "line": 23,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "yeninesilhizli.duckdns.org"
+      "matched_domain": "www.yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2447,7 +2447,7 @@
       "path": "NaSDDNS/NaSDDNS_Resolve.list",
       "line": 23,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "yeninesilhizli.duckdns.org"
+      "matched_domain": "www.yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2463,7 +2463,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 1615,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "yeninesilhizli.duckdns.org"
+      "matched_domain": "www.yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2487,7 +2487,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "astonishing-dolphin-805ffe.netlify.app"
+      "matched_domain": "netflis-gpt.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2495,7 +2495,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "0jxz6-z7h-y3yu-wtobu-07-10-2026-hh.pages.dev"
+      "matched_domain": "5ywlo-sem-pief-p3s1m-21-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2503,7 +2503,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.tlktok.vercel.app"
+      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2511,7 +2511,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2527,7 +2527,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 1615,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "yeninesilhizli.duckdns.org"
+      "matched_domain": "www.yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2551,7 +2551,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "astonishing-dolphin-805ffe.netlify.app"
+      "matched_domain": "netflis-gpt.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2559,7 +2559,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "0jxz6-z7h-y3yu-wtobu-07-10-2026-hh.pages.dev"
+      "matched_domain": "5ywlo-sem-pief-p3s1m-21-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2567,7 +2567,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.tlktok.vercel.app"
+      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2575,7 +2575,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
+      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2615,7 +2615,7 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.tlktok.vercel.app"
+      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {
