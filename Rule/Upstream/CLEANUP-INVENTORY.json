@@ -1,0 +1,3381 @@
+{
+  "generated_utc": "2026-11-27 10:42 UTC",
+  "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
+  "summary": {
+    "rule_files": 853,
+    "app_or_category_folders": 682,
+    "top_level_folders": 657,
+    "total_rule_bytes": 116070619,
+    "multi_file_folders": 113,
+    "exact_raw_duplicate_file_groups": 2,
+    "same_rule_payload_file_groups": 11,
+    "duplicate_rule_lines": 0,
+    "domain_rule_count": 2691377,
+    "personal_files_seen_not_modified": 3,
+    "bank_payment_app_folders_found": 1
+  },
+  "bank_payment_app_folders": [
+    "DiscoveryPlus"
+  ],
+  "personal_files_seen_not_modified": [
+    "Rule/Personal/Grok.list",
+    "Rule/Personal/PayPay.list",
+    "Rule/Personal/Target.list"
+  ],
+  "multi_format_folders": [
+    {
+      "folder": "AdGuardSDNSFilter",
+      "file_count": 3,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only"
+      ],
+      "files": [
+        "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list",
+        "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list",
+        "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list"
+      ]
+    },
+    {
+      "folder": "AdobeActivation",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "AdobeActivation/AdobeActivation.list",
+        "AdobeActivation/AdobeActivation_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Advertising",
+      "file_count": 5,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Advertising/Advertising.list",
+        "Advertising/Advertising_All.list",
+        "Advertising/Advertising_All_No_Resolve.list",
+        "Advertising/Advertising_Domain.list",
+        "Advertising/Advertising_Resolve.list"
+      ]
+    },
+    {
+      "folder": "AdvertisingLite",
+      "file_count": 5,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "AdvertisingLite/AdvertisingLite.list",
+        "AdvertisingLite/AdvertisingLite_All.list",
+        "AdvertisingLite/AdvertisingLite_All_No_Resolve.list",
+        "AdvertisingLite/AdvertisingLite_Domain.list",
+        "AdvertisingLite/AdvertisingLite_Resolve.list"
+      ]
+    },
+    {
+      "folder": "AdvertisingTest",
+      "file_count": 5,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "AdvertisingTest/AdvertisingTest.list",
+        "AdvertisingTest/AdvertisingTest_All.list",
+        "AdvertisingTest/AdvertisingTest_All_No_Resolve.list",
+        "AdvertisingTest/AdvertisingTest_Domain.list",
+        "AdvertisingTest/AdvertisingTest_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Alibaba",
+      "file_count": 5,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Alibaba/Alibaba.list",
+        "Alibaba/Alibaba_All.list",
+        "Alibaba/Alibaba_All_No_Resolve.list",
+        "Alibaba/Alibaba_Domain.list",
+        "Alibaba/Alibaba_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Amazon",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Amazon/Amazon.list",
+        "Amazon/Amazon_Resolve.list"
+      ]
+    },
+    {
+      "folder": "AmazonIP",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "AmazonIP/AmazonIP.list",
+        "AmazonIP/AmazonIP_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Apple",
+      "file_count": 5,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Apple/Apple.list",
+        "Apple/Apple_All.list",
+        "Apple/Apple_All_No_Resolve.list",
+        "Apple/Apple_Domain.list",
+        "Apple/Apple_Resolve.list"
+      ]
+    },
+    {
+      "folder": "AsianMedia",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "AsianMedia/AsianMedia.list",
+        "AsianMedia/AsianMedia_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Assassin'sCreed/Assassin'sCreed-Odyssey",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list",
+        "Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Assassin'sCreed/Assassin'sCreed-Origins",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list",
+        "Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list"
+      ]
+    },
+    {
+      "folder": "BiliBili",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "BiliBili/BiliBili.list",
+        "BiliBili/BiliBili_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Blizzard",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Blizzard/Blizzard.list",
+        "Blizzard/Blizzard_Resolve.list"
+      ]
+    },
+    {
+      "folder": "BlockHttpDNS",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "BlockHttpDNS/BlockHttpDNS.list",
+        "BlockHttpDNS/BlockHttpDNS_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ByteDance",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ByteDance/ByteDance.list",
+        "ByteDance/ByteDance_Resolve.list"
+      ]
+    },
+    {
+      "folder": "China",
+      "file_count": 5,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "China/China.list",
+        "China/China_All.list",
+        "China/China_All_No_Resolve.list",
+        "China/China_Domain.list",
+        "China/China_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ChinaASN",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ChinaASN/ChinaASN.list",
+        "ChinaASN/ChinaASN_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ChinaDNS",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ChinaDNS/ChinaDNS.list",
+        "ChinaDNS/ChinaDNS_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ChinaIPs",
+      "file_count": 4,
+      "formats": [
+        "no_ipv6",
+        "no_ipv6_resolve",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ChinaIPs/ChinaIPs.list",
+        "ChinaIPs/ChinaIPs_No_IPv6.list",
+        "ChinaIPs/ChinaIPs_No_IPv6_Resolve.list",
+        "ChinaIPs/ChinaIPs_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ChinaIPs/ChinaIPsTest",
+      "file_count": 4,
+      "formats": [
+        "no_ipv6",
+        "no_ipv6_resolve",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ChinaIPs/ChinaIPsTest/ChinaIPsTest.list",
+        "ChinaIPs/ChinaIPsTest/ChinaIPsTest_No_IPv6.list",
+        "ChinaIPs/ChinaIPsTest/ChinaIPsTest_No_IPv6_Resolve.list",
+        "ChinaIPs/ChinaIPsTest/ChinaIPsTest_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ChinaIPsBGP",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ChinaIPsBGP/ChinaIPsBGP.list",
+        "ChinaIPsBGP/ChinaIPsBGP_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ChinaMax",
+      "file_count": 7,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "no_ipv6",
+        "no_ipv6_resolve",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_Domain.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ChinaMaxNoIP",
+      "file_count": 4,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "standard"
+      ],
+      "files": [
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_Domain.list"
+      ]
+    },
+    {
+      "folder": "ChinaMaxNoMedia",
+      "file_count": 5,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Domain.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ChinaMedia",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ChinaMedia/ChinaMedia.list",
+        "ChinaMedia/ChinaMedia_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ChinaMobile",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ChinaMobile/ChinaMobile.list",
+        "ChinaMobile/ChinaMobile_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ChinaNoMedia",
+      "file_count": 5,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ChinaNoMedia/ChinaNoMedia.list",
+        "ChinaNoMedia/ChinaNoMedia_All.list",
+        "ChinaNoMedia/ChinaNoMedia_All_No_Resolve.list",
+        "ChinaNoMedia/ChinaNoMedia_Domain.list",
+        "ChinaNoMedia/ChinaNoMedia_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ChinaTest",
+      "file_count": 5,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Domain.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ChinaUnicom",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ChinaUnicom/ChinaUnicom.list",
+        "ChinaUnicom/ChinaUnicom_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Cloud/360Cloud",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Cloud/360Cloud/360Cloud.list",
+        "Cloud/360Cloud/360Cloud_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Cloud/AkamaiCloud",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Cloud/AkamaiCloud/AkamaiCloud.list",
+        "Cloud/AkamaiCloud/AkamaiCloud_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Cloud/AmazonCloud",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Cloud/AmazonCloud/AmazonCloud.list",
+        "Cloud/AmazonCloud/AmazonCloud_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Cloud/BaiduCloud",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Cloud/BaiduCloud/BaiduCloud.list",
+        "Cloud/BaiduCloud/BaiduCloud_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Cloud/CloudCN",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Cloud/CloudCN/CloudCN.list",
+        "Cloud/CloudCN/CloudCN_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Cloud/CloudGlobal",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Cloud/CloudGlobal/CloudGlobal.list",
+        "Cloud/CloudGlobal/CloudGlobal_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Cloud/HiNet",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Cloud/HiNet/HiNet.list",
+        "Cloud/HiNet/HiNet_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Cloud/HuaweiCloud",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Cloud/HuaweiCloud/HuaweiCloud.list",
+        "Cloud/HuaweiCloud/HuaweiCloud_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Cloud/JingDongCloud",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Cloud/JingDongCloud/JingDongCloud.list",
+        "Cloud/JingDongCloud/JingDongCloud_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Cloud/KingsoftCloud",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Cloud/KingsoftCloud/KingsoftCloud.list",
+        "Cloud/KingsoftCloud/KingsoftCloud_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Cloud/NeteaseCloud",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Cloud/NeteaseCloud/NeteaseCloud.list",
+        "Cloud/NeteaseCloud/NeteaseCloud_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Cloud/TencentCloud",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Cloud/TencentCloud/TencentCloud.list",
+        "Cloud/TencentCloud/TencentCloud_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Cloudflare",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Cloudflare/Cloudflare.list",
+        "Cloudflare/Cloudflare_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ClubhouseIP",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ClubhouseIP/ClubhouseIP.list",
+        "ClubhouseIP/ClubhouseIP_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Copilot",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Copilot/Copilot.list",
+        "Copilot/Copilot_Resolve.list"
+      ]
+    },
+    {
+      "folder": "DMM",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "DMM/DMM.list",
+        "DMM/DMM_Resolve.list"
+      ]
+    },
+    {
+      "folder": "DNS",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "DNS/DNS.list",
+        "DNS/DNS_Resolve.list"
+      ]
+    },
+    {
+      "folder": "DiabloIII",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "DiabloIII/DiabloIII.list",
+        "DiabloIII/DiabloIII_Resolve.list"
+      ]
+    },
+    {
+      "folder": "EHGallery",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "EHGallery/EHGallery.list",
+        "EHGallery/EHGallery_Resolve.list"
+      ]
+    },
+    {
+      "folder": "EasyPrivacy",
+      "file_count": 3,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only"
+      ],
+      "files": [
+        "EasyPrivacy/EasyPrivacy_All.list",
+        "EasyPrivacy/EasyPrivacy_All_No_Resolve.list",
+        "EasyPrivacy/EasyPrivacy_Domain.list"
+      ]
+    },
+    {
+      "folder": "Facebook",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Facebook/Facebook.list",
+        "Facebook/Facebook_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Game",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Game/Game.list",
+        "Game/Game_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Game/Assassin'sCreed-Odyssey",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list",
+        "Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Game/Assassin'sCreed-Origins",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list",
+        "Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Game/Nikke",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Game/Nikke/Nikke.list",
+        "Game/Nikke/Nikke_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Global",
+      "file_count": 5,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Global/Global.list",
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Global/Global_Domain.list",
+        "Global/Global_Resolve.list"
+      ]
+    },
+    {
+      "folder": "GlobalMedia",
+      "file_count": 5,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "GlobalMedia/GlobalMedia.list",
+        "GlobalMedia/GlobalMedia_All.list",
+        "GlobalMedia/GlobalMedia_All_No_Resolve.list",
+        "GlobalMedia/GlobalMedia_Domain.list",
+        "GlobalMedia/GlobalMedia_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Google",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Google/Google.list",
+        "Google/Google_Resolve.list"
+      ]
+    },
+    {
+      "folder": "GoogleFCM",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "GoogleFCM/GoogleFCM.list",
+        "GoogleFCM/GoogleFCM_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Hearthstone",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Hearthstone/Hearthstone.list",
+        "Hearthstone/Hearthstone_Resolve.list"
+      ]
+    },
+    {
+      "folder": "HeroesoftheStorm",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "HeroesoftheStorm/HeroesoftheStorm.list",
+        "HeroesoftheStorm/HeroesoftheStorm_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Hijacking",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Hijacking/Hijacking.list",
+        "Hijacking/Hijacking_Resolve.list"
+      ]
+    },
+    {
+      "folder": "IPTVMainland",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "IPTVMainland/IPTVMainland.list",
+        "IPTVMainland/IPTVMainland_Resolve.list"
+      ]
+    },
+    {
+      "folder": "IPTVOther",
+      "file_count": 5,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "IPTVOther/IPTVOther.list",
+        "IPTVOther/IPTVOther_All.list",
+        "IPTVOther/IPTVOther_All_No_Resolve.list",
+        "IPTVOther/IPTVOther_Domain.list",
+        "IPTVOther/IPTVOther_Resolve.list"
+      ]
+    },
+    {
+      "folder": "JOOX",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "JOOX/JOOX.list",
+        "JOOX/JOOX_Resolve.list"
+      ]
+    },
+    {
+      "folder": "KakaoTalk",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "KakaoTalk/KakaoTalk.list",
+        "KakaoTalk/KakaoTalk_Resolve.list"
+      ]
+    },
+    {
+      "folder": "KuangShi",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "KuangShi/KuangShi.list",
+        "KuangShi/KuangShi_Resolve.list"
+      ]
+    },
+    {
+      "folder": "KugouKuwo",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "KugouKuwo/KugouKuwo.list",
+        "KugouKuwo/KugouKuwo_Resolve.list"
+      ]
+    },
+    {
+      "folder": "LG",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "LG/LG.list",
+        "LG/LG_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Lan",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Lan/Lan.list",
+        "Lan/Lan_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Line",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Line/Line.list",
+        "Line/Line_Resolve.list"
+      ]
+    },
+    {
+      "folder": "MEGA",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "MEGA/MEGA.list",
+        "MEGA/MEGA_Resolve.list"
+      ]
+    },
+    {
+      "folder": "NaSDDNS",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "NaSDDNS/NaSDDNS.list",
+        "NaSDDNS/NaSDDNS_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Naver",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Naver/Naver.list",
+        "Naver/Naver_Resolve.list"
+      ]
+    },
+    {
+      "folder": "NetEase",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "NetEase/NetEase.list",
+        "NetEase/NetEase_Resolve.list"
+      ]
+    },
+    {
+      "folder": "NetEaseMusic",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "NetEaseMusic/NetEaseMusic.list",
+        "NetEaseMusic/NetEaseMusic_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Netflix",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Netflix/Netflix.list",
+        "Netflix/Netflix_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Nintendo",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Nintendo/Nintendo.list",
+        "Nintendo/Nintendo_Resolve.list"
+      ]
+    },
+    {
+      "folder": "OpenAI",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "OpenAI/OpenAI.list",
+        "OpenAI/OpenAI_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Opera",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Opera/Opera.list",
+        "Opera/Opera_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Overwatch",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Overwatch/Overwatch.list",
+        "Overwatch/Overwatch_Resolve.list"
+      ]
+    },
+    {
+      "folder": "PotatoChat",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "PotatoChat/PotatoChat.list",
+        "PotatoChat/PotatoChat_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Privacy",
+      "file_count": 5,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Privacy/Privacy.list",
+        "Privacy/Privacy_All.list",
+        "Privacy/Privacy_All_No_Resolve.list",
+        "Privacy/Privacy_Domain.list",
+        "Privacy/Privacy_Resolve.list"
+      ]
+    },
+    {
+      "folder": "PrivateTracker",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "PrivateTracker/PrivateTracker.list",
+        "PrivateTracker/PrivateTracker_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Proxy",
+      "file_count": 5,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Proxy/Proxy.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list",
+        "Proxy/Proxy_Domain.list",
+        "Proxy/Proxy_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ProxyLite",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ProxyLite/ProxyLite.list",
+        "ProxyLite/ProxyLite_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Qobuz",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Qobuz/Qobuz.list",
+        "Qobuz/Qobuz_Resolve.list"
+      ]
+    },
+    {
+      "folder": "STUN",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "STUN/STUN.list",
+        "STUN/STUN_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Spotify",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Spotify/Spotify.list",
+        "Spotify/Spotify_Resolve.list"
+      ]
+    },
+    {
+      "folder": "StarCraftII",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "StarCraftII/StarCraftII.list",
+        "StarCraftII/StarCraftII_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Steam",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Steam/Steam.list",
+        "Steam/Steam_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Supercell",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Supercell/Supercell.list",
+        "Supercell/Supercell_Resolve.list"
+      ]
+    },
+    {
+      "folder": "TeamViewer",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "TeamViewer/TeamViewer.list",
+        "TeamViewer/TeamViewer_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Telegram",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Telegram/Telegram.list",
+        "Telegram/Telegram_Resolve.list"
+      ]
+    },
+    {
+      "folder": "TelegramNL",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "TelegramNL/TelegramNL.list",
+        "TelegramNL/TelegramNL_Resolve.list"
+      ]
+    },
+    {
+      "folder": "TelegramSG",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "TelegramSG/TelegramSG.list",
+        "TelegramSG/TelegramSG_Resolve.list"
+      ]
+    },
+    {
+      "folder": "TelegramUS",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "TelegramUS/TelegramUS.list",
+        "TelegramUS/TelegramUS_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Tencent",
+      "file_count": 5,
+      "formats": [
+        "all",
+        "all_no_resolve",
+        "domain_only",
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Tencent/Tencent.list",
+        "Tencent/Tencent_All.list",
+        "Tencent/Tencent_All_No_Resolve.list",
+        "Tencent/Tencent_Domain.list",
+        "Tencent/Tencent_Resolve.list"
+      ]
+    },
+    {
+      "folder": "TencentVideo",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "TencentVideo/TencentVideo.list",
+        "TencentVideo/TencentVideo_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Twitch",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Twitch/Twitch.list",
+        "Twitch/Twitch_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Twitter",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Twitter/Twitter.list",
+        "Twitter/Twitter_Resolve.list"
+      ]
+    },
+    {
+      "folder": "WeChat",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "WeChat/WeChat.list",
+        "WeChat/WeChat_Resolve.list"
+      ]
+    },
+    {
+      "folder": "WeTV",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "WeTV/WeTV.list",
+        "WeTV/WeTV_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Whatsapp",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Whatsapp/Whatsapp.list",
+        "Whatsapp/Whatsapp_Resolve.list"
+      ]
+    },
+    {
+      "folder": "WorldofWarcraft",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "WorldofWarcraft/WorldofWarcraft.list",
+        "WorldofWarcraft/WorldofWarcraft_Resolve.list"
+      ]
+    },
+    {
+      "folder": "XiaoMi",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "XiaoMi/XiaoMi.list",
+        "XiaoMi/XiaoMi_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Yandex",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Yandex/Yandex.list",
+        "Yandex/Yandex_Resolve.list"
+      ]
+    },
+    {
+      "folder": "YouTube",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "YouTube/YouTube.list",
+        "YouTube/YouTube_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Youku",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Youku/Youku.list",
+        "Youku/Youku_Resolve.list"
+      ]
+    },
+    {
+      "folder": "Zhihu",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "Zhihu/Zhihu.list",
+        "Zhihu/Zhihu_Resolve.list"
+      ]
+    },
+    {
+      "folder": "ZhihuAds",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "ZhihuAds/ZhihuAds.list",
+        "ZhihuAds/ZhihuAds_Resolve.list"
+      ]
+    },
+    {
+      "folder": "iQIYI",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "iQIYI/iQIYI.list",
+        "iQIYI/iQIYI_Resolve.list"
+      ]
+    },
+    {
+      "folder": "iQIYIIntl",
+      "file_count": 2,
+      "formats": [
+        "resolve",
+        "standard"
+      ],
+      "files": [
+        "iQIYIIntl/iQIYIIntl.list",
+        "iQIYIIntl/iQIYIIntl_Resolve.list"
+      ]
+    }
+  ],
+  "exact_raw_duplicate_file_groups": [
+    [
+      "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+      "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list"
+    ],
+    [
+      "EasyPrivacy/EasyPrivacy_All.list",
+      "EasyPrivacy/EasyPrivacy_All_No_Resolve.list"
+    ]
+  ],
+  "same_rule_payload_file_groups": [
+    [
+      "Abema/Abema.list",
+      "AbemaTV/AbemaTV.list"
+    ],
+    [
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list",
+      "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list"
+    ],
+    [
+      "Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list",
+      "Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list"
+    ],
+    [
+      "Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list",
+      "Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list"
+    ],
+    [
+      "Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list",
+      "Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list"
+    ],
+    [
+      "Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list",
+      "Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list"
+    ],
+    [
+      "BardAI/BardAI.list",
+      "Gemini/Gemini.list"
+    ],
+    [
+      "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+      "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list"
+    ],
+    [
+      "EasyPrivacy/EasyPrivacy_All.list",
+      "EasyPrivacy/EasyPrivacy_All_No_Resolve.list"
+    ],
+    [
+      "GlobalScholar/GlobalScholar.list",
+      "Scholar/Scholar.list"
+    ],
+    [
+      "PChome/PChome.list",
+      "PChomeTW/PChomeTW.list"
+    ]
+  ],
+  "alias_candidates": [
+    {
+      "canonical": "Abema",
+      "aliases": [
+        "AbemaTV"
+      ],
+      "reason": "Same service under former/alternate name; prior union verified.",
+      "canonical_exists": true,
+      "existing_aliases": [
+        "AbemaTV"
+      ],
+      "comparisons": [
+        {
+          "format": "standard",
+          "canonical_file": "Abema/Abema.list",
+          "alias_files": [
+            "AbemaTV/AbemaTV.list"
+          ],
+          "canonical_lines": 29,
+          "alias_lines": 29,
+          "union_unique_lines": 29,
+          "new_exact_lines": 0,
+          "new_examples": []
+        }
+      ]
+    },
+    {
+      "canonical": "Gemini",
+      "aliases": [
+        "BardAI"
+      ],
+      "reason": "Same Google assistant service after renaming; prior union verified.",
+      "canonical_exists": true,
+      "existing_aliases": [
+        "BardAI"
+      ],
+      "comparisons": [
+        {
+          "format": "standard",
+          "canonical_file": "Gemini/Gemini.list",
+          "alias_files": [
+            "BardAI/BardAI.list"
+          ],
+          "canonical_lines": 14,
+          "alias_lines": 14,
+          "union_unique_lines": 14,
+          "new_exact_lines": 0,
+          "new_examples": []
+        }
+      ]
+    },
+    {
+      "canonical": "PChome",
+      "aliases": [
+        "PChomeTW"
+      ],
+      "reason": "Same PChome Online service; prior union verified.",
+      "canonical_exists": true,
+      "existing_aliases": [
+        "PChomeTW"
+      ],
+      "comparisons": [
+        {
+          "format": "standard",
+          "canonical_file": "PChome/PChome.list",
+          "alias_files": [
+            "PChomeTW/PChomeTW.list"
+          ],
+          "canonical_lines": 5,
+          "alias_lines": 5,
+          "union_unique_lines": 5,
+          "new_exact_lines": 0,
+          "new_examples": []
+        }
+      ]
+    },
+    {
+      "canonical": "GlobalScholar",
+      "aliases": [
+        "Scholar"
+      ],
+      "reason": "GlobalScholar README explicitly says Scholar is included; prior union adds cnki.net.",
+      "canonical_exists": true,
+      "existing_aliases": [
+        "Scholar"
+      ],
+      "comparisons": [
+        {
+          "format": "standard",
+          "canonical_file": "GlobalScholar/GlobalScholar.list",
+          "alias_files": [
+            "Scholar/Scholar.list"
+          ],
+          "canonical_lines": 231,
+          "alias_lines": 231,
+          "union_unique_lines": 231,
+          "new_exact_lines": 0,
+          "new_examples": []
+        }
+      ]
+    },
+    {
+      "canonical": "BiliBili",
+      "aliases": [
+        "BiliBiliIntl"
+      ],
+      "reason": "Same Bilibili service family with international variant.",
+      "canonical_exists": true,
+      "existing_aliases": [
+        "BiliBiliIntl"
+      ],
+      "comparisons": [
+        {
+          "format": "standard",
+          "canonical_file": "BiliBili/BiliBili.list",
+          "alias_files": [
+            "BiliBiliIntl/BiliBiliIntl.list"
+          ],
+          "canonical_lines": 133,
+          "alias_lines": 6,
+          "union_unique_lines": 135,
+          "new_exact_lines": 2,
+          "new_examples": [
+            "DOMAIN,apm-misaka.biliapi.net",
+            "PROCESS-NAME,com.bstar.intl"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "iQIYI",
+      "aliases": [
+        "iQIYIIntl"
+      ],
+      "reason": "Same iQIYI service family with international variant.",
+      "canonical_exists": true,
+      "existing_aliases": [
+        "iQIYIIntl"
+      ],
+      "comparisons": [
+        {
+          "format": "resolve",
+          "canonical_file": "iQIYI/iQIYI_Resolve.list",
+          "alias_files": [
+            "iQIYIIntl/iQIYIIntl_Resolve.list"
+          ],
+          "canonical_lines": 63,
+          "alias_lines": 21,
+          "union_unique_lines": 80,
+          "new_exact_lines": 17,
+          "new_examples": [
+            "DOMAIN,cache.video.iqiyi.com",
+            "DOMAIN-SUFFIX,inter.iqiyi.com",
+            "DOMAIN-SUFFIX,intl-rcd.iqiyi.com",
+            "DOMAIN-SUFFIX,intl-subscription.iqiyi.com",
+            "DOMAIN-SUFFIX,intl.iqiyi.com",
+            "IP-CIDR,104.85.165.17/32",
+            "IP-CIDR,118.26.32.162/32",
+            "IP-CIDR,159.138.102.146/32",
+            "IP-CIDR,184.51.102.0/24",
+            "IP-CIDR,203.80.97.203/32",
+            "IP-CIDR,23.200.145.146/32",
+            "IP-CIDR,23.210.215.186/32",
+            "IP-CIDR,23.211.15.0/24",
+            "IP-CIDR,23.219.172.0/24",
+            "IP-CIDR,23.59.252.0/24",
+            "PROCESS-NAME,com.iqiyi.i18n",
+            "PROCESS-NAME,com.iqiyi.i18n.tv"
+          ]
+        },
+        {
+          "format": "standard",
+          "canonical_file": "iQIYI/iQIYI.list",
+          "alias_files": [
+            "iQIYIIntl/iQIYIIntl.list"
+          ],
+          "canonical_lines": 63,
+          "alias_lines": 21,
+          "union_unique_lines": 80,
+          "new_exact_lines": 17,
+          "new_examples": [
+            "DOMAIN,cache.video.iqiyi.com",
+            "DOMAIN-SUFFIX,inter.iqiyi.com",
+            "DOMAIN-SUFFIX,intl-rcd.iqiyi.com",
+            "DOMAIN-SUFFIX,intl-subscription.iqiyi.com",
+            "DOMAIN-SUFFIX,intl.iqiyi.com",
+            "IP-CIDR,104.85.165.17/32,no-resolve",
+            "IP-CIDR,118.26.32.162/32,no-resolve",
+            "IP-CIDR,159.138.102.146/32,no-resolve",
+            "IP-CIDR,184.51.102.0/24,no-resolve",
+            "IP-CIDR,203.80.97.203/32,no-resolve",
+            "IP-CIDR,23.200.145.146/32,no-resolve",
+            "IP-CIDR,23.210.215.186/32,no-resolve",
+            "IP-CIDR,23.211.15.0/24,no-resolve",
+            "IP-CIDR,23.219.172.0/24,no-resolve",
+            "IP-CIDR,23.59.252.0/24,no-resolve",
+            "PROCESS-NAME,com.iqiyi.i18n",
+            "PROCESS-NAME,com.iqiyi.i18n.tv"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "Hulu",
+      "aliases": [
+        "HuluUSA",
+        "HuluJP"
+      ],
+      "reason": "Same Hulu app/service with US and Japan regional domains.",
+      "canonical_exists": true,
+      "existing_aliases": [
+        "HuluUSA",
+        "HuluJP"
+      ],
+      "comparisons": [
+        {
+          "format": "standard",
+          "canonical_file": "Hulu/Hulu.list",
+          "alias_files": [
+            "HuluUSA/HuluUSA.list",
+            "HuluJP/HuluJP.list"
+          ],
+          "canonical_lines": 59,
+          "alias_lines": 58,
+          "union_unique_lines": 59,
+          "new_exact_lines": 0,
+          "new_examples": []
+        }
+      ]
+    },
+    {
+      "canonical": "Telegram",
+      "aliases": [
+        "TelegramNL",
+        "TelegramSG",
+        "TelegramUS"
+      ],
+      "reason": "Same Telegram app; regional files are IP-range subsets.",
+      "canonical_exists": true,
+      "existing_aliases": [
+        "TelegramNL",
+        "TelegramSG",
+        "TelegramUS"
+      ],
+      "comparisons": [
+        {
+          "format": "resolve",
+          "canonical_file": "Telegram/Telegram_Resolve.list",
+          "alias_files": [
+            "TelegramNL/TelegramNL_Resolve.list",
+            "TelegramSG/TelegramSG_Resolve.list",
+            "TelegramUS/TelegramUS_Resolve.list"
+          ],
+          "canonical_lines": 46,
+          "alias_lines": 10,
+          "union_unique_lines": 53,
+          "new_exact_lines": 7,
+          "new_examples": [
+            "IP-CIDR,91.108.12.0/22",
+            "IP-CIDR,91.108.16.0/22",
+            "IP-CIDR,91.108.4.0/22",
+            "IP-CIDR,91.108.56.0/22",
+            "IP-CIDR,91.108.8.0/22",
+            "IP-CIDR6,2001:b28:f23c::/48",
+            "IP-CIDR6,2001:b28:f23d::/48"
+          ]
+        },
+        {
+          "format": "standard",
+          "canonical_file": "Telegram/Telegram.list",
+          "alias_files": [
+            "TelegramNL/TelegramNL.list",
+            "TelegramSG/TelegramSG.list",
+            "TelegramUS/TelegramUS.list"
+          ],
+          "canonical_lines": 46,
+          "alias_lines": 10,
+          "union_unique_lines": 53,
+          "new_exact_lines": 7,
+          "new_examples": [
+            "IP-CIDR,91.108.12.0/22,no-resolve",
+            "IP-CIDR,91.108.16.0/22,no-resolve",
+            "IP-CIDR,91.108.4.0/22,no-resolve",
+            "IP-CIDR,91.108.56.0/22,no-resolve",
+            "IP-CIDR,91.108.8.0/22,no-resolve",
+            "IP-CIDR6,2001:b28:f23c::/48,no-resolve",
+            "IP-CIDR6,2001:b28:f23d::/48,no-resolve"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "Amazon",
+      "aliases": [
+        "AmazonCN"
+      ],
+      "reason": "Same Amazon service family with China-region domains.",
+      "canonical_exists": true,
+      "existing_aliases": [
+        "AmazonCN"
+      ],
+      "comparisons": [
+        {
+          "format": "standard",
+          "canonical_file": "Amazon/Amazon.list",
+          "alias_files": [
+            "AmazonCN/AmazonCN.list"
+          ],
+          "canonical_lines": 206,
+          "alias_lines": 47,
+          "union_unique_lines": 223,
+          "new_exact_lines": 17,
+          "new_examples": [
+            "DOMAIN-SUFFIX,a2z.org.cn",
+            "DOMAIN-SUFFIX,amazonaws.cn",
+            "DOMAIN-SUFFIX,amazonwebservices.com.cn",
+            "DOMAIN-SUFFIX,asfiovnxocqpcry.com.cn",
+            "DOMAIN-SUFFIX,aws-border.cn",
+            "DOMAIN-SUFFIX,aws-icp-domain-manager.cn",
+            "DOMAIN-SUFFIX,awsapps.cn",
+            "DOMAIN-SUFFIX,awsapps.com.cn",
+            "DOMAIN-SUFFIX,awsstatic.cn",
+            "DOMAIN-SUFFIX,cloudfront-test.cn",
+            "DOMAIN-SUFFIX,cloudfront.cn",
+            "DOMAIN-SUFFIX,nwcdcloud.cn",
+            "DOMAIN-SUFFIX,nwcdcloud.com.cn",
+            "DOMAIN-SUFFIX,nwcddns.cn",
+            "DOMAIN-SUFFIX,nwcdinfosec.cn",
+            "DOMAIN-SUFFIX,route53.cn",
+            "DOMAIN-SUFFIX,sagemaker.com.cn"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "HBO",
+      "aliases": [
+        "HBOAsia",
+        "HBOHK",
+        "HBOUSA"
+      ],
+      "reason": "Same HBO/Max service family with regional rules.",
+      "canonical_exists": true,
+      "existing_aliases": [
+        "HBOAsia",
+        "HBOHK",
+        "HBOUSA"
+      ],
+      "comparisons": [
+        {
+          "format": "standard",
+          "canonical_file": "HBO/HBO.list",
+          "alias_files": [
+            "HBOAsia/HBOAsia.list",
+            "HBOHK/HBOHK.list",
+            "HBOUSA/HBOUSA.list"
+          ],
+          "canonical_lines": 50,
+          "alias_lines": 56,
+          "union_unique_lines": 70,
+          "new_exact_lines": 20,
+          "new_examples": [
+            "DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com",
+            "DOMAIN,bcbolthboa-a.akamaihd.net",
+            "DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net",
+            "DOMAIN,dai3fd1oh325y.cloudfront.net",
+            "DOMAIN,hboasia1-i.akamaihd.net",
+            "DOMAIN,hboasia2-i.akamaihd.net",
+            "DOMAIN,hboasia3-i.akamaihd.net",
+            "DOMAIN,hboasia4-i.akamaihd.net",
+            "DOMAIN,hboasia5-i.akamaihd.net",
+            "DOMAIN,hboasialive.akamaized.net",
+            "DOMAIN,hbogoprod-vod.akamaized.net",
+            "DOMAIN,hbolb.onwardsmg.com",
+            "DOMAIN,hbounify-prod.evergent.com",
+            "DOMAIN,players.brightcove.net",
+            "DOMAIN,s3-ap-southeast-1.amazonaws.com",
+            "DOMAIN,wmff.warnermediacdn.com",
+            "DOMAIN-KEYWORD,.hbogoasia.",
+            "DOMAIN-SUFFIX,discomax.com",
+            "DOMAIN-SUFFIX,h264.io",
+            "USER-AGENT,HBO%20GO%20PROD*"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "Cloudflare",
+      "aliases": [
+        "Cloudflarecn"
+      ],
+      "reason": "Same Cloudflare service with China-specific domain subset.",
+      "canonical_exists": true,
+      "existing_aliases": [
+        "Cloudflarecn"
+      ],
+      "comparisons": [
+        {
+          "format": "standard",
+          "canonical_file": "Cloudflare/Cloudflare.list",
+          "alias_files": [
+            "Cloudflarecn/Cloudflarecn.list"
+          ],
+          "canonical_lines": 65,
+          "alias_lines": 14,
+          "union_unique_lines": 65,
+          "new_exact_lines": 0,
+          "new_examples": []
+        }
+      ]
+    },
+    {
+      "canonical": "Steam",
+      "aliases": [
+        "SteamCN"
+      ],
+      "reason": "Same Steam service family with China-region domains.",
+      "canonical_exists": true,
+      "existing_aliases": [
+        "SteamCN"
+      ],
+      "comparisons": [
+        {
+          "format": "standard",
+          "canonical_file": "Steam/Steam.list",
+          "alias_files": [
+            "SteamCN/SteamCN.list"
+          ],
+          "canonical_lines": 69,
+          "alias_lines": 17,
+          "union_unique_lines": 86,
+          "new_exact_lines": 17,
+          "new_examples": [
+            "DOMAIN,csgo.wmsj.cn",
+            "DOMAIN,dl.steam.clngaa.com",
+            "DOMAIN,dl.steam.ksyna.com",
+            "DOMAIN,dota2.wmsj.cn",
+            "DOMAIN,st.dl.bscstorage.net",
+            "DOMAIN,st.dl.eccdnx.com",
+            "DOMAIN,st.dl.pinyuncloud.com",
+            "DOMAIN,steampipe.steamcontent.tnkjmec.com",
+            "DOMAIN,steampowered.com.8686c.com",
+            "DOMAIN,steamstatic.com.8686c.com",
+            "DOMAIN,wmsjsteam.com",
+            "DOMAIN,xz.pphimalayanrt.com",
+            "DOMAIN-SUFFIX,cm.steampowered.com",
+            "DOMAIN-SUFFIX,steamchina.com",
+            "DOMAIN-SUFFIX,steamcontent.com",
+            "DOMAIN-SUFFIX,steamserver.net",
+            "DOMAIN-SUFFIX,steamusercontent.com"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "Assassin'sCreed/Assassin'sCreed-Odyssey",
+      "aliases": [
+        "Game/Assassin'sCreed-Odyssey"
+      ],
+      "reason": "Same game duplicated under two categories; Standard and Resolve stay separate.",
+      "canonical_exists": true,
+      "existing_aliases": [
+        "Game/Assassin'sCreed-Odyssey"
+      ],
+      "comparisons": [
+        {
+          "format": "resolve",
+          "canonical_file": "Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list",
+          "alias_files": [
+            "Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list"
+          ],
+          "canonical_lines": 15,
+          "alias_lines": 15,
+          "union_unique_lines": 15,
+          "new_exact_lines": 0,
+          "new_examples": []
+        },
+        {
+          "format": "standard",
+          "canonical_file": "Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list",
+          "alias_files": [
+            "Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list"
+          ],
+          "canonical_lines": 15,
+          "alias_lines": 15,
+          "union_unique_lines": 15,
+          "new_exact_lines": 0,
+          "new_examples": []
+        }
+      ]
+    },
+    {
+      "canonical": "Assassin'sCreed/Assassin'sCreed-Origins",
+      "aliases": [
+        "Game/Assassin'sCreed-Origins"
+      ],
+      "reason": "Same game duplicated under two categories; Standard and Resolve stay separate.",
+      "canonical_exists": true,
+      "existing_aliases": [
+        "Game/Assassin'sCreed-Origins"
+      ],
+      "comparisons": [
+        {
+          "format": "resolve",
+          "canonical_file": "Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list",
+          "alias_files": [
+            "Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list"
+          ],
+          "canonical_lines": 16,
+          "alias_lines": 16,
+          "union_unique_lines": 16,
+          "new_exact_lines": 0,
+          "new_examples": []
+        },
+        {
+          "format": "standard",
+          "canonical_file": "Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list",
+          "alias_files": [
+            "Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list"
+          ],
+          "canonical_lines": 16,
+          "alias_lines": 16,
+          "union_unique_lines": 16,
+          "new_exact_lines": 0,
+          "new_examples": []
+        }
+      ]
+    }
+  ],
+  "cached_source_coverage": [
+    {
+      "source": "Aoang-Apple",
+      "source_url": "https://github.com/Aoang/Surge",
+      "license": "MIT",
+      "source_commit": "a57dccbf14a0a10f33fa7e95ef5bb3d2af04a6f0",
+      "source_path": "output/Ruleset/Apple/Apple.list",
+      "source_rules": 69,
+      "target": "Apple/Apple.list",
+      "target_rules": 80,
+      "exact": 12,
+      "parent_suffix": 57,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-DNS",
+      "source_url": "https://github.com/Aoang/Surge",
+      "license": "MIT",
+      "source_commit": "a57dccbf14a0a10f33fa7e95ef5bb3d2af04a6f0",
+      "source_path": "output/Ruleset/Block/DNS.list",
+      "source_rules": 53,
+      "target": "Block/DNS/DNS.list",
+      "target_rules": 53,
+      "exact": 53,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-OneDrive",
+      "source_url": "https://github.com/Aoang/Surge",
+      "license": "MIT",
+      "source_commit": "a57dccbf14a0a10f33fa7e95ef5bb3d2af04a6f0",
+      "source_path": "output/Ruleset/Microsoft/OneDrive.list",
+      "source_rules": 4,
+      "target": "OneDrive/OneDrive.list",
+      "target_rules": 18,
+      "exact": 3,
+      "parent_suffix": 1,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-Other",
+      "source_url": "https://github.com/Aoang/Surge",
+      "license": "MIT",
+      "source_commit": "a57dccbf14a0a10f33fa7e95ef5bb3d2af04a6f0",
+      "source_path": "output/Ruleset/Block/Other.list",
+      "source_rules": 1,
+      "target": "Block/Other/Other.list",
+      "target_rules": 1,
+      "exact": 1,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-Parallels",
+      "source_url": "https://github.com/Aoang/Surge",
+      "license": "MIT",
+      "source_commit": "a57dccbf14a0a10f33fa7e95ef5bb3d2af04a6f0",
+      "source_path": "output/Ruleset/Block/Parallels.list",
+      "source_rules": 12,
+      "target": "Block/Parallels/Parallels.list",
+      "target_rules": 12,
+      "exact": 12,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-Process",
+      "source_url": "https://github.com/Aoang/Surge",
+      "license": "MIT",
+      "source_commit": "a57dccbf14a0a10f33fa7e95ef5bb3d2af04a6f0",
+      "source_path": "output/Ruleset/Process/Process.list",
+      "source_rules": 23,
+      "target": "Process/Process/Process.list",
+      "target_rules": 23,
+      "exact": 23,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-Teams",
+      "source_url": "https://github.com/Aoang/Surge",
+      "license": "MIT",
+      "source_commit": "a57dccbf14a0a10f33fa7e95ef5bb3d2af04a6f0",
+      "source_path": "output/Ruleset/Microsoft/Teams.list",
+      "source_rules": 4,
+      "target": "Teams/Teams.list",
+      "target_rules": 4,
+      "exact": 4,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-Unavailable",
+      "source_url": "https://github.com/Aoang/Surge",
+      "license": "MIT",
+      "source_commit": "a57dccbf14a0a10f33fa7e95ef5bb3d2af04a6f0",
+      "source_path": "output/Ruleset/Process/Unavailable.list",
+      "source_rules": 1,
+      "target": "Process/Unavailable/Unavailable.list",
+      "target_rules": 1,
+      "exact": 1,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-YouTube",
+      "source_url": "https://github.com/Aoang/Surge",
+      "license": "MIT",
+      "source_commit": "a57dccbf14a0a10f33fa7e95ef5bb3d2af04a6f0",
+      "source_path": "output/Ruleset/Block/YouTube.list",
+      "source_rules": 15,
+      "target": "Block/YouTube/YouTube.list",
+      "target_rules": 15,
+      "exact": 15,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Apple",
+      "source_url": "https://github.com/SukkaLab/ruleset.skk.moe",
+      "license": "AGPL-3.0",
+      "source_commit": "8341913ec29f036fafb8886be88769487a7f3989",
+      "source_path": "List/non_ip/apple_services.conf",
+      "source_rules": 16,
+      "target": "Apple/Apple.list",
+      "target_rules": 80,
+      "exact": 16,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "BiliBiliIntl",
+      "source_url": "https://github.com/SukkaLab/ruleset.skk.moe",
+      "license": "AGPL-3.0",
+      "source_commit": "8341913ec29f036fafb8886be88769487a7f3989",
+      "source_path": "List/non_ip/stream_biliintl.conf",
+      "source_rules": 5,
+      "target": "BiliBili/BiliBili.list",
+      "target_rules": 133,
+      "exact": 4,
+      "parent_suffix": 1,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "GitLab",
+      "source_url": "https://github.com/SukkaLab/ruleset.skk.moe",
+      "license": "AGPL-3.0",
+      "source_commit": "8341913ec29f036fafb8886be88769487a7f3989",
+      "source_path": "List/non_ip/gitlab.conf",
+      "source_rules": 1,
+      "target": "GitLab/GitLab.list",
+      "target_rules": 6,
+      "exact": 1,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Microsoft",
+      "source_url": "https://github.com/SukkaLab/ruleset.skk.moe",
+      "license": "AGPL-3.0",
+      "source_commit": "8341913ec29f036fafb8886be88769487a7f3989",
+      "source_path": "List/non_ip/microsoft.conf",
+      "source_rules": 80,
+      "target": "Microsoft/Microsoft.list",
+      "target_rules": 674,
+      "exact": 80,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "NetEaseMusic",
+      "source_url": "https://github.com/SukkaLab/ruleset.skk.moe",
+      "license": "AGPL-3.0",
+      "source_commit": "8341913ec29f036fafb8886be88769487a7f3989",
+      "source_path": "List/non_ip/neteasemusic.conf",
+      "source_rules": 2,
+      "target": "NetEaseMusic/NetEaseMusic.list",
+      "target_rules": 30,
+      "exact": 2,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Telegram",
+      "source_url": "https://github.com/SukkaLab/ruleset.skk.moe",
+      "license": "AGPL-3.0",
+      "source_commit": "8341913ec29f036fafb8886be88769487a7f3989",
+      "source_path": "List/non_ip/telegram.conf",
+      "source_rules": 14,
+      "target": "Telegram/Telegram.list",
+      "target_rules": 46,
+      "exact": 14,
+      "parent_suffix": 0,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    }
+  ],
+  "static_security_findings": {
+    "duplicate_rule_lines": 0,
+    "unsupported_or_missing_operand": 1330757,
+    "single_label_suffix": 912,
+    "stale_or_private_root_suffix": 17
+  },
+  "financial_domain_matches_not_deleted": [
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list:19872: DOMAIN-SUFFIX,collect.alipay.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list:26921: DOMAIN-SUFFIX,data.fastlane-email.paypal.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list:27208: DOMAIN-SUFFIX,data.news.paypal.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list:27335: DOMAIN-SUFFIX,data.service.paypal.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list:42618: DOMAIN-SUFFIX,i.paypal.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list:43442: DOMAIN-SUFFIX,images.globalempcomm.visa.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list:52551: DOMAIN-SUFFIX,loggw-ex.alipay.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list:52552: DOMAIN-SUFFIX,loggw-exsdk.alipay.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list:52553: DOMAIN-SUFFIX,loggw.alipay.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list:64929: DOMAIN-SUFFIX,openmonitor.alipay.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list:88437: DOMAIN-SUFFIX,stats.paypal.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list:96705: DOMAIN-SUFFIX,tracking.cpa.qa.web.visa.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list:19872: DOMAIN-SUFFIX,collect.alipay.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list:26921: DOMAIN-SUFFIX,data.fastlane-email.paypal.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list:27208: DOMAIN-SUFFIX,data.news.paypal.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list:27335: DOMAIN-SUFFIX,data.service.paypal.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list:42618: DOMAIN-SUFFIX,i.paypal.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list:43442: DOMAIN-SUFFIX,images.globalempcomm.visa.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list:52551: DOMAIN-SUFFIX,loggw-ex.alipay.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list:52552: DOMAIN-SUFFIX,loggw-exsdk.alipay.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list:52553: DOMAIN-SUFFIX,loggw.alipay.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list:64929: DOMAIN-SUFFIX,openmonitor.alipay.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list:88437: DOMAIN-SUFFIX,stats.paypal.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list:96705: DOMAIN-SUFFIX,tracking.cpa.qa.web.visa.com",
+    "Advertising/Advertising_All.list:717: DOMAIN,as.boc.cn",
+    "Advertising/Advertising_All.list:5312: DOMAIN,c.paypal.com",
+    "Advertising/Advertising_All.list:44850: DOMAIN-SUFFIX,business.visa.com",
+    "Advertising/Advertising_All.list:62387: DOMAIN-SUFFIX,data.account.paypal.com",
+    "Advertising/Advertising_All.list:63403: DOMAIN-SUFFIX,data.fastlane-email.paypal.com",
+    "Advertising/Advertising_All.list:64087: DOMAIN-SUFFIX,data.messaging.paypal.com",
+    "Advertising/Advertising_All.list:64247: DOMAIN-SUFFIX,data.news.paypal.com",
+    "Advertising/Advertising_All.list:64260: DOMAIN-SUFFIX,data.newsletter.paypal.com",
+    "Advertising/Advertising_All.list:65203: DOMAIN-SUFFIX,data.zettleby.paypal.com",
+    "Advertising/Advertising_All.list:104229: DOMAIN-SUFFIX,i.paypal.com",
+    "Advertising/Advertising_All.list:128944: DOMAIN-SUFFIX,loggw-ex.alipay.com",
+    "Advertising/Advertising_All.list:128945: DOMAIN-SUFFIX,loggw-exsdk.alipay.com",
+    "Advertising/Advertising_All.list:150852: DOMAIN-SUFFIX,openmonitor.alipay.com",
+    "Advertising/Advertising_All.list:204618: DOMAIN-SUFFIX,stats.paypal.com",
+    "Advertising/Advertising_All.list:248669: DOMAIN-SUFFIX,amdc.alipay.com",
+    "Advertising/Advertising_All.list:257478: DOMAIN-SUFFIX,t.paypal.com",
+    "Advertising/Advertising_All.list:264556: DOMAIN-SUFFIX,collect.alipay.com",
+    "Advertising/Advertising_All.list:270351: DOMAIN-SUFFIX,images.globalempcomm.visa.com",
+    "Advertising/Advertising_All.list:287045: DOMAIN-SUFFIX,tracking.cpa.qa.web.visa.com",
+    "Advertising/Advertising_All_No_Resolve.list:717: DOMAIN,as.boc.cn",
+    "Advertising/Advertising_All_No_Resolve.list:5312: DOMAIN,c.paypal.com",
+    "Advertising/Advertising_All_No_Resolve.list:44850: DOMAIN-SUFFIX,business.visa.com",
+    "Advertising/Advertising_All_No_Resolve.list:62387: DOMAIN-SUFFIX,data.account.paypal.com",
+    "Advertising/Advertising_All_No_Resolve.list:63403: DOMAIN-SUFFIX,data.fastlane-email.paypal.com",
+    "Advertising/Advertising_All_No_Resolve.list:64087: DOMAIN-SUFFIX,data.messaging.paypal.com",
+    "Advertising/Advertising_All_No_Resolve.list:64247: DOMAIN-SUFFIX,data.news.paypal.com",
+    "Advertising/Advertising_All_No_Resolve.list:64260: DOMAIN-SUFFIX,data.newsletter.paypal.com",
+    "Advertising/Advertising_All_No_Resolve.list:65203: DOMAIN-SUFFIX,data.zettleby.paypal.com",
+    "Advertising/Advertising_All_No_Resolve.list:104229: DOMAIN-SUFFIX,i.paypal.com",
+    "Advertising/Advertising_All_No_Resolve.list:128944: DOMAIN-SUFFIX,loggw-ex.alipay.com",
+    "Advertising/Advertising_All_No_Resolve.list:128945: DOMAIN-SUFFIX,loggw-exsdk.alipay.com",
+    "Advertising/Advertising_All_No_Resolve.list:150852: DOMAIN-SUFFIX,openmonitor.alipay.com",
+    "Advertising/Advertising_All_No_Resolve.list:204618: DOMAIN-SUFFIX,stats.paypal.com",
+    "Advertising/Advertising_All_No_Resolve.list:248669: DOMAIN-SUFFIX,amdc.alipay.com",
+    "Advertising/Advertising_All_No_Resolve.list:257478: DOMAIN-SUFFIX,t.paypal.com",
+    "Advertising/Advertising_All_No_Resolve.list:264556: DOMAIN-SUFFIX,collect.alipay.com",
+    "Advertising/Advertising_All_No_Resolve.list:270351: DOMAIN-SUFFIX,images.globalempcomm.visa.com",
+    "Advertising/Advertising_All_No_Resolve.list:287045: DOMAIN-SUFFIX,tracking.cpa.qa.web.visa.com",
+    "AdvertisingLite/AdvertisingLite_All.list:4158: DOMAIN,c.paypal.com",
+    "AdvertisingLite/AdvertisingLite_All.list:25772: DOMAIN-SUFFIX,amdc.alipay.com",
+    "AdvertisingLite/AdvertisingLite_All.list:35140: DOMAIN-SUFFIX,t.paypal.com",
+    "AdvertisingLite/AdvertisingLite_All_No_Resolve.list:4158: DOMAIN,c.paypal.com",
+    "AdvertisingLite/AdvertisingLite_All_No_Resolve.list:25772: DOMAIN-SUFFIX,amdc.alipay.com",
+    "AdvertisingLite/AdvertisingLite_All_No_Resolve.list:35140: DOMAIN-SUFFIX,t.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All.list:463: DOMAIN,as.boc.cn",
+    "AdvertisingTest/AdvertisingTest_All.list:3701: DOMAIN,c.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All.list:31780: DOMAIN-SUFFIX,business.visa.com",
+    "AdvertisingTest/AdvertisingTest_All.list:36821: DOMAIN-SUFFIX,collect.alipay.com",
+    "AdvertisingTest/AdvertisingTest_All.list:44962: DOMAIN-SUFFIX,data.account.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All.list:46192: DOMAIN-SUFFIX,data.fastlane-email.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All.list:46964: DOMAIN-SUFFIX,data.messaging.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All.list:47135: DOMAIN-SUFFIX,data.news.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All.list:47152: DOMAIN-SUFFIX,data.newsletter.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All.list:48190: DOMAIN-SUFFIX,data.zettleby.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All.list:75266: DOMAIN-SUFFIX,i.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All.list:76436: DOMAIN-SUFFIX,images.globalempcomm.visa.com",
+    "AdvertisingTest/AdvertisingTest_All.list:94130: DOMAIN-SUFFIX,loggw-ex.alipay.com",
+    "AdvertisingTest/AdvertisingTest_All.list:94131: DOMAIN-SUFFIX,loggw-exsdk.alipay.com",
+    "AdvertisingTest/AdvertisingTest_All.list:111612: DOMAIN-SUFFIX,openmonitor.alipay.com",
+    "AdvertisingTest/AdvertisingTest_All.list:154794: DOMAIN-SUFFIX,stats.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All.list:160890: DOMAIN-SUFFIX,telemetry.paypay.ne.jp",
+    "AdvertisingTest/AdvertisingTest_All.list:265436: DOMAIN-SUFFIX,amdc.alipay.com",
+    "AdvertisingTest/AdvertisingTest_All.list:273122: DOMAIN-SUFFIX,t.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All.list:279480: DOMAIN-SUFFIX,c6.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All.list:305464: DOMAIN-SUFFIX,data.service.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:463: DOMAIN,as.boc.cn",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:3701: DOMAIN,c.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:31780: DOMAIN-SUFFIX,business.visa.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:36821: DOMAIN-SUFFIX,collect.alipay.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:44962: DOMAIN-SUFFIX,data.account.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:46192: DOMAIN-SUFFIX,data.fastlane-email.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:46964: DOMAIN-SUFFIX,data.messaging.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:47135: DOMAIN-SUFFIX,data.news.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:47152: DOMAIN-SUFFIX,data.newsletter.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:48190: DOMAIN-SUFFIX,data.zettleby.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:75266: DOMAIN-SUFFIX,i.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:76436: DOMAIN-SUFFIX,images.globalempcomm.visa.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:94130: DOMAIN-SUFFIX,loggw-ex.alipay.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:94131: DOMAIN-SUFFIX,loggw-exsdk.alipay.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:111612: DOMAIN-SUFFIX,openmonitor.alipay.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:154794: DOMAIN-SUFFIX,stats.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:160890: DOMAIN-SUFFIX,telemetry.paypay.ne.jp",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:265436: DOMAIN-SUFFIX,amdc.alipay.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:273122: DOMAIN-SUFFIX,t.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:279480: DOMAIN-SUFFIX,c6.paypal.com",
+    "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:305464: DOMAIN-SUFFIX,data.service.paypal.com",
+    "Alibaba/Alibaba_All.list:110: DOMAIN-SUFFIX,alipay.com",
+    "Alibaba/Alibaba_All_No_Resolve.list:110: DOMAIN-SUFFIX,alipay.com",
+    "China/China_All.list:400: DOMAIN-SUFFIX,alipay.com",
+    "China/China_All.list:3202: DOMAIN-SUFFIX,unionpay.com",
+    "China/China_All_No_Resolve.list:400: DOMAIN-SUFFIX,alipay.com",
+    "China/China_All_No_Resolve.list:3202: DOMAIN-SUFFIX,unionpay.com",
+    "ChinaMax/ChinaMax_All.list:1422: DOMAIN-SUFFIX,alipay.com",
+    "ChinaMax/ChinaMax_All.list:4073: DOMAIN-SUFFIX,unionpay.com",
+    "ChinaMax/ChinaMax_All_No_Resolve.list:1422: DOMAIN-SUFFIX,alipay.com",
+    "ChinaMax/ChinaMax_All_No_Resolve.list:4073: DOMAIN-SUFFIX,unionpay.com",
+    "ChinaMaxNoIP/ChinaMaxNoIP_All.list:4020: DOMAIN-SUFFIX,unionpay.com",
+    "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:4020: DOMAIN-SUFFIX,unionpay.com",
+    "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:3956: DOMAIN-SUFFIX,unionpay.com",
+    "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:3956: DOMAIN-SUFFIX,unionpay.com",
+    "ChinaNoMedia/ChinaNoMedia_All.list:392: DOMAIN-SUFFIX,alipay.com",
+    "ChinaNoMedia/ChinaNoMedia_All.list:3126: DOMAIN-SUFFIX,unionpay.com",
+    "ChinaNoMedia/ChinaNoMedia_All_No_Resolve.list:392: DOMAIN-SUFFIX,alipay.com",
+    "ChinaNoMedia/ChinaNoMedia_All_No_Resolve.list:3126: DOMAIN-SUFFIX,unionpay.com",
+    "ChinaTest/ChinaTest_All.list:475: DOMAIN-SUFFIX,alipay.com",
+    "ChinaTest/ChinaTest_All.list:3265: DOMAIN-SUFFIX,unionpay.com",
+    "ChinaTest/ChinaTest_All_No_Resolve.list:475: DOMAIN-SUFFIX,alipay.com",
+    "ChinaTest/ChinaTest_All_No_Resolve.list:3265: DOMAIN-SUFFIX,unionpay.com",
+    "Copilot/Copilot.list:55: DOMAIN-SUFFIX,stripe.com",
+    "Copilot/Copilot_Resolve.list:55: DOMAIN-SUFFIX,stripe.com",
+    "EasyPrivacy/EasyPrivacy_All.list:8511: DOMAIN-SUFFIX,collect.alipay.com",
+    "EasyPrivacy/EasyPrivacy_All.list:9945: DOMAIN-SUFFIX,data.news.paypal.com",
+    "EasyPrivacy/EasyPrivacy_All.list:10005: DOMAIN-SUFFIX,data.service.paypal.com",
+    "EasyPrivacy/EasyPrivacy_All.list:14490: DOMAIN-SUFFIX,i.paypal.com",
+    "EasyPrivacy/EasyPrivacy_All.list:14808: DOMAIN-SUFFIX,images.globalempcomm.visa.com",
+    "EasyPrivacy/EasyPrivacy_All.list:35930: DOMAIN-SUFFIX,tracking.cpa.qa.web.visa.com",
+    "EasyPrivacy/EasyPrivacy_All_No_Resolve.list:8511: DOMAIN-SUFFIX,collect.alipay.com",
+    "EasyPrivacy/EasyPrivacy_All_No_Resolve.list:9945: DOMAIN-SUFFIX,data.news.paypal.com",
+    "EasyPrivacy/EasyPrivacy_All_No_Resolve.list:10005: DOMAIN-SUFFIX,data.service.paypal.com",
+    "EasyPrivacy/EasyPrivacy_All_No_Resolve.list:14490: DOMAIN-SUFFIX,i.paypal.com",
+    "EasyPrivacy/EasyPrivacy_All_No_Resolve.list:14808: DOMAIN-SUFFIX,images.globalempcomm.visa.com",
+    "EasyPrivacy/EasyPrivacy_All_No_Resolve.list:35930: DOMAIN-SUFFIX,tracking.cpa.qa.web.visa.com",
+    "Global/Global_All.list:19399: DOMAIN-SUFFIX,paypal.com",
+    "Global/Global_All.list:23500: DOMAIN-SUFFIX,stripe.com",
+    "Global/Global_All.list:25796: DOMAIN-SUFFIX,visa.com",
+    "Global/Global_All_No_Resolve.list:19399: DOMAIN-SUFFIX,paypal.com",
+    "Global/Global_All_No_Resolve.list:23500: DOMAIN-SUFFIX,stripe.com",
+    "Global/Global_All_No_Resolve.list:25796: DOMAIN-SUFFIX,visa.com",
+    "OpenAI/OpenAI.list:40: DOMAIN-SUFFIX,stripe.com",
+    "OpenAI/OpenAI_Resolve.list:40: DOMAIN-SUFFIX,stripe.com",
+    "Privacy/Privacy_All.list:8541: DOMAIN-SUFFIX,collect.alipay.com",
+    "Privacy/Privacy_All.list:14747: DOMAIN-SUFFIX,images.globalempcomm.visa.com",
+    "Privacy/Privacy_All.list:35905: DOMAIN-SUFFIX,tracking.cpa.qa.web.visa.com",
+    "Privacy/Privacy_All_No_Resolve.list:8541: DOMAIN-SUFFIX,collect.alipay.com",
+    "Privacy/Privacy_All_No_Resolve.list:14747: DOMAIN-SUFFIX,images.globalempcomm.visa.com",
+    "Privacy/Privacy_All_No_Resolve.list:35905: DOMAIN-SUFFIX,tracking.cpa.qa.web.visa.com"
+  ],
+  "reputation_feed_status": {
+    "urlhaus_domains": 0,
+    "openphish_domains": 278,
+    "feeds_available": true,
+    "urlhaus_file_present": false,
+    "openphish_file_present": true,
+    "note": "Reputation matches are review flags, not automatic deletions. Matches in block/filter lists may be expected."
+  },
+  "reputation_matches": [
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Amazon/Amazon.list",
+      "line": 137,
+      "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Amazon/Amazon_Resolve.list",
+      "line": 137,
+      "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "China/China.list",
+      "line": 12,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "China/China.list",
+      "line": 13,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "China/China_All.list",
+      "line": 969,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "China/China_All.list",
+      "line": 2373,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "China/China_All_No_Resolve.list",
+      "line": 969,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "China/China_All_No_Resolve.list",
+      "line": 2373,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "China/China_Resolve.list",
+      "line": 12,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "China/China_Resolve.list",
+      "line": 13,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMax/ChinaMax.list",
+      "line": 14,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMax/ChinaMax.list",
+      "line": 15,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMax/ChinaMax_All.list",
+      "line": 1949,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMax/ChinaMax_All.list",
+      "line": 3280,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMax/ChinaMax_All_No_Resolve.list",
+      "line": 1949,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMax/ChinaMax_All_No_Resolve.list",
+      "line": 3280,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMax/ChinaMax_No_IPv6.list",
+      "line": 14,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMax/ChinaMax_No_IPv6.list",
+      "line": 15,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+      "line": 14,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+      "line": 15,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMax/ChinaMax_Resolve.list",
+      "line": 14,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMax/ChinaMax_Resolve.list",
+      "line": 15,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMaxNoIP/ChinaMaxNoIP.list",
+      "line": 11,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMaxNoIP/ChinaMaxNoIP.list",
+      "line": 12,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+      "line": 1905,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+      "line": 3233,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+      "line": 1905,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+      "line": 3233,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+      "line": 14,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+      "line": 15,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+      "line": 1863,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+      "line": 3178,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+      "line": 1863,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+      "line": 3178,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+      "line": 14,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+      "line": 15,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaNoMedia/ChinaNoMedia.list",
+      "line": 12,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaNoMedia/ChinaNoMedia.list",
+      "line": 13,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaNoMedia/ChinaNoMedia_All.list",
+      "line": 932,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaNoMedia/ChinaNoMedia_All.list",
+      "line": 2310,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaNoMedia/ChinaNoMedia_All_No_Resolve.list",
+      "line": 932,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaNoMedia/ChinaNoMedia_All_No_Resolve.list",
+      "line": 2310,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaNoMedia/ChinaNoMedia_Resolve.list",
+      "line": 12,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaNoMedia/ChinaNoMedia_Resolve.list",
+      "line": 13,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaTest/ChinaTest.list",
+      "line": 12,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaTest/ChinaTest.list",
+      "line": 13,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaTest/ChinaTest_All.list",
+      "line": 1041,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaTest/ChinaTest_All.list",
+      "line": 2435,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaTest/ChinaTest_All_No_Resolve.list",
+      "line": 1041,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaTest/ChinaTest_All_No_Resolve.list",
+      "line": 2435,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaTest/ChinaTest_Resolve.list",
+      "line": 12,
+      "rule": "DOMAIN-SUFFIX,cn",
+      "matched_domain": "aib92s.aolade.cn"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ChinaTest/ChinaTest_Resolve.list",
+      "line": 13,
+      "rule": "DOMAIN-SUFFIX,ms",
+      "matched_domain": "f1700qgk-4321.brs.devtunnels.ms"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Cloudflare/Cloudflare.list",
+      "line": 47,
+      "rule": "DOMAIN-SUFFIX,pages.dev",
+      "matched_domain": "fwunyrpsdbg-eqpoo68vze6n-1t1yfrpoh-n2ehzupv6f.pages.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Cloudflare/Cloudflare.list",
+      "line": 51,
+      "rule": "DOMAIN-SUFFIX,workers.dev",
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Cloudflare/Cloudflare_Resolve.list",
+      "line": 47,
+      "rule": "DOMAIN-SUFFIX,pages.dev",
+      "matched_domain": "fwunyrpsdbg-eqpoo68vze6n-1t1yfrpoh-n2ehzupv6f.pages.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Cloudflare/Cloudflare_Resolve.list",
+      "line": 51,
+      "rule": "DOMAIN-SUFFIX,workers.dev",
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "GitBook/GitBook.list",
+      "line": 8,
+      "rule": "DOMAIN-SUFFIX,gitbook.io",
+      "matched_domain": "cripthcomlogin.gitbook.io"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "GitHub/GitHub.list",
+      "line": 19,
+      "rule": "DOMAIN-SUFFIX,github.io",
+      "matched_domain": "meenakshi-cse.github.io"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 4020,
+      "rule": "DOMAIN-SUFFIX,blogspot.com",
+      "matched_domain": "www.lazada0277.blogspot.com"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 8966,
+      "rule": "DOMAIN-SUFFIX,eu.org",
+      "matched_domain": "five.seafn.eu.org"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 10778,
+      "rule": "DOMAIN-SUFFIX,github.io",
+      "matched_domain": "meenakshi-cse.github.io"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 26460,
+      "rule": "DOMAIN-SUFFIX,web.app",
+      "matched_domain": "netflix-bobby.web.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 29514,
+      "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 29921,
+      "rule": "DOMAIN-SUFFIX,duckdns.org",
+      "matched_domain": "www.112acil112acil112acil.duckdns.org"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 30643,
+      "rule": "DOMAIN-SUFFIX,gitbook.io",
+      "matched_domain": "cripthcomlogin.gitbook.io"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 31298,
+      "rule": "DOMAIN-SUFFIX,is.gd",
+      "matched_domain": "is.gd"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 32261,
+      "rule": "DOMAIN-SUFFIX,netlify.app",
+      "matched_domain": "virtlsucrsalpsns.netlify.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 32610,
+      "rule": "DOMAIN-SUFFIX,pages.dev",
+      "matched_domain": "fwunyrpsdbg-eqpoo68vze6n-1t1yfrpoh-n2ehzupv6f.pages.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 34443,
+      "rule": "DOMAIN-SUFFIX,vercel.app",
+      "matched_domain": "www.instagam-login-redirect-verify-uid4.vercel.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 34775,
+      "rule": "DOMAIN-SUFFIX,workers.dev",
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 4020,
+      "rule": "DOMAIN-SUFFIX,blogspot.com",
+      "matched_domain": "www.lazada0277.blogspot.com"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 8966,
+      "rule": "DOMAIN-SUFFIX,eu.org",
+      "matched_domain": "five.seafn.eu.org"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 10778,
+      "rule": "DOMAIN-SUFFIX,github.io",
+      "matched_domain": "meenakshi-cse.github.io"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 26460,
+      "rule": "DOMAIN-SUFFIX,web.app",
+      "matched_domain": "netflix-bobby.web.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 29514,
+      "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 29921,
+      "rule": "DOMAIN-SUFFIX,duckdns.org",
+      "matched_domain": "www.112acil112acil112acil.duckdns.org"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 30643,
+      "rule": "DOMAIN-SUFFIX,gitbook.io",
+      "matched_domain": "cripthcomlogin.gitbook.io"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 31298,
+      "rule": "DOMAIN-SUFFIX,is.gd",
+      "matched_domain": "is.gd"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 32261,
+      "rule": "DOMAIN-SUFFIX,netlify.app",
+      "matched_domain": "virtlsucrsalpsns.netlify.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 32610,
+      "rule": "DOMAIN-SUFFIX,pages.dev",
+      "matched_domain": "fwunyrpsdbg-eqpoo68vze6n-1t1yfrpoh-n2ehzupv6f.pages.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 34443,
+      "rule": "DOMAIN-SUFFIX,vercel.app",
+      "matched_domain": "www.instagam-login-redirect-verify-uid4.vercel.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 34775,
+      "rule": "DOMAIN-SUFFIX,workers.dev",
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "GlobalMedia/GlobalMedia_All.list",
+      "line": 189,
+      "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "GlobalMedia/GlobalMedia_All_No_Resolve.list",
+      "line": 189,
+      "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Google/Google.list",
+      "line": 89,
+      "rule": "DOMAIN-SUFFIX,blogspot.com",
+      "matched_domain": "www.lazada0277.blogspot.com"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Google/Google.list",
+      "line": 666,
+      "rule": "DOMAIN-SUFFIX,web.app",
+      "matched_domain": "netflix-bobby.web.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Google/Google_Resolve.list",
+      "line": 89,
+      "rule": "DOMAIN-SUFFIX,blogspot.com",
+      "matched_domain": "www.lazada0277.blogspot.com"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Google/Google_Resolve.list",
+      "line": 666,
+      "rule": "DOMAIN-SUFFIX,web.app",
+      "matched_domain": "netflix-bobby.web.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "NaSDDNS/NaSDDNS.list",
+      "line": 23,
+      "rule": "DOMAIN-SUFFIX,duckdns.org",
+      "matched_domain": "www.112acil112acil112acil.duckdns.org"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "NaSDDNS/NaSDDNS_Resolve.list",
+      "line": 23,
+      "rule": "DOMAIN-SUFFIX,duckdns.org",
+      "matched_domain": "www.112acil112acil112acil.duckdns.org"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All.list",
+      "line": 1202,
+      "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All.list",
+      "line": 1615,
+      "rule": "DOMAIN-SUFFIX,duckdns.org",
+      "matched_domain": "www.112acil112acil112acil.duckdns.org"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All.list",
+      "line": 2342,
+      "rule": "DOMAIN-SUFFIX,gitbook.io",
+      "matched_domain": "cripthcomlogin.gitbook.io"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All.list",
+      "line": 3002,
+      "rule": "DOMAIN-SUFFIX,is.gd",
+      "matched_domain": "is.gd"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All.list",
+      "line": 3970,
+      "rule": "DOMAIN-SUFFIX,netlify.app",
+      "matched_domain": "virtlsucrsalpsns.netlify.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All.list",
+      "line": 4325,
+      "rule": "DOMAIN-SUFFIX,pages.dev",
+      "matched_domain": "fwunyrpsdbg-eqpoo68vze6n-1t1yfrpoh-n2ehzupv6f.pages.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All.list",
+      "line": 6170,
+      "rule": "DOMAIN-SUFFIX,vercel.app",
+      "matched_domain": "www.instagam-login-redirect-verify-uid4.vercel.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All.list",
+      "line": 6505,
+      "rule": "DOMAIN-SUFFIX,workers.dev",
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All_No_Resolve.list",
+      "line": 1202,
+      "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All_No_Resolve.list",
+      "line": 1615,
+      "rule": "DOMAIN-SUFFIX,duckdns.org",
+      "matched_domain": "www.112acil112acil112acil.duckdns.org"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All_No_Resolve.list",
+      "line": 2342,
+      "rule": "DOMAIN-SUFFIX,gitbook.io",
+      "matched_domain": "cripthcomlogin.gitbook.io"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All_No_Resolve.list",
+      "line": 3002,
+      "rule": "DOMAIN-SUFFIX,is.gd",
+      "matched_domain": "is.gd"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All_No_Resolve.list",
+      "line": 3970,
+      "rule": "DOMAIN-SUFFIX,netlify.app",
+      "matched_domain": "virtlsucrsalpsns.netlify.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All_No_Resolve.list",
+      "line": 4325,
+      "rule": "DOMAIN-SUFFIX,pages.dev",
+      "matched_domain": "fwunyrpsdbg-eqpoo68vze6n-1t1yfrpoh-n2ehzupv6f.pages.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All_No_Resolve.list",
+      "line": 6170,
+      "rule": "DOMAIN-SUFFIX,vercel.app",
+      "matched_domain": "www.instagam-login-redirect-verify-uid4.vercel.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All_No_Resolve.list",
+      "line": 6505,
+      "rule": "DOMAIN-SUFFIX,workers.dev",
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ProxyLite/ProxyLite.list",
+      "line": 172,
+      "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ProxyLite/ProxyLite.list",
+      "line": 365,
+      "rule": "DOMAIN-SUFFIX,is.gd",
+      "matched_domain": "is.gd"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ProxyLite/ProxyLite_Resolve.list",
+      "line": 172,
+      "rule": "DOMAIN-SUFFIX,cloudfront.net",
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ProxyLite/ProxyLite_Resolve.list",
+      "line": 365,
+      "rule": "DOMAIN-SUFFIX,is.gd",
+      "matched_domain": "is.gd"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Vercel/Vercel.list",
+      "line": 18,
+      "rule": "DOMAIN-SUFFIX,vercel.app",
+      "matched_domain": "www.instagam-login-redirect-verify-uid4.vercel.app"
+    }
+  ],
+  "reputation_match_counts_by_scope": {
+    "app_or_routing": 111
+  },
+  "files": []
+}
