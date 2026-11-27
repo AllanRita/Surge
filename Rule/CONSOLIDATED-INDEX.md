@@ -1,48 +1,58 @@
-# Canonical Surge rule-set index
+# Surge App rule-set structure
 
 Updated: 2026-11-27
 
-This index defines the one maintenance target for verified same-app rule sets. Legacy paths remain available as compatibility mirrors; they are not independent maintenance targets.
+## Final architecture
 
-## Canonical rule sets and compatibility paths
+**One App = one rule-set folder = one Surge policy group.**
 
-| App / rule set | Scenario | Canonical maintenance path | Legacy compatibility path |
-|---|---|---|---|
-| Assassin's Creed Odyssey | Standard | `Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list` | `Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list` |
-| Assassin's Creed Odyssey | Resolve | `Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list` | `Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list` |
-| Assassin's Creed Origins | Standard | `Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list` | `Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list` |
-| Assassin's Creed Origins | Resolve | `Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list` | `Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list` |
-| PChome | Standard | `Rule/Upstream/PChomeTW/PChomeTW.list` | `Rule/Upstream/PChome/PChome.list` |
-| GlobalScholar / Scholar | Standard | `Rule/Upstream/GlobalScholar/GlobalScholar.list` | `Rule/Upstream/Scholar/Scholar.list` |
-| Gemini (formerly BardAI) | Standard | `Rule/Upstream/Gemini/Gemini.list` | `Rule/Upstream/BardAI/BardAI.list` |
-| ABEMA (formerly AbemaTV) | Standard | `Rule/Upstream/Abema/Abema.list` | `Rule/Upstream/AbemaTV/AbemaTV.list` |
+The App rule set identifies all domains and other matching rules used by that App. The country/region is selected in the App's Surge policy group, not by maintaining separate USA/Japan/Hong Kong folders.
 
-## Region and purpose variants intentionally preserved
+## Consolidation rules
 
-| App | Kept separate paths | Reason |
+1. Merge regional variants of the same App into its canonical App folder.
+2. Compare the rule bodies from every already-cached author source before merging; add missing rules only after checking their semantics and safety.
+3. Keep distinct file formats separately. For example, standard and Resolve are different formats; keep one completed file for each format.
+4. Do not merge different Apps because they share a CDN, parent company, login provider, or cloud platform.
+5. Preserve provenance and source licenses under SourceMetadata; do not fetch new author rule sets during this cleanup.
+6. Do not delete payment-related domains from unrelated App lists.
+7. Do not modify Rule/Personal.
+
+## Approved App-folder consolidation
+
+| Canonical App folder | Regional / alternate folders to consolidate | Rule handling |
 |---|---|---|
-| Hulu | Hulu, HuluUSA, HuluJP | Region-specific routing choices; the general Hulu list currently covers the regional subsets, but the USA/JP lists remain available for region-specific policies |
-| HBO | HBO, HBOHK | Separate regional service scopes |
-| Cloudflare | Cloudflare, Cloudflarecn | Global and China-specific service scopes |
-| DNS | DNS, Block/DNS | DNS resolver routing vs HTTPDNS blocking |
-| YouTube | YouTube, Block/YouTube | Service routing domains vs URL-REGEX ad-block rules |
-| Direct | Direct, AdGuardSDNSFilter/Direct | General direct-routing destinations vs AdGuard SDNS filter direct-category rules |
+| Abema | AbemaTV | Same payload; one folder |
+| Gemini | BardAI | Same payload; one folder |
+| PChome | PChomeTW | Same payload; one folder |
+| GlobalScholar | Scholar | Same payload family; keep the union |
+| BiliBili | BiliBiliIntl | Add the international process name to standard and Resolve |
+| iQIYI | iQIYIIntl | Add missing international IP ranges/process names to both formats |
+| Hulu | HuluUSA, HuluJP | Existing Hulu list already covers the regional sets |
+| Telegram | TelegramNL, TelegramSG, TelegramUS | Regional IP ranges already covered by Telegram's broad ranges |
+| Amazon | AmazonCN | Add 17 additional China-region rules to standard and Resolve |
+| HBO | HBOAsia, HBOHK, HBOUSA | Add five additional regional rules |
+| Cloudflare | Cloudflarecn | Existing Cloudflare list covers the regional set |
+| Steam | SteamCN | Add five China CDN/service rules to standard and Resolve |
+| Assassin's Creed Odyssey | Game/Assassin'sCreed-Odyssey | Remove duplicate category copy; retain standard and Resolve |
+| Assassin's Creed Origins | Game/Assassin'sCreed-Origins | Remove duplicate category copy; retain standard and Resolve |
 
-## Merge and compatibility policy
+## Bank and payment App folders
 
-1. Edit only the canonical path for each approved group.
-2. During upstream synchronization, union exact rule lines from canonical and legacy inputs, deduplicate exact duplicate lines, and mirror the resulting rule payload to every legacy path.
-3. Keep each file's own NAME/header identity, while refreshing rule-type counts from the merged payload.
-4. Do not merge Standard, Resolve, No-Resolve, No-IPv6, regional, blocking, and routing scenarios into one list.
-5. Similarity or shared domains alone never authorizes a merge. Parent-company relationships and shared CDN/authentication domains are not proof that two apps are the same.
-6. Personal rules under `Rule/Personal/` are never included in canonical merges.
-7. Never delete legacy paths until subscription migration and compatibility have been explicitly verified.
+The current inventory found no dedicated bank/payment App folders under Rule/Upstream. Therefore, no such folder needs deletion at this stage.
 
-## Source identity references
+- Keep payment-related domains that are part of other App rule sets.
+- Keep Rule/Personal/PayPay.list unchanged.
+- Future bank/payment domains belong in the user's personal rule set, not in the shared App library.
 
-- GlobalScholar README documents Scholar as a contained sub-rule: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalScholar/README.md
-- Gemini README documents BardAI as a contained sub-rule: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gemini/README.md
-- ABEMA was renamed from AbemaTV in April 2020: https://av.watch.impress.co.jp/docs/series/rt/1246004.html
+## File formats
 
-The machine-readable source of truth is `Rule/CONSOLIDATION-PLAN.json`.
-The synchronization applies the approved groups from `.github/scripts/apply_canonical_app_merges.py`.
+Keep each distinct existing format once within its App folder. Standard and Resolve files remain separate; other explicit variants such as All, All_No_Resolve, Domain-only, and No-IPv6 are not collapsed merely because they currently contain identical rules.
+
+## Current source comparison
+
+The 15 author-source snapshots already cached in SourceMetadata have been compared against their correctly mapped App/category rule files. The current audit reports zero uncovered source rules. No new author rule sets were fetched.
+
+See:
+- CLEANUP-INVENTORY.md for the file inventory, cached-source coverage, static syntax checks, and OpenPhish review matches.
+- APP-POLICY-MERGE-REPORT.md for the completed folder consolidation and rule additions.
