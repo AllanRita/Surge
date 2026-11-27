@@ -455,7 +455,7 @@ def main():
  sec += [f"- {x}" for x in examples.get("stale_or_private_root_suffix",[])] if examples.get("stale_or_private_root_suffix") else ["- None detected or IANA TLD feed unavailable."]
  sec += ["","## Financial-service domains","",
   f"- Financial-domain rule matches found: {len(financial)}",
-  "- Only the exact 14 folder paths listed in .github/explicit-rule-exclusions.json remain tombstoned from earlier explicit deletions. No additional bank/payment, crypto, securities, or other finance folders are deleted. Financial-service domains embedded in unrelated rule sets remain unchanged.",
+  "- The 14 bank/payment/finance folders previously excluded were explicitly restored by the user on 2026-11-27 and are no longer tombstoned. No bank/payment/finance folders are deleted by category-based automation. Financial-service domains embedded in unrelated rule sets remain unchanged.",
   "- Rule/Personal was not modified.","",
   "## Interpretation",
   "- OpenPhish/URLhaus matches under a shared CDN or hosting suffix are not direct evidence that the App rule itself is malicious.",
