@@ -176,9 +176,9 @@ class SurgeMaintenanceTests(unittest.TestCase):
             root = Path(td)
             app = root / "Example"
             app.mkdir()
-            (app / "Example.list").write_text("DOMAIN-SUFFIX,example.com\\nIP-CIDR,10.0.0.0/8,no-resolve\\nIP-CIDR6,2001:db8::/32,no-resolve\\n", encoding="utf-8")
-            (app / "Example_Resolve.list").write_text("DOMAIN-SUFFIX,example.com\\nIP-CIDR,10.0.0.0/8\\nIP-CIDR6,2001:db8::/32\\n", encoding="utf-8")
-            (app / "Example_No_IPv6.list").write_text("DOMAIN-SUFFIX,example.com\\nIP-CIDR,10.0.0.0/8,no-resolve\\n", encoding="utf-8")
+            (app / "Example.list").write_text("DOMAIN-SUFFIX,example.com\nIP-CIDR,10.0.0.0/8,no-resolve\nIP-CIDR6,2001:db8::/32,no-resolve\n", encoding="utf-8")
+            (app / "Example_Resolve.list").write_text("DOMAIN-SUFFIX,example.com\nIP-CIDR,10.0.0.0/8\nIP-CIDR6,2001:db8::/32\n", encoding="utf-8")
+            (app / "Example_No_IPv6.list").write_text("DOMAIN-SUFFIX,example.com\nIP-CIDR,10.0.0.0/8,no-resolve\n", encoding="utf-8")
             report = FORMAT_AUDIT.audit(root)
             self.assertEqual(report["format_pairs_checked"], 2)
             self.assertEqual(report["matching_pairs"], 2)
@@ -191,8 +191,8 @@ class SurgeMaintenanceTests(unittest.TestCase):
             app.mkdir()
             standard = app / "Example.list"
             resolve = app / "Example_Resolve.list"
-            standard.write_text("DOMAIN-SUFFIX,example.com\\n", encoding="utf-8")
-            resolve.write_text("DOMAIN-SUFFIX,example.net\\n", encoding="utf-8")
+            standard.write_text("DOMAIN-SUFFIX,example.com\n", encoding="utf-8")
+            resolve.write_text("DOMAIN-SUFFIX,example.net\n", encoding="utf-8")
             before = (standard.read_bytes(), resolve.read_bytes())
             report = FORMAT_AUDIT.audit(root)
             self.assertEqual(report["pairs_with_differences"], 1)
