@@ -31,7 +31,7 @@ class SurgeMaintenanceTests(unittest.TestCase):
         same_mode = [MERGE.parse_rule("IP-CIDR,10.0.0.0/8,no-resolve")]
         different_mode = [MERGE.parse_rule("IP-CIDR,10.0.0.0/8")]
         self.assertTrue(MERGE.is_covered(MERGE.parse_rule("IP-CIDR,10.1.0.0/16,no-resolve"), same_mode))
-        self.assertFalse(MERGE.is_covered(MERGE.parse_rule("IP-CIDR,10.1.0.0/16"), broader))
+        self.assertFalse(MERGE.is_covered(MERGE.parse_rule("IP-CIDR,10.1.0.0/16,no-resolve"), broader))
         self.assertFalse(MERGE.is_covered(MERGE.parse_rule("IP-CIDR,10.1.0.0/16,no-resolve"), different_mode))
         self.assertFalse(MERGE.is_covered(MERGE.parse_rule("IP-CIDR6,2001:db8::/32,no-resolve"), broader))
 
