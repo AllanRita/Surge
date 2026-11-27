@@ -300,7 +300,7 @@ def main():
   "exact_raw_duplicate_file_groups":rawdups,"same_rule_payload_file_groups":payloaddups,"alias_candidates":aliases,
   "cached_source_coverage":coverage,"static_security_findings":dict(findings),"static_security_examples":{k:v[:50] for k,v in examples.items()},"financial_domain_matches_not_deleted":financial[:500],
   "shared_hosting_suffix_matches":[{"suffix":suffix,"classification":SHARED_HOSTING_SUFFIXES[suffix],"rule_occurrences":hit["count"],"folders":sorted(hit["folders"]),"files":sorted(hit["paths"]),"examples":hit["examples"]} for suffix,hit in sorted(shared_hosting_hits.items())],
-  "reputation_feed_status":{"urlhaus_domains":len(urlhaus),"openphish_domains":len(openphish),"feeds_available":bool(urlhaus or openphish),"urlhaus_file_present":bool(a.urlhaus and Path(a.urlhaus).is_file()),"openphish_file_present":bool(a.openphish and Path(a.openphish).is_file()),"urlhaus_status":"loaded" if urlhaus else "not loaded; authenticated hostfile export requires the URLHAUS_AUTH_KEY repository secret","note":"Reputation matches are review flags, not automatic deletions. Matches in block/filter lists may be expected."},
+  "reputation_feed_status":{"urlhaus_domains":len(urlhaus),"openphish_domains":len(openphish),"feeds_available":bool(urlhaus or openphish),"urlhaus_file_present":bool(a.urlhaus and Path(a.urlhaus).is_file()),"openphish_file_present":bool(a.openphish and Path(a.openphish).is_file()),"urlhaus_status":"loaded" if urlhaus else ("downloaded file is empty or invalid" if a.urlhaus and Path(a.urlhaus).is_file() else "not loaded; URLHAUS_AUTH_KEY is missing or download failed"),"openphish_status":"loaded" if openphish else ("downloaded file is empty or invalid" if a.openphish and Path(a.openphish).is_file() else "not loaded; download failed or file missing"),"note":"Reputation matches are review flags, not automatic deletions. Matches in block/filter lists may be expected; an unavailable feed is not a clean result."},
   "reputation_matches":threat,"reputation_match_counts_by_scope":dict(threat_scope),"files":file_rows,
  }
  (ROOT/"CLEANUP-INVENTORY.json").write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
@@ -330,7 +330,8 @@ def main():
  for x in examples.get("unsupported_or_missing_operand",[])[:30]: md.append(f"  - {x}")
  for x in examples.get("invalid_domain",[])[:30]: md.append(f"  - {x}")
  for x in examples.get("invalid_network",[])[:30]: md.append(f"  - {x}")
- md += ["","- Detailed threat-feed and broad shared-hosting review: see SECURITY-REVIEW.md.",f"- Financial-domain matches: {len(financial)} (review only; not deleted)",f"- URLhaus domains loaded: {len(urlhaus)}",("- URLhaus status: authenticated hostfile not loaded; configure the GitHub Actions secret URLHAUS_AUTH_KEY to enable it" if not urlhaus else "- URLhaus status: authenticated hostfile loaded"),f"- OpenPhish domains loaded: {len(openphish)}",f"- Reputation matches shown: {len(threat)} (max 500); scope counts: {dict(threat_scope)}","- Reputation-feed matches are review flags, not automatic deletions. Matches in block/filter lists may be intentional; app/routing matches need manual review.","","## Exact duplicate files",""]
+ md += ["","- Detailed threat-feed and broad shared-hosting review: see SECURITY-REVIEW.md.",f"- Financial-domain matches: {len(financial)} (review only; not deleted)",f"- URLhaus domains loaded: {len(urlhaus)}",f"- URLhaus status: {data['reputation_feed_status']['urlhaus_status']}",f"- OpenPhish domains loaded: {len(openphish)}",f"- OpenPhish status: {data['reputation_feed_status']['openphish_status']}",f"- Reputation matches shown: {len(threat)} (max 500); scope counts: {dict(threat_scope)}","- Reputation-feed matches are review flags, not automatic deletions. Matches in block/filter lists may be intentional; app/routing matches need manual review.",""]
+ if not urlhaus or not openphish: md.append("- Feed coverage is incomplete; zero matches must not be interpreted as clean.")
  md += [", ".join(x) for x in rawdups] if rawdups else ["- None"]
  md += ["","## Identical rule payloads with headers ignored",""]
  md += [", ".join(x) for x in payloaddups] if payloaddups else ["- None"]
@@ -359,8 +360,9 @@ def main():
   f"- Rule-to-feed matches: {len(threat)} (up to 500 retained in the JSON report)",
   f"- Scope counts: {dict(threat_scope)}","",
  ]
- if not urlhaus:
-  sec.append("- URLhaus hostfile not loaded: the current export requires an Auth-Key. Configure the GitHub Actions secret URLHAUS_AUTH_KEY to enable authenticated checks; OpenPhish was used for this run.")
+ if not urlhaus: sec.append(f"- URLhaus status: {data['reputation_feed_status']['urlhaus_status']}.")
+ if not openphish: sec.append(f"- OpenPhish status: {data['reputation_feed_status']['openphish_status']}.")
+ if not urlhaus or not openphish: sec.append("- Feed coverage is incomplete; zero matches must not be interpreted as clean.")
  sec += ["","## Matched rules",""]
  if not grouped:
   sec.append("- No rule-to-feed matches.")
