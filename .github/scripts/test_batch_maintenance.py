@@ -19,6 +19,7 @@ def load_module(name, filename):
 MERGE = load_module("merge_cached_sources", "merge_cached_sources.py")
 MAINTAIN = load_module("batch_maintain", "batch_maintain.py")
 PREFLIGHT = load_module("batch_preflight", "batch_preflight.py")
+FORMAT_AUDIT = load_module("audit_format_coverage", "audit_format_coverage.py")
 FORMAT = load_module("audit_format_parity", "audit_format_parity.py")
 
 class SurgeMaintenanceTests(unittest.TestCase):
@@ -170,6 +171,32 @@ class SurgeMaintenanceTests(unittest.TestCase):
         self.assertEqual(FORMAT.classify(Path("App/App_Resolve.list")), ("App", "resolve"))
         self.assertEqual(FORMAT.classify(Path("App/App.list")), ("App", "standard"))
 
+    def test_format_coverage_pairs_respect_documented_variants(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            app = root / "Example"
+            app.mkdir()
+            (app / "Example.list").write_text("DOMAIN-SUFFIX,example.com\\nIP-CIDR,10.0.0.0/8,no-resolve\\nIP-CIDR6,2001:db8::/32,no-resolve\\n", encoding="utf-8")
+            (app / "Example_Resolve.list").write_text("DOMAIN-SUFFIX,example.com\\nIP-CIDR,10.0.0.0/8\\nIP-CIDR6,2001:db8::/32\\n", encoding="utf-8")
+            (app / "Example_No_IPv6.list").write_text("DOMAIN-SUFFIX,example.com\\nIP-CIDR,10.0.0.0/8,no-resolve\\n", encoding="utf-8")
+            report = FORMAT_AUDIT.audit(root)
+            self.assertEqual(report["format_pairs_checked"], 2)
+            self.assertEqual(report["matching_pairs"], 2)
+            self.assertEqual(report["pairs_with_differences"], 0)
+
+    def test_format_coverage_reports_missing_rules_without_editing(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            app = root / "Example"
+            app.mkdir()
+            standard = app / "Example.list"
+            resolve = app / "Example_Resolve.list"
+            standard.write_text("DOMAIN-SUFFIX,example.com\\n", encoding="utf-8")
+            resolve.write_text("DOMAIN-SUFFIX,example.net\\n", encoding="utf-8")
+            before = (standard.read_bytes(), resolve.read_bytes())
+            report = FORMAT_AUDIT.audit(root)
+            self.assertEqual(report["pairs_with_differences"], 1)
+            self.assertEqual((standard.read_bytes(), resolve.read_bytes()), before)
     def test_urlhaus_hostfile_first_column(self):
         with tempfile.TemporaryDirectory() as td:
             feed = Path(td) / "urlhaus.txt"
