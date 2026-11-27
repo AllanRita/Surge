@@ -6,15 +6,15 @@ External icon links only. No image mirroring.
 
 | Index | Icons | Link |
 |---|---:|---|
-| All.json | 8601 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
+| All.json | 8602 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
 | Flags.json | 602 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Flags.json) |
-| Streaming.json | 416 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
+| Streaming.json | 417 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
 | AI.json | 59 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/AI.json) |
 | Packs/Apple-Emoji.json | 3587 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Emoji.json) |
 | Packs/Apple-Flags.json | 262 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Flags.json) |
 | Packs/Apple-iOS.json | 10 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-iOS.json) |
 | Packs/Apple-iOS-History.json | 0 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-iOS-History.json) |
-| Packs/Google-Play.json | 8 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Google-Play.json) |
+| Packs/Google-Play.json | 9 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Google-Play.json) |
 | Packs/Google-Play-History.json | 0 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Google-Play-History.json) |
 | Packs/Qure-Color.json | 347 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Color.json) |
 | Packs/Qure-Mini.json | 347 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Mini.json) |
@@ -74,11 +74,11 @@ Archived versions: 10
 
 ## Google Play
 
-Manual registered URLs: 8
-Visible current URLs: 8
+Manual registered URLs: 9
+Visible current URLs: 9
 Visible historical URLs: 0
 Hidden URLs: 0
-Archived URLs: 8
+Archived URLs: 9
 
 Google Play icons are registered manually in Custom.json. No store scraping. Removing a registered URL makes it historical; the archive is retained.
 
