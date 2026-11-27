@@ -57,7 +57,7 @@ The 15 author-source snapshots already cached in SourceMetadata have been compar
 
 - The current plan records 18 cross-App overlap pairs as keep-separate/manual-review boundaries. Similarity alone never authorizes a merge.
 - SECURITY-REVIEW.md records the current threat-feed matches and broad shared-hosting suffixes. Feed matches are review signals only; no shared-hosting parent suffix is automatically removed.
-- SECURITY-REMEDIATION-REPORT.md records the narrowly scoped removal of the verified non-IANA public suffix rule DOMAIN-SUFFIX,xihuan (17 occurrences).
+- SECURITY-REMEDIATION-REPORT.md records the latest IANA-gated check for `DOMAIN-SUFFIX,xihuan`: zero matching occurrences were found, so no rule files were changed. The earlier 17-occurrence figure is historical and is not the current repository state.
 - The latest OpenPhish comparison found 61 matches under shared hosting/CDN suffixes. URLhaus's old keyless hostfile endpoint is retired; authenticated checks run only when the GitHub Actions secret URLHAUS_AUTH_KEY is configured. Without it, URLhaus is explicitly marked as not loaded, not clean.
 
 ## Current audit scope
@@ -72,3 +72,50 @@ See:
 - SECURITY-REVIEW.md for the detailed threat-feed and shared-hosting review.
 - SECURITY-REMEDIATION-REPORT.md for the exact rule removed and why.
 - APP-POLICY-MERGE-REPORT.md for the completed folder consolidation and rule additions.
+
+
+## Post-consolidation verification and subscription migration
+
+The current `main` tree was checked against the consolidation plan:
+
+- All 14 canonical App folders exist.
+- All 19 approved alias folders are absent.
+- The merge report records 25 alias `.list` files removed, 73 rule entries added across formats, and 39 unique App-level additions.
+- The 15 cached author-source snapshots cover 300 source rules with zero uncovered rules.
+- The current inventory contains 828 upstream `.list` files across 663 App/category folders.
+- The 14 dedicated bank/payment App folders removed earlier remain absent. The three files in `Rule/Personal` remain separate and unchanged.
+
+### Old folder path to canonical folder
+
+GitHub raw-content URLs do not automatically redirect after a folder is removed. If an external Surge profile still subscribes to an old alias path, update it to the canonical folder and select the canonical file for the same format.
+
+| Removed alias folder | Canonical folder |
+|---|---|
+| `Rule/Upstream/AbemaTV/` | `Rule/Upstream/Abema/` |
+| `Rule/Upstream/BardAI/` | `Rule/Upstream/Gemini/` |
+| `Rule/Upstream/PChomeTW/` | `Rule/Upstream/PChome/` |
+| `Rule/Upstream/Scholar/` | `Rule/Upstream/GlobalScholar/` |
+| `Rule/Upstream/BiliBiliIntl/` | `Rule/Upstream/BiliBili/` |
+| `Rule/Upstream/iQIYIIntl/` | `Rule/Upstream/iQIYI/` |
+| `Rule/Upstream/HuluUSA/` | `Rule/Upstream/Hulu/` |
+| `Rule/Upstream/HuluJP/` | `Rule/Upstream/Hulu/` |
+| `Rule/Upstream/TelegramNL/` | `Rule/Upstream/Telegram/` |
+| `Rule/Upstream/TelegramSG/` | `Rule/Upstream/Telegram/` |
+| `Rule/Upstream/TelegramUS/` | `Rule/Upstream/Telegram/` |
+| `Rule/Upstream/AmazonCN/` | `Rule/Upstream/Amazon/` |
+| `Rule/Upstream/HBOAsia/` | `Rule/Upstream/HBO/` |
+| `Rule/Upstream/HBOHK/` | `Rule/Upstream/HBO/` |
+| `Rule/Upstream/HBOUSA/` | `Rule/Upstream/HBO/` |
+| `Rule/Upstream/Cloudflarecn/` | `Rule/Upstream/Cloudflare/` |
+| `Rule/Upstream/SteamCN/` | `Rule/Upstream/Steam/` |
+| `Rule/Upstream/Game/Assassin'sCreed-Odyssey/` | `Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/` |
+| `Rule/Upstream/Game/Assassin'sCreed-Origins/` | `Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/` |
+
+The repository does not contain the user's active Surge profile/configuration, so external subscription references and device-level refresh cannot be verified here. The migration map is provided to avoid silently assuming that old raw URLs still work.
+
+### Separate scope folders — intentionally not merged
+
+- `AmazonIP` remains separate from `Amazon`: it is a 1,521-entry IP-CIDR inventory, not an Amazon retail App-only domain list.
+- `ClubhouseIP` remains separate from `Clubhouse`: its README specifies direct routing for the IP list and proxy routing for the Clubhouse domain list.
+- `DuoWan` and `HuanJu` remain separate. HuanJu's 20 rules are a subset of DuoWan's 27, but their READMEs describe distinct rule scopes; overlap alone is not sufficient reason to merge them.
+- The 18 cross-App overlap boundaries remain separate. Shared CDN, parent-company, login, or analytics domains do not establish that two folders represent one App.

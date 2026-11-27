@@ -59,20 +59,21 @@ def main():
         if update_file(path):
             changed.append(str(path.relative_to(ROOT)))
     report=[
-        "# Security remediation report","",
-        "## Removed rule",
+        "# Security remediation check","",
+        "## Target rule",
         "- Rule: DOMAIN-SUFFIX,xihuan",
-        "- Reason: xihuan is not present in the IANA root-zone TLD list. This public root-suffix rule cannot match a normal public DNS suffix; it was repeated in ChinaMax-family variants.",
+        "- Validation: xihuan is absent from the current IANA root-zone list; this script targets only the exact rule shown above.",
         f"- Occurrences removed: {len(changed)}",
+        ("- Result: matching entries were removed from the files listed below." if changed else "- Result: no matching entry was present; no rule files were changed."),
         "- Files changed:",
     ]
     report += [f"  - {x}" for x in changed] if changed else ["  - none"]
     report += [
         "",
         "## Safety boundaries",
-        "- Only the exact DOMAIN-SUFFIX,xihuan rule was removed.",
-        "- No other domain, App folder, file format, cached source metadata, or personal rule was changed by this remediation.",
-        "- Other single-label suffixes were retained; their IANA/private status requires separate review.",
+        "- Only the exact DOMAIN-SUFFIX,xihuan rule is eligible for removal, and only after the IANA reference is available and confirms that xihuan is not delegated.",
+        "- No other domain, App folder, file format, cached source metadata, or personal rule is changed by this remediation.",
+        "- This report describes the current run only; historical occurrence counts must not be treated as current results.",
         "",
     ]
     (ROOT/"SECURITY-REMEDIATION-REPORT.md").write_text("\n".join(report),encoding="utf-8")

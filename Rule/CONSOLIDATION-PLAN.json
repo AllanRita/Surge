@@ -289,8 +289,8 @@
         "DuoWan",
         "HuanJu"
       ],
-      "decision": "manual review only",
-      "reason": "High domain overlap alone does not establish identical app purpose."
+      "decision": "keep separate",
+      "reason": "The current lists are not the same App rule set: HuanJu has 20 domain rules, all present in DuoWan's 27-rule list, while DuoWan has 7 additional domains. Their READMEs describe separate named rule scopes. The subset overlap does not establish one App policy group; keep both folders separate."
     },
     {
       "apps": [
@@ -508,5 +508,23 @@
     "never_auto_delete_shared_hosting_suffixes_from_feed_matches": true,
     "feed_unavailable_must_be_reported_not_treated_as_zero": true,
     "personal_rules_excluded_from_automated_remediation": true
-  }
+  },
+  "separate_scope_groups": [
+    {
+      "folders": [
+        "Amazon",
+        "AmazonIP"
+      ],
+      "decision": "keep separate",
+      "reason": "AmazonIP is a separate 1,521-entry IP-CIDR range inventory sourced from ACL4SSR AmazonIp, not an Amazon retail App-only domain list. Merging this broad network set into the Amazon App policy could capture unrelated IP traffic."
+    },
+    {
+      "folders": [
+        "Clubhouse",
+        "ClubhouseIP"
+      ],
+      "decision": "keep separate",
+      "reason": "ClubhouseIP's README explicitly says it is used with Clubhouse but routes IP ranges direct while Clubhouse domains are proxied. This is an intentional routing-scenario split."
+    }
+  ]
 }

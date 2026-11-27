@@ -27,18 +27,51 @@ Interpretation:
 - 29 distinct domain values across the report.
 - The personal PayPay file remains unchanged.
 
+### Location of the 238 upstream financial-domain matches
+
+| Rule folder | Matched lines |
+|---|---:|
+| AdvertisingTest | 63 |
+| Advertising | 57 |
+| AdGuardSDNSFilter | 36 |
+| EasyPrivacy | 18 |
+| AdvertisingLite | 9 |
+| Global | 9 |
+| Privacy | 9 |
+| China | 6 |
+| ChinaMax | 6 |
+| ChinaNoMedia | 6 |
+| ChinaTest | 6 |
+| Alibaba | 3 |
+| ChinaMaxNoIP | 3 |
+| ChinaMaxNoMedia | 3 |
+| Copilot | 2 |
+| OpenAI | 2 |
+| **Total** | **238** |
+
+Most matches are in advertising, privacy, or filter-category lists; the remainder are in aggregate or other App lists. A domain-name match does not by itself prove that a payment/checkout endpoint is being blocked. The current inventory finds zero dedicated bank/payment App folders, and the 14 dedicated folders removed earlier remain absent. These 238 upstream domain entries were not deleted. The single personal PayPay match was also left untouched.
+
+
 Important interpretation:
 - Matches in advertising, privacy, or AdGuard-native lists may represent tracking, telemetry, email, or measurement endpoints; they do not by themselves prove that payment or checkout traffic is blocked.
 - Broad service rules such as `alipay.com`, `unionpay.com`, `paypal.com`, `visa.com`, and `stripe.com` need to be interpreted in the context of their category and the user's policy. They were not deleted or rewritten automatically.
 - Keep the PayPay personal rule separate from upstream blocklists. Do not remove it as an audit cleanup.
 
-## Identical-content candidates
+## Duplicate and App-folder consolidation (current status)
 
-The audit reports 8 groups:
-- 3 same-app scenario pairs: `All` and `All_No_Resolve` variants. These are intentionally kept separate because their resolution behavior differs.
-- 5 cross-category exact-content candidates. The Assassin's Creed Odyssey and Origins rule bodies, and the PChome/PChomeTW rule bodies, were checked and are identical in the paired paths (rule payloads match; metadata timestamps can differ).
+The earlier preliminary duplicate-candidate report has been superseded by the completed App-folder consolidation and the latest generated inventory.
 
-No cross-category file was deleted. Keeping both paths avoids silently breaking any existing raw-file subscription URL. Consolidation to one canonical subscription path requires a separate compatibility/redirect plan.
+- The approved consolidation processed 14 App groups.
+- 19 alias folders and 25 alias `.list` files were removed after comparing and merging their rule bodies.
+- 73 rule entries were added across canonical files/formats; these represent 39 unique App-level additions after counting Standard/Resolve mirrors once.
+- All 14 canonical folders exist in the current `main` tree, and all 19 alias folders are absent.
+- The current inventory reports 2 byte-identical file groups and 3 identical rule-payload groups. These are the intended `All` / `All_No_Resolve` pairs in AdGuardSDNSFilter, ChinaMaxNoIP, and EasyPrivacy. They remain separate because the format/resolution intent is distinct.
+- The current plan records 18 cross-App overlap boundaries as keep-separate. DuoWan/HuanJu were manually checked: HuanJu's 20 domain rules are all contained in DuoWan's 27 rules, with 7 additional DuoWan rules; their READMEs describe distinct named rule scopes, so they remain separate.
+- AmazonIP and ClubhouseIP also remain separate from their similarly named App folders. AmazonIP is a broad 1,521-entry IP-CIDR inventory; ClubhouseIP's README explicitly specifies direct routing while Clubhouse's domain rules are proxied.
+
+### Subscription path compatibility
+
+The 19 old alias folders were physically removed after the canonical union was verified. GitHub raw URLs do not redirect from removed paths. No active Surge `.conf` profile is stored in this repository, so external subscription references cannot be checked here. If an external profile still uses an old alias URL, it must be changed to the canonical folder/file path listed in `Rule/CONSOLIDATED-INDEX.md`.
 
 ## Additional author source: Aoang/Surge
 
