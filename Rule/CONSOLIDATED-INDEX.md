@@ -66,7 +66,7 @@ The audit compares the 15 author-source snapshots already cached in SourceMetada
 
 ## Current audit scope
 
-- 828 upstream .list files across 663 App/category folders.
+- 842 upstream .list files across 677 App/category folders, with 654 top-level folders.
 - 15 cached author-source snapshots compared; zero uncovered source rules.
 - Three personal rule files are kept outside the automated upstream audit/remediation scope.
 - New author rule-set fetching remains paused. Public threat-intelligence reference feeds may still be used for static review.
@@ -87,7 +87,7 @@ The current `main` tree was checked against the consolidation plan:
 - All 19 approved alias folders are absent.
 - The merge report records 25 alias `.list` files removed, 73 rule entries added across formats, and 39 unique App-level additions.
 - The 15 cached author-source snapshots cover 300 source rules with zero uncovered rules.
-- The current inventory contains 828 upstream `.list` files across 663 App/category folders.
+- The current inventory contains 842 upstream `.list` files across 677 App/category folders.
 - The 14 dedicated bank/payment App folders are present. The exact deletion manifest is empty. The three files in `Rule/Personal` remain separate and unchanged.
 
 ### Old folder path to canonical folder
