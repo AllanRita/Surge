@@ -9,6 +9,7 @@ on:
       - '.github/scripts/batch_maintain.py'
       - '.github/scripts/merge_cached_sources.py'
       - '.github/scripts/test_batch_maintenance.py'
+      - '.github/scripts/audit_format_parity.py'
       - 'Rule/Upstream/SourceMetadata/**/*.json'
       - '.github/workflows/batch-preflight.yml'
       - '.github/explicit-rule-exclusions.json'
@@ -43,6 +44,9 @@ jobs:
 
       - name: Run offline maintenance self-tests
         run: python3 .github/scripts/test_batch_maintenance.py
+
+      - name: Audit paired format parity (read-only)
+        run: python3 .github/scripts/audit_format_parity.py --output-dir batch-output
 
       - name: Download security intelligence feeds
         env:
@@ -127,6 +131,9 @@ jobs:
         if: always()
         run: |
           if [ -f batch-output/BATCH-STATUS.txt ]; then cat batch-output/BATCH-STATUS.txt >> "$GITHUB_STEP_SUMMARY"; fi
+          if [ -f batch-output/format-parity-audit.md ]; then
+            cat batch-output/format-parity-audit.md >> "$GITHUB_STEP_SUMMARY"
+          fi
           for report in batch-output/batch-*-maintenance.json batch-output/batch-*-cached-sources.json; do
             [ -f "$report" ] || continue
             echo '### ' "$report" >> "$GITHUB_STEP_SUMMARY"
