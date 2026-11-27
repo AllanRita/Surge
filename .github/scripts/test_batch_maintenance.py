@@ -18,6 +18,7 @@ def load_module(name, filename):
 
 MERGE = load_module("merge_cached_sources", "merge_cached_sources.py")
 MAINTAIN = load_module("batch_maintain", "batch_maintain.py")
+PREFLIGHT = load_module("batch_preflight", "batch_preflight.py")
 
 class SurgeMaintenanceTests(unittest.TestCase):
     def test_domain_suffix_semantic_coverage(self):
@@ -101,6 +102,35 @@ class SurgeMaintenanceTests(unittest.TestCase):
             saved = backup / "batch-001" / "TestApp" / "TestApp.list"
             self.assertTrue(saved.is_file())
             self.assertEqual(saved.read_text(encoding="utf-8"), original)
+
+
+    def test_format_duplicates_are_scoped_to_app_directory(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            files = [
+                root / "CloudCN" / "CloudCN.list",
+                root / "CloudCN" / "CloudCN_Resolve.list",
+                root / "AmazonCloud" / "AmazonCloud.list",
+                root / "AmazonCloud" / "AmazonCloud_Resolve.list",
+            ]
+            duplicates = PREFLIGHT.duplicate_formats_by_directory(files)
+            self.assertEqual(duplicates, [])
+            files.extend([
+                root / "CloudCN" / "CloudCN_All.list",
+                root / "CloudCN" / "CloudCN_Extra_All.list",
+            ])
+            duplicates = PREFLIGHT.duplicate_formats_by_directory(files)
+            self.assertEqual(len(duplicates), 1)
+            self.assertEqual(duplicates[0][1], ["all"])
+
+    def test_iana_delegated_tld_is_not_flagged_as_unregistered(self):
+        with tempfile.TemporaryDirectory() as td:
+            ref = Path(td) / "tlds-alpha-by-domain.txt"
+            ref.write_text("# Version 2026112700, Last Updated Fri Nov 27 07:07:01 2026 UTC\\nCN\\nALIBABA\\nALIPAY\\nXN--1QQW23A\\n", encoding="utf-8")
+            tlds, version = PREFLIGHT.load_iana_tlds(str(ref))
+            self.assertEqual(version, "Version 2026112700, Last Updated Fri Nov 27 07:07:01 2026 UTC")
+            self.assertTrue({"cn", "alibaba", "alipay", "xn--1qqw23a"}.issubset(tlds))
+            self.assertNotIn("xihuan", tlds)
 
     def test_urlhaus_hostfile_first_column(self):
         with tempfile.TemporaryDirectory() as td:
