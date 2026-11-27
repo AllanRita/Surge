@@ -124,8 +124,11 @@ def main():
       findings.append({"severity":"REVIEW","path":str(path),"line":no,"rule":stripped,"reason":"Threat host beneath parent suffix; parent suffix is not automatically deleted"})
     kept.append(line)
    if changed:
-    ending="\n" if raw.endswith("\n") else ""
-    path.write_text("\n".join(kept)+ending,encoding="utf-8")
+    backup=Path(a.backup_dir)/("batch-"+str(a.batch).zfill(3))/str(path.relative_to(ROOT))
+    backup.parent.mkdir(parents=True,exist_ok=True)
+    backup.write_bytes(path.read_bytes())
+    ending="\\n" if raw.endswith("\\n") else ""
+    path.write_text("\\n".join(kept)+ending,encoding="utf-8")
     totals["files_changed"]+=1
  if sha(PERSONAL)!=personal_before: raise SystemExit("Rule/Personal changed unexpectedly")
  out=Path(a.output_dir); out.mkdir(parents=True,exist_ok=True)
