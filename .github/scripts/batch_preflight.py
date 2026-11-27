@@ -133,7 +133,7 @@ def main():
                     totals["native_filters"] += 1
                     continue
                 if "," not in line:
-                    if re.fullmatch(r"(?i)[a-z0-9_-]+(?:\\.[a-z0-9_-]+)+", line.lstrip(".")):
+                    if re.fullmatch(r"(?i)[a-z0-9_-]+(?:\.[a-z0-9_-]+)+", line.lstrip(".")):
                         fr["native_domains"] += 1
                         totals["native_domains"] += 1
                     else:
@@ -160,7 +160,7 @@ def main():
                         findings.append({"severity":"BLOCKER","folder":folder.name,"path":str(path),"line":line_no,"issue":"invalid IP network: "+str(e)})
                 if kind in DOMAIN_TYPES:
                     domain = value.lower().rstrip(".")
-                    if not re.fullmatch(r"[a-z0-9_-]+(?:\\.[a-z0-9_-]+)*", domain):
+                    if not re.fullmatch(r"[a-z0-9_-]+(?:\.[a-z0-9_-]+)*", domain):
                         fr["invalid_domain"] += 1
                         totals["invalid_domain"] += 1
                         findings.append({"severity":"BLOCKER","folder":folder.name,"path":str(path),"line":line_no,"issue":"invalid domain operand"})
