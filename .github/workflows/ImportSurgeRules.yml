@@ -170,10 +170,24 @@ jobs:
                   flag('hidden-control',path,num)
               if '://' in line:
                   flag('external-reference',path,num)
+              # Upstream bundles can contain AdGuard-native filters as well as Surge rules.
+              # Recognize their syntax without rewriting or translating it into broader Surge rules.
+              native=line.strip()
+              adguard=native[2:] if native.startswith('@@||') else (native[2:] if native.startswith('||') else '')
+              if adguard:
+                  host=re.split(r'[\^/$:*]',adguard,1)[0].strip('.')
+                  if not re.fullmatch(r'(?i)[a-z0-9_-]+(?:\.[a-z0-9_-]+)+',host):
+                      flag('invalid-native-filter',path,num)
+                  else:
+                      findings['recognized-native-filter']+=1
+                  return
+              if native.startswith('/') and native.endswith('/') and len(native)>2:
+                  findings['recognized-native-regex']+=1
+                  return
               parts=line.split(',')
               kind=parts[0].strip().upper()
               if kind not in allowed:
-                  flag('unknown-rule-type',path,num)
+                  flag('unsupported-rule-syntax',path,num)
                   return
               if len(parts)<2 or not parts[1].strip():
                   flag('missing-operand',path,num)
@@ -197,8 +211,13 @@ jobs:
                       flag('invalid-domain',path,num)
                   if len(labels if 'labels' in locals() else [])<2:
                       flag('broad-domain',path,num)
-              if re.search(r'(?i)(?:^|[.,/])(?:paypal\.com|alipay\.com|stripe\.com|unionpay\.com|visa\.com|icbc\.com\.cn|boc\.cn|paypay\.ne\.jp)(?:$|[.,/])',line):
-                  flag('sensitive-domain',path,num)
+              # Report exact financial-service host matches for manual scope review.
+              # A match in an ad/tracker blocklist is not evidence that the service is routed.
+              if kind in {'DOMAIN','DOMAIN-SUFFIX','HOST','HOST-SUFFIX'} and re.fullmatch(
+                  r'(?i)(?:[a-z0-9_-]+\.)*(?:paypal\.com|alipay\.com|stripe\.com|unionpay\.com|visa\.com|icbc\.com\.cn|boc\.cn|paypay\.ne\.jp)',
+                  value
+              ):
+                  flag('financial-domain-review',path,num)
           # Whole-library consolidation: preserve rule order, options and comments.
           dedup_count=0
           duplicate_files=collections.defaultdict(list)
