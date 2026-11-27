@@ -1,6 +1,6 @@
 # AllanRita Icon Library
 
-Version: V3.2.4 Security + Apple and Google History
+Version: V3.3.0 Smart Build + Enhanced Security
 
 External icon links only. No image mirroring.
 
