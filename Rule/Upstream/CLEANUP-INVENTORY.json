@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 13:02 UTC",
+  "generated_utc": "2026-11-27 13:03 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 828,
@@ -3715,7 +3715,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "tke3b-2u1-k227-whejz-10-10-2026-aa.pages.dev"
+      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3731,7 +3731,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3739,7 +3739,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "tke3b-2u1-k227-whejz-10-10-2026-aa.pages.dev"
+      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3755,7 +3755,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3771,7 +3771,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "b-chunchun.github.io"
+      "matched_domain": "bridge-cdnn-web.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3787,7 +3787,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "facebookcomprimisingourrights.blogspot.com"
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3803,7 +3803,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "b-chunchun.github.io"
+      "matched_domain": "bridge-cdnn-web.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3867,7 +3867,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "tke3b-2u1-k227-whejz-10-10-2026-aa.pages.dev"
+      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3875,7 +3875,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "spotify-react-omega-murex.vercel.app"
+      "matched_domain": "www.dataserver-kappa.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3891,7 +3891,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3907,7 +3907,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "facebookcomprimisingourrights.blogspot.com"
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3923,7 +3923,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "b-chunchun.github.io"
+      "matched_domain": "bridge-cdnn-web.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3987,7 +3987,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "tke3b-2u1-k227-whejz-10-10-2026-aa.pages.dev"
+      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3995,7 +3995,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "spotify-react-omega-murex.vercel.app"
+      "matched_domain": "www.dataserver-kappa.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4011,7 +4011,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4051,7 +4051,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "facebookcomprimisingourrights.blogspot.com"
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4059,7 +4059,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "facebookcomprimisingourrights.blogspot.com"
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4147,7 +4147,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "tke3b-2u1-k227-whejz-10-10-2026-aa.pages.dev"
+      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4155,7 +4155,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "spotify-react-omega-murex.vercel.app"
+      "matched_domain": "www.dataserver-kappa.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4171,7 +4171,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4227,7 +4227,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "tke3b-2u1-k227-whejz-10-10-2026-aa.pages.dev"
+      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4235,7 +4235,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "spotify-react-omega-murex.vercel.app"
+      "matched_domain": "www.dataserver-kappa.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4251,7 +4251,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4291,7 +4291,7 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "spotify-react-omega-murex.vercel.app"
+      "matched_domain": "www.dataserver-kappa.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {

@@ -1,6 +1,6 @@
 # Security reputation review
 
-Generated: 2026-11-27 13:02 UTC
+Generated: 2026-11-27 13:03 UTC
 
 This report compares current domain rules against public threat-intelligence feeds. A feed match is a review signal, not proof that the rule's parent domain is malicious. No rules are automatically removed.
 
@@ -39,7 +39,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Google/Google.list, Google/Google_Resolve.list
-- Matched feed host examples: facebookcomprimisingourrights.blogspot.com
+- Matched feed host examples: www.gcashgiftivnalw.blogspot.com
 - Classification: Blogger shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,cloudfront.net
@@ -74,7 +74,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: GitHub/GitHub.list, Global/Global_All.list, Global/Global_All_No_Resolve.list
-- Matched feed host examples: b-chunchun.github.io
+- Matched feed host examples: bridge-cdnn-web.github.io
 - Classification: GitHub Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,netlify.app
@@ -88,7 +88,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: tke3b-2u1-k227-whejz-10-10-2026-aa.pages.dev
+- Matched feed host examples: b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev
 - Classification: Cloudflare Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,trycloudflare.com
@@ -102,7 +102,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list, Vercel/Vercel.list
-- Matched feed host examples: spotify-react-omega-murex.vercel.app
+- Matched feed host examples: www.dataserver-kappa.vercel.app
 - Classification: Vercel shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,weebly.com
@@ -116,7 +116,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: substantiating-evidence-cfe1.63186834.workers.dev
+- Matched feed host examples: certifying-eligibility-5bda.s2470-9b6.workers.dev
 - Classification: Cloudflare Workers shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 
