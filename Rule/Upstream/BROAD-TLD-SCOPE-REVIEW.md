@@ -659,3 +659,16 @@ The six aggregate containers used for classification are: `China`, `ChinaMax`, `
 3. **App/service-only** entries are still broad matches, but their effect is limited to the named App/service list. Validate ownership and actual service use before changing them.
 4. Do not delete or narrow any suffix automatically. A delegated TLD is syntactically valid, but validity does not prove that routing the entire namespace is intended.
 5. Preserve Standard, Resolve, All, No_IPv6, and other distinct variants. Compare within the same App only.
+
+
+## OpenPhish correlation for the broad cn suffix (workflow run #45, 2026-11-27)
+
+The batch security review identified **25 occurrences** of DOMAIN-SUFFIX,cn across the six aggregate folders China, ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaNoMedia, and ChinaTest. These occurrences are the intended format/aggregate variants, not 25 unique domains.
+
+OpenPhish contained three matched hostnames beneath the suffix:
+
+- 6s8.aolade.cn
+- gea.aolade.cn
+- www.scxkjx.cn
+
+All 25 records matched OpenPhish only. URLhaus remained unavailable (0 parsed hostnames), so this is incomplete threat-intelligence coverage, not dual-feed confirmation. The parent .cn suffix is review-only: no rule was deleted, narrowed, or rewritten. Do not infer that the entire .cn namespace is malicious from these three tenant/host matches.

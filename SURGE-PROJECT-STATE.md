@@ -324,3 +324,43 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - Cached author comparison remained 15 existing snapshots only, with no new author collection and no additions to current target files. Personal rules remain unchanged.
 - Artifact: `surge-automatic-maintenance-39`, ID `15208239341`.
 - Remaining user-dependent item: obtain a free abuse.ch Auth-Key at https://auth.abuse.ch/ and add it in GitHub repository Settings → Secrets and variables → Actions as `URLHAUS_AUTH_KEY`. Do not send the key in chat. Until configured, the workflow must continue disabling dual-feed deletion.
+
+
+## 22. Workflow integrity hardening and corrected App completeness evidence (2026-11-27 15:47 UTC)
+
+### Implementation and validation
+
+- Hardened .github/scripts/batch_maintain.py:
+  - URLhaus parsing now accepts both domain-first hostfile rows and IP-prefixed hostname rows, while ignoring IP addresses and descriptions.
+  - Exact single-feed hostname matches remain review-only.
+  - DOMAIN-SUFFIX and HOST-SUFFIX rules are checked against hosts from either available feed; parent suffix matches are review-only and are never deleted.
+  - Known block/filter scopes are excluded from exact-host threat deletion, including Block/Reject/Filter paths, Advertising, Privacy, EasyPrivacy, AdGuard DNS Filter, and Hijacking scopes.
+- Corrected audit_app_completeness.py so its total entry count includes all non-comment entries, not just comma-delimited Surge rules. It now separates Surge syntax rules, native filter entries, native domain entries, and unclassified entries.
+- Added .github/scripts/verify_batch_integrity.py. Before each batch commit it verifies that all three batch reports agree on selected folders, preflight blockers are zero, personal rules are unchanged, changes are limited to existing .list files inside the current batch, and every changed file has a pre-change backup matching the original Git HEAD. Final verification requires all seven reports, all 15 cached snapshots, and a clean paired-format audit.
+- Changed backup creation to first-write-wins across deterministic cleanup and cached-source merge, so a later stage cannot overwrite the original pre-batch snapshot with an intermediate version.
+- Added offline regression coverage for URLhaus hostfile formats, single-feed parent suffix hits, HOST-SUFFIX handling, block/filter path classification, complete entry counting, batch-scope rejection, and preservation of the first backup.
+
+### Workflow results
+
+- Runs #42 and #43 stopped at the offline self-test gate due to test-fixture escaping/expectation errors. The production maintenance steps were skipped; no production rule files were modified.
+- Run #44 passed the full workflow and all seven batches. Artifact ID: 15212591631.
+- Run #45 passed all **20 offline tests**, all seven sequential batches, per-batch integrity checks, final report verification, and artifact upload. Artifact ID: 15211774930.
+- Run #45 processed all **654 top-level folders**, **842 rule files**, and **4,335,128 total non-comment entries**:
+  - 3,004,371 Surge syntax rule entries
+  - 1,330,757 native domain entries
+  - 0 native filter entries
+  - 0 unclassified entries
+- Paired-format audit: 132 pairs compared, 0 needing review.
+- Existing author cache comparison: 15 snapshots, 576 source-rule comparisons, 337 exact matches, 239 semantic coverage matches, 0 additions, 0 review-only rules, and 0 changed target files.
+- App completeness matrix: 677 rule-set folders, 657 with README files, 14 with explicitly mapped cached-author sources, and 663 not verifiable from the 15 existing snapshots. This is a source-evidence limitation, not proof that those 663 folders are incomplete. Do not fetch new authors while the user's pause remains in effect.
+- Security correlation: OpenPhish loaded 280 hosts; URLhaus loaded 0. The workflow recorded 102 parent-suffix review findings: 77 shared-hosting/shared-namespace records across 15 suffixes and 41 hostnames, plus 25 .cn suffix records involving three matched hostnames. All were OpenPhish-only. No exact dual-feed DOMAIN match was found; no rule file changed or was deleted.
+- All seven batches passed the new integrity gate with zero changed files. Rule/Personal remained unchanged. User deletion tombstones remain enforced and no deleted content was restored.
+- Security coverage is still **incomplete** until the repository secret URLHAUS_AUTH_KEY is configured and a successful authenticated URLhaus feed is parsed. Do not claim a complete security pass.
+
+### Resume here
+
+1. Keep author-source collection paused and use only the 15 existing cached snapshots.
+2. Keep the 102 parent-suffix findings review-only; do not remove a parent suffix based on a child-host feed hit.
+3. Continue App-by-App review only where existing local evidence supports a decision. The 663 unmapped folders remain explicitly not verifiable from cached author sources.
+4. Keep all production rule changes protected by the per-batch backup/scope verifier and preserve the no-restore tombstone policy.
+5. After the repository owner adds URLHAUS_AUTH_KEY in GitHub Actions Secrets, re-run the workflow and verify both feed counts before allowing any exact-host dual-feed deletion.

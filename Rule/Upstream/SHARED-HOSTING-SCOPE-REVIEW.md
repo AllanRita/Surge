@@ -69,3 +69,37 @@ Generated from CLEANUP-INVENTORY.json (2026-11-27 13:46 UTC).
 - Source inventory: Rule/Upstream/CLEANUP-INVENTORY.json.
 - Detailed feed examples: Rule/Upstream/SECURITY-REVIEW.md.
 - This is a scope review, not a benign/malicious verdict for every tenant beneath each suffix.
+
+
+## Automated OpenPhish parent-suffix correlation update (workflow run #45, 2026-11-27 15:44 UTC)
+
+This report was refreshed by the sequential maintenance workflow using only the existing OpenPhish and URLhaus feeds. It does not fetch any new author rule sources.
+
+- OpenPhish parsed: **280 hostnames**.
+- URLhaus parsed: **0 hostnames**; the authenticated feed was unavailable.
+- Shared-hosting / shared-namespace matches: **77 rule occurrences**, across **20 rule files**, covering **15 parent suffixes** and **41 distinct matched hostnames**.
+- All 77 records matched OpenPhish only. No exact DOMAIN hostname was corroborated by both feeds.
+- Every parent-suffix match is review-only. No suffix was narrowed or deleted, no threat-based deletion ran, and no production rule file changed.
+- Counts include Standard/Resolve/All and aggregate routing variants. They are not 77 unique malicious domains.
+
+| Parent suffix | Rule occurrences | Distinct matched hosts | OpenPhish hostnames |
+|---|---:|---:|---|
+| amazonaws.com | 10 | 1 | n8turz.s3.us-east-1.amazonaws.com |
+| azurefd.net | 3 | 3 | 35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net; jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net; macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net |
+| azurewebsites.net | 5 | 1 | forrit-tb-csmr-prod-dev-02.azurewebsites.net |
+| blogspot.com | 4 | 5 | facebookcomprimisingourrights.blogspot.com; instagram-baittouts-login.blogspot.com; metamask173.blogspot.com; rejekishopee23.blogspot.com; shopee-2211.blogspot.com |
+| cloudfront.net | 10 | 2 | d1by761p31t71v.cloudfront.net; d33wubrfki0l68.cloudfront.net |
+| duckdns.org | 6 | 1 | hizliyapiyoruzherseyi.duckdns.org |
+| eu.org | 2 | 1 | wisayq9065.embih.eu.org |
+| gitbook.io | 5 | 3 | kucinlogn16.gitbook.io; matumasklogie.gitbook.io; treozarwalletf.gitbook.io |
+| github.io | 3 | 5 | b-chunchun.github.io; bridge-cdnn-web.github.io; kauongit.github.io; paivudinho.github.io; wargreymon9.github.io |
+| netlify.app | 4 | 2 | boisterous-sprite-d1fe49.netlify.app; connexion-mabanquebnpparibas.netlify.app |
+| pages.dev | 6 | 5 | 0a5d9-mrc-4aqy-7fp5y-04-10-2026-hh.pages.dev; 0hkd9-qgs-xbhj-6gt9f-07-10-2026-aa.pages.dev; 0ilet-gwy-ovwq-rol0q-02-10-2026-hh.pages.dev; 140-66wo-vb1-xvyy6xm-evmkrxbh-76705911.pages.dev; 1f7yy-a3x-0y8c-5mz6r-10-10-2026-aa.pages.dev |
+| trycloudflare.com | 4 | 1 | drainage-possess-unavailable-focal.trycloudflare.com |
+| vercel.app | 5 | 5 | demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app; ore45.vercel.app; spotify-react-omega-murex.vercel.app; www.ads-z63a.vercel.app; www.dataserver-kappa.vercel.app |
+| weebly.com | 4 | 1 | www.xhdfh7hfnrrjjjff.weebly.com |
+| workers.dev | 6 | 5 | certifying-eligibility-5bda.s2470-9b6.workers.dev; ncacmn.wbmilsportal.workers.dev; reverification-evidence-5ef7.s2467-05b.workers.dev; substantiating-evidence-cfe1.63186834.workers.dev; substantiating-proof-f2d1.63186834.workers.dev |
+
+These matches identify hosts beneath multi-tenant hosting, CDN, dynamic-DNS, and redirect namespaces. A feed hit under one tenant does not establish that the parent suffix is malicious or that all tenants should be routed the same way. Keep these suffixes pending scenario-aware review.
+
+The separate broad public-TLD finding for DOMAIN-SUFFIX,cn is documented in BROAD-TLD-SCOPE-REVIEW.md. The exact workflow evidence is in artifact surge-automatic-maintenance-45 (GitHub Actions artifact ID 15211774930).
