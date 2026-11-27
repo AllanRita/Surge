@@ -7,6 +7,7 @@ This repository keeps the shared rule library separate from personal additions.
 - [Consolidated rule index](Rule/CONSOLIDATED-INDEX.md) — current App folders, supported formats, merge decisions, and old-path migration map.
 - [Cleanup inventory](Rule/Upstream/CLEANUP-INVENTORY.md) — current file counts, duplicate checks, cached-source coverage, finance-folder review, and shared-hosting inventory.
 - [Manual audit review](Rule/AUDIT-REVIEW.md) — interpretation of broad suffixes, financial-domain matches, cross-App boundaries, and validation limits.
+- [Broad suffix scope review](Rule/Upstream/BROAD-SUFFIX-SCOPE-REVIEW.md) — 78 IANA-valid single-label suffixes classified by routing scope; review only, no automatic deletion.
 - [Security review](Rule/Upstream/SECURITY-REVIEW.md) — threat-feed matches and broad shared-hosting suffixes. Matches are review signals, not automatic deletion instructions.
 - [App policy-group merge report](Rule/Upstream/APP-POLICY-MERGE-REPORT.md) — completed regional/alias consolidation.
 - Paired-format parity audit — generated in each maintenance workflow artifact; checks compatible formats without changing rule files.
