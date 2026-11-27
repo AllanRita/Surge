@@ -86,4 +86,6 @@ Three consecutive 404/410 checks on distinct UTC days hide an eligible URL. Succ
 
 ## Security
 
+Source cache fallback is revalidated; first-time source failures stop publication. Build and publish permissions are separated.
+
 HTTPS, trusted domains and paths, exact Apple app IDs, blocked redirects, size limits, abnormal non-archive change detection, fixed checkout and restricted staging. Image binaries are not downloaded or virus-scanned.
