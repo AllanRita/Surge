@@ -1,12 +1,15 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "generated": "2026-11-27",
   "purpose": "Track verified duplicate rule-set bodies and scenario variants without breaking existing raw subscription URLs.",
   "policy": {
     "personal_rules_are_never_auto_merged": true,
     "scenario_variants_are_never_merged_across_resolution_modes": true,
     "legacy_paths_are_preserved_until_subscriber_migration_is_verified": true,
-    "only_exact_rule_body_matches_are_candidates_for_aliasing": true
+    "only_exact_rule_body_matches_are_candidates_for_aliasing": true,
+    "canonical_paths_are_the_only_future_edit_targets": true,
+    "legacy_paths_must_mirror_canonical_content": true,
+    "legacy_files_must_not_be_deleted_without_explicit_url_migration": true
   },
   "scenario_variants": [
     {
@@ -85,6 +88,58 @@
       ],
       "decision": "preserve_both_legacy_paths",
       "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
+    }
+  ],
+  "canonical_rule_sets": [
+    {
+      "app": "Assassin's Creed Odyssey",
+      "scenario": "standard",
+      "canonical_path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list",
+      "legacy_paths": [
+        "Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list"
+      ],
+      "verified_identical_rule_count": 15,
+      "decision": "one canonical maintenance target; keep legacy raw URL"
+    },
+    {
+      "app": "Assassin's Creed Odyssey",
+      "scenario": "resolve",
+      "canonical_path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list",
+      "legacy_paths": [
+        "Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list"
+      ],
+      "verified_identical_rule_count": 15,
+      "decision": "one canonical maintenance target; keep legacy raw URL"
+    },
+    {
+      "app": "Assassin's Creed Origins",
+      "scenario": "standard",
+      "canonical_path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list",
+      "legacy_paths": [
+        "Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list"
+      ],
+      "verified_identical_rule_count": 16,
+      "decision": "one canonical maintenance target; keep legacy raw URL"
+    },
+    {
+      "app": "Assassin's Creed Origins",
+      "scenario": "resolve",
+      "canonical_path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list",
+      "legacy_paths": [
+        "Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list"
+      ],
+      "verified_identical_rule_count": 16,
+      "decision": "one canonical maintenance target; keep legacy raw URL"
+    },
+    {
+      "app": "PChome",
+      "scenario": "standard",
+      "canonical_path": "Rule/Upstream/PChomeTW/PChomeTW.list",
+      "legacy_paths": [
+        "Rule/Upstream/PChome/PChome.list"
+      ],
+      "verified_identical_rule_count": 5,
+      "decision": "one canonical maintenance target; keep legacy raw URL"
     }
   ]
 }
