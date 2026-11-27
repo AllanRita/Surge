@@ -207,7 +207,9 @@ def main():
     if len(domain.split("."))<2:
      findings["single_label_suffix"]+=1
      if len(examples["single_label_suffix"])<50: examples["single_label_suffix"].append(f"{rel}:{num}: {s}")
-     if tlds and domain not in tlds: findings["stale_or_private_root_suffix"]+=1
+     if tlds and domain not in tlds:
+      findings["stale_or_private_root_suffix"]+=1
+      if len(examples["stale_or_private_root_suffix"])<50: examples["stale_or_private_root_suffix"].append(f"{rel}:{num}: {s}")
     if FINANCIAL_RE.fullmatch(domain): financial.append(f"{rel}:{num}: {s}")
     if len(domain.split("."))>=2 and domain not in tlds:
      for feed_name,feed,suffixes in (("URLhaus",urlhaus,urlhaus_suffix),("OpenPhish",openphish,openphish_suffix)):
@@ -265,6 +267,74 @@ def main():
  for x in multi: md.append(f"- {x['folder']}: {', '.join(x['formats'])} ({x['file_count']} files)")
  md += ["","## Safety boundaries","- No rule files or personal files are deleted, renamed, or rewritten by this audit.","- Bank/payment classification applies to dedicated App folders only; domains embedded in other Apps remain untouched.","- Regional variants are candidates for consolidation into one App policy group; country selection belongs in the Surge policy group, not separate rule folders.","- Resolve / non-Resolve and other distinct formats are compared and preserved separately.","- Similarity, shared CDN domains, or parent-company ownership alone never authorizes cross-App merging.",""]
  (ROOT/"CLEANUP-INVENTORY.md").write_text("\n".join(md),encoding="utf-8")
+
+ # Separate review of threat-feed matches. A parent suffix match means a known
+ # phishing/malware host exists beneath the suffix; it does not mean the suffix
+ # itself is malicious or should be deleted.
+ shared_hosting={
+  "cloudfront.net":"Amazon CloudFront shared CDN",
+  "pages.dev":"Cloudflare Pages shared hosting",
+  "workers.dev":"Cloudflare Workers shared hosting",
+  "gitbook.io":"GitBook hosted content",
+  "github.io":"GitHub Pages shared hosting",
+  "blogspot.com":"Blogger shared hosting",
+  "eu.org":"EU.org subdomain hosting",
+  "web.app":"Firebase Hosting",
+  "duckdns.org":"DuckDNS dynamic DNS",
+  "is.gd":"URL shortener",
+  "netlify.app":"Netlify shared hosting",
+  "vercel.app":"Vercel shared hosting",
+ }
+ grouped=defaultdict(lambda:{"matched_domains":set(),"paths":set(),"feeds":set(),"scopes":set()})
+ for item in threat:
+  key=item["rule"]
+  grouped[key]["matched_domains"].add(item["matched_domain"])
+  grouped[key]["paths"].add(item["path"])
+  grouped[key]["feeds"].add(item["feed"])
+  grouped[key]["scopes"].add(item["scope"])
+ sec=[
+  "# Security reputation review","",
+  f"Generated: {data['generated_utc']}","",
+  "This report compares current domain rules against public threat-intelligence feeds. A feed match is a review signal, not proof that the rule's parent domain is malicious. No rules are automatically removed.","",
+  f"- URLhaus domains loaded: {len(urlhaus)}",
+  f"- OpenPhish domains loaded: {len(openphish)}",
+  f"- Rule-to-feed matches: {len(threat)} (up to 500 retained in the JSON report)",
+  f"- Scope counts: {dict(threat_scope)}","",
+ ]
+ if not urlhaus:
+  sec.append("- URLhaus feed unavailable in this run; OpenPhish was used for the phishing cross-check.")
+ sec += ["","## Matched rules",""]
+ if not grouped:
+  sec.append("- No rule-to-feed matches.")
+ for rule,info in sorted(grouped.items()):
+  suffix=rule.split(",",1)[1].strip().lower() if "," in rule else ""
+  provider=shared_hosting.get(suffix)
+  sec += [
+   f"### {rule}",
+   f"- Scope: {', '.join(sorted(info['scopes']))}",
+   f"- Feed(s): {', '.join(sorted(info['feeds']))}",
+   f"- Rule files: {', '.join(sorted(info['paths']))}",
+   f"- Matched feed host examples: {', '.join(sorted(info['matched_domains'])[:12])}",
+  ]
+  if provider:
+   sec.append(f"- Classification: {provider}; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.")
+  elif "block_or_filter" in info["scopes"]:
+   sec.append("- Classification: match occurs in a block/filter list; this is generally expected and should not be treated as an App allow/routing problem.")
+  else:
+   sec.append("- Classification: app/routing match; verify that the domain is genuinely required by the App and is not an overly broad shared service.")
+  sec.append("")
+ sec += ["## Stale/private single-label suffixes",""]
+ sec += [f"- {x}" for x in examples.get("stale_or_private_root_suffix",[])] if examples.get("stale_or_private_root_suffix") else ["- None detected or IANA TLD feed unavailable."]
+ sec += ["","## Financial-service domains","",
+  f"- Financial-domain rule matches found: {len(financial)}",
+  "- These are retained. The user's rule is to remove dedicated bank/payment App folders only, not payment-related domains embedded in other App or block/filter lists.",
+  "- Rule/Personal was not modified.","",
+  "## Interpretation",
+  "- OpenPhish/URLhaus matches under a shared CDN or hosting suffix are not direct evidence that the App rule itself is malicious.",
+  "- Shared hosting suffixes can match unrelated tenants. Review broad suffixes before assigning them to an App-specific policy group.",
+  "- No automatic deletion or rewriting is performed by this report.",""
+ ]
+ (ROOT/"SECURITY-REVIEW.md").write_text("\n".join(sec),encoding="utf-8")
  print(json.dumps(data["summary"],ensure_ascii=False))
 
 if __name__=="__main__": main()
