@@ -161,6 +161,7 @@ jobs:
           allowed={'DOMAIN','DOMAIN-SUFFIX','DOMAIN-KEYWORD','DOMAIN-WILDCARD','DOMAIN-REGEX','IP-CIDR','IP-CIDR6','IP-ASN','GEOIP','USER-AGENT','URL-REGEX','PROCESS-NAME','DEST-PORT','SRC-PORT','SRC-IP','IN-PORT','PROTOCOL','AND','OR','NOT','RULE-SET','DOMAIN-SET','SUBNET','DEVICE-NAME','HOST','HOST-SUFFIX','HOST-KEYWORD'}
           findings=collections.Counter()
           examples=[]
+          financial_matches=[]
           finding_by_category=collections.defaultdict(collections.Counter)
           def flag(kind,path,num):
               findings[kind]+=1
@@ -196,7 +197,8 @@ jobs:
                       r'(?i)(?:[a-z0-9_-]+\.)*(?:paypal\.com|alipay\.com|stripe\.com|unionpay\.com|visa\.com|icbc\.com\.cn|boc\.cn|paypay\.ne\.jp)',
                       bare
                   ):
-                      flag('financial-domain-review',path,num)
+                      financial_matches.append((path,num,line.strip()))
+                      flag('personal-financial-rule' if path.startswith('Rule/Personal/') else 'financial-domain-review',path,num)
                   return
               parts=line.split(',')
               kind=parts[0].strip().upper()
@@ -232,7 +234,8 @@ jobs:
                   r'(?i)(?:[a-z0-9_-]+\.)*(?:paypal\.com|alipay\.com|stripe\.com|unionpay\.com|visa\.com|icbc\.com\.cn|boc\.cn|paypay\.ne\.jp)',
                   value
               ):
-                  flag('financial-domain-review',path,num)
+                  financial_matches.append((path,num,line.strip()))
+                  flag('personal-financial-rule' if path.startswith('Rule/Personal/') else 'financial-domain-review',path,num)
           # Whole-library consolidation: preserve rule order, options and comments.
           dedup_count=0
           duplicate_files=collections.defaultdict(list)
@@ -340,6 +343,8 @@ jobs:
               report_lines.append('- ' + ' | '.join(group))
           if not cross_category_duplicate_groups:
               report_lines.append('- None')
+          report_lines += ['', '## Financial-domain matches (exact lines; manual review, no automatic deletion)']
+          report_lines += [f'- {path}:{num}: {rule}' for path,num,rule in financial_matches] if financial_matches else ['- None']
           report_lines += ['', '## Finding examples']
           report_lines += [f'- {item}' for item in examples] if examples else ['- None']
           report_lines += ['', '## Scope and limitations',
