@@ -187,10 +187,10 @@ jobs:
               # AdGuard domain-only lists use one hostname per line, commonly ".example.com".
               # Recognize these as native domain entries; do not convert them into Surge rules.
               bare=native[1:] if native.startswith('.') else native
-              if ',' not in native and re.fullmatch(r'(?i)[a-z0-9_-]+(?:\\.[a-z0-9_-]+)+',bare):
+              if ',' not in native and re.fullmatch(r'(?i)[a-z0-9_-]+(?:\.[a-z0-9_-]+)+',bare):
                   findings['recognized-native-domain']+=1
                   if re.fullmatch(
-                      r'(?i)(?:[a-z0-9_-]+\\.)*(?:paypal\\.com|alipay\\.com|stripe\\.com|unionpay\\.com|visa\\.com|icbc\\.com\\.cn|boc\\.cn|paypay\\.ne\\.jp)',
+                      r'(?i)(?:[a-z0-9_-]+\.)*(?:paypal\.com|alipay\.com|stripe\.com|unionpay\.com|visa\.com|icbc\.com\.cn|boc\.cn|paypay\.ne\.jp)',
                       bare
                   ):
                       flag('financial-domain-review',path,num)
