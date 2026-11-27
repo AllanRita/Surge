@@ -516,4 +516,6 @@ jobs:
           git commit -m 'Sync Blackmatrix7 Surge rules; retain removed upstream files'
           auth=$(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)
           echo "::add-mask::$auth"
+          git fetch origin main
+          git rebase origin/main
           git -c http.https://github.com/.extraheader="AUTHORIZATION: basic $auth" push origin HEAD:main
