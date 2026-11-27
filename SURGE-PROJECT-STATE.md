@@ -372,3 +372,14 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - They do not yet persist tombstones for an individual deleted .list file or a deleted rule line inside an existing file.
 - Run #45 did not re-add any cached rule (0 cached-source additions and 0 changed rule files), so there was no observed restoration in this run. However, that result does not prove that individual line/file deletions are protected in future runs.
 - If the user's no-restore requirement includes individual files or individual rule lines, extend the manifest with exact file-level and rule-line tombstones, capture deletions from user commits, enforce them before cached-source merge, and add regression tests. Do not broaden the manifest or restore anything without preserving the user's explicit restore-only-on-request policy.
+
+
+## 24. User priority update — defer three optional workstreams (2026-11-28)
+
+The user explicitly decided to defer the following items. They are not current blockers and must not be proactively pursued unless the user reopens them:
+
+1. Security intelligence expansion: do not configure or request URLHAUS_AUTH_KEY; do not expand threat-intelligence sources for now. Existing feed limitations remain documented, but do not block the approved maintenance workflow.
+2. Shared-hosting / broad-suffix review: no further dedicated review or remediation is needed for now. Keep existing rules unchanged; do not delete or narrow broad suffixes based on this deferred workstream.
+3. Fine-grained no-restore tombstones: do not implement individual .list-file or individual rule-line tombstones for now. Retain existing exact folder-level tombstone protection.
+
+Resume focus: continue the approved App/rule-set organization and quality work within existing evidence and sources. Keep author-source collection paused. Preserve existing user deletions and Rule/Personal. Do not reopen deferred items unless the user explicitly asks.
