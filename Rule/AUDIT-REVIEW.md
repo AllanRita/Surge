@@ -9,16 +9,16 @@ This file records manual interpretation of the static audit. It does not replace
 
 ## Single-label suffix audit
 
-- Static broad-domain matches: 912 rows across rule files and scenario variants.
-- Distinct single-label suffix values: 79.
-- Present in the current IANA delegated TLD list: 78 values, 895 rows.
-- Absent from the current IANA delegated TLD list: `xihuan`, 17 rows.
-- IANA list checked: `https://data.iana.org/TLD/tlds-alpha-by-domain.txt`, version `2026112503`, updated 2026-11-26 UTC.
+- Historical manual snapshot: 912 broad-domain rows and 79 distinct single-label suffix values.
+- Historical IANA check: `2026112503` (updated 2026-11-26 UTC) found 78 delegated values covering 895 rows; `xihuan` was absent from the root-zone list and was previously reported in 17 rows.
+- Current generated cleanup inventory: 894 single-label suffix occurrences; it records no `stale_or_private_root_suffix` finding.
+- The latest cleanup workflow completed successfully. Its IANA-gated remediation script reports 0 `DOMAIN-SUFFIX,xihuan` occurrences removed and no files changed. Therefore, the historical 17-row `xihuan` count is not current; the exact rule was already absent when that remediation pass ran.
+- The historical 912-row broad-domain metric and the current 894-row single-label metric come from different snapshots/labels and should not be compared as if they were the same counter.
 
 Interpretation:
-- A one-label suffix is not automatically malformed. Most values in this snapshot are real delegated TLDs, including brand TLDs and IDN/punycode TLDs.
-- These rules are still broad in scope: for example, `DOMAIN-SUFFIX,cn` matches the entire `.cn` namespace. Whether that is correct depends on the intended scenario and policy.
-- `DOMAIN-SUFFIX,xihuan` is not in the current delegated root list. It is retained and flagged for review; it has not been automatically removed.
+- A one-label suffix is not automatically malformed. Many are real delegated TLDs, including brand TLDs and IDN/punycode TLDs.
+- These rules can still be broad in scope: for example, `DOMAIN-SUFFIX,cn` matches the entire `.cn` namespace. Whether that is correct depends on the intended scenario and policy.
+- No remaining single-label suffix was automatically removed in the latest cleanup pass. Keep the remaining rules pending scenario-aware review rather than deleting them based on shape alone.
 
 ## Financial-domain audit
 
