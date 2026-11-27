@@ -54,12 +54,46 @@ def load_tombstones():
         names.add(name.casefold())
     return names
 
+def format_label(stem):
+    for suffix, label in (("_All_No_Resolve","all_no_resolve"),("_No_IPv6_Resolve","no_ipv6_resolve"),("_NoIPv6_Resolve","no_ipv6_resolve"),("_All_NoResolve","all_no_resolve"),("_No_Resolve","no_resolve"),("_NoResolve","no_resolve"),("_No_IPv6","no_ipv6"),("_NoIPv6","no_ipv6"),("_Resolve","resolve"),("_Domain","domain_only"),("_All","all")):
+        if stem.endswith(suffix):
+            return label
+    return "standard"
+
+def duplicate_formats_by_directory(files):
+    # Top-level folders can contain multiple independent Apps. Compare only
+    # files in the same immediate directory, never across sibling App folders.
+    grouped = {}
+    for path in files:
+        grouped.setdefault(path.parent, Counter())[format_label(path.stem)] += 1
+    result = []
+    for directory, counts in sorted(grouped.items(), key=lambda item: str(item[0]).casefold()):
+        duplicates = sorted(name for name, count in counts.items() if count > 1)
+        if duplicates:
+            result.append((directory, duplicates))
+    return result
+
+def load_iana_tlds(path):
+    if not path:
+        return None, None
+    p = Path(path)
+    if p.is_symlink() or not p.is_file():
+        raise RuntimeError("IANA TLD reference missing or unsafe")
+    lines = p.read_text(encoding="utf-8").splitlines()
+    version = next((line.lstrip("# ").strip() for line in lines if line.startswith("# Version")), None)
+    values = {line.strip().casefold() for line in lines if line.strip() and not line.lstrip().startswith("#")}
+    if not version or not values:
+        raise RuntimeError("IANA TLD reference is empty or has an unknown format")
+    return values, version
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--batch", type=int, default=1)
     ap.add_argument("--batch-size", type=int, default=100)
     ap.add_argument("--output-dir", default="batch-output")
+    ap.add_argument("--iana-tlds", default=None)
     a = ap.parse_args()
+    iana_tlds, iana_version = load_iana_tlds(a.iana_tlds)
     if a.batch < 1 or a.batch_size != 100:
         raise SystemExit("Batch number must be >=1 and batch size must be exactly 100")
     if ROOT.is_symlink() or not ROOT.is_dir():
@@ -98,18 +132,8 @@ def main():
         if not folder_files:
             findings.append({"severity":"REVIEW","folder":folder.name,"path":str(folder),"issue":"no .list files"})
         fr = Counter()
-        format_counts = Counter()
-        for path in folder_files:
-            stem = path.stem
-            fmt = "standard"
-            for suffix, label in (("_All_No_Resolve","all_no_resolve"),("_No_IPv6_Resolve","no_ipv6_resolve"),("_NoIPv6_Resolve","no_ipv6_resolve"),("_All_NoResolve","all_no_resolve"),("_No_Resolve","no_resolve"),("_NoResolve","no_resolve"),("_No_IPv6","no_ipv6"),("_NoIPv6","no_ipv6"),("_Resolve","resolve"),("_Domain","domain_only"),("_All","all")):
-                if stem.endswith(suffix):
-                    fmt = label
-                    break
-            format_counts[fmt] += 1
-        duplicate_formats = sorted(k for k,v in format_counts.items() if v > 1)
-        if duplicate_formats:
-            findings.append({"severity":"REVIEW","folder":folder.name,"path":str(folder),"issue":"multiple files detected for same recognized format: "+", ".join(duplicate_formats)})
+        for directory, duplicate_formats in duplicate_formats_by_directory(folder_files):
+            findings.append({"severity":"REVIEW","folder":folder.name,"path":str(directory),"issue":"multiple files detected for same recognized format in the same App directory: "+", ".join(duplicate_formats)})
         for path in folder_files:
             totals["files"] += 1
             fr["files"] += 1
@@ -178,7 +202,10 @@ def main():
                         totals["invalid_domain"] += 1
                         findings.append({"severity":"BLOCKER","folder":folder.name,"path":str(path),"line":line_no,"issue":"invalid domain operand"})
                     elif kind in {"DOMAIN-SUFFIX","HOST-SUFFIX"} and "." not in domain:
-                        findings.append({"severity":"REVIEW","folder":folder.name,"path":str(path),"line":line_no,"issue":"single-label suffix is broad or special-use; review only"})
+                        if iana_tlds is None:
+                            findings.append({"severity":"REVIEW","folder":folder.name,"path":str(path),"line":line_no,"issue":"single-label suffix could be broad; IANA root-zone reference unavailable; review only"})
+                        elif domain not in iana_tlds:
+                            findings.append({"severity":"REVIEW","folder":folder.name,"path":str(path),"line":line_no,"issue":"single-label suffix is not present in current IANA root zone; manual review only"})
         folder_rows.append({"folder":folder.name,**dict(fr)})
 
     personal_after = digest_tree(PERSONAL)
@@ -199,6 +226,8 @@ def main():
         "selected_folder_count":len(selected),
         "summary":{"files":totals["files"],"rules":totals["rules"],"blockers":blockers,"review_items":reviews,"duplicate_lines":totals["duplicate_lines"],"unsupported":totals["unsupported"],"invalid_network":totals["invalid_network"],"invalid_domain":totals["invalid_domain"],"native_filters":totals["native_filters"],"native_domains":totals["native_domains"]},
         "tombstone_count":len(tombstones),
+        "iana_tld_reference_version":iana_version,
+        "iana_tld_reference_available":iana_tlds is not None,
         "personal_tree_unchanged":personal_before==personal_after,
         "folders":folder_rows,
         "findings":findings
