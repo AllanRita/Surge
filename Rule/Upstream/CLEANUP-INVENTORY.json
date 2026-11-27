@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 12:42 UTC",
+  "generated_utc": "2026-11-27 12:45 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 828,
@@ -1891,7 +1891,17 @@
   "static_security_findings": {
     "duplicate_rule_lines": 0,
     "recognized_native_domain": 1330757,
-    "single_label_suffix": 894
+    "single_label_suffix": 894,
+    "hidden_control": 0,
+    "invalid_native_filter": 0,
+    "unsupported_or_missing_operand": 0,
+    "ip_family_mismatch": 0,
+    "catch_all_network": 0,
+    "invalid_network": 0,
+    "invalid_domain": 0,
+    "stale_or_private_root_suffix": 0,
+    "recognized_native_filter": 0,
+    "recognized_native_regex": 0
   },
   "static_security_examples": {
     "single_label_suffix": [
@@ -3015,7 +3025,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "7sq3l-4jj-bf9x-19xgi-10-10-2026-aa.pages.dev"
+      "matched_domain": "sp30ct11-nuvzaro-biz.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3039,7 +3049,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "7sq3l-4jj-bf9x-19xgi-10-10-2026-aa.pages.dev"
+      "matched_domain": "sp30ct11-nuvzaro-biz.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3063,7 +3073,7 @@
       "path": "GitBook/GitBook.list",
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "treozarwalletf.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3071,7 +3081,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "bridge-cdnn-web.github.io"
+      "matched_domain": "wildpigger.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3079,7 +3089,7 @@
       "path": "Global/Global_All.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
+      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3087,7 +3097,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
+      "matched_domain": "metamask173.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3103,7 +3113,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "bridge-cdnn-web.github.io"
+      "matched_domain": "wildpigger.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3151,7 +3161,7 @@
       "path": "Global/Global_All.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "treozarwalletf.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3167,7 +3177,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "7sq3l-4jj-bf9x-19xgi-10-10-2026-aa.pages.dev"
+      "matched_domain": "sp30ct11-nuvzaro-biz.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3175,7 +3185,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "matched_domain": "zweb-new-mail-adm.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3199,7 +3209,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
+      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3207,7 +3217,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
+      "matched_domain": "metamask173.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3223,7 +3233,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "bridge-cdnn-web.github.io"
+      "matched_domain": "wildpigger.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3271,7 +3281,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "treozarwalletf.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3287,7 +3297,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "7sq3l-4jj-bf9x-19xgi-10-10-2026-aa.pages.dev"
+      "matched_domain": "sp30ct11-nuvzaro-biz.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3295,7 +3305,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "matched_domain": "zweb-new-mail-adm.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3351,7 +3361,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
+      "matched_domain": "metamask173.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3359,7 +3369,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
+      "matched_domain": "metamask173.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3367,7 +3377,7 @@
       "path": "Microsoft/Microsoft.list",
       "line": 86,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
+      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3431,7 +3441,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "treozarwalletf.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3447,7 +3457,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "7sq3l-4jj-bf9x-19xgi-10-10-2026-aa.pages.dev"
+      "matched_domain": "sp30ct11-nuvzaro-biz.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3455,7 +3465,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "matched_domain": "zweb-new-mail-adm.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3511,7 +3521,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "treozarwalletf.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3527,7 +3537,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "7sq3l-4jj-bf9x-19xgi-10-10-2026-aa.pages.dev"
+      "matched_domain": "sp30ct11-nuvzaro-biz.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3535,7 +3545,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "matched_domain": "zweb-new-mail-adm.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3591,7 +3601,7 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "matched_domain": "zweb-new-mail-adm.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {

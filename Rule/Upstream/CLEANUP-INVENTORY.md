@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 12:42 UTC
+Generated: 2026-11-27 12:45 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -161,9 +161,19 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 
 ## Static security checks
 
+- catch_all_network: 0
 - duplicate_rule_lines: 0
+- hidden_control: 0
+- invalid_domain: 0
+- invalid_native_filter: 0
+- invalid_network: 0
+- ip_family_mismatch: 0
 - recognized_native_domain: 1330757
+- recognized_native_filter: 0
+- recognized_native_regex: 0
 - single_label_suffix: 894
+- stale_or_private_root_suffix: 0
+- unsupported_or_missing_operand: 0
 
 - Detailed threat-feed and broad shared-hosting review: see SECURITY-REVIEW.md.
 - Financial-domain matches: 238 (review only; not deleted)
