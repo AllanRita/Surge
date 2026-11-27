@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 13:09 UTC
+Generated: 2026-11-27 13:13 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -189,6 +189,7 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 
 ## Static security checks
 
+- bare_public_tld_suffix: 894
 - catch_all_network: 0
 - duplicate_rule_lines: 0
 - hidden_control: 0
@@ -202,6 +203,56 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 - single_label_suffix: 894
 - stale_or_private_root_suffix: 0
 - unsupported_or_missing_operand: 0
+  - IANA public-TLD suffix (broad match): Alibaba/Alibaba.list:10: DOMAIN-SUFFIX,alibaba
+  - IANA public-TLD suffix (broad match): Alibaba/Alibaba.list:11: DOMAIN-SUFFIX,taobao
+  - IANA public-TLD suffix (broad match): Alibaba/Alibaba.list:12: DOMAIN-SUFFIX,tmall
+  - IANA public-TLD suffix (broad match): Alibaba/Alibaba_All.list:34: DOMAIN-SUFFIX,alibaba
+  - IANA public-TLD suffix (broad match): Alibaba/Alibaba_All.list:1122: DOMAIN-SUFFIX,taobao
+  - IANA public-TLD suffix (broad match): Alibaba/Alibaba_All.list:1158: DOMAIN-SUFFIX,tmall
+  - IANA public-TLD suffix (broad match): Alibaba/Alibaba_All_No_Resolve.list:34: DOMAIN-SUFFIX,alibaba
+  - IANA public-TLD suffix (broad match): Alibaba/Alibaba_All_No_Resolve.list:1122: DOMAIN-SUFFIX,taobao
+  - IANA public-TLD suffix (broad match): Alibaba/Alibaba_All_No_Resolve.list:1158: DOMAIN-SUFFIX,tmall
+  - IANA public-TLD suffix (broad match): Alibaba/Alibaba_Resolve.list:10: DOMAIN-SUFFIX,alibaba
+  - IANA public-TLD suffix (broad match): Alibaba/Alibaba_Resolve.list:11: DOMAIN-SUFFIX,taobao
+  - IANA public-TLD suffix (broad match): Alibaba/Alibaba_Resolve.list:12: DOMAIN-SUFFIX,tmall
+  - IANA public-TLD suffix (broad match): Amazon/Amazon.list:37: DOMAIN-SUFFIX,amazon
+  - IANA public-TLD suffix (broad match): Amazon/Amazon.list:119: DOMAIN-SUFFIX,aws
+  - IANA public-TLD suffix (broad match): Amazon/Amazon.list:146: DOMAIN-SUFFIX,imdb
+  - IANA public-TLD suffix (broad match): Amazon/Amazon.list:149: DOMAIN-SUFFIX,kindle
+  - IANA public-TLD suffix (broad match): Amazon/Amazon.list:194: DOMAIN-SUFFIX,xn--cckwcxetd
+  - IANA public-TLD suffix (broad match): Amazon/Amazon.list:195: DOMAIN-SUFFIX,xn--jlq480n2rg
+  - IANA public-TLD suffix (broad match): Amazon/Amazon.list:196: DOMAIN-SUFFIX,yamaxun
+  - IANA public-TLD suffix (broad match): Amazon/Amazon.list:200: DOMAIN-SUFFIX,zappos
+  - IANA public-TLD suffix (broad match): Amazon/Amazon_Resolve.list:37: DOMAIN-SUFFIX,amazon
+  - IANA public-TLD suffix (broad match): Amazon/Amazon_Resolve.list:119: DOMAIN-SUFFIX,aws
+  - IANA public-TLD suffix (broad match): Amazon/Amazon_Resolve.list:146: DOMAIN-SUFFIX,imdb
+  - IANA public-TLD suffix (broad match): Amazon/Amazon_Resolve.list:149: DOMAIN-SUFFIX,kindle
+  - IANA public-TLD suffix (broad match): Amazon/Amazon_Resolve.list:194: DOMAIN-SUFFIX,xn--cckwcxetd
+  - IANA public-TLD suffix (broad match): Amazon/Amazon_Resolve.list:195: DOMAIN-SUFFIX,xn--jlq480n2rg
+  - IANA public-TLD suffix (broad match): Amazon/Amazon_Resolve.list:196: DOMAIN-SUFFIX,yamaxun
+  - IANA public-TLD suffix (broad match): Amazon/Amazon_Resolve.list:200: DOMAIN-SUFFIX,zappos
+  - IANA public-TLD suffix (broad match): BBC/BBC.list:21: DOMAIN-SUFFIX,bbc
+  - IANA public-TLD suffix (broad match): BMW/BMW.list:77: DOMAIN-SUFFIX,bmw
+  - IANA public-TLD suffix (broad match): BMW/BMW.list:494: DOMAIN-SUFFIX,mini
+  - IANA public-TLD suffix (broad match): China/China.list:12: DOMAIN-SUFFIX,cn
+  - IANA public-TLD suffix (broad match): China/China.list:13: DOMAIN-SUFFIX,ms
+  - IANA public-TLD suffix (broad match): China/China_All.list:969: DOMAIN-SUFFIX,cn
+  - IANA public-TLD suffix (broad match): China/China_All.list:2373: DOMAIN-SUFFIX,ms
+  - IANA public-TLD suffix (broad match): China/China_All_No_Resolve.list:969: DOMAIN-SUFFIX,cn
+  - IANA public-TLD suffix (broad match): China/China_All_No_Resolve.list:2373: DOMAIN-SUFFIX,ms
+  - IANA public-TLD suffix (broad match): China/China_Resolve.list:12: DOMAIN-SUFFIX,cn
+  - IANA public-TLD suffix (broad match): China/China_Resolve.list:13: DOMAIN-SUFFIX,ms
+  - IANA public-TLD suffix (broad match): ChinaMax/ChinaMax.list:14: DOMAIN-SUFFIX,cn
+  - IANA public-TLD suffix (broad match): ChinaMax/ChinaMax.list:15: DOMAIN-SUFFIX,ms
+  - IANA public-TLD suffix (broad match): ChinaMax/ChinaMax.list:16: DOMAIN-SUFFIX,alibaba
+  - IANA public-TLD suffix (broad match): ChinaMax/ChinaMax.list:17: DOMAIN-SUFFIX,alipay
+  - IANA public-TLD suffix (broad match): ChinaMax/ChinaMax.list:18: DOMAIN-SUFFIX,anquan
+  - IANA public-TLD suffix (broad match): ChinaMax/ChinaMax.list:19: DOMAIN-SUFFIX,baidu
+  - IANA public-TLD suffix (broad match): ChinaMax/ChinaMax.list:20: DOMAIN-SUFFIX,citic
+  - IANA public-TLD suffix (broad match): ChinaMax/ChinaMax.list:21: DOMAIN-SUFFIX,icbc
+  - IANA public-TLD suffix (broad match): ChinaMax/ChinaMax.list:22: DOMAIN-SUFFIX,shouji
+  - IANA public-TLD suffix (broad match): ChinaMax/ChinaMax.list:23: DOMAIN-SUFFIX,sina
+  - IANA public-TLD suffix (broad match): ChinaMax/ChinaMax.list:24: DOMAIN-SUFFIX,sohu
 
 - Detailed threat-feed and broad shared-hosting review: see SECURITY-REVIEW.md.
 - Financial-domain matches: 238 (review only; not deleted)

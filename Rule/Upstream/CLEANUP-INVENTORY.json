@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 13:09 UTC",
+  "generated_utc": "2026-11-27 13:13 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 821,
@@ -11,6 +11,7 @@
     "same_rule_payload_file_groups": 3,
     "duplicate_rule_lines": 0,
     "domain_rule_count": 2690635,
+    "bare_public_tld_suffix_rule_occurrences": 894,
     "personal_files_seen_not_modified": 3,
     "bank_payment_app_folders_found": 0,
     "finance_app_review_candidates": 0,
@@ -2567,6 +2568,7 @@
     "duplicate_rule_lines": 0,
     "recognized_native_domain": 1330757,
     "single_label_suffix": 894,
+    "bare_public_tld_suffix": 894,
     "hidden_control": 0,
     "invalid_native_filter": 0,
     "unsupported_or_missing_operand": 0,
@@ -2580,6 +2582,58 @@
   },
   "static_security_examples": {
     "single_label_suffix": [
+      "Alibaba/Alibaba.list:10: DOMAIN-SUFFIX,alibaba",
+      "Alibaba/Alibaba.list:11: DOMAIN-SUFFIX,taobao",
+      "Alibaba/Alibaba.list:12: DOMAIN-SUFFIX,tmall",
+      "Alibaba/Alibaba_All.list:34: DOMAIN-SUFFIX,alibaba",
+      "Alibaba/Alibaba_All.list:1122: DOMAIN-SUFFIX,taobao",
+      "Alibaba/Alibaba_All.list:1158: DOMAIN-SUFFIX,tmall",
+      "Alibaba/Alibaba_All_No_Resolve.list:34: DOMAIN-SUFFIX,alibaba",
+      "Alibaba/Alibaba_All_No_Resolve.list:1122: DOMAIN-SUFFIX,taobao",
+      "Alibaba/Alibaba_All_No_Resolve.list:1158: DOMAIN-SUFFIX,tmall",
+      "Alibaba/Alibaba_Resolve.list:10: DOMAIN-SUFFIX,alibaba",
+      "Alibaba/Alibaba_Resolve.list:11: DOMAIN-SUFFIX,taobao",
+      "Alibaba/Alibaba_Resolve.list:12: DOMAIN-SUFFIX,tmall",
+      "Amazon/Amazon.list:37: DOMAIN-SUFFIX,amazon",
+      "Amazon/Amazon.list:119: DOMAIN-SUFFIX,aws",
+      "Amazon/Amazon.list:146: DOMAIN-SUFFIX,imdb",
+      "Amazon/Amazon.list:149: DOMAIN-SUFFIX,kindle",
+      "Amazon/Amazon.list:194: DOMAIN-SUFFIX,xn--cckwcxetd",
+      "Amazon/Amazon.list:195: DOMAIN-SUFFIX,xn--jlq480n2rg",
+      "Amazon/Amazon.list:196: DOMAIN-SUFFIX,yamaxun",
+      "Amazon/Amazon.list:200: DOMAIN-SUFFIX,zappos",
+      "Amazon/Amazon_Resolve.list:37: DOMAIN-SUFFIX,amazon",
+      "Amazon/Amazon_Resolve.list:119: DOMAIN-SUFFIX,aws",
+      "Amazon/Amazon_Resolve.list:146: DOMAIN-SUFFIX,imdb",
+      "Amazon/Amazon_Resolve.list:149: DOMAIN-SUFFIX,kindle",
+      "Amazon/Amazon_Resolve.list:194: DOMAIN-SUFFIX,xn--cckwcxetd",
+      "Amazon/Amazon_Resolve.list:195: DOMAIN-SUFFIX,xn--jlq480n2rg",
+      "Amazon/Amazon_Resolve.list:196: DOMAIN-SUFFIX,yamaxun",
+      "Amazon/Amazon_Resolve.list:200: DOMAIN-SUFFIX,zappos",
+      "BBC/BBC.list:21: DOMAIN-SUFFIX,bbc",
+      "BMW/BMW.list:77: DOMAIN-SUFFIX,bmw",
+      "BMW/BMW.list:494: DOMAIN-SUFFIX,mini",
+      "China/China.list:12: DOMAIN-SUFFIX,cn",
+      "China/China.list:13: DOMAIN-SUFFIX,ms",
+      "China/China_All.list:969: DOMAIN-SUFFIX,cn",
+      "China/China_All.list:2373: DOMAIN-SUFFIX,ms",
+      "China/China_All_No_Resolve.list:969: DOMAIN-SUFFIX,cn",
+      "China/China_All_No_Resolve.list:2373: DOMAIN-SUFFIX,ms",
+      "China/China_Resolve.list:12: DOMAIN-SUFFIX,cn",
+      "China/China_Resolve.list:13: DOMAIN-SUFFIX,ms",
+      "ChinaMax/ChinaMax.list:14: DOMAIN-SUFFIX,cn",
+      "ChinaMax/ChinaMax.list:15: DOMAIN-SUFFIX,ms",
+      "ChinaMax/ChinaMax.list:16: DOMAIN-SUFFIX,alibaba",
+      "ChinaMax/ChinaMax.list:17: DOMAIN-SUFFIX,alipay",
+      "ChinaMax/ChinaMax.list:18: DOMAIN-SUFFIX,anquan",
+      "ChinaMax/ChinaMax.list:19: DOMAIN-SUFFIX,baidu",
+      "ChinaMax/ChinaMax.list:20: DOMAIN-SUFFIX,citic",
+      "ChinaMax/ChinaMax.list:21: DOMAIN-SUFFIX,icbc",
+      "ChinaMax/ChinaMax.list:22: DOMAIN-SUFFIX,shouji",
+      "ChinaMax/ChinaMax.list:23: DOMAIN-SUFFIX,sina",
+      "ChinaMax/ChinaMax.list:24: DOMAIN-SUFFIX,sohu"
+    ],
+    "bare_public_tld_suffix": [
       "Alibaba/Alibaba.list:10: DOMAIN-SUFFIX,alibaba",
       "Alibaba/Alibaba.list:11: DOMAIN-SUFFIX,taobao",
       "Alibaba/Alibaba.list:12: DOMAIN-SUFFIX,tmall",
@@ -3680,7 +3734,7 @@
       "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3700,7 +3754,7 @@
       "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3710,7 +3764,7 @@
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "sdygc51lkwg-qjnbvpli-1ce48c-sdy77c.pages.dev"
+      "matched_domain": "66rrx-qmn-wm3n-0nlqq-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3730,7 +3784,7 @@
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3740,7 +3794,7 @@
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "sdygc51lkwg-qjnbvpli-1ce48c-sdy77c.pages.dev"
+      "matched_domain": "66rrx-qmn-wm3n-0nlqq-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3760,7 +3814,7 @@
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3780,7 +3834,7 @@
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
       "rule_domain": "github.io",
-      "matched_domain": "wildpigger.github.io"
+      "matched_domain": "kauongit.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3800,7 +3854,7 @@
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "rejekishopee23.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3820,7 +3874,7 @@
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
       "rule_domain": "github.io",
-      "matched_domain": "wildpigger.github.io"
+      "matched_domain": "kauongit.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3860,7 +3914,7 @@
       "line": 29514,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3890,7 +3944,7 @@
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
       "rule_domain": "netlify.app",
-      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
+      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -3900,7 +3954,7 @@
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "sdygc51lkwg-qjnbvpli-1ce48c-sdy77c.pages.dev"
+      "matched_domain": "66rrx-qmn-wm3n-0nlqq-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3910,7 +3964,7 @@
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
       "rule_domain": "vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "matched_domain": "www.ads-z63a.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3930,7 +3984,7 @@
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3950,7 +4004,7 @@
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "rejekishopee23.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3970,7 +4024,7 @@
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
       "rule_domain": "github.io",
-      "matched_domain": "wildpigger.github.io"
+      "matched_domain": "kauongit.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -4010,7 +4064,7 @@
       "line": 29514,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4040,7 +4094,7 @@
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
       "rule_domain": "netlify.app",
-      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
+      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -4050,7 +4104,7 @@
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "sdygc51lkwg-qjnbvpli-1ce48c-sdy77c.pages.dev"
+      "matched_domain": "66rrx-qmn-wm3n-0nlqq-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4060,7 +4114,7 @@
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
       "rule_domain": "vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "matched_domain": "www.ads-z63a.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4080,7 +4134,7 @@
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4100,7 +4154,7 @@
       "line": 189,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4120,7 +4174,7 @@
       "line": 189,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4130,7 +4184,7 @@
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "rejekishopee23.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4140,7 +4194,7 @@
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "rejekishopee23.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4210,7 +4264,7 @@
       "line": 1202,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4240,7 +4294,7 @@
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
       "rule_domain": "netlify.app",
-      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
+      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -4250,7 +4304,7 @@
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "sdygc51lkwg-qjnbvpli-1ce48c-sdy77c.pages.dev"
+      "matched_domain": "66rrx-qmn-wm3n-0nlqq-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4260,7 +4314,7 @@
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
       "rule_domain": "vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "matched_domain": "www.ads-z63a.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4280,7 +4334,7 @@
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4310,7 +4364,7 @@
       "line": 1202,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4340,7 +4394,7 @@
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
       "rule_domain": "netlify.app",
-      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
+      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -4350,7 +4404,7 @@
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "sdygc51lkwg-qjnbvpli-1ce48c-sdy77c.pages.dev"
+      "matched_domain": "66rrx-qmn-wm3n-0nlqq-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4360,7 +4414,7 @@
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
       "rule_domain": "vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "matched_domain": "www.ads-z63a.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4380,7 +4434,7 @@
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4400,7 +4454,7 @@
       "line": 172,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4420,7 +4474,7 @@
       "line": 172,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4430,7 +4484,7 @@
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
       "rule_domain": "vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "matched_domain": "www.ads-z63a.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {

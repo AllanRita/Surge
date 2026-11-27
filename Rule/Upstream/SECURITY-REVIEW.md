@@ -1,6 +1,6 @@
 # Security reputation review
 
-Generated: 2026-11-27 13:09 UTC
+Generated: 2026-11-27 13:13 UTC
 
 This report compares current domain rules against public threat-intelligence feeds. A feed match is a review signal, not proof that the rule's parent domain is malicious. No rules are automatically removed.
 
@@ -46,7 +46,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Google/Google.list, Google/Google_Resolve.list
-- Matched feed host examples: rejekishopee23.blogspot.com
+- Matched feed host examples: www.freefiregarenadetayler.blogspot.com
 - Classification: Blogger shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,cloudfront.net
@@ -54,7 +54,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Amazon/Amazon.list, Amazon/Amazon_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, GlobalMedia/GlobalMedia_All.list, GlobalMedia/GlobalMedia_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list, ProxyLite/ProxyLite.list, ProxyLite/ProxyLite_Resolve.list
-- Matched feed host examples: d33wubrfki0l68.cloudfront.net
+- Matched feed host examples: d1by761p31t71v.cloudfront.net
 - Classification: shared CDN / Amazon CloudFront; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,duckdns.org
@@ -86,7 +86,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: GitHub/GitHub.list, Global/Global_All.list, Global/Global_All_No_Resolve.list
-- Matched feed host examples: wildpigger.github.io
+- Matched feed host examples: kauongit.github.io
 - Classification: GitHub Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,netlify.app
@@ -94,7 +94,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: connexion-mabanquebnpparibas.netlify.app
+- Matched feed host examples: boisterous-sprite-d1fe49.netlify.app
 - Classification: Netlify shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,pages.dev
@@ -102,7 +102,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: sdygc51lkwg-qjnbvpli-1ce48c-sdy77c.pages.dev
+- Matched feed host examples: 66rrx-qmn-wm3n-0nlqq-04-10-2026-hh.pages.dev
 - Classification: Cloudflare Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,trycloudflare.com
@@ -118,7 +118,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list, Vercel/Vercel.list
-- Matched feed host examples: ore45.vercel.app
+- Matched feed host examples: www.ads-z63a.vercel.app
 - Classification: Vercel shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,weebly.com
@@ -134,7 +134,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: substantiating-evidence-cfe1.63186834.workers.dev
+- Matched feed host examples: reverification-evidence-5ef7.s2467-05b.workers.dev
 - Classification: Cloudflare Workers shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 
@@ -178,6 +178,62 @@ The curated suffix scan covers all upstream rule files, not only threat-feed mat
 | web.app | Firebase Hosting | 4 | Global, Google |
 | weebly.com | Weebly shared website hosting | 4 | Global, Proxy |
 | workers.dev | Cloudflare Workers shared hosting | 6 | Cloudflare, Global, Proxy |
+
+## Bare IANA public-TLD suffix rules
+
+- Rule occurrences: 894
+- These operands are valid IANA top-level domains, but a suffix rule at the TLD root can match every domain beneath that TLD. They are review-only; no rules are automatically removed.
+- Alibaba/Alibaba.list:10: DOMAIN-SUFFIX,alibaba
+- Alibaba/Alibaba.list:11: DOMAIN-SUFFIX,taobao
+- Alibaba/Alibaba.list:12: DOMAIN-SUFFIX,tmall
+- Alibaba/Alibaba_All.list:34: DOMAIN-SUFFIX,alibaba
+- Alibaba/Alibaba_All.list:1122: DOMAIN-SUFFIX,taobao
+- Alibaba/Alibaba_All.list:1158: DOMAIN-SUFFIX,tmall
+- Alibaba/Alibaba_All_No_Resolve.list:34: DOMAIN-SUFFIX,alibaba
+- Alibaba/Alibaba_All_No_Resolve.list:1122: DOMAIN-SUFFIX,taobao
+- Alibaba/Alibaba_All_No_Resolve.list:1158: DOMAIN-SUFFIX,tmall
+- Alibaba/Alibaba_Resolve.list:10: DOMAIN-SUFFIX,alibaba
+- Alibaba/Alibaba_Resolve.list:11: DOMAIN-SUFFIX,taobao
+- Alibaba/Alibaba_Resolve.list:12: DOMAIN-SUFFIX,tmall
+- Amazon/Amazon.list:37: DOMAIN-SUFFIX,amazon
+- Amazon/Amazon.list:119: DOMAIN-SUFFIX,aws
+- Amazon/Amazon.list:146: DOMAIN-SUFFIX,imdb
+- Amazon/Amazon.list:149: DOMAIN-SUFFIX,kindle
+- Amazon/Amazon.list:194: DOMAIN-SUFFIX,xn--cckwcxetd
+- Amazon/Amazon.list:195: DOMAIN-SUFFIX,xn--jlq480n2rg
+- Amazon/Amazon.list:196: DOMAIN-SUFFIX,yamaxun
+- Amazon/Amazon.list:200: DOMAIN-SUFFIX,zappos
+- Amazon/Amazon_Resolve.list:37: DOMAIN-SUFFIX,amazon
+- Amazon/Amazon_Resolve.list:119: DOMAIN-SUFFIX,aws
+- Amazon/Amazon_Resolve.list:146: DOMAIN-SUFFIX,imdb
+- Amazon/Amazon_Resolve.list:149: DOMAIN-SUFFIX,kindle
+- Amazon/Amazon_Resolve.list:194: DOMAIN-SUFFIX,xn--cckwcxetd
+- Amazon/Amazon_Resolve.list:195: DOMAIN-SUFFIX,xn--jlq480n2rg
+- Amazon/Amazon_Resolve.list:196: DOMAIN-SUFFIX,yamaxun
+- Amazon/Amazon_Resolve.list:200: DOMAIN-SUFFIX,zappos
+- BBC/BBC.list:21: DOMAIN-SUFFIX,bbc
+- BMW/BMW.list:77: DOMAIN-SUFFIX,bmw
+- BMW/BMW.list:494: DOMAIN-SUFFIX,mini
+- China/China.list:12: DOMAIN-SUFFIX,cn
+- China/China.list:13: DOMAIN-SUFFIX,ms
+- China/China_All.list:969: DOMAIN-SUFFIX,cn
+- China/China_All.list:2373: DOMAIN-SUFFIX,ms
+- China/China_All_No_Resolve.list:969: DOMAIN-SUFFIX,cn
+- China/China_All_No_Resolve.list:2373: DOMAIN-SUFFIX,ms
+- China/China_Resolve.list:12: DOMAIN-SUFFIX,cn
+- China/China_Resolve.list:13: DOMAIN-SUFFIX,ms
+- ChinaMax/ChinaMax.list:14: DOMAIN-SUFFIX,cn
+- ChinaMax/ChinaMax.list:15: DOMAIN-SUFFIX,ms
+- ChinaMax/ChinaMax.list:16: DOMAIN-SUFFIX,alibaba
+- ChinaMax/ChinaMax.list:17: DOMAIN-SUFFIX,alipay
+- ChinaMax/ChinaMax.list:18: DOMAIN-SUFFIX,anquan
+- ChinaMax/ChinaMax.list:19: DOMAIN-SUFFIX,baidu
+- ChinaMax/ChinaMax.list:20: DOMAIN-SUFFIX,citic
+- ChinaMax/ChinaMax.list:21: DOMAIN-SUFFIX,icbc
+- ChinaMax/ChinaMax.list:22: DOMAIN-SUFFIX,shouji
+- ChinaMax/ChinaMax.list:23: DOMAIN-SUFFIX,sina
+- ChinaMax/ChinaMax.list:24: DOMAIN-SUFFIX,sohu
+
 ## Stale/private single-label suffixes
 
 - None detected or IANA TLD feed unavailable.
