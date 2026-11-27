@@ -105,12 +105,16 @@ jobs:
                           if not line or line.startswith(('#',';','//')):
                               continue
                           parts=line.split(',')
-                          if parts[0] not in {'DOMAIN','DOMAIN-SUFFIX','DOMAIN-KEYWORD'}:
+                          if parts[0] not in {'DOMAIN','DOMAIN-SUFFIX'}:
                               continue
-                          if len(parts)!=2 or not re.fullmatch(r'[A-Za-z0-9_-]+(?:\\.[A-Za-z0-9_-]+)*',parts[1]):
+                          if len(parts)!=2:
                               raise ValueError('Invalid domain rule syntax')
                           domain=parts[1].lower()
                           if domain=='skk.moe' or domain.endswith('.skk.moe'):
+                              continue
+                          if not re.fullmatch(r'[A-Za-z0-9_-]+(?:[.][A-Za-z0-9_-]+)+',domain):
+                              raise ValueError('Invalid domain rule syntax')
+                          if any(domain==d or domain.endswith('.'+d) for d in ('paypal.com','alipay.com','stripe.com','unionpay.com','visa.com','icbc.com.cn','boc.cn','paypay.ne.jp')):
                               continue
                           rows.append(parts[0]+','+domain)
                       if not rows:
@@ -126,6 +130,8 @@ jobs:
                       oldfile.write_text(json.dumps({'source':'https://github.com/SukkaLab/ruleset.skk.moe','commit':commit,'path':str(p.relative_to(extra)),'license':'AGPL-3.0','notices':[l for l in raw.splitlines() if l.startswith('#')],'rules':sorted(set(rows))},ensure_ascii=False,indent=2))
                   except (OSError,ValueError) as e:
                       print('Contribution deferred:',category,str(e))
+                      with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as report:
+                          report.write(f'- Contribution deferred: {category}: {e}\n')
               shutil.copyfile(lic,dst/'LICENSE-AGPL-3.0')
           except (OSError,ValueError,subprocess.CalledProcessError) as e:
               print('Additional source deferred:',str(e))
@@ -141,9 +147,12 @@ jobs:
               added=[]
               for line in info['rules']:
                   kind,domain=line.split(',')
+                  if kind not in {'DOMAIN','DOMAIN-SUFFIX'}:
+                      continue
                   if line.lower() in existing or any('.'.join(domain.split('.')[i:]) in suffixes for i in range(len(domain.split('.')))):
                       continue
                   added.append(line)
+              print('Merge result:',category,'added',len(added),'source rules',len(info['rules']))
               if added:
                   target.write_text(base.rstrip()+'\n# BEGIN MERGED SUPPLEMENT\n# Source: '+info['source']+'\n# License: AGPL-3.0; notices in SourceMetadata/'+category+'.json\n'+'\n'.join(added)+'\n',encoding='utf-8')
               else:
