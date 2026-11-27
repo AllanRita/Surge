@@ -53,7 +53,7 @@ Keep each distinct existing format once within its App folder. Standard and Reso
 
 ## Current source comparison
 
-The 15 author-source snapshots already cached in SourceMetadata have been compared against their correctly mapped App/category rule files: 300 source-rule entries checked, zero uncovered. Scope limitation: this verifies only the snapshots already cached; it does not establish that every App has been compared against every possible author. No new author rule sets were fetched.
+The audit compares the 15 author-source snapshots already cached in SourceMetadata against their mapped standard rule files and, where present, the corresponding Resolve files. The inventory reports per-format coverage separately. Scope limitation: this verifies only cached snapshots; it does not establish that every App has been compared against every possible author. No new author rule sets were fetched.
 
 ## Security and review records
 
