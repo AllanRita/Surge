@@ -198,6 +198,69 @@ class SurgeMaintenanceTests(unittest.TestCase):
             self.assertEqual(result["status"], "REVIEW")
             self.assertEqual(result["left_only_count"], 1)
             self.assertEqual(result["left_only_examples"][0]["rule"], "IP-CIDR,10.0.0.0/8")
+    def test_dual_feed_deletes_exact_domain_only_and_preserves_parent_and_blocklist(self):
+        with tempfile.TemporaryDirectory() as td:
+            base = Path(td)
+            root = base / "Rule" / "Upstream"
+            personal = base / "Rule" / "Personal"
+            manifest = base / ".github" / "explicit-rule-exclusions.json"
+            out = base / "out"
+            backup = base / "backup"
+            threat = root / "ThreatApp"
+            block = root / "BlockApp"
+            threat.mkdir(parents=True)
+            block.mkdir(parents=True)
+            personal.mkdir(parents=True)
+            manifest.parent.mkdir(parents=True)
+            manifest.write_text(json.dumps({"exclusions": []}), encoding="utf-8")
+            personal_file = personal / "private.list"
+            personal_file.write_text("DOMAIN,private.example\n", encoding="utf-8")
+            target = threat / "ThreatApp.list"
+            original = "DOMAIN,evil.example\nDOMAIN-SUFFIX,evil.example\nDOMAIN,one-feed.example\n"
+            target.write_text(original, encoding="utf-8")
+            block_file = block / "BlockApp.list"
+            block_file.write_text("DOMAIN,evil.example\n", encoding="utf-8")
+            openphish = base / "openphish.txt"
+            openphish.write_text("https://evil.example/malware\nhttps://one-feed.example/login\n", encoding="utf-8")
+            urlhaus = base / "urlhaus.txt"
+            urlhaus.write_text("evil.example CNAME . ; Malware download\n", encoding="utf-8")
+            argv = ["batch_maintain.py", "--batch", "1", "--batch-size", "100", "--openphish", str(openphish), "--urlhaus", str(urlhaus), "--output-dir", str(out), "--backup-dir", str(backup)]
+            with patch.object(MAINTAIN, "ROOT", root), patch.object(MAINTAIN, "PERSONAL", personal), patch.object(MAINTAIN, "MANIFEST", manifest), patch.object(sys, "argv", argv):
+                MAINTAIN.main()
+            self.assertNotIn("DOMAIN,evil.example", target.read_text(encoding="utf-8").splitlines())
+            self.assertIn("DOMAIN-SUFFIX,evil.example", target.read_text(encoding="utf-8").splitlines())
+            self.assertIn("DOMAIN,one-feed.example", target.read_text(encoding="utf-8").splitlines())
+            self.assertIn("DOMAIN,evil.example", block_file.read_text(encoding="utf-8").splitlines())
+            report = json.loads((out / "batch-001-maintenance.json").read_text(encoding="utf-8"))
+            self.assertEqual(report["summary"]["threats_removed"], 1)
+            self.assertTrue(report["security_coverage_complete"])
+            self.assertTrue(report["personal_unchanged"])
+            self.assertEqual(personal_file.read_text(encoding="utf-8"), "DOMAIN,private.example\n")
+            self.assertEqual((backup / "batch-001" / "ThreatApp" / "ThreatApp.list").read_text(encoding="utf-8"), original)
+
+    def test_single_feed_match_is_review_only(self):
+        with tempfile.TemporaryDirectory() as td:
+            base = Path(td)
+            root = base / "Rule" / "Upstream"
+            personal = base / "Rule" / "Personal"
+            manifest = base / ".github" / "explicit-rule-exclusions.json"
+            out = base / "out"
+            (root / "ThreatApp").mkdir(parents=True)
+            personal.mkdir(parents=True)
+            manifest.parent.mkdir(parents=True)
+            manifest.write_text(json.dumps({"exclusions": []}), encoding="utf-8")
+            target = root / "ThreatApp" / "ThreatApp.list"
+            target.write_text("DOMAIN,only-one.example\n", encoding="utf-8")
+            openphish = base / "openphish.txt"
+            openphish.write_text("https://only-one.example/login\n", encoding="utf-8")
+            argv = ["batch_maintain.py", "--batch", "1", "--batch-size", "100", "--openphish", str(openphish), "--output-dir", str(out)]
+            with patch.object(MAINTAIN, "ROOT", root), patch.object(MAINTAIN, "PERSONAL", personal), patch.object(MAINTAIN, "MANIFEST", manifest), patch.object(sys, "argv", argv):
+                MAINTAIN.main()
+            self.assertEqual(target.read_text(encoding="utf-8"), "DOMAIN,only-one.example\n")
+            report = json.loads((out / "batch-001-maintenance.json").read_text(encoding="utf-8"))
+            self.assertEqual(report["summary"].get("threats_removed", 0), 0)
+            self.assertFalse(report["security_coverage_complete"])
+            self.assertEqual(len(report["review_findings"]), 1)
     def test_urlhaus_hostfile_first_column(self):
         with tempfile.TemporaryDirectory() as td:
             feed = Path(td) / "urlhaus.txt"
