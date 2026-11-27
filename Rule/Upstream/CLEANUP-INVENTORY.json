@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 12:45 UTC",
+  "generated_utc": "2026-11-27 12:46 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 828,
@@ -3025,7 +3025,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-nuvzaro-biz.pages.dev"
+      "matched_domain": "0a5d9-mrc-4aqy-7fp5y-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3041,7 +3041,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3049,7 +3049,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-nuvzaro-biz.pages.dev"
+      "matched_domain": "0a5d9-mrc-4aqy-7fp5y-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3065,7 +3065,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3097,7 +3097,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "metamask173.blogspot.com"
+      "matched_domain": "watchtheviralvideosonline.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3177,7 +3177,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-nuvzaro-biz.pages.dev"
+      "matched_domain": "0a5d9-mrc-4aqy-7fp5y-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3185,7 +3185,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "zweb-new-mail-adm.vercel.app"
+      "matched_domain": "www.ads-z63a.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3201,7 +3201,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3217,7 +3217,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "metamask173.blogspot.com"
+      "matched_domain": "watchtheviralvideosonline.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3297,7 +3297,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-nuvzaro-biz.pages.dev"
+      "matched_domain": "0a5d9-mrc-4aqy-7fp5y-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3305,7 +3305,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "zweb-new-mail-adm.vercel.app"
+      "matched_domain": "www.ads-z63a.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3321,7 +3321,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3361,7 +3361,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "metamask173.blogspot.com"
+      "matched_domain": "watchtheviralvideosonline.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3369,7 +3369,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "metamask173.blogspot.com"
+      "matched_domain": "watchtheviralvideosonline.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3457,7 +3457,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-nuvzaro-biz.pages.dev"
+      "matched_domain": "0a5d9-mrc-4aqy-7fp5y-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3465,7 +3465,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "zweb-new-mail-adm.vercel.app"
+      "matched_domain": "www.ads-z63a.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3481,7 +3481,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3537,7 +3537,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-nuvzaro-biz.pages.dev"
+      "matched_domain": "0a5d9-mrc-4aqy-7fp5y-04-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3545,7 +3545,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "zweb-new-mail-adm.vercel.app"
+      "matched_domain": "www.ads-z63a.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3561,7 +3561,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3601,7 +3601,7 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "zweb-new-mail-adm.vercel.app"
+      "matched_domain": "www.ads-z63a.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {
