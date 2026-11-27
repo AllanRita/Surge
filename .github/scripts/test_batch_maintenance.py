@@ -126,7 +126,7 @@ class SurgeMaintenanceTests(unittest.TestCase):
     def test_iana_delegated_tld_is_not_flagged_as_unregistered(self):
         with tempfile.TemporaryDirectory() as td:
             ref = Path(td) / "tlds-alpha-by-domain.txt"
-            ref.write_text("# Version 2026112700, Last Updated Fri Nov 27 07:07:01 2026 UTC\\nCN\\nALIBABA\\nALIPAY\\nXN--1QQW23A\\n", encoding="utf-8")
+            ref.write_text("# Version 2026112700, Last Updated Fri Nov 27 07:07:01 2026 UTC\nCN\nALIBABA\nALIPAY\nXN--1QQW23A\n", encoding="utf-8")
             tlds, version = PREFLIGHT.load_iana_tlds(str(ref))
             self.assertEqual(version, "Version 2026112700, Last Updated Fri Nov 27 07:07:01 2026 UTC")
             self.assertTrue({"cn", "alibaba", "alipay", "xn--1qqw23a"}.issubset(tlds))
