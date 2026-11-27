@@ -266,6 +266,21 @@ jobs:
           with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as report:
               report.write(f'\n### Whole-library consolidation\n- Exact duplicate rows removed: {dedup_count}\n- Personal files audited without changes: {personal_count}\n')
               groups=[v for v in duplicate_files.values() if len(v)>1]
+              scenario_suffixes=('_All_No_Resolve','_All_NoResolve','_No_Resolve','_No_IPv6','_Resolve','_Domain','_All','_NoIPv6')
+              def scenario_base(path):
+                  stem=Path(path).stem
+                  for suffix in scenario_suffixes:
+                      if stem.endswith(suffix):
+                          return stem[:-len(suffix)]
+                  return stem
+              scenario_variant_groups=[]
+              cross_category_duplicate_groups=[]
+              for group in groups:
+                  bases={scenario_base(path) for path in group}
+                  if len(bases)==1 and len({Path(path).stem for path in group})>1:
+                      scenario_variant_groups.append(group)
+                  else:
+                      cross_category_duplicate_groups.append(group)
               report.write(f'- Identical rule-set groups (review only): {len(groups)}\n')
               for group in groups[:100]:
                   report.write('- '+ ' | '.join(group)+'\n')
@@ -315,10 +330,15 @@ jobs:
                   report_lines += [f'- {category}: {count}' for category,count in sorted(breakdown.items())]
               else:
                   report_lines.append('- None')
-          report_lines += ['', '## Identical rule-set groups (review only; not merged)']
-          for group in groups:
+          report_lines += ['', '## Same-app scenario variants (preserved; not merged)']
+          for group in scenario_variant_groups:
               report_lines.append('- ' + ' | '.join(group))
-          if not groups:
+          if not scenario_variant_groups:
+              report_lines.append('- None')
+          report_lines += ['', '## Cross-category identical-content candidates (manual review; not merged)']
+          for group in cross_category_duplicate_groups:
+              report_lines.append('- ' + ' | '.join(group))
+          if not cross_category_duplicate_groups:
               report_lines.append('- None')
           report_lines += ['', '## Finding examples']
           report_lines += [f'- {item}' for item in examples] if examples else ['- None']
