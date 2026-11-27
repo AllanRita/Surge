@@ -8,8 +8,8 @@
     "merge_same_app_regional_variants": true,
     "keep_distinct_file_formats_separate": true,
     "do_not_merge_different_apps_by_shared_cdn_or_parent_company": true,
-    "compare_cached_author_sources_without_fetching_new_authors": false,
-    "pause_new_author_rule_fetching": false,
+    "compare_cached_author_sources_without_fetching_new_authors": true,
+    "pause_new_author_rule_fetching": true,
     "delete_only_dedicated_bank_payment_app_folders": false,
     "do_not_delete_financial_domains_embedded_in_other_apps": true,
     "personal_rules_are_never_modified": true,
@@ -25,7 +25,8 @@
     "do_not_delete_other_finance_folders_automatically": true,
     "only_enforce_exact_explicit_deletion_manifest": true,
     "restore_explicitly_requested_bank_payment_finance_folders": true,
-    "do_not_restore_user_deleted_rule_folders": true
+    "do_not_restore_user_deleted_rule_folders": true,
+    "targeted_author_fetch_for_explicit_restore_allowed": true
   },
   "scenario_variants": [
     {
