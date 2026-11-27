@@ -14,7 +14,8 @@
     "do_not_delete_financial_domains_embedded_in_other_apps": true,
     "personal_rules_are_never_modified": true,
     "remove_alias_folders_after_verified_union": true,
-    "retain_source_provenance_in_SourceMetadata": true
+    "retain_source_provenance_in_SourceMetadata": true,
+    "do_not_delete_crypto_exchange_or_securities_folders_without_explicit_user_approval": true
   },
   "scenario_variants": [
     {
@@ -714,5 +715,42 @@
         ]
       }
     ]
-  }
+  },
+  "finance_review_only_folders": [
+    {
+      "folder": "Binance",
+      "classification": "crypto exchange",
+      "action": "retain_pending_user_classification"
+    },
+    {
+      "folder": "OKX",
+      "classification": "crypto exchange",
+      "action": "retain_pending_user_classification"
+    },
+    {
+      "folder": "Crypto",
+      "classification": "cryptocurrency category list",
+      "action": "retain_pending_user_classification"
+    },
+    {
+      "folder": "Cryptocurrency",
+      "classification": "cryptocurrency category list",
+      "action": "retain_pending_user_classification"
+    },
+    {
+      "folder": "EastMoney",
+      "classification": "securities brokerage / investment platform",
+      "action": "retain_pending_user_classification"
+    },
+    {
+      "folder": "TigerFintech",
+      "classification": "securities brokerage / investment platform",
+      "action": "retain_pending_user_classification"
+    },
+    {
+      "folder": "XueQiu",
+      "classification": "securities / stock-investment information community",
+      "action": "retain_pending_user_classification"
+    }
+  ]
 }
