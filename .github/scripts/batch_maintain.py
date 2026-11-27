@@ -53,7 +53,11 @@ def is_blocklist_path(path):
         relative = path.relative_to(ROOT)
     except ValueError:
         relative = path
-    if any(part.casefold() in BLOCK_FILTER_SEGMENTS for part in relative.parts[:-1]):
+    if any(
+        part.casefold() in BLOCK_FILTER_SEGMENTS
+        or part.casefold().startswith(("block", "reject", "filter"))
+        for part in relative.parts[:-1]
+    ):
         return True
     readme = path.parent / "README.md"
     if readme.is_file() and not readme.is_symlink():

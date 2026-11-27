@@ -286,8 +286,8 @@ class SurgeMaintenanceTests(unittest.TestCase):
             self.assertEqual(by_name['Apple']['author_source_coverage'], 'CACHED_SOURCE_COMPARISON_CONFIGURED')
             self.assertEqual(by_name['UnmappedApp']['author_source_coverage'], 'NOT_VERIFIABLE_FROM_CACHED_SOURCES')
             self.assertTrue(by_name['Apple']['readme_present'])
-            self.assertEqual(report['rule_entry_count'], 3)
-            self.assertEqual(report['surge_rule_entry_count'], 1)
+            self.assertEqual(report['rule_entry_count'], 4)
+            self.assertEqual(report['surge_rule_entry_count'], 2)
             self.assertEqual(report['native_filter_entry_count'], 1)
             self.assertEqual(report['native_domain_entry_count'], 1)
     def test_urlhaus_hostfile_accepts_domain_first_and_ip_prefixed_rows(self):
