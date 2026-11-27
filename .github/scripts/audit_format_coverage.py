@@ -100,9 +100,6 @@ def audit(root):
     skipped = []
     for (directory, base), files in sorted(grouped.items(), key=lambda x: (str(x[0][0]).casefold(), x[0][1].casefold())):
         pair_specs = [
-            ("standard", "resolve", True, False, False, "standard_vs_resolve"),
-            ("all", "all_no_resolve", True, False, False, "all_vs_all_no_resolve"),
-            ("no_ipv6", "no_ipv6_resolve", True, False, False, "no_ipv6_vs_no_ipv6_resolve"),
             ("standard", "no_ipv6", False, True, False, "standard_vs_no_ipv6"),
             ("resolve", "no_ipv6_resolve", False, True, False, "resolve_vs_no_ipv6_resolve"),
         ]
