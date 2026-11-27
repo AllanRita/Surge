@@ -7,6 +7,8 @@ on:
       - 'Rule/Upstream/**/*.list'
       - '.github/scripts/batch_preflight.py'
       - '.github/scripts/batch_maintain.py'
+      - '.github/scripts/merge_cached_sources.py'
+      - 'Rule/Upstream/SourceMetadata/**/*.json'
       - '.github/workflows/batch-preflight.yml'
       - '.github/explicit-rule-exclusions.json'
       - 'Rule/CONSOLIDATION-PLAN.json'
@@ -80,11 +82,12 @@ jobs:
             echo "::group::Maintenance batch $BATCH/$BATCHES"
             python3 .github/scripts/enforce_explicit_exclusions.py
             if [ "$URLHAUS_AVAILABLE" = "true" ]; then
-              python3 .github/scripts/batch_maintain.py --batch "$BATCH" --batch-size 100 --openphish "$RUNNER_TEMP/surge-feeds/openphish.txt" --urlhaus "$RUNNER_TEMP/surge-feeds/urlhaus.txt" --output-dir batch-output
+              python3 .github/scripts/batch_maintain.py --batch "$BATCH" --batch-size 100 --openphish "$RUNNER_TEMP/surge-feeds/openphish.txt" --urlhaus "$RUNNER_TEMP/surge-feeds/urlhaus.txt" --output-dir batch-output --backup-dir batch-output/backups || { git checkout -- Rule/Upstream; exit 1; }
             else
-              python3 .github/scripts/batch_maintain.py --batch "$BATCH" --batch-size 100 --openphish "$RUNNER_TEMP/surge-feeds/openphish.txt" --output-dir batch-output
+              python3 .github/scripts/batch_maintain.py --batch "$BATCH" --batch-size 100 --openphish "$RUNNER_TEMP/surge-feeds/openphish.txt" --output-dir batch-output --backup-dir batch-output/backups || { git checkout -- Rule/Upstream; exit 1; }
             fi
-            python3 .github/scripts/batch_preflight.py --batch "$BATCH" --batch-size 100 --output-dir batch-output
+            python3 .github/scripts/merge_cached_sources.py --batch "$BATCH" --batch-size 100 --output-dir batch-output --backup-dir batch-output/backups || { git checkout -- Rule/Upstream; exit 1; }
+            python3 .github/scripts/batch_preflight.py --batch "$BATCH" --batch-size 100 --output-dir batch-output || { git checkout -- Rule/Upstream; exit 1; }
             git add -- Rule/Upstream
             if ! git diff --cached --quiet; then
               git commit -m "Surge automatic maintenance batch $BATCH [skip ci]"
@@ -92,8 +95,15 @@ jobs:
             fi
             echo "::endgroup::"
           done
-          echo "ALL_BATCHES_COMPLETED=$BATCHES" > batch-output/BATCH-STATUS.txt
-          echo "All batches processed. Changes are committed per batch; Git history is the rollback point." >> batch-output/BATCH-STATUS.txt
+          if [ "$URLHAUS_AVAILABLE" = "true" ]; then
+            echo "ALL_BATCHES_COMPLETED=$BATCHES" > batch-output/BATCH-STATUS.txt
+            echo "Security feeds: OpenPhish and URLhaus loaded; exact dual-feed threat checks enabled." >> batch-output/BATCH-STATUS.txt
+          else
+            echo "ALL_BATCHES_COMPLETED_WITH_INCOMPLETE_SECURITY_COVERAGE=$BATCHES" > batch-output/BATCH-STATUS.txt
+            echo "Security coverage is incomplete: URLhaus feed unavailable. Threat-based automatic deletion was disabled; deterministic repair and cached-source merge still ran." >> batch-output/BATCH-STATUS.txt
+          fi
+          echo "Cached author snapshots: 15 existing SourceMetadata JSON files only; no new author fetching." >> batch-output/BATCH-STATUS.txt
+          echo "Changes are committed per batch; pre-change copies are included in the artifact when files were modified." >> batch-output/BATCH-STATUS.txt
 
       - name: Add maintenance summary
         if: always()
