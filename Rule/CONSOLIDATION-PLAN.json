@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "generated": "2026-11-27",
   "purpose": "Track verified duplicate rule-set bodies and scenario variants without breaking existing raw subscription URLs.",
   "policy": {
@@ -9,7 +9,10 @@
     "only_exact_rule_body_matches_are_candidates_for_aliasing": true,
     "canonical_paths_are_the_only_future_edit_targets": true,
     "legacy_paths_must_mirror_canonical_content": true,
-    "legacy_files_must_not_be_deleted_without_explicit_url_migration": true
+    "legacy_files_must_not_be_deleted_without_explicit_url_migration": true,
+    "overlap_similarity_alone_never_authorizes_merging": true,
+    "merge_strategy": "Union exact rule lines in source order, deduplicate exact duplicates, mirror the resulting rule payload to legacy paths, and never delete legacy paths.",
+    "only_verified_same_app_groups_are_auto_merged": true
   },
   "scenario_variants": [
     {
@@ -50,7 +53,7 @@
         "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list",
         "Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list"
       ],
-      "decision": "preserve_both_legacy_paths",
+      "decision": "merge into one canonical payload; preserve legacy raw URL as a mirror",
       "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
     },
     {
@@ -59,7 +62,7 @@
         "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list",
         "Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list"
       ],
-      "decision": "preserve_both_legacy_paths",
+      "decision": "merge into one canonical payload; preserve legacy raw URL as a mirror",
       "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
     },
     {
@@ -68,7 +71,7 @@
         "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list",
         "Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list"
       ],
-      "decision": "preserve_both_legacy_paths",
+      "decision": "merge into one canonical payload; preserve legacy raw URL as a mirror",
       "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
     },
     {
@@ -77,7 +80,7 @@
         "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list",
         "Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list"
       ],
-      "decision": "preserve_both_legacy_paths",
+      "decision": "merge into one canonical payload; preserve legacy raw URL as a mirror",
       "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
     },
     {
@@ -86,7 +89,7 @@
         "Rule/Upstream/PChome/PChome.list",
         "Rule/Upstream/PChomeTW/PChomeTW.list"
       ],
-      "decision": "preserve_both_legacy_paths",
+      "decision": "merge into one canonical payload; preserve legacy raw URL as a mirror",
       "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
     }
   ],
@@ -140,6 +143,209 @@
       ],
       "verified_identical_rule_count": 5,
       "decision": "one canonical maintenance target; keep legacy raw URL"
+    },
+    {
+      "app": "GlobalScholar / Scholar",
+      "scenario": "standard",
+      "canonical_path": "Rule/Upstream/GlobalScholar/GlobalScholar.list",
+      "legacy_paths": [
+        "Rule/Upstream/Scholar/Scholar.list"
+      ],
+      "verified_shared_rule_count": 230,
+      "decision": "GlobalScholar is documented upstream as containing Scholar; union the one locally missing Scholar rule and mirror the canonical payload.",
+      "reason": "Upstream GlobalScholar README lists Scholar as a contained sub-rule; the current local Scholar list has one additional rule (cnki.net)."
+    },
+    {
+      "app": "Gemini (formerly BardAI)",
+      "scenario": "standard",
+      "canonical_path": "Rule/Upstream/Gemini/Gemini.list",
+      "legacy_paths": [
+        "Rule/Upstream/BardAI/BardAI.list"
+      ],
+      "verified_shared_rule_count": 9,
+      "decision": "Gemini is documented upstream as containing BardAI; union exact rule lines and mirror the canonical payload.",
+      "reason": "Upstream Gemini README lists BardAI as a contained sub-rule; the legacy BardAI list has one exact domain line additionally covered by Gemini's generativelanguage keyword rule."
+    },
+    {
+      "app": "ABEMA (formerly AbemaTV)",
+      "scenario": "standard",
+      "canonical_path": "Rule/Upstream/Abema/Abema.list",
+      "legacy_paths": [
+        "Rule/Upstream/AbemaTV/AbemaTV.list"
+      ],
+      "verified_shared_rule_count": 15,
+      "decision": "Merge the legacy AbemaTV rule coverage into the current ABEMA-named canonical set and preserve the old URL as a mirror.",
+      "reason": "ABEMA is the 2020 renamed service; the two rule sets share the same service domain family and the newer AbemaTV set adds keyword and user-agent rules."
+    }
+  ],
+  "merge_groups": [
+    {
+      "app": "Assassin's Creed Odyssey",
+      "scenario": "standard",
+      "canonical_path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list",
+      "legacy_paths": [
+        "Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list"
+      ],
+      "reason": "Verified identical 15-rule payloads."
+    },
+    {
+      "app": "Assassin's Creed Odyssey",
+      "scenario": "resolve",
+      "canonical_path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list",
+      "legacy_paths": [
+        "Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list"
+      ],
+      "reason": "Verified identical 15-rule payloads; keep Resolve separate from Standard."
+    },
+    {
+      "app": "Assassin's Creed Origins",
+      "scenario": "standard",
+      "canonical_path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list",
+      "legacy_paths": [
+        "Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list"
+      ],
+      "reason": "Verified identical 16-rule payloads."
+    },
+    {
+      "app": "Assassin's Creed Origins",
+      "scenario": "resolve",
+      "canonical_path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list",
+      "legacy_paths": [
+        "Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list"
+      ],
+      "reason": "Verified identical 16-rule payloads; keep Resolve separate from Standard."
+    },
+    {
+      "app": "PChome",
+      "scenario": "standard",
+      "canonical_path": "Rule/Upstream/PChomeTW/PChomeTW.list",
+      "legacy_paths": [
+        "Rule/Upstream/PChome/PChome.list"
+      ],
+      "reason": "Verified identical 5-rule payloads."
+    },
+    {
+      "app": "GlobalScholar / Scholar",
+      "scenario": "standard",
+      "canonical_path": "Rule/Upstream/GlobalScholar/GlobalScholar.list",
+      "legacy_paths": [
+        "Rule/Upstream/Scholar/Scholar.list"
+      ],
+      "reason": "Upstream README documents Scholar as a contained sub-rule; union the locally missing cnki.net rule."
+    },
+    {
+      "app": "Gemini / BardAI",
+      "scenario": "standard",
+      "canonical_path": "Rule/Upstream/Gemini/Gemini.list",
+      "legacy_paths": [
+        "Rule/Upstream/BardAI/BardAI.list"
+      ],
+      "reason": "Upstream README documents BardAI as a contained sub-rule; preserve all exact rules from both names."
+    },
+    {
+      "app": "ABEMA / AbemaTV",
+      "scenario": "standard",
+      "canonical_path": "Rule/Upstream/Abema/Abema.list",
+      "legacy_paths": [
+        "Rule/Upstream/AbemaTV/AbemaTV.list"
+      ],
+      "reason": "Same streaming service after the 2020 name change; combine the newer AbemaTV-specific rule types."
+    }
+  ],
+  "preserved_variants": [
+    {
+      "app": "Hulu",
+      "paths": [
+        "Rule/Upstream/Hulu/Hulu.list",
+        "Rule/Upstream/HuluUSA/HuluUSA.list",
+        "Rule/Upstream/HuluJP/HuluJP.list"
+      ],
+      "decision": "keep regional variants separate",
+      "reason": "USA and Japan rule sets represent region-specific routing scenarios; the general Hulu list currently covers both subsets."
+    },
+    {
+      "app": "HBO",
+      "paths": [
+        "Rule/Upstream/HBO/HBO.list",
+        "Rule/Upstream/HBOHK/HBOHK.list"
+      ],
+      "decision": "keep regional variants separate",
+      "reason": "HBO and HBO Hong Kong are region-specific service scopes."
+    },
+    {
+      "app": "Cloudflare",
+      "paths": [
+        "Rule/Upstream/Cloudflare/Cloudflare.list",
+        "Rule/Upstream/Cloudflarecn/Cloudflarecn.list"
+      ],
+      "decision": "keep regional variants separate",
+      "reason": "Global and China-specific service scopes must not be collapsed."
+    }
+  ],
+  "review_only_overlap_pairs": [
+    {
+      "apps": [
+        "DNS",
+        "Block/DNS"
+      ],
+      "decision": "keep separate",
+      "reason": "Public DNS resolver routing list vs HTTPDNS blocking list."
+    },
+    {
+      "apps": [
+        "YouTube",
+        "Block/YouTube"
+      ],
+      "decision": "keep separate",
+      "reason": "YouTube service routing domains vs URL-REGEX ad-block rules."
+    },
+    {
+      "apps": [
+        "Direct",
+        "AdGuardSDNSFilter/Direct"
+      ],
+      "decision": "keep separate",
+      "reason": "General direct-routing destinations vs AdGuard SDNS filter direct-category domains."
+    },
+    {
+      "apps": [
+        "Wikimedia",
+        "Wikipedia"
+      ],
+      "decision": "keep separate",
+      "reason": "Wikimedia organization domains vs Wikipedia project domains."
+    },
+    {
+      "apps": [
+        "Microsoft",
+        "Xbox"
+      ],
+      "decision": "keep separate",
+      "reason": "Different products; shared Microsoft-owned domains do not make them one app."
+    },
+    {
+      "apps": [
+        "Copilot",
+        "OpenAI"
+      ],
+      "decision": "keep separate",
+      "reason": "Distinct products with shared identity/CDN infrastructure."
+    },
+    {
+      "apps": [
+        "BiliBili",
+        "ChinaMedia"
+      ],
+      "decision": "keep separate",
+      "reason": "ChinaMedia is an aggregate media list, not a BiliBili-only app list."
+    },
+    {
+      "apps": [
+        "DuoWan",
+        "HuanJu"
+      ],
+      "decision": "manual review only",
+      "reason": "High domain overlap alone does not establish identical app purpose."
     }
   ]
 }
