@@ -124,9 +124,9 @@ def domain_entry(rule):
   return (value,kind in {"DOMAIN-SUFFIX","HOST-SUFFIX"}) if value else None
  if len(p)==1:
   value=p[0].strip().lower().rstrip(".")
-  if value.startswith(".") and re.fullmatch(r"[a-z0-9_-]+(?:\\.[a-z0-9_-]+)+",value[1:]):
+  if value.startswith(".") and re.fullmatch(r"[a-z0-9_-]+(?:\.[a-z0-9_-]+)+",value[1:]):
    return value[1:],True
-  if re.fullmatch(r"[a-z0-9_-]+(?:\\.[a-z0-9_-]+)+",value):
+  if re.fullmatch(r"[a-z0-9_-]+(?:\.[a-z0-9_-]+)+",value):
    return value,False
  return None
 def domain_covered(rule,target_rules):
