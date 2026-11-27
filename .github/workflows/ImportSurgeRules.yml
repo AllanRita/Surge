@@ -66,7 +66,9 @@ jobs:
                       if any(re.search(r'[\x00-\x08\x0b-\x1f\x7f]',l) or l.startswith('[') for l in lines):
                           raise SystemExit(f'Invalid rule content: {p.name}')
                       if target.exists():
-                          old=target.read_text(encoding='utf-8-sig').split('\n# BEGIN MERGED SUPPLEMENT\n',1)[0].splitlines()
+                          old=target.read_text(encoding='utf-8-sig').split('
+# BEGIN MERGED SUPPLEMENT
+',1)[0].splitlines()
                           oldset={l.strip() for l in old if l.strip() and not l.lstrip().startswith(('#',';','//'))}
                           newset=set(lines)
                           if len(oldset)>=20 and len(oldset-newset)>max(10,len(oldset)*0.35):
@@ -78,10 +80,16 @@ jobs:
               shutil.copyfile(p,target)
           license_file=next(p for p in root.glob('LICENSE*') if p.is_file() and not p.is_symlink())
           shutil.copyfile(license_file,dst/'LICENSE')
-          (dst/'UPSTREAM.md').write_text('Source: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge\nLicense: GPL-2.0; original notices retained.\n')
+          (dst/'UPSTREAM.md').write_text('Source: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge
+License: GPL-2.0; original notices retained.
+')
           retained=sum(1 for p in dst.rglob('*') if p.is_file() and p.name not in {'LICENSE','UPSTREAM.md'} and not (src/p.relative_to(dst)).exists())
           with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as report:
-              report.write(f'Upstream files: {len(files)}\nRule files: {len(rules)}\nRetained removed files: {retained}\nSkipped empty files: {len(skipped)}\n')
+              report.write(f'Upstream files: {len(files)}
+Rule files: {len(rules)}
+Retained removed files: {retained}
+Skipped empty files: {len(skipped)}
+')
           # Merge only explicitly matched service scopes. Keep independent cached contributions.
           extra=Path(os.environ['RUNNER_TEMP'])/'extra-source'
           cache=dst/'SourceMetadata'
@@ -131,7 +139,8 @@ jobs:
                   except (OSError,ValueError) as e:
                       print('Contribution deferred:',category,str(e))
                       with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as report:
-                          report.write(f'- Contribution deferred: {category}: {e}\n')
+                          report.write(f'- Contribution deferred: {category}: {e}
+')
               shutil.copyfile(lic,dst/'LICENSE-AGPL-3.0')
           except (OSError,ValueError,subprocess.CalledProcessError) as e:
               print('Additional source deferred:',str(e))
@@ -141,7 +150,9 @@ jobs:
               if not meta.exists() or not target.exists():
                   continue
               info=json.loads(meta.read_text())
-              base=target.read_text(encoding='utf-8-sig').split('\n# BEGIN MERGED SUPPLEMENT\n',1)[0]
+              base=target.read_text(encoding='utf-8-sig').split('
+# BEGIN MERGED SUPPLEMENT
+',1)[0]
               existing={l.strip().lower() for l in base.splitlines()}
               suffixes={l.split(',')[1].lower() for l in base.splitlines() if l.startswith('DOMAIN-SUFFIX,') and len(l.split(','))==2}
               added=[]
@@ -154,7 +165,13 @@ jobs:
                   added.append(line)
               print('Merge result:',category,'added',len(added),'source rules',len(info['rules']))
               if added:
-                  target.write_text(base.rstrip()+'\n# BEGIN MERGED SUPPLEMENT\n# Source: '+info['source']+'\n# License: AGPL-3.0; notices in SourceMetadata/'+category+'.json\n'+'\n'.join(added)+'\n',encoding='utf-8')
+                  target.write_text(base.rstrip()+'
+# BEGIN MERGED SUPPLEMENT
+# Source: '+info['source']+'
+# License: AGPL-3.0; notices in SourceMetadata/'+category+'.json
+'+'
+'.join(added)+'
+',encoding='utf-8')
               else:
                   target.write_text(base,encoding='utf-8')
           import ipaddress, unicodedata, collections
@@ -162,6 +179,7 @@ jobs:
           findings=collections.Counter()
           examples=[]
           financial_matches=[]
+broad_matches=[]
           finding_by_category=collections.defaultdict(collections.Counter)
           def flag(kind,path,num):
               findings[kind]+=1
@@ -228,6 +246,7 @@ jobs:
                       flag('invalid-domain',path,num)
                   if len(labels)<2:
                       flag('broad-domain',path,num)
+                      broad_matches.append((path,num,line.strip()))
               # Report exact financial-service host matches for manual scope review.
               # A match in an ad/tracker blocklist is not evidence that the service is routed.
               if kind in {'DOMAIN','DOMAIN-SUFFIX','HOST','HOST-SUFFIX'} and re.fullmatch(
@@ -255,7 +274,8 @@ jobs:
                   output.append(line)
               if len(output)!=len(original.splitlines(keepends=True)):
                   p.write_text(''.join(output),encoding='utf-8')
-              duplicate_files[hashlib.sha256('\n'.join(sorted(seen)).encode()).hexdigest()].append(str(p.relative_to(dst)))
+              duplicate_files[hashlib.sha256('
+'.join(sorted(seen)).encode()).hexdigest()].append(str(p.relative_to(dst)))
           personal=Path('Rule/Personal')
           if personal.is_symlink() or any(p.is_symlink() for p in personal.rglob('*')):
               raise SystemExit('Unsafe personal tree')
@@ -267,7 +287,11 @@ jobs:
                   if line and not line.startswith(('#',';','//')):
                       audit_line(line,str(p),num)
           with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as report:
-              report.write(f'\n### Whole-library consolidation\n- Exact duplicate rows removed: {dedup_count}\n- Personal files audited without changes: {personal_count}\n')
+              report.write(f'
+### Whole-library consolidation
+- Exact duplicate rows removed: {dedup_count}
+- Personal files audited without changes: {personal_count}
+')
               groups=[v for v in duplicate_files.values() if len(v)>1]
               scenario_suffixes=('_All_No_Resolve','_All_NoResolve','_No_Resolve','_No_IPv6','_Resolve','_Domain','_All','_NoIPv6')
               def scenario_base(path):
@@ -284,20 +308,26 @@ jobs:
                       scenario_variant_groups.append(group)
                   else:
                       cross_category_duplicate_groups.append(group)
-              report.write(f'- Identical rule-set groups (review only): {len(groups)}\n')
+              report.write(f'- Identical rule-set groups (review only): {len(groups)}
+')
               for group in groups[:100]:
-                  report.write('- '+ ' | '.join(group)+'\n')
+                  report.write('- '+ ' | '.join(group)+'
+')
           for p in sorted(dst.rglob('*.list')):
               for num,line in enumerate(p.read_text(encoding='utf-8-sig').splitlines(),1):
                   line=line.strip()
                   if line and not line.startswith(('#',';','//')):
                       audit_line(line,str(p.relative_to(dst)),num)
           with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as report:
-              report.write('\n### V3.2 full rule audit\n')
+              report.write('
+### V3.2 full rule audit
+')
               for kind,count in sorted(findings.items()):
-                  report.write(f'- {kind}: {count}\n')
+                  report.write(f'- {kind}: {count}
+')
               for example in examples:
-                  report.write(f'- {example}\n')
+                  report.write(f'- {example}
+')
           if any(findings[k] for k in ('hidden-control','invalid-network','ip-family-mismatch','catch-all-network','missing-operand')):
               raise SystemExit('Critical rule audit findings; publication blocked')
           # Persist the audit outcome in the repository so a green Actions badge is not mistaken for a clean audit.
@@ -343,6 +373,8 @@ jobs:
               report_lines.append('- ' + ' | '.join(group))
           if not cross_category_duplicate_groups:
               report_lines.append('- None')
+          report_lines += ['', '## Broad-domain matches (exact lines; review before changing)']
+          report_lines += [f'- {path}:{num}: {rule}' for path,num,rule in broad_matches] if broad_matches else ['- None']
           report_lines += ['', '## Financial-domain matches (exact lines; manual review, no automatic deletion)']
           report_lines += [f'- {path}:{num}: {rule}' for path,num,rule in financial_matches] if financial_matches else ['- None']
           report_lines += ['', '## Finding examples']
@@ -353,7 +385,8 @@ jobs:
               '- Source license notices are retained in SourceMetadata where available.',
               '- Manual review is still required for source relevance, financial exclusions, broad matches, and real Surge subscription behavior.',
               '']
-          report_path.write_text('\\n'.join(report_lines),encoding='utf-8')
+          report_path.write_text('\
+'.join(report_lines),encoding='utf-8')
           manifest={str(p.relative_to(dst)):hashlib.sha256(p.read_bytes()).hexdigest() for p in dst.rglob('*') if p.is_file()}
           Path('rule-manifest.json').write_text(json.dumps(manifest,sort_keys=True))
           print('Upstream commit:',subprocess.check_output(['git','-C',str(root),'rev-parse','HEAD'],text=True).strip())
