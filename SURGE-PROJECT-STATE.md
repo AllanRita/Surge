@@ -309,3 +309,18 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - Reviewed the existing `Rule/Upstream/SHARED-HOSTING-SCOPE-REVIEW.md`: 34 shared hosting/CDN/dynamic-DNS/URL-shortener suffixes in 159 occurrences, with 33 App/service-folder occurrences and 126 aggregate-folder occurrences. These remain report-only; a malicious tenant does not justify blocking an entire multi-tenant parent suffix.
 - Priority for manual scenario review is aggregate-only broad suffixes, especially `cn`, `ms`, and other single-label namespaces. No suffix is to be removed or narrowed automatically; delegated status proves syntax/registration, not intended routing scope.
 - Continue with App-by-App scenario review and cached-source checks only. Keep all current protections, preserve every format, and leave `Rule/Personal` untouched.
+
+
+## 20. Security-deletion tests and canonical-folder verification (2026-11-27)
+
+- Added two safety-focused offline tests:
+  - Exact `DOMAIN` threat rule is deleted only when the hostname appears in both OpenPhish and URLhaus; the parent `DOMAIN-SUFFIX` is retained for review, block/filter-list copies are retained, single-feed-only rules remain, a pre-change backup is written, and `Rule/Personal` remains unchanged.
+  - A single-feed exact-host match is review-only and never auto-deleted; the report marks security coverage incomplete.
+- Latest run [46022500278](https://github.com/AllanRita/Surge/actions/runs/46022500278) passed all 15 offline self-tests and all workflow steps. It again processed all 654 folders in 7 batches with 0 blockers and 0 review findings.
+- Format parity: 132 documented pairs checked, 0 content differences, 123 expected no-resolve option differences.
+- IANA TLD reference remained available; URLhaus remained unavailable without the repository secret. No threat-based automatic deletion ran in this production pass.
+- Verified the 14 canonical App folders in `Rule/CONSOLIDATION-PLAN.json` all exist, and all 19 approved alias folders are absent. No folder consolidation or rule-file changes were needed.
+- Verified the 14 bank/payment/financial folders and seven trading/crypto/securities folders are present. The exact tombstone manifest is empty; none has category-based protection or category-based deletion.
+- Cached author comparison remained 15 existing snapshots only, with no new author collection and no additions to current target files. Personal rules remain unchanged.
+- Artifact: `surge-automatic-maintenance-39`, ID `15208239341`.
+- Remaining user-dependent item: obtain a free abuse.ch Auth-Key at https://auth.abuse.ch/ and add it in GitHub repository Settings → Secrets and variables → Actions as `URLHAUS_AUTH_KEY`. Do not send the key in chat. Until configured, the workflow must continue disabling dual-feed deletion.
