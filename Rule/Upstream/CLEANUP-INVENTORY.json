@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 10:45 UTC",
+  "generated_utc": "2026-11-27 10:47 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 853,
@@ -2252,43 +2252,11 @@
   ],
   "static_security_findings": {
     "duplicate_rule_lines": 0,
-    "unsupported_or_missing_operand": 1330757,
+    "recognized_native_domain": 1330757,
     "single_label_suffix": 912,
     "stale_or_private_root_suffix": 17
   },
   "static_security_examples": {
-    "unsupported_or_missing_operand": [
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:8: .0.101tubeporn.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:9: .0.code.cotsta.ru",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:10: .0.cosmicnewspulse.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:11: .0.myikas.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:12: .0.net.easyjet.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:13: .0000.5clo0xmbf.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:14: .0000.833enmhob.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:15: .0006.4puuqeh41.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:16: .0012.4puuqeh41.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:17: .0013.79j68qav2.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:18: .0015.cosmicnewspulse.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:19: .0018.5clo0xmbf.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:20: .0019.833enmhob.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:21: .0019x.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:22: .0023.5clo0xmbf.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:23: .0024.seponews.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:24: .0025.4puuqeh41.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:25: .002777.xyz",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:26: .0033.5clo0xmbf.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:27: .0035.bestinterestings.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:28: .0038.79j68qav2.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:29: .0039.k3718qw08.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:30: .003store.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:31: .0040.5clo0xmbf.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:32: .00404850.xyz",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:33: .0041.5clo0xmbf.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:34: .0049.ohhmyoffers.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:35: .0054.4puuqeh41.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:36: .0058.4puuqeh41.com",
-      "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:37: .0072.4puuqeh41.com"
-    ],
     "single_label_suffix": [
       "Alibaba/Alibaba.list:10: DOMAIN-SUFFIX,alibaba",
       "Alibaba/Alibaba.list:11: DOMAIN-SUFFIX,taobao",
@@ -2367,6 +2335,18 @@
     "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list:64929: DOMAIN-SUFFIX,openmonitor.alipay.com",
     "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list:88437: DOMAIN-SUFFIX,stats.paypal.com",
     "AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list:96705: DOMAIN-SUFFIX,tracking.cpa.qa.web.visa.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:19810: .collect.alipay.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:26859: .data.fastlane-email.paypal.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:27146: .data.news.paypal.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:27273: .data.service.paypal.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:42556: .i.paypal.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:43380: .images.globalempcomm.visa.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:52489: .loggw-ex.alipay.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:52490: .loggw-exsdk.alipay.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:52491: .loggw.alipay.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:64867: .openmonitor.alipay.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:88375: .stats.paypal.com",
+    "AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:96643: .tracking.cpa.qa.web.visa.com",
     "Advertising/Advertising_All.list:717: DOMAIN,as.boc.cn",
     "Advertising/Advertising_All.list:5312: DOMAIN,c.paypal.com",
     "Advertising/Advertising_All.list:44850: DOMAIN-SUFFIX,business.visa.com",
@@ -2405,12 +2385,34 @@
     "Advertising/Advertising_All_No_Resolve.list:264556: DOMAIN-SUFFIX,collect.alipay.com",
     "Advertising/Advertising_All_No_Resolve.list:270351: DOMAIN-SUFFIX,images.globalempcomm.visa.com",
     "Advertising/Advertising_All_No_Resolve.list:287045: DOMAIN-SUFFIX,tracking.cpa.qa.web.visa.com",
+    "Advertising/Advertising_Domain.list:18407: .amdc.alipay.com",
+    "Advertising/Advertising_Domain.list:35115: .business.visa.com",
+    "Advertising/Advertising_Domain.list:44194: .collect.alipay.com",
+    "Advertising/Advertising_Domain.list:55297: .data.account.paypal.com",
+    "Advertising/Advertising_Domain.list:56560: .data.fastlane-email.paypal.com",
+    "Advertising/Advertising_Domain.list:57343: .data.messaging.paypal.com",
+    "Advertising/Advertising_Domain.list:57517: .data.news.paypal.com",
+    "Advertising/Advertising_Domain.list:57534: .data.newsletter.paypal.com",
+    "Advertising/Advertising_Domain.list:58596: .data.zettleby.paypal.com",
+    "Advertising/Advertising_Domain.list:103831: .i.paypal.com",
+    "Advertising/Advertising_Domain.list:105942: .images.globalempcomm.visa.com",
+    "Advertising/Advertising_Domain.list:133481: .loggw-ex.alipay.com",
+    "Advertising/Advertising_Domain.list:133482: .loggw-exsdk.alipay.com",
+    "Advertising/Advertising_Domain.list:161552: .openmonitor.alipay.com",
+    "Advertising/Advertising_Domain.list:222339: .stats.paypal.com",
+    "Advertising/Advertising_Domain.list:227868: .t.paypal.com",
+    "Advertising/Advertising_Domain.list:239133: .tracking.cpa.qa.web.visa.com",
+    "Advertising/Advertising_Domain.list:275997: as.boc.cn",
+    "Advertising/Advertising_Domain.list:276898: c.paypal.com",
     "AdvertisingLite/AdvertisingLite_All.list:4158: DOMAIN,c.paypal.com",
     "AdvertisingLite/AdvertisingLite_All.list:25772: DOMAIN-SUFFIX,amdc.alipay.com",
     "AdvertisingLite/AdvertisingLite_All.list:35140: DOMAIN-SUFFIX,t.paypal.com",
     "AdvertisingLite/AdvertisingLite_All_No_Resolve.list:4158: DOMAIN,c.paypal.com",
     "AdvertisingLite/AdvertisingLite_All_No_Resolve.list:25772: DOMAIN-SUFFIX,amdc.alipay.com",
     "AdvertisingLite/AdvertisingLite_All_No_Resolve.list:35140: DOMAIN-SUFFIX,t.paypal.com",
+    "AdvertisingLite/AdvertisingLite_Domain.list:2019: .amdc.alipay.com",
+    "AdvertisingLite/AdvertisingLite_Domain.list:11387: .t.paypal.com",
+    "AdvertisingLite/AdvertisingLite_Domain.list:18097: c.paypal.com",
     "AdvertisingTest/AdvertisingTest_All.list:463: DOMAIN,as.boc.cn",
     "AdvertisingTest/AdvertisingTest_All.list:3701: DOMAIN,c.paypal.com",
     "AdvertisingTest/AdvertisingTest_All.list:31780: DOMAIN-SUFFIX,business.visa.com",
@@ -2453,28 +2455,60 @@
     "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:273122: DOMAIN-SUFFIX,t.paypal.com",
     "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:279480: DOMAIN-SUFFIX,c6.paypal.com",
     "AdvertisingTest/AdvertisingTest_All_No_Resolve.list:305464: DOMAIN-SUFFIX,data.service.paypal.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:20078: .amdc.alipay.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:39025: .business.visa.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:40354: .c6.paypal.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:49378: .collect.alipay.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:61534: .data.account.paypal.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:62801: .data.fastlane-email.paypal.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:63586: .data.messaging.paypal.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:63762: .data.news.paypal.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:63779: .data.newsletter.paypal.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:64243: .data.service.paypal.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:64846: .data.zettleby.paypal.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:115812: .i.paypal.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:118268: .images.globalempcomm.visa.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:148634: .loggw-ex.alipay.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:148635: .loggw-exsdk.alipay.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:180140: .openmonitor.alipay.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:246194: .stats.paypal.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:252297: .t.paypal.com",
+    "AdvertisingTest/AdvertisingTest_Domain.list:255940: .telemetry.paypay.ne.jp",
+    "AdvertisingTest/AdvertisingTest_Domain.list:303493: as.boc.cn",
+    "AdvertisingTest/AdvertisingTest_Domain.list:304215: c.paypal.com",
     "Alibaba/Alibaba_All.list:110: DOMAIN-SUFFIX,alipay.com",
     "Alibaba/Alibaba_All_No_Resolve.list:110: DOMAIN-SUFFIX,alipay.com",
+    "Alibaba/Alibaba_Domain.list:109: .alipay.com",
     "China/China_All.list:400: DOMAIN-SUFFIX,alipay.com",
     "China/China_All.list:3202: DOMAIN-SUFFIX,unionpay.com",
     "China/China_All_No_Resolve.list:400: DOMAIN-SUFFIX,alipay.com",
     "China/China_All_No_Resolve.list:3202: DOMAIN-SUFFIX,unionpay.com",
+    "China/China_Domain.list:383: .alipay.com",
+    "China/China_Domain.list:3183: .unionpay.com",
     "ChinaMax/ChinaMax_All.list:1422: DOMAIN-SUFFIX,alipay.com",
     "ChinaMax/ChinaMax_All.list:4073: DOMAIN-SUFFIX,unionpay.com",
     "ChinaMax/ChinaMax_All_No_Resolve.list:1422: DOMAIN-SUFFIX,alipay.com",
     "ChinaMax/ChinaMax_All_No_Resolve.list:4073: DOMAIN-SUFFIX,unionpay.com",
+    "ChinaMax/ChinaMax_Domain.list:10922: .alipay.com",
+    "ChinaMax/ChinaMax_Domain.list:90515: .unionpay.com",
     "ChinaMaxNoIP/ChinaMaxNoIP_All.list:4020: DOMAIN-SUFFIX,unionpay.com",
     "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:4020: DOMAIN-SUFFIX,unionpay.com",
+    "ChinaMaxNoIP/ChinaMaxNoIP_Domain.list:90210: .unionpay.com",
     "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:3956: DOMAIN-SUFFIX,unionpay.com",
     "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:3956: DOMAIN-SUFFIX,unionpay.com",
+    "ChinaMaxNoMedia/ChinaMaxNoMedia_Domain.list:90126: .unionpay.com",
     "ChinaNoMedia/ChinaNoMedia_All.list:392: DOMAIN-SUFFIX,alipay.com",
     "ChinaNoMedia/ChinaNoMedia_All.list:3126: DOMAIN-SUFFIX,unionpay.com",
     "ChinaNoMedia/ChinaNoMedia_All_No_Resolve.list:392: DOMAIN-SUFFIX,alipay.com",
     "ChinaNoMedia/ChinaNoMedia_All_No_Resolve.list:3126: DOMAIN-SUFFIX,unionpay.com",
+    "ChinaNoMedia/ChinaNoMedia_Domain.list:375: .alipay.com",
+    "ChinaNoMedia/ChinaNoMedia_Domain.list:3107: .unionpay.com",
     "ChinaTest/ChinaTest_All.list:475: DOMAIN-SUFFIX,alipay.com",
     "ChinaTest/ChinaTest_All.list:3265: DOMAIN-SUFFIX,unionpay.com",
     "ChinaTest/ChinaTest_All_No_Resolve.list:475: DOMAIN-SUFFIX,alipay.com",
     "ChinaTest/ChinaTest_All_No_Resolve.list:3265: DOMAIN-SUFFIX,unionpay.com",
+    "ChinaTest/ChinaTest_Domain.list:11039: .alipay.com",
+    "ChinaTest/ChinaTest_Domain.list:90259: .unionpay.com",
     "Copilot/Copilot.list:55: DOMAIN-SUFFIX,stripe.com",
     "Copilot/Copilot_Resolve.list:55: DOMAIN-SUFFIX,stripe.com",
     "EasyPrivacy/EasyPrivacy_All.list:8511: DOMAIN-SUFFIX,collect.alipay.com",
@@ -2489,12 +2523,21 @@
     "EasyPrivacy/EasyPrivacy_All_No_Resolve.list:14490: DOMAIN-SUFFIX,i.paypal.com",
     "EasyPrivacy/EasyPrivacy_All_No_Resolve.list:14808: DOMAIN-SUFFIX,images.globalempcomm.visa.com",
     "EasyPrivacy/EasyPrivacy_All_No_Resolve.list:35930: DOMAIN-SUFFIX,tracking.cpa.qa.web.visa.com",
+    "EasyPrivacy/EasyPrivacy_Domain.list:8503: .collect.alipay.com",
+    "EasyPrivacy/EasyPrivacy_Domain.list:9937: .data.news.paypal.com",
+    "EasyPrivacy/EasyPrivacy_Domain.list:9997: .data.service.paypal.com",
+    "EasyPrivacy/EasyPrivacy_Domain.list:14482: .i.paypal.com",
+    "EasyPrivacy/EasyPrivacy_Domain.list:14800: .images.globalempcomm.visa.com",
+    "EasyPrivacy/EasyPrivacy_Domain.list:35922: .tracking.cpa.qa.web.visa.com",
     "Global/Global_All.list:19399: DOMAIN-SUFFIX,paypal.com",
     "Global/Global_All.list:23500: DOMAIN-SUFFIX,stripe.com",
     "Global/Global_All.list:25796: DOMAIN-SUFFIX,visa.com",
     "Global/Global_All_No_Resolve.list:19399: DOMAIN-SUFFIX,paypal.com",
     "Global/Global_All_No_Resolve.list:23500: DOMAIN-SUFFIX,stripe.com",
     "Global/Global_All_No_Resolve.list:25796: DOMAIN-SUFFIX,visa.com",
+    "Global/Global_Domain.list:23561: .paypal.com",
+    "Global/Global_Domain.list:28618: .stripe.com",
+    "Global/Global_Domain.list:31784: .visa.com",
     "OpenAI/OpenAI.list:40: DOMAIN-SUFFIX,stripe.com",
     "OpenAI/OpenAI_Resolve.list:40: DOMAIN-SUFFIX,stripe.com",
     "Privacy/Privacy_All.list:8541: DOMAIN-SUFFIX,collect.alipay.com",
@@ -2502,7 +2545,10 @@
     "Privacy/Privacy_All.list:35905: DOMAIN-SUFFIX,tracking.cpa.qa.web.visa.com",
     "Privacy/Privacy_All_No_Resolve.list:8541: DOMAIN-SUFFIX,collect.alipay.com",
     "Privacy/Privacy_All_No_Resolve.list:14747: DOMAIN-SUFFIX,images.globalempcomm.visa.com",
-    "Privacy/Privacy_All_No_Resolve.list:35905: DOMAIN-SUFFIX,tracking.cpa.qa.web.visa.com"
+    "Privacy/Privacy_All_No_Resolve.list:35905: DOMAIN-SUFFIX,tracking.cpa.qa.web.visa.com",
+    "Privacy/Privacy_Domain.list:8522: .collect.alipay.com",
+    "Privacy/Privacy_Domain.list:14728: .images.globalempcomm.visa.com",
+    "Privacy/Privacy_Domain.list:35886: .tracking.cpa.qa.web.visa.com"
   ],
   "reputation_feed_status": {
     "urlhaus_domains": 0,
@@ -2535,7 +2581,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "web-bugfix.pages.dev"
+      "matched_domain": "gzz91-vhe-vcra-ctc11-07-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2543,7 +2589,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2551,7 +2597,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "web-bugfix.pages.dev"
+      "matched_domain": "gzz91-vhe-vcra-ctc11-07-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2559,7 +2605,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2567,7 +2613,7 @@
       "path": "GitBook/GitBook.list",
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "metamasiuklogin.gitbook.io"
+      "matched_domain": "cripthcomlogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2575,7 +2621,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "meenakshi-cse.github.io"
+      "matched_domain": "evansrich92-afk.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2583,7 +2629,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "freefiregarenadetayler.blogspot.com"
+      "matched_domain": "metamask173.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2599,7 +2645,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "meenakshi-cse.github.io"
+      "matched_domain": "evansrich92-afk.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2623,7 +2669,7 @@
       "path": "Global/Global_All.list",
       "line": 29921,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "yeninesilhizli.duckdns.org"
+      "matched_domain": "www.yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2631,7 +2677,7 @@
       "path": "Global/Global_All.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "metamasiuklogin.gitbook.io"
+      "matched_domain": "cripthcomlogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2647,7 +2693,7 @@
       "path": "Global/Global_All.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "virtlsucrsalpsns.netlify.app"
+      "matched_domain": "astonishing-dolphin-805ffe.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2655,7 +2701,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "web-bugfix.pages.dev"
+      "matched_domain": "gzz91-vhe-vcra-ctc11-07-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2663,7 +2709,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "orego-six.vercel.app"
+      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2671,7 +2717,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2679,7 +2725,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "freefiregarenadetayler.blogspot.com"
+      "matched_domain": "metamask173.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2695,7 +2741,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "meenakshi-cse.github.io"
+      "matched_domain": "evansrich92-afk.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2719,7 +2765,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 29921,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "yeninesilhizli.duckdns.org"
+      "matched_domain": "www.yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2727,7 +2773,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "metamasiuklogin.gitbook.io"
+      "matched_domain": "cripthcomlogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2743,7 +2789,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "virtlsucrsalpsns.netlify.app"
+      "matched_domain": "astonishing-dolphin-805ffe.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2751,7 +2797,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "web-bugfix.pages.dev"
+      "matched_domain": "gzz91-vhe-vcra-ctc11-07-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2759,7 +2805,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "orego-six.vercel.app"
+      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2767,7 +2813,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2791,7 +2837,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "freefiregarenadetayler.blogspot.com"
+      "matched_domain": "metamask173.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2807,7 +2853,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "freefiregarenadetayler.blogspot.com"
+      "matched_domain": "metamask173.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2823,7 +2869,7 @@
       "path": "NaSDDNS/NaSDDNS.list",
       "line": 23,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "yeninesilhizli.duckdns.org"
+      "matched_domain": "www.yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2831,7 +2877,7 @@
       "path": "NaSDDNS/NaSDDNS_Resolve.list",
       "line": 23,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "yeninesilhizli.duckdns.org"
+      "matched_domain": "www.yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2847,7 +2893,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 1615,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "yeninesilhizli.duckdns.org"
+      "matched_domain": "www.yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2855,7 +2901,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "metamasiuklogin.gitbook.io"
+      "matched_domain": "cripthcomlogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2871,7 +2917,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "virtlsucrsalpsns.netlify.app"
+      "matched_domain": "astonishing-dolphin-805ffe.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2879,7 +2925,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "web-bugfix.pages.dev"
+      "matched_domain": "gzz91-vhe-vcra-ctc11-07-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2887,7 +2933,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "orego-six.vercel.app"
+      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2895,7 +2941,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2911,7 +2957,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 1615,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "yeninesilhizli.duckdns.org"
+      "matched_domain": "www.yeninesilhizli.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2919,7 +2965,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "metamasiuklogin.gitbook.io"
+      "matched_domain": "cripthcomlogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2935,7 +2981,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "virtlsucrsalpsns.netlify.app"
+      "matched_domain": "astonishing-dolphin-805ffe.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2943,7 +2989,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "web-bugfix.pages.dev"
+      "matched_domain": "gzz91-vhe-vcra-ctc11-07-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2951,7 +2997,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "orego-six.vercel.app"
+      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2959,7 +3005,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "supplemental-insert-259e.andrew-andrew23.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2999,7 +3045,7 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "orego-six.vercel.app"
+      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {

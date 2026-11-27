@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 10:45 UTC
+Generated: 2026-11-27 10:47 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -162,41 +162,11 @@ This classifies dedicated App folders by folder name only. Financial-service dom
 ## Static security checks
 
 - duplicate_rule_lines: 0
+- recognized_native_domain: 1330757
 - single_label_suffix: 912
 - stale_or_private_root_suffix: 17
-- unsupported_or_missing_operand: 1330757
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:8: .0.101tubeporn.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:9: .0.code.cotsta.ru
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:10: .0.cosmicnewspulse.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:11: .0.myikas.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:12: .0.net.easyjet.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:13: .0000.5clo0xmbf.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:14: .0000.833enmhob.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:15: .0006.4puuqeh41.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:16: .0012.4puuqeh41.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:17: .0013.79j68qav2.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:18: .0015.cosmicnewspulse.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:19: .0018.5clo0xmbf.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:20: .0019.833enmhob.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:21: .0019x.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:22: .0023.5clo0xmbf.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:23: .0024.seponews.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:24: .0025.4puuqeh41.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:25: .002777.xyz
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:26: .0033.5clo0xmbf.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:27: .0035.bestinterestings.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:28: .0038.79j68qav2.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:29: .0039.k3718qw08.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:30: .003store.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:31: .0040.5clo0xmbf.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:32: .00404850.xyz
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:33: .0041.5clo0xmbf.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:34: .0049.ohhmyoffers.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:35: .0054.4puuqeh41.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:36: .0058.4puuqeh41.com
-  - AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list:37: .0072.4puuqeh41.com
 
-- Financial-domain matches: 160 (review only; not deleted)
+- Financial-domain matches: 238 (review only; not deleted)
 - URLhaus domains loaded: 0
 - OpenPhish domains loaded: 278
 - Reputation matches shown: 61 (max 500); scope counts: {'app_or_routing': 61}
