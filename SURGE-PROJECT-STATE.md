@@ -118,7 +118,7 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 ## 10. Workflow-first and 100-folder batch protocol (2026-11-27)
 
 - User directed that workflow problems be optimized first, then run the project library in batches of 100 rule-set folders, continuously refining between batches.
-- Current tree count: 666 direct child folders under `Rule/Upstream`; 665 eligible top-level folders after excluding `SourceMetadata`.
+- Current tree count: 655 tracked top-level directories under `Rule/Upstream`; 654 eligible rule-set folders after excluding `SourceMetadata`.
 - Added `.github/scripts/batch_preflight.py`: deterministic alphabetical 100-folder read-only validator. It checks UTF-8 readability, symlinks, duplicate rule lines, unsupported/missing rule operands, invalid IP networks, invalid domain operands, hidden control characters, broad single-label suffixes (review only), exact tombstones, and a before/after digest of `Rule/Personal`. It does not edit or delete rules.
 - Added `.github/workflows/batch-preflight.yml`: manual `workflow_dispatch`, batch number input, fixed batch size 100, read-only repository permission, serialized concurrency, and 30-day report artifact.
 - Disabled automatic push triggers on the previous full-library audit and App-consolidation workflows. They now require manual dispatch; this prevents every rule-file push from starting an unbounded full-library job.
