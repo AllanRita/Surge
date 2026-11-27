@@ -25,7 +25,7 @@ jobs:
           git clone --depth 1 --filter=blob:none --sparse https://github.com/blackmatrix7/ios_rule_script.git "$RUNNER_TEMP/upstream"
           git -C "$RUNNER_TEMP/upstream" sparse-checkout set rule/Surge
           python3 - <<'PY'
-          import os, shutil
+          import os, shutil, subprocess
           from pathlib import Path
           root=Path(os.environ['RUNNER_TEMP'])/'upstream'
           src=root/'rule/Surge'
@@ -45,15 +45,25 @@ jobs:
               raise SystemExit('Abnormal upstream rule count; retaining previous snapshot')
           if any(p.stat().st_size>50*1024*1024 for p in files):
               raise SystemExit('Oversized upstream file')
+          skipped=[]
           for p in files:
               target=dst/p.relative_to(src)
               target.parent.mkdir(parents=True,exist_ok=True)
-              if p.stat().st_size==0 and target.exists():
+              if p.stat().st_size==0:
+                  skipped.append(str(p.relative_to(src)))
                   continue
+              if p.suffix.lower() in {'.list','.txt','.conf'}:
+                  raw=p.read_bytes()
+                  if b'\x00' in raw:
+                      raise SystemExit('Binary data in rule file')
+                  raw.decode('utf-8-sig')
               shutil.copyfile(p,target)
           license_file=next(p for p in root.glob('LICENSE*') if p.is_file() and not p.is_symlink())
           shutil.copyfile(license_file,dst/'LICENSE')
           (dst/'UPSTREAM.md').write_text('Source: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge\nLicense: GPL-2.0; original notices retained.\n')
+          retained=sum(1 for p in dst.rglob('*') if p.is_file() and p.name not in {'LICENSE','UPSTREAM.md'} and not (src/p.relative_to(dst)).exists())
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as report:
+              report.write(f'Upstream files: {len(files)}\nRule files: {len(rules)}\nRetained removed files: {retained}\nSkipped empty files: {len(skipped)}\n')
           PY
       - name: Publish imported rules
         env:
