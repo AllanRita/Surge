@@ -188,13 +188,49 @@ jobs:
                       flag('broad-domain',path,num)
               if re.search(r'(?i)(?:^|[.,/])(?:paypal\.com|alipay\.com|stripe\.com|unionpay\.com|visa\.com|icbc\.com\.cn|boc\.cn|paypay\.ne\.jp)(?:$|[.,/])',line):
                   flag('sensitive-domain',path,num)
+          # Whole-library consolidation: preserve rule order, options and comments.
+          dedup_count=0
+          duplicate_files=collections.defaultdict(list)
+          for p in sorted(dst.rglob('*.list')):
+              original=p.read_text(encoding='utf-8-sig')
+              seen=set()
+              output=[]
+              for line in original.splitlines(keepends=True):
+                  rule=line.strip()
+                  if not rule or rule.startswith(('#',';','//')):
+                      output.append(line)
+                      continue
+                  if rule in seen:
+                      dedup_count+=1
+                      continue
+                  seen.add(rule)
+                  output.append(line)
+              if len(output)!=len(original.splitlines(keepends=True)):
+                  p.write_text(''.join(output),encoding='utf-8')
+              duplicate_files[hashlib.sha256('\n'.join(sorted(seen)).encode()).hexdigest()].append(str(p.relative_to(dst)))
+          personal=Path('Rule/Personal')
+          if personal.is_symlink() or any(p.is_symlink() for p in personal.rglob('*')):
+              raise SystemExit('Unsafe personal tree')
+          personal_count=0
+          for p in sorted(personal.rglob('*.list')):
+              personal_count+=1
+              for num,line in enumerate(p.read_text(encoding='utf-8-sig').splitlines(),1):
+                  line=line.strip()
+                  if line and not line.startswith(('#',';','//')):
+                      audit_line(line,str(p),num)
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as report:
+              report.write(f'\n### Whole-library consolidation\n- Exact duplicate rows removed: {dedup_count}\n- Personal files audited without changes: {personal_count}\n')
+              groups=[v for v in duplicate_files.values() if len(v)>1]
+              report.write(f'- Identical rule-set groups (review only): {len(groups)}\n')
+              for group in groups[:100]:
+                  report.write('- '+ ' | '.join(group)+'\n')
           for p in sorted(dst.rglob('*.list')):
               for num,line in enumerate(p.read_text(encoding='utf-8-sig').splitlines(),1):
                   line=line.strip()
                   if line and not line.startswith(('#',';','//')):
                       audit_line(line,str(p.relative_to(dst)),num)
           with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as report:
-              report.write('\n### V2.1 full rule audit\n')
+              report.write('\n### V3.2 full rule audit\n')
               for kind,count in sorted(findings.items()):
                   report.write(f'- {kind}: {count}\n')
               for example in examples:
