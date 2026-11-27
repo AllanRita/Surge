@@ -1,6 +1,6 @@
 # Shared-hosting and multi-tenant suffix scope review
 
-Generated from CLEANUP-INVENTORY.json (2026-11-27 13:46 UTC UTC).
+Generated from CLEANUP-INVENTORY.json (2026-11-27 13:46 UTC).
 
 ## Executive result
 
