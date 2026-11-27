@@ -1,0 +1,52 @@
+name: Surge Cleanup Inventory and Security Audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/cleanup_inventory.py'
+      - '.github/workflows/cleanup-audit.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: surge-cleanup-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: true
+
+      - name: Download public security reference feeds (not rule authors)
+        run: |
+          set +e
+          curl -fsSL --retry 2 --max-time 60 https://data.iana.org/TLD/tlds-alpha-by-domain.txt -o "$RUNNER_TEMP/iana-tlds.txt"
+          curl -fsSL --retry 2 --max-time 60 https://urlhaus.abuse.ch/downloads/hostfile/ -o "$RUNNER_TEMP/urlhaus-hostfile.txt"
+          curl -fsSL --retry 2 --max-time 60 https://raw.githubusercontent.com/openphish/public_feed/refs/heads/main/feed.txt -o "$RUNNER_TEMP/openphish-feed.txt"
+          exit 0
+
+      - name: Inventory existing rules and compare cached sources
+        run: |
+          python3 .github/scripts/cleanup_inventory.py \
+            --iana-tlds "$RUNNER_TEMP/iana-tlds.txt" \
+            --urlhaus "$RUNNER_TEMP/urlhaus-hostfile.txt" \
+            --openphish "$RUNNER_TEMP/openphish-feed.txt"
+
+      - name: Publish inventory reports
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- Rule/Upstream/CLEANUP-INVENTORY.md Rule/Upstream/CLEANUP-INVENTORY.json
+          if git diff --cached --quiet; then
+            echo 'Inventory report unchanged'
+            exit 0
+          fi
+          git commit -m 'Generate frozen Surge cleanup inventory and security audit'
+          git push origin HEAD:main
