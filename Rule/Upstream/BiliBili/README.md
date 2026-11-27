@@ -20,9 +20,9 @@ BiliBili规则由《RULE GENERATOR 规则生成器》自动生成。
 | DOMAIN | 53  | 
 | DOMAIN-SUFFIX | 62  | 
 | IP-CIDR | 8  | 
-| PROCESS-NAME | 6  | 
+| PROCESS-NAME | 7  | 
 | USER-AGENT | 4  | 
-| TOTAL | 133  | 
+| TOTAL | 134  | 
 
 
 ## Surge 
