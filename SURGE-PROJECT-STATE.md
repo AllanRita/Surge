@@ -34,17 +34,15 @@ GitHub Actions, scripts, inventories, and reports are supporting tools only. Do 
 
 ## 4. Permanent no-restore policy
 
-The repository currently has the exact tombstone manifest at `.github/explicit-rule-exclusions.json`. The automation in `.github/scripts/enforce_explicit_exclusions.py` enforces only those exact entries.
+The repository has an exact tombstone manifest at `.github/explicit-rule-exclusions.json`. The automation in `.github/scripts/enforce_explicit_exclusions.py` enforces only entries still present in that manifest.
 
-The current manifest lists these 14 historical exclusions:
-`BOC`, `BOCOM`, `CCB`, `CEB`, `CGB`, `CMB`, `ICBC`, `PSBC`, `AliPay`, `PayPal`, `Stripe`, `UnionPay`, `VISA`, `PingAn`.
+The user explicitly authorized restoration of all 14 historical exclusions on 2026-11-27. They were restored as current author-source rule files under `Rule/Upstream`: `BOC`, `BOCOM`, `CCB`, `CEB`, `CGB`, `CMB`, `ICBC`, `PSBC`, `AliPay`, `PayPal`, `Stripe`, `UnionPay`, `VISA`, `PingAn`. The 14 entries were removed from the exact tombstone manifest. Their restored files must not be deleted again by category-based cleanup.
 
 **Decision conflict requiring explicit resolution:** the repository's historical manifest/index records the 14 folders above as explicitly deleted at the user's direction on 2026-11-27. The user's latest instruction now says bank/payment/finance folders should not be deleted. Until the user explicitly clarifies the disposition of these exact 14 historical entries:
-- Do not restore any of the 14.
-- Do not add any new bank/payment/finance exclusions.
-- Do not silently change the tombstone manifest.
-- Continue protecting the exact existing tombstones from restoration by feeds, cached snapshots, backups, Git history, or automated jobs.
-- Ask one concise clarification before changing the disposition of any of the 14.
+- The 14 named folders have been explicitly restored at the user's request and are no longer tombstoned.
+- Do not re-delete these 14 by category-based cleanup.
+- Do not add any new bank/payment/finance exclusions without a direct, specific user instruction.
+- Continue protecting any future exact tombstones from automatic restoration.
 
 A tombstoned folder may be restored only after the user explicitly requests restoration of that specific folder. Git history is a source for audit/recovery only, never automatic restoration authority.
 
@@ -112,3 +110,12 @@ At the start of every resumed session:
 5. Update this file at the end of the work batch.
 
 Do not claim work is complete based only on a green GitHub Actions status. Verify the actual rule files and the resulting Git tree.
+
+
+## 9. 2026-11-27 explicit restoration batch
+
+- User explicitly requested retrieval of author rule sets and restoration of all 14 historical folders.
+- Restored files: `BOC/BOC.list` (22 rules), `BOCOM/BOCOM.list` (6), `CCB/CCB.list` (18), `CEB/CEB.list` (15), `CGB/CGB.list` (4), `CMB/CMB.list` (38), `ICBC/ICBC.list` (58), `PSBC/PSBC.list` (3), `AliPay/AliPay.list` (21), `PayPal/PayPal.list` (248), `Stripe/Stripe.list` (1), `UnionPay/UnionPay.list` (16), `VISA/VISA.list` (99), `PingAn/PingAn.list` (27).
+- Primary source: blackmatrix7/ios_rule_script Surge-format rule files. Each restored file includes its source URL and source author in the header.
+- The 14 exact tombstones were removed from `.github/explicit-rule-exclusions.json` after the explicit user instruction.
+- Follow-up: compare these 14 against other established author sources, inspect rule safety and completeness, then update the audit inventory. Do not delete the restored folders.
