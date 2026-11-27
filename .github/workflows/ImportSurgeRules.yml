@@ -162,6 +162,7 @@ jobs:
           findings=collections.Counter()
           examples=[]
           financial_matches=[]
+          broad_matches=[]
           finding_by_category=collections.defaultdict(collections.Counter)
           def flag(kind,path,num):
               findings[kind]+=1
@@ -228,6 +229,7 @@ jobs:
                       flag('invalid-domain',path,num)
                   if len(labels)<2:
                       flag('broad-domain',path,num)
+                      broad_matches.append((path,num,line.strip()))
               # Report exact financial-service host matches for manual scope review.
               # A match in an ad/tracker blocklist is not evidence that the service is routed.
               if kind in {'DOMAIN','DOMAIN-SUFFIX','HOST','HOST-SUFFIX'} and re.fullmatch(
@@ -343,6 +345,8 @@ jobs:
               report_lines.append('- ' + ' | '.join(group))
           if not cross_category_duplicate_groups:
               report_lines.append('- None')
+          report_lines += ['', '## Broad-domain matches (exact lines; review before changing)']
+          report_lines += [f'- {path}:{num}: {rule}' for path,num,rule in broad_matches] if broad_matches else ['- None']
           report_lines += ['', '## Financial-domain matches (exact lines; manual review, no automatic deletion)']
           report_lines += [f'- {path}:{num}: {rule}' for path,num,rule in financial_matches] if financial_matches else ['- None']
           report_lines += ['', '## Finding examples']
