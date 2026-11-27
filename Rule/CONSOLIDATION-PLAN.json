@@ -723,52 +723,94 @@
   },
   "finance_excluded_folders": [
     {
-      "folder": "Binance",
-      "classification": "crypto exchange",
+      "folder": "BOC",
+      "classification": "bank App",
       "action": "remove_user_confirmed"
     },
     {
-      "folder": "OKX",
-      "classification": "crypto exchange",
+      "folder": "BOCOM",
+      "classification": "bank App",
       "action": "remove_user_confirmed"
     },
     {
-      "folder": "Crypto",
-      "classification": "cryptocurrency category list",
+      "folder": "CCB",
+      "classification": "bank App",
       "action": "remove_user_confirmed"
     },
     {
-      "folder": "Cryptocurrency",
-      "classification": "cryptocurrency category list",
+      "folder": "CEB",
+      "classification": "bank App",
       "action": "remove_user_confirmed"
     },
     {
-      "folder": "EastMoney",
-      "classification": "securities brokerage / investment platform",
+      "folder": "CGB",
+      "classification": "bank App",
       "action": "remove_user_confirmed"
     },
     {
-      "folder": "TigerFintech",
-      "classification": "securities brokerage / investment platform",
+      "folder": "CMB",
+      "classification": "bank App",
       "action": "remove_user_confirmed"
     },
     {
-      "folder": "XueQiu",
-      "classification": "securities / stock-investment information community",
+      "folder": "ICBC",
+      "classification": "bank App",
+      "action": "remove_user_confirmed"
+    },
+    {
+      "folder": "PSBC",
+      "classification": "bank App",
+      "action": "remove_user_confirmed"
+    },
+    {
+      "folder": "AliPay",
+      "classification": "payment App",
+      "action": "remove_user_confirmed"
+    },
+    {
+      "folder": "PayPal",
+      "classification": "payment App",
+      "action": "remove_user_confirmed"
+    },
+    {
+      "folder": "Stripe",
+      "classification": "payment App",
+      "action": "remove_user_confirmed"
+    },
+    {
+      "folder": "UnionPay",
+      "classification": "payment App",
+      "action": "remove_user_confirmed"
+    },
+    {
+      "folder": "VISA",
+      "classification": "payment App",
+      "action": "remove_user_confirmed"
+    },
+    {
+      "folder": "PingAn",
+      "classification": "financial services App",
       "action": "remove_user_confirmed"
     }
   ],
   "user_confirmation": {
     "date": "2026-11-27",
-    "decision": "remove all dedicated crypto exchange, cryptocurrency category, securities brokerage, and stock-investment community rule folders",
+    "decision": "Delete only dedicated bank/payment App rule-set folders. Do not delete financial/payment domains embedded in other App rule sets. User will collect bank/payment domains separately and add them to personal rules.",
     "folders": [
-      "Binance",
-      "OKX",
-      "Crypto",
-      "Cryptocurrency",
-      "EastMoney",
-      "TigerFintech",
-      "XueQiu"
+      "BOC",
+      "BOCOM",
+      "CCB",
+      "CEB",
+      "CGB",
+      "CMB",
+      "ICBC",
+      "PSBC",
+      "AliPay",
+      "PayPal",
+      "Stripe",
+      "UnionPay",
+      "VISA",
+      "PingAn"
     ]
   },
   "explicit_exclusion_manifest": ".github/explicit-rule-exclusions.json",
@@ -786,13 +828,43 @@
     "Stripe",
     "UnionPay",
     "VISA",
-    "PingAn",
-    "Binance",
-    "OKX",
-    "Crypto",
-    "Cryptocurrency",
-    "EastMoney",
-    "TigerFintech",
-    "XueQiu"
+    "PingAn"
+  ],
+  "non_excluded_finance_folders": [
+    {
+      "folder": "Binance",
+      "classification": "crypto exchange",
+      "status": "retained; no explicit deletion instruction"
+    },
+    {
+      "folder": "OKX",
+      "classification": "crypto exchange",
+      "status": "retained; no explicit deletion instruction"
+    },
+    {
+      "folder": "Crypto",
+      "classification": "cryptocurrency category list",
+      "status": "retained; no explicit deletion instruction"
+    },
+    {
+      "folder": "Cryptocurrency",
+      "classification": "cryptocurrency category list",
+      "status": "retained; no explicit deletion instruction"
+    },
+    {
+      "folder": "EastMoney",
+      "classification": "securities brokerage / investment platform",
+      "status": "retained; no explicit deletion instruction"
+    },
+    {
+      "folder": "TigerFintech",
+      "classification": "securities brokerage / investment platform",
+      "status": "retained; no explicit deletion instruction"
+    },
+    {
+      "folder": "XueQiu",
+      "classification": "securities / stock-investment information community",
+      "status": "retained; no explicit deletion instruction"
+    }
   ]
 }
