@@ -10,7 +10,6 @@
     "do_not_merge_different_apps_by_shared_cdn_or_parent_company": true,
     "compare_cached_author_sources_without_fetching_new_authors": true,
     "pause_new_author_rule_fetching": true,
-    "do_not_delete_financial_domains_embedded_in_other_apps": true,
     "personal_rules_are_never_modified": true,
     "remove_alias_folders_after_verified_union": true,
     "retain_source_provenance_in_SourceMetadata": true,
@@ -24,7 +23,9 @@
     "all_app_categories_subject_to_same_security_policy": true,
     "auto_delete_confirmed_security_threats": true,
     "auto_repair_deterministic_invalid_rules": true,
-    "quarantine_suspected_security_findings": true
+    "quarantine_suspected_security_findings": true,
+    "do_not_delete_financial_domains_based_only_on_category_or_folder_classification": true,
+    "security_deletion_applies_equally_to_domains_in_all_app_categories": true
   },
   "scenario_variants": [
     {
