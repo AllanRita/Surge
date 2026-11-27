@@ -39,6 +39,12 @@ def digest(root):
                 h.update(p.read_bytes())
     return h.hexdigest()
 
+def write_backup_once(backup_path, source_path):
+    backup_path = Path(backup_path)
+    backup_path.parent.mkdir(parents=True, exist_ok=True)
+    if not backup_path.exists():
+        backup_path.write_bytes(Path(source_path).read_bytes())
+
 def load_tombstones():
     if MANIFEST.is_symlink() or not MANIFEST.is_file():
         raise RuntimeError("Missing or unsafe exact deletion manifest")
@@ -234,8 +240,7 @@ def main():
                 parsed_existing.append(parsed_candidate)
             if additions:
                 backup_path = backup_root / target
-                backup_path.parent.mkdir(parents=True, exist_ok=True)
-                backup_path.write_bytes(target_path.read_bytes())
+                write_backup_once(backup_path, target_path)
                 marker = "# CACHED SOURCE SUPPLEMENT: " + source_file
                 if marker not in original:
                     block = [

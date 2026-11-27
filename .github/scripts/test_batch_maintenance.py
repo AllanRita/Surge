@@ -343,6 +343,17 @@ class SurgeMaintenanceTests(unittest.TestCase):
                     self.assertTrue(MAINTAIN.is_blocklist_path(root / rel), rel)
                 self.assertFalse(MAINTAIN.is_blocklist_path(root / "Apple/Apple.list"))
 
+    def test_prechange_backup_is_preserved_across_multiple_stages(self):
+        with tempfile.TemporaryDirectory() as td:
+            base = Path(td)
+            source = base / "App.list"
+            backup = base / "backups" / "batch-001" / "App.list"
+            source.write_bytes(b"original before any maintenance")
+            MAINTAIN.write_backup_once(backup, source)
+            source.write_bytes(b"after deterministic cleanup")
+            MERGE.write_backup_once(backup, source)
+            self.assertEqual(backup.read_bytes(), b"original before any maintenance")
+
     def test_batch_integrity_rejects_out_of_batch_and_file_deletion(self):
         self.assertTrue(VERIFY.validate_change_records([("M", "Rule/Upstream/Apple/Apple.list")], {"Apple"}))
         with self.assertRaises(ValueError):

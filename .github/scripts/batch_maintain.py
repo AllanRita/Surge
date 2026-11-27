@@ -25,6 +25,12 @@ def sha(path):
     h.update(str(p.relative_to(path)).encode()); h.update(p.read_bytes())
  return h.hexdigest()
 
+def write_backup_once(backup_path, source_path):
+    backup_path = Path(backup_path)
+    backup_path.parent.mkdir(parents=True, exist_ok=True)
+    if not backup_path.exists():
+        backup_path.write_bytes(Path(source_path).read_bytes())
+
 def tombstones():
  data=json.loads(MANIFEST.read_text(encoding="utf-8"))
  entries=data.get("exclusions")
@@ -182,8 +188,7 @@ def main():
     kept.append(line)
    if changed:
     backup=Path(a.backup_dir)/("batch-"+str(a.batch).zfill(3))/str(path.relative_to(ROOT))
-    backup.parent.mkdir(parents=True,exist_ok=True)
-    backup.write_bytes(path.read_bytes())
+    write_backup_once(backup, path)
     ending="\n" if raw.endswith("\n") else ""
     path.write_text("\n".join(kept)+ending,encoding="utf-8")
     totals["files_changed"]+=1
