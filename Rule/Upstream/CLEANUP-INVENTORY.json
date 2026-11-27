@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 11:45 UTC",
+  "generated_utc": "2026-11-27 12:23 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 828,
@@ -2121,7 +2121,7 @@
   ],
   "reputation_feed_status": {
     "urlhaus_domains": 0,
-    "openphish_domains": 278,
+    "openphish_domains": 280,
     "feeds_available": true,
     "urlhaus_file_present": false,
     "openphish_file_present": true,
@@ -2133,9 +2133,25 @@
       "feed": "OpenPhish",
       "scope": "app_or_routing",
       "path": "Amazon/Amazon.list",
+      "line": 67,
+      "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Amazon/Amazon.list",
       "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "matched_domain": "d33wubrfki0l68.cloudfront.net"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Amazon/Amazon_Resolve.list",
+      "line": 67,
+      "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
     },
     {
       "feed": "OpenPhish",
@@ -2151,7 +2167,15 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "5ywlo-sem-pief-p3s1m-21-10-2026-aa.pages.dev"
+      "matched_domain": "5lbos-3tm-v6of-dunsq-07-10-2026-aa.pages.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Cloudflare/Cloudflare.list",
+      "line": 48,
+      "rule": "DOMAIN-SUFFIX,trycloudflare.com",
+      "matched_domain": "drainage-possess-unavailable-focal.trycloudflare.com"
     },
     {
       "feed": "OpenPhish",
@@ -2159,7 +2183,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2167,7 +2191,15 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "5ywlo-sem-pief-p3s1m-21-10-2026-aa.pages.dev"
+      "matched_domain": "5lbos-3tm-v6of-dunsq-07-10-2026-aa.pages.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Cloudflare/Cloudflare_Resolve.list",
+      "line": 48,
+      "rule": "DOMAIN-SUFFIX,trycloudflare.com",
+      "matched_domain": "drainage-possess-unavailable-focal.trycloudflare.com"
     },
     {
       "feed": "OpenPhish",
@@ -2175,7 +2207,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2183,7 +2215,7 @@
       "path": "GitBook/GitBook.list",
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "robinhxnoodlogin.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2191,7 +2223,15 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "sugosh1.github.io"
+      "matched_domain": "wildpigger.github.io"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 2994,
+      "rule": "DOMAIN-SUFFIX,azurefd.net",
+      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -2199,7 +2239,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.infoundianshopee98.blogspot.com"
+      "matched_domain": "facebookcomprimisingourrights.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2207,7 +2247,7 @@
       "path": "Global/Global_All.list",
       "line": 8966,
       "rule": "DOMAIN-SUFFIX,eu.org",
-      "matched_domain": "five.seafn.eu.org"
+      "matched_domain": "wisayq9065.embih.eu.org"
     },
     {
       "feed": "OpenPhish",
@@ -2215,15 +2255,31 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "sugosh1.github.io"
+      "matched_domain": "wildpigger.github.io"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
       "path": "Global/Global_All.list",
-      "line": 26460,
-      "rule": "DOMAIN-SUFFIX,web.app",
-      "matched_domain": "netflix-bobby.web.app"
+      "line": 24717,
+      "rule": "DOMAIN-SUFFIX,trycloudflare.com",
+      "matched_domain": "drainage-possess-unavailable-focal.trycloudflare.com"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 28653,
+      "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 28862,
+      "rule": "DOMAIN-SUFFIX,azurewebsites.net",
+      "matched_domain": "forrit-tb-csmr-prod-dev-02.azurewebsites.net"
     },
     {
       "feed": "OpenPhish",
@@ -2239,7 +2295,7 @@
       "path": "Global/Global_All.list",
       "line": 29921,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "hizliyapiyoruzherseyi.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2247,15 +2303,7 @@
       "path": "Global/Global_All.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "robinhxnoodlogin.gitbook.io"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "Global/Global_All.list",
-      "line": 31298,
-      "rule": "DOMAIN-SUFFIX,is.gd",
-      "matched_domain": "is.gd"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2263,7 +2311,7 @@
       "path": "Global/Global_All.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "netflis-gpt.netlify.app"
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2271,7 +2319,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "5ywlo-sem-pief-p3s1m-21-10-2026-aa.pages.dev"
+      "matched_domain": "5lbos-3tm-v6of-dunsq-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2279,7 +2327,15 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
+      "matched_domain": "www.vakifbank.vercel.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All.list",
+      "line": 34650,
+      "rule": "DOMAIN-SUFFIX,weebly.com",
+      "matched_domain": "www.xhdfh7hfnrrjjjff.weebly.com"
     },
     {
       "feed": "OpenPhish",
@@ -2287,7 +2343,15 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 2994,
+      "rule": "DOMAIN-SUFFIX,azurefd.net",
+      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -2295,7 +2359,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.infoundianshopee98.blogspot.com"
+      "matched_domain": "facebookcomprimisingourrights.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2303,7 +2367,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 8966,
       "rule": "DOMAIN-SUFFIX,eu.org",
-      "matched_domain": "five.seafn.eu.org"
+      "matched_domain": "wisayq9065.embih.eu.org"
     },
     {
       "feed": "OpenPhish",
@@ -2311,15 +2375,31 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "sugosh1.github.io"
+      "matched_domain": "wildpigger.github.io"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
       "path": "Global/Global_All_No_Resolve.list",
-      "line": 26460,
-      "rule": "DOMAIN-SUFFIX,web.app",
-      "matched_domain": "netflix-bobby.web.app"
+      "line": 24717,
+      "rule": "DOMAIN-SUFFIX,trycloudflare.com",
+      "matched_domain": "drainage-possess-unavailable-focal.trycloudflare.com"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 28653,
+      "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 28862,
+      "rule": "DOMAIN-SUFFIX,azurewebsites.net",
+      "matched_domain": "forrit-tb-csmr-prod-dev-02.azurewebsites.net"
     },
     {
       "feed": "OpenPhish",
@@ -2335,7 +2415,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 29921,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "hizliyapiyoruzherseyi.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2343,15 +2423,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "robinhxnoodlogin.gitbook.io"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "Global/Global_All_No_Resolve.list",
-      "line": 31298,
-      "rule": "DOMAIN-SUFFIX,is.gd",
-      "matched_domain": "is.gd"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2359,7 +2431,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "netflis-gpt.netlify.app"
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2367,7 +2439,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "5ywlo-sem-pief-p3s1m-21-10-2026-aa.pages.dev"
+      "matched_domain": "5lbos-3tm-v6of-dunsq-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2375,7 +2447,15 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
+      "matched_domain": "www.vakifbank.vercel.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Global/Global_All_No_Resolve.list",
+      "line": 34650,
+      "rule": "DOMAIN-SUFFIX,weebly.com",
+      "matched_domain": "www.xhdfh7hfnrrjjjff.weebly.com"
     },
     {
       "feed": "OpenPhish",
@@ -2383,7 +2463,15 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "GlobalMedia/GlobalMedia_All.list",
+      "line": 76,
+      "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
     },
     {
       "feed": "OpenPhish",
@@ -2392,6 +2480,14 @@
       "line": 189,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "matched_domain": "d33wubrfki0l68.cloudfront.net"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "GlobalMedia/GlobalMedia_All_No_Resolve.list",
+      "line": 76,
+      "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
     },
     {
       "feed": "OpenPhish",
@@ -2407,15 +2503,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.infoundianshopee98.blogspot.com"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "Google/Google.list",
-      "line": 666,
-      "rule": "DOMAIN-SUFFIX,web.app",
-      "matched_domain": "netflix-bobby.web.app"
+      "matched_domain": "facebookcomprimisingourrights.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2423,15 +2511,23 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.infoundianshopee98.blogspot.com"
+      "matched_domain": "facebookcomprimisingourrights.blogspot.com"
     },
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
-      "path": "Google/Google_Resolve.list",
-      "line": 666,
-      "rule": "DOMAIN-SUFFIX,web.app",
-      "matched_domain": "netflix-bobby.web.app"
+      "path": "Microsoft/Microsoft.list",
+      "line": 86,
+      "rule": "DOMAIN-SUFFIX,azurefd.net",
+      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Microsoft/Microsoft.list",
+      "line": 103,
+      "rule": "DOMAIN-SUFFIX,azurewebsites.net",
+      "matched_domain": "forrit-tb-csmr-prod-dev-02.azurewebsites.net"
     },
     {
       "feed": "OpenPhish",
@@ -2439,7 +2535,7 @@
       "path": "NaSDDNS/NaSDDNS.list",
       "line": 23,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "hizliyapiyoruzherseyi.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2447,7 +2543,23 @@
       "path": "NaSDDNS/NaSDDNS_Resolve.list",
       "line": 23,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "hizliyapiyoruzherseyi.duckdns.org"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All.list",
+      "line": 319,
+      "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All.list",
+      "line": 534,
+      "rule": "DOMAIN-SUFFIX,azurewebsites.net",
+      "matched_domain": "forrit-tb-csmr-prod-dev-02.azurewebsites.net"
     },
     {
       "feed": "OpenPhish",
@@ -2463,7 +2575,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 1615,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "hizliyapiyoruzherseyi.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2471,15 +2583,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "robinhxnoodlogin.gitbook.io"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "Proxy/Proxy_All.list",
-      "line": 3002,
-      "rule": "DOMAIN-SUFFIX,is.gd",
-      "matched_domain": "is.gd"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2487,7 +2591,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "netflis-gpt.netlify.app"
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2495,7 +2599,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "5ywlo-sem-pief-p3s1m-21-10-2026-aa.pages.dev"
+      "matched_domain": "5lbos-3tm-v6of-dunsq-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2503,7 +2607,15 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
+      "matched_domain": "www.vakifbank.vercel.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All.list",
+      "line": 6378,
+      "rule": "DOMAIN-SUFFIX,weebly.com",
+      "matched_domain": "www.xhdfh7hfnrrjjjff.weebly.com"
     },
     {
       "feed": "OpenPhish",
@@ -2511,7 +2623,23 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All_No_Resolve.list",
+      "line": 319,
+      "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All_No_Resolve.list",
+      "line": 534,
+      "rule": "DOMAIN-SUFFIX,azurewebsites.net",
+      "matched_domain": "forrit-tb-csmr-prod-dev-02.azurewebsites.net"
     },
     {
       "feed": "OpenPhish",
@@ -2527,7 +2655,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 1615,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "hizliyapiyoruzherseyi.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2535,15 +2663,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "robinhxnoodlogin.gitbook.io"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "Proxy/Proxy_All_No_Resolve.list",
-      "line": 3002,
-      "rule": "DOMAIN-SUFFIX,is.gd",
-      "matched_domain": "is.gd"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2551,7 +2671,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "netflis-gpt.netlify.app"
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2559,7 +2679,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "5ywlo-sem-pief-p3s1m-21-10-2026-aa.pages.dev"
+      "matched_domain": "5lbos-3tm-v6of-dunsq-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2567,7 +2687,15 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
+      "matched_domain": "www.vakifbank.vercel.app"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "Proxy/Proxy_All_No_Resolve.list",
+      "line": 6378,
+      "rule": "DOMAIN-SUFFIX,weebly.com",
+      "matched_domain": "www.xhdfh7hfnrrjjjff.weebly.com"
     },
     {
       "feed": "OpenPhish",
@@ -2575,7 +2703,15 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+    },
+    {
+      "feed": "OpenPhish",
+      "scope": "app_or_routing",
+      "path": "ProxyLite/ProxyLite.list",
+      "line": 65,
+      "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
     },
     {
       "feed": "OpenPhish",
@@ -2588,10 +2724,10 @@
     {
       "feed": "OpenPhish",
       "scope": "app_or_routing",
-      "path": "ProxyLite/ProxyLite.list",
-      "line": 365,
-      "rule": "DOMAIN-SUFFIX,is.gd",
-      "matched_domain": "is.gd"
+      "path": "ProxyLite/ProxyLite_Resolve.list",
+      "line": 65,
+      "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "matched_domain": "n8turz.s3.us-east-1.amazonaws.com"
     },
     {
       "feed": "OpenPhish",
@@ -2600,14 +2736,6 @@
       "line": 172,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "matched_domain": "d33wubrfki0l68.cloudfront.net"
-    },
-    {
-      "feed": "OpenPhish",
-      "scope": "app_or_routing",
-      "path": "ProxyLite/ProxyLite_Resolve.list",
-      "line": 365,
-      "rule": "DOMAIN-SUFFIX,is.gd",
-      "matched_domain": "is.gd"
     },
     {
       "feed": "OpenPhish",
@@ -2615,11 +2743,11 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.netflix-clone-rust-zeta.vercel.app"
+      "matched_domain": "www.vakifbank.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {
-    "app_or_routing": 61
+    "app_or_routing": 77
   },
   "files": []
 }
