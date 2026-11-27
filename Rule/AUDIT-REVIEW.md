@@ -51,24 +51,27 @@ Interpretation:
 
 Most matches are in advertising, privacy, or filter-category lists; the remainder are in aggregate or other App lists. A domain-name match does not by itself prove that a payment/checkout endpoint is being blocked. The current inventory finds zero dedicated bank/payment App folders, and the 14 dedicated folders removed earlier remain absent. These 238 upstream domain entries were not deleted. The single personal PayPay match was also left untouched.
 
-### Dedicated trading-exchange, cryptocurrency and securities folders — review only
+### Dedicated trading-exchange, cryptocurrency and securities folders — removed
 
-These folders are not classified as bank/payment Apps by the current cleanup policy. They are retained pending explicit user classification; no removal has been authorized.
+The user explicitly confirmed removal of all dedicated trading-exchange, cryptocurrency-category, securities-brokerage, and stock-investment community rule folders. The following seven folders were removed from `Rule/Upstream`:
 
-| Folder | Classification | Rule entries | Current status |
-|---|---|---:|---|
-| Binance | Crypto exchange | 12 | Retained; review only |
-| OKX | Crypto exchange | 3 | Retained; review only |
-| Crypto | Cryptocurrency category list | 201 | Retained; review only |
-| Cryptocurrency | Cryptocurrency category list | 43 | Retained; review only |
-| EastMoney | Securities brokerage / investment platform | 33 | Retained; review only |
-| TigerFintech | Securities brokerage / investment platform | 19 | Retained; review only |
-| XueQiu | Securities / stock-investment information community | 11 | Retained; review only |
-| **Total** | **7 folders / 7 rule lists** | **322** | **Retained** |
+| Folder | Classification | Rule entries removed |
+|---|---|---:|
+| Binance | Crypto exchange | 12 |
+| OKX | Crypto exchange | 3 |
+| Crypto | Cryptocurrency category list | 201 |
+| Cryptocurrency | Cryptocurrency category list | 43 |
+| EastMoney | Securities brokerage / investment platform | 33 |
+| TigerFintech | Securities brokerage / investment platform | 19 |
+| XueQiu | Securities / stock-investment information community | 11 |
+| **Total** | **7 folders / 7 rule lists** | **322** |
 
-A prior repository change removed these seven folders without explicit confirmation. All 14 original files (seven `.list` files and seven `README.md` files) have since been restored byte-for-byte from the preceding repository snapshot. No related domains in other App, Global, advertising, privacy, or personal rule files were changed.
+All seven `.list` files and their seven `README.md` files were deleted. The consolidation plan now records the user's explicit approval and changes these folders from review-only to excluded. The cleanup-audit workflow fails if any excluded folder reappears.
 
-`Stackexchange` remains separate: it is a Q&A/community service, not a financial securities exchange. The general-purpose financial-domain matches elsewhere in the library remain subject to their own scenario-aware review.
+This is a folder-level removal only: matching domains embedded in unrelated App, Global, advertising, privacy, or filter lists were not deleted. `Rule/Personal` remains untouched.
+
+`Stackexchange` remains because it is a Q&A/community service, not a financial securities exchange. The 238 general-purpose financial-domain matches elsewhere in the library remain subject to their own scenario-aware review.
+
 
 Important interpretation:
 - Matches in advertising, privacy, or AdGuard-native lists may represent tracking, telemetry, email, or measurement endpoints; they do not by themselves prove that payment or checkout traffic is blocked.

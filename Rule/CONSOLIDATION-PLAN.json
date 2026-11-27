@@ -15,7 +15,8 @@
     "personal_rules_are_never_modified": true,
     "remove_alias_folders_after_verified_union": true,
     "retain_source_provenance_in_SourceMetadata": true,
-    "do_not_delete_crypto_exchange_or_securities_folders_without_explicit_user_approval": true
+    "do_not_delete_crypto_exchange_or_securities_folders_without_explicit_user_approval": true,
+    "user_explicitly_approved_crypto_exchange_and_securities_folder_removal": true
   },
   "scenario_variants": [
     {
@@ -716,41 +717,54 @@
       }
     ]
   },
-  "finance_review_only_folders": [
+  "finance_excluded_folders": [
     {
       "folder": "Binance",
       "classification": "crypto exchange",
-      "action": "retain_pending_user_classification"
+      "action": "remove_user_confirmed"
     },
     {
       "folder": "OKX",
       "classification": "crypto exchange",
-      "action": "retain_pending_user_classification"
+      "action": "remove_user_confirmed"
     },
     {
       "folder": "Crypto",
       "classification": "cryptocurrency category list",
-      "action": "retain_pending_user_classification"
+      "action": "remove_user_confirmed"
     },
     {
       "folder": "Cryptocurrency",
       "classification": "cryptocurrency category list",
-      "action": "retain_pending_user_classification"
+      "action": "remove_user_confirmed"
     },
     {
       "folder": "EastMoney",
       "classification": "securities brokerage / investment platform",
-      "action": "retain_pending_user_classification"
+      "action": "remove_user_confirmed"
     },
     {
       "folder": "TigerFintech",
       "classification": "securities brokerage / investment platform",
-      "action": "retain_pending_user_classification"
+      "action": "remove_user_confirmed"
     },
     {
       "folder": "XueQiu",
       "classification": "securities / stock-investment information community",
-      "action": "retain_pending_user_classification"
+      "action": "remove_user_confirmed"
     }
-  ]
+  ],
+  "user_confirmation": {
+    "date": "2026-11-27",
+    "decision": "remove all dedicated crypto exchange, cryptocurrency category, securities brokerage, and stock-investment community rule folders",
+    "folders": [
+      "Binance",
+      "OKX",
+      "Crypto",
+      "Cryptocurrency",
+      "EastMoney",
+      "TigerFintech",
+      "XueQiu"
+    ]
+  }
 }
