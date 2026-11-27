@@ -1,6 +1,6 @@
 # App-level rule overlap report
 
-Generated: 2026-11-27 09:57 UTC
+Generated: 2026-11-27 10:04 UTC
 
 - Rule files scanned: 853
 - App/scenario candidate groups across categories: 11
