@@ -315,7 +315,7 @@ audit = ROOT / "AUDIT-REPORT.md"
 if audit.is_file():
     audit_text = audit.read_text(encoding="utf-8")
     audit_text = re.sub(
-        r"- Identical rule-set groups \(review only\): \d+",
+        r"- Canonical same-app merge groups: \d+ \(legacy paths retained\)",
         f"- Canonical same-app merge groups: {len(merge_groups)} (legacy paths retained and mirror-verified)",
         audit_text,
     )

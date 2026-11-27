@@ -375,9 +375,28 @@ jobs:
                       scenario_variant_groups.append(group)
                   else:
                       cross_category_duplicate_groups.append(group)
-              report.write(f'- Identical rule-set groups (review only): {len(groups)}\n')
-              for group in groups[:100]:
-                  report.write('- '+ ' | '.join(group)+'\n')
+              plan_data=json.loads(Path('Rule/CONSOLIDATION-PLAN.json').read_text(encoding='utf-8'))
+              approved_group_sets=set()
+              for merge_group in plan_data.get('merge_groups',[]):
+                  planned_paths=[merge_group['canonical_path']]+merge_group.get('legacy_paths',[])
+                  prefix='Rule/Upstream/'
+                  if any(not path.startswith(prefix) for path in planned_paths):
+                      raise SystemExit('Canonical merge plan contains a path outside Rule/Upstream')
+                  approved_group_sets.add(frozenset(path[len(prefix):] for path in planned_paths))
+              approved_duplicate_groups=[]
+              unapproved_duplicate_groups=[]
+              for group in cross_category_duplicate_groups:
+                  if frozenset(group) in approved_group_sets:
+                      approved_duplicate_groups.append(group)
+                  else:
+                      unapproved_duplicate_groups.append(group)
+              report.write(f'- Identical rule-set groups: {len(groups)}\n')
+              report.write(f'- Approved canonical merge groups: {len(approved_duplicate_groups)}\n')
+              report.write(f'- Unapproved cross-category identical groups (review only): {len(unapproved_duplicate_groups)}\n')
+              for group in approved_duplicate_groups:
+                  report.write('- approved mirror: '+ ' | '.join(group)+'\n')
+              for group in unapproved_duplicate_groups:
+                  report.write('- review only: '+ ' | '.join(group)+'\n')
           for p in sorted(dst.rglob('*.list')):
               for num,line in enumerate(p.read_text(encoding='utf-8-sig').splitlines(),1):
                   line=line.strip()
@@ -402,7 +421,8 @@ jobs:
               '## Consolidation',
               f'- Exact duplicate rows removed: {dedup_count}',
               f'- Personal rule files audited without modification: {personal_count}',
-              f'- Identical rule-set groups (review only): {len(groups)}',
+              f'- Canonical same-app merge groups: {len(approved_duplicate_groups)} (legacy paths retained)',
+              f'- Unapproved cross-category identical groups pending review: {len(unapproved_duplicate_groups)}',
               f'- Imported rule-list files: {sum(1 for p in dst.rglob("*.list"))}',
               '',
               '## Additional-source cache status',
@@ -431,10 +451,15 @@ jobs:
               report_lines.append('- ' + ' | '.join(group))
           if not scenario_variant_groups:
               report_lines.append('- None')
-          report_lines += ['', '## Cross-category identical-content candidates (manual review; not merged)']
-          for group in cross_category_duplicate_groups:
+          report_lines += ['', '## Approved canonical merge groups (legacy paths mirrored)']
+          for group in approved_duplicate_groups:
               report_lines.append('- ' + ' | '.join(group))
-          if not cross_category_duplicate_groups:
+          if not approved_duplicate_groups:
+              report_lines.append('- None')
+          report_lines += ['', '## Unapproved cross-category identical-content candidates (manual review; not merged)']
+          for group in unapproved_duplicate_groups:
+              report_lines.append('- ' + ' | '.join(group))
+          if not unapproved_duplicate_groups:
               report_lines.append('- None')
           report_lines += ['', '## Broad-domain matches (exact lines; review before changing)']
           report_lines += [f'- {path}:{num}: {rule}' for path,num,rule in broad_matches] if broad_matches else ['- None']
