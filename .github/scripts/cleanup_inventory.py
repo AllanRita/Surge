@@ -302,7 +302,7 @@ def main():
   f"- Scope counts: {dict(threat_scope)}","",
  ]
  if not urlhaus:
-  sec.append("- URLhaus feed unavailable in this run; OpenPhish was used for the phishing cross-check.")
+  sec.append("- URLhaus hostfile not loaded: the current export requires an Auth-Key. Configure the GitHub Actions secret URLHAUS_AUTH_KEY to enable authenticated checks; OpenPhish was used for this run.")
  sec += ["","## Matched rules",""]
  if not grouped:
   sec.append("- No rule-to-feed matches.")
