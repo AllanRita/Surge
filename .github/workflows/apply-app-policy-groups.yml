@@ -2,14 +2,6 @@ name: Apply Surge App Policy-Group Consolidation
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/scripts/apply_app_policy_groups.py'
-      - '.github/scripts/enforce_explicit_exclusions.py'
-      - '.github/explicit-rule-exclusions.json'
-      - '.github/workflows/apply-app-policy-groups.yml'
-      - 'Rule/CONSOLIDATION-PLAN.json'
 
 permissions:
   contents: write
