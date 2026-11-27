@@ -300,3 +300,12 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - URLhaus remains unavailable because `URLHAUS_AUTH_KEY` is not configured. The run correctly marks security coverage incomplete and keeps threat-feed automatic deletion disabled. OpenPhish-only matches do not trigger deletion.
 - Artifact: `surge-automatic-maintenance-38`, ID `15208786309`.
 - Next: continue scenario-aware App-specific completeness review, using existing sources and existing file formats only. Keep format differences report-only until each App's README/format semantics justify a safe change. The remaining external prerequisite for dual-feed deletion is adding the repository secret `URLHAUS_AUTH_KEY` after obtaining an abuse.ch Auth-Key.
+
+
+## 21. Report-only broad suffix scope review (2026-11-27)
+
+- Added `Rule/Upstream/BROAD-TLD-SCOPE-REVIEW.md` using the current inventory snapshot. All 78 IANA-delegated bare public-TLD suffixes (896 occurrences) are classified by placement, with exact folder and example-line references. No rule files were changed.
+- Scope breakdown: 45 aggregate-only suffixes / 767 occurrences across China/ChinaMax variants; 5 mixed aggregate + App suffixes / 85 occurrences (Alibaba, AliPay, ICBC, Taobao, Tmall); 28 App/service-only suffixes / 44 occurrences.
+- Reviewed the existing `Rule/Upstream/SHARED-HOSTING-SCOPE-REVIEW.md`: 34 shared hosting/CDN/dynamic-DNS/URL-shortener suffixes in 159 occurrences, with 33 App/service-folder occurrences and 126 aggregate-folder occurrences. These remain report-only; a malicious tenant does not justify blocking an entire multi-tenant parent suffix.
+- Priority for manual scenario review is aggregate-only broad suffixes, especially `cn`, `ms`, and other single-label namespaces. No suffix is to be removed or narrowed automatically; delegated status proves syntax/registration, not intended routing scope.
+- Continue with App-by-App scenario review and cached-source checks only. Keep all current protections, preserve every format, and leave `Rule/Personal` untouched.
