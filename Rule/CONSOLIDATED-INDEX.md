@@ -53,6 +53,22 @@ Keep each distinct existing format once within its App folder. Standard and Reso
 
 The 15 author-source snapshots already cached in SourceMetadata have been compared against their correctly mapped App/category rule files. The current audit reports zero uncovered source rules. No new author rule sets were fetched.
 
+## Security and review records
+
+- The current plan records 18 cross-App overlap pairs as keep-separate/manual-review boundaries. Similarity alone never authorizes a merge.
+- SECURITY-REVIEW.md records the current threat-feed matches and broad shared-hosting suffixes. Feed matches are review signals only; no shared-hosting parent suffix is automatically removed.
+- SECURITY-REMEDIATION-REPORT.md records the narrowly scoped removal of the verified non-IANA public suffix rule DOMAIN-SUFFIX,xihuan (17 occurrences).
+- The current OpenPhish comparison found 61 matches under shared hosting/CDN suffixes. URLhaus was unavailable in the latest audit, so its zero loaded domains must not be interpreted as a clean result.
+
+## Current audit scope
+
+- 828 upstream .list files across 663 App/category folders.
+- 15 cached author-source snapshots compared; zero uncovered source rules.
+- Three personal rule files are kept outside the automated upstream audit/remediation scope.
+- New author rule-set fetching remains paused. Public threat-intelligence reference feeds may still be used for static review.
+
 See:
-- CLEANUP-INVENTORY.md for the file inventory, cached-source coverage, static syntax checks, and OpenPhish review matches.
+- CLEANUP-INVENTORY.md for the file inventory, cached-source coverage, static syntax checks, and feed-match summary.
+- SECURITY-REVIEW.md for the detailed threat-feed and shared-hosting review.
+- SECURITY-REMEDIATION-REPORT.md for the exact rule removed and why.
 - APP-POLICY-MERGE-REPORT.md for the completed folder consolidation and rule additions.
