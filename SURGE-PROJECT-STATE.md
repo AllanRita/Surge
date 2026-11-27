@@ -239,3 +239,13 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - Security limitation remains: `URLHAUS_AUTH_KEY` is not configured, so URLhaus is unavailable and dual-feed threat-based automatic deletion remains disabled. OpenPhish-only hits do not authorize deletion. The artifact status explicitly records incomplete security coverage.
 - Artifact: `surge-automatic-maintenance-24`, ID `15207447770`.
 - Next: continue deeper App-by-App coverage checks against existing cached sources and already-present rule files, preserve each format independently, and investigate URLhaus credential provisioning. Do not broaden author collection or modify any rule unless a verified gap or deterministic safety defect is found.
+
+
+## 18. Reconcile stale finance-policy documentation (2026-11-27)
+
+- Verified directly in the current Git tree that all 14 previously restored bank/payment/financial App folders exist: BOC, BOCOM, CCB, CEB, CGB, CMB, ICBC, PSBC, AliPay, PayPal, Stripe, UnionPay, VISA, PingAn. Also verified Binance, OKX, Crypto, Cryptocurrency, EastMoney, TigerFintech, and XueQiu are present.
+- Verified `.github/explicit-rule-exclusions.json` has an empty `exclusions` list. There are no current category-based keep/delete exceptions.
+- Reconciled the previously stale bank/payment deletion history in `Rule/CONSOLIDATED-INDEX.md` and `Rule/AUDIT-REVIEW.md`: the 14 folders are present, have no special category-based protection, and follow the same evidence-based security criteria as every other App. Matching financial domains are not removed solely based on category. `Rule/Personal` remains excluded from automation.
+- URLhaus's official Community API documentation states an Auth-Key is required for feed downloads. The GitHub Actions workflow cannot add repository secrets through the connected GitHub interface. To enable the second independent feed, the repository owner must create a free abuse.ch Auth-Key and add it as the GitHub Actions repository secret named `URLHAUS_AUTH_KEY`. Until then, dual-feed threat deletion remains disabled; this is fail-closed by design.
+- Official URLhaus documentation: https://urlhaus.abuse.ch/api/ (Auth-Key required); see also the IANA root-zone reference already recorded in Section 17.
+- Next: continue App-by-App cross-format coverage checks and review security matches; do not change rule semantics or delete anything based on App category. Revalidate the next automatic run after any script/workflow changes.
