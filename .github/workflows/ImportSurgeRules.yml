@@ -255,7 +255,7 @@ jobs:
           def audit_line(line,path,num):
               if any(unicodedata.category(c) in {'Cc','Cf','Cs'} and c!='\t' for c in line):
                   flag('hidden-control',path,num)
-              if '://' in line:
+              if '://' in line and not line.lstrip().startswith('URL-REGEX,'):
                   flag('external-reference',path,num)
               # Upstream bundles can contain AdGuard-native filters as well as Surge rules.
               # Recognize their syntax without rewriting or translating it into broader Surge rules.
