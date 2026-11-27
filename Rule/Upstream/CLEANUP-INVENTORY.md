@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 11:05 UTC
+Generated: 2026-11-27 11:10 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -107,6 +107,7 @@ This classifies dedicated App folders by folder name only. Financial-service dom
 - single_label_suffix: 911
 - stale_or_private_root_suffix: 17
 
+- Detailed threat-feed and broad shared-hosting review: see SECURITY-REVIEW.md.
 - Financial-domain matches: 238 (review only; not deleted)
 - URLhaus domains loaded: 0
 - OpenPhish domains loaded: 278

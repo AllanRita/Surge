@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 11:05 UTC",
+  "generated_utc": "2026-11-27 11:10 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 828,
@@ -2170,7 +2170,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-mavrero-biz.pages.dev"
+      "matched_domain": "xfm31-z75-urmp-7tlst-07-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2178,7 +2178,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2186,7 +2186,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-mavrero-biz.pages.dev"
+      "matched_domain": "xfm31-z75-urmp-7tlst-07-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2194,7 +2194,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2202,7 +2202,7 @@
       "path": "GitBook/GitBook.list",
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "robinhxnoodlogin.gitbook.io"
+      "matched_domain": "cripthcomlogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2210,7 +2210,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "dank1ngzzz.github.io"
+      "matched_domain": "meenakshi-cse.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2218,7 +2218,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.lazada0277.blogspot.com"
+      "matched_domain": "metamask173.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2234,7 +2234,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "dank1ngzzz.github.io"
+      "matched_domain": "meenakshi-cse.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2258,7 +2258,7 @@
       "path": "Global/Global_All.list",
       "line": 29921,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "www.112acil112acil112acil.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2266,7 +2266,7 @@
       "path": "Global/Global_All.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "robinhxnoodlogin.gitbook.io"
+      "matched_domain": "cripthcomlogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2290,7 +2290,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-mavrero-biz.pages.dev"
+      "matched_domain": "xfm31-z75-urmp-7tlst-07-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2298,7 +2298,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.projeto-insta.vercel.app"
+      "matched_domain": "www.zimbra-auth-adm-old.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2306,7 +2306,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2314,7 +2314,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.lazada0277.blogspot.com"
+      "matched_domain": "metamask173.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2330,7 +2330,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "dank1ngzzz.github.io"
+      "matched_domain": "meenakshi-cse.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2354,7 +2354,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 29921,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "www.112acil112acil112acil.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2362,7 +2362,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "robinhxnoodlogin.gitbook.io"
+      "matched_domain": "cripthcomlogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2386,7 +2386,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-mavrero-biz.pages.dev"
+      "matched_domain": "xfm31-z75-urmp-7tlst-07-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2394,7 +2394,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.projeto-insta.vercel.app"
+      "matched_domain": "www.zimbra-auth-adm-old.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2402,7 +2402,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2426,7 +2426,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.lazada0277.blogspot.com"
+      "matched_domain": "metamask173.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2442,7 +2442,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.lazada0277.blogspot.com"
+      "matched_domain": "metamask173.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2458,7 +2458,7 @@
       "path": "NaSDDNS/NaSDDNS.list",
       "line": 23,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "www.112acil112acil112acil.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2466,7 +2466,7 @@
       "path": "NaSDDNS/NaSDDNS_Resolve.list",
       "line": 23,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "www.112acil112acil112acil.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2482,7 +2482,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 1615,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "www.112acil112acil112acil.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2490,7 +2490,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "robinhxnoodlogin.gitbook.io"
+      "matched_domain": "cripthcomlogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2514,7 +2514,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-mavrero-biz.pages.dev"
+      "matched_domain": "xfm31-z75-urmp-7tlst-07-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2522,7 +2522,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.projeto-insta.vercel.app"
+      "matched_domain": "www.zimbra-auth-adm-old.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2530,7 +2530,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2546,7 +2546,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 1615,
       "rule": "DOMAIN-SUFFIX,duckdns.org",
-      "matched_domain": "www.yeninesilhizli.duckdns.org"
+      "matched_domain": "www.112acil112acil112acil.duckdns.org"
     },
     {
       "feed": "OpenPhish",
@@ -2554,7 +2554,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "robinhxnoodlogin.gitbook.io"
+      "matched_domain": "cripthcomlogin.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2578,7 +2578,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "sp30ct11-mavrero-biz.pages.dev"
+      "matched_domain": "xfm31-z75-urmp-7tlst-07-10-2026-hh.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2586,7 +2586,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.projeto-insta.vercel.app"
+      "matched_domain": "www.zimbra-auth-adm-old.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2594,7 +2594,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "huqxs-hqbv-6r1l.467908b25f25758e1432524e.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2634,7 +2634,7 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.projeto-insta.vercel.app"
+      "matched_domain": "www.zimbra-auth-adm-old.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {
