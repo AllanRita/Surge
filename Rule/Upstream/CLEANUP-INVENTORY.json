@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 13:04 UTC",
+  "generated_utc": "2026-11-27 13:05 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 821,
@@ -3700,7 +3700,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "si6uq-gwu-ejmr-w7xgq-04-10-2026-aa.pages.dev"
+      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3716,7 +3716,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3724,7 +3724,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "si6uq-gwu-ejmr-w7xgq-04-10-2026-aa.pages.dev"
+      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3740,7 +3740,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3748,7 +3748,7 @@
       "path": "GitBook/GitBook.list",
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3756,7 +3756,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "kauongit.github.io"
+      "matched_domain": "wildpigger.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3764,7 +3764,7 @@
       "path": "Global/Global_All.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
+      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3772,7 +3772,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "watchtheviralvideosonline.blogspot.com"
+      "matched_domain": "shopee-307.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3788,7 +3788,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "kauongit.github.io"
+      "matched_domain": "wildpigger.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3836,7 +3836,7 @@
       "path": "Global/Global_All.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3852,7 +3852,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "si6uq-gwu-ejmr-w7xgq-04-10-2026-aa.pages.dev"
+      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3860,7 +3860,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.vansh-net-clone.vercel.app"
+      "matched_domain": "www.vakifbank.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3876,7 +3876,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3884,7 +3884,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
+      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3892,7 +3892,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "watchtheviralvideosonline.blogspot.com"
+      "matched_domain": "shopee-307.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3908,7 +3908,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "kauongit.github.io"
+      "matched_domain": "wildpigger.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3956,7 +3956,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3972,7 +3972,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "si6uq-gwu-ejmr-w7xgq-04-10-2026-aa.pages.dev"
+      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3980,7 +3980,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.vansh-net-clone.vercel.app"
+      "matched_domain": "www.vakifbank.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3996,7 +3996,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4036,7 +4036,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "watchtheviralvideosonline.blogspot.com"
+      "matched_domain": "shopee-307.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4044,7 +4044,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "watchtheviralvideosonline.blogspot.com"
+      "matched_domain": "shopee-307.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4052,7 +4052,7 @@
       "path": "Microsoft/Microsoft.list",
       "line": 86,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
+      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -4116,7 +4116,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4132,7 +4132,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "si6uq-gwu-ejmr-w7xgq-04-10-2026-aa.pages.dev"
+      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4140,7 +4140,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.vansh-net-clone.vercel.app"
+      "matched_domain": "www.vakifbank.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4156,7 +4156,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4196,7 +4196,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4212,7 +4212,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "si6uq-gwu-ejmr-w7xgq-04-10-2026-aa.pages.dev"
+      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4220,7 +4220,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.vansh-net-clone.vercel.app"
+      "matched_domain": "www.vakifbank.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4236,7 +4236,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4276,7 +4276,7 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.vansh-net-clone.vercel.app"
+      "matched_domain": "www.vakifbank.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {
