@@ -37,15 +37,18 @@ The App rule set identifies all domains and other matching rules used by that Ap
 | Assassin's Creed Odyssey | Game/Assassin'sCreed-Odyssey | Remove duplicate category copy; retain standard and Resolve |
 | Assassin's Creed Origins | Game/Assassin'sCreed-Origins | Remove duplicate category copy; retain standard and Resolve |
 
-## Bank and payment App folders
+## Bank and payment App folders — permanently excluded
 
-The current inventory found no dedicated bank/payment App folders under Rule/Upstream. Therefore, no such folder needs deletion at this stage.
+The user explicitly instructed deletion of these 14 dedicated folders. They remain excluded:
 
-- Keep payment-related domains that are part of other App rule sets.
-- Keep Rule/Personal/PayPay.list unchanged.
-- The current inventory also flags six other finance/trading/crypto folders for review only: Binance (12 entries), Crypto (201), Cryptocurrency (43), EastMoney (33), OKX (3), and TigerFintech (19). They are not classified as dedicated bank/payment App folders and were not removed.
-- Future bank/payment domains belong in the user's personal rule set, not in the shared App library.
-- Separate classification note: the current audit flags Binance and OKX as crypto-exchange rule folders, EastMoney and TigerFintech as securities/investment rule folders, and Crypto/Cryptocurrency as category lists. These six are review-only; they are not automatically treated as bank/payment Apps and have not been deleted.
+`BOC`, `BOCOM`, `CCB`, `CEB`, `CGB`, `CMB`, `ICBC`, `PSBC`, `AliPay`, `PayPal`, `Stripe`, `UnionPay`, `VISA`, and `PingAn`.
+
+The permanent exclusion manifest is `.github/explicit-rule-exclusions.json`. Automation removes any reintroduced copy before inventory, security audit, or App consolidation. No historical source snapshot or author feed may restore these folders.
+
+- Matching payment/bank domains inside unrelated App, Global, advertising, privacy, or filter rule sets are not deleted by this folder exclusion.
+- `Rule/Personal/PayPay.list` remains untouched.
+- Future bank/payment domains collected by the user belong in the personal rule set, not in the shared upstream App library.
+
 
 ## File formats
 
@@ -133,6 +136,6 @@ The cleanup inventory now scans a curated set of 42 shared CDN/hosting, dynamic-
 
 At the user's explicit direction, these seven dedicated folders were removed from `Rule/Upstream`: `Binance`, `OKX`, `Crypto`, `Cryptocurrency`, `EastMoney`, `TigerFintech`, and `XueQiu`. This removes seven rule lists (322 rule entries) and seven README files.
 
-The consolidation plan records the user's explicit approval. The cleanup-audit workflow fails if any of these excluded folders is reintroduced.
+The consolidation plan records the user's explicit approval. The permanent exclusion manifest is enforced before audits and App consolidation. If any excluded folder is reintroduced by a sync, snapshot, merge, or retry, automation removes it again; restoration requires an explicit new user instruction.
 
 The removal does not delete matching domains from unrelated App, Global, advertising, privacy, or filter lists. `Rule/Personal` remains untouched. `Stackexchange` remains because it is a Q&A/community service, not a financial exchange.

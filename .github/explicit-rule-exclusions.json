@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-11-27",
+  "purpose": "Permanent tombstone list for rule-set folders explicitly deleted at the user's direction.",
+  "policy": {
+    "scope": "Exact direct-child folders under Rule/Upstream only.",
+    "automatic_restore_allowed": false,
+    "reintroduced_folders": "Remove automatically before inventory, security audit, synchronization, or App consolidation.",
+    "restore_requires_explicit_user_request": true,
+    "do_not_remove_matching_domains_from_other_rule_sets": true,
+    "do_not_modify_rule_personal": true
+  },
+  "exclusions": [
+    {
+      "folder": "BOC",
+      "path": "Rule/Upstream/BOC",
+      "category": "bank",
+      "authorization": "explicit user deletion instruction (2026-11-27)"
+    },
+    {
+      "folder": "BOCOM",
+      "path": "Rule/Upstream/BOCOM",
+      "category": "bank",
+      "authorization": "explicit user deletion instruction (2026-11-27)"
+    },
+    {
+      "folder": "CCB",
+      "path": "Rule/Upstream/CCB",
+      "category": "bank",
+      "authorization": "explicit user deletion instruction (2026-11-27)"
+    },
+    {
+      "folder": "CEB",
+      "path": "Rule/Upstream/CEB",
+      "category": "bank",
+      "authorization": "explicit user deletion instruction (2026-11-27)"
+    },
+    {
+      "folder": "CGB",
+      "path": "Rule/Upstream/CGB",
+      "category": "bank",
+      "authorization": "explicit user deletion instruction (2026-11-27)"
+    },
+    {
+      "folder": "CMB",
+      "path": "Rule/Upstream/CMB",
+      "category": "bank",
+      "authorization": "explicit user deletion instruction (2026-11-27)"
+    },
+    {
+      "folder": "ICBC",
+      "path": "Rule/Upstream/ICBC",
+      "category": "bank",
+      "authorization": "explicit user deletion instruction (2026-11-27)"
+    },
+    {
+      "folder": "PSBC",
+      "path": "Rule/Upstream/PSBC",
+      "category": "bank",
+      "authorization": "explicit user deletion instruction (2026-11-27)"
+    },
+    {
+      "folder": "AliPay",
+      "path": "Rule/Upstream/AliPay",
+      "category": "payment",
+      "authorization": "explicit user deletion instruction (2026-11-27)"
+    },
+    {
+      "folder": "PayPal",
+      "path": "Rule/Upstream/PayPal",
+      "category": "payment",
+      "authorization": "explicit user deletion instruction (2026-11-27)"
+    },
+    {
+      "folder": "Stripe",
+      "path": "Rule/Upstream/Stripe",
+      "category": "payment",
+      "authorization": "explicit user deletion instruction (2026-11-27)"
+    },
+    {
+      "folder": "UnionPay",
+      "path": "Rule/Upstream/UnionPay",
+      "category": "payment",
+      "authorization": "explicit user deletion instruction (2026-11-27)"
+    },
+    {
+      "folder": "VISA",
+      "path": "Rule/Upstream/VISA",
+      "category": "payment",
+      "authorization": "explicit user deletion instruction (2026-11-27)"
+    },
+    {
+      "folder": "PingAn",
+      "path": "Rule/Upstream/PingAn",
+      "category": "financial_services",
+      "authorization": "explicit user deletion instruction (2026-11-27)"
+    },
+    {
+      "folder": "Binance",
+      "path": "Rule/Upstream/Binance",
+      "category": "crypto_exchange",
+      "rule_entries": 12,
+      "authorization": "user's explicit category-level instruction to delete exchange, cryptocurrency and securities rule folders (2026-11-27)"
+    },
+    {
+      "folder": "OKX",
+      "path": "Rule/Upstream/OKX",
+      "category": "crypto_exchange",
+      "rule_entries": 3,
+      "authorization": "user's explicit category-level instruction to delete exchange, cryptocurrency and securities rule folders (2026-11-27)"
+    },
+    {
+      "folder": "Crypto",
+      "path": "Rule/Upstream/Crypto",
+      "category": "cryptocurrency_category",
+      "rule_entries": 201,
+      "authorization": "user's explicit category-level instruction to delete exchange, cryptocurrency and securities rule folders (2026-11-27)"
+    },
+    {
+      "folder": "Cryptocurrency",
+      "path": "Rule/Upstream/Cryptocurrency",
+      "category": "cryptocurrency_category",
+      "rule_entries": 43,
+      "authorization": "user's explicit category-level instruction to delete exchange, cryptocurrency and securities rule folders (2026-11-27)"
+    },
+    {
+      "folder": "EastMoney",
+      "path": "Rule/Upstream/EastMoney",
+      "category": "securities_brokerage",
+      "rule_entries": 33,
+      "authorization": "user's explicit category-level instruction to delete exchange, cryptocurrency and securities rule folders (2026-11-27)"
+    },
+    {
+      "folder": "TigerFintech",
+      "path": "Rule/Upstream/TigerFintech",
+      "category": "securities_brokerage",
+      "rule_entries": 19,
+      "authorization": "user's explicit category-level instruction to delete exchange, cryptocurrency and securities rule folders (2026-11-27)"
+    },
+    {
+      "folder": "XueQiu",
+      "path": "Rule/Upstream/XueQiu",
+      "category": "securities_investment_community",
+      "rule_entries": 11,
+      "authorization": "user's explicit category-level instruction to delete exchange, cryptocurrency and securities rule folders (2026-11-27)"
+    }
+  ]
+}

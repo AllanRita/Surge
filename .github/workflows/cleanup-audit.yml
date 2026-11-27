@@ -6,6 +6,8 @@ on:
     branches: [main]
     paths:
       - '.github/scripts/cleanup_inventory.py'
+      - '.github/scripts/enforce_explicit_exclusions.py'
+      - '.github/explicit-rule-exclusions.json'
       - '.github/scripts/remove_invalid_public_tld_rules.py'
       - '.github/workflows/cleanup-audit.yml'
       - 'Rule/Upstream/**/*.list'
@@ -28,6 +30,9 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: true
+
+      - name: Enforce permanent user-directed folder exclusions
+        run: python3 .github/scripts/enforce_explicit_exclusions.py
 
       - name: Download required public security reference feeds
         env:
@@ -63,15 +68,8 @@ jobs:
       - name: Remove verified non-IANA root suffix
         run: python3 .github/scripts/remove_invalid_public_tld_rules.py --iana-tlds "$RUNNER_TEMP/iana-tlds.txt"
 
-      - name: Enforce explicit exclusion of finance, trading, and securities folders
-        run: |
-          set -euo pipefail
-          for folder in Binance OKX Crypto Cryptocurrency EastMoney TigerFintech XueQiu; do
-            if [ -e "Rule/Upstream/$folder" ]; then
-              echo "::error::User-excluded financial rule folder reappeared: $folder"
-              exit 1
-            fi
-          done
+      - name: Re-enforce permanent exclusions before inventory
+        run: python3 .github/scripts/enforce_explicit_exclusions.py
 
       - name: Inventory existing rules and compare cached sources
         run: |
@@ -92,6 +90,8 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
 
+            # A concurrent update or old snapshot must never resurrect a tombstoned folder.
+            python3 .github/scripts/enforce_explicit_exclusions.py
             python3 .github/scripts/remove_invalid_public_tld_rules.py --iana-tlds "$RUNNER_TEMP/iana-tlds.txt"
             python3 .github/scripts/cleanup_inventory.py \
               --iana-tlds "$RUNNER_TEMP/iana-tlds.txt" \

@@ -6,6 +6,8 @@ on:
     branches: [main]
     paths:
       - '.github/scripts/apply_app_policy_groups.py'
+      - '.github/scripts/enforce_explicit_exclusions.py'
+      - '.github/explicit-rule-exclusions.json'
       - '.github/workflows/apply-app-policy-groups.yml'
       - 'Rule/CONSOLIDATION-PLAN.json'
 
@@ -25,8 +27,14 @@ jobs:
         with:
           persist-credentials: true
 
+      - name: Enforce permanent user-directed folder exclusions before consolidation
+        run: python3 .github/scripts/enforce_explicit_exclusions.py
+
       - name: Merge approved App variants and remove duplicate folders
         run: python3 .github/scripts/apply_app_policy_groups.py
+
+      - name: Re-enforce permanent exclusions after consolidation
+        run: python3 .github/scripts/enforce_explicit_exclusions.py
 
       - name: Commit consolidated App folders
         run: |

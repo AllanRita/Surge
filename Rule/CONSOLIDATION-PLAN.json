@@ -1,5 +1,5 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "generated": "2026-11-27",
   "purpose": "One Surge App policy group per app. All regional/author variants of the same app are consolidated into one folder; file-format variants remain separate.",
   "policy": {
@@ -15,8 +15,11 @@
     "personal_rules_are_never_modified": true,
     "remove_alias_folders_after_verified_union": true,
     "retain_source_provenance_in_SourceMetadata": true,
-    "do_not_delete_crypto_exchange_or_securities_folders_without_explicit_user_approval": true,
-    "user_explicitly_approved_crypto_exchange_and_securities_folder_removal": true
+    "user_explicitly_approved_crypto_exchange_and_securities_folder_removal": true,
+    "explicit_deletion_manifest_enforced_by_automation": true,
+    "never_restore_user_deleted_rule_folders": true,
+    "restore_excluded_folders_only_on_explicit_user_request": true,
+    "do_not_restore_from_author_feeds_cached_snapshots_backups_or_git_history": true
   },
   "scenario_variants": [
     {
@@ -766,5 +769,29 @@
       "TigerFintech",
       "XueQiu"
     ]
-  }
+  },
+  "explicit_exclusion_manifest": ".github/explicit-rule-exclusions.json",
+  "explicitly_excluded_rule_folders": [
+    "BOC",
+    "BOCOM",
+    "CCB",
+    "CEB",
+    "CGB",
+    "CMB",
+    "ICBC",
+    "PSBC",
+    "AliPay",
+    "PayPal",
+    "Stripe",
+    "UnionPay",
+    "VISA",
+    "PingAn",
+    "Binance",
+    "OKX",
+    "Crypto",
+    "Cryptocurrency",
+    "EastMoney",
+    "TigerFintech",
+    "XueQiu"
+  ]
 }

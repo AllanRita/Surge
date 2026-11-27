@@ -213,8 +213,22 @@ def alias_report():
   out.append({"canonical":g["canonical"],"aliases":g["aliases"],"reason":g["reason"],"canonical_exists":(ROOT/g["canonical"]).is_dir(),"existing_aliases":[x for x in g["aliases"] if (ROOT/x).is_dir()],"comparisons":comps})
  return out
 
+def assert_explicit_exclusions_absent():
+ manifest=Path(".github/explicit-rule-exclusions.json")
+ if not manifest.is_file() or manifest.is_symlink():
+  raise SystemExit("Explicit exclusion manifest is missing or unsafe")
+ try: data=json.loads(manifest.read_text(encoding="utf-8"))
+ except (OSError,ValueError) as e: raise SystemExit("Cannot read explicit exclusion manifest: "+str(e))
+ if not ROOT.is_dir() or ROOT.is_symlink():
+  raise SystemExit("Rule/Upstream is missing or unsafe")
+ names=[x.get("folder") for x in data.get("exclusions",[]) if isinstance(x,dict)]
+ present={p.name.casefold() for p in ROOT.iterdir()}
+ reintroduced=[x for x in names if isinstance(x,str) and x.casefold() in present]
+ if reintroduced:
+  raise SystemExit("Audit blocked: explicitly deleted folders reappeared. Run enforce_explicit_exclusions.py: "+", ".join(reintroduced))
+
 def main():
- ap=argparse.ArgumentParser(); ap.add_argument("--iana-tlds"); ap.add_argument("--urlhaus"); ap.add_argument("--openphish"); a=ap.parse_args()
+ ap=argparse.ArgumentParser(); assert_explicit_exclusions_absent(); ap.add_argument("--iana-tlds"); ap.add_argument("--urlhaus"); ap.add_argument("--openphish"); a=ap.parse_args()
  tlds={x.strip().lower() for x in lines(Path(a.iana_tlds)) if x.strip() and not x.startswith("#")} if a.iana_tlds and Path(a.iana_tlds).is_file() else set()
  urlhaus=feed_domains(a.urlhaus,"hosts"); openphish=feed_domains(a.openphish,"url")
  def suffix_index(domains):

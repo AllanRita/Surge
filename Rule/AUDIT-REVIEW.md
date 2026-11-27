@@ -51,6 +51,29 @@ Interpretation:
 
 Most matches are in advertising, privacy, or filter-category lists; the remainder are in aggregate or other App lists. A domain-name match does not by itself prove that a payment/checkout endpoint is being blocked. The current inventory finds zero dedicated bank/payment App folders, and the 14 dedicated folders removed earlier remain absent. These 238 upstream domain entries were not deleted. The single personal PayPay match was also left untouched.
 
+### Dedicated bank and payment App folders — deleted
+
+The user explicitly instructed deletion of these 14 dedicated folders. They remain excluded and must not be restored by author-source synchronization, cached snapshots, backups, Git history, or workflow retries.
+
+| Folder | Classification |
+|---|---|
+| BOC | Bank |
+| BOCOM | Bank |
+| CCB | Bank |
+| CEB | Bank |
+| CGB | Bank |
+| CMB | Bank |
+| ICBC | Bank |
+| PSBC | Bank |
+| AliPay | Payment |
+| PayPal | Payment |
+| Stripe | Payment |
+| UnionPay | Payment |
+| VISA | Payment |
+| PingAn | Financial services |
+
+This deletion is limited to the dedicated folders. Matching domains in unrelated App, Global, advertising, privacy, or filter rule sets were not removed. `Rule/Personal/PayPay.list` remains untouched. The permanent exclusion manifest is `.github/explicit-rule-exclusions.json`; automation enforces it before audits and consolidation.
+
 ### Dedicated trading-exchange, cryptocurrency and securities folders — removed
 
 The user explicitly confirmed removal of all dedicated trading-exchange, cryptocurrency-category, securities-brokerage, and stock-investment community rule folders. The following seven folders were removed from `Rule/Upstream`:
@@ -66,7 +89,7 @@ The user explicitly confirmed removal of all dedicated trading-exchange, cryptoc
 | XueQiu | Securities / stock-investment information community | 11 |
 | **Total** | **7 folders / 7 rule lists** | **322** |
 
-All seven `.list` files and their seven `README.md` files were deleted. The consolidation plan now records the user's explicit approval and changes these folders from review-only to excluded. The cleanup-audit workflow fails if any excluded folder reappears.
+All seven `.list` files and their seven `README.md` files were deleted and are protected by the permanent exclusion manifest. The permanent exclusion manifest records these user-directed deletions. Audit and consolidation automation removes any reintroduced copy before processing; historical snapshots and author feeds are never restoration sources.
 
 This is a folder-level removal only: matching domains embedded in unrelated App, Global, advertising, privacy, or filter lists were not deleted. `Rule/Personal` remains untouched.
 
