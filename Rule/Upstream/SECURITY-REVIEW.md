@@ -1,6 +1,6 @@
 # Security reputation review
 
-Generated: 2026-11-27 13:16 UTC
+Generated: 2026-11-27 13:17 UTC
 
 This report compares current domain rules against public threat-intelligence feeds. A feed match is a review signal, not proof that the rule's parent domain is malicious. No rules are automatically removed.
 
@@ -46,7 +46,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Google/Google.list, Google/Google_Resolve.list
-- Matched feed host examples: facebookcomprimisingourrights.blogspot.com
+- Matched feed host examples: www.freefiregarenadetayler.blogspot.com
 - Classification: Blogger shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,cloudfront.net
@@ -78,7 +78,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: GitBook/GitBook.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: kucinlogn16.gitbook.io
+- Matched feed host examples: treozarwalletf.gitbook.io
 - Classification: shared documentation hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,github.io
@@ -86,7 +86,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: GitHub/GitHub.list, Global/Global_All.list, Global/Global_All_No_Resolve.list
-- Matched feed host examples: kauongit.github.io
+- Matched feed host examples: wildpigger.github.io
 - Classification: GitHub Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,netlify.app
@@ -102,7 +102,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: g1bzm-vft-0lzt-s2inc-04-10-2026-hh.pages.dev
+- Matched feed host examples: 9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev
 - Classification: Cloudflare Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,trycloudflare.com
@@ -118,7 +118,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list, Vercel/Vercel.list
-- Matched feed host examples: www.ads-z63a.vercel.app
+- Matched feed host examples: demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app
 - Classification: Vercel shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,weebly.com
@@ -134,7 +134,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: reverification-evidence-5ef7.s2467-05b.workers.dev
+- Matched feed host examples: taskorynex-velnoryx-371c.s2504191-f02.workers.dev
 - Classification: Cloudflare Workers shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 
@@ -181,58 +181,89 @@ The curated suffix scan covers all upstream rule files, not only threat-feed mat
 
 ## Bare IANA public-TLD suffix rules
 
-- Rule occurrences: 894
+- Rule occurrences: 894 across 78 distinct TLD suffixes.
 - These operands are valid IANA top-level domains, but a suffix rule at the TLD root can match every domain beneath that TLD. They are review-only; no rules are automatically removed.
-- Alibaba/Alibaba.list:10: DOMAIN-SUFFIX,alibaba
-- Alibaba/Alibaba.list:11: DOMAIN-SUFFIX,taobao
-- Alibaba/Alibaba.list:12: DOMAIN-SUFFIX,tmall
-- Alibaba/Alibaba_All.list:34: DOMAIN-SUFFIX,alibaba
-- Alibaba/Alibaba_All.list:1122: DOMAIN-SUFFIX,taobao
-- Alibaba/Alibaba_All.list:1158: DOMAIN-SUFFIX,tmall
-- Alibaba/Alibaba_All_No_Resolve.list:34: DOMAIN-SUFFIX,alibaba
-- Alibaba/Alibaba_All_No_Resolve.list:1122: DOMAIN-SUFFIX,taobao
-- Alibaba/Alibaba_All_No_Resolve.list:1158: DOMAIN-SUFFIX,tmall
-- Alibaba/Alibaba_Resolve.list:10: DOMAIN-SUFFIX,alibaba
-- Alibaba/Alibaba_Resolve.list:11: DOMAIN-SUFFIX,taobao
-- Alibaba/Alibaba_Resolve.list:12: DOMAIN-SUFFIX,tmall
-- Amazon/Amazon.list:37: DOMAIN-SUFFIX,amazon
-- Amazon/Amazon.list:119: DOMAIN-SUFFIX,aws
-- Amazon/Amazon.list:146: DOMAIN-SUFFIX,imdb
-- Amazon/Amazon.list:149: DOMAIN-SUFFIX,kindle
-- Amazon/Amazon.list:194: DOMAIN-SUFFIX,xn--cckwcxetd
-- Amazon/Amazon.list:195: DOMAIN-SUFFIX,xn--jlq480n2rg
-- Amazon/Amazon.list:196: DOMAIN-SUFFIX,yamaxun
-- Amazon/Amazon.list:200: DOMAIN-SUFFIX,zappos
-- Amazon/Amazon_Resolve.list:37: DOMAIN-SUFFIX,amazon
-- Amazon/Amazon_Resolve.list:119: DOMAIN-SUFFIX,aws
-- Amazon/Amazon_Resolve.list:146: DOMAIN-SUFFIX,imdb
-- Amazon/Amazon_Resolve.list:149: DOMAIN-SUFFIX,kindle
-- Amazon/Amazon_Resolve.list:194: DOMAIN-SUFFIX,xn--cckwcxetd
-- Amazon/Amazon_Resolve.list:195: DOMAIN-SUFFIX,xn--jlq480n2rg
-- Amazon/Amazon_Resolve.list:196: DOMAIN-SUFFIX,yamaxun
-- Amazon/Amazon_Resolve.list:200: DOMAIN-SUFFIX,zappos
-- BBC/BBC.list:21: DOMAIN-SUFFIX,bbc
-- BMW/BMW.list:77: DOMAIN-SUFFIX,bmw
-- BMW/BMW.list:494: DOMAIN-SUFFIX,mini
-- China/China.list:12: DOMAIN-SUFFIX,cn
-- China/China.list:13: DOMAIN-SUFFIX,ms
-- China/China_All.list:969: DOMAIN-SUFFIX,cn
-- China/China_All.list:2373: DOMAIN-SUFFIX,ms
-- China/China_All_No_Resolve.list:969: DOMAIN-SUFFIX,cn
-- China/China_All_No_Resolve.list:2373: DOMAIN-SUFFIX,ms
-- China/China_Resolve.list:12: DOMAIN-SUFFIX,cn
-- China/China_Resolve.list:13: DOMAIN-SUFFIX,ms
-- ChinaMax/ChinaMax.list:14: DOMAIN-SUFFIX,cn
-- ChinaMax/ChinaMax.list:15: DOMAIN-SUFFIX,ms
-- ChinaMax/ChinaMax.list:16: DOMAIN-SUFFIX,alibaba
-- ChinaMax/ChinaMax.list:17: DOMAIN-SUFFIX,alipay
-- ChinaMax/ChinaMax.list:18: DOMAIN-SUFFIX,anquan
-- ChinaMax/ChinaMax.list:19: DOMAIN-SUFFIX,baidu
-- ChinaMax/ChinaMax.list:20: DOMAIN-SUFFIX,citic
-- ChinaMax/ChinaMax.list:21: DOMAIN-SUFFIX,icbc
-- ChinaMax/ChinaMax.list:22: DOMAIN-SUFFIX,shouji
-- ChinaMax/ChinaMax.list:23: DOMAIN-SUFFIX,sina
-- ChinaMax/ChinaMax.list:24: DOMAIN-SUFFIX,sohu
+
+| TLD suffix | Rule occurrences | Folders |
+|---|---:|---|
+| alibaba | 21 | Alibaba, ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| alipay | 10 | ChinaMax, ChinaTest |
+| amazon | 2 | Amazon |
+| anquan | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| aws | 2 | Amazon |
+| azure | 1 | Microsoft |
+| baidu | 10 | ChinaMax, ChinaTest |
+| bbc | 2 | BBC, UKMedia |
+| bing | 1 | Microsoft |
+| bmw | 1 | BMW |
+| cisco | 1 | Cisco |
+| citic | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| cn | 25 | China, ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaNoMedia, ChinaTest |
+| fox | 1 | Fox |
+| google | 2 | ProxyLite |
+| hotmail | 1 | Microsoft |
+| ibm | 1 | IBM |
+| icbc | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| imdb | 2 | Amazon |
+| java | 1 | Oracle |
+| kindle | 2 | Amazon |
+| microsoft | 1 | Microsoft |
+| mini | 1 | BMW |
+| mit | 1 | GlobalScholar |
+| ms | 25 | China, ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaNoMedia, ChinaTest |
+| office | 1 | Microsoft |
+| oracle | 1 | Oracle |
+| shouji | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| sina | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| skype | 1 | Microsoft |
+| sohu | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| taobao | 14 | Alibaba, ChinaMax, ChinaTest |
+| tmall | 21 | Alibaba, ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| unicom | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| wang | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| weatherchannel | 1 | IBM |
+| weibo | 10 | ChinaMax, ChinaTest |
+| windows | 1 | Microsoft |
+| xn--1qqw23a | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--3bst00m | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--3ds443g | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--55qw42g | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--55qx5d | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--5tzm5g | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--6frz82g | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--6qq986b3xl | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--8y0a063a | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--9et52u | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--9krt00a | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--cckwcxetd | 2 | Amazon |
+| xn--czr694b | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--czrs0t | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--czru2d | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--fiq228c5hs | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--fiq64b | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--fiqs8s | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--fiqz9s | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--fjq720a | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--g2xx48c | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--hxt814e | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--imr513n | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--io0a7i | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--jlq480n2rg | 2 | Amazon |
+| xn--kput3i | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--nyqy26a | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--otu796d | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--rhqv96g | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--ses554g | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--unup4y | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--vhquv | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--vuq861b | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--xhq521b | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--zfr164b | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| yamaxun | 2 | Amazon |
+| yandex | 2 | Yandex |
+| youtube | 6 | GlobalMedia, YouTube |
+| yun | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| zappos | 2 | Amazon |
 
 ## Stale/private single-label suffixes
 

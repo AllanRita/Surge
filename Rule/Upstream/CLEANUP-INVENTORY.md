@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 13:16 UTC
+Generated: 2026-11-27 13:17 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -87,6 +87,91 @@ These folders are not automatically classified as bank/payment Apps. They are li
 - Candidate folders: Game/Assassin'sCreed-Origins
 - Present aliases: none
 - Rationale: Same game duplicated under two categories; Standard and Resolve stay separate.
+
+## Bare IANA public-TLD suffix rules
+
+These are valid public top-level domains used directly as DOMAIN-SUFFIX / HOST-SUFFIX operands. Such a rule can match every registered domain beneath that TLD. This is a broad-scope review list, not an automatic deletion list.
+
+| TLD suffix | Rule occurrences | Folders |
+|---|---:|---|
+| alibaba | 21 | Alibaba, ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| alipay | 10 | ChinaMax, ChinaTest |
+| amazon | 2 | Amazon |
+| anquan | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| aws | 2 | Amazon |
+| azure | 1 | Microsoft |
+| baidu | 10 | ChinaMax, ChinaTest |
+| bbc | 2 | BBC, UKMedia |
+| bing | 1 | Microsoft |
+| bmw | 1 | BMW |
+| cisco | 1 | Cisco |
+| citic | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| cn | 25 | China, ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaNoMedia, ChinaTest |
+| fox | 1 | Fox |
+| google | 2 | ProxyLite |
+| hotmail | 1 | Microsoft |
+| ibm | 1 | IBM |
+| icbc | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| imdb | 2 | Amazon |
+| java | 1 | Oracle |
+| kindle | 2 | Amazon |
+| microsoft | 1 | Microsoft |
+| mini | 1 | BMW |
+| mit | 1 | GlobalScholar |
+| ms | 25 | China, ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaNoMedia, ChinaTest |
+| office | 1 | Microsoft |
+| oracle | 1 | Oracle |
+| shouji | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| sina | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| skype | 1 | Microsoft |
+| sohu | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| taobao | 14 | Alibaba, ChinaMax, ChinaTest |
+| tmall | 21 | Alibaba, ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| unicom | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| wang | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| weatherchannel | 1 | IBM |
+| weibo | 10 | ChinaMax, ChinaTest |
+| windows | 1 | Microsoft |
+| xn--1qqw23a | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--3bst00m | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--3ds443g | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--55qw42g | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--55qx5d | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--5tzm5g | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--6frz82g | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--6qq986b3xl | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--8y0a063a | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--9et52u | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--9krt00a | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--cckwcxetd | 2 | Amazon |
+| xn--czr694b | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--czrs0t | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--czru2d | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--fiq228c5hs | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--fiq64b | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--fiqs8s | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--fiqz9s | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--fjq720a | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--g2xx48c | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--hxt814e | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--imr513n | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--io0a7i | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--jlq480n2rg | 2 | Amazon |
+| xn--kput3i | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--nyqy26a | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--otu796d | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--rhqv96g | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--ses554g | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--unup4y | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--vhquv | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--vuq861b | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--xhq521b | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| xn--zfr164b | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| yamaxun | 2 | Amazon |
+| yandex | 2 | Yandex |
+| youtube | 6 | GlobalMedia, YouTube |
+| yun | 17 | ChinaMax, ChinaMaxNoIP, ChinaMaxNoMedia, ChinaTest |
+| zappos | 2 | Amazon |
 
 ## Known shared-hosting, dynamic-DNS, and URL-shortener suffixes
 

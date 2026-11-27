@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 13:16 UTC",
+  "generated_utc": "2026-11-27 13:17 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 821,
@@ -12,6 +12,7 @@
     "duplicate_rule_lines": 0,
     "domain_rule_count": 2690635,
     "bare_public_tld_suffix_rule_occurrences": 894,
+    "bare_public_tld_suffixes_found": 78,
     "personal_files_seen_not_modified": 3,
     "bank_payment_app_folders_found": 0,
     "finance_app_review_candidates": 0,
@@ -3705,6 +3706,2793 @@
       ]
     }
   ],
+  "bare_public_tld_suffix_matches": [
+    {
+      "suffix": "alibaba",
+      "rule_occurrences": 21,
+      "folders": [
+        "Alibaba",
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "Alibaba/Alibaba.list",
+        "Alibaba/Alibaba_All.list",
+        "Alibaba/Alibaba_All_No_Resolve.list",
+        "Alibaba/Alibaba_Resolve.list",
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "Alibaba/Alibaba.list:10: DOMAIN-SUFFIX,alibaba",
+        "Alibaba/Alibaba_All.list:34: DOMAIN-SUFFIX,alibaba",
+        "Alibaba/Alibaba_All_No_Resolve.list:34: DOMAIN-SUFFIX,alibaba",
+        "Alibaba/Alibaba_Resolve.list:10: DOMAIN-SUFFIX,alibaba",
+        "ChinaMax/ChinaMax.list:16: DOMAIN-SUFFIX,alibaba",
+        "ChinaMax/ChinaMax_All.list:14826: DOMAIN-SUFFIX,alibaba",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:14826: DOMAIN-SUFFIX,alibaba",
+        "ChinaMax/ChinaMax_No_IPv6.list:15: DOMAIN-SUFFIX,alibaba",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:15: DOMAIN-SUFFIX,alibaba",
+        "ChinaMax/ChinaMax_Resolve.list:16: DOMAIN-SUFFIX,alibaba",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:13: DOMAIN-SUFFIX,alibaba",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:14764: DOMAIN-SUFFIX,alibaba",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:14764: DOMAIN-SUFFIX,alibaba",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:16: DOMAIN-SUFFIX,alibaba",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:14672: DOMAIN-SUFFIX,alibaba",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:14672: DOMAIN-SUFFIX,alibaba",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:16: DOMAIN-SUFFIX,alibaba",
+        "ChinaTest/ChinaTest.list:14: DOMAIN-SUFFIX,alibaba",
+        "ChinaTest/ChinaTest_All.list:14359: DOMAIN-SUFFIX,alibaba",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:14359: DOMAIN-SUFFIX,alibaba"
+      ]
+    },
+    {
+      "suffix": "alipay",
+      "rule_occurrences": 10,
+      "folders": [
+        "ChinaMax",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:17: DOMAIN-SUFFIX,alipay",
+        "ChinaMax/ChinaMax_All.list:14885: DOMAIN-SUFFIX,alipay",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:14885: DOMAIN-SUFFIX,alipay",
+        "ChinaMax/ChinaMax_No_IPv6.list:16: DOMAIN-SUFFIX,alipay",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:16: DOMAIN-SUFFIX,alipay",
+        "ChinaMax/ChinaMax_Resolve.list:17: DOMAIN-SUFFIX,alipay",
+        "ChinaTest/ChinaTest.list:15: DOMAIN-SUFFIX,alipay",
+        "ChinaTest/ChinaTest_All.list:14418: DOMAIN-SUFFIX,alipay",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:14418: DOMAIN-SUFFIX,alipay",
+        "ChinaTest/ChinaTest_Resolve.list:15: DOMAIN-SUFFIX,alipay"
+      ]
+    },
+    {
+      "suffix": "amazon",
+      "rule_occurrences": 2,
+      "folders": [
+        "Amazon"
+      ],
+      "files": [
+        "Amazon/Amazon.list",
+        "Amazon/Amazon_Resolve.list"
+      ],
+      "examples": [
+        "Amazon/Amazon.list:37: DOMAIN-SUFFIX,amazon",
+        "Amazon/Amazon_Resolve.list:37: DOMAIN-SUFFIX,amazon"
+      ]
+    },
+    {
+      "suffix": "anquan",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:18: DOMAIN-SUFFIX,anquan",
+        "ChinaMax/ChinaMax_All.list:15483: DOMAIN-SUFFIX,anquan",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:15483: DOMAIN-SUFFIX,anquan",
+        "ChinaMax/ChinaMax_No_IPv6.list:17: DOMAIN-SUFFIX,anquan",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:17: DOMAIN-SUFFIX,anquan",
+        "ChinaMax/ChinaMax_Resolve.list:18: DOMAIN-SUFFIX,anquan",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:14: DOMAIN-SUFFIX,anquan",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:15269: DOMAIN-SUFFIX,anquan",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:15269: DOMAIN-SUFFIX,anquan",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:17: DOMAIN-SUFFIX,anquan",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:15177: DOMAIN-SUFFIX,anquan",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:15177: DOMAIN-SUFFIX,anquan",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:17: DOMAIN-SUFFIX,anquan",
+        "ChinaTest/ChinaTest.list:16: DOMAIN-SUFFIX,anquan",
+        "ChinaTest/ChinaTest_All.list:15018: DOMAIN-SUFFIX,anquan",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:15018: DOMAIN-SUFFIX,anquan",
+        "ChinaTest/ChinaTest_Resolve.list:16: DOMAIN-SUFFIX,anquan"
+      ]
+    },
+    {
+      "suffix": "aws",
+      "rule_occurrences": 2,
+      "folders": [
+        "Amazon"
+      ],
+      "files": [
+        "Amazon/Amazon.list",
+        "Amazon/Amazon_Resolve.list"
+      ],
+      "examples": [
+        "Amazon/Amazon.list:119: DOMAIN-SUFFIX,aws",
+        "Amazon/Amazon_Resolve.list:119: DOMAIN-SUFFIX,aws"
+      ]
+    },
+    {
+      "suffix": "azure",
+      "rule_occurrences": 1,
+      "folders": [
+        "Microsoft"
+      ],
+      "files": [
+        "Microsoft/Microsoft.list"
+      ],
+      "examples": [
+        "Microsoft/Microsoft.list:46: DOMAIN-SUFFIX,azure"
+      ]
+    },
+    {
+      "suffix": "baidu",
+      "rule_occurrences": 10,
+      "folders": [
+        "ChinaMax",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:19: DOMAIN-SUFFIX,baidu",
+        "ChinaMax/ChinaMax_All.list:17117: DOMAIN-SUFFIX,baidu",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:17117: DOMAIN-SUFFIX,baidu",
+        "ChinaMax/ChinaMax_No_IPv6.list:18: DOMAIN-SUFFIX,baidu",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:18: DOMAIN-SUFFIX,baidu",
+        "ChinaMax/ChinaMax_Resolve.list:19: DOMAIN-SUFFIX,baidu",
+        "ChinaTest/ChinaTest.list:17: DOMAIN-SUFFIX,baidu",
+        "ChinaTest/ChinaTest_All.list:16674: DOMAIN-SUFFIX,baidu",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:16674: DOMAIN-SUFFIX,baidu",
+        "ChinaTest/ChinaTest_Resolve.list:17: DOMAIN-SUFFIX,baidu"
+      ]
+    },
+    {
+      "suffix": "bbc",
+      "rule_occurrences": 2,
+      "folders": [
+        "BBC",
+        "UKMedia"
+      ],
+      "files": [
+        "BBC/BBC.list",
+        "UKMedia/UKMedia.list"
+      ],
+      "examples": [
+        "BBC/BBC.list:21: DOMAIN-SUFFIX,bbc",
+        "UKMedia/UKMedia.list:17: DOMAIN-SUFFIX,bbc"
+      ]
+    },
+    {
+      "suffix": "bing",
+      "rule_occurrences": 1,
+      "folders": [
+        "Microsoft"
+      ],
+      "files": [
+        "Microsoft/Microsoft.list"
+      ],
+      "examples": [
+        "Microsoft/Microsoft.list:117: DOMAIN-SUFFIX,bing"
+      ]
+    },
+    {
+      "suffix": "bmw",
+      "rule_occurrences": 1,
+      "folders": [
+        "BMW"
+      ],
+      "files": [
+        "BMW/BMW.list"
+      ],
+      "examples": [
+        "BMW/BMW.list:77: DOMAIN-SUFFIX,bmw"
+      ]
+    },
+    {
+      "suffix": "cisco",
+      "rule_occurrences": 1,
+      "folders": [
+        "Cisco"
+      ],
+      "files": [
+        "Cisco/Cisco.list"
+      ],
+      "examples": [
+        "Cisco/Cisco.list:20: DOMAIN-SUFFIX,cisco"
+      ]
+    },
+    {
+      "suffix": "citic",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:20: DOMAIN-SUFFIX,citic",
+        "ChinaMax/ChinaMax_All.list:25444: DOMAIN-SUFFIX,citic",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:25444: DOMAIN-SUFFIX,citic",
+        "ChinaMax/ChinaMax_No_IPv6.list:19: DOMAIN-SUFFIX,citic",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:19: DOMAIN-SUFFIX,citic",
+        "ChinaMax/ChinaMax_Resolve.list:20: DOMAIN-SUFFIX,citic",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:15: DOMAIN-SUFFIX,citic",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:25174: DOMAIN-SUFFIX,citic",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:25174: DOMAIN-SUFFIX,citic",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:18: DOMAIN-SUFFIX,citic",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:25087: DOMAIN-SUFFIX,citic",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:25087: DOMAIN-SUFFIX,citic",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:18: DOMAIN-SUFFIX,citic",
+        "ChinaTest/ChinaTest.list:18: DOMAIN-SUFFIX,citic",
+        "ChinaTest/ChinaTest_All.list:25095: DOMAIN-SUFFIX,citic",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:25095: DOMAIN-SUFFIX,citic",
+        "ChinaTest/ChinaTest_Resolve.list:18: DOMAIN-SUFFIX,citic"
+      ]
+    },
+    {
+      "suffix": "cn",
+      "rule_occurrences": 25,
+      "folders": [
+        "China",
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "China/China.list",
+        "China/China_All.list",
+        "China/China_All_No_Resolve.list",
+        "China/China_Resolve.list",
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaNoMedia/ChinaNoMedia.list",
+        "ChinaNoMedia/ChinaNoMedia_All.list",
+        "ChinaNoMedia/ChinaNoMedia_All_No_Resolve.list",
+        "ChinaNoMedia/ChinaNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "China/China.list:12: DOMAIN-SUFFIX,cn",
+        "China/China_All.list:969: DOMAIN-SUFFIX,cn",
+        "China/China_All_No_Resolve.list:969: DOMAIN-SUFFIX,cn",
+        "China/China_Resolve.list:12: DOMAIN-SUFFIX,cn",
+        "ChinaMax/ChinaMax.list:14: DOMAIN-SUFFIX,cn",
+        "ChinaMax/ChinaMax_All.list:1950: DOMAIN-SUFFIX,cn",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:1950: DOMAIN-SUFFIX,cn",
+        "ChinaMax/ChinaMax_No_IPv6.list:13: DOMAIN-SUFFIX,cn",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:13: DOMAIN-SUFFIX,cn",
+        "ChinaMax/ChinaMax_Resolve.list:14: DOMAIN-SUFFIX,cn",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:11: DOMAIN-SUFFIX,cn",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:1906: DOMAIN-SUFFIX,cn",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:1906: DOMAIN-SUFFIX,cn",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:14: DOMAIN-SUFFIX,cn",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:1864: DOMAIN-SUFFIX,cn",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:1864: DOMAIN-SUFFIX,cn",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:14: DOMAIN-SUFFIX,cn",
+        "ChinaNoMedia/ChinaNoMedia.list:12: DOMAIN-SUFFIX,cn",
+        "ChinaNoMedia/ChinaNoMedia_All.list:932: DOMAIN-SUFFIX,cn",
+        "ChinaNoMedia/ChinaNoMedia_All_No_Resolve.list:932: DOMAIN-SUFFIX,cn"
+      ]
+    },
+    {
+      "suffix": "fox",
+      "rule_occurrences": 1,
+      "folders": [
+        "Fox"
+      ],
+      "files": [
+        "Fox/Fox.list"
+      ],
+      "examples": [
+        "Fox/Fox.list:16: DOMAIN-SUFFIX,fox"
+      ]
+    },
+    {
+      "suffix": "google",
+      "rule_occurrences": 2,
+      "folders": [
+        "ProxyLite"
+      ],
+      "files": [
+        "ProxyLite/ProxyLite.list",
+        "ProxyLite/ProxyLite_Resolve.list"
+      ],
+      "examples": [
+        "ProxyLite/ProxyLite.list:320: DOMAIN-SUFFIX,google",
+        "ProxyLite/ProxyLite_Resolve.list:320: DOMAIN-SUFFIX,google"
+      ]
+    },
+    {
+      "suffix": "hotmail",
+      "rule_occurrences": 1,
+      "folders": [
+        "Microsoft"
+      ],
+      "files": [
+        "Microsoft/Microsoft.list"
+      ],
+      "examples": [
+        "Microsoft/Microsoft.list:222: DOMAIN-SUFFIX,hotmail"
+      ]
+    },
+    {
+      "suffix": "ibm",
+      "rule_occurrences": 1,
+      "folders": [
+        "IBM"
+      ],
+      "files": [
+        "IBM/IBM.list"
+      ],
+      "examples": [
+        "IBM/IBM.list:10: DOMAIN-SUFFIX,ibm"
+      ]
+    },
+    {
+      "suffix": "icbc",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:21: DOMAIN-SUFFIX,icbc",
+        "ChinaMax/ChinaMax_All.list:50893: DOMAIN-SUFFIX,icbc",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:50893: DOMAIN-SUFFIX,icbc",
+        "ChinaMax/ChinaMax_No_IPv6.list:20: DOMAIN-SUFFIX,icbc",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:20: DOMAIN-SUFFIX,icbc",
+        "ChinaMax/ChinaMax_Resolve.list:21: DOMAIN-SUFFIX,icbc",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:16: DOMAIN-SUFFIX,icbc",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:50612: DOMAIN-SUFFIX,icbc",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:50612: DOMAIN-SUFFIX,icbc",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:19: DOMAIN-SUFFIX,icbc",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:50523: DOMAIN-SUFFIX,icbc",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:50523: DOMAIN-SUFFIX,icbc",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:19: DOMAIN-SUFFIX,icbc",
+        "ChinaTest/ChinaTest.list:19: DOMAIN-SUFFIX,icbc",
+        "ChinaTest/ChinaTest_All.list:50820: DOMAIN-SUFFIX,icbc",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:50820: DOMAIN-SUFFIX,icbc",
+        "ChinaTest/ChinaTest_Resolve.list:19: DOMAIN-SUFFIX,icbc"
+      ]
+    },
+    {
+      "suffix": "imdb",
+      "rule_occurrences": 2,
+      "folders": [
+        "Amazon"
+      ],
+      "files": [
+        "Amazon/Amazon.list",
+        "Amazon/Amazon_Resolve.list"
+      ],
+      "examples": [
+        "Amazon/Amazon.list:146: DOMAIN-SUFFIX,imdb",
+        "Amazon/Amazon_Resolve.list:146: DOMAIN-SUFFIX,imdb"
+      ]
+    },
+    {
+      "suffix": "java",
+      "rule_occurrences": 1,
+      "folders": [
+        "Oracle"
+      ],
+      "files": [
+        "Oracle/Oracle.list"
+      ],
+      "examples": [
+        "Oracle/Oracle.list:21: DOMAIN-SUFFIX,java"
+      ]
+    },
+    {
+      "suffix": "kindle",
+      "rule_occurrences": 2,
+      "folders": [
+        "Amazon"
+      ],
+      "files": [
+        "Amazon/Amazon.list",
+        "Amazon/Amazon_Resolve.list"
+      ],
+      "examples": [
+        "Amazon/Amazon.list:149: DOMAIN-SUFFIX,kindle",
+        "Amazon/Amazon_Resolve.list:149: DOMAIN-SUFFIX,kindle"
+      ]
+    },
+    {
+      "suffix": "microsoft",
+      "rule_occurrences": 1,
+      "folders": [
+        "Microsoft"
+      ],
+      "files": [
+        "Microsoft/Microsoft.list"
+      ],
+      "examples": [
+        "Microsoft/Microsoft.list:276: DOMAIN-SUFFIX,microsoft"
+      ]
+    },
+    {
+      "suffix": "mini",
+      "rule_occurrences": 1,
+      "folders": [
+        "BMW"
+      ],
+      "files": [
+        "BMW/BMW.list"
+      ],
+      "examples": [
+        "BMW/BMW.list:494: DOMAIN-SUFFIX,mini"
+      ]
+    },
+    {
+      "suffix": "mit",
+      "rule_occurrences": 1,
+      "folders": [
+        "GlobalScholar"
+      ],
+      "files": [
+        "GlobalScholar/GlobalScholar.list"
+      ],
+      "examples": [
+        "GlobalScholar/GlobalScholar.list:136: DOMAIN-SUFFIX,mit"
+      ]
+    },
+    {
+      "suffix": "ms",
+      "rule_occurrences": 25,
+      "folders": [
+        "China",
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "China/China.list",
+        "China/China_All.list",
+        "China/China_All_No_Resolve.list",
+        "China/China_Resolve.list",
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaNoMedia/ChinaNoMedia.list",
+        "ChinaNoMedia/ChinaNoMedia_All.list",
+        "ChinaNoMedia/ChinaNoMedia_All_No_Resolve.list",
+        "ChinaNoMedia/ChinaNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "China/China.list:13: DOMAIN-SUFFIX,ms",
+        "China/China_All.list:2373: DOMAIN-SUFFIX,ms",
+        "China/China_All_No_Resolve.list:2373: DOMAIN-SUFFIX,ms",
+        "China/China_Resolve.list:13: DOMAIN-SUFFIX,ms",
+        "ChinaMax/ChinaMax.list:15: DOMAIN-SUFFIX,ms",
+        "ChinaMax/ChinaMax_All.list:3281: DOMAIN-SUFFIX,ms",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:3281: DOMAIN-SUFFIX,ms",
+        "ChinaMax/ChinaMax_No_IPv6.list:14: DOMAIN-SUFFIX,ms",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:14: DOMAIN-SUFFIX,ms",
+        "ChinaMax/ChinaMax_Resolve.list:15: DOMAIN-SUFFIX,ms",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:12: DOMAIN-SUFFIX,ms",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:3234: DOMAIN-SUFFIX,ms",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:3234: DOMAIN-SUFFIX,ms",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:15: DOMAIN-SUFFIX,ms",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:3179: DOMAIN-SUFFIX,ms",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:3179: DOMAIN-SUFFIX,ms",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:15: DOMAIN-SUFFIX,ms",
+        "ChinaNoMedia/ChinaNoMedia.list:13: DOMAIN-SUFFIX,ms",
+        "ChinaNoMedia/ChinaNoMedia_All.list:2310: DOMAIN-SUFFIX,ms",
+        "ChinaNoMedia/ChinaNoMedia_All_No_Resolve.list:2310: DOMAIN-SUFFIX,ms"
+      ]
+    },
+    {
+      "suffix": "office",
+      "rule_occurrences": 1,
+      "folders": [
+        "Microsoft"
+      ],
+      "files": [
+        "Microsoft/Microsoft.list"
+      ],
+      "examples": [
+        "Microsoft/Microsoft.list:491: DOMAIN-SUFFIX,office"
+      ]
+    },
+    {
+      "suffix": "oracle",
+      "rule_occurrences": 1,
+      "folders": [
+        "Oracle"
+      ],
+      "files": [
+        "Oracle/Oracle.list"
+      ],
+      "examples": [
+        "Oracle/Oracle.list:24: DOMAIN-SUFFIX,oracle"
+      ]
+    },
+    {
+      "suffix": "shouji",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:22: DOMAIN-SUFFIX,shouji",
+        "ChinaMax/ChinaMax_All.list:80872: DOMAIN-SUFFIX,shouji",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:80872: DOMAIN-SUFFIX,shouji",
+        "ChinaMax/ChinaMax_No_IPv6.list:21: DOMAIN-SUFFIX,shouji",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:21: DOMAIN-SUFFIX,shouji",
+        "ChinaMax/ChinaMax_Resolve.list:22: DOMAIN-SUFFIX,shouji",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:17: DOMAIN-SUFFIX,shouji",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:80574: DOMAIN-SUFFIX,shouji",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:80574: DOMAIN-SUFFIX,shouji",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:20: DOMAIN-SUFFIX,shouji",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:80485: DOMAIN-SUFFIX,shouji",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:80485: DOMAIN-SUFFIX,shouji",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:20: DOMAIN-SUFFIX,shouji",
+        "ChinaTest/ChinaTest.list:20: DOMAIN-SUFFIX,shouji",
+        "ChinaTest/ChinaTest_All.list:81217: DOMAIN-SUFFIX,shouji",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:81217: DOMAIN-SUFFIX,shouji",
+        "ChinaTest/ChinaTest_Resolve.list:20: DOMAIN-SUFFIX,shouji"
+      ]
+    },
+    {
+      "suffix": "sina",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:23: DOMAIN-SUFFIX,sina",
+        "ChinaMax/ChinaMax_All.list:81739: DOMAIN-SUFFIX,sina",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:81739: DOMAIN-SUFFIX,sina",
+        "ChinaMax/ChinaMax_No_IPv6.list:22: DOMAIN-SUFFIX,sina",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:22: DOMAIN-SUFFIX,sina",
+        "ChinaMax/ChinaMax_Resolve.list:23: DOMAIN-SUFFIX,sina",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:18: DOMAIN-SUFFIX,sina",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:81441: DOMAIN-SUFFIX,sina",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:81441: DOMAIN-SUFFIX,sina",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:21: DOMAIN-SUFFIX,sina",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:81352: DOMAIN-SUFFIX,sina",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:81352: DOMAIN-SUFFIX,sina",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:21: DOMAIN-SUFFIX,sina",
+        "ChinaTest/ChinaTest.list:21: DOMAIN-SUFFIX,sina",
+        "ChinaTest/ChinaTest_All.list:82094: DOMAIN-SUFFIX,sina",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:82094: DOMAIN-SUFFIX,sina",
+        "ChinaTest/ChinaTest_Resolve.list:21: DOMAIN-SUFFIX,sina"
+      ]
+    },
+    {
+      "suffix": "skype",
+      "rule_occurrences": 1,
+      "folders": [
+        "Microsoft"
+      ],
+      "files": [
+        "Microsoft/Microsoft.list"
+      ],
+      "examples": [
+        "Microsoft/Microsoft.list:564: DOMAIN-SUFFIX,skype"
+      ]
+    },
+    {
+      "suffix": "sohu",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:24: DOMAIN-SUFFIX,sohu",
+        "ChinaMax/ChinaMax_All.list:82857: DOMAIN-SUFFIX,sohu",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:82857: DOMAIN-SUFFIX,sohu",
+        "ChinaMax/ChinaMax_No_IPv6.list:23: DOMAIN-SUFFIX,sohu",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:23: DOMAIN-SUFFIX,sohu",
+        "ChinaMax/ChinaMax_Resolve.list:24: DOMAIN-SUFFIX,sohu",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:19: DOMAIN-SUFFIX,sohu",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:82558: DOMAIN-SUFFIX,sohu",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:82558: DOMAIN-SUFFIX,sohu",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:22: DOMAIN-SUFFIX,sohu",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:82469: DOMAIN-SUFFIX,sohu",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:82469: DOMAIN-SUFFIX,sohu",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:22: DOMAIN-SUFFIX,sohu",
+        "ChinaTest/ChinaTest.list:22: DOMAIN-SUFFIX,sohu",
+        "ChinaTest/ChinaTest_All.list:83226: DOMAIN-SUFFIX,sohu",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:83226: DOMAIN-SUFFIX,sohu",
+        "ChinaTest/ChinaTest_Resolve.list:22: DOMAIN-SUFFIX,sohu"
+      ]
+    },
+    {
+      "suffix": "taobao",
+      "rule_occurrences": 14,
+      "folders": [
+        "Alibaba",
+        "ChinaMax",
+        "ChinaTest"
+      ],
+      "files": [
+        "Alibaba/Alibaba.list",
+        "Alibaba/Alibaba_All.list",
+        "Alibaba/Alibaba_All_No_Resolve.list",
+        "Alibaba/Alibaba_Resolve.list",
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "Alibaba/Alibaba.list:11: DOMAIN-SUFFIX,taobao",
+        "Alibaba/Alibaba_All.list:1122: DOMAIN-SUFFIX,taobao",
+        "Alibaba/Alibaba_All_No_Resolve.list:1122: DOMAIN-SUFFIX,taobao",
+        "Alibaba/Alibaba_Resolve.list:11: DOMAIN-SUFFIX,taobao",
+        "ChinaMax/ChinaMax.list:25: DOMAIN-SUFFIX,taobao",
+        "ChinaMax/ChinaMax_All.list:86187: DOMAIN-SUFFIX,taobao",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:86187: DOMAIN-SUFFIX,taobao",
+        "ChinaMax/ChinaMax_No_IPv6.list:24: DOMAIN-SUFFIX,taobao",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:24: DOMAIN-SUFFIX,taobao",
+        "ChinaMax/ChinaMax_Resolve.list:25: DOMAIN-SUFFIX,taobao",
+        "ChinaTest/ChinaTest.list:23: DOMAIN-SUFFIX,taobao",
+        "ChinaTest/ChinaTest_All.list:86587: DOMAIN-SUFFIX,taobao",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:86587: DOMAIN-SUFFIX,taobao",
+        "ChinaTest/ChinaTest_Resolve.list:23: DOMAIN-SUFFIX,taobao"
+      ]
+    },
+    {
+      "suffix": "tmall",
+      "rule_occurrences": 21,
+      "folders": [
+        "Alibaba",
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "Alibaba/Alibaba.list",
+        "Alibaba/Alibaba_All.list",
+        "Alibaba/Alibaba_All_No_Resolve.list",
+        "Alibaba/Alibaba_Resolve.list",
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "Alibaba/Alibaba.list:12: DOMAIN-SUFFIX,tmall",
+        "Alibaba/Alibaba_All.list:1158: DOMAIN-SUFFIX,tmall",
+        "Alibaba/Alibaba_All_No_Resolve.list:1158: DOMAIN-SUFFIX,tmall",
+        "Alibaba/Alibaba_Resolve.list:12: DOMAIN-SUFFIX,tmall",
+        "ChinaMax/ChinaMax.list:26: DOMAIN-SUFFIX,tmall",
+        "ChinaMax/ChinaMax_All.list:88181: DOMAIN-SUFFIX,tmall",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:88181: DOMAIN-SUFFIX,tmall",
+        "ChinaMax/ChinaMax_No_IPv6.list:25: DOMAIN-SUFFIX,tmall",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:25: DOMAIN-SUFFIX,tmall",
+        "ChinaMax/ChinaMax_Resolve.list:26: DOMAIN-SUFFIX,tmall",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:20: DOMAIN-SUFFIX,tmall",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:87874: DOMAIN-SUFFIX,tmall",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:87874: DOMAIN-SUFFIX,tmall",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:23: DOMAIN-SUFFIX,tmall",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:87784: DOMAIN-SUFFIX,tmall",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:87784: DOMAIN-SUFFIX,tmall",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:23: DOMAIN-SUFFIX,tmall",
+        "ChinaTest/ChinaTest.list:24: DOMAIN-SUFFIX,tmall",
+        "ChinaTest/ChinaTest_All.list:88621: DOMAIN-SUFFIX,tmall",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:88621: DOMAIN-SUFFIX,tmall"
+      ]
+    },
+    {
+      "suffix": "unicom",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:27: DOMAIN-SUFFIX,unicom",
+        "ChinaMax/ChinaMax_All.list:90333: DOMAIN-SUFFIX,unicom",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:90333: DOMAIN-SUFFIX,unicom",
+        "ChinaMax/ChinaMax_No_IPv6.list:26: DOMAIN-SUFFIX,unicom",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:26: DOMAIN-SUFFIX,unicom",
+        "ChinaMax/ChinaMax_Resolve.list:27: DOMAIN-SUFFIX,unicom",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:21: DOMAIN-SUFFIX,unicom",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:90025: DOMAIN-SUFFIX,unicom",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:90025: DOMAIN-SUFFIX,unicom",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:24: DOMAIN-SUFFIX,unicom",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:89935: DOMAIN-SUFFIX,unicom",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:89935: DOMAIN-SUFFIX,unicom",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:24: DOMAIN-SUFFIX,unicom",
+        "ChinaTest/ChinaTest.list:25: DOMAIN-SUFFIX,unicom",
+        "ChinaTest/ChinaTest_All.list:90823: DOMAIN-SUFFIX,unicom",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:90823: DOMAIN-SUFFIX,unicom",
+        "ChinaTest/ChinaTest_Resolve.list:25: DOMAIN-SUFFIX,unicom"
+      ]
+    },
+    {
+      "suffix": "wang",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:28: DOMAIN-SUFFIX,wang",
+        "ChinaMax/ChinaMax_All.list:92173: DOMAIN-SUFFIX,wang",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:92173: DOMAIN-SUFFIX,wang",
+        "ChinaMax/ChinaMax_No_IPv6.list:27: DOMAIN-SUFFIX,wang",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:27: DOMAIN-SUFFIX,wang",
+        "ChinaMax/ChinaMax_Resolve.list:28: DOMAIN-SUFFIX,wang",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:22: DOMAIN-SUFFIX,wang",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:91863: DOMAIN-SUFFIX,wang",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:91863: DOMAIN-SUFFIX,wang",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:25: DOMAIN-SUFFIX,wang",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:91773: DOMAIN-SUFFIX,wang",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:91773: DOMAIN-SUFFIX,wang",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:25: DOMAIN-SUFFIX,wang",
+        "ChinaTest/ChinaTest.list:26: DOMAIN-SUFFIX,wang",
+        "ChinaTest/ChinaTest_All.list:92712: DOMAIN-SUFFIX,wang",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:92712: DOMAIN-SUFFIX,wang",
+        "ChinaTest/ChinaTest_Resolve.list:26: DOMAIN-SUFFIX,wang"
+      ]
+    },
+    {
+      "suffix": "weatherchannel",
+      "rule_occurrences": 1,
+      "folders": [
+        "IBM"
+      ],
+      "files": [
+        "IBM/IBM.list"
+      ],
+      "examples": [
+        "IBM/IBM.list:18: DOMAIN-SUFFIX,weatherchannel"
+      ]
+    },
+    {
+      "suffix": "weibo",
+      "rule_occurrences": 10,
+      "folders": [
+        "ChinaMax",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:29: DOMAIN-SUFFIX,weibo",
+        "ChinaMax/ChinaMax_All.list:92879: DOMAIN-SUFFIX,weibo",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:92879: DOMAIN-SUFFIX,weibo",
+        "ChinaMax/ChinaMax_No_IPv6.list:28: DOMAIN-SUFFIX,weibo",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:28: DOMAIN-SUFFIX,weibo",
+        "ChinaMax/ChinaMax_Resolve.list:29: DOMAIN-SUFFIX,weibo",
+        "ChinaTest/ChinaTest.list:27: DOMAIN-SUFFIX,weibo",
+        "ChinaTest/ChinaTest_All.list:93428: DOMAIN-SUFFIX,weibo",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:93428: DOMAIN-SUFFIX,weibo",
+        "ChinaTest/ChinaTest_Resolve.list:27: DOMAIN-SUFFIX,weibo"
+      ]
+    },
+    {
+      "suffix": "windows",
+      "rule_occurrences": 1,
+      "folders": [
+        "Microsoft"
+      ],
+      "files": [
+        "Microsoft/Microsoft.list"
+      ],
+      "examples": [
+        "Microsoft/Microsoft.list:622: DOMAIN-SUFFIX,windows"
+      ]
+    },
+    {
+      "suffix": "xn--1qqw23a",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:30: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaMax/ChinaMax_All.list:98585: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98585: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaMax/ChinaMax_No_IPv6.list:29: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:29: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaMax/ChinaMax_Resolve.list:30: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:23: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98260: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98260: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:26: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98169: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98169: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:26: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaTest/ChinaTest.list:28: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaTest/ChinaTest_All.list:99209: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99209: DOMAIN-SUFFIX,xn--1qqw23a",
+        "ChinaTest/ChinaTest_Resolve.list:28: DOMAIN-SUFFIX,xn--1qqw23a"
+      ]
+    },
+    {
+      "suffix": "xn--3bst00m",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:31: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaMax/ChinaMax_All.list:98594: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98594: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaMax/ChinaMax_No_IPv6.list:30: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:30: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaMax/ChinaMax_Resolve.list:31: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:24: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98269: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98269: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:27: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98178: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98178: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:27: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaTest/ChinaTest.list:29: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaTest/ChinaTest_All.list:99218: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99218: DOMAIN-SUFFIX,xn--3bst00m",
+        "ChinaTest/ChinaTest_Resolve.list:29: DOMAIN-SUFFIX,xn--3bst00m"
+      ]
+    },
+    {
+      "suffix": "xn--3ds443g",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:32: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaMax/ChinaMax_All.list:98597: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98597: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaMax/ChinaMax_No_IPv6.list:31: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:31: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaMax/ChinaMax_Resolve.list:32: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:25: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98272: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98272: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:28: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98181: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98181: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:28: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaTest/ChinaTest.list:30: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaTest/ChinaTest_All.list:99221: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99221: DOMAIN-SUFFIX,xn--3ds443g",
+        "ChinaTest/ChinaTest_Resolve.list:30: DOMAIN-SUFFIX,xn--3ds443g"
+      ]
+    },
+    {
+      "suffix": "xn--55qw42g",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:33: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaMax/ChinaMax_All.list:98607: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98607: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaMax/ChinaMax_No_IPv6.list:32: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:32: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaMax/ChinaMax_Resolve.list:33: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:26: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98282: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98282: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:29: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98191: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98191: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:29: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaTest/ChinaTest.list:31: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaTest/ChinaTest_All.list:99231: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99231: DOMAIN-SUFFIX,xn--55qw42g",
+        "ChinaTest/ChinaTest_Resolve.list:31: DOMAIN-SUFFIX,xn--55qw42g"
+      ]
+    },
+    {
+      "suffix": "xn--55qx5d",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:34: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaMax/ChinaMax_All.list:98610: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98610: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaMax/ChinaMax_No_IPv6.list:33: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:33: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaMax/ChinaMax_Resolve.list:34: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:27: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98285: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98285: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:30: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98194: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98194: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:30: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaTest/ChinaTest.list:32: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaTest/ChinaTest_All.list:99234: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99234: DOMAIN-SUFFIX,xn--55qx5d",
+        "ChinaTest/ChinaTest_Resolve.list:32: DOMAIN-SUFFIX,xn--55qx5d"
+      ]
+    },
+    {
+      "suffix": "xn--5tzm5g",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:35: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaMax/ChinaMax_All.list:98613: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98613: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaMax/ChinaMax_No_IPv6.list:34: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:34: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaMax/ChinaMax_Resolve.list:35: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:28: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98288: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98288: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:31: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98197: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98197: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:31: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaTest/ChinaTest.list:33: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaTest/ChinaTest_All.list:99237: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99237: DOMAIN-SUFFIX,xn--5tzm5g",
+        "ChinaTest/ChinaTest_Resolve.list:33: DOMAIN-SUFFIX,xn--5tzm5g"
+      ]
+    },
+    {
+      "suffix": "xn--6frz82g",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:36: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaMax/ChinaMax_All.list:98616: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98616: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaMax/ChinaMax_No_IPv6.list:35: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:35: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaMax/ChinaMax_Resolve.list:36: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:29: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98291: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98291: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:32: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98200: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98200: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:32: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaTest/ChinaTest.list:34: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaTest/ChinaTest_All.list:99240: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99240: DOMAIN-SUFFIX,xn--6frz82g",
+        "ChinaTest/ChinaTest_Resolve.list:34: DOMAIN-SUFFIX,xn--6frz82g"
+      ]
+    },
+    {
+      "suffix": "xn--6qq986b3xl",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:37: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaMax/ChinaMax_All.list:98620: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98620: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaMax/ChinaMax_No_IPv6.list:36: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:36: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaMax/ChinaMax_Resolve.list:37: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:30: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98295: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98295: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:33: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98204: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98204: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:33: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaTest/ChinaTest.list:35: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaTest/ChinaTest_All.list:99244: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99244: DOMAIN-SUFFIX,xn--6qq986b3xl",
+        "ChinaTest/ChinaTest_Resolve.list:35: DOMAIN-SUFFIX,xn--6qq986b3xl"
+      ]
+    },
+    {
+      "suffix": "xn--8y0a063a",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:38: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaMax/ChinaMax_All.list:98632: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98632: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaMax/ChinaMax_No_IPv6.list:37: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:37: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaMax/ChinaMax_Resolve.list:38: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:31: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98307: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98307: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:34: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98216: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98216: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:34: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaTest/ChinaTest.list:36: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaTest/ChinaTest_All.list:99256: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99256: DOMAIN-SUFFIX,xn--8y0a063a",
+        "ChinaTest/ChinaTest_Resolve.list:36: DOMAIN-SUFFIX,xn--8y0a063a"
+      ]
+    },
+    {
+      "suffix": "xn--9et52u",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:39: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaMax/ChinaMax_All.list:98634: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98634: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaMax/ChinaMax_No_IPv6.list:38: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:38: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaMax/ChinaMax_Resolve.list:39: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:32: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98309: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98309: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:35: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98218: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98218: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:35: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaTest/ChinaTest.list:37: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaTest/ChinaTest_All.list:99258: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99258: DOMAIN-SUFFIX,xn--9et52u",
+        "ChinaTest/ChinaTest_Resolve.list:37: DOMAIN-SUFFIX,xn--9et52u"
+      ]
+    },
+    {
+      "suffix": "xn--9krt00a",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:40: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaMax/ChinaMax_All.list:98636: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98636: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaMax/ChinaMax_No_IPv6.list:39: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:39: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaMax/ChinaMax_Resolve.list:40: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:33: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98311: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98311: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:36: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98220: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98220: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:36: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaTest/ChinaTest.list:38: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaTest/ChinaTest_All.list:99260: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99260: DOMAIN-SUFFIX,xn--9krt00a",
+        "ChinaTest/ChinaTest_Resolve.list:38: DOMAIN-SUFFIX,xn--9krt00a"
+      ]
+    },
+    {
+      "suffix": "xn--cckwcxetd",
+      "rule_occurrences": 2,
+      "folders": [
+        "Amazon"
+      ],
+      "files": [
+        "Amazon/Amazon.list",
+        "Amazon/Amazon_Resolve.list"
+      ],
+      "examples": [
+        "Amazon/Amazon.list:194: DOMAIN-SUFFIX,xn--cckwcxetd",
+        "Amazon/Amazon_Resolve.list:194: DOMAIN-SUFFIX,xn--cckwcxetd"
+      ]
+    },
+    {
+      "suffix": "xn--czr694b",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:41: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaMax/ChinaMax_All.list:98652: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98652: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaMax/ChinaMax_No_IPv6.list:40: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:40: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaMax/ChinaMax_Resolve.list:41: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:34: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98327: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98327: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:37: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98236: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98236: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:37: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaTest/ChinaTest.list:39: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaTest/ChinaTest_All.list:99276: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99276: DOMAIN-SUFFIX,xn--czr694b",
+        "ChinaTest/ChinaTest_Resolve.list:39: DOMAIN-SUFFIX,xn--czr694b"
+      ]
+    },
+    {
+      "suffix": "xn--czrs0t",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:42: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaMax/ChinaMax_All.list:98653: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98653: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaMax/ChinaMax_No_IPv6.list:41: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:41: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaMax/ChinaMax_Resolve.list:42: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:35: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98328: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98328: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:38: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98237: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98237: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:38: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaTest/ChinaTest.list:40: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaTest/ChinaTest_All.list:99277: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99277: DOMAIN-SUFFIX,xn--czrs0t",
+        "ChinaTest/ChinaTest_Resolve.list:40: DOMAIN-SUFFIX,xn--czrs0t"
+      ]
+    },
+    {
+      "suffix": "xn--czru2d",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:43: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaMax/ChinaMax_All.list:98654: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98654: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaMax/ChinaMax_No_IPv6.list:42: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:42: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaMax/ChinaMax_Resolve.list:43: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:36: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98329: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98329: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:39: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98238: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98238: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:39: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaTest/ChinaTest.list:41: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaTest/ChinaTest_All.list:99278: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99278: DOMAIN-SUFFIX,xn--czru2d",
+        "ChinaTest/ChinaTest_Resolve.list:41: DOMAIN-SUFFIX,xn--czru2d"
+      ]
+    },
+    {
+      "suffix": "xn--fiq228c5hs",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:44: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaMax/ChinaMax_All.list:98669: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98669: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaMax/ChinaMax_No_IPv6.list:43: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:43: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaMax/ChinaMax_Resolve.list:44: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:37: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98344: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98344: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:40: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98253: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98253: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:40: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaTest/ChinaTest.list:42: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaTest/ChinaTest_All.list:99293: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99293: DOMAIN-SUFFIX,xn--fiq228c5hs",
+        "ChinaTest/ChinaTest_Resolve.list:42: DOMAIN-SUFFIX,xn--fiq228c5hs"
+      ]
+    },
+    {
+      "suffix": "xn--fiq64b",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:45: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaMax/ChinaMax_All.list:98671: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98671: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaMax/ChinaMax_No_IPv6.list:44: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:44: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaMax/ChinaMax_Resolve.list:45: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:38: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98346: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98346: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:41: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98255: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98255: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:41: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaTest/ChinaTest.list:43: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaTest/ChinaTest_All.list:99295: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99295: DOMAIN-SUFFIX,xn--fiq64b",
+        "ChinaTest/ChinaTest_Resolve.list:43: DOMAIN-SUFFIX,xn--fiq64b"
+      ]
+    },
+    {
+      "suffix": "xn--fiqs8s",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:46: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaMax/ChinaMax_All.list:98675: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98675: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaMax/ChinaMax_No_IPv6.list:45: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:45: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaMax/ChinaMax_Resolve.list:46: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:39: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98350: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98350: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:42: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98259: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98259: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:42: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaTest/ChinaTest.list:44: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaTest/ChinaTest_All.list:99299: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99299: DOMAIN-SUFFIX,xn--fiqs8s",
+        "ChinaTest/ChinaTest_Resolve.list:44: DOMAIN-SUFFIX,xn--fiqs8s"
+      ]
+    },
+    {
+      "suffix": "xn--fiqz9s",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:47: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaMax/ChinaMax_All.list:98680: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98680: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaMax/ChinaMax_No_IPv6.list:46: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:46: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaMax/ChinaMax_Resolve.list:47: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:40: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98355: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98355: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:43: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98264: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98264: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:43: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaTest/ChinaTest.list:45: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaTest/ChinaTest_All.list:99304: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99304: DOMAIN-SUFFIX,xn--fiqz9s",
+        "ChinaTest/ChinaTest_Resolve.list:45: DOMAIN-SUFFIX,xn--fiqz9s"
+      ]
+    },
+    {
+      "suffix": "xn--fjq720a",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:48: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaMax/ChinaMax_All.list:98682: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98682: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaMax/ChinaMax_No_IPv6.list:47: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:47: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaMax/ChinaMax_Resolve.list:48: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:41: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98357: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98357: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:44: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98266: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98266: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:44: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaTest/ChinaTest.list:46: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaTest/ChinaTest_All.list:99306: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99306: DOMAIN-SUFFIX,xn--fjq720a",
+        "ChinaTest/ChinaTest_Resolve.list:46: DOMAIN-SUFFIX,xn--fjq720a"
+      ]
+    },
+    {
+      "suffix": "xn--g2xx48c",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:49: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaMax/ChinaMax_All.list:98683: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98683: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaMax/ChinaMax_No_IPv6.list:48: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:48: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaMax/ChinaMax_Resolve.list:49: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:42: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98358: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98358: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:45: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98267: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98267: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:45: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaTest/ChinaTest.list:47: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaTest/ChinaTest_All.list:99307: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99307: DOMAIN-SUFFIX,xn--g2xx48c",
+        "ChinaTest/ChinaTest_Resolve.list:47: DOMAIN-SUFFIX,xn--g2xx48c"
+      ]
+    },
+    {
+      "suffix": "xn--hxt814e",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:50: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaMax/ChinaMax_All.list:98691: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98691: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaMax/ChinaMax_No_IPv6.list:49: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:49: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaMax/ChinaMax_Resolve.list:50: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:43: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98366: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98366: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:46: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98275: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98275: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:46: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaTest/ChinaTest.list:48: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaTest/ChinaTest_All.list:99316: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99316: DOMAIN-SUFFIX,xn--hxt814e",
+        "ChinaTest/ChinaTest_Resolve.list:48: DOMAIN-SUFFIX,xn--hxt814e"
+      ]
+    },
+    {
+      "suffix": "xn--imr513n",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:51: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaMax/ChinaMax_All.list:98696: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98696: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaMax/ChinaMax_No_IPv6.list:50: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:50: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaMax/ChinaMax_Resolve.list:51: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:44: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98371: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98371: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:47: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98280: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98280: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:47: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaTest/ChinaTest.list:49: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaTest/ChinaTest_All.list:99321: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99321: DOMAIN-SUFFIX,xn--imr513n",
+        "ChinaTest/ChinaTest_Resolve.list:49: DOMAIN-SUFFIX,xn--imr513n"
+      ]
+    },
+    {
+      "suffix": "xn--io0a7i",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:52: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaMax/ChinaMax_All.list:98697: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98697: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaMax/ChinaMax_No_IPv6.list:51: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:51: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaMax/ChinaMax_Resolve.list:52: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:45: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98372: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98372: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:48: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98281: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98281: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:48: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaTest/ChinaTest.list:50: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaTest/ChinaTest_All.list:99322: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99322: DOMAIN-SUFFIX,xn--io0a7i",
+        "ChinaTest/ChinaTest_Resolve.list:50: DOMAIN-SUFFIX,xn--io0a7i"
+      ]
+    },
+    {
+      "suffix": "xn--jlq480n2rg",
+      "rule_occurrences": 2,
+      "folders": [
+        "Amazon"
+      ],
+      "files": [
+        "Amazon/Amazon.list",
+        "Amazon/Amazon_Resolve.list"
+      ],
+      "examples": [
+        "Amazon/Amazon.list:195: DOMAIN-SUFFIX,xn--jlq480n2rg",
+        "Amazon/Amazon_Resolve.list:195: DOMAIN-SUFFIX,xn--jlq480n2rg"
+      ]
+    },
+    {
+      "suffix": "xn--kput3i",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:53: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaMax/ChinaMax_All.list:98705: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98705: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaMax/ChinaMax_No_IPv6.list:52: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:52: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaMax/ChinaMax_Resolve.list:53: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:46: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98380: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98380: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:49: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98289: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98289: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:49: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaTest/ChinaTest.list:51: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaTest/ChinaTest_All.list:99330: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99330: DOMAIN-SUFFIX,xn--kput3i",
+        "ChinaTest/ChinaTest_Resolve.list:51: DOMAIN-SUFFIX,xn--kput3i"
+      ]
+    },
+    {
+      "suffix": "xn--nyqy26a",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:54: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaMax/ChinaMax_All.list:98721: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98721: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaMax/ChinaMax_No_IPv6.list:53: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:53: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaMax/ChinaMax_Resolve.list:54: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:47: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98396: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98396: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:50: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98305: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98305: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:50: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaTest/ChinaTest.list:52: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaTest/ChinaTest_All.list:99346: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99346: DOMAIN-SUFFIX,xn--nyqy26a",
+        "ChinaTest/ChinaTest_Resolve.list:52: DOMAIN-SUFFIX,xn--nyqy26a"
+      ]
+    },
+    {
+      "suffix": "xn--otu796d",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:55: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaMax/ChinaMax_All.list:98723: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98723: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaMax/ChinaMax_No_IPv6.list:54: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:54: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaMax/ChinaMax_Resolve.list:55: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:48: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98398: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98398: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:51: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98307: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98307: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:51: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaTest/ChinaTest.list:53: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaTest/ChinaTest_All.list:99348: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99348: DOMAIN-SUFFIX,xn--otu796d",
+        "ChinaTest/ChinaTest_Resolve.list:53: DOMAIN-SUFFIX,xn--otu796d"
+      ]
+    },
+    {
+      "suffix": "xn--rhqv96g",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:56: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaMax/ChinaMax_All.list:98732: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98732: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaMax/ChinaMax_No_IPv6.list:55: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:55: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaMax/ChinaMax_Resolve.list:56: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:49: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98407: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98407: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:52: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98316: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98316: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:52: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaTest/ChinaTest.list:54: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaTest/ChinaTest_All.list:99357: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99357: DOMAIN-SUFFIX,xn--rhqv96g",
+        "ChinaTest/ChinaTest_Resolve.list:54: DOMAIN-SUFFIX,xn--rhqv96g"
+      ]
+    },
+    {
+      "suffix": "xn--ses554g",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:57: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaMax/ChinaMax_All.list:98742: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98742: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaMax/ChinaMax_No_IPv6.list:56: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:56: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaMax/ChinaMax_Resolve.list:57: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:50: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98417: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98417: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:53: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98326: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98326: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:53: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaTest/ChinaTest.list:55: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaTest/ChinaTest_All.list:99367: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99367: DOMAIN-SUFFIX,xn--ses554g",
+        "ChinaTest/ChinaTest_Resolve.list:55: DOMAIN-SUFFIX,xn--ses554g"
+      ]
+    },
+    {
+      "suffix": "xn--unup4y",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:58: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaMax/ChinaMax_All.list:98752: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98752: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaMax/ChinaMax_No_IPv6.list:57: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:57: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaMax/ChinaMax_Resolve.list:58: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:51: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98427: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98427: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:54: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98336: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98336: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:54: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaTest/ChinaTest.list:56: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaTest/ChinaTest_All.list:99377: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99377: DOMAIN-SUFFIX,xn--unup4y",
+        "ChinaTest/ChinaTest_Resolve.list:56: DOMAIN-SUFFIX,xn--unup4y"
+      ]
+    },
+    {
+      "suffix": "xn--vhquv",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:59: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaMax/ChinaMax_All.list:98761: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98761: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaMax/ChinaMax_No_IPv6.list:58: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:58: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaMax/ChinaMax_Resolve.list:59: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:52: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98436: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98436: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:55: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98345: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98345: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:55: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaTest/ChinaTest.list:57: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaTest/ChinaTest_All.list:99386: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99386: DOMAIN-SUFFIX,xn--vhquv",
+        "ChinaTest/ChinaTest_Resolve.list:57: DOMAIN-SUFFIX,xn--vhquv"
+      ]
+    },
+    {
+      "suffix": "xn--vuq861b",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:60: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaMax/ChinaMax_All.list:98764: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98764: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaMax/ChinaMax_No_IPv6.list:59: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:59: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaMax/ChinaMax_Resolve.list:60: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:53: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98439: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98439: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:56: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98348: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98348: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:56: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaTest/ChinaTest.list:58: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaTest/ChinaTest_All.list:99389: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99389: DOMAIN-SUFFIX,xn--vuq861b",
+        "ChinaTest/ChinaTest_Resolve.list:58: DOMAIN-SUFFIX,xn--vuq861b"
+      ]
+    },
+    {
+      "suffix": "xn--xhq521b",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:61: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaMax/ChinaMax_All.list:98771: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98771: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaMax/ChinaMax_No_IPv6.list:60: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:60: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaMax/ChinaMax_Resolve.list:61: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:54: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98446: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98446: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:57: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98355: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98355: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:57: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaTest/ChinaTest.list:59: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaTest/ChinaTest_All.list:99397: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99397: DOMAIN-SUFFIX,xn--xhq521b",
+        "ChinaTest/ChinaTest_Resolve.list:59: DOMAIN-SUFFIX,xn--xhq521b"
+      ]
+    },
+    {
+      "suffix": "xn--zfr164b",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:62: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaMax/ChinaMax_All.list:98789: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:98789: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaMax/ChinaMax_No_IPv6.list:61: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:61: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaMax/ChinaMax_Resolve.list:62: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:55: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:98464: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:98464: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:58: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:98373: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:98373: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:58: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaTest/ChinaTest.list:60: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaTest/ChinaTest_All.list:99415: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:99415: DOMAIN-SUFFIX,xn--zfr164b",
+        "ChinaTest/ChinaTest_Resolve.list:60: DOMAIN-SUFFIX,xn--zfr164b"
+      ]
+    },
+    {
+      "suffix": "yamaxun",
+      "rule_occurrences": 2,
+      "folders": [
+        "Amazon"
+      ],
+      "files": [
+        "Amazon/Amazon.list",
+        "Amazon/Amazon_Resolve.list"
+      ],
+      "examples": [
+        "Amazon/Amazon.list:196: DOMAIN-SUFFIX,yamaxun",
+        "Amazon/Amazon_Resolve.list:196: DOMAIN-SUFFIX,yamaxun"
+      ]
+    },
+    {
+      "suffix": "yandex",
+      "rule_occurrences": 2,
+      "folders": [
+        "Yandex"
+      ],
+      "files": [
+        "Yandex/Yandex.list",
+        "Yandex/Yandex_Resolve.list"
+      ],
+      "examples": [
+        "Yandex/Yandex.list:12: DOMAIN-SUFFIX,yandex",
+        "Yandex/Yandex_Resolve.list:12: DOMAIN-SUFFIX,yandex"
+      ]
+    },
+    {
+      "suffix": "youtube",
+      "rule_occurrences": 6,
+      "folders": [
+        "GlobalMedia",
+        "YouTube"
+      ],
+      "files": [
+        "GlobalMedia/GlobalMedia.list",
+        "GlobalMedia/GlobalMedia_All.list",
+        "GlobalMedia/GlobalMedia_All_No_Resolve.list",
+        "GlobalMedia/GlobalMedia_Resolve.list",
+        "YouTube/YouTube.list",
+        "YouTube/YouTube_Resolve.list"
+      ],
+      "examples": [
+        "GlobalMedia/GlobalMedia.list:15: DOMAIN-SUFFIX,youtube",
+        "GlobalMedia/GlobalMedia_All.list:1157: DOMAIN-SUFFIX,youtube",
+        "GlobalMedia/GlobalMedia_All_No_Resolve.list:1157: DOMAIN-SUFFIX,youtube",
+        "GlobalMedia/GlobalMedia_Resolve.list:15: DOMAIN-SUFFIX,youtube",
+        "YouTube/YouTube.list:20: DOMAIN-SUFFIX,youtube",
+        "YouTube/YouTube_Resolve.list:20: DOMAIN-SUFFIX,youtube"
+      ]
+    },
+    {
+      "suffix": "yun",
+      "rule_occurrences": 17,
+      "folders": [
+        "ChinaMax",
+        "ChinaMaxNoIP",
+        "ChinaMaxNoMedia",
+        "ChinaTest"
+      ],
+      "files": [
+        "ChinaMax/ChinaMax.list",
+        "ChinaMax/ChinaMax_All.list",
+        "ChinaMax/ChinaMax_All_No_Resolve.list",
+        "ChinaMax/ChinaMax_No_IPv6.list",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+        "ChinaMax/ChinaMax_Resolve.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+        "ChinaTest/ChinaTest.list",
+        "ChinaTest/ChinaTest_All.list",
+        "ChinaTest/ChinaTest_All_No_Resolve.list",
+        "ChinaTest/ChinaTest_Resolve.list"
+      ],
+      "examples": [
+        "ChinaMax/ChinaMax.list:63: DOMAIN-SUFFIX,yun",
+        "ChinaMax/ChinaMax_All.list:103700: DOMAIN-SUFFIX,yun",
+        "ChinaMax/ChinaMax_All_No_Resolve.list:103700: DOMAIN-SUFFIX,yun",
+        "ChinaMax/ChinaMax_No_IPv6.list:62: DOMAIN-SUFFIX,yun",
+        "ChinaMax/ChinaMax_No_IPv6_Resolve.list:62: DOMAIN-SUFFIX,yun",
+        "ChinaMax/ChinaMax_Resolve.list:63: DOMAIN-SUFFIX,yun",
+        "ChinaMaxNoIP/ChinaMaxNoIP.list:56: DOMAIN-SUFFIX,yun",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All.list:103374: DOMAIN-SUFFIX,yun",
+        "ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list:103374: DOMAIN-SUFFIX,yun",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia.list:59: DOMAIN-SUFFIX,yun",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All.list:103281: DOMAIN-SUFFIX,yun",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list:103281: DOMAIN-SUFFIX,yun",
+        "ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list:59: DOMAIN-SUFFIX,yun",
+        "ChinaTest/ChinaTest.list:61: DOMAIN-SUFFIX,yun",
+        "ChinaTest/ChinaTest_All.list:104401: DOMAIN-SUFFIX,yun",
+        "ChinaTest/ChinaTest_All_No_Resolve.list:104401: DOMAIN-SUFFIX,yun",
+        "ChinaTest/ChinaTest_Resolve.list:61: DOMAIN-SUFFIX,yun"
+      ]
+    },
+    {
+      "suffix": "zappos",
+      "rule_occurrences": 2,
+      "folders": [
+        "Amazon"
+      ],
+      "files": [
+        "Amazon/Amazon.list",
+        "Amazon/Amazon_Resolve.list"
+      ],
+      "examples": [
+        "Amazon/Amazon.list:200: DOMAIN-SUFFIX,zappos",
+        "Amazon/Amazon_Resolve.list:200: DOMAIN-SUFFIX,zappos"
+      ]
+    }
+  ],
   "reputation_feed_status": {
     "urlhaus_domains": 0,
     "openphish_domains": 280,
@@ -3764,7 +6552,7 @@
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "g1bzm-vft-0lzt-s2inc-04-10-2026-hh.pages.dev"
+      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3784,7 +6572,7 @@
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3794,7 +6582,7 @@
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "g1bzm-vft-0lzt-s2inc-04-10-2026-hh.pages.dev"
+      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3814,7 +6602,7 @@
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3824,7 +6612,7 @@
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
       "rule_domain": "gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3834,7 +6622,7 @@
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
       "rule_domain": "github.io",
-      "matched_domain": "kauongit.github.io"
+      "matched_domain": "wildpigger.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3854,7 +6642,7 @@
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "facebookcomprimisingourrights.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3874,7 +6662,7 @@
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
       "rule_domain": "github.io",
-      "matched_domain": "kauongit.github.io"
+      "matched_domain": "wildpigger.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3934,7 +6722,7 @@
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
       "rule_domain": "gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3954,7 +6742,7 @@
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "g1bzm-vft-0lzt-s2inc-04-10-2026-hh.pages.dev"
+      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3964,7 +6752,7 @@
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
       "rule_domain": "vercel.app",
-      "matched_domain": "www.ads-z63a.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3984,7 +6772,7 @@
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4004,7 +6792,7 @@
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "facebookcomprimisingourrights.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4024,7 +6812,7 @@
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
       "rule_domain": "github.io",
-      "matched_domain": "kauongit.github.io"
+      "matched_domain": "wildpigger.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -4084,7 +6872,7 @@
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
       "rule_domain": "gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4104,7 +6892,7 @@
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "g1bzm-vft-0lzt-s2inc-04-10-2026-hh.pages.dev"
+      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4114,7 +6902,7 @@
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
       "rule_domain": "vercel.app",
-      "matched_domain": "www.ads-z63a.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4134,7 +6922,7 @@
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4184,7 +6972,7 @@
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "facebookcomprimisingourrights.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4194,7 +6982,7 @@
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "facebookcomprimisingourrights.blogspot.com"
+      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4284,7 +7072,7 @@
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
       "rule_domain": "gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4304,7 +7092,7 @@
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "g1bzm-vft-0lzt-s2inc-04-10-2026-hh.pages.dev"
+      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4314,7 +7102,7 @@
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
       "rule_domain": "vercel.app",
-      "matched_domain": "www.ads-z63a.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4334,7 +7122,7 @@
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4384,7 +7172,7 @@
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
       "rule_domain": "gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4404,7 +7192,7 @@
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "g1bzm-vft-0lzt-s2inc-04-10-2026-hh.pages.dev"
+      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4414,7 +7202,7 @@
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
       "rule_domain": "vercel.app",
-      "matched_domain": "www.ads-z63a.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4434,7 +7222,7 @@
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4484,7 +7272,7 @@
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
       "rule_domain": "vercel.app",
-      "matched_domain": "www.ads-z63a.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {
