@@ -136,6 +136,11 @@ The current IANA-gated inventory found 78 valid single-label TLD suffixes across
 The cleanup inventory now scans a curated set of 42 shared CDN/hosting, dynamic-DNS, and URL-shortener suffixes across every upstream rule file, not only those suffixes that happen to match OpenPhish. The latest run found 34 suffixes in 159 rule occurrences: 33 occurrences in App/service folders across 21 suffixes and 126 in aggregate folders (Global, GlobalMedia, Proxy, ProxyLite). The result is recorded in `CLEANUP-INVENTORY.json` and `CLEANUP-INVENTORY.md`, with the affected folders and rule occurrences. This is a review-only scan: no rule is automatically removed because a suffix is shared or multi-tenant. The plan records these App/service-folder candidates for manual routing review.
 
 
+## Shared-hosting scope review
+
+The curated inventory found 34 shared CDN/hosting, dynamic-DNS, and URL-shortener suffixes across 159 occurrences. 21 suffixes appear in App/service folders (33 occurrences); the remaining 126 occurrences are in Global, GlobalMedia, Proxy, and ProxyLite. OpenPhish matches are parent-suffix signals, not proof that the shared parent itself is malicious. See SHARED-HOSTING-SCOPE-REVIEW.md. No rules were removed.
+
+
 ## Trading, cryptocurrency and securities folders — retained
 
 The user's current policy has no category-based deletion or retention exemptions. The 14 dedicated bank/payment folders and the seven finance/trading/crypto review folders (`Binance`, `OKX`, `Crypto`, `Cryptocurrency`, `EastMoney`, `TigerFintech`, and `XueQiu`) are present and all follow the same evidence-based security policy.
