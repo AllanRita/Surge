@@ -55,6 +55,16 @@ jobs:
             -o "$RUNNER_TEMP/surge-feeds/openphish.txt"
           test -s "$RUNNER_TEMP/surge-feeds/openphish.txt"
           grep -qE '^https?://' "$RUNNER_TEMP/surge-feeds/openphish.txt"
+          if curl -fsSL --retry 3 --retry-all-errors --max-time 90 \
+            https://data.iana.org/TLD/tlds-alpha-by-domain.txt \
+            -o "$RUNNER_TEMP/surge-feeds/tlds-alpha-by-domain.txt" && \
+            grep -q '^# Version ' "$RUNNER_TEMP/surge-feeds/tlds-alpha-by-domain.txt"; then
+            echo "IANA_TLDS_AVAILABLE=true" >> "$GITHUB_ENV"
+          else
+            rm -f "$RUNNER_TEMP/surge-feeds/tlds-alpha-by-domain.txt"
+            echo "IANA_TLDS_AVAILABLE=false" >> "$GITHUB_ENV"
+            echo "::warning::IANA root-zone TLD list unavailable; single-label suffixes will remain review-only."
+          fi
           if [ -n "${URLHAUS_AUTH_KEY:-}" ]; then
             if curl -fsSL --retry 2 --retry-all-errors --max-time 90 \
               "https://urlhaus-api.abuse.ch/v2/files/exports/${URLHAUS_AUTH_KEY}/hostfile.txt" \
@@ -91,7 +101,11 @@ jobs:
               python3 .github/scripts/batch_maintain.py --batch "$BATCH" --batch-size 100 --openphish "$RUNNER_TEMP/surge-feeds/openphish.txt" --output-dir batch-output --backup-dir batch-output/backups || { git checkout -- Rule/Upstream; exit 1; }
             fi
             python3 .github/scripts/merge_cached_sources.py --batch "$BATCH" --batch-size 100 --output-dir batch-output --backup-dir batch-output/backups || { git checkout -- Rule/Upstream; exit 1; }
-            python3 .github/scripts/batch_preflight.py --batch "$BATCH" --batch-size 100 --output-dir batch-output || { git checkout -- Rule/Upstream; exit 1; }
+            PREFLIGHT_ARGS=(--batch "$BATCH" --batch-size 100 --output-dir batch-output)
+            if [ "${IANA_TLDS_AVAILABLE:-false}" = "true" ]; then
+              PREFLIGHT_ARGS+=(--iana-tlds "$RUNNER_TEMP/surge-feeds/tlds-alpha-by-domain.txt")
+            fi
+            python3 .github/scripts/batch_preflight.py "${PREFLIGHT_ARGS[@]}" || { git checkout -- Rule/Upstream; exit 1; }
             git add -- Rule/Upstream
             if ! git diff --cached --quiet; then
               git commit -m "Surge automatic maintenance batch $BATCH [skip ci]"
