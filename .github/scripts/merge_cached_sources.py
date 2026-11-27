@@ -82,6 +82,12 @@ def is_covered(source_rule, existing_rules):
                 if ek in {"DOMAIN-SUFFIX", "HOST-SUFFIX"} and (sv == ev or sv.endswith("." + ev)):
                     return True
         elif sk in IP_TYPES and ek == sk:
+            # no-resolve changes routing semantics; only treat a containing
+            # network as coverage when both rules use the same resolution mode.
+            source_no_resolve = any(x.casefold() == "no-resolve" for x in so)
+            existing_no_resolve = any(x.casefold() == "no-resolve" for x in eo)
+            if source_no_resolve != existing_no_resolve:
+                continue
             try:
                 src_net = ipaddress.ip_network(sv, strict=False)
                 dst_net = ipaddress.ip_network(ev, strict=False)
