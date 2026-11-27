@@ -58,7 +58,7 @@ The 15 author-source snapshots already cached in SourceMetadata have been compar
 - The current plan records 18 cross-App overlap pairs as keep-separate/manual-review boundaries. Similarity alone never authorizes a merge.
 - SECURITY-REVIEW.md records the current threat-feed matches and broad shared-hosting suffixes. Feed matches are review signals only; no shared-hosting parent suffix is automatically removed.
 - SECURITY-REMEDIATION-REPORT.md records the latest IANA-gated check for `DOMAIN-SUFFIX,xihuan`: zero matching occurrences were found, so no rule files were changed. The earlier 17-occurrence figure is historical and is not the current repository state.
-- The latest OpenPhish comparison found 61 matches under shared hosting/CDN suffixes. URLhaus's old keyless hostfile endpoint is retired; authenticated checks run only when the GitHub Actions secret URLHAUS_AUTH_KEY is configured. Without it, URLhaus is explicitly marked as not loaded, not clean.
+- The latest OpenPhish comparison found 77 rule-to-feed matches (all classified as app/routing scope) under shared hosting/CDN suffixes; these are review flags, not proof that the parent domains are malicious. URLhaus's old keyless hostfile endpoint is retired; authenticated checks run only when the GitHub Actions secret URLHAUS_AUTH_KEY is configured. Without it, URLhaus is explicitly marked as not loaded, not clean.
 
 ## Current audit scope
 
