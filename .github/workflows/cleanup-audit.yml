@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: surge-cleanup-audit
+  group: surge-rule-maintenance
   cancel-in-progress: true
 
 jobs:
