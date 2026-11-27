@@ -158,6 +158,85 @@ jobs:
                   target.write_text(base.rstrip()+'\n# BEGIN MERGED SUPPLEMENT\n# Source: '+info['source']+'\n# License: AGPL-3.0; notices in SourceMetadata/'+category+'.json\n'+'\n'.join(added)+'\n',encoding='utf-8')
               else:
                   target.write_text(base,encoding='utf-8')
+          # Import a second, license-verified Surge-native source. Keep blocking and process scenarios separate.
+          extra_aoang=Path(os.environ['RUNNER_TEMP'])/'aoang-surge'
+          try:
+              subprocess.run(['git','clone','--depth','1','--filter=blob:none','--sparse','https://github.com/Aoang/Surge.git',str(extra_aoang)],check=True)
+              subprocess.run(['git','-C',str(extra_aoang),'sparse-checkout','set','output/Ruleset'],check=True)
+              aoang_license=extra_aoang/'LICENSE'
+              if not aoang_license.is_file() or aoang_license.is_symlink() or 'MIT License' not in aoang_license.read_text(encoding='utf-8'):
+                  raise ValueError('Unexpected Aoang source license')
+              aoang_commit=subprocess.check_output(['git','-C',str(extra_aoang),'rev-parse','HEAD'],text=True).strip()
+              aoang_map={
+                  'Apple/Apple.list':('Apple/Apple.list','merge-domain'),
+                  'Microsoft/OneDrive.list':('Microsoft/Microsoft.list','merge-domain'),
+                  'Microsoft/Teams.list':('Microsoft/Microsoft.list','merge-domain'),
+                  'Block/DNS.list':('Block/DNS/DNS.list','standalone'),
+                  'Block/Other.list':('Block/Other/Other.list','standalone'),
+                  'Block/Parallels.list':('Block/Parallels/Parallels.list','standalone'),
+                  'Block/YouTube.list':('Block/YouTube/YouTube.list','standalone'),
+                  'Process/Process.list':('Process/Process/Process.list','standalone'),
+                  'Process/Unavailable.list':('Process/Unavailable/Unavailable.list','standalone')
+              }
+              aoang_allowed={'DOMAIN','DOMAIN-SUFFIX','DOMAIN-KEYWORD','IP-CIDR','IP-CIDR6','USER-AGENT','PROCESS-NAME','URL-REGEX'}
+              for source_rel,(target_rel,mode) in aoang_map.items():
+                  source_file=extra_aoang/'output/Ruleset'/source_rel
+                  if not source_file.is_file() or source_file.is_symlink() or not 0<source_file.stat().st_size<=10*1024*1024:
+                      raise ValueError('Invalid Aoang source file: '+source_rel)
+                  raw=source_file.read_text(encoding='utf-8-sig')
+                  rows=[]
+                  for raw_line in raw.splitlines():
+                      line=raw_line.strip()
+                      if not line or line.startswith(('#',';','//')):
+                          continue
+                      line=line.split(' //',1)[0].strip()
+                      kind,sep,value=line.partition(',')
+                      if not sep or kind not in aoang_allowed or not value.strip():
+                          raise ValueError('Unsupported Surge rule in '+source_rel+': '+line[:160])
+                      if kind in {'DOMAIN','DOMAIN-SUFFIX','DOMAIN-KEYWORD'}:
+                          domain=value.strip().lower()
+                          if not re.fullmatch(r'[A-Za-z0-9_-]+(?:[.][A-Za-z0-9_-]+)*',domain):
+                              raise ValueError('Invalid domain in '+source_rel+': '+line[:160])
+                          if any(domain==d or domain.endswith('.'+d) for d in ('paypal.com','alipay.com','stripe.com','unionpay.com','visa.com','icbc.com.cn','boc.cn','paypay.ne.jp')):
+                              continue
+                          line=kind+','+domain
+                      if mode=='merge-domain' and kind not in {'DOMAIN','DOMAIN-SUFFIX'}:
+                          continue
+                      rows.append(line)
+                  rows=list(dict.fromkeys(rows))
+                  if not rows:
+                      raise ValueError('Empty Aoang contribution: '+source_rel)
+                  cache.mkdir(exist_ok=True)
+                  meta_name='Aoang-'+Path(source_rel).stem+'.json'
+                  (cache/meta_name).write_text(json.dumps({
+                      'source':'https://github.com/Aoang/Surge',
+                      'commit':aoang_commit,
+                      'path':'output/Ruleset/'+source_rel,
+                      'license':'MIT',
+                      'notices':[line for line in raw.splitlines() if line.startswith('#')],
+                      'rules':rows
+                  },ensure_ascii=False,indent=2),encoding='utf-8')
+                  target=dst/target_rel
+                  target.parent.mkdir(parents=True,exist_ok=True)
+                  if mode=='merge-domain':
+                      base=target.read_text(encoding='utf-8-sig') if target.is_file() else ''
+                      base=base.split('\n# BEGIN MERGED SUPPLEMENT\n',1)[0]
+                      existing={line.strip().lower() for line in base.splitlines()}
+                      suffixes={line.split(',')[1].lower() for line in base.splitlines() if line.startswith('DOMAIN-SUFFIX,') and len(line.split(','))==2}
+                      added=[]
+                      for line in rows:
+                          kind,domain=line.split(',',1)
+                          if line.lower() in existing or (kind=='DOMAIN' and any(domain==suffix or domain.endswith('.'+suffix) for suffix in suffixes)) or (kind=='DOMAIN-SUFFIX' and any(domain==suffix or suffix.endswith('.'+domain) for suffix in suffixes)):
+                              continue
+                          added.append(line)
+                      if added:
+                          target.write_text(base.rstrip()+'\n# BEGIN MERGED SUPPLEMENT\n# Source: https://github.com/Aoang/Surge\n# License: MIT; notices in SourceMetadata/'+meta_name+'\n'+'\n'.join(added)+'\n',encoding='utf-8')
+                  else:
+                      header='# NAME: '+Path(target_rel).stem+'\n# TYPE: Surge RULE-SET\n# SOURCE: https://github.com/Aoang/Surge\n# LICENSE: MIT\n'
+                      target.write_text(header+'\n'.join(rows)+'\n',encoding='utf-8')
+              shutil.copyfile(aoang_license,dst/'LICENSE-MIT-AOANG')
+          except (OSError,ValueError,subprocess.CalledProcessError) as e:
+              raise SystemExit('Aoang source import blocked: '+str(e))
           import ipaddress, unicodedata, collections
           root_tlds={line.strip().lower() for line in (Path(os.environ['RUNNER_TEMP'])/'iana-tlds.txt').read_text().splitlines() if line.strip() and not line.startswith('#')}
           allowed={'DOMAIN','DOMAIN-SUFFIX','DOMAIN-KEYWORD','DOMAIN-WILDCARD','DOMAIN-REGEX','IP-CIDR','IP-CIDR6','IP-ASN','GEOIP','USER-AGENT','URL-REGEX','PROCESS-NAME','DEST-PORT','SRC-PORT','SRC-IP','IN-PORT','PROTOCOL','AND','OR','NOT','RULE-SET','DOMAIN-SET','SUBNET','DEVICE-NAME','HOST','HOST-SUFFIX','HOST-KEYWORD'}
