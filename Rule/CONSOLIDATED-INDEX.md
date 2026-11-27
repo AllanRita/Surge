@@ -126,6 +126,11 @@ The repository does not contain the user's active Surge profile/configuration, s
 - The 19 cross-App overlap boundaries remain separate. Shared CDN, parent-company, login, or analytics domains do not establish that two folders represent one App.
 
 
+## Broad public-TLD suffix scope review
+
+The current IANA-gated inventory found 78 valid single-label TLD suffixes across 896 rule occurrences. The detailed review classifies 45 suffixes / 767 occurrences as China-aggregate-only, 5 suffixes / 85 occurrences as mixed China-aggregate and named-App scope, and 28 suffixes / 44 occurrences as other App/aggregate scope. All are valid delegated TLDs; validity does not establish that whole-namespace matching is appropriate for every routing scenario. No rules were removed. See BROAD-SUFFIX-SCOPE-REVIEW.md.
+
+
 ## Expanded shared-hosting audit
 
 The cleanup inventory now scans a curated set of 42 shared CDN/hosting, dynamic-DNS, and URL-shortener suffixes across every upstream rule file, not only those suffixes that happen to match OpenPhish. The latest run found 34 suffixes in 159 rule occurrences: 33 occurrences in App/service folders across 21 suffixes and 126 in aggregate folders (Global, GlobalMedia, Proxy, ProxyLite). The result is recorded in `CLEANUP-INVENTORY.json` and `CLEANUP-INVENTORY.md`, with the affected folders and rule occurrences. This is a review-only scan: no rule is automatically removed because a suffix is shared or multi-tenant. The plan records these App/service-folder candidates for manual routing review.
