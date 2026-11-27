@@ -71,6 +71,7 @@ The 15 author-source snapshots already cached in SourceMetadata have been compar
 
 See:
 - CLEANUP-INVENTORY.md for the file inventory, cached-source coverage, static syntax checks, and feed-match summary.
+- AUDIT-REVIEW.md for manual interpretation of financial-domain matches, single-label suffixes, shared-platform scope, and validation limits.
 - SECURITY-REVIEW.md for the detailed threat-feed and shared-hosting review.
 - SECURITY-REMEDIATION-REPORT.md for the exact rule removed and why.
 - APP-POLICY-MERGE-REPORT.md for the completed folder consolidation and rule additions.
