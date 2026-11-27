@@ -220,7 +220,6 @@ jobs:
                   target.parent.mkdir(parents=True,exist_ok=True)
                   if mode=='merge-domain':
                       base=target.read_text(encoding='utf-8-sig') if target.is_file() else ''
-                      base=base.split('\n# BEGIN MERGED SUPPLEMENT\n',1)[0]
                       existing={line.strip().lower() for line in base.splitlines()}
                       suffixes={line.split(',')[1].lower() for line in base.splitlines() if line.startswith('DOMAIN-SUFFIX,') and len(line.split(','))==2}
                       added=[]
@@ -230,7 +229,7 @@ jobs:
                               continue
                           added.append(line)
                       if added:
-                          target.write_text(base.rstrip()+'\n# BEGIN MERGED SUPPLEMENT\n# Source: https://github.com/Aoang/Surge\n# License: MIT; notices in SourceMetadata/'+meta_name+'\n'+'\n'.join(added)+'\n',encoding='utf-8')
+                          target.write_text(base.rstrip()+'\n# BEGIN MERGED SUPPLEMENT: Aoang/Surge\n# Source: https://github.com/Aoang/Surge\n# License: MIT; notices in SourceMetadata/'+meta_name+'\n'+'\n'.join(added)+'\n',encoding='utf-8')
                   else:
                       header='# NAME: '+Path(target_rel).stem+'\n# TYPE: Surge RULE-SET\n# SOURCE: https://github.com/Aoang/Surge\n# LICENSE: MIT\n'
                       target.write_text(header+'\n'.join(rows)+'\n',encoding='utf-8')
@@ -410,6 +409,8 @@ jobs:
           for category in mapping.values():
               meta=cache/f'{category}.json'
               report_lines.append(f'- {category}: {"cached" if meta.is_file() else "not cached"}')
+          for meta in sorted(cache.glob('Aoang-*.json')):
+              report_lines.append(f'- Aoang supplement {meta.stem}: cached')
           report_lines += ['', '## Static findings']
           if findings:
               for kind,count in sorted(findings.items()):
