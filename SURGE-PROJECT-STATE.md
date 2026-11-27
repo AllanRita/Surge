@@ -285,3 +285,18 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - Artifact: `surge-automatic-maintenance-36`, ID `15210275136`; it contains all seven maintenance/preflight reports plus `format-parity-audit.json`, `format-parity-audit.md`, and `format-coverage.json`.
 - Security remains intentionally fail-closed for threat deletion: OpenPhish loaded 280 hosts, URLhaus loaded 0 because `URLHAUS_AUTH_KEY` is unavailable. Security coverage is explicitly marked incomplete and no threat-based automatic deletion occurred. The successful run is not a complete dual-feed security clearance.
 - Next work: perform scenario-aware, report-only review of the 78 IANA-delegated bare public-TLD suffixes (896 rule occurrences) and 34 shared-hosting suffixes (159 occurrences), especially broad aggregate lists. Then continue per-App completeness review against existing cached sources only. No category-based deletion, no new author fetching, and no automatic change to routing semantics.
+
+
+## 19. Single semantic format audit and latest full validation (2026-11-27)
+
+- Removed the redundant `.github/scripts/audit_format_coverage.py` stage after consolidating format checks into the more detailed `.github/scripts/audit_format_parity.py`. The workflow now runs one report-only semantic parity audit before feed retrieval and the 100-folder maintenance pass.
+- Expanded paired-format comparisons to include Standard vs No_IPv6 and Resolve vs No_IPv6_Resolve. For these two comparisons only, IPv6 rules are excluded from the IPv6-capable side; all other rule types, operands, and options remain significant. Standard/Resolve and All/All_No_Resolve comparisons ignore only the `no-resolve` flag and report that mode difference separately.
+- Added/retained offline tests proving: no-resolve differences are isolated; policy/other options remain significant; No_IPv6 variants omit IPv6 rules only; missing IPv4/domain rules remain visible; and the audit never edits source files.
+- Latest validation run [46022027814](https://github.com/AllanRita/Surge/actions/runs/46022027814) completed successfully with all steps green. It processed 654 folders in 7 sequential batches (6×100 + 54).
+- Preflight scanned 842 rule files and 4,335,128 rule entries. All 7 batches had 0 blockers and 0 review findings. IANA root-zone reference was available in every batch (`Version 2026112700`), and the previous 896 delegated-TLD shape warnings remain cleared.
+- Semantic format audit scanned all 842 rule files and compared 132 documented format pairs: 0 pairs needing review, 0 left-only occurrences, 0 right-only occurrences. 123 pairs correctly showed `no-resolve` option differences; these are expected format differences and are reported separately.
+- Existing 15 cached author snapshots were processed again: 576 source-rule comparisons, 0 additions, 0 review-only entries, 0 files changed. No new author sources were fetched.
+- Every batch reported `Rule/Personal` unchanged. The exact deletion manifest has zero tombstones, and no category-based deletion/retention rule exists.
+- URLhaus remains unavailable because `URLHAUS_AUTH_KEY` is not configured. The run correctly marks security coverage incomplete and keeps threat-feed automatic deletion disabled. OpenPhish-only matches do not trigger deletion.
+- Artifact: `surge-automatic-maintenance-38`, ID `15208786309`.
+- Next: continue scenario-aware App-specific completeness review, using existing sources and existing file formats only. Keep format differences report-only until each App's README/format semantics justify a safe change. The remaining external prerequisite for dual-feed deletion is adding the repository secret `URLHAUS_AUTH_KEY` after obtaining an abuse.ch Auth-Key.
