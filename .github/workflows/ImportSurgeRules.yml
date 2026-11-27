@@ -238,6 +238,7 @@ jobs:
                           active_tld_matches.append((path,num,line.strip()))
                       else:
                           non_current_tld_matches.append((path,num,line.strip()))
+                          flag('stale-root-tld',path,num)
               # Report exact financial-service host matches for manual scope review.
               # A match in an ad/tracker blocklist is not evidence that the service is routed.
               if kind in {'DOMAIN','DOMAIN-SUFFIX','HOST','HOST-SUFFIX'} and re.fullmatch(
