@@ -271,3 +271,14 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - Workflow run [46020996994](https://github.com/AllanRita/Surge/actions/runs/46020996994) completed successfully; all 654 eligible folders processed in 7 sequential batches. All 15 cached sources were processed in their matching batches, with 0 added rules, 0 files changed, and Rule/Personal unchanged. Artifact surge-automatic-maintenance-27, ID 15207623477, contains the format-parity JSON/Markdown report and all seven batch reports.
 - URLhaus remains unavailable because URLHAUS_AUTH_KEY is not configured or the feed download failed. OpenPhish loaded 280 hosts. Threat-based automatic deletion remained disabled; the successful workflow is not a complete dual-feed security pass.
 - Next: use the 78 valid single-label TLD suffixes and 34 shared-hosting suffixes for scenario-aware scope review, prioritizing broad aggregate lists (China/ChinaMax variants) and avoiding automatic deletion. Continue app-by-app completeness checks using only existing cached author snapshots; no new author fetching.
+
+
+## 20. Shared-hosting scope review completed (2026-11-27)
+
+- Added Rule/Upstream/SHARED-HOSTING-SCOPE-REVIEW.md using the latest cleanup inventory snapshot.
+- Reviewed all 34 curated shared CDN/hosting, dynamic-DNS, and URL-shortener suffixes across 159 rule occurrences.
+- 21 suffixes appear in App/service folders, accounting for 33 occurrences. The other 126 occurrences are in aggregate folders Global, GlobalMedia, Proxy, and ProxyLite.
+- The 77 OpenPhish hits in SECURITY-REVIEW.md are parent-suffix matches. A listed malicious host under a shared parent does not prove the parent itself is malicious. No shared-hosting suffix was removed.
+- URLhaus remains unavailable; no exact-domain dual-feed confirmation was possible. Threat-based automatic deletion remains disabled.
+- Together with BROAD-SUFFIX-SCOPE-REVIEW.md, the current scope-review stage now covers all 78 valid single-label TLD suffixes and all 34 curated shared-hosting suffixes. No production rule files were changed by either review.
+- Next: continue App-specific completeness and routing-scope validation, keeping aggregate and App folders separate, preserving all formats, and using only the existing 15 cached author snapshots.
