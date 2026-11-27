@@ -8,7 +8,7 @@ explicitly reported as NOT_VERIFIABLE_FROM_CACHED_SOURCES.
 from pathlib import Path
 from collections import Counter
 from datetime import datetime, timezone
-import argparse, json
+import argparse, json, re
 
 ROOT = Path("Rule/Upstream")
 SOURCE_ROOT = ROOT / "SourceMetadata"
@@ -32,9 +32,17 @@ def classify_format(path):
             return label
     return "standard"
 
-def is_rule_line(line):
+def classify_entry(line):
     value = line.strip()
-    return bool(value and not value.startswith(("#", ";", "//")) and "," in value)
+    if not value or value.startswith(("#", ";", "//")):
+        return None
+    if value.startswith(("||", "@@||")) or (value.startswith("/") and value.endswith("/") and len(value) > 2):
+        return "native_filter"
+    if "," in value:
+        return "surge_rule"
+    if re.fullmatch(r"(?i)[a-z0-9_-]+(?:\\.[a-z0-9_-]+)+", value.lstrip(".")):
+        return "native_domain"
+    return "unclassified"
 
 def inventory(root, source_root, source_map):
     mapped = {}
@@ -54,15 +62,23 @@ def inventory(root, source_root, source_map):
             "folder": str(folder),
             "rule_files": 0,
             "rule_entries": 0,
+            "surge_rule_entries": 0,
+            "native_filter_entries": 0,
+            "native_domain_entries": 0,
+            "unclassified_entries": 0,
             "formats": [],
             "files": [],
             "cached_author_sources": set(),
             "mapped_target_files": 0,
         })
         lines = path.read_text(encoding="utf-8-sig").splitlines()
-        entries = sum(1 for line in lines if is_rule_line(line))
+        classes = [kind for line in lines if (kind := classify_entry(line))]
         row["rule_files"] += 1
-        row["rule_entries"] += entries
+        row["rule_entries"] += len(classes)
+        row["surge_rule_entries"] += classes.count("surge_rule")
+        row["native_filter_entries"] += classes.count("native_filter")
+        row["native_domain_entries"] += classes.count("native_domain")
+        row["unclassified_entries"] += classes.count("unclassified")
         row["formats"].append(classify_format(path))
         row["files"].append(str(rel))
         rel_posix = rel.as_posix()
@@ -98,6 +114,10 @@ def inventory(root, source_root, source_map):
         "folder_count": len(output),
         "rule_file_count": sum(x["rule_files"] for x in output),
         "rule_entry_count": sum(x["rule_entries"] for x in output),
+        "surge_rule_entry_count": sum(x["surge_rule_entries"] for x in output),
+        "native_filter_entry_count": sum(x["native_filter_entries"] for x in output),
+        "native_domain_entry_count": sum(x["native_domain_entries"] for x in output),
+        "unclassified_entry_count": sum(x["unclassified_entries"] for x in output),
         "folders_with_readme": sum(1 for x in output if x["readme_present"]),
         "folders_with_cached_source_mapping": summary["CACHED_SOURCE_COMPARISON_CONFIGURED"],
         "folders_not_verifiable_from_cached_sources": summary["NOT_VERIFIABLE_FROM_CACHED_SOURCES"],
@@ -123,7 +143,11 @@ def render_markdown(report):
         "",
         f"- Rule-set folders containing .list files: **{report['folder_count']}**",
         f"- Rule files: **{report['rule_file_count']}**",
-        f"- Rule entries: **{report['rule_entry_count']}**",
+        f"- Rule entries (all non-comment entries): **{report['rule_entry_count']}**",
+        f"- Surge rule entries: **{report['surge_rule_entry_count']}**",
+        f"- Native filter entries: **{report['native_filter_entry_count']}**",
+        f"- Native domain entries: **{report['native_domain_entry_count']}**",
+        f"- Unclassified entries: **{report['unclassified_entry_count']}**",
         f"- Folders with README: **{report['folders_with_readme']}**",
         f"- Folders with an explicitly mapped cached-author comparison: **{report['folders_with_cached_source_mapping']}**",
         f"- Folders not verifiable from existing cached author snapshots: **{report['folders_not_verifiable_from_cached_sources']}**",
@@ -131,15 +155,17 @@ def render_markdown(report):
         "",
         "## Per-folder evidence",
         "",
-        "| Rule-set folder | Files | Entries | Formats | README | Cached author sources | Evidence status |",
-        "|---|---:|---:|---|---|---|---|",
+        "| Rule-set folder | Files | Entries | Surge | Native filters | Native domains | Unclassified | Formats | README | Cached author sources | Evidence status |",
+        "|---|---:|---:|---:|---:|---:|---:|---|---|---|---|",
     ]
     for row in report["folders"]:
         sources = ", ".join(row["cached_author_sources"]) if row["cached_author_sources"] else "None mapped"
         status = "Mapped cache only" if row["cached_author_sources"] else "Not verifiable"
         lines.append(
             f"| {row['folder']} | {row['rule_files']} | {row['rule_entries']} | "
-            f"{', '.join(row['formats'])} | {'Yes' if row['readme_present'] else 'No'} | "
+            f"{row['surge_rule_entries']} | {row['native_filter_entries']} | {row['native_domain_entries']} | "
+            f"{row['unclassified_entries']} | {', '.join(row['formats'])} | "
+            f"{'Yes' if row['readme_present'] else 'No'} | "
             f"{sources} | {status} |"
         )
     lines.extend(["", "## Interpretation", ""])

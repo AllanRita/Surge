@@ -37,21 +37,67 @@ def tombstones():
   out.add(n.casefold())
  return out
 
+BLOCK_FILTER_SEGMENTS = {
+    "block", "reject", "rejects", "filter", "filters",
+    "adguardsdnsfilter", "easyprivacy",
+    "advertising", "advertisinglite", "advertisingmitv", "advertisingtest",
+    "privacy", "hijacking",
+}
+BLOCK_FILTER_README_MARKERS = (
+    "去广告", "广告过滤", "广告拦截", "隐私保护", "反劫持",
+    "adblock plus", "adguard dns filter", "easyprivacy",
+)
+
+def is_blocklist_path(path):
+    try:
+        relative = path.relative_to(ROOT)
+    except ValueError:
+        relative = path
+    if any(part.casefold() in BLOCK_FILTER_SEGMENTS for part in relative.parts[:-1]):
+        return True
+    readme = path.parent / "README.md"
+    if readme.is_file() and not readme.is_symlink():
+        content = readme.read_text(encoding="utf-8", errors="replace").casefold()
+        if any(marker in content for marker in BLOCK_FILTER_README_MARKERS):
+            return True
+    return False
+
 def feed_hosts(path):
- if not path or not Path(path).is_file(): return set()
- out=set()
- for line in Path(path).read_text(encoding="utf-8",errors="replace").splitlines():
-  s=line.strip().lower()
-  if not s or s.startswith(("#",";")): continue
-  if "://" in s:
-   s=s.split("://",1)[1].split("/",1)[0].split(":",1)[0]
-  else:
-   parts=s.split()
-   s=parts[0].split("#",1)[0] if parts else ""
-  s=s.strip(".")
-  if re.fullmatch(r"(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}",s):
-   out.add(s)
- return out
+    """Parse URL feeds and URLhaus hostfiles, including IP-prefixed host rows."""
+    if not path or not Path(path).is_file():
+        return set()
+    domain_pattern = re.compile(r"(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z]{2,63}")
+
+    def candidate_host(token):
+        value = token.strip().lower().strip("[](){}<>,;\\\"'")
+        if "://" in value:
+            value = value.split("://", 1)[1]
+        value = value.split("/", 1)[0].split("?", 1)[0].split("#", 1)[0]
+        if "@" in value:
+            value = value.rsplit("@", 1)[1]
+        if value.count(":") == 1:
+            value = value.split(":", 1)[0]
+        value = value.strip(".")
+        try:
+            ipaddress.ip_address(value)
+            return None
+        except ValueError:
+            pass
+        return value if domain_pattern.fullmatch(value) else None
+
+    out = set()
+    for line in Path(path).read_text(encoding="utf-8", errors="replace").splitlines():
+        value = line.strip()
+        if not value or value.startswith(("#", ";")):
+            continue
+        # URLhaus hostfile rows may be "host CNAME ." or "IP host".
+        # Ignore the trailing semicolon-delimited description.
+        body = value.split(";", 1)[0].split("#", 1)[0]
+        for token in body.split():
+            host = candidate_host(token)
+            if host:
+                out.add(host)
+    return out
 
 def main():
  ap=argparse.ArgumentParser()
@@ -81,7 +127,7 @@ def main():
    raw=path.read_text(encoding="utf-8-sig")
    lines=raw.splitlines()
    seen=set(); kept=[]; changed=False
-   is_blocklist=any(x in str(path).lower() for x in ("reject","block","filter","adguard","easyprivacy"))
+   is_blocklist = is_blocklist_path(path)
    for no,line in enumerate(lines,1):
     stripped=line.strip()
     if not stripped or stripped.startswith(("#",";","//")):
@@ -109,19 +155,26 @@ def main():
     if invalid_reason:
      changes.append({"action":"REMOVE_INVALID","path":str(path),"line":no,"rule":stripped,"reason":invalid_reason})
      totals["invalid_removed"]+=1; changed=True; continue
-    # Automatic threat removal is deliberately narrow: exact DOMAIN rows only,
-    # exact host corroborated by both feeds, and never block/filter lists.
-    if not is_blocklist and "," in stripped and kind=="DOMAIN":
-     host=value.lower().rstrip(".")
-     if host in corroborated:
-      changes.append({"action":"REMOVE_CONFIRMED_THREAT","path":str(path),"line":no,"rule":stripped,"reason":"Exact hostname independently present in OpenPhish and URLhaus"})
-      totals["threats_removed"]+=1; changed=True; continue
-     if host in openphish or host in urlhaus:
-      findings.append({"severity":"REVIEW","path":str(path),"line":no,"rule":stripped,"reason":"Exact host found in only one threat feed"})
-    elif not is_blocklist and "," in stripped and kind=="DOMAIN-SUFFIX":
-     host=value.lower().rstrip(".")
-     if any(x==host or x.endswith("."+host) for x in corroborated):
-      findings.append({"severity":"REVIEW","path":str(path),"line":no,"rule":stripped,"reason":"Threat host beneath parent suffix; parent suffix is not automatically deleted"})
+    # Exact-host deletion requires independent corroboration and is excluded
+    # from known block/filter lists. Parent suffixes are review-only.
+    if "," in stripped and kind == "DOMAIN":
+     host = value.lower().rstrip(".")
+     if not is_blocklist:
+      if host in corroborated:
+       changes.append({"action":"REMOVE_CONFIRMED_THREAT","path":str(path),"line":no,"rule":stripped,"reason":"Exact hostname independently present in both OpenPhish and URLhaus"})
+       totals["threats_removed"] += 1; changed = True; continue
+      matched_feeds = [name for name, feed in (("OpenPhish", openphish), ("URLhaus", urlhaus)) if host in feed]
+      if matched_feeds:
+       findings.append({"severity":"REVIEW","path":str(path),"line":no,"rule":stripped,"reason":"Exact host found in only one available threat feed: " + ", ".join(matched_feeds)})
+    elif "," in stripped and kind in {"DOMAIN-SUFFIX", "HOST-SUFFIX"}:
+     suffix = value.lower().rstrip(".")
+     matched = {}
+     for feed_name, feed in (("OpenPhish", openphish), ("URLhaus", urlhaus)):
+      hits = sorted(host for host in feed if host == suffix or host.endswith("." + suffix))
+      if hits:
+       matched[feed_name] = hits[:5]
+     if matched:
+      findings.append({"severity":"REVIEW","path":str(path),"line":no,"rule":stripped,"reason":"Threat host found beneath parent suffix; suffix is review-only and is never automatically deleted","matched_feeds":matched})
     kept.append(line)
    if changed:
     backup=Path(a.backup_dir)/("batch-"+str(a.batch).zfill(3))/str(path.relative_to(ROOT))

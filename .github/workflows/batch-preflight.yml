@@ -11,6 +11,7 @@ on:
       - '.github/scripts/test_batch_maintenance.py'
       - '.github/scripts/audit_format_parity.py'
       - '.github/scripts/audit_app_completeness.py'
+      - '.github/scripts/verify_batch_integrity.py'
       - 'Rule/Upstream/SourceMetadata/**/*.json'
       - '.github/workflows/batch-preflight.yml'
       - '.github/explicit-rule-exclusions.json'
@@ -114,6 +115,7 @@ jobs:
               PREFLIGHT_ARGS+=(--iana-tlds "$RUNNER_TEMP/surge-feeds/tlds-alpha-by-domain.txt")
             fi
             python3 .github/scripts/batch_preflight.py "${PREFLIGHT_ARGS[@]}" || { git checkout -- Rule/Upstream; exit 1; }
+            python3 .github/scripts/verify_batch_integrity.py --batch "$BATCH" --output-dir batch-output --backup-dir batch-output/backups || { git checkout -- Rule/Upstream; exit 1; }
             git add -- Rule/Upstream
             if ! git diff --cached --quiet; then
               git commit -m "Surge automatic maintenance batch $BATCH [skip ci]"
@@ -130,6 +132,7 @@ jobs:
           fi
           echo "Cached author snapshots: 15 existing SourceMetadata JSON files only; no new author fetching." >> batch-output/BATCH-STATUS.txt
           echo "Changes are committed per batch; pre-change copies are included in the artifact when files were modified." >> batch-output/BATCH-STATUS.txt
+          python3 .github/scripts/verify_batch_integrity.py --final --total "$TOTAL" --output-dir batch-output
 
       - name: Add maintenance summary
         if: always()

@@ -21,6 +21,7 @@ MAINTAIN = load_module("batch_maintain", "batch_maintain.py")
 PREFLIGHT = load_module("batch_preflight", "batch_preflight.py")
 FORMAT = load_module("audit_format_parity", "audit_format_parity.py")
 APP_AUDIT = load_module("audit_app_completeness", "audit_app_completeness.py")
+VERIFY = load_module("verify_batch_integrity", "verify_batch_integrity.py")
 
 class SurgeMaintenanceTests(unittest.TestCase):
     def test_domain_suffix_semantic_coverage(self):
@@ -285,11 +286,69 @@ class SurgeMaintenanceTests(unittest.TestCase):
             self.assertEqual(by_name['Apple']['author_source_coverage'], 'CACHED_SOURCE_COMPARISON_CONFIGURED')
             self.assertEqual(by_name['UnmappedApp']['author_source_coverage'], 'NOT_VERIFIABLE_FROM_CACHED_SOURCES')
             self.assertTrue(by_name['Apple']['readme_present'])
-    def test_urlhaus_hostfile_first_column(self):
+            self.assertEqual(report['rule_entry_count'], 3)
+            self.assertEqual(report['surge_rule_entry_count'], 1)
+            self.assertEqual(report['native_filter_entry_count'], 1)
+            self.assertEqual(report['native_domain_entry_count'], 1)
+    def test_urlhaus_hostfile_accepts_domain_first_and_ip_prefixed_rows(self):
         with tempfile.TemporaryDirectory() as td:
             feed = Path(td) / "urlhaus.txt"
-            feed.write_text("evil.example CNAME . ; malware download\n", encoding="utf-8")
-            self.assertEqual(MAINTAIN.feed_hosts(str(feed)), {"evil.example"})
+            feed.write_text(
+                "evil.example CNAME . ; malware download\\n"
+                "127.0.0.1 prefixed.example\\n"
+                "https://url.example/path\\n",
+                encoding="utf-8"
+            )
+            self.assertEqual(MAINTAIN.feed_hosts(str(feed)), {"evil.example", "prefixed.example", "url.example"})
+
+    def test_parent_suffix_single_feed_hits_are_review_only_for_domain_and_host_suffix(self):
+        with tempfile.TemporaryDirectory() as td:
+            base = Path(td)
+            root = base / "Rule" / "Upstream"
+            personal = base / "Rule" / "Personal"
+            manifest = base / ".github" / "explicit-rule-exclusions.json"
+            out = base / "out"
+            folder = root / "ThreatApp"
+            folder.mkdir(parents=True)
+            personal.mkdir(parents=True)
+            manifest.parent.mkdir(parents=True)
+            manifest.write_text(json.dumps({"exclusions": []}), encoding="utf-8")
+            target = folder / "ThreatApp.list"
+            original = "DOMAIN-SUFFIX,shared.example\\nHOST-SUFFIX,shared.example\\n"
+            target.write_text(original, encoding="utf-8")
+            openphish = base / "openphish.txt"
+            openphish.write_text("https://tenant.shared.example/path\\n", encoding="utf-8")
+            argv = ["batch_maintain.py", "--batch", "1", "--batch-size", "100", "--openphish", str(openphish), "--output-dir", str(out)]
+            with patch.object(MAINTAIN, "ROOT", root), patch.object(MAINTAIN, "PERSONAL", personal), patch.object(MAINTAIN, "MANIFEST", manifest), patch.object(sys, "argv", argv):
+                MAINTAIN.main()
+            self.assertEqual(target.read_text(encoding="utf-8"), original)
+            report = json.loads((out / "batch-001-maintenance.json").read_text(encoding="utf-8"))
+            self.assertEqual(report["summary"].get("threats_removed", 0), 0)
+            self.assertEqual(len(report["review_findings"]), 2)
+            self.assertEqual({x["rule"] for x in report["review_findings"]}, {"DOMAIN-SUFFIX,shared.example", "HOST-SUFFIX,shared.example"})
+
+    def test_block_filter_paths_are_excluded_from_threat_deletion(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            with patch.object(MAINTAIN, "ROOT", root):
+                for rel in (
+                    "Block/DNS/DNS.list",
+                    "Advertising/Advertising.list",
+                    "AdvertisingTest/AdvertisingTest.list",
+                    "Privacy/Privacy.list",
+                    "EasyPrivacy/EasyPrivacy.list",
+                    "AdGuardSDNSFilter/AdGuardSDNSFilter_All.list",
+                    "Hijacking/Hijacking.list",
+                ):
+                    self.assertTrue(MAINTAIN.is_blocklist_path(root / rel), rel)
+                self.assertFalse(MAINTAIN.is_blocklist_path(root / "Apple/Apple.list"))
+
+    def test_batch_integrity_rejects_out_of_batch_and_file_deletion(self):
+        self.assertTrue(VERIFY.validate_change_records([("M", "Rule/Upstream/Apple/Apple.list")], {"Apple"}))
+        with self.assertRaises(ValueError):
+            VERIFY.validate_change_records([("M", "Rule/Upstream/Microsoft/Microsoft.list")], {"Apple"})
+        with self.assertRaises(ValueError):
+            VERIFY.validate_change_records([("D", "Rule/Upstream/Apple/Apple.list")], {"Apple"})
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
