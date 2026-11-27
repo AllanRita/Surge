@@ -1,6 +1,6 @@
 # Surge Project State
 
-Last updated: 2026-11-27
+Last updated: 2026-11-27 13:36 UTC (21:36 Asia/Shanghai)
 Repository: `AllanRita/Surge`
 Default branch: `main`
 
@@ -73,16 +73,33 @@ Use these as records, not as a reason to repeat the work:
 
 Prior reports record 14 canonical App-folder consolidation groups and 19 alias folders removed. Verify current files before relying on any historical count.
 
+## 6.1 Latest verification batch (2026-11-27 13:35 UTC)
+
+Verified against the current `main` tree and the latest inventory generated at 13:29 UTC:
+
+- Current upstream library: 828 `.list` files, 663 App/category folders, and 640 top-level folders.
+- 107 multi-file folders were checked. Every folder has exactly one file per recognized format; there are no same-format duplicate files.
+- The 2 byte-identical groups and 3 same-payload groups are intentional `All` / `All_No_Resolve` format pairs in AdGuardSDNSFilter, ChinaMaxNoIP, and EasyPrivacy. Keep each format separately; do not delete these pairs.
+- 15 cached author snapshots (300 source rules) were compared against 26 mapped format targets. Missing source rules: 0. Missing format targets: 0. This only certifies the cached 15 snapshots, not every possible author.
+- Static checks report 0 duplicate rule lines, 0 hidden control characters, 0 invalid native filters, 0 unsupported/missing operands, 0 invalid networks/domains, 0 IP-family mismatches, 0 catch-all networks, and 0 stale/private root suffixes.
+- There are 894 bare public-TLD suffix rule occurrences across 78 values. They passed the current IANA delegation check; their routing breadth still needs scenario-aware review, not automatic deletion.
+- OpenPhish loaded 280 domains and matched 77 rule rows across 15 hostnames and 15 parent-suffix rules. These are shared-hosting parent-suffix matches, not proof that the parent suffix itself is malicious. No parent suffix was removed.
+- URLhaus was not loaded because `URLHAUS_AUTH_KEY` is unavailable. This is incomplete feed coverage, not a clean result.
+- The library contains 34 curated shared-hosting suffixes across 159 rule occurrences.
+- 238 upstream financial-domain matches across 29 domain values remain untouched. Seven crypto/securities/finance review folders (322 rule entries) remain present and are not deletion targets.
+- The three files in `Rule/Personal` remain untouched.
+- The 14 exact historical tombstones remain unchanged and protected. No `.list` rule files were changed in this verification batch.
+
 ## 7. Next work — resume here
 
-1. Start with the actual `Rule/Upstream` folders and `.list` files, not with workflow refactoring.
-2. Inventory the current folders against `Rule/CONSOLIDATION-PLAN.json` and the latest inventory report.
-3. Review App rule completeness using the already-cached `SourceMetadata` snapshots.
-4. Compare every available format separately; do not mistake a Domain-only or other intentional format for an incomplete Standard/Resolve file.
-5. Review duplicates and missing rules App by App. Make file edits only after semantic and security review.
-6. Preserve all existing finance folders except the exact historical tombstones while their disposition remains unresolved.
-7. After each completed batch, update this file with: paths changed, rules added/removed, checks performed, unresolved findings, and the exact next task.
-8. Only after the rule files are in good shape, perform the final workflow hardening and end-to-end verification.
+1. Continue with the actual `Rule/Upstream` rule files. Do not repeat the completed 14-group consolidation, 107-folder format uniqueness check, or 15-snapshot cached-source comparison unless one of their inputs changes.
+2. Manually review the 77 OpenPhish parent-suffix matches and the 34 shared-hosting suffixes in their App-specific versus aggregate-list contexts. Do not delete a parent suffix solely because a feed hostname exists beneath it.
+3. Review the 238 financial-domain matches and the 894 bare public-TLD suffix occurrences in their intended rule-set/scenario context. Do not delete financial domains from unrelated Apps or broad rules solely because of their shape.
+4. Preserve all existing bank/payment/finance folders. The 14 exact historical tombstones remain no-restore until the user explicitly clarifies whether any specific one should be restored; do not silently change the manifest.
+5. Keep new author fetching paused. Use only the 15 already-cached author snapshots until the user changes that instruction.
+6. Never modify `Rule/Personal` without a direct, specific user instruction.
+7. After the manual rule-content review is stable, perform final workflow hardening and end-to-end verification.
+8. At the end of each batch, update this file with paths changed, rules added/removed, checks performed, unresolved findings, and the exact next task.
 
 ## 8. Session-resume protocol
 
