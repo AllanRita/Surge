@@ -105,8 +105,10 @@ jobs:
                           if not line or line.startswith(('#',';','//')):
                               continue
                           parts=line.split(',')
-                          if len(parts)!=2 or parts[0] not in {'DOMAIN','DOMAIN-SUFFIX'} or not re.fullmatch(r'[A-Za-z0-9_-]+(?:\.[A-Za-z0-9_-]+)+',parts[1]):
-                              raise ValueError('Unsupported rule syntax')
+                          if parts[0] not in {'DOMAIN','DOMAIN-SUFFIX','DOMAIN-KEYWORD'}:
+                              continue
+                          if len(parts)!=2 or not re.fullmatch(r'[A-Za-z0-9_-]+(?:\\.[A-Za-z0-9_-]+)*',parts[1]):
+                              raise ValueError('Invalid domain rule syntax')
                           domain=parts[1].lower()
                           if domain=='skk.moe' or domain.endswith('.skk.moe'):
                               continue
