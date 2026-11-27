@@ -7,7 +7,7 @@ It validates one alphabetical batch and emits JSON/Markdown reports for review.
 from pathlib import Path
 from collections import Counter
 from datetime import datetime, timezone
-import argparse, hashlib, ipaddress, json, re, sys
+import argparse, hashlib, ipaddress, json, re
 
 ROOT = Path("Rule/Upstream")
 PERSONAL = Path("Rule/Personal")
@@ -85,6 +85,8 @@ def main():
     totals = Counter()
     findings = []
     folder_rows = []
+    for unsafe in sorted((p for p in ROOT.iterdir() if p.is_symlink()), key=lambda p: p.name.casefold()):
+        findings.append({"severity":"BLOCKER","folder":unsafe.name,"path":str(unsafe),"issue":"top-level symlink under Rule/Upstream"})
     for folder in selected:
         folder_files = sorted(folder.rglob("*.list"))
         if folder.is_symlink():
@@ -96,7 +98,18 @@ def main():
         if not folder_files:
             findings.append({"severity":"REVIEW","folder":folder.name,"path":str(folder),"issue":"no .list files"})
         fr = Counter()
-        seen_files = set()
+        format_counts = Counter()
+        for path in folder_files:
+            stem = path.stem
+            fmt = "standard"
+            for suffix, label in (("_All_No_Resolve","all_no_resolve"),("_No_IPv6_Resolve","no_ipv6_resolve"),("_NoIPv6_Resolve","no_ipv6_resolve"),("_All_NoResolve","all_no_resolve"),("_No_Resolve","no_resolve"),("_NoResolve","no_resolve"),("_No_IPv6","no_ipv6"),("_NoIPv6","no_ipv6"),("_Resolve","resolve"),("_Domain","domain_only"),("_All","all")):
+                if stem.endswith(suffix):
+                    fmt = label
+                    break
+            format_counts[fmt] += 1
+        duplicate_formats = sorted(k for k,v in format_counts.items() if v > 1)
+        if duplicate_formats:
+            findings.append({"severity":"REVIEW","folder":folder.name,"path":str(folder),"issue":"multiple files detected for same recognized format: "+", ".join(duplicate_formats)})
         for path in folder_files:
             totals["files"] += 1
             fr["files"] += 1
