@@ -70,19 +70,35 @@ jobs:
             --urlhaus "$RUNNER_TEMP/urlhaus-hostfile.txt" \
             --openphish "$RUNNER_TEMP/openphish-feed.txt"
 
-      - name: Publish inventory reports
+      - name: Publish inventory reports with concurrent-update retry
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A -- Rule/Upstream
-          if git diff --cached --quiet; then
-            echo 'Inventory report unchanged'
-            exit 0
-          fi
-          git commit -m 'Generate frozen Surge cleanup inventory and security audit'
-          # Another authorized documentation or maintenance commit may land after checkout.
-          # Rebase the generated report commit instead of failing with a non-fast-forward push.
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main
+
+          # Rebuild reports from the latest main on every retry. This avoids
+          # stale generated JSON/Markdown conflicts when maintenance commits overlap.
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+
+            python3 .github/scripts/remove_invalid_public_tld_rules.py --iana-tlds "$RUNNER_TEMP/iana-tlds.txt"
+            python3 .github/scripts/cleanup_inventory.py \
+              --iana-tlds "$RUNNER_TEMP/iana-tlds.txt" \
+              --urlhaus "$RUNNER_TEMP/urlhaus-hostfile.txt" \
+              --openphish "$RUNNER_TEMP/openphish-feed.txt"
+
+            git add -A -- Rule/Upstream
+            if git diff --cached --quiet; then
+              echo 'Inventory report unchanged'
+              exit 0
+            fi
+
+            git commit -m 'Generate frozen Surge cleanup inventory and security audit'
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "::warning::Concurrent main update detected; rebuilding the audit report (attempt $attempt of 3)."
+          done
+          echo 'Could not publish audit reports after three concurrent-update retries.'
+          exit 1
