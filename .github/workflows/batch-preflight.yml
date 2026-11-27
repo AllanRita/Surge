@@ -6,7 +6,6 @@ on:
     paths:
       - 'Rule/Upstream/**/*.list'
       - '.github/scripts/batch_preflight.py'
-      - '.github/scripts/audit_format_coverage.py'
       - '.github/scripts/batch_maintain.py'
       - '.github/scripts/merge_cached_sources.py'
       - '.github/scripts/test_batch_maintenance.py'
@@ -127,7 +126,6 @@ jobs:
           fi
           echo "Cached author snapshots: 15 existing SourceMetadata JSON files only; no new author fetching." >> batch-output/BATCH-STATUS.txt
           echo "Changes are committed per batch; pre-change copies are included in the artifact when files were modified." >> batch-output/BATCH-STATUS.txt
-          python3 .github/scripts/audit_format_coverage.py --output batch-output/format-coverage.json
 
       - name: Add maintenance summary
         if: always()
@@ -136,7 +134,7 @@ jobs:
           if [ -f batch-output/format-parity-audit.md ]; then
             cat batch-output/format-parity-audit.md >> "$GITHUB_STEP_SUMMARY"
           fi
-          for report in batch-output/batch-*-maintenance.json batch-output/batch-*-cached-sources.json batch-output/format-coverage.json; do
+          for report in batch-output/batch-*-maintenance.json batch-output/batch-*-cached-sources.json; do
             [ -f "$report" ] || continue
             echo '### ' "$report" >> "$GITHUB_STEP_SUMMARY"
             cat "$report" >> "$GITHUB_STEP_SUMMARY"
