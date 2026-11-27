@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 12:28 UTC
+Generated: 2026-11-27 12:32 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -79,6 +79,47 @@ This classifies dedicated App folders by folder name only. Financial-service dom
 - Candidate folders: Game/Assassin'sCreed-Origins
 - Present aliases: none
 - Rationale: Same game duplicated under two categories; Standard and Resolve stay separate.
+
+## Known shared-hosting, dynamic-DNS, and URL-shortener suffixes
+
+This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upstream lists. It is a review inventory, not an automatic deletion list; a platform suffix may be intentional in a particular scenario.
+
+| Suffix | Classification | Rule occurrences | Folders |
+|---|---|---:|---|
+| amazonaws.com | shared cloud infrastructure / AWS | 10 | Amazon, Global, GlobalMedia, Proxy, ProxyLite |
+| appspot.com | Google App Engine hosting | 6 | Global, Google, Proxy |
+| azureedge.net | Azure CDN | 5 | Global, Microsoft, Proxy |
+| azurefd.net | Azure Front Door shared CDN | 3 | Global, Microsoft |
+| azurestaticapps.net | Azure Static Web Apps | 2 | Global |
+| azurewebsites.net | Azure App Service hosting | 5 | Global, Microsoft, Proxy |
+| bit.ly | URL shortener | 6 | Global, Proxy, ProxyLite |
+| bitbucket.io | Bitbucket Pages hosting | 2 | Global |
+| blogspot.com | Blogger shared hosting | 4 | Global, Google |
+| cloudapp.net | Azure Cloud Services | 3 | Global, Microsoft |
+| cloudfront.net | shared CDN / Amazon CloudFront | 10 | Amazon, Global, GlobalMedia, Proxy, ProxyLite |
+| cutt.ly | URL shortener | 2 | Global |
+| duckdns.org | dynamic DNS | 6 | Global, NaSDDNS, Proxy |
+| dynu.net | Dynu dynamic DNS | 5 | Dynu, Global, Proxy |
+| eu.org | subdomain hosting | 2 | Global |
+| firebaseapp.com | Firebase Hosting | 4 | Global, Google |
+| fly.dev | Fly.io shared hosting | 2 | Global |
+| gitbook.io | shared documentation hosting | 5 | GitBook, Global, Proxy |
+| github.io | GitHub Pages shared hosting | 3 | GitHub, Global |
+| gitlab.io | GitLab Pages shared hosting | 7 | Developer, Global, Proxy, ProxyLite |
+| herokuapp.com | Heroku shared hosting | 6 | Global, Heroku, Proxy, Salesforce |
+| is.gd | URL shortener | 6 | Global, Proxy, ProxyLite |
+| linktr.ee | link-in-bio / redirect platform | 4 | Global, Proxy |
+| netlify.app | Netlify shared hosting | 4 | Global, Proxy |
+| no-ip.org | dynamic DNS | 4 | Global, Proxy |
+| pages.dev | Cloudflare Pages shared hosting | 6 | Cloudflare, Global, Proxy |
+| shorturl.at | URL shortener | 2 | Global |
+| t.co | URL shortener | 8 | Global, Proxy, ProxyLite, Twitter |
+| tinyurl.com | URL shortener | 4 | Global, Proxy |
+| trycloudflare.com | Cloudflare temporary tunnel | 4 | Cloudflare, Global |
+| vercel.app | Vercel shared hosting | 5 | Global, Proxy, Vercel |
+| web.app | Firebase Hosting | 4 | Global, Google |
+| weebly.com | Weebly shared website hosting | 4 | Global, Proxy |
+| workers.dev | Cloudflare Workers shared hosting | 6 | Cloudflare, Global, Proxy |
 
 ## Cached author-source coverage
 

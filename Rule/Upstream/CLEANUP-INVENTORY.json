@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 12:28 UTC",
+  "generated_utc": "2026-11-27 12:32 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 828,
@@ -12,7 +12,9 @@
     "duplicate_rule_lines": 0,
     "domain_rule_count": 2690929,
     "personal_files_seen_not_modified": 3,
-    "bank_payment_app_folders_found": 0
+    "bank_payment_app_folders_found": 0,
+    "shared_hosting_suffixes_found": 34,
+    "shared_hosting_suffix_rule_occurrences": 159
   },
   "bank_payment_app_folders": [],
   "personal_files_seen_not_modified": [
@@ -2119,6 +2121,785 @@
     "Privacy/Privacy_Domain.list:14728: .images.globalempcomm.visa.com",
     "Privacy/Privacy_Domain.list:35886: .tracking.cpa.qa.web.visa.com"
   ],
+  "shared_hosting_suffix_matches": [
+    {
+      "suffix": "amazonaws.com",
+      "classification": "shared cloud infrastructure / AWS",
+      "rule_occurrences": 10,
+      "folders": [
+        "Amazon",
+        "Global",
+        "GlobalMedia",
+        "Proxy",
+        "ProxyLite"
+      ],
+      "files": [
+        "Amazon/Amazon.list",
+        "Amazon/Amazon_Resolve.list",
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "GlobalMedia/GlobalMedia_All.list",
+        "GlobalMedia/GlobalMedia_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list",
+        "ProxyLite/ProxyLite.list",
+        "ProxyLite/ProxyLite_Resolve.list"
+      ],
+      "examples": [
+        "Amazon/Amazon.list:67: DOMAIN-SUFFIX,amazonaws.com",
+        "Amazon/Amazon_Resolve.list:67: DOMAIN-SUFFIX,amazonaws.com",
+        "Global/Global_All.list:28653: DOMAIN-SUFFIX,amazonaws.com",
+        "Global/Global_All_No_Resolve.list:28653: DOMAIN-SUFFIX,amazonaws.com",
+        "GlobalMedia/GlobalMedia_All.list:76: DOMAIN-SUFFIX,amazonaws.com",
+        "GlobalMedia/GlobalMedia_All_No_Resolve.list:76: DOMAIN-SUFFIX,amazonaws.com",
+        "Proxy/Proxy_All.list:319: DOMAIN-SUFFIX,amazonaws.com",
+        "Proxy/Proxy_All_No_Resolve.list:319: DOMAIN-SUFFIX,amazonaws.com",
+        "ProxyLite/ProxyLite.list:65: DOMAIN-SUFFIX,amazonaws.com",
+        "ProxyLite/ProxyLite_Resolve.list:65: DOMAIN-SUFFIX,amazonaws.com"
+      ]
+    },
+    {
+      "suffix": "appspot.com",
+      "classification": "Google App Engine hosting",
+      "rule_occurrences": 6,
+      "folders": [
+        "Global",
+        "Google",
+        "Proxy"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Google/Google.list",
+        "Google/Google_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:28762: DOMAIN-SUFFIX,appspot.com",
+        "Global/Global_All_No_Resolve.list:28762: DOMAIN-SUFFIX,appspot.com",
+        "Google/Google.list:52: DOMAIN-SUFFIX,appspot.com",
+        "Google/Google_Resolve.list:52: DOMAIN-SUFFIX,appspot.com",
+        "Proxy/Proxy_All.list:434: DOMAIN-SUFFIX,appspot.com",
+        "Proxy/Proxy_All_No_Resolve.list:434: DOMAIN-SUFFIX,appspot.com"
+      ]
+    },
+    {
+      "suffix": "azureedge.net",
+      "classification": "Azure CDN",
+      "rule_occurrences": 5,
+      "folders": [
+        "Global",
+        "Microsoft",
+        "Proxy"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Microsoft/Microsoft.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:28861: DOMAIN-SUFFIX,azureedge.net",
+        "Global/Global_All_No_Resolve.list:28861: DOMAIN-SUFFIX,azureedge.net",
+        "Microsoft/Microsoft.list:85: DOMAIN-SUFFIX,azureedge.net",
+        "Proxy/Proxy_All.list:533: DOMAIN-SUFFIX,azureedge.net",
+        "Proxy/Proxy_All_No_Resolve.list:533: DOMAIN-SUFFIX,azureedge.net"
+      ]
+    },
+    {
+      "suffix": "azurefd.net",
+      "classification": "Azure Front Door shared CDN",
+      "rule_occurrences": 3,
+      "folders": [
+        "Global",
+        "Microsoft"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Microsoft/Microsoft.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:2994: DOMAIN-SUFFIX,azurefd.net",
+        "Global/Global_All_No_Resolve.list:2994: DOMAIN-SUFFIX,azurefd.net",
+        "Microsoft/Microsoft.list:86: DOMAIN-SUFFIX,azurefd.net"
+      ]
+    },
+    {
+      "suffix": "azurestaticapps.net",
+      "classification": "Azure Static Web Apps",
+      "rule_occurrences": 2,
+      "folders": [
+        "Global"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:3003: DOMAIN-SUFFIX,azurestaticapps.net",
+        "Global/Global_All_No_Resolve.list:3003: DOMAIN-SUFFIX,azurestaticapps.net"
+      ]
+    },
+    {
+      "suffix": "azurewebsites.net",
+      "classification": "Azure App Service hosting",
+      "rule_occurrences": 5,
+      "folders": [
+        "Global",
+        "Microsoft",
+        "Proxy"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Microsoft/Microsoft.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:28862: DOMAIN-SUFFIX,azurewebsites.net",
+        "Global/Global_All_No_Resolve.list:28862: DOMAIN-SUFFIX,azurewebsites.net",
+        "Microsoft/Microsoft.list:103: DOMAIN-SUFFIX,azurewebsites.net",
+        "Proxy/Proxy_All.list:534: DOMAIN-SUFFIX,azurewebsites.net",
+        "Proxy/Proxy_All_No_Resolve.list:534: DOMAIN-SUFFIX,azurewebsites.net"
+      ]
+    },
+    {
+      "suffix": "bit.ly",
+      "classification": "URL shortener",
+      "rule_occurrences": 6,
+      "folders": [
+        "Global",
+        "Proxy",
+        "ProxyLite"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list",
+        "ProxyLite/ProxyLite.list",
+        "ProxyLite/ProxyLite_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:29019: DOMAIN-SUFFIX,bit.ly",
+        "Global/Global_All_No_Resolve.list:29019: DOMAIN-SUFFIX,bit.ly",
+        "Proxy/Proxy_All.list:694: DOMAIN-SUFFIX,bit.ly",
+        "Proxy/Proxy_All_No_Resolve.list:694: DOMAIN-SUFFIX,bit.ly",
+        "ProxyLite/ProxyLite.list:125: DOMAIN-SUFFIX,bit.ly",
+        "ProxyLite/ProxyLite_Resolve.list:125: DOMAIN-SUFFIX,bit.ly"
+      ]
+    },
+    {
+      "suffix": "bitbucket.io",
+      "classification": "Bitbucket Pages hosting",
+      "rule_occurrences": 2,
+      "folders": [
+        "Global"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:3924: DOMAIN-SUFFIX,bitbucket.io",
+        "Global/Global_All_No_Resolve.list:3924: DOMAIN-SUFFIX,bitbucket.io"
+      ]
+    },
+    {
+      "suffix": "blogspot.com",
+      "classification": "Blogger shared hosting",
+      "rule_occurrences": 4,
+      "folders": [
+        "Global",
+        "Google"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Google/Google.list",
+        "Google/Google_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:4020: DOMAIN-SUFFIX,blogspot.com",
+        "Global/Global_All_No_Resolve.list:4020: DOMAIN-SUFFIX,blogspot.com",
+        "Google/Google.list:89: DOMAIN-SUFFIX,blogspot.com",
+        "Google/Google_Resolve.list:89: DOMAIN-SUFFIX,blogspot.com"
+      ]
+    },
+    {
+      "suffix": "cloudapp.net",
+      "classification": "Azure Cloud Services",
+      "rule_occurrences": 3,
+      "folders": [
+        "Global",
+        "Microsoft"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Microsoft/Microsoft.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:6103: DOMAIN-SUFFIX,cloudapp.net",
+        "Global/Global_All_No_Resolve.list:6103: DOMAIN-SUFFIX,cloudapp.net",
+        "Microsoft/Microsoft.list:162: DOMAIN-SUFFIX,cloudapp.net"
+      ]
+    },
+    {
+      "suffix": "cloudfront.net",
+      "classification": "shared CDN / Amazon CloudFront",
+      "rule_occurrences": 10,
+      "folders": [
+        "Amazon",
+        "Global",
+        "GlobalMedia",
+        "Proxy",
+        "ProxyLite"
+      ],
+      "files": [
+        "Amazon/Amazon.list",
+        "Amazon/Amazon_Resolve.list",
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "GlobalMedia/GlobalMedia_All.list",
+        "GlobalMedia/GlobalMedia_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list",
+        "ProxyLite/ProxyLite.list",
+        "ProxyLite/ProxyLite_Resolve.list"
+      ],
+      "examples": [
+        "Amazon/Amazon.list:139: DOMAIN-SUFFIX,cloudfront.net",
+        "Amazon/Amazon_Resolve.list:139: DOMAIN-SUFFIX,cloudfront.net",
+        "Global/Global_All.list:29514: DOMAIN-SUFFIX,cloudfront.net",
+        "Global/Global_All_No_Resolve.list:29514: DOMAIN-SUFFIX,cloudfront.net",
+        "GlobalMedia/GlobalMedia_All.list:189: DOMAIN-SUFFIX,cloudfront.net",
+        "GlobalMedia/GlobalMedia_All_No_Resolve.list:189: DOMAIN-SUFFIX,cloudfront.net",
+        "Proxy/Proxy_All.list:1202: DOMAIN-SUFFIX,cloudfront.net",
+        "Proxy/Proxy_All_No_Resolve.list:1202: DOMAIN-SUFFIX,cloudfront.net",
+        "ProxyLite/ProxyLite.list:172: DOMAIN-SUFFIX,cloudfront.net",
+        "ProxyLite/ProxyLite_Resolve.list:172: DOMAIN-SUFFIX,cloudfront.net"
+      ]
+    },
+    {
+      "suffix": "cutt.ly",
+      "classification": "URL shortener",
+      "rule_occurrences": 2,
+      "folders": [
+        "Global"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:6761: DOMAIN-SUFFIX,cutt.ly",
+        "Global/Global_All_No_Resolve.list:6761: DOMAIN-SUFFIX,cutt.ly"
+      ]
+    },
+    {
+      "suffix": "duckdns.org",
+      "classification": "dynamic DNS",
+      "rule_occurrences": 6,
+      "folders": [
+        "Global",
+        "NaSDDNS",
+        "Proxy"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "NaSDDNS/NaSDDNS.list",
+        "NaSDDNS/NaSDDNS_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:29921: DOMAIN-SUFFIX,duckdns.org",
+        "Global/Global_All_No_Resolve.list:29921: DOMAIN-SUFFIX,duckdns.org",
+        "NaSDDNS/NaSDDNS.list:23: DOMAIN-SUFFIX,duckdns.org",
+        "NaSDDNS/NaSDDNS_Resolve.list:23: DOMAIN-SUFFIX,duckdns.org",
+        "Proxy/Proxy_All.list:1615: DOMAIN-SUFFIX,duckdns.org",
+        "Proxy/Proxy_All_No_Resolve.list:1615: DOMAIN-SUFFIX,duckdns.org"
+      ]
+    },
+    {
+      "suffix": "dynu.net",
+      "classification": "Dynu dynamic DNS",
+      "rule_occurrences": 5,
+      "folders": [
+        "Dynu",
+        "Global",
+        "Proxy"
+      ],
+      "files": [
+        "Dynu/Dynu.list",
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Dynu/Dynu.list:8: DOMAIN-SUFFIX,dynu.net",
+        "Global/Global_All.list:29960: DOMAIN-SUFFIX,dynu.net",
+        "Global/Global_All_No_Resolve.list:29960: DOMAIN-SUFFIX,dynu.net",
+        "Proxy/Proxy_All.list:1654: DOMAIN-SUFFIX,dynu.net",
+        "Proxy/Proxy_All_No_Resolve.list:1654: DOMAIN-SUFFIX,dynu.net"
+      ]
+    },
+    {
+      "suffix": "eu.org",
+      "classification": "subdomain hosting",
+      "rule_occurrences": 2,
+      "folders": [
+        "Global"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:8966: DOMAIN-SUFFIX,eu.org",
+        "Global/Global_All_No_Resolve.list:8966: DOMAIN-SUFFIX,eu.org"
+      ]
+    },
+    {
+      "suffix": "firebaseapp.com",
+      "classification": "Firebase Hosting",
+      "rule_occurrences": 4,
+      "folders": [
+        "Global",
+        "Google"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Google/Google.list",
+        "Google/Google_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:9751: DOMAIN-SUFFIX,firebaseapp.com",
+        "Global/Global_All_No_Resolve.list:9751: DOMAIN-SUFFIX,firebaseapp.com",
+        "Google/Google.list:217: DOMAIN-SUFFIX,firebaseapp.com",
+        "Google/Google_Resolve.list:217: DOMAIN-SUFFIX,firebaseapp.com"
+      ]
+    },
+    {
+      "suffix": "fly.dev",
+      "classification": "Fly.io shared hosting",
+      "rule_occurrences": 2,
+      "folders": [
+        "Global"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:9860: DOMAIN-SUFFIX,fly.dev",
+        "Global/Global_All_No_Resolve.list:9860: DOMAIN-SUFFIX,fly.dev"
+      ]
+    },
+    {
+      "suffix": "gitbook.io",
+      "classification": "shared documentation hosting",
+      "rule_occurrences": 5,
+      "folders": [
+        "GitBook",
+        "Global",
+        "Proxy"
+      ],
+      "files": [
+        "GitBook/GitBook.list",
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list"
+      ],
+      "examples": [
+        "GitBook/GitBook.list:8: DOMAIN-SUFFIX,gitbook.io",
+        "Global/Global_All.list:30643: DOMAIN-SUFFIX,gitbook.io",
+        "Global/Global_All_No_Resolve.list:30643: DOMAIN-SUFFIX,gitbook.io",
+        "Proxy/Proxy_All.list:2342: DOMAIN-SUFFIX,gitbook.io",
+        "Proxy/Proxy_All_No_Resolve.list:2342: DOMAIN-SUFFIX,gitbook.io"
+      ]
+    },
+    {
+      "suffix": "github.io",
+      "classification": "GitHub Pages shared hosting",
+      "rule_occurrences": 3,
+      "folders": [
+        "GitHub",
+        "Global"
+      ],
+      "files": [
+        "GitHub/GitHub.list",
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list"
+      ],
+      "examples": [
+        "GitHub/GitHub.list:19: DOMAIN-SUFFIX,github.io",
+        "Global/Global_All.list:10778: DOMAIN-SUFFIX,github.io",
+        "Global/Global_All_No_Resolve.list:10778: DOMAIN-SUFFIX,github.io"
+      ]
+    },
+    {
+      "suffix": "gitlab.io",
+      "classification": "GitLab Pages shared hosting",
+      "rule_occurrences": 7,
+      "folders": [
+        "Developer",
+        "Global",
+        "Proxy",
+        "ProxyLite"
+      ],
+      "files": [
+        "Developer/Developer.list",
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list",
+        "ProxyLite/ProxyLite.list",
+        "ProxyLite/ProxyLite_Resolve.list"
+      ],
+      "examples": [
+        "Developer/Developer.list:57: DOMAIN-SUFFIX,gitlab.io",
+        "Global/Global_All.list:30647: DOMAIN-SUFFIX,gitlab.io",
+        "Global/Global_All_No_Resolve.list:30647: DOMAIN-SUFFIX,gitlab.io",
+        "Proxy/Proxy_All.list:2346: DOMAIN-SUFFIX,gitlab.io",
+        "Proxy/Proxy_All_No_Resolve.list:2346: DOMAIN-SUFFIX,gitlab.io",
+        "ProxyLite/ProxyLite.list:311: DOMAIN-SUFFIX,gitlab.io",
+        "ProxyLite/ProxyLite_Resolve.list:311: DOMAIN-SUFFIX,gitlab.io"
+      ]
+    },
+    {
+      "suffix": "herokuapp.com",
+      "classification": "Heroku shared hosting",
+      "rule_occurrences": 6,
+      "folders": [
+        "Global",
+        "Heroku",
+        "Proxy",
+        "Salesforce"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Heroku/Heroku.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list",
+        "Salesforce/Salesforce.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:30888: DOMAIN-SUFFIX,herokuapp.com",
+        "Global/Global_All_No_Resolve.list:30888: DOMAIN-SUFFIX,herokuapp.com",
+        "Heroku/Heroku.list:15: DOMAIN-SUFFIX,herokuapp.com",
+        "Proxy/Proxy_All.list:2589: DOMAIN-SUFFIX,herokuapp.com",
+        "Proxy/Proxy_All_No_Resolve.list:2589: DOMAIN-SUFFIX,herokuapp.com",
+        "Salesforce/Salesforce.list:9: DOMAIN-SUFFIX,herokuapp.com"
+      ]
+    },
+    {
+      "suffix": "is.gd",
+      "classification": "URL shortener",
+      "rule_occurrences": 6,
+      "folders": [
+        "Global",
+        "Proxy",
+        "ProxyLite"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list",
+        "ProxyLite/ProxyLite.list",
+        "ProxyLite/ProxyLite_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:31298: DOMAIN-SUFFIX,is.gd",
+        "Global/Global_All_No_Resolve.list:31298: DOMAIN-SUFFIX,is.gd",
+        "Proxy/Proxy_All.list:3002: DOMAIN-SUFFIX,is.gd",
+        "Proxy/Proxy_All_No_Resolve.list:3002: DOMAIN-SUFFIX,is.gd",
+        "ProxyLite/ProxyLite.list:365: DOMAIN-SUFFIX,is.gd",
+        "ProxyLite/ProxyLite_Resolve.list:365: DOMAIN-SUFFIX,is.gd"
+      ]
+    },
+    {
+      "suffix": "linktr.ee",
+      "classification": "link-in-bio / redirect platform",
+      "rule_occurrences": 4,
+      "folders": [
+        "Global",
+        "Proxy"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:31691: DOMAIN-SUFFIX,linktr.ee",
+        "Global/Global_All_No_Resolve.list:31691: DOMAIN-SUFFIX,linktr.ee",
+        "Proxy/Proxy_All.list:3396: DOMAIN-SUFFIX,linktr.ee",
+        "Proxy/Proxy_All_No_Resolve.list:3396: DOMAIN-SUFFIX,linktr.ee"
+      ]
+    },
+    {
+      "suffix": "netlify.app",
+      "classification": "Netlify shared hosting",
+      "rule_occurrences": 4,
+      "folders": [
+        "Global",
+        "Proxy"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:32261: DOMAIN-SUFFIX,netlify.app",
+        "Global/Global_All_No_Resolve.list:32261: DOMAIN-SUFFIX,netlify.app",
+        "Proxy/Proxy_All.list:3970: DOMAIN-SUFFIX,netlify.app",
+        "Proxy/Proxy_All_No_Resolve.list:3970: DOMAIN-SUFFIX,netlify.app"
+      ]
+    },
+    {
+      "suffix": "no-ip.org",
+      "classification": "dynamic DNS",
+      "rule_occurrences": 4,
+      "folders": [
+        "Global",
+        "Proxy"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:32367: DOMAIN-SUFFIX,no-ip.org",
+        "Global/Global_All_No_Resolve.list:32367: DOMAIN-SUFFIX,no-ip.org",
+        "Proxy/Proxy_All.list:4077: DOMAIN-SUFFIX,no-ip.org",
+        "Proxy/Proxy_All_No_Resolve.list:4077: DOMAIN-SUFFIX,no-ip.org"
+      ]
+    },
+    {
+      "suffix": "pages.dev",
+      "classification": "Cloudflare Pages shared hosting",
+      "rule_occurrences": 6,
+      "folders": [
+        "Cloudflare",
+        "Global",
+        "Proxy"
+      ],
+      "files": [
+        "Cloudflare/Cloudflare.list",
+        "Cloudflare/Cloudflare_Resolve.list",
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Cloudflare/Cloudflare.list:47: DOMAIN-SUFFIX,pages.dev",
+        "Cloudflare/Cloudflare_Resolve.list:47: DOMAIN-SUFFIX,pages.dev",
+        "Global/Global_All.list:32610: DOMAIN-SUFFIX,pages.dev",
+        "Global/Global_All_No_Resolve.list:32610: DOMAIN-SUFFIX,pages.dev",
+        "Proxy/Proxy_All.list:4325: DOMAIN-SUFFIX,pages.dev",
+        "Proxy/Proxy_All_No_Resolve.list:4325: DOMAIN-SUFFIX,pages.dev"
+      ]
+    },
+    {
+      "suffix": "shorturl.at",
+      "classification": "URL shortener",
+      "rule_occurrences": 2,
+      "folders": [
+        "Global"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:22466: DOMAIN-SUFFIX,shorturl.at",
+        "Global/Global_All_No_Resolve.list:22466: DOMAIN-SUFFIX,shorturl.at"
+      ]
+    },
+    {
+      "suffix": "t.co",
+      "classification": "URL shortener",
+      "rule_occurrences": 8,
+      "folders": [
+        "Global",
+        "Proxy",
+        "ProxyLite",
+        "Twitter"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list",
+        "ProxyLite/ProxyLite.list",
+        "ProxyLite/ProxyLite_Resolve.list",
+        "Twitter/Twitter.list",
+        "Twitter/Twitter_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:33675: DOMAIN-SUFFIX,t.co",
+        "Global/Global_All_No_Resolve.list:33675: DOMAIN-SUFFIX,t.co",
+        "Proxy/Proxy_All.list:5396: DOMAIN-SUFFIX,t.co",
+        "Proxy/Proxy_All_No_Resolve.list:5396: DOMAIN-SUFFIX,t.co",
+        "ProxyLite/ProxyLite.list:652: DOMAIN-SUFFIX,t.co",
+        "ProxyLite/ProxyLite_Resolve.list:652: DOMAIN-SUFFIX,t.co",
+        "Twitter/Twitter.list:14: DOMAIN-SUFFIX,t.co",
+        "Twitter/Twitter_Resolve.list:14: DOMAIN-SUFFIX,t.co"
+      ]
+    },
+    {
+      "suffix": "tinyurl.com",
+      "classification": "URL shortener",
+      "rule_occurrences": 4,
+      "folders": [
+        "Global",
+        "Proxy"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:34006: DOMAIN-SUFFIX,tinyurl.com",
+        "Global/Global_All_No_Resolve.list:34006: DOMAIN-SUFFIX,tinyurl.com",
+        "Proxy/Proxy_All.list:5728: DOMAIN-SUFFIX,tinyurl.com",
+        "Proxy/Proxy_All_No_Resolve.list:5728: DOMAIN-SUFFIX,tinyurl.com"
+      ]
+    },
+    {
+      "suffix": "trycloudflare.com",
+      "classification": "Cloudflare temporary tunnel",
+      "rule_occurrences": 4,
+      "folders": [
+        "Cloudflare",
+        "Global"
+      ],
+      "files": [
+        "Cloudflare/Cloudflare.list",
+        "Cloudflare/Cloudflare_Resolve.list",
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Cloudflare/Cloudflare.list:48: DOMAIN-SUFFIX,trycloudflare.com",
+        "Cloudflare/Cloudflare_Resolve.list:48: DOMAIN-SUFFIX,trycloudflare.com",
+        "Global/Global_All.list:24717: DOMAIN-SUFFIX,trycloudflare.com",
+        "Global/Global_All_No_Resolve.list:24717: DOMAIN-SUFFIX,trycloudflare.com"
+      ]
+    },
+    {
+      "suffix": "vercel.app",
+      "classification": "Vercel shared hosting",
+      "rule_occurrences": 5,
+      "folders": [
+        "Global",
+        "Proxy",
+        "Vercel"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list",
+        "Vercel/Vercel.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:34443: DOMAIN-SUFFIX,vercel.app",
+        "Global/Global_All_No_Resolve.list:34443: DOMAIN-SUFFIX,vercel.app",
+        "Proxy/Proxy_All.list:6170: DOMAIN-SUFFIX,vercel.app",
+        "Proxy/Proxy_All_No_Resolve.list:6170: DOMAIN-SUFFIX,vercel.app",
+        "Vercel/Vercel.list:18: DOMAIN-SUFFIX,vercel.app"
+      ]
+    },
+    {
+      "suffix": "web.app",
+      "classification": "Firebase Hosting",
+      "rule_occurrences": 4,
+      "folders": [
+        "Global",
+        "Google"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Google/Google.list",
+        "Google/Google_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:26460: DOMAIN-SUFFIX,web.app",
+        "Global/Global_All_No_Resolve.list:26460: DOMAIN-SUFFIX,web.app",
+        "Google/Google.list:666: DOMAIN-SUFFIX,web.app",
+        "Google/Google_Resolve.list:666: DOMAIN-SUFFIX,web.app"
+      ]
+    },
+    {
+      "suffix": "weebly.com",
+      "classification": "Weebly shared website hosting",
+      "rule_occurrences": 4,
+      "folders": [
+        "Global",
+        "Proxy"
+      ],
+      "files": [
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Global/Global_All.list:34650: DOMAIN-SUFFIX,weebly.com",
+        "Global/Global_All_No_Resolve.list:34650: DOMAIN-SUFFIX,weebly.com",
+        "Proxy/Proxy_All.list:6378: DOMAIN-SUFFIX,weebly.com",
+        "Proxy/Proxy_All_No_Resolve.list:6378: DOMAIN-SUFFIX,weebly.com"
+      ]
+    },
+    {
+      "suffix": "workers.dev",
+      "classification": "Cloudflare Workers shared hosting",
+      "rule_occurrences": 6,
+      "folders": [
+        "Cloudflare",
+        "Global",
+        "Proxy"
+      ],
+      "files": [
+        "Cloudflare/Cloudflare.list",
+        "Cloudflare/Cloudflare_Resolve.list",
+        "Global/Global_All.list",
+        "Global/Global_All_No_Resolve.list",
+        "Proxy/Proxy_All.list",
+        "Proxy/Proxy_All_No_Resolve.list"
+      ],
+      "examples": [
+        "Cloudflare/Cloudflare.list:51: DOMAIN-SUFFIX,workers.dev",
+        "Cloudflare/Cloudflare_Resolve.list:51: DOMAIN-SUFFIX,workers.dev",
+        "Global/Global_All.list:34775: DOMAIN-SUFFIX,workers.dev",
+        "Global/Global_All_No_Resolve.list:34775: DOMAIN-SUFFIX,workers.dev",
+        "Proxy/Proxy_All.list:6505: DOMAIN-SUFFIX,workers.dev",
+        "Proxy/Proxy_All_No_Resolve.list:6505: DOMAIN-SUFFIX,workers.dev"
+      ]
+    }
+  ],
   "reputation_feed_status": {
     "urlhaus_domains": 0,
     "openphish_domains": 280,
@@ -2167,7 +2948,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "brige-traezor-io.pages.dev"
+      "matched_domain": "tke3b-2u1-k227-whejz-10-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2183,7 +2964,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2191,7 +2972,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "brige-traezor-io.pages.dev"
+      "matched_domain": "tke3b-2u1-k227-whejz-10-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2207,7 +2988,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2215,7 +2996,7 @@
       "path": "GitBook/GitBook.list",
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2223,7 +3004,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "wargreymon9.github.io"
+      "matched_domain": "bridge-cdnn-web.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2231,7 +3012,7 @@
       "path": "Global/Global_All.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
+      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -2239,7 +3020,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "rejekishopee23.blogspot.com"
+      "matched_domain": "watchtheviralvideosonline.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2255,7 +3036,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "wargreymon9.github.io"
+      "matched_domain": "bridge-cdnn-web.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2303,7 +3084,7 @@
       "path": "Global/Global_All.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2311,7 +3092,7 @@
       "path": "Global/Global_All.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2319,7 +3100,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "brige-traezor-io.pages.dev"
+      "matched_domain": "tke3b-2u1-k227-whejz-10-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2327,7 +3108,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.vakifbank.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2343,7 +3124,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2351,7 +3132,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
+      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -2359,7 +3140,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "rejekishopee23.blogspot.com"
+      "matched_domain": "watchtheviralvideosonline.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2375,7 +3156,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "wargreymon9.github.io"
+      "matched_domain": "bridge-cdnn-web.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -2423,7 +3204,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2431,7 +3212,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2439,7 +3220,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "brige-traezor-io.pages.dev"
+      "matched_domain": "tke3b-2u1-k227-whejz-10-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2447,7 +3228,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.vakifbank.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2463,7 +3244,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2503,7 +3284,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "rejekishopee23.blogspot.com"
+      "matched_domain": "watchtheviralvideosonline.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2511,7 +3292,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "rejekishopee23.blogspot.com"
+      "matched_domain": "watchtheviralvideosonline.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -2519,7 +3300,7 @@
       "path": "Microsoft/Microsoft.list",
       "line": 86,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net"
+      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -2583,7 +3364,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2591,7 +3372,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2599,7 +3380,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "brige-traezor-io.pages.dev"
+      "matched_domain": "tke3b-2u1-k227-whejz-10-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2607,7 +3388,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.vakifbank.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2623,7 +3404,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2663,7 +3444,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "matumasklogie.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -2671,7 +3452,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
+      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -2679,7 +3460,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "brige-traezor-io.pages.dev"
+      "matched_domain": "tke3b-2u1-k227-whejz-10-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2687,7 +3468,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.vakifbank.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -2703,7 +3484,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -2743,7 +3524,7 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.vakifbank.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {

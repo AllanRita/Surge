@@ -1,6 +1,6 @@
 # Security reputation review
 
-Generated: 2026-11-27 12:28 UTC
+Generated: 2026-11-27 12:32 UTC
 
 This report compares current domain rules against public threat-intelligence feeds. A feed match is a review signal, not proof that the rule's parent domain is malicious. No rules are automatically removed.
 
@@ -18,27 +18,27 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Rule files: Amazon/Amazon.list, Amazon/Amazon_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, GlobalMedia/GlobalMedia_All.list, GlobalMedia/GlobalMedia_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list, ProxyLite/ProxyLite.list, ProxyLite/ProxyLite_Resolve.list
 - Matched feed host examples: n8turz.s3.us-east-1.amazonaws.com
-- Classification: app/routing match; verify that the domain is genuinely required by the App and is not an overly broad shared service.
+- Classification: shared cloud infrastructure / AWS; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,azurefd.net
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Microsoft/Microsoft.list
-- Matched feed host examples: 35ctt56wc6hcja27hkpd-d4g3a2apa2g2ergs.z03.azurefd.net
-- Classification: app/routing match; verify that the domain is genuinely required by the App and is not an overly broad shared service.
+- Matched feed host examples: macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net
+- Classification: Azure Front Door shared CDN; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,azurewebsites.net
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Microsoft/Microsoft.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
 - Matched feed host examples: forrit-tb-csmr-prod-dev-02.azurewebsites.net
-- Classification: app/routing match; verify that the domain is genuinely required by the App and is not an overly broad shared service.
+- Classification: Azure App Service hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,blogspot.com
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Google/Google.list, Google/Google_Resolve.list
-- Matched feed host examples: rejekishopee23.blogspot.com
+- Matched feed host examples: watchtheviralvideosonline.blogspot.com
 - Classification: Blogger shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,cloudfront.net
@@ -46,48 +46,48 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Rule files: Amazon/Amazon.list, Amazon/Amazon_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, GlobalMedia/GlobalMedia_All.list, GlobalMedia/GlobalMedia_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list, ProxyLite/ProxyLite.list, ProxyLite/ProxyLite_Resolve.list
 - Matched feed host examples: d1by761p31t71v.cloudfront.net
-- Classification: Amazon CloudFront shared CDN; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
+- Classification: shared CDN / Amazon CloudFront; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,duckdns.org
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, NaSDDNS/NaSDDNS.list, NaSDDNS/NaSDDNS_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
 - Matched feed host examples: hizliyapiyoruzherseyi.duckdns.org
-- Classification: DuckDNS dynamic DNS; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
+- Classification: dynamic DNS; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,eu.org
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list
 - Matched feed host examples: wisayq9065.embih.eu.org
-- Classification: EU.org subdomain hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
+- Classification: subdomain hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,gitbook.io
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: GitBook/GitBook.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: matumasklogie.gitbook.io
-- Classification: GitBook hosted content; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
+- Matched feed host examples: kucinlogn16.gitbook.io
+- Classification: shared documentation hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,github.io
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: GitHub/GitHub.list, Global/Global_All.list, Global/Global_All_No_Resolve.list
-- Matched feed host examples: wargreymon9.github.io
+- Matched feed host examples: bridge-cdnn-web.github.io
 - Classification: GitHub Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,netlify.app
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: boisterous-sprite-d1fe49.netlify.app
+- Matched feed host examples: connexion-mabanquebnpparibas.netlify.app
 - Classification: Netlify shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,pages.dev
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: brige-traezor-io.pages.dev
+- Matched feed host examples: tke3b-2u1-k227-whejz-10-10-2026-aa.pages.dev
 - Classification: Cloudflare Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,trycloudflare.com
@@ -95,13 +95,13 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list
 - Matched feed host examples: drainage-possess-unavailable-focal.trycloudflare.com
-- Classification: app/routing match; verify that the domain is genuinely required by the App and is not an overly broad shared service.
+- Classification: Cloudflare temporary tunnel; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,vercel.app
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list, Vercel/Vercel.list
-- Matched feed host examples: www.vakifbank.vercel.app
+- Matched feed host examples: demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app
 - Classification: Vercel shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,weebly.com
@@ -109,15 +109,56 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
 - Matched feed host examples: www.xhdfh7hfnrrjjjff.weebly.com
-- Classification: app/routing match; verify that the domain is genuinely required by the App and is not an overly broad shared service.
+- Classification: Weebly shared website hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,workers.dev
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: substantiating-proof-f2d1.63186834.workers.dev
+- Matched feed host examples: reverification-evidence-5ef7.s2467-05b.workers.dev
 - Classification: Cloudflare Workers shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
+
+## Known shared-hosting suffixes in the rule library
+
+The curated suffix scan covers all upstream rule files, not only threat-feed matches. These are broad multi-tenant or shared-platform namespaces; presence is not proof of maliciousness and no rule is automatically removed.
+
+| Suffix | Classification | Rule occurrences | Folders |
+|---|---|---:|---|
+| amazonaws.com | shared cloud infrastructure / AWS | 10 | Amazon, Global, GlobalMedia, Proxy, ProxyLite |
+| appspot.com | Google App Engine hosting | 6 | Global, Google, Proxy |
+| azureedge.net | Azure CDN | 5 | Global, Microsoft, Proxy |
+| azurefd.net | Azure Front Door shared CDN | 3 | Global, Microsoft |
+| azurestaticapps.net | Azure Static Web Apps | 2 | Global |
+| azurewebsites.net | Azure App Service hosting | 5 | Global, Microsoft, Proxy |
+| bit.ly | URL shortener | 6 | Global, Proxy, ProxyLite |
+| bitbucket.io | Bitbucket Pages hosting | 2 | Global |
+| blogspot.com | Blogger shared hosting | 4 | Global, Google |
+| cloudapp.net | Azure Cloud Services | 3 | Global, Microsoft |
+| cloudfront.net | shared CDN / Amazon CloudFront | 10 | Amazon, Global, GlobalMedia, Proxy, ProxyLite |
+| cutt.ly | URL shortener | 2 | Global |
+| duckdns.org | dynamic DNS | 6 | Global, NaSDDNS, Proxy |
+| dynu.net | Dynu dynamic DNS | 5 | Dynu, Global, Proxy |
+| eu.org | subdomain hosting | 2 | Global |
+| firebaseapp.com | Firebase Hosting | 4 | Global, Google |
+| fly.dev | Fly.io shared hosting | 2 | Global |
+| gitbook.io | shared documentation hosting | 5 | GitBook, Global, Proxy |
+| github.io | GitHub Pages shared hosting | 3 | GitHub, Global |
+| gitlab.io | GitLab Pages shared hosting | 7 | Developer, Global, Proxy, ProxyLite |
+| herokuapp.com | Heroku shared hosting | 6 | Global, Heroku, Proxy, Salesforce |
+| is.gd | URL shortener | 6 | Global, Proxy, ProxyLite |
+| linktr.ee | link-in-bio / redirect platform | 4 | Global, Proxy |
+| netlify.app | Netlify shared hosting | 4 | Global, Proxy |
+| no-ip.org | dynamic DNS | 4 | Global, Proxy |
+| pages.dev | Cloudflare Pages shared hosting | 6 | Cloudflare, Global, Proxy |
+| shorturl.at | URL shortener | 2 | Global |
+| t.co | URL shortener | 8 | Global, Proxy, ProxyLite, Twitter |
+| tinyurl.com | URL shortener | 4 | Global, Proxy |
+| trycloudflare.com | Cloudflare temporary tunnel | 4 | Cloudflare, Global |
+| vercel.app | Vercel shared hosting | 5 | Global, Proxy, Vercel |
+| web.app | Firebase Hosting | 4 | Global, Google |
+| weebly.com | Weebly shared website hosting | 4 | Global, Proxy |
+| workers.dev | Cloudflare Workers shared hosting | 6 | Cloudflare, Global, Proxy |
 ## Stale/private single-label suffixes
 
 - None detected or IANA TLD feed unavailable.
