@@ -155,3 +155,13 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - The workflow has not yet been declared successful. Validate its first actual run, script execution, and resulting commits/reports before claiming end-to-end success. Any syntax or workflow error must be corrected before subsequent scheduled runs.
 - Cached author sources remain the only permitted author comparison corpus. This maintenance script currently performs safe deterministic cleanup and security triage; it does not yet perform full cached-author gap-fill/format-union merging. That capability remains a distinct follow-on implementation and must preserve format semantics.
 - Next: inspect the first run triggered by these workflow changes; verify batch counts, changes, quarantined findings, personal-file digest, tombstone enforcement, and Git commit history. Then add the cached-source merge stage with per-format safety gates.
+
+## 13. Implementation run status (2026-11-27)
+
+- V1.0 implementation commits are present on main. The automatic maintenance workflow accepted the YAML and started run [46015832021](https://github.com/AllanRita/Surge/actions/runs/46015832021) at 14:25:40 UTC; the job passed checkout, Python setup, security-feed download, and exact tombstone enforcement, and was executing the sequential maintenance step at last inspection.
+- Several intermediate push-triggered runs occurred while the workflow, script, manifest, and project state were being committed. Some were cancelled by the serialized concurrency group; do not treat those cancelled runs as maintenance failures or completed batches. The latest run is the one to verify.
+- Do not claim the full V1.0 end-to-end process is complete until run 46015832021 finishes and its per-batch artifacts and Git commits are checked.
+- Implemented deterministic auto-remediation currently includes exact duplicate line removal and clearly invalid DOMAIN/HOST/IP-CIDR/IP-CIDR6 operand removal. Threat deletion is limited to an exact DOMAIN hostname present in both OpenPhish and URLhaus, and excluded from paths classified as block/filter lists. If URLhaus is unavailable, threat-based deletion is disabled.
+- Single-feed matches and parent-suffix/shared-hosting matches are written as review findings; no broad suffix or App folder is automatically deleted. Personal rules are protected by a digest check.
+- Every batch is committed separately if files changed; Git history is the rollback point. Reports are uploaded as 90-day artifacts.
+- Remaining V1.0 work: validate the first complete run, refine quarantine/reporting if needed, and implement cached-author source gap-fill and format-aware union merging using the existing 15 cached snapshots only. No new author sources may be fetched.
