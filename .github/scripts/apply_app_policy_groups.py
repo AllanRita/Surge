@@ -169,6 +169,9 @@ def main():
     total_added_file_rules=0
     total_unique_added=set()
     completed=[]
+    table_rows=[]
+    details=[]
+    readmes_created=0
 
     for group in groups:
         app=group["app"]
@@ -264,6 +267,7 @@ def main():
                 existing+="Consolidated regional/alternate folders: "+", ".join(aliases)+".\n\n"
             existing+="Retained formats: "+", ".join(final_formats)+".\n"
             readme.write_text(existing,encoding="utf-8")
+            readmes_created+=1
 
         total_alias_folders+=alias_folders_removed
         total_list_files_removed+=alias_files_removed
@@ -272,15 +276,16 @@ def main():
             "list_files_removed":alias_files_removed,"alias_rule_occurrences":alias_rule_count,
             "added_by_format":dict(added_by_format),"formats":final_formats,"archived_source_files":archived,
         })
-        report.append(
+        table_rows.append(
             f"| {app} | {alias_folders_removed} | {alias_files_removed} | {sum(added_by_format.values())} | {', '.join(final_formats)} |"
         )
-        report += ["",f"## {app}",f"- Canonical folder: {canonical_rel}",
-                  f"- Alias folders removed: {alias_folders_removed}; .list files removed: {alias_files_removed}",
-                  f"- Alias rule occurrences checked: {alias_rule_count}",
-                  f"- New rules added by format: {dict(added_by_format)}",
-                  f"- Source README/license files archived: {len(archived)}"]
+        details += ["",f"## {app}",f"- Canonical folder: {canonical_rel}",
+                    f"- Alias folders removed: {alias_folders_removed}; .list files removed: {alias_files_removed}",
+                    f"- Alias rule occurrences checked: {alias_rule_count}",
+                    f"- New rules added by format: {dict(added_by_format)}",
+                    f"- Source README/license files archived: {len(archived)}"]
 
+    report += table_rows + details
     report += [
         "",
         "## Summary",
@@ -298,6 +303,9 @@ def main():
         "- No new author rule sets were fetched.",
         "",
     ]
+    if total_alias_folders == 0 and total_added_file_rules == 0 and readmes_created == 0 and REPORT.is_file():
+        print(json.dumps({"status":"already_consolidated","groups_checked":len(completed),"alias_folders_removed":0,"list_files_removed":0,"new_rule_lines_across_formats":0},ensure_ascii=False))
+        return
     REPORT.write_text("\n".join(report)+"\n",encoding="utf-8")
     print(json.dumps({"groups":len(completed),"alias_folders_removed":total_alias_folders,"list_files_removed":total_list_files_removed,"new_rule_lines_across_formats":total_added_file_rules,"unique_app_rules_added":len(total_unique_added)},ensure_ascii=False))
 
