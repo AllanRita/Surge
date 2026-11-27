@@ -184,6 +184,17 @@ jobs:
               if native.startswith('/') and native.endswith('/') and len(native)>2:
                   findings['recognized-native-regex']+=1
                   return
+              # AdGuard domain-only lists use one hostname per line, commonly ".example.com".
+              # Recognize these as native domain entries; do not convert them into Surge rules.
+              bare=native[1:] if native.startswith('.') else native
+              if ',' not in native and re.fullmatch(r'(?i)[a-z0-9_-]+(?:\\.[a-z0-9_-]+)+',bare):
+                  findings['recognized-native-domain']+=1
+                  if re.fullmatch(
+                      r'(?i)(?:[a-z0-9_-]+\\.)*(?:paypal\\.com|alipay\\.com|stripe\\.com|unionpay\\.com|visa\\.com|icbc\\.com\\.cn|boc\\.cn|paypay\\.ne\\.jp)',
+                      bare
+                  ):
+                      flag('financial-domain-review',path,num)
+                  return
               parts=line.split(',')
               kind=parts[0].strip().upper()
               if kind not in allowed:
@@ -203,13 +214,14 @@ jobs:
                   except ValueError:
                       flag('invalid-network',path,num)
               if kind in {'DOMAIN','DOMAIN-SUFFIX','HOST','HOST-SUFFIX'}:
+                  labels=[]
                   try:
                       labels=value.rstrip('.').encode('idna').decode('ascii').split('.')
                       if any(not re.fullmatch(r'[A-Za-z0-9_](?:[A-Za-z0-9_-]{0,61}[A-Za-z0-9_])?',x) for x in labels):
                           flag('invalid-domain',path,num)
                   except UnicodeError:
                       flag('invalid-domain',path,num)
-                  if len(labels if 'labels' in locals() else [])<2:
+                  if len(labels)<2:
                       flag('broad-domain',path,num)
               # Report exact financial-service host matches for manual scope review.
               # A match in an ad/tracker blocklist is not evidence that the service is routed.
