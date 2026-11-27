@@ -1,0 +1,9 @@
+# NAME: PSBC
+# AUTHOR: blackmatrix7
+# SOURCE: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PSBC/PSBC.list
+# RESTORED: 2026-11-27
+# RULES: 3
+
+DOMAIN-SUFFIX,95580.net
+DOMAIN-SUFFIX,psbc.com
+DOMAIN-SUFFIX,psbcoa.com.cn
