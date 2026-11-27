@@ -1,6 +1,6 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 12:37 UTC
+Generated: 2026-11-27 12:38 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
@@ -20,6 +20,19 @@ Scope: existing rule files and cached source metadata only. No new rule authors 
 
 This classifies dedicated App folders by folder name only. Financial-service domains inside other App or aggregate lists are not removed.
 - No dedicated bank/payment App folders found under Rule/Upstream. Rule/Personal/PayPay.list remains untouched.
+
+## Other finance/trading/crypto folders — review only
+
+These folders are not automatically classified as bank/payment Apps. They are listed for manual classification only; no rule files are deleted or modified.
+
+| Folder | Classification | Rule files | Rule entries | Status |
+|---|---|---:|---:|---|
+| Binance | crypto exchange | 1 | 12 | Review only |
+| Crypto | cryptocurrency category list (not a single App) | 1 | 201 | Review only |
+| Cryptocurrency | cryptocurrency category list (not a single App) | 1 | 43 | Review only |
+| EastMoney | securities brokerage / investment platform | 1 | 33 | Review only |
+| OKX | crypto exchange | 1 | 3 | Review only |
+| TigerFintech | securities brokerage / investment platform | 1 | 19 | Review only |
 
 ## Same-App / regional alias candidates
 
@@ -122,6 +135,11 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 | workers.dev | Cloudflare Workers shared hosting | 6 | Cloudflare, Global, Proxy |
 
 ## Cached author-source coverage
+
+- Cached source snapshots compared: **15**
+- Source rule entries checked: **300**
+- Missing source rules: **0**
+- Scope limitation: only cached author snapshots are compared. This does not establish that every App has been compared against every author. No new authors or rule lists were fetched.
 
 | Cached source | Target | Source rules | Exact | Parent suffix | IP covered | Missing |
 |---|---|---:|---:|---:|---:|---:|
