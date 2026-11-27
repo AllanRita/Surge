@@ -8,6 +8,7 @@ on:
       - '.github/scripts/batch_preflight.py'
       - '.github/scripts/batch_maintain.py'
       - '.github/scripts/merge_cached_sources.py'
+      - '.github/scripts/test_batch_maintenance.py'
       - 'Rule/Upstream/SourceMetadata/**/*.json'
       - '.github/workflows/batch-preflight.yml'
       - '.github/explicit-rule-exclusions.json'
@@ -39,6 +40,9 @@ jobs:
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: "3.12"
+
+      - name: Run offline maintenance self-tests
+        run: python3 .github/scripts/test_batch_maintenance.py
 
       - name: Download security intelligence feeds
         env:
