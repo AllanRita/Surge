@@ -1,21 +1,21 @@
 {
-  "generated_utc": "2026-11-27 13:19 UTC",
+  "generated_utc": "2026-11-27 13:20 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
-    "rule_files": 821,
-    "app_or_category_folders": 656,
-    "top_level_folders": 633,
-    "total_rule_bytes": 116040156,
+    "rule_files": 828,
+    "app_or_category_folders": 663,
+    "top_level_folders": 640,
+    "total_rule_bytes": 116049942,
     "multi_file_folders": 107,
     "exact_raw_duplicate_file_groups": 2,
     "same_rule_payload_file_groups": 3,
     "duplicate_rule_lines": 0,
-    "domain_rule_count": 2690635,
+    "domain_rule_count": 2690953,
     "bare_public_tld_suffix_rule_occurrences": 894,
     "bare_public_tld_suffixes_found": 78,
     "personal_files_seen_not_modified": 3,
     "bank_payment_app_folders_found": 0,
-    "finance_app_review_candidates": 0,
+    "finance_app_review_candidates": 7,
     "cached_author_source_count": 15,
     "cached_author_source_rule_count": 300,
     "cached_author_source_missing_count": 0,
@@ -25,7 +25,78 @@
     "shared_hosting_suffix_rule_occurrences": 159
   },
   "bank_payment_app_folders": [],
-  "finance_app_review_candidates": [],
+  "finance_app_review_candidates": [
+    {
+      "folder": "Binance",
+      "classification": "crypto exchange",
+      "rule_file_count": 1,
+      "rule_occurrences": 12,
+      "files": [
+        "Binance/Binance.list"
+      ],
+      "status": "review_only_not_removed"
+    },
+    {
+      "folder": "Crypto",
+      "classification": "cryptocurrency category list (not a single App)",
+      "rule_file_count": 1,
+      "rule_occurrences": 201,
+      "files": [
+        "Crypto/Crypto.list"
+      ],
+      "status": "review_only_not_removed"
+    },
+    {
+      "folder": "Cryptocurrency",
+      "classification": "cryptocurrency category list (not a single App)",
+      "rule_file_count": 1,
+      "rule_occurrences": 43,
+      "files": [
+        "Cryptocurrency/Cryptocurrency.list"
+      ],
+      "status": "review_only_not_removed"
+    },
+    {
+      "folder": "EastMoney",
+      "classification": "securities brokerage / investment platform",
+      "rule_file_count": 1,
+      "rule_occurrences": 33,
+      "files": [
+        "EastMoney/EastMoney.list"
+      ],
+      "status": "review_only_not_removed"
+    },
+    {
+      "folder": "OKX",
+      "classification": "crypto exchange",
+      "rule_file_count": 1,
+      "rule_occurrences": 3,
+      "files": [
+        "OKX/OKX.list"
+      ],
+      "status": "review_only_not_removed"
+    },
+    {
+      "folder": "TigerFintech",
+      "classification": "securities brokerage / investment platform",
+      "rule_file_count": 1,
+      "rule_occurrences": 19,
+      "files": [
+        "TigerFintech/TigerFintech.list"
+      ],
+      "status": "review_only_not_removed"
+    },
+    {
+      "folder": "XueQiu",
+      "classification": "securities / stock-investment information community",
+      "rule_file_count": 1,
+      "rule_occurrences": 11,
+      "files": [
+        "XueQiu/XueQiu.list"
+      ],
+      "status": "review_only_not_removed"
+    }
+  ],
   "personal_files_seen_not_modified": [
     "Rule/Personal/Grok.list",
     "Rule/Personal/PayPay.list",
@@ -6552,7 +6623,7 @@
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "79ubg-9yt-62z7-gvh31-07-10-2026-aa.pages.dev"
+      "matched_domain": "n5ezo-a6z-37dj-wyhsv-12-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6572,7 +6643,7 @@
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6582,7 +6653,7 @@
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "79ubg-9yt-62z7-gvh31-07-10-2026-aa.pages.dev"
+      "matched_domain": "n5ezo-a6z-37dj-wyhsv-12-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6602,7 +6673,7 @@
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6612,7 +6683,7 @@
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
       "rule_domain": "gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -6622,7 +6693,7 @@
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
       "rule_domain": "github.io",
-      "matched_domain": "zhouxiaoka.github.io"
+      "matched_domain": "bridge-cdnn-web.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -6642,7 +6713,7 @@
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -6662,7 +6733,7 @@
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
       "rule_domain": "github.io",
-      "matched_domain": "zhouxiaoka.github.io"
+      "matched_domain": "bridge-cdnn-web.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -6722,7 +6793,7 @@
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
       "rule_domain": "gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -6732,7 +6803,7 @@
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
       "rule_domain": "netlify.app",
-      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
+      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -6742,7 +6813,7 @@
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "79ubg-9yt-62z7-gvh31-07-10-2026-aa.pages.dev"
+      "matched_domain": "n5ezo-a6z-37dj-wyhsv-12-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6752,7 +6823,7 @@
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
       "rule_domain": "vercel.app",
-      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
+      "matched_domain": "ore45.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -6772,7 +6843,7 @@
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6792,7 +6863,7 @@
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -6812,7 +6883,7 @@
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
       "rule_domain": "github.io",
-      "matched_domain": "zhouxiaoka.github.io"
+      "matched_domain": "bridge-cdnn-web.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -6872,7 +6943,7 @@
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
       "rule_domain": "gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -6882,7 +6953,7 @@
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
       "rule_domain": "netlify.app",
-      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
+      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -6892,7 +6963,7 @@
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "79ubg-9yt-62z7-gvh31-07-10-2026-aa.pages.dev"
+      "matched_domain": "n5ezo-a6z-37dj-wyhsv-12-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6902,7 +6973,7 @@
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
       "rule_domain": "vercel.app",
-      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
+      "matched_domain": "ore45.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -6922,7 +6993,7 @@
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6972,7 +7043,7 @@
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -6982,7 +7053,7 @@
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "instagram-baittouts-login.blogspot.com"
+      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -7072,7 +7143,7 @@
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
       "rule_domain": "gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -7082,7 +7153,7 @@
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
       "rule_domain": "netlify.app",
-      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
+      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -7092,7 +7163,7 @@
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "79ubg-9yt-62z7-gvh31-07-10-2026-aa.pages.dev"
+      "matched_domain": "n5ezo-a6z-37dj-wyhsv-12-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -7102,7 +7173,7 @@
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
       "rule_domain": "vercel.app",
-      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
+      "matched_domain": "ore45.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -7122,7 +7193,7 @@
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -7172,7 +7243,7 @@
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
       "rule_domain": "gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -7182,7 +7253,7 @@
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
       "rule_domain": "netlify.app",
-      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
+      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -7192,7 +7263,7 @@
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "79ubg-9yt-62z7-gvh31-07-10-2026-aa.pages.dev"
+      "matched_domain": "n5ezo-a6z-37dj-wyhsv-12-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -7202,7 +7273,7 @@
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
       "rule_domain": "vercel.app",
-      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
+      "matched_domain": "ore45.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -7222,7 +7293,7 @@
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
+      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -7272,7 +7343,7 @@
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
       "rule_domain": "vercel.app",
-      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
+      "matched_domain": "ore45.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {
