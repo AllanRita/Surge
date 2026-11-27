@@ -179,7 +179,7 @@ Skipped empty files: {len(skipped)}
           findings=collections.Counter()
           examples=[]
           financial_matches=[]
-broad_matches=[]
+          broad_matches=[]
           finding_by_category=collections.defaultdict(collections.Counter)
           def flag(kind,path,num):
               findings[kind]+=1
