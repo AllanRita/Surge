@@ -168,7 +168,7 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 | Aoang-Apple | standard | Apple/Apple.list | 69 | 0 |
 | Aoang-Apple | all | Apple/Apple_All.list | 69 | 0 |
 | Aoang-Apple | all_no_resolve | Apple/Apple_All_No_Resolve.list | 69 | 0 |
-| Aoang-Apple | domain_only | Apple/Apple_Domain.list | 69 | 69 |
+| Aoang-Apple | domain_only | Apple/Apple_Domain.list | 69 | 0 |
 | Aoang-Apple | resolve | Apple/Apple_Resolve.list | 69 | 69 |
 | Aoang-DNS | standard | Block/DNS/DNS.list | 53 | 0 |
 | Aoang-OneDrive | standard | OneDrive/OneDrive.list | 4 | 0 |
@@ -181,7 +181,7 @@ This curated scan checks exact DOMAIN-SUFFIX / HOST-SUFFIX rules across all upst
 | Apple | standard | Apple/Apple.list | 16 | 0 |
 | Apple | all | Apple/Apple_All.list | 16 | 0 |
 | Apple | all_no_resolve | Apple/Apple_All_No_Resolve.list | 16 | 0 |
-| Apple | domain_only | Apple/Apple_Domain.list | 16 | 16 |
+| Apple | domain_only | Apple/Apple_Domain.list | 16 | 0 |
 | Apple | resolve | Apple/Apple_Resolve.list | 16 | 16 |
 | BiliBiliIntl | standard | BiliBili/BiliBili.list | 5 | 0 |
 | BiliBiliIntl | resolve | BiliBili/BiliBili_Resolve.list | 5 | 0 |

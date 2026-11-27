@@ -18,7 +18,7 @@
     "cached_author_source_rule_count": 300,
     "cached_author_source_missing_count": 0,
     "cached_author_source_format_target_count": 26,
-    "cached_author_source_format_missing_count": 170,
+    "cached_author_source_format_missing_count": 85,
     "shared_hosting_suffixes_found": 34,
     "shared_hosting_suffix_rule_occurrences": 159
   },
@@ -1714,80 +1714,10 @@
           "target": "Apple/Apple_Domain.list",
           "target_rules": 1559,
           "exact": 0,
-          "parent_suffix": 0,
+          "parent_suffix": 69,
           "ip_range": 0,
-          "missing_count": 69,
-          "missing_examples": [
-            "DOMAIN-SUFFIX,apps.apple.com",
-            "DOMAIN-SUFFIX,itunes.apple.com",
-            "DOMAIN-SUFFIX,itunes-apple.com.akadns.net",
-            "DOMAIN-SUFFIX,mzstatic.com",
-            "DOMAIN,ppq.apple.com",
-            "DOMAIN,appstoreconnect.apple.com",
-            "DOMAIN,iosapps-ssl.itunes.apple.com",
-            "DOMAIN,itcmobile.itunes.apple.com",
-            "DOMAIN,buy.itunes.apple.com",
-            "DOMAIN-SUFFIX,books.apple.com",
-            "DOMAIN,books.itunes.apple.com",
-            "DOMAIN,bookkeeper.itunes.apple.com",
-            "DOMAIN,books-analytics-events.apple.com",
-            "DOMAIN,fmfmobile.icloud.com",
-            "DOMAIN,fmipmobile.icloud.com",
-            "DOMAIN,statici.icloud.com",
-            "DOMAIN,hls-svod.itunes.apple.com",
-            "DOMAIN,amp-api.fitness.apple.com",
-            "DOMAIN-SUFFIX,mail.icloud.com.cn",
-            "DOMAIN-SUFFIX,mail.me.com",
-            "DOMAIN-SUFFIX,applemusic.com",
-            "DOMAIN-SUFFIX,music.apple.com",
-            "DOMAIN,aod.itunes.apple.com",
-            "DOMAIN,aod-ssl.itunes.apple.com",
-            "DOMAIN,audio.itunes.apple.com",
-            "DOMAIN,audio-ssl.itunes.apple.com",
-            "DOMAIN,mvod.itunes.apple.com",
-            "DOMAIN,streamingaudio.itunes.apple.com",
-            "DOMAIN-SUFFIX,blobstore.apple.com",
-            "DOMAIN,guzzoni.apple.com",
-            "DOMAIN,tv.applemusic.com",
-            "DOMAIN,configuration.apple.com",
-            "DOMAIN,gnf-mdn.apple.com",
-            "DOMAIN,gnf-mr.apple.com",
-            "DOMAIN,gs.apple.com",
-            "DOMAIN,ig.apple.com",
-            "DOMAIN,skl.apple.com",
-            "DOMAIN,swcdn.apple.com",
-            "DOMAIN,swdist.apple.com",
-            "DOMAIN,swdownload.apple.com",
-            "DOMAIN,swpost.apple.com",
-            "DOMAIN,swscan.apple.com",
-            "DOMAIN,oscdn.apple.com",
-            "DOMAIN,osrecovery.apple.com",
-            "DOMAIN,appldnld.apple.com",
-            "DOMAIN,ns.itunes.apple.com",
-            "DOMAIN,gg.apple.com",
-            "DOMAIN,gdmf.apple.com",
-            "DOMAIN,mesu.apple.com",
-            "DOMAIN,updates.cdn-apple.com",
-            "DOMAIN,updates-http.cdn-apple.com",
-            "DOMAIN,xp.apple.com",
-            "DOMAIN-SUFFIX,apple-cloudkit.com",
-            "DOMAIN-SUFFIX,apple-livephotoskit.com",
-            "DOMAIN-SUFFIX,apzones.com",
-            "DOMAIN-SUFFIX,cdn-apple.com",
-            "DOMAIN-SUFFIX,gc.apple.com",
-            "DOMAIN-SUFFIX,icloud.apple.com",
-            "DOMAIN-SUFFIX,icloud.com",
-            "DOMAIN-SUFFIX,icloud.com.cn",
-            "DOMAIN-SUFFIX,icloud-content.com",
-            "DOMAIN-SUFFIX,iwork.apple.com",
-            "DOMAIN,beta.apple.com",
-            "DOMAIN,testflight.apple.com",
-            "DOMAIN-SUFFIX,tv.apple.com",
-            "DOMAIN,hls.itunes.apple.com",
-            "DOMAIN,hls-amt.itunes.apple.com",
-            "DOMAIN,play-edge.itunes.apple.com",
-            "DOMAIN,uts-api.itunes.apple.com"
-          ]
+          "missing_count": 0,
+          "missing_examples": []
         },
         {
           "format": "resolve",
@@ -2137,27 +2067,10 @@
           "target": "Apple/Apple_Domain.list",
           "target_rules": 1559,
           "exact": 0,
-          "parent_suffix": 0,
+          "parent_suffix": 16,
           "ip_range": 0,
-          "missing_count": 16,
-          "missing_examples": [
-            "DOMAIN-SUFFIX,aaplimg.com",
-            "DOMAIN-SUFFIX,apple-cloudkit.com",
-            "DOMAIN-SUFFIX,apple-dns.net",
-            "DOMAIN-SUFFIX,apple-mapkit.com",
-            "DOMAIN-SUFFIX,apple.co",
-            "DOMAIN-SUFFIX,apple.com",
-            "DOMAIN-SUFFIX,apple.news",
-            "DOMAIN-SUFFIX,appsto.re",
-            "DOMAIN-SUFFIX,appstore.com",
-            "DOMAIN-SUFFIX,cdn-apple.com",
-            "DOMAIN-SUFFIX,icloud-content.com",
-            "DOMAIN-SUFFIX,icloud.com",
-            "DOMAIN-SUFFIX,itunes.com",
-            "DOMAIN-SUFFIX,me.com",
-            "DOMAIN-SUFFIX,organicfruitapps.com",
-            "DOMAIN-SUFFIX,push-apple.com.akadns.net"
-          ]
+          "missing_count": 0,
+          "missing_examples": []
         },
         {
           "format": "resolve",
@@ -2394,80 +2307,10 @@
       "target": "Apple/Apple_Domain.list",
       "target_rules": 1559,
       "exact": 0,
-      "parent_suffix": 0,
+      "parent_suffix": 69,
       "ip_range": 0,
-      "missing_count": 69,
-      "missing_examples": [
-        "DOMAIN-SUFFIX,apps.apple.com",
-        "DOMAIN-SUFFIX,itunes.apple.com",
-        "DOMAIN-SUFFIX,itunes-apple.com.akadns.net",
-        "DOMAIN-SUFFIX,mzstatic.com",
-        "DOMAIN,ppq.apple.com",
-        "DOMAIN,appstoreconnect.apple.com",
-        "DOMAIN,iosapps-ssl.itunes.apple.com",
-        "DOMAIN,itcmobile.itunes.apple.com",
-        "DOMAIN,buy.itunes.apple.com",
-        "DOMAIN-SUFFIX,books.apple.com",
-        "DOMAIN,books.itunes.apple.com",
-        "DOMAIN,bookkeeper.itunes.apple.com",
-        "DOMAIN,books-analytics-events.apple.com",
-        "DOMAIN,fmfmobile.icloud.com",
-        "DOMAIN,fmipmobile.icloud.com",
-        "DOMAIN,statici.icloud.com",
-        "DOMAIN,hls-svod.itunes.apple.com",
-        "DOMAIN,amp-api.fitness.apple.com",
-        "DOMAIN-SUFFIX,mail.icloud.com.cn",
-        "DOMAIN-SUFFIX,mail.me.com",
-        "DOMAIN-SUFFIX,applemusic.com",
-        "DOMAIN-SUFFIX,music.apple.com",
-        "DOMAIN,aod.itunes.apple.com",
-        "DOMAIN,aod-ssl.itunes.apple.com",
-        "DOMAIN,audio.itunes.apple.com",
-        "DOMAIN,audio-ssl.itunes.apple.com",
-        "DOMAIN,mvod.itunes.apple.com",
-        "DOMAIN,streamingaudio.itunes.apple.com",
-        "DOMAIN-SUFFIX,blobstore.apple.com",
-        "DOMAIN,guzzoni.apple.com",
-        "DOMAIN,tv.applemusic.com",
-        "DOMAIN,configuration.apple.com",
-        "DOMAIN,gnf-mdn.apple.com",
-        "DOMAIN,gnf-mr.apple.com",
-        "DOMAIN,gs.apple.com",
-        "DOMAIN,ig.apple.com",
-        "DOMAIN,skl.apple.com",
-        "DOMAIN,swcdn.apple.com",
-        "DOMAIN,swdist.apple.com",
-        "DOMAIN,swdownload.apple.com",
-        "DOMAIN,swpost.apple.com",
-        "DOMAIN,swscan.apple.com",
-        "DOMAIN,oscdn.apple.com",
-        "DOMAIN,osrecovery.apple.com",
-        "DOMAIN,appldnld.apple.com",
-        "DOMAIN,ns.itunes.apple.com",
-        "DOMAIN,gg.apple.com",
-        "DOMAIN,gdmf.apple.com",
-        "DOMAIN,mesu.apple.com",
-        "DOMAIN,updates.cdn-apple.com",
-        "DOMAIN,updates-http.cdn-apple.com",
-        "DOMAIN,xp.apple.com",
-        "DOMAIN-SUFFIX,apple-cloudkit.com",
-        "DOMAIN-SUFFIX,apple-livephotoskit.com",
-        "DOMAIN-SUFFIX,apzones.com",
-        "DOMAIN-SUFFIX,cdn-apple.com",
-        "DOMAIN-SUFFIX,gc.apple.com",
-        "DOMAIN-SUFFIX,icloud.apple.com",
-        "DOMAIN-SUFFIX,icloud.com",
-        "DOMAIN-SUFFIX,icloud.com.cn",
-        "DOMAIN-SUFFIX,icloud-content.com",
-        "DOMAIN-SUFFIX,iwork.apple.com",
-        "DOMAIN,beta.apple.com",
-        "DOMAIN,testflight.apple.com",
-        "DOMAIN-SUFFIX,tv.apple.com",
-        "DOMAIN,hls.itunes.apple.com",
-        "DOMAIN,hls-amt.itunes.apple.com",
-        "DOMAIN,play-edge.itunes.apple.com",
-        "DOMAIN,uts-api.itunes.apple.com"
-      ]
+      "missing_count": 0,
+      "missing_examples": []
     },
     {
       "source": "Aoang-Apple",
@@ -2677,27 +2520,10 @@
       "target": "Apple/Apple_Domain.list",
       "target_rules": 1559,
       "exact": 0,
-      "parent_suffix": 0,
+      "parent_suffix": 16,
       "ip_range": 0,
-      "missing_count": 16,
-      "missing_examples": [
-        "DOMAIN-SUFFIX,aaplimg.com",
-        "DOMAIN-SUFFIX,apple-cloudkit.com",
-        "DOMAIN-SUFFIX,apple-dns.net",
-        "DOMAIN-SUFFIX,apple-mapkit.com",
-        "DOMAIN-SUFFIX,apple.co",
-        "DOMAIN-SUFFIX,apple.com",
-        "DOMAIN-SUFFIX,apple.news",
-        "DOMAIN-SUFFIX,appsto.re",
-        "DOMAIN-SUFFIX,appstore.com",
-        "DOMAIN-SUFFIX,cdn-apple.com",
-        "DOMAIN-SUFFIX,icloud-content.com",
-        "DOMAIN-SUFFIX,icloud.com",
-        "DOMAIN-SUFFIX,itunes.com",
-        "DOMAIN-SUFFIX,me.com",
-        "DOMAIN-SUFFIX,organicfruitapps.com",
-        "DOMAIN-SUFFIX,push-apple.com.akadns.net"
-      ]
+      "missing_count": 0,
+      "missing_examples": []
     },
     {
       "source": "Apple",
@@ -3929,7 +3755,7 @@
       "path": "Amazon/Amazon.list",
       "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3945,7 +3771,7 @@
       "path": "Amazon/Amazon_Resolve.list",
       "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3953,7 +3779,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "hka34-frp-g0pl-u0enk-04-10-2026-hh.pages.dev"
+      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3969,7 +3795,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3977,7 +3803,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "hka34-frp-g0pl-u0enk-04-10-2026-hh.pages.dev"
+      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3993,7 +3819,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4001,7 +3827,7 @@
       "path": "GitBook/GitBook.list",
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4009,7 +3835,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "b-chunchun.github.io"
+      "matched_domain": "bridge-cdnn-web.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -4017,7 +3843,7 @@
       "path": "Global/Global_All.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
+      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -4025,7 +3851,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.jefrigantengsss.blogspot.com"
+      "matched_domain": "www.shopee-677.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4041,7 +3867,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "b-chunchun.github.io"
+      "matched_domain": "bridge-cdnn-web.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -4073,7 +3899,7 @@
       "path": "Global/Global_All.list",
       "line": 29514,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4089,7 +3915,7 @@
       "path": "Global/Global_All.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4105,7 +3931,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "hka34-frp-g0pl-u0enk-04-10-2026-hh.pages.dev"
+      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4113,7 +3939,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4129,7 +3955,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4137,7 +3963,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
+      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -4145,7 +3971,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.jefrigantengsss.blogspot.com"
+      "matched_domain": "www.shopee-677.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4161,7 +3987,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "b-chunchun.github.io"
+      "matched_domain": "bridge-cdnn-web.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -4193,7 +4019,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 29514,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4209,7 +4035,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4225,7 +4051,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "hka34-frp-g0pl-u0enk-04-10-2026-hh.pages.dev"
+      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4233,7 +4059,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4249,7 +4075,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4265,7 +4091,7 @@
       "path": "GlobalMedia/GlobalMedia_All.list",
       "line": 189,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4281,7 +4107,7 @@
       "path": "GlobalMedia/GlobalMedia_All_No_Resolve.list",
       "line": 189,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4289,7 +4115,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.jefrigantengsss.blogspot.com"
+      "matched_domain": "www.shopee-677.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4297,7 +4123,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.jefrigantengsss.blogspot.com"
+      "matched_domain": "www.shopee-677.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4305,7 +4131,7 @@
       "path": "Microsoft/Microsoft.list",
       "line": 86,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
+      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -4353,7 +4179,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 1202,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4369,7 +4195,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4385,7 +4211,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "hka34-frp-g0pl-u0enk-04-10-2026-hh.pages.dev"
+      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4393,7 +4219,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4409,7 +4235,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4433,7 +4259,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 1202,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4449,7 +4275,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4465,7 +4291,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "hka34-frp-g0pl-u0enk-04-10-2026-hh.pages.dev"
+      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4473,7 +4299,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4489,7 +4315,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "reverification-evidence-5ef7.s2467-05b.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4505,7 +4331,7 @@
       "path": "ProxyLite/ProxyLite.list",
       "line": 172,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4521,7 +4347,7 @@
       "path": "ProxyLite/ProxyLite_Resolve.list",
       "line": 172,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4529,7 +4355,7 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "ore45.vercel.app"
+      "matched_domain": "demolition-man-demos-2lxuuehvk-ammars-projects-69188cbd.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {
