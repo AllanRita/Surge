@@ -7,6 +7,32 @@ import ipaddress, json, re, shutil
 ROOT=Path("Rule/Upstream")
 PLAN=Path("Rule/CONSOLIDATION-PLAN.json")
 REPORT=ROOT/"APP-POLICY-MERGE-REPORT.md"
+EXCLUSION_MANIFEST=Path(".github/explicit-rule-exclusions.json")
+
+def excluded_upstream_roots():
+    if not EXCLUSION_MANIFEST.is_file() or EXCLUSION_MANIFEST.is_symlink():
+        raise SystemExit("Explicit deletion manifest missing or unsafe; refusing App-folder changes")
+    try:
+        data=json.loads(EXCLUSION_MANIFEST.read_text(encoding="utf-8"))
+    except (OSError,ValueError) as exc:
+        raise SystemExit("Cannot read explicit deletion manifest: "+str(exc))
+    entries=data.get("exclusions")
+    if not isinstance(entries,list):
+        raise SystemExit("Invalid explicit deletion manifest; refusing App-folder changes")
+    names=set()
+    for entry in entries:
+        if not isinstance(entry,dict):
+            raise SystemExit("Invalid explicit deletion entry")
+        name=entry.get("folder")
+        if (not isinstance(name,str) or not name or name in {".",".."}
+                or "/" in name or "\\" in name
+                or entry.get("path")!="Rule/Upstream/"+name):
+            raise SystemExit("Unsafe explicit deletion entry: "+repr(entry))
+        key=name.casefold()
+        if key in names:
+            raise SystemExit("Duplicate explicit deletion entry: "+name)
+        names.add(key)
+    return names
 DOMAIN_TYPES={"DOMAIN","DOMAIN-SUFFIX","HOST","HOST-SUFFIX"}
 IP_TYPES={"IP-CIDR","IP-CIDR6"}
 SUFFIXES=(("_All_No_Resolve","all_no_resolve"),("_No_IPv6_Resolve","no_ipv6_resolve"),("_NoIPv6_Resolve","no_ipv6_resolve"),("_All_NoResolve","all_no_resolve"),("_No_Resolve","no_resolve"),("_NoResolve","no_resolve"),("_No_IPv6","no_ipv6"),("_NoIPv6","no_ipv6"),("_Resolve","resolve"),("_Domain","domain_only"),("_All","all"))
@@ -21,6 +47,9 @@ def safe_path(rel, must_exist=True):
     p=Path(rel)
     if not rel or p.is_absolute() or ".." in p.parts or not rel.startswith("Rule/Upstream/"):
         raise SystemExit("Unsafe path outside Rule/Upstream: "+str(rel))
+    if len(p.parts)>=3 and p.parts[0]=="Rule" and p.parts[1]=="Upstream":
+        if p.parts[2].casefold() in excluded_upstream_roots():
+            raise SystemExit("Refusing to access a user-deleted/tombstoned folder: "+str(rel))
     q=Path(".")/p
     if q.is_symlink():
         raise SystemExit("Symlink is not allowed: "+str(q))
@@ -297,7 +326,7 @@ def main():
         "",
         "## Preserved boundaries",
         "- Personal rules were not read or modified.",
-        "- No dedicated bank/payment App folders were found in the current Upstream inventory; payment-related domains in other Apps were not deleted.",
+        "- This consolidation does not delete any bank/payment or other finance folders. The 14 exact previously user-deleted paths remain tombstoned; matching domains in other Apps are untouched.",
         "- Standard and Resolve remain separate files; regional variants are folded into the same App folder.",
         "- Source README/license material from removed alias folders is archived under SourceMetadata/RegionalVariants.",
         "- No new author rule sets were fetched.",

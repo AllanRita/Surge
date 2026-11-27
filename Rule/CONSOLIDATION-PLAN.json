@@ -10,7 +10,7 @@
     "do_not_merge_different_apps_by_shared_cdn_or_parent_company": true,
     "compare_cached_author_sources_without_fetching_new_authors": true,
     "pause_new_author_rule_fetching": true,
-    "delete_only_dedicated_bank_payment_app_folders": true,
+    "delete_only_dedicated_bank_payment_app_folders": false,
     "do_not_delete_financial_domains_embedded_in_other_apps": true,
     "personal_rules_are_never_modified": true,
     "remove_alias_folders_after_verified_union": true,
@@ -20,7 +20,10 @@
     "never_restore_user_deleted_rule_folders": true,
     "restore_excluded_folders_only_on_explicit_user_request": true,
     "do_not_restore_from_author_feeds_cached_snapshots_backups_or_git_history": true,
-    "do_not_delete_crypto_exchange_and_securities_without_explicit_user_request": true
+    "do_not_delete_crypto_exchange_and_securities_without_explicit_user_request": true,
+    "do_not_delete_bank_payment_app_folders_automatically": true,
+    "do_not_delete_other_finance_folders_automatically": true,
+    "only_enforce_exact_explicit_deletion_manifest": true
   },
   "scenario_variants": [
     {

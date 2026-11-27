@@ -37,18 +37,19 @@ The App rule set identifies all domains and other matching rules used by that Ap
 | Assassin's Creed Odyssey | Game/Assassin'sCreed-Odyssey | Remove duplicate category copy; retain standard and Resolve |
 | Assassin's Creed Origins | Game/Assassin'sCreed-Origins | Remove duplicate category copy; retain standard and Resolve |
 
-## Bank and payment App folders — permanently excluded
+## Previously deleted bank/payment folders — exact no-restore list
 
-The user explicitly instructed deletion of these 14 dedicated folders. They remain excluded:
+These 14 exact folders were explicitly deleted earlier and remain absent:
 
 `BOC`, `BOCOM`, `CCB`, `CEB`, `CGB`, `CMB`, `ICBC`, `PSBC`, `AliPay`, `PayPal`, `Stripe`, `UnionPay`, `VISA`, and `PingAn`.
 
-The permanent exclusion manifest is `.github/explicit-rule-exclusions.json`. Automation removes any reintroduced copy before inventory, security audit, or App consolidation. No historical source snapshot or author feed may restore these folders.
+The permanent tombstone manifest is `.github/explicit-rule-exclusions.json`. Automation removes only these exact reintroduced folders before inventory, security audit, or App consolidation. No author feed, cached snapshot, backup, or Git history may restore them.
 
-- Matching payment/bank domains inside unrelated App, Global, advertising, privacy, or filter rule sets are not deleted by this folder exclusion.
+**This historical no-restore list does not authorize any new bank/payment deletion.** No other bank/payment, finance, trading, crypto, or securities folder is to be deleted automatically during the current rule-library optimization.
+
+- Matching financial-service domains inside unrelated App, Global, advertising, privacy, or filter rule sets remain untouched.
 - `Rule/Personal/PayPay.list` remains untouched.
-- Future bank/payment domains collected by the user belong in the personal rule set, not in the shared upstream App library.
-
+- A tombstoned folder can be restored only if the user explicitly asks for that specific restoration.
 
 ## File formats
 
@@ -136,6 +137,6 @@ The cleanup inventory now scans a curated set of 42 shared CDN/hosting, dynamic-
 
 The user's confirmed deletion instruction applies only to the 14 dedicated bank/payment App folders in `.github/explicit-rule-exclusions.json`. It does not include `Binance`, `OKX`, `Crypto`, `Cryptocurrency`, `EastMoney`, `TigerFintech`, or `XueQiu`. These seven folders (322 rule entries and seven README files) are retained.
 
-A previous automation change incorrectly added these folders to the deletion manifest and removed them. Their original files have now been restored byte-for-byte from the repository snapshot immediately preceding that change. The seven folders have been removed from the permanent exclusion manifest. Future automation may delete only the 14 explicitly authorized bank/payment folders; it must not infer additional deletions from broad financial categories.
+A previous automation change incorrectly added these folders to the deletion manifest and removed them. Their original files have now been restored byte-for-byte from the repository snapshot immediately preceding that change. The seven folders have been removed from the permanent exclusion manifest. Future automation may only enforce the absence of the 14 exact tombstoned folders. It must not delete additional bank/payment, finance, trading, crypto, or securities folders based on category inference.
 
 The removal policy does not delete matching domains from unrelated App, Global, advertising, privacy, or filter lists. `Rule/Personal` remains untouched. `Stackexchange` remains because it is a Q&A/community service, not a financial exchange.

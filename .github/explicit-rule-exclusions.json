@@ -8,7 +8,12 @@
     "reintroduced_folders": "Remove automatically before inventory, security audit, synchronization, or App consolidation.",
     "restore_requires_explicit_user_request": true,
     "do_not_remove_matching_domains_from_other_rule_sets": true,
-    "do_not_modify_rule_personal": true
+    "do_not_modify_rule_personal": true,
+    "automatic_new_bank_payment_deletion_allowed": false,
+    "automatic_new_finance_folder_deletion_allowed": false,
+    "only_exact_manifest_entries_may_be_removed": true,
+    "do_not_infer_deletions_from_folder_category": true,
+    "tombstones_remain_until_explicit_restore_request": true
   },
   "exclusions": [
     {

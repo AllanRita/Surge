@@ -132,7 +132,7 @@ One App maps to one rule folder and one Surge policy group. Country/region selec
 ## Preserved boundaries
 
 - Personal rules were not read or modified.
-- No dedicated bank/payment App folders were found in the current Upstream inventory; payment-related domains in other Apps were not deleted.
+- This consolidation did not delete any bank/payment or other finance folders. The 14 exact previously user-deleted paths remain tombstoned; matching domains in other Apps were not deleted.
 - Standard and Resolve remain separate files; regional variants are folded into the same App folder.
 - Source README/license material from removed alias folders is archived under `SourceMetadata/RegionalVariants`.
 - No new author rule sets were fetched.
