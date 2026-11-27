@@ -116,6 +116,12 @@
       "country": "hk",
       "category": "Media",
       "fallback_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/28/6e/12/286e1259-dc5f-074e-c340-06b580f22b61/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "name": "Sling TV",
+      "app_id": 945077360,
+      "country": "us",
+      "category": "Media"
     }
   ]
 }
