@@ -19,7 +19,7 @@ SCENARIO_SUFFIXES = (
     ("_Domain", "domain_only"),
     ("_All", "all"),
 )
-ALIASES = {"pchometw": "pchome"}
+ALIASES = {"pchometw": "pchome", "scholar": "globalscholar", "bardai": "gemini", "abematv": "abema"}
 AGGREGATE_APPS = {
     "adguarddnsfilter", "advertising", "advertisinglite", "advertisingtest",
     "advertisingmitv", "china", "chinamax", "chinamaxnoip", "chinamaxnomedia",
@@ -94,16 +94,19 @@ for (app, scenario), group in sorted(app_groups.items()):
     group = sorted(group, key=lambda x: x["path"])
     common = set.intersection(*(x["domains"] for x in group)) if group else set()
     union = set.union(*(x["domains"] for x in group)) if group else set()
-    exact_same = bool(group) and all(x["domains"] == group[0]["domains"] for x in group[1:])
+    common_rules = set.intersection(*(x["all_rules"] for x in group)) if group else set()
+    union_rules = set.union(*(x["all_rules"] for x in group)) if group else set()
+    exact_same = bool(group) and all(x["all_rules"] == group[0]["all_rules"] for x in group[1:])
     differences = []
     for item in group:
-        other = set.union(*(x["domains"] for x in group if x is not item)) if len(group) > 1 else set()
-        only = sorted(item["domains"] - other)
+        other = set.union(*(x["all_rules"] for x in group if x is not item)) if len(group) > 1 else set()
+        only = sorted(item["all_rules"] - other)
         if only:
             differences.append((item["path"], only))
     same_app_candidates.append({
         "app": app, "scenario": scenario, "categories": categories,
         "files": group, "common_count": len(common), "union_count": len(union),
+        "common_rule_count": len(common_rules), "union_rule_count": len(union_rules),
         "identical": exact_same, "differences": differences,
     })
 
@@ -228,11 +231,12 @@ for item in same_app_candidates:
     app_lines += [
         "", f"### {item['app']} ({item['scenario']})",
         f"- Categories: {', '.join(item['categories'])}",
-        f"- Exact shared domain rules: {item['common_count']}; union: {item['union_count']}",
-        f"- Same domain-rule set: {'yes' if item['identical'] else 'no'}",
+        f"- Exact shared rule lines: {item['common_rule_count']}; union: {item['union_rule_count']}",
+        f"- Same full rule set: {'yes' if item['identical'] else 'no'}",
+        f"- Exact shared domain rules: {item['common_count']}; domain union: {item['union_count']}",
     ]
     for rec in item["files"]:
-        app_lines.append(f"- File: {rec['path']} ({len(rec['domains'])} domain rules)")
+        app_lines.append(f"- File: {rec['path']} ({len(rec['all_rules'])} total rules; {len(rec['domains'])} domain rules)")
     for path, only in item["differences"]:
         app_lines.append(f"- Only in {path}: {len(only)}")
         for rule in only[:12]:
@@ -295,6 +299,7 @@ if audit.is_file():
     with audit.open("a", encoding="utf-8") as handle:
         handle.write(
             "\n## Further app-level analysis\n"
+            "- See CANONICAL-MERGE-REPORT.md for approved same-App unions and legacy URL mirrors.\n"
             "- See APP-OVERLAP-REPORT.md for cross-category App candidates and conservative domain-overlap review.\n"
             "- See SOURCE-MERGE-REPORT.md for cross-author source-rule coverage against final target lists.\n"
         )
