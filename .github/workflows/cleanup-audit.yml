@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/scripts/cleanup_inventory.py'
+      - '.github/scripts/remove_invalid_public_tld_rules.py'
       - '.github/workflows/cleanup-audit.yml'
       - 'Rule/Upstream/**/*.list'
       - 'Rule/CONSOLIDATION-PLAN.json'
@@ -34,6 +35,9 @@ jobs:
           curl -fsSL --retry 2 --max-time 60 https://raw.githubusercontent.com/openphish/public_feed/refs/heads/main/feed.txt -o "$RUNNER_TEMP/openphish-feed.txt"
           exit 0
 
+      - name: Remove verified non-IANA root suffix
+        run: python3 .github/scripts/remove_invalid_public_tld_rules.py --iana-tlds "$RUNNER_TEMP/iana-tlds.txt"
+
       - name: Inventory existing rules and compare cached sources
         run: |
           python3 .github/scripts/cleanup_inventory.py \
@@ -46,7 +50,7 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- Rule/Upstream/CLEANUP-INVENTORY.md Rule/Upstream/CLEANUP-INVENTORY.json Rule/Upstream/SECURITY-REVIEW.md
+          git add -A -- Rule/Upstream
           if git diff --cached --quiet; then
             echo 'Inventory report unchanged'
             exit 0
