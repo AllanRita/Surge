@@ -1,6 +1,6 @@
 # Security reputation review
 
-Generated: 2026-11-27 13:17 UTC
+Generated: 2026-11-27 13:19 UTC
 
 This report compares current domain rules against public threat-intelligence feeds. A feed match is a review signal, not proof that the rule's parent domain is malicious. No rules are automatically removed.
 
@@ -46,7 +46,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Google/Google.list, Google/Google_Resolve.list
-- Matched feed host examples: www.freefiregarenadetayler.blogspot.com
+- Matched feed host examples: instagram-baittouts-login.blogspot.com
 - Classification: Blogger shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,cloudfront.net
@@ -54,7 +54,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Amazon/Amazon.list, Amazon/Amazon_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, GlobalMedia/GlobalMedia_All.list, GlobalMedia/GlobalMedia_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list, ProxyLite/ProxyLite.list, ProxyLite/ProxyLite_Resolve.list
-- Matched feed host examples: d1by761p31t71v.cloudfront.net
+- Matched feed host examples: d33wubrfki0l68.cloudfront.net
 - Classification: shared CDN / Amazon CloudFront; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,duckdns.org
@@ -78,7 +78,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: GitBook/GitBook.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: treozarwalletf.gitbook.io
+- Matched feed host examples: kucinlogn16.gitbook.io
 - Classification: shared documentation hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,github.io
@@ -86,7 +86,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: GitHub/GitHub.list, Global/Global_All.list, Global/Global_All_No_Resolve.list
-- Matched feed host examples: wildpigger.github.io
+- Matched feed host examples: zhouxiaoka.github.io
 - Classification: GitHub Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,netlify.app
@@ -102,7 +102,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: 9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev
+- Matched feed host examples: 79ubg-9yt-62z7-gvh31-07-10-2026-aa.pages.dev
 - Classification: Cloudflare Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,trycloudflare.com
@@ -134,7 +134,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Feed(s): OpenPhish
 - Match type(s): parent_suffix
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: taskorynex-velnoryx-371c.s2504191-f02.workers.dev
+- Matched feed host examples: substantiating-evidence-cfe1.63186834.workers.dev
 - Classification: Cloudflare Workers shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 

@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27 13:17 UTC",
+  "generated_utc": "2026-11-27 13:19 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
     "rule_files": 821,
@@ -6522,7 +6522,7 @@
       "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -6542,7 +6542,7 @@
       "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -6552,7 +6552,7 @@
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
+      "matched_domain": "79ubg-9yt-62z7-gvh31-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6572,7 +6572,7 @@
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6582,7 +6582,7 @@
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
+      "matched_domain": "79ubg-9yt-62z7-gvh31-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6602,7 +6602,7 @@
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6612,7 +6612,7 @@
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
       "rule_domain": "gitbook.io",
-      "matched_domain": "treozarwalletf.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -6622,7 +6622,7 @@
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
       "rule_domain": "github.io",
-      "matched_domain": "wildpigger.github.io"
+      "matched_domain": "zhouxiaoka.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -6642,7 +6642,7 @@
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
+      "matched_domain": "instagram-baittouts-login.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -6662,7 +6662,7 @@
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
       "rule_domain": "github.io",
-      "matched_domain": "wildpigger.github.io"
+      "matched_domain": "zhouxiaoka.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -6702,7 +6702,7 @@
       "line": 29514,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -6722,7 +6722,7 @@
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
       "rule_domain": "gitbook.io",
-      "matched_domain": "treozarwalletf.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -6742,7 +6742,7 @@
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
+      "matched_domain": "79ubg-9yt-62z7-gvh31-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6772,7 +6772,7 @@
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6792,7 +6792,7 @@
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
+      "matched_domain": "instagram-baittouts-login.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -6812,7 +6812,7 @@
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
       "rule_domain": "github.io",
-      "matched_domain": "wildpigger.github.io"
+      "matched_domain": "zhouxiaoka.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -6852,7 +6852,7 @@
       "line": 29514,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -6872,7 +6872,7 @@
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
       "rule_domain": "gitbook.io",
-      "matched_domain": "treozarwalletf.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -6892,7 +6892,7 @@
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
+      "matched_domain": "79ubg-9yt-62z7-gvh31-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6922,7 +6922,7 @@
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -6942,7 +6942,7 @@
       "line": 189,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -6962,7 +6962,7 @@
       "line": 189,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -6972,7 +6972,7 @@
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
+      "matched_domain": "instagram-baittouts-login.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -6982,7 +6982,7 @@
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
       "rule_domain": "blogspot.com",
-      "matched_domain": "www.freefiregarenadetayler.blogspot.com"
+      "matched_domain": "instagram-baittouts-login.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -7052,7 +7052,7 @@
       "line": 1202,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -7072,7 +7072,7 @@
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
       "rule_domain": "gitbook.io",
-      "matched_domain": "treozarwalletf.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -7092,7 +7092,7 @@
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
+      "matched_domain": "79ubg-9yt-62z7-gvh31-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -7122,7 +7122,7 @@
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -7152,7 +7152,7 @@
       "line": 1202,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -7172,7 +7172,7 @@
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
       "rule_domain": "gitbook.io",
-      "matched_domain": "treozarwalletf.gitbook.io"
+      "matched_domain": "kucinlogn16.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -7192,7 +7192,7 @@
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
       "rule_domain": "pages.dev",
-      "matched_domain": "9haag-ab8-rn66-jda3s-07-10-2026-aa.pages.dev"
+      "matched_domain": "79ubg-9yt-62z7-gvh31-07-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -7222,7 +7222,7 @@
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
       "rule_domain": "workers.dev",
-      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
+      "matched_domain": "substantiating-evidence-cfe1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -7242,7 +7242,7 @@
       "line": 172,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -7262,7 +7262,7 @@
       "line": 172,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
       "rule_domain": "cloudfront.net",
-      "matched_domain": "d1by761p31t71v.cloudfront.net"
+      "matched_domain": "d33wubrfki0l68.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
