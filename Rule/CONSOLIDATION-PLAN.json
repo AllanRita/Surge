@@ -1,18 +1,20 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "generated": "2026-11-27",
-  "purpose": "Track verified duplicate rule-set bodies and scenario variants without breaking existing raw subscription URLs.",
+  "purpose": "One Surge App policy group per app. All regional/author variants of the same app are consolidated into one folder; file-format variants remain separate.",
   "policy": {
-    "personal_rules_are_never_auto_merged": true,
-    "scenario_variants_are_never_merged_across_resolution_modes": true,
-    "legacy_paths_are_preserved_until_subscriber_migration_is_verified": true,
-    "only_exact_rule_body_matches_are_candidates_for_aliasing": true,
-    "canonical_paths_are_the_only_future_edit_targets": true,
-    "legacy_paths_must_mirror_canonical_content": true,
-    "legacy_files_must_not_be_deleted_without_explicit_url_migration": true,
-    "overlap_similarity_alone_never_authorizes_merging": true,
-    "merge_strategy": "Union exact rule lines in source order, deduplicate exact duplicates, mirror the resulting rule payload to legacy paths, and never delete legacy paths.",
-    "only_verified_same_app_groups_are_auto_merged": true
+    "one_app_one_policy_group": true,
+    "country_region_selection_belongs_to_surge_policy_group": true,
+    "merge_same_app_regional_variants": true,
+    "keep_distinct_file_formats_separate": true,
+    "do_not_merge_different_apps_by_shared_cdn_or_parent_company": true,
+    "compare_cached_author_sources_without_fetching_new_authors": true,
+    "pause_new_author_rule_fetching": true,
+    "delete_only_dedicated_bank_payment_app_folders": true,
+    "do_not_delete_financial_domains_embedded_in_other_apps": true,
+    "personal_rules_are_never_modified": true,
+    "remove_alias_folders_after_verified_union": true,
+    "retain_source_provenance_in_SourceMetadata": true
   },
   "scenario_variants": [
     {
@@ -46,136 +48,124 @@
       "reason": "Different DNS resolution behavior."
     }
   ],
-  "exact_duplicate_candidates": [
-    {
-      "app": "AssassinsCreedOdyssey",
-      "paths": [
-        "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list",
-        "Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list"
-      ],
-      "decision": "merge into one canonical payload; preserve legacy raw URL as a mirror",
-      "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
-    },
-    {
-      "app": "AssassinsCreedOdysseyResolve",
-      "paths": [
-        "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list",
-        "Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list"
-      ],
-      "decision": "merge into one canonical payload; preserve legacy raw URL as a mirror",
-      "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
-    },
-    {
-      "app": "AssassinsCreedOrigins",
-      "paths": [
-        "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list",
-        "Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list"
-      ],
-      "decision": "merge into one canonical payload; preserve legacy raw URL as a mirror",
-      "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
-    },
-    {
-      "app": "AssassinsCreedOriginsResolve",
-      "paths": [
-        "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list",
-        "Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list"
-      ],
-      "decision": "merge into one canonical payload; preserve legacy raw URL as a mirror",
-      "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
-    },
-    {
-      "app": "PChome",
-      "paths": [
-        "Rule/Upstream/PChome/PChome.list",
-        "Rule/Upstream/PChomeTW/PChomeTW.list"
-      ],
-      "decision": "merge into one canonical payload; preserve legacy raw URL as a mirror",
-      "reason": "Rule bodies verified identical; no subscription redirect or migration validation exists."
-    }
-  ],
+  "exact_duplicate_candidates": [],
   "canonical_rule_sets": [
     {
-      "app": "Assassin's Creed Odyssey",
-      "scenario": "standard",
-      "canonical_path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list",
-      "legacy_paths": [
-        "Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list"
-      ],
-      "verified_identical_rule_count": 15,
-      "decision": "one canonical maintenance target; keep legacy raw URL"
+      "app": "Abema",
+      "canonical_folder": "Abema",
+      "formats": "preserve every distinct existing format",
+      "removed_alias_folders": [
+        "AbemaTV"
+      ]
     },
     {
-      "app": "Assassin's Creed Odyssey",
-      "scenario": "resolve",
-      "canonical_path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list",
-      "legacy_paths": [
-        "Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list"
-      ],
-      "verified_identical_rule_count": 15,
-      "decision": "one canonical maintenance target; keep legacy raw URL"
-    },
-    {
-      "app": "Assassin's Creed Origins",
-      "scenario": "standard",
-      "canonical_path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list",
-      "legacy_paths": [
-        "Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list"
-      ],
-      "verified_identical_rule_count": 16,
-      "decision": "one canonical maintenance target; keep legacy raw URL"
-    },
-    {
-      "app": "Assassin's Creed Origins",
-      "scenario": "resolve",
-      "canonical_path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list",
-      "legacy_paths": [
-        "Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list"
-      ],
-      "verified_identical_rule_count": 16,
-      "decision": "one canonical maintenance target; keep legacy raw URL"
+      "app": "Gemini",
+      "canonical_folder": "Gemini",
+      "formats": "preserve every distinct existing format",
+      "removed_alias_folders": [
+        "BardAI"
+      ]
     },
     {
       "app": "PChome",
-      "scenario": "standard",
-      "canonical_path": "Rule/Upstream/PChomeTW/PChomeTW.list",
-      "legacy_paths": [
-        "Rule/Upstream/PChome/PChome.list"
-      ],
-      "verified_identical_rule_count": 5,
-      "decision": "one canonical maintenance target; keep legacy raw URL"
+      "canonical_folder": "PChome",
+      "formats": "preserve every distinct existing format",
+      "removed_alias_folders": [
+        "PChomeTW"
+      ]
     },
     {
-      "app": "GlobalScholar / Scholar",
-      "scenario": "standard",
-      "canonical_path": "Rule/Upstream/GlobalScholar/GlobalScholar.list",
-      "legacy_paths": [
-        "Rule/Upstream/Scholar/Scholar.list"
-      ],
-      "verified_shared_rule_count": 230,
-      "decision": "GlobalScholar is documented upstream as containing Scholar; union the one locally missing Scholar rule and mirror the canonical payload.",
-      "reason": "Upstream GlobalScholar README lists Scholar as a contained sub-rule; the current local Scholar list has one additional rule (cnki.net)."
+      "app": "GlobalScholar",
+      "canonical_folder": "GlobalScholar",
+      "formats": "preserve every distinct existing format",
+      "removed_alias_folders": [
+        "Scholar"
+      ]
     },
     {
-      "app": "Gemini (formerly BardAI)",
-      "scenario": "standard",
-      "canonical_path": "Rule/Upstream/Gemini/Gemini.list",
-      "legacy_paths": [
-        "Rule/Upstream/BardAI/BardAI.list"
-      ],
-      "verified_shared_rule_count": 9,
-      "decision": "Gemini is documented upstream as containing BardAI; union exact rule lines and mirror the canonical payload.",
-      "reason": "Upstream Gemini README lists BardAI as a contained sub-rule; the legacy BardAI list has one exact domain line additionally covered by Gemini's generativelanguage keyword rule."
+      "app": "BiliBili",
+      "canonical_folder": "BiliBili",
+      "formats": "preserve every distinct existing format",
+      "removed_alias_folders": [
+        "BiliBiliIntl"
+      ]
     },
     {
-      "app": "ABEMA (formerly AbemaTV)",
-      "scenario": "standard",
-      "canonical_path": "Rule/Upstream/Abema/Abema.list",
-      "legacy_paths": [
-        "Rule/Upstream/AbemaTV/AbemaTV.list"
-      ],
-      "verified_shared_rule_count": 15,
-      "decision": "Merge the legacy AbemaTV rule coverage into the current ABEMA-named canonical set and preserve the old URL as a mirror.",
-      "reason": "ABEMA is the 2020 renamed service; the two rule sets share the same service domain family and the newer AbemaTV set adds keyword and user-agent rules."
+      "app": "iQIYI",
+      "canonical_folder": "iQIYI",
+      "formats": "preserve every distinct existing format",
+      "removed_alias_folders": [
+        "iQIYIIntl"
+      ]
+    },
+    {
+      "app": "Hulu",
+      "canonical_folder": "Hulu",
+      "formats": "preserve every distinct existing format",
+      "removed_alias_folders": [
+        "HuluUSA",
+        "HuluJP"
+      ]
+    },
+    {
+      "app": "Telegram",
+      "canonical_folder": "Telegram",
+      "formats": "preserve every distinct existing format",
+      "removed_alias_folders": [
+        "TelegramNL",
+        "TelegramSG",
+        "TelegramUS"
+      ]
+    },
+    {
+      "app": "Amazon",
+      "canonical_folder": "Amazon",
+      "formats": "preserve every distinct existing format",
+      "removed_alias_folders": [
+        "AmazonCN"
+      ]
+    },
+    {
+      "app": "HBO",
+      "canonical_folder": "HBO",
+      "formats": "preserve every distinct existing format",
+      "removed_alias_folders": [
+        "HBOAsia",
+        "HBOHK",
+        "HBOUSA"
+      ]
+    },
+    {
+      "app": "Cloudflare",
+      "canonical_folder": "Cloudflare",
+      "formats": "preserve every distinct existing format",
+      "removed_alias_folders": [
+        "Cloudflarecn"
+      ]
+    },
+    {
+      "app": "Steam",
+      "canonical_folder": "Steam",
+      "formats": "preserve every distinct existing format",
+      "removed_alias_folders": [
+        "SteamCN"
+      ]
+    },
+    {
+      "app": "Assassin's Creed Odyssey",
+      "canonical_folder": "Assassin'sCreed/Assassin'sCreed-Odyssey",
+      "formats": "preserve every distinct existing format",
+      "removed_alias_folders": [
+        "Game/Assassin'sCreed-Odyssey"
+      ]
+    },
+    {
+      "app": "Assassin's Creed Origins",
+      "canonical_folder": "Assassin'sCreed/Assassin'sCreed-Origins",
+      "formats": "preserve every distinct existing format",
+      "removed_alias_folders": [
+        "Game/Assassin'sCreed-Origins"
+      ]
     }
   ],
   "merge_groups": [
@@ -254,32 +244,60 @@
   ],
   "preserved_variants": [
     {
-      "app": "Hulu",
-      "paths": [
-        "Rule/Upstream/Hulu/Hulu.list",
-        "Rule/Upstream/HuluUSA/HuluUSA.list",
-        "Rule/Upstream/HuluJP/HuluJP.list"
+      "app": "BiliBili",
+      "formats": [
+        "standard",
+        "resolve"
       ],
-      "decision": "keep regional variants separate",
-      "reason": "USA and Japan rule sets represent region-specific routing scenarios; the general Hulu list currently covers both subsets."
+      "decision": "keep one file per format in the BiliBili folder"
     },
     {
-      "app": "HBO",
-      "paths": [
-        "Rule/Upstream/HBO/HBO.list",
-        "Rule/Upstream/HBOHK/HBOHK.list"
+      "app": "iQIYI",
+      "formats": [
+        "standard",
+        "resolve"
       ],
-      "decision": "keep regional variants separate",
-      "reason": "HBO and HBO Hong Kong are region-specific service scopes."
+      "decision": "keep one file per format in the iQIYI folder"
+    },
+    {
+      "app": "Amazon",
+      "formats": [
+        "standard",
+        "resolve"
+      ],
+      "decision": "keep one file per format in the Amazon folder"
+    },
+    {
+      "app": "Telegram",
+      "formats": [
+        "standard",
+        "resolve"
+      ],
+      "decision": "keep one file per format in the Telegram folder"
+    },
+    {
+      "app": "Steam",
+      "formats": [
+        "standard",
+        "resolve"
+      ],
+      "decision": "keep one file per format in the Steam folder"
     },
     {
       "app": "Cloudflare",
-      "paths": [
-        "Rule/Upstream/Cloudflare/Cloudflare.list",
-        "Rule/Upstream/Cloudflarecn/Cloudflarecn.list"
+      "formats": [
+        "standard",
+        "resolve"
       ],
-      "decision": "keep regional variants separate",
-      "reason": "Global and China-specific service scopes must not be collapsed."
+      "decision": "keep one file per format in the Cloudflare folder"
+    },
+    {
+      "app": "AdGuardSDNSFilter / ChinaMaxNoIP / EasyPrivacy",
+      "formats": [
+        "All",
+        "All_No_Resolve"
+      ],
+      "decision": "retain both named formats even when current rule payloads are identical; format intent is distinct"
     }
   ],
   "review_only_overlap_pairs": [
@@ -347,5 +365,134 @@
       "decision": "manual review only",
       "reason": "High domain overlap alone does not establish identical app purpose."
     }
-  ]
+  ],
+  "app_policy_groups": [
+    {
+      "app": "Abema",
+      "canonical_folder": "Abema",
+      "alias_folders": [
+        "AbemaTV"
+      ],
+      "reason": "Same service under former/alternate name; rule payloads already identical."
+    },
+    {
+      "app": "Gemini",
+      "canonical_folder": "Gemini",
+      "alias_folders": [
+        "BardAI"
+      ],
+      "reason": "Same Google assistant service after renaming; rule payloads already identical."
+    },
+    {
+      "app": "PChome",
+      "canonical_folder": "PChome",
+      "alias_folders": [
+        "PChomeTW"
+      ],
+      "reason": "Same PChome Online service; rule payloads already identical."
+    },
+    {
+      "app": "GlobalScholar",
+      "canonical_folder": "GlobalScholar",
+      "alias_folders": [
+        "Scholar"
+      ],
+      "reason": "GlobalScholar upstream README explicitly includes Scholar; union already verified, including cnki.net."
+    },
+    {
+      "app": "BiliBili",
+      "canonical_folder": "BiliBili",
+      "alias_folders": [
+        "BiliBiliIntl"
+      ],
+      "reason": "Same Bilibili app/service family; add the international process name and preserve standard/Resolve formats."
+    },
+    {
+      "app": "iQIYI",
+      "canonical_folder": "iQIYI",
+      "alias_folders": [
+        "iQIYIIntl"
+      ],
+      "reason": "Same iQIYI app/service family; add missing international IP ranges and process names to both formats."
+    },
+    {
+      "app": "Hulu",
+      "canonical_folder": "Hulu",
+      "alias_folders": [
+        "HuluUSA",
+        "HuluJP"
+      ],
+      "reason": "Same Hulu app; canonical Hulu rule set already semantically covers both regional lists."
+    },
+    {
+      "app": "Telegram",
+      "canonical_folder": "Telegram",
+      "alias_folders": [
+        "TelegramNL",
+        "TelegramSG",
+        "TelegramUS"
+      ],
+      "reason": "Same Telegram app; regional IP ranges are covered by the canonical broad ranges in both formats."
+    },
+    {
+      "app": "Amazon",
+      "canonical_folder": "Amazon",
+      "alias_folders": [
+        "AmazonCN"
+      ],
+      "reason": "Same Amazon app/service group; merge 17 additional China-region domains into standard and Resolve."
+    },
+    {
+      "app": "HBO",
+      "canonical_folder": "HBO",
+      "alias_folders": [
+        "HBOAsia",
+        "HBOHK",
+        "HBOUSA"
+      ],
+      "reason": "Same HBO/Max app/service group; merge five additional regional domains/rules."
+    },
+    {
+      "app": "Cloudflare",
+      "canonical_folder": "Cloudflare",
+      "alias_folders": [
+        "Cloudflarecn"
+      ],
+      "reason": "Same Cloudflare service group; canonical list already covers the China-specific rules."
+    },
+    {
+      "app": "Steam",
+      "canonical_folder": "Steam",
+      "alias_folders": [
+        "SteamCN"
+      ],
+      "reason": "Same Steam app; merge five additional China CDN/service rules into standard and Resolve."
+    },
+    {
+      "app": "Assassin's Creed Odyssey",
+      "canonical_folder": "Assassin'sCreed/Assassin'sCreed-Odyssey",
+      "alias_folders": [
+        "Game/Assassin'sCreed-Odyssey"
+      ],
+      "reason": "Exact duplicate app folder under Game; keep one folder and preserve standard/Resolve formats."
+    },
+    {
+      "app": "Assassin's Creed Origins",
+      "canonical_folder": "Assassin'sCreed/Assassin'sCreed-Origins",
+      "alias_folders": [
+        "Game/Assassin'sCreed-Origins"
+      ],
+      "reason": "Exact duplicate app folder under Game; keep one folder and preserve standard/Resolve formats."
+    }
+  ],
+  "bank_payment_policy": {
+    "dedicated_app_folders_found": 0,
+    "action": "no dedicated bank/payment folders currently exist under Rule/Upstream; do not delete payment-related domains embedded in other App lists; preserve Rule/Personal/PayPay.list"
+  },
+  "cached_author_sources": {
+    "count": 15,
+    "missing_rules": 0,
+    "action": "compare existing cached SourceMetadata only; do not fetch new author rule sets"
+  },
+  "generated_by": "cleanup inventory 2026-11-27; final user-confirmed Surge App-policy structure"
 }
