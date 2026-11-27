@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "last_updated": "2026-11-27",
-  "purpose": "Permanent tombstone list for rule-set folders explicitly deleted at the user's direction.",
+  "purpose": "Exact no-restore tombstones for folders still explicitly excluded by the user. The 14 bank/payment/finance folders were explicitly authorized for restoration on 2026-11-27 and are no longer tombstoned.",
   "policy": {
     "scope": "Exact direct-child folders under Rule/Upstream only.",
     "automatic_restore_allowed": false,
@@ -15,90 +15,5 @@
     "do_not_infer_deletions_from_folder_category": true,
     "tombstones_remain_until_explicit_restore_request": true
   },
-  "exclusions": [
-    {
-      "folder": "BOC",
-      "path": "Rule/Upstream/BOC",
-      "category": "bank",
-      "authorization": "explicit user deletion instruction (2026-11-27)"
-    },
-    {
-      "folder": "BOCOM",
-      "path": "Rule/Upstream/BOCOM",
-      "category": "bank",
-      "authorization": "explicit user deletion instruction (2026-11-27)"
-    },
-    {
-      "folder": "CCB",
-      "path": "Rule/Upstream/CCB",
-      "category": "bank",
-      "authorization": "explicit user deletion instruction (2026-11-27)"
-    },
-    {
-      "folder": "CEB",
-      "path": "Rule/Upstream/CEB",
-      "category": "bank",
-      "authorization": "explicit user deletion instruction (2026-11-27)"
-    },
-    {
-      "folder": "CGB",
-      "path": "Rule/Upstream/CGB",
-      "category": "bank",
-      "authorization": "explicit user deletion instruction (2026-11-27)"
-    },
-    {
-      "folder": "CMB",
-      "path": "Rule/Upstream/CMB",
-      "category": "bank",
-      "authorization": "explicit user deletion instruction (2026-11-27)"
-    },
-    {
-      "folder": "ICBC",
-      "path": "Rule/Upstream/ICBC",
-      "category": "bank",
-      "authorization": "explicit user deletion instruction (2026-11-27)"
-    },
-    {
-      "folder": "PSBC",
-      "path": "Rule/Upstream/PSBC",
-      "category": "bank",
-      "authorization": "explicit user deletion instruction (2026-11-27)"
-    },
-    {
-      "folder": "AliPay",
-      "path": "Rule/Upstream/AliPay",
-      "category": "payment",
-      "authorization": "explicit user deletion instruction (2026-11-27)"
-    },
-    {
-      "folder": "PayPal",
-      "path": "Rule/Upstream/PayPal",
-      "category": "payment",
-      "authorization": "explicit user deletion instruction (2026-11-27)"
-    },
-    {
-      "folder": "Stripe",
-      "path": "Rule/Upstream/Stripe",
-      "category": "payment",
-      "authorization": "explicit user deletion instruction (2026-11-27)"
-    },
-    {
-      "folder": "UnionPay",
-      "path": "Rule/Upstream/UnionPay",
-      "category": "payment",
-      "authorization": "explicit user deletion instruction (2026-11-27)"
-    },
-    {
-      "folder": "VISA",
-      "path": "Rule/Upstream/VISA",
-      "category": "payment",
-      "authorization": "explicit user deletion instruction (2026-11-27)"
-    },
-    {
-      "folder": "PingAn",
-      "path": "Rule/Upstream/PingAn",
-      "category": "financial_services",
-      "authorization": "explicit user deletion instruction (2026-11-27)"
-    }
-  ]
+  "exclusions": []
 }
