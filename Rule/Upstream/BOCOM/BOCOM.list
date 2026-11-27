@@ -1,0 +1,12 @@
+# NAME: BOCOM
+# AUTHOR: blackmatrix7
+# SOURCE: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BOCOM/BOCOM.list
+# RESTORED: 2026-11-27
+# RULES: 6
+
+DOMAIN-SUFFIX,95559.com.cn
+DOMAIN-SUFFIX,95559.sh.cn
+DOMAIN-SUFFIX,bankcomm.com
+DOMAIN-SUFFIX,bankcomm.com.au
+DOMAIN-SUFFIX,bankcomm.com.mo
+DOMAIN-SUFFIX,bankcomm.com.tw
