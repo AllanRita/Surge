@@ -69,8 +69,6 @@ jobs:
 
       - name: Process every 100-folder batch sequentially
         shell: bash
-        env:
-          URLHAUS_AVAILABLE: ${{ env.URLHAUS_AVAILABLE }}
         run: |
           set -euo pipefail
           TOTAL=$(python3 -c 'from pathlib import Path; p=Path("Rule/Upstream"); print(sum(1 for x in p.iterdir() if x.is_dir() and not x.is_symlink() and x.name != "SourceMetadata"))')
