@@ -1,90 +1,29 @@
 {
-  "generated_utc": "2026-11-27 13:03 UTC",
+  "generated_utc": "2026-11-27 13:04 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
-    "rule_files": 828,
-    "app_or_category_folders": 663,
-    "top_level_folders": 640,
-    "total_rule_bytes": 116049942,
+    "rule_files": 821,
+    "app_or_category_folders": 656,
+    "top_level_folders": 633,
+    "total_rule_bytes": 116040156,
     "multi_file_folders": 107,
     "exact_raw_duplicate_file_groups": 2,
     "same_rule_payload_file_groups": 3,
     "duplicate_rule_lines": 0,
-    "domain_rule_count": 2690953,
+    "domain_rule_count": 2690635,
     "personal_files_seen_not_modified": 3,
     "bank_payment_app_folders_found": 0,
-    "finance_app_review_candidates": 6,
+    "finance_app_review_candidates": 0,
     "cached_author_source_count": 15,
     "cached_author_source_rule_count": 300,
     "cached_author_source_missing_count": 0,
-    "cached_author_source_format_target_count": 24,
+    "cached_author_source_format_target_count": 26,
     "cached_author_source_format_missing_count": 0,
     "shared_hosting_suffixes_found": 34,
     "shared_hosting_suffix_rule_occurrences": 159
   },
   "bank_payment_app_folders": [],
-  "finance_app_review_candidates": [
-    {
-      "folder": "Binance",
-      "classification": "crypto exchange",
-      "rule_file_count": 1,
-      "rule_occurrences": 12,
-      "files": [
-        "Binance/Binance.list"
-      ],
-      "status": "review_only_not_removed"
-    },
-    {
-      "folder": "Crypto",
-      "classification": "cryptocurrency category list (not a single App)",
-      "rule_file_count": 1,
-      "rule_occurrences": 201,
-      "files": [
-        "Crypto/Crypto.list"
-      ],
-      "status": "review_only_not_removed"
-    },
-    {
-      "folder": "Cryptocurrency",
-      "classification": "cryptocurrency category list (not a single App)",
-      "rule_file_count": 1,
-      "rule_occurrences": 43,
-      "files": [
-        "Cryptocurrency/Cryptocurrency.list"
-      ],
-      "status": "review_only_not_removed"
-    },
-    {
-      "folder": "EastMoney",
-      "classification": "securities brokerage / investment platform",
-      "rule_file_count": 1,
-      "rule_occurrences": 33,
-      "files": [
-        "EastMoney/EastMoney.list"
-      ],
-      "status": "review_only_not_removed"
-    },
-    {
-      "folder": "OKX",
-      "classification": "crypto exchange",
-      "rule_file_count": 1,
-      "rule_occurrences": 3,
-      "files": [
-        "OKX/OKX.list"
-      ],
-      "status": "review_only_not_removed"
-    },
-    {
-      "folder": "TigerFintech",
-      "classification": "securities brokerage / investment platform",
-      "rule_file_count": 1,
-      "rule_occurrences": 19,
-      "files": [
-        "TigerFintech/TigerFintech.list"
-      ],
-      "status": "review_only_not_removed"
-    }
-  ],
+  "finance_app_review_candidates": [],
   "personal_files_seen_not_modified": [
     "Rule/Personal/Grok.list",
     "Rule/Personal/PayPay.list",
@@ -1671,8 +1610,8 @@
       "source_commit": "a57dccbf14a0a10f33fa7e95ef5bb3d2af04a6f0",
       "source_path": "output/Ruleset/Apple/Apple.list",
       "source_rules": 69,
-      "target": "Apple/Apple.list + Apple/Apple_Domain.list",
-      "target_rules": 1639,
+      "target": "Apple/Apple.list",
+      "target_rules": 80,
       "exact": 12,
       "parent_suffix": 57,
       "ip_range": 0,
@@ -1681,26 +1620,11 @@
       "format_coverage": [
         {
           "format": "standard",
-          "target": "Apple/Apple.list + Apple/Apple_Domain.list",
+          "target": "Apple/Apple.list",
           "components": [
-            "Apple/Apple.list",
-            "Apple/Apple_Domain.list"
+            "Apple/Apple.list"
           ],
-          "target_rules": 1639,
-          "exact": 12,
-          "parent_suffix": 57,
-          "ip_range": 0,
-          "missing_count": 0,
-          "missing_examples": []
-        },
-        {
-          "format": "resolve",
-          "target": "Apple/Apple_Resolve.list + Apple/Apple_Domain.list",
-          "components": [
-            "Apple/Apple_Resolve.list",
-            "Apple/Apple_Domain.list"
-          ],
-          "target_rules": 1639,
+          "target_rules": 80,
           "exact": 12,
           "parent_suffix": 57,
           "ip_range": 0,
@@ -1729,6 +1653,32 @@
           "target_rules": 1615,
           "exact": 9,
           "parent_suffix": 60,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        },
+        {
+          "format": "domain_only",
+          "target": "Apple/Apple_Domain.list",
+          "components": [
+            "Apple/Apple_Domain.list"
+          ],
+          "target_rules": 1559,
+          "exact": 0,
+          "parent_suffix": 69,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        },
+        {
+          "format": "resolve",
+          "target": "Apple/Apple_Resolve.list",
+          "components": [
+            "Apple/Apple_Resolve.list"
+          ],
+          "target_rules": 80,
+          "exact": 12,
+          "parent_suffix": 57,
           "ip_range": 0,
           "missing_count": 0,
           "missing_examples": []
@@ -1982,8 +1932,8 @@
       "source_commit": "8341913ec29f036fafb8886be88769487a7f3989",
       "source_path": "List/non_ip/apple_services.conf",
       "source_rules": 16,
-      "target": "Apple/Apple.list + Apple/Apple_Domain.list",
-      "target_rules": 1639,
+      "target": "Apple/Apple.list",
+      "target_rules": 80,
       "exact": 16,
       "parent_suffix": 0,
       "ip_range": 0,
@@ -1992,26 +1942,11 @@
       "format_coverage": [
         {
           "format": "standard",
-          "target": "Apple/Apple.list + Apple/Apple_Domain.list",
+          "target": "Apple/Apple.list",
           "components": [
-            "Apple/Apple.list",
-            "Apple/Apple_Domain.list"
+            "Apple/Apple.list"
           ],
-          "target_rules": 1639,
-          "exact": 16,
-          "parent_suffix": 0,
-          "ip_range": 0,
-          "missing_count": 0,
-          "missing_examples": []
-        },
-        {
-          "format": "resolve",
-          "target": "Apple/Apple_Resolve.list + Apple/Apple_Domain.list",
-          "components": [
-            "Apple/Apple_Resolve.list",
-            "Apple/Apple_Domain.list"
-          ],
-          "target_rules": 1639,
+          "target_rules": 80,
           "exact": 16,
           "parent_suffix": 0,
           "ip_range": 0,
@@ -2040,6 +1975,32 @@
           "target_rules": 1615,
           "exact": 15,
           "parent_suffix": 1,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        },
+        {
+          "format": "domain_only",
+          "target": "Apple/Apple_Domain.list",
+          "components": [
+            "Apple/Apple_Domain.list"
+          ],
+          "target_rules": 1559,
+          "exact": 0,
+          "parent_suffix": 16,
+          "ip_range": 0,
+          "missing_count": 0,
+          "missing_examples": []
+        },
+        {
+          "format": "resolve",
+          "target": "Apple/Apple_Resolve.list",
+          "components": [
+            "Apple/Apple_Resolve.list"
+          ],
+          "target_rules": 80,
+          "exact": 16,
+          "parent_suffix": 0,
           "ip_range": 0,
           "missing_count": 0,
           "missing_examples": []
@@ -2240,27 +2201,11 @@
     {
       "source": "Aoang-Apple",
       "format": "standard",
-      "target": "Apple/Apple.list + Apple/Apple_Domain.list",
+      "target": "Apple/Apple.list",
       "components": [
-        "Apple/Apple.list",
-        "Apple/Apple_Domain.list"
+        "Apple/Apple.list"
       ],
-      "target_rules": 1639,
-      "exact": 12,
-      "parent_suffix": 57,
-      "ip_range": 0,
-      "missing_count": 0,
-      "missing_examples": []
-    },
-    {
-      "source": "Aoang-Apple",
-      "format": "resolve",
-      "target": "Apple/Apple_Resolve.list + Apple/Apple_Domain.list",
-      "components": [
-        "Apple/Apple_Resolve.list",
-        "Apple/Apple_Domain.list"
-      ],
-      "target_rules": 1639,
+      "target_rules": 80,
       "exact": 12,
       "parent_suffix": 57,
       "ip_range": 0,
@@ -2291,6 +2236,34 @@
       "target_rules": 1615,
       "exact": 9,
       "parent_suffix": 60,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-Apple",
+      "format": "domain_only",
+      "target": "Apple/Apple_Domain.list",
+      "components": [
+        "Apple/Apple_Domain.list"
+      ],
+      "target_rules": 1559,
+      "exact": 0,
+      "parent_suffix": 69,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Aoang-Apple",
+      "format": "resolve",
+      "target": "Apple/Apple_Resolve.list",
+      "components": [
+        "Apple/Apple_Resolve.list"
+      ],
+      "target_rules": 80,
+      "exact": 12,
+      "parent_suffix": 57,
       "ip_range": 0,
       "missing_count": 0,
       "missing_examples": []
@@ -2410,27 +2383,11 @@
     {
       "source": "Apple",
       "format": "standard",
-      "target": "Apple/Apple.list + Apple/Apple_Domain.list",
+      "target": "Apple/Apple.list",
       "components": [
-        "Apple/Apple.list",
-        "Apple/Apple_Domain.list"
+        "Apple/Apple.list"
       ],
-      "target_rules": 1639,
-      "exact": 16,
-      "parent_suffix": 0,
-      "ip_range": 0,
-      "missing_count": 0,
-      "missing_examples": []
-    },
-    {
-      "source": "Apple",
-      "format": "resolve",
-      "target": "Apple/Apple_Resolve.list + Apple/Apple_Domain.list",
-      "components": [
-        "Apple/Apple_Resolve.list",
-        "Apple/Apple_Domain.list"
-      ],
-      "target_rules": 1639,
+      "target_rules": 80,
       "exact": 16,
       "parent_suffix": 0,
       "ip_range": 0,
@@ -2461,6 +2418,34 @@
       "target_rules": 1615,
       "exact": 15,
       "parent_suffix": 1,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Apple",
+      "format": "domain_only",
+      "target": "Apple/Apple_Domain.list",
+      "components": [
+        "Apple/Apple_Domain.list"
+      ],
+      "target_rules": 1559,
+      "exact": 0,
+      "parent_suffix": 16,
+      "ip_range": 0,
+      "missing_count": 0,
+      "missing_examples": []
+    },
+    {
+      "source": "Apple",
+      "format": "resolve",
+      "target": "Apple/Apple_Resolve.list",
+      "components": [
+        "Apple/Apple_Resolve.list"
+      ],
+      "target_rules": 80,
+      "exact": 16,
+      "parent_suffix": 0,
       "ip_range": 0,
       "missing_count": 0,
       "missing_examples": []
@@ -3691,7 +3676,7 @@
       "path": "Amazon/Amazon.list",
       "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3707,7 +3692,7 @@
       "path": "Amazon/Amazon_Resolve.list",
       "line": 139,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3715,7 +3700,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
+      "matched_domain": "si6uq-gwu-ejmr-w7xgq-04-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3731,7 +3716,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3739,7 +3724,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
+      "matched_domain": "si6uq-gwu-ejmr-w7xgq-04-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3755,7 +3740,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3763,7 +3748,7 @@
       "path": "GitBook/GitBook.list",
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3771,7 +3756,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "bridge-cdnn-web.github.io"
+      "matched_domain": "kauongit.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3787,7 +3772,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
+      "matched_domain": "watchtheviralvideosonline.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3803,7 +3788,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "bridge-cdnn-web.github.io"
+      "matched_domain": "kauongit.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3835,7 +3820,7 @@
       "path": "Global/Global_All.list",
       "line": 29514,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3851,7 +3836,7 @@
       "path": "Global/Global_All.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3859,7 +3844,7 @@
       "path": "Global/Global_All.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
+      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -3867,7 +3852,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
+      "matched_domain": "si6uq-gwu-ejmr-w7xgq-04-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3875,7 +3860,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.dataserver-kappa.vercel.app"
+      "matched_domain": "www.vansh-net-clone.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3891,7 +3876,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3907,7 +3892,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
+      "matched_domain": "watchtheviralvideosonline.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3923,7 +3908,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "bridge-cdnn-web.github.io"
+      "matched_domain": "kauongit.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3955,7 +3940,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 29514,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -3971,7 +3956,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3979,7 +3964,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32261,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
+      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -3987,7 +3972,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
+      "matched_domain": "si6uq-gwu-ejmr-w7xgq-04-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3995,7 +3980,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.dataserver-kappa.vercel.app"
+      "matched_domain": "www.vansh-net-clone.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4011,7 +3996,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4027,7 +4012,7 @@
       "path": "GlobalMedia/GlobalMedia_All.list",
       "line": 189,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4043,7 +4028,7 @@
       "path": "GlobalMedia/GlobalMedia_All_No_Resolve.list",
       "line": 189,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4051,7 +4036,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
+      "matched_domain": "watchtheviralvideosonline.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4059,7 +4044,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "www.gcashgiftivnalw.blogspot.com"
+      "matched_domain": "watchtheviralvideosonline.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4115,7 +4100,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 1202,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4131,7 +4116,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4139,7 +4124,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
+      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -4147,7 +4132,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
+      "matched_domain": "si6uq-gwu-ejmr-w7xgq-04-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4155,7 +4140,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.dataserver-kappa.vercel.app"
+      "matched_domain": "www.vansh-net-clone.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4171,7 +4156,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4195,7 +4180,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 1202,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4211,7 +4196,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "matumasklogie.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4219,7 +4204,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 3970,
       "rule": "DOMAIN-SUFFIX,netlify.app",
-      "matched_domain": "connexion-mabanquebnpparibas.netlify.app"
+      "matched_domain": "boisterous-sprite-d1fe49.netlify.app"
     },
     {
       "feed": "OpenPhish",
@@ -4227,7 +4212,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "b5kpq-ioq-25ta-n5k91-07-10-2026-aa.pages.dev"
+      "matched_domain": "si6uq-gwu-ejmr-w7xgq-04-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4235,7 +4220,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.dataserver-kappa.vercel.app"
+      "matched_domain": "www.vansh-net-clone.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4251,7 +4236,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "certifying-eligibility-5bda.s2470-9b6.workers.dev"
+      "matched_domain": "taskorynex-velnoryx-371c.s2504191-f02.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4267,7 +4252,7 @@
       "path": "ProxyLite/ProxyLite.list",
       "line": 172,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4283,7 +4268,7 @@
       "path": "ProxyLite/ProxyLite_Resolve.list",
       "line": 172,
       "rule": "DOMAIN-SUFFIX,cloudfront.net",
-      "matched_domain": "d33wubrfki0l68.cloudfront.net"
+      "matched_domain": "d1by761p31t71v.cloudfront.net"
     },
     {
       "feed": "OpenPhish",
@@ -4291,7 +4276,7 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.dataserver-kappa.vercel.app"
+      "matched_domain": "www.vansh-net-clone.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {
