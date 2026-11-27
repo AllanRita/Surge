@@ -225,7 +225,7 @@ jobs:
                       added=[]
                       for line in rows:
                           kind,domain=line.split(',',1)
-                          if line.lower() in existing or (kind=='DOMAIN' and any(domain==suffix or domain.endswith('.'+suffix) for suffix in suffixes)) or (kind=='DOMAIN-SUFFIX' and any(domain==suffix or suffix.endswith('.'+domain) for suffix in suffixes)):
+                          if line.lower() in existing or any(domain==suffix or domain.endswith('.'+suffix) for suffix in suffixes):
                               continue
                           added.append(line)
                       if added:
