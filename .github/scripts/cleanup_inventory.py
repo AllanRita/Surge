@@ -161,6 +161,27 @@ def main():
     if len(examples["hidden_control"])<30: examples["hidden_control"].append(f"{rel}:{num}")
    s=line.strip()
    if not s or s.startswith(("#",";","//")): continue
+   # Recognize AdGuard-native filters and bare domain-only lines without
+   # incorrectly counting them as malformed Surge rules.
+   native=s
+   adguard=native[4:] if native.startswith("@@||") else (native[2:] if native.startswith("||") else "")
+   if adguard:
+    host=re.split(r"[\^/$:*]",adguard,1)[0].strip(".")
+    if re.fullmatch(r"(?i)[a-z0-9_-]+(?:\.[a-z0-9_-]+)+",host):
+     findings["recognized_native_filter"]+=1
+     if FINANCIAL_RE.fullmatch(host): financial.append(f"{rel}:{num}: {s}")
+    else:
+     findings["invalid_native_filter"]+=1
+     if len(examples["invalid_native_filter"])<30: examples["invalid_native_filter"].append(f"{rel}:{num}: {s[:140]}")
+    continue
+   if native.startswith("/") and native.endswith("/") and len(native)>2:
+    findings["recognized_native_regex"]+=1
+    continue
+   bare=native[1:] if native.startswith(".") else native
+   if "," not in native and re.fullmatch(r"(?i)[a-z0-9_-]+(?:\.[a-z0-9_-]+)+",bare):
+    findings["recognized_native_domain"]+=1
+    if FINANCIAL_RE.fullmatch(bare): financial.append(f"{rel}:{num}: {s}")
+    continue
    p=s.split(","); kind=p[0].strip().upper(); value=p[1].strip() if len(p)>1 else ""; types[kind]+=1
    if kind not in ALLOWED or not value:
     findings["unsupported_or_missing_operand"]+=1
