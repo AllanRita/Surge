@@ -10,6 +10,8 @@ This repository keeps the shared rule library separate from personal additions.
 - [Security review](Rule/Upstream/SECURITY-REVIEW.md) — threat-feed matches and broad shared-hosting suffixes. Matches are review signals, not automatic deletion instructions.
 - [App policy-group merge report](Rule/Upstream/APP-POLICY-MERGE-REPORT.md) — completed regional/alias consolidation.
 
+> **Visibility note:** This repository is public. Files under `Rule/Personal/` are therefore publicly readable too. Keep only entries you are comfortable publishing here; if those personal additions should remain private, store them in a separate private repository rather than changing this repository's visibility without checking subscription access.
+
 ## Folder structure
 
 - `Rule/Upstream/` — consolidated upstream rule library. One App/service folder is the canonical location; distinct formats such as Standard and Resolve remain separate.
