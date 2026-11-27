@@ -1,6 +1,7 @@
 name: Surge Cleanup Inventory and Security Audit
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
@@ -8,6 +9,7 @@ on:
       - '.github/scripts/remove_invalid_public_tld_rules.py'
       - '.github/workflows/cleanup-audit.yml'
       - 'Rule/Upstream/**/*.list'
+      - 'Rule/Upstream/SourceMetadata/**'
       - 'Rule/CONSOLIDATION-PLAN.json'
       - 'Rule/CONSOLIDATED-INDEX.md'
 
