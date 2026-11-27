@@ -127,3 +127,11 @@ The repository does not contain the user's active Surge profile/configuration, s
 ## Expanded shared-hosting audit
 
 The cleanup inventory now scans a curated set of 42 shared CDN/hosting, dynamic-DNS, and URL-shortener suffixes across every upstream rule file, not only those suffixes that happen to match OpenPhish. The latest run found 34 suffixes in 159 rule occurrences: 33 occurrences in App/service folders across 21 suffixes and 126 in aggregate folders (Global, GlobalMedia, Proxy, ProxyLite). The result is recorded in `CLEANUP-INVENTORY.json` and `CLEANUP-INVENTORY.md`, with the affected folders and rule occurrences. This is a review-only scan: no rule is automatically removed because a suffix is shared or multi-tenant. The plan records these App/service-folder candidates for manual routing review.
+
+
+## Excluded financial trading and securities rule folders
+
+At the user's direction, the following dedicated folders were removed from `Rule/Upstream`: `Binance`, `OKX`, `Crypto`, `Cryptocurrency`, `EastMoney`, and `TigerFintech`. This removes six rule lists (311 rule entries) and their six README files.
+
+The removal does not delete related domain entries from unrelated App, Global, advertising, or privacy rules. `Rule/Personal` remains untouched. `Stackexchange` remains because it is a Q&A service, not a financial exchange.
+

@@ -51,20 +51,23 @@ Interpretation:
 
 Most matches are in advertising, privacy, or filter-category lists; the remainder are in aggregate or other App lists. A domain-name match does not by itself prove that a payment/checkout endpoint is being blocked. The current inventory finds zero dedicated bank/payment App folders, and the 14 dedicated folders removed earlier remain absent. These 238 upstream domain entries were not deleted. The single personal PayPay match was also left untouched.
 
-### Other finance/trading/crypto folders — review only
+### Dedicated trading-exchange, cryptocurrency and securities folders — removed
 
-The latest inventory found no dedicated bank/payment App folders under `Rule/Upstream`, but it separately identified six finance/trading/crypto folders for manual classification. None was deleted or rewritten.
+The user confirmed that all dedicated trading-exchange, cryptocurrency-category, and securities-investment rule folders should be excluded from this rule library. The following six folders were removed from `Rule/Upstream`:
 
-| Folder | Classification | Rule entries | Status |
+| Folder | Classification | Rule entries removed | Result |
 |---|---|---:|---|
-| Binance | Crypto exchange | 12 | Review only |
-| Crypto | Cryptocurrency category list, not a single App | 201 | Review only |
-| Cryptocurrency | Cryptocurrency category list, not a single App | 43 | Review only |
-| EastMoney | Securities brokerage / investment platform | 33 | Review only |
-| OKX | Crypto exchange | 3 | Review only |
-| TigerFintech | Securities brokerage / investment platform | 19 | Review only |
+| Binance | Crypto exchange | 12 | Removed |
+| OKX | Crypto exchange | 3 | Removed |
+| Crypto | Cryptocurrency category list | 201 | Removed |
+| Cryptocurrency | Cryptocurrency category list | 43 | Removed |
+| EastMoney | Securities brokerage / investment platform | 33 | Removed |
+| TigerFintech | Securities brokerage / investment platform | 19 | Removed |
+| **Total** | **6 folders / 6 rule lists** | **311** | **Removed** |
 
-These are not automatically treated as bank/payment Apps. They remain intact because the confirmed instruction was to remove dedicated bank/payment App rule folders, not to remove every finance-related, crypto, or investment rule set.
+Each folder contained one `.list` rule file and one `README.md`; all 12 files were removed in one repository commit. This removal is limited to the dedicated folders above. It does not delete matching domains from unrelated Global, advertising, privacy, or other App rules. It also does not modify `Rule/Personal`.
+
+`Stackexchange` is intentionally retained: it is a Q&A/community service, not a financial securities exchange. The general-purpose financial-domain matches elsewhere in the library remain subject to their own scenario-aware review.
 
 
 Important interpretation:
