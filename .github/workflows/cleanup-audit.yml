@@ -29,20 +29,37 @@ jobs:
         with:
           persist-credentials: true
 
-      - name: Download public security reference feeds (not rule authors)
+      - name: Download required public security reference feeds
         env:
           URLHAUS_AUTH_KEY: ${{ secrets.URLHAUS_AUTH_KEY }}
         run: |
-          set +e
-          curl -fsSL --retry 2 --max-time 60 https://data.iana.org/TLD/tlds-alpha-by-domain.txt -o "$RUNNER_TEMP/iana-tlds.txt"
+          set -euo pipefail
+          curl -fsSL --retry 3 --retry-all-errors --max-time 90 \
+            https://data.iana.org/TLD/tlds-alpha-by-domain.txt \
+            -o "$RUNNER_TEMP/iana-tlds.txt"
+          test -s "$RUNNER_TEMP/iana-tlds.txt"
+          grep -q '^[A-Z0-9-]\+$' "$RUNNER_TEMP/iana-tlds.txt"
+
+          curl -fsSL --retry 3 --retry-all-errors --max-time 90 \
+            https://raw.githubusercontent.com/openphish/public_feed/refs/heads/main/feed.txt \
+            -o "$RUNNER_TEMP/openphish-feed.txt"
+          test -s "$RUNNER_TEMP/openphish-feed.txt"
+          grep -qE '^https?://' "$RUNNER_TEMP/openphish-feed.txt"
+
           if [ -n "${URLHAUS_AUTH_KEY:-}" ]; then
-            curl -fsSL --retry 2 --max-time 60 "https://urlhaus-api.abuse.ch/v2/files/exports/${URLHAUS_AUTH_KEY}/hostfile.txt" -o "$RUNNER_TEMP/urlhaus-hostfile.txt"
+            if curl -fsSL --retry 2 --retry-all-errors --max-time 90 \
+              "https://urlhaus-api.abuse.ch/v2/files/exports/${URLHAUS_AUTH_KEY}/hostfile.txt" \
+              -o "$RUNNER_TEMP/urlhaus-hostfile.txt" && test -s "$RUNNER_TEMP/urlhaus-hostfile.txt"; then
+              echo "URLhaus authenticated feed downloaded."
+            else
+              rm -f "$RUNNER_TEMP/urlhaus-hostfile.txt"
+              echo "::warning::URLhaus download failed; audit will explicitly report incomplete URLhaus coverage."
+              echo "URLhaus download failed; report remains incomplete." >> "$GITHUB_STEP_SUMMARY"
+            fi
           else
+            echo "::warning::URLHAUS_AUTH_KEY is not configured; URLhaus coverage will be reported as incomplete."
             echo "URLhaus skipped: repository Actions secret URLHAUS_AUTH_KEY is not configured." >> "$GITHUB_STEP_SUMMARY"
           fi
-          curl -fsSL --retry 2 --max-time 60 https://raw.githubusercontent.com/openphish/public_feed/refs/heads/main/feed.txt -o "$RUNNER_TEMP/openphish-feed.txt"
-          exit 0
-
       - name: Remove verified non-IANA root suffix
         run: python3 .github/scripts/remove_invalid_public_tld_rules.py --iana-tlds "$RUNNER_TEMP/iana-tlds.txt"
 
