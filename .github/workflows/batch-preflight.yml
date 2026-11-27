@@ -41,8 +41,9 @@ jobs:
       - name: Add batch summary
         if: always()
         run: |
-          if [ -f batch-output/batch-"${{ inputs.batch_number }}".md ]; then
-            cat batch-output/batch-"${{ inputs.batch_number }}".md >> "$GITHUB_STEP_SUMMARY"
+          BATCH_ID=$(printf "%03d" "${{ inputs.batch_number }}")
+          if [ -f "batch-output/batch-$BATCH_ID.md" ]; then
+            cat "batch-output/batch-$BATCH_ID.md" >> "$GITHUB_STEP_SUMMARY"
           elif [ -f batch-output-result.json ]; then
             cat batch-output-result.json >> "$GITHUB_STEP_SUMMARY"
           fi
