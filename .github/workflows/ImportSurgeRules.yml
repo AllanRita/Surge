@@ -1,4 +1,4 @@
-name: Import Blackmatrix7 Surge Rules
+name: Sync Upstream Surge Rules
 on:
   workflow_dispatch:
   schedule:
@@ -29,7 +29,7 @@ jobs:
           from pathlib import Path
           root=Path(os.environ['RUNNER_TEMP'])/'upstream'
           src=root/'rule/Surge'
-          dst=Path('Rule/Blackmatrix7')
+          dst=Path('Rule/Upstream')
           if dst.is_symlink() or (dst.exists() and not dst.is_dir()):
               raise SystemExit('Unsafe destination')
           if dst.exists() and any(p.is_symlink() for p in dst.rglob('*')):
@@ -42,7 +42,7 @@ jobs:
           excluded=set(["AliPay","BOC","BOCOM","CCB","CEB","CGB","CMB","ICBC","PSBC","PayPal","Stripe","UnionPay","VISA","PingAn"])
           files=[p for p in files if p.relative_to(src).parts[0] not in excluded]
           rules=[p for p in files if p.suffix.lower() in {'.list','.txt','.conf'}]
-          old_rules=[p for p in dst.rglob('*') if p.is_file() and p.suffix.lower() in {'.list','.txt','.conf'}]
+          old_rules=[p for p in dst.rglob('*') if p.is_file() and p.suffix.lower() in {'.list','.txt','.conf'} and not p.with_suffix('.source.json').exists()]
           if len(rules)<100 or (old_rules and len(rules)<len(old_rules)*0.75):
               raise SystemExit('Abnormal upstream rule count; retaining previous snapshot')
           if any(p.stat().st_size>50*1024*1024 for p in files):
@@ -137,6 +137,42 @@ jobs:
                   report.write(f'- {example}\n')
           if any(findings[k] for k in ('hidden-control','invalid-network','ip-family-mismatch','catch-all-network','missing-operand')):
               raise SystemExit('Critical rule audit findings; publication blocked')
+          # Additional source: only explicit non-IP rule sets, never execute source code.
+          extra=Path(os.environ['RUNNER_TEMP'])/'extra-source'
+          try:
+              subprocess.run(['git','clone','--depth','1','--filter=blob:none','--sparse','https://github.com/SukkaLab/ruleset.skk.moe.git',str(extra)],check=True)
+              subprocess.run(['git','-C',str(extra),'sparse-checkout','set','List/non_ip'],check=True)
+              selected={'apple_cdn':'AppleCDN','apple_intelligence':'AppleIntelligence','microsoft_cdn':'MicrosoftCDN','cloudmounter':'CloudMounter','gitlab':'GitLabSupplement','stream_jp':'StreamingJapan','stream_kr':'StreamingKorea','stream_hk':'StreamingHongKong','stream_tw':'StreamingTaiwan'}
+              candidates=[]
+              for stem,category in selected.items():
+                  p=extra/'List/non_ip'/f'{stem}.conf'
+                  if not p.is_file() or p.is_symlink() or p.stat().st_size==0 or p.stat().st_size>50*1024*1024:
+                      raise ValueError('Invalid additional source file')
+                  raw=p.read_bytes()
+                  lines=raw.decode('utf-8-sig').splitlines()
+                  for line in lines:
+                      line=line.strip()
+                      if not line or line.startswith(('#',';','//')):
+                          continue
+                      parts=line.split(',')
+                      if len(parts)!=2 or parts[0] not in {'DOMAIN','DOMAIN-SUFFIX','DOMAIN-KEYWORD'} or not re.fullmatch(r'[A-Za-z0-9_.-]+',parts[1]):
+                          raise ValueError('Unsupported additional rule syntax')
+                  target=dst/category/f'{category}.list'
+                  if target.exists() and not target.with_suffix('.source.json').exists():
+                      raise ValueError('Source name collision')
+                  candidates.append((target,raw,p))
+              lic=extra/'LICENSE'
+              if not lic.is_file() or lic.is_symlink() or 'GNU AFFERO GENERAL PUBLIC LICENSE' not in lic.read_text():
+                  raise ValueError('Unexpected additional source license')
+              commit=subprocess.check_output(['git','-C',str(extra),'rev-parse','HEAD'],text=True).strip()
+              for target,raw,p in candidates:
+                  target.parent.mkdir(parents=True,exist_ok=True)
+                  provenance={'repository':'https://github.com/SukkaLab/ruleset.skk.moe','source_repository':'https://github.com/SukkaW/Surge','commit':commit,'path':str(p.relative_to(extra)),'license':'AGPL-3.0'}
+                  target.write_bytes(raw)
+                  target.with_suffix('.source.json').write_text(json.dumps(provenance,indent=2))
+              shutil.copyfile(lic,dst/'LICENSE-AGPL-3.0')
+          except (OSError,ValueError,subprocess.CalledProcessError) as e:
+              print('Additional source deferred:',str(e))
           manifest={str(p.relative_to(dst)):hashlib.sha256(p.read_bytes()).hexdigest() for p in dst.rglob('*') if p.is_file()}
           Path('rule-manifest.json').write_text(json.dumps(manifest,sort_keys=True))
           print('Upstream commit:',subprocess.check_output(['git','-C',str(root),'rev-parse','HEAD'],text=True).strip())
@@ -145,7 +181,7 @@ jobs:
         with:
           name: validated-rules
           path: |
-            Rule/Blackmatrix7
+            Rule/Upstream
             rule-manifest.json
           retention-days: 3
   publish:
@@ -171,8 +207,8 @@ jobs:
           import os, json, hashlib, shutil
           from pathlib import Path
           root=Path(os.environ['RUNNER_TEMP'])/'validated-rules'
-          src=root/'Rule/Blackmatrix7'
-          dst=Path('Rule/Blackmatrix7')
+          src=root/'Rule/Upstream'
+          dst=Path('Rule/Upstream')
           expected=json.loads((root/'rule-manifest.json').read_text())
           if any(p.is_symlink() for p in src.rglob('*')):
               raise SystemExit('Unsafe artifact')
@@ -192,8 +228,8 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- Rule/Blackmatrix7
-          git diff --cached --name-only -z | python3 -c 'import sys; assert all(p.startswith(b"Rule/Blackmatrix7/") for p in sys.stdin.buffer.read().split(b"\x00") if p)'
+          git add -- Rule/Upstream
+          git diff --cached --name-only -z | python3 -c 'import sys; assert all(p.startswith(b"Rule/Upstream/") for p in sys.stdin.buffer.read().split(b"\x00") if p)'
           if git diff --cached --quiet; then
             echo 'No changes'
             exit 0
