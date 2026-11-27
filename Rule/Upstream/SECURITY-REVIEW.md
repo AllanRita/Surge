@@ -1,6 +1,6 @@
 # Security reputation review
 
-Generated: 2026-11-27 11:38 UTC
+Generated: 2026-11-27 11:39 UTC
 
 This report compares current domain rules against public threat-intelligence feeds. A feed match is a review signal, not proof that the rule's parent domain is malicious. No rules are automatically removed.
 
@@ -45,14 +45,14 @@ This report compares current domain rules against public threat-intelligence fee
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: GitBook/GitBook.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: metamasiuklogin.gitbook.io
+- Matched feed host examples: cripthcomlogin.gitbook.io
 - Classification: GitBook hosted content; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,github.io
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: GitHub/GitHub.list, Global/Global_All.list, Global/Global_All_No_Resolve.list
-- Matched feed host examples: taojin1122.github.io
+- Matched feed host examples: meenakshi-cse.github.io
 - Classification: GitHub Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,is.gd
@@ -66,21 +66,21 @@ This report compares current domain rules against public threat-intelligence fee
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: ingprsonasvrtal.netlify.app
+- Matched feed host examples: netflis-gpt.netlify.app
 - Classification: Netlify shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,pages.dev
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: 07pz6-ob0-xau1-a6oyv-07-09-2026-hh.pages.dev
+- Matched feed host examples: nohgl-0eo-bnut-29fxv-06-10-2026-aa.pages.dev
 - Classification: Cloudflare Pages shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,vercel.app
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list, Vercel/Vercel.list
-- Matched feed host examples: www.tlktok.vercel.app
+- Matched feed host examples: www.zimbra-auth-adm-old.vercel.app
 - Classification: Vercel shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ### DOMAIN-SUFFIX,web.app
@@ -94,7 +94,7 @@ This report compares current domain rules against public threat-intelligence fee
 - Scope: app_or_routing
 - Feed(s): OpenPhish
 - Rule files: Cloudflare/Cloudflare.list, Cloudflare/Cloudflare_Resolve.list, Global/Global_All.list, Global/Global_All_No_Resolve.list, Proxy/Proxy_All.list, Proxy/Proxy_All_No_Resolve.list
-- Matched feed host examples: datorynex-xaventra-8972.s2499657.workers.dev
+- Matched feed host examples: supplemental-insert-259e.andrew-andrew23.workers.dev
 - Classification: Cloudflare Workers shared hosting; this is a shared-hosting suffix, not an App-exclusive domain. Review whether it belongs in this App policy group.
 
 ## Stale/private single-label suffixes
