@@ -326,7 +326,7 @@ def main():
         "",
         "## Preserved boundaries",
         "- Personal rules were not read or modified.",
-        "- This consolidation does not delete any bank/payment or other finance folders. The 14 exact previously user-deleted paths remain tombstoned; matching domains in other Apps are untouched.",
+        "- This consolidation does not delete any bank/payment or other finance folders. The 14 previously excluded folders were explicitly restored on 2026-11-27; matching domains in other Apps are untouched.",
         "- Standard and Resolve remain separate files; regional variants are folded into the same App folder.",
         "- Source README/license material from removed alias folders is archived under SourceMetadata/RegionalVariants.",
         "- No new author rule sets were fetched.",
