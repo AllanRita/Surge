@@ -10,23 +10,21 @@
     "do_not_merge_different_apps_by_shared_cdn_or_parent_company": true,
     "compare_cached_author_sources_without_fetching_new_authors": true,
     "pause_new_author_rule_fetching": true,
-    "delete_only_dedicated_bank_payment_app_folders": false,
     "do_not_delete_financial_domains_embedded_in_other_apps": true,
     "personal_rules_are_never_modified": true,
     "remove_alias_folders_after_verified_union": true,
     "retain_source_provenance_in_SourceMetadata": true,
-    "user_explicitly_approved_crypto_exchange_and_securities_folder_removal": false,
     "explicit_deletion_manifest_enforced_by_automation": true,
     "never_restore_user_deleted_rule_folders": true,
     "restore_excluded_folders_only_on_explicit_user_request": true,
     "do_not_restore_from_author_feeds_cached_snapshots_backups_or_git_history": true,
-    "do_not_delete_crypto_exchange_and_securities_without_explicit_user_request": true,
-    "do_not_delete_bank_payment_app_folders_automatically": true,
-    "do_not_delete_other_finance_folders_automatically": true,
     "only_enforce_exact_explicit_deletion_manifest": true,
-    "restore_explicitly_requested_bank_payment_finance_folders": true,
     "do_not_restore_user_deleted_rule_folders": true,
-    "targeted_author_fetch_for_explicit_restore_allowed": true
+    "category_based_deletion_rules": false,
+    "all_app_categories_subject_to_same_security_policy": true,
+    "auto_delete_confirmed_security_threats": true,
+    "auto_repair_deterministic_invalid_rules": true,
+    "quarantine_suspected_security_findings": true
   },
   "scenario_variants": [
     {
@@ -520,7 +518,11 @@
   "cached_author_sources": {
     "count": 15,
     "missing_rules": 0,
-    "action": "compare existing cached SourceMetadata only; do not fetch new author rule sets"
+    "action": "compare and merge only existing Rule/Upstream/SourceMetadata JSON snapshots; do not fetch new author rule sets",
+    "merge_script": ".github/scripts/merge_cached_sources.py",
+    "comparison": "exact and semantic coverage (domain suffix ancestry and IP network containment)",
+    "format_policy": "preserve existing standard/Resolve/All/All_No_Resolve formats; adapt IP no-resolve option to target format; never merge across different Apps or distinct formats",
+    "last_implementation_status": "automated idempotent batch-stage added; first post-change run pending"
   },
   "generated_by": "cleanup inventory 2026-11-27; final user-confirmed Surge App-policy structure",
   "security_review_policy": {
@@ -732,115 +734,7 @@
       }
     ]
   },
-  "finance_excluded_folders": [
-    {
-      "folder": "BOC",
-      "classification": "bank App",
-      "action": "remove_user_confirmed"
-    },
-    {
-      "folder": "BOCOM",
-      "classification": "bank App",
-      "action": "remove_user_confirmed"
-    },
-    {
-      "folder": "CCB",
-      "classification": "bank App",
-      "action": "remove_user_confirmed"
-    },
-    {
-      "folder": "CEB",
-      "classification": "bank App",
-      "action": "remove_user_confirmed"
-    },
-    {
-      "folder": "CGB",
-      "classification": "bank App",
-      "action": "remove_user_confirmed"
-    },
-    {
-      "folder": "CMB",
-      "classification": "bank App",
-      "action": "remove_user_confirmed"
-    },
-    {
-      "folder": "ICBC",
-      "classification": "bank App",
-      "action": "remove_user_confirmed"
-    },
-    {
-      "folder": "PSBC",
-      "classification": "bank App",
-      "action": "remove_user_confirmed"
-    },
-    {
-      "folder": "AliPay",
-      "classification": "payment App",
-      "action": "remove_user_confirmed"
-    },
-    {
-      "folder": "PayPal",
-      "classification": "payment App",
-      "action": "remove_user_confirmed"
-    },
-    {
-      "folder": "Stripe",
-      "classification": "payment App",
-      "action": "remove_user_confirmed"
-    },
-    {
-      "folder": "UnionPay",
-      "classification": "payment App",
-      "action": "remove_user_confirmed"
-    },
-    {
-      "folder": "VISA",
-      "classification": "payment App",
-      "action": "remove_user_confirmed"
-    },
-    {
-      "folder": "PingAn",
-      "classification": "financial services App",
-      "action": "remove_user_confirmed"
-    }
-  ],
-  "user_confirmation": {
-    "date": "2026-11-27",
-    "decision": "Delete only dedicated bank/payment App rule-set folders. Do not delete financial/payment domains embedded in other App rule sets. User will collect bank/payment domains separately and add them to personal rules.",
-    "folders": [
-      "BOC",
-      "BOCOM",
-      "CCB",
-      "CEB",
-      "CGB",
-      "CMB",
-      "ICBC",
-      "PSBC",
-      "AliPay",
-      "PayPal",
-      "Stripe",
-      "UnionPay",
-      "VISA",
-      "PingAn"
-    ]
-  },
   "explicit_exclusion_manifest": ".github/explicit-rule-exclusions.json",
-  "explicitly_excluded_rule_folders": [
-    "BOC",
-    "BOCOM",
-    "CCB",
-    "CEB",
-    "CGB",
-    "CMB",
-    "ICBC",
-    "PSBC",
-    "AliPay",
-    "PayPal",
-    "Stripe",
-    "UnionPay",
-    "VISA",
-    "PingAn"
-  ],
   "non_excluded_finance_folders": [
     {
       "folder": "Binance",
@@ -878,20 +772,21 @@
       "status": "retained; no explicit deletion instruction"
     }
   ],
-  "restored_explicitly_requested_folders": [
-    "BOC",
-    "BOCOM",
-    "CCB",
-    "CEB",
-    "CGB",
-    "CMB",
-    "ICBC",
-    "PSBC",
-    "AliPay",
-    "PayPal",
-    "Stripe",
-    "UnionPay",
-    "VISA",
-    "PingAn"
+  "automatic_maintenance_policy": {
+    "batch_size": 100,
+    "process_all_batches_sequentially": true,
+    "per_batch_prechange_backups": true,
+    "per_batch_commit": true,
+    "rollback_uncommitted_batch_on_validation_failure": true,
+    "preserve_rule_personal": true,
+    "security_feed_policy": "threat deletion only with exact hostname corroborated by OpenPhish and URLhaus; if either feed unavailable, disable threat deletion and report incomplete coverage",
+    "source_collection": "existing cached sources only; new author fetching paused"
+  },
+  "historical_reversed_decisions": [
+    {
+      "date": "2026-11-27",
+      "decision": "The earlier category-based bank/payment/finance folder deletion instruction was explicitly withdrawn. The 14 named folders were restored and no longer have category-specific keep/delete status.",
+      "current_effect": "All App categories follow the same evidence-based security policy. Exact user-directed tombstones remain the only no-restore protection."
+    }
   ]
 }
