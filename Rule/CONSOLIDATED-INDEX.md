@@ -45,6 +45,7 @@ The current inventory found no dedicated bank/payment App folders under Rule/Ups
 - Keep Rule/Personal/PayPay.list unchanged.
 - The current inventory also flags six other finance/trading/crypto folders for review only: Binance (12 entries), Crypto (201), Cryptocurrency (43), EastMoney (33), OKX (3), and TigerFintech (19). They are not classified as dedicated bank/payment App folders and were not removed.
 - Future bank/payment domains belong in the user's personal rule set, not in the shared App library.
+- Separate classification note: the current audit flags Binance and OKX as crypto-exchange rule folders, EastMoney and TigerFintech as securities/investment rule folders, and Crypto/Cryptocurrency as category lists. These six are review-only; they are not automatically treated as bank/payment Apps and have not been deleted.
 
 ## File formats
 
@@ -52,7 +53,7 @@ Keep each distinct existing format once within its App folder. Standard and Reso
 
 ## Current source comparison
 
-The 15 author-source snapshots already cached in SourceMetadata have been compared against their correctly mapped App/category rule files. The current audit reports zero uncovered source rules. No new author rule sets were fetched.
+The 15 author-source snapshots already cached in SourceMetadata have been compared against their correctly mapped App/category rule files: 300 source-rule entries checked, zero uncovered. Scope limitation: this verifies only the snapshots already cached; it does not establish that every App has been compared against every possible author. No new author rule sets were fetched.
 
 ## Security and review records
 
