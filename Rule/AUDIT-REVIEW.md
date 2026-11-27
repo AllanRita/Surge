@@ -40,6 +40,17 @@ The audit reports 8 groups:
 
 No cross-category file was deleted. Keeping both paths avoids silently breaking any existing raw-file subscription URL. Consolidation to one canonical subscription path requires a separate compatibility/redirect plan.
 
+## Additional author source: Aoang/Surge
+
+- Repository reviewed: https://github.com/Aoang/Surge
+- License: MIT; source license is retained as `Rule/Upstream/LICENSE-MIT-AOANG`.
+- Imported source files: 9, with commit and source-path provenance recorded in `Rule/Upstream/SourceMetadata/Aoang-*.json`.
+- Apple: 69 unique domain rules reviewed; 61 were already covered by existing exact rules or broader suffix rules, and 8 additional domain rules were appended to the existing Apple list.
+- Microsoft OneDrive and Teams: 8 domain rules reviewed; all were already covered by the existing Microsoft rule set, so no duplicate entries were added.
+- Separate scenario lists retained: DNS blocking, YouTube URL-regex ad blocking, Parallels blocking, other blocking, process routing, and unavailable-service handling.
+- PayPal source rules were deliberately excluded from automatic import pending financial-policy review.
+- Existing SukkaLab supplements are preserved; Aoang additions are appended as a separately attributed supplement.
+
 ## Current validation limits
 
 - The latest workflow run validates and publishes a static snapshot and audit artifact.
