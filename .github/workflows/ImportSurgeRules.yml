@@ -5,7 +5,7 @@ on:
     - cron: '43 3 * * *'
   push:
     branches: [main]
-    paths: ['.github/workflows/ImportSurgeRules.yml']
+    paths: ['.github/workflows/ImportSurgeRules.yml', '.github/scripts/analyze_app_rule_overlap.py']
 permissions:
   contents: read
 concurrency:
@@ -452,6 +452,7 @@ jobs:
               '- Manual review is still required for source relevance, financial exclusions, broad matches, and real Surge subscription behavior.',
               '']
           report_path.write_text('\\n'.join(report_lines),encoding='utf-8')
+          exec(compile(Path('.github/scripts/analyze_app_rule_overlap.py').read_text(encoding='utf-8'), '.github/scripts/analyze_app_rule_overlap.py', 'exec'))
           manifest={str(p.relative_to(dst)):hashlib.sha256(p.read_bytes()).hexdigest() for p in dst.rglob('*') if p.is_file()}
           Path('rule-manifest.json').write_text(json.dumps(manifest,sort_keys=True))
           print('Upstream commit:',subprocess.check_output(['git','-C',str(root),'rev-parse','HEAD'],text=True).strip())
