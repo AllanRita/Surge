@@ -19,10 +19,10 @@
 | ---- | ----  |
 | DOMAIN-KEYWORD | 1  | 
 | DOMAIN-SUFFIX | 34  | 
-| IP-CIDR | 21  | 
-| PROCESS-NAME | 1  | 
+| IP-CIDR | 30  | 
+| PROCESS-NAME | 3  | 
 | USER-AGENT | 6  | 
-| TOTAL | 63  | 
+| TOTAL | 74  | 
 
 
 ## Surge 
