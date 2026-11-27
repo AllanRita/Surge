@@ -8,8 +8,8 @@
     "merge_same_app_regional_variants": true,
     "keep_distinct_file_formats_separate": true,
     "do_not_merge_different_apps_by_shared_cdn_or_parent_company": true,
-    "compare_cached_author_sources_without_fetching_new_authors": true,
-    "pause_new_author_rule_fetching": true,
+    "compare_cached_author_sources_without_fetching_new_authors": false,
+    "pause_new_author_rule_fetching": false,
     "delete_only_dedicated_bank_payment_app_folders": false,
     "do_not_delete_financial_domains_embedded_in_other_apps": true,
     "personal_rules_are_never_modified": true,
@@ -23,7 +23,9 @@
     "do_not_delete_crypto_exchange_and_securities_without_explicit_user_request": true,
     "do_not_delete_bank_payment_app_folders_automatically": true,
     "do_not_delete_other_finance_folders_automatically": true,
-    "only_enforce_exact_explicit_deletion_manifest": true
+    "only_enforce_exact_explicit_deletion_manifest": true,
+    "restore_explicitly_requested_bank_payment_finance_folders": true,
+    "do_not_restore_user_deleted_rule_folders": true
   },
   "scenario_variants": [
     {
@@ -869,5 +871,21 @@
       "classification": "securities / stock-investment information community",
       "status": "retained; no explicit deletion instruction"
     }
+  ],
+  "restored_explicitly_requested_folders": [
+    "BOC",
+    "BOCOM",
+    "CCB",
+    "CEB",
+    "CGB",
+    "CMB",
+    "ICBC",
+    "PSBC",
+    "AliPay",
+    "PayPal",
+    "Stripe",
+    "UnionPay",
+    "VISA",
+    "PingAn"
   ]
 }
