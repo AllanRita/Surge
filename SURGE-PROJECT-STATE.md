@@ -436,3 +436,16 @@ Reviewed Rule/Upstream/Telegram, the existing Telegram source snapshot, and the 
 - README statistics match the actual file contents (46 total); regional child variants TelegramNL, TelegramSG, and TelegramUS are documented as included in the single canonical folder. Preserve this single-folder organization and country/region selection in the App policy group.
 - Conclusion: Telegram passes the available structural and cached-source coverage checks. No changes required.
 - Next App review: continue to Amazon using only existing local files and cached metadata, preserving any intentional formats.
+
+
+## 29. App-by-App review — Amazon rule set (2026-11-28)
+
+Reviewed Rule/Upstream/Amazon local files and README. No matching Amazon author-source metadata snapshot exists in SourceMetadata; do not fetch new sources while author collection is paused.
+
+- Amazon.list and Amazon_Resolve.list each contain 223 entries, all unique, with identical type counts: DOMAIN-SUFFIX 203, DOMAIN-KEYWORD 1, IP-CIDR 15, PROCESS-NAME 1, URL-REGEX 1, USER-AGENT 2.
+- The files differ only by the no-resolve option on the same 15 IP-CIDR rules. Preserve both formats.
+- README statistics were stale (DOMAIN-SUFFIX 186, TOTAL 206). Corrected to DOMAIN-SUFFIX 203 and TOTAL 223. No rule entries changed.
+- No cached author snapshot is available to verify Amazon completeness. README documents AmazonCN as a consolidated regional variant; preserve the single canonical folder and regional selection in the App policy group.
+- Note: URL-REGEX is present and README indicates HTTPS matching requires the separately documented MITM module. Do not enable or change MITM settings as part of this folder review.
+- Conclusion: paired formats are structurally consistent, no duplicates found, and documentation counts corrected. Source completeness remains unverified under the paused-source policy.
+- Next App review: continue with HBO using only existing local files and any existing cached metadata.
