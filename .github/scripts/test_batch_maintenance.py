@@ -20,6 +20,7 @@ MERGE = load_module("merge_cached_sources", "merge_cached_sources.py")
 MAINTAIN = load_module("batch_maintain", "batch_maintain.py")
 PREFLIGHT = load_module("batch_preflight", "batch_preflight.py")
 FORMAT_AUDIT = load_module("audit_format_coverage", "audit_format_coverage.py")
+FORMAT = load_module("audit_format_parity", "audit_format_parity.py")
 
 class SurgeMaintenanceTests(unittest.TestCase):
     def test_domain_suffix_semantic_coverage(self):
@@ -134,6 +135,41 @@ class SurgeMaintenanceTests(unittest.TestCase):
             self.assertNotIn("xihuan", tlds)
 
 
+    def test_format_parity_ignores_only_no_resolve(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            folder = root / "Example"
+            folder.mkdir()
+            standard = folder / "Example.list"
+            resolve = folder / "Example_Resolve.list"
+            standard.write_text("# standard\\nDOMAIN,api.example.com\\nIP-CIDR,10.0.0.0/8,no-resolve\\n", encoding="utf-8")
+            resolve.write_text("# resolve\\nDOMAIN,api.example.com\\nIP-CIDR,10.0.0.0/8\\n", encoding="utf-8")
+            with patch.object(FORMAT, "ROOT", root):
+                result = FORMAT.compare_files(standard, resolve, "Standard vs Resolve")
+            self.assertEqual(result["status"], "MATCH")
+            self.assertEqual(result["left_only_count"], 0)
+            self.assertEqual(result["right_only_count"], 0)
+            self.assertEqual(result["resolution_option_difference_count"], 1)
+
+    def test_format_parity_keeps_non_resolution_options_significant(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            folder = root / "Example"
+            folder.mkdir()
+            standard = folder / "Example.list"
+            resolve = folder / "Example_Resolve.list"
+            standard.write_text("DOMAIN,api.example.com,policy=Proxy\\n", encoding="utf-8")
+            resolve.write_text("DOMAIN,api.example.com,policy=Direct\\n", encoding="utf-8")
+            with patch.object(FORMAT, "ROOT", root):
+                result = FORMAT.compare_files(standard, resolve, "Standard vs Resolve")
+            self.assertEqual(result["status"], "REVIEW")
+            self.assertEqual(result["left_only_count"], 1)
+            self.assertEqual(result["right_only_count"], 1)
+
+    def test_format_suffix_classification(self):
+        self.assertEqual(FORMAT.classify(Path("App/App_All_No_Resolve.list")), ("App", "all_no_resolve"))
+        self.assertEqual(FORMAT.classify(Path("App/App_Resolve.list")), ("App", "resolve"))
+        self.assertEqual(FORMAT.classify(Path("App/App.list")), ("App", "standard"))
     def test_format_coverage_pairs_respect_documented_variants(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
