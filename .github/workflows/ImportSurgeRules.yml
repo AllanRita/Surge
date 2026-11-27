@@ -173,7 +173,7 @@ jobs:
               # Upstream bundles can contain AdGuard-native filters as well as Surge rules.
               # Recognize their syntax without rewriting or translating it into broader Surge rules.
               native=line.strip()
-              adguard=native[2:] if native.startswith('@@||') else (native[2:] if native.startswith('||') else '')
+              adguard=native[4:] if native.startswith('@@||') else (native[2:] if native.startswith('||') else '')
               if adguard:
                   host=re.split(r'[\^/$:*]',adguard,1)[0].strip('.')
                   if not re.fullmatch(r'(?i)[a-z0-9_-]+(?:\.[a-z0-9_-]+)+',host):
