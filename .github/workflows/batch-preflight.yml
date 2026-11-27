@@ -1,0 +1,57 @@
+name: Surge 100-Folder Batch Trial
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_number:
+        description: "Batch number (1 = first 100 folders, 2 = next 100, etc.)"
+        required: true
+        default: "1"
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: surge-rule-batch-preflight
+  cancel-in-progress: false
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: "3.12"
+
+      - name: Run read-only 100-folder preflight
+        id: batch
+        run: |
+          set -euo pipefail
+          python3 .github/scripts/batch_preflight.py \
+            --batch "${{ inputs.batch_number }}" \
+            --batch-size 100 \
+            --output-dir batch-output | tee batch-output-result.json
+
+      - name: Add batch summary
+        if: always()
+        run: |
+          if [ -f batch-output/batch-"${{ inputs.batch_number }}".md ]; then
+            cat batch-output/batch-"${{ inputs.batch_number }}".md >> "$GITHUB_STEP_SUMMARY"
+          elif [ -f batch-output-result.json ]; then
+            cat batch-output-result.json >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload immutable batch report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: surge-rule-batch-${{ inputs.batch_number }}
+          path: batch-output/
+          if-no-files-found: warn
+          retention-days: 30
