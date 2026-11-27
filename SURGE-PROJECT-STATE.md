@@ -204,3 +204,11 @@ Do not claim work is complete based only on a green GitHub Actions status. Verif
 - URLhaus was still unavailable (`URLHAUS_AVAILABLE=false`); threat-based deletion remained disabled. Do not mark security intelligence coverage complete.
 - Artifact: `surge-automatic-maintenance-15`, artifact ID `15206941994`.
 - Next: improve URLhaus feed availability/credential handling without weakening fail-closed behavior; review the 902 static preflight findings with false-positive-aware classification; then continue deeper app-specific domain completeness checks and per-format comparisons. Keep all author fetching paused and preserve exact deletion tombstones.
+
+
+## 16. Self-test failure diagnosis and correction (2026-11-27)
+
+- Two push-triggered runs [46018937181](https://github.com/AllanRita/Surge/actions/runs/46018937181) and [46019010062](https://github.com/AllanRita/Surge/actions/runs/46019010062) failed before any production maintenance began. The failure was an outdated unit test expecting an IP subnet with different `no-resolve` behavior to count as semantically covered.
+- The implementation's stricter behavior is intentional and safer: IP network containment only counts when both source and existing rules have the same `no-resolve` option. The unit test was corrected to cover same-mode positive and different-mode negative cases. No production rule files were modified by the failed runs.
+- New validation run [46019188959](https://github.com/AllanRita/Surge/actions/runs/46019188959) passed all offline self-tests, security-feed download step, and exact tombstone enforcement, and entered the sequential batch stage. Final batch completion and URLhaus availability still need verification.
+- Continue to fail closed on URLhaus unavailability. Keep all production rule changes protected by per-batch backup and preflight.
