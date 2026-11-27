@@ -1,0 +1,57 @@
+name: Import Blackmatrix7 Surge Rules
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/ImportSurgeRules.yml']
+permissions:
+  contents: write
+concurrency:
+  group: import-surge-rules
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Copy upstream rules without executing upstream code
+        run: |
+          set -euo pipefail
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/blackmatrix7/ios_rule_script.git "$RUNNER_TEMP/upstream"
+          git -C "$RUNNER_TEMP/upstream" sparse-checkout set rule/Surge
+          python3 - <<'PY'
+          import os, shutil
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])/'upstream'
+          src=root/'rule/Surge'
+          dst=Path('Rule/Blackmatrix7')
+          if dst.exists() or dst.is_symlink():
+              raise SystemExit('Destination already exists; refusing overwrite')
+          if Path('Rule').is_symlink():
+              raise SystemExit('Unsafe destination')
+          files=[p for p in src.rglob('*') if p.is_file() and p.suffix.lower() in {'.list','.txt','.md','.json','.conf'}]
+          if not files or any(p.is_symlink() for p in src.rglob('*')):
+              raise SystemExit('Invalid upstream tree')
+          for p in files:
+              target=dst/p.relative_to(src)
+              target.parent.mkdir(parents=True,exist_ok=True)
+              shutil.copyfile(p,target)
+          license_file=next(p for p in root.glob('LICENSE*') if p.is_file() and not p.is_symlink())
+          shutil.copyfile(license_file,dst/'LICENSE')
+          (dst/'UPSTREAM.md').write_text('Source: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge\nLicense: GPL-2.0; original notices retained.\n')
+          PY
+      - name: Publish imported rules
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- Rule/Blackmatrix7
+          git commit -m 'Import Blackmatrix7 Surge rules with upstream license'
+          auth=$(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)
+          echo "::add-mask::$auth"
+          git -c http.https://github.com/.extraheader="AUTHORIZATION: basic $auth" push origin HEAD:main
