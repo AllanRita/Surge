@@ -49,11 +49,11 @@ Interpretation:
 | OpenAI | 2 |
 | **Total** | **238** |
 
-Most matches are in advertising, privacy, or filter-category lists; the remainder are in aggregate or other App lists. A domain-name match does not by itself prove that a payment/checkout endpoint is being blocked. The current inventory finds zero dedicated bank/payment App folders, and the 14 dedicated folders removed earlier remain absent. These 238 upstream domain entries were not deleted. The single personal PayPay match was also left untouched.
+Most matches are in advertising, privacy, or filter-category lists; the remainder are in aggregate or other App lists. A domain-name match does not by itself prove that a payment/checkout endpoint is being blocked. The current inventory finds 14 dedicated bank/payment App folders, all present in the upstream library. These 238 upstream domain entries were not deleted. The single personal PayPay match was also left untouched.
 
-### Dedicated bank and payment App folders — deleted
+### Dedicated bank and payment App folders — currently present
 
-The user explicitly instructed deletion of these 14 dedicated folders. They remain excluded and must not be restored by author-source synchronization, cached snapshots, backups, Git history, or workflow retries.
+The current inventory identifies 14 dedicated bank/payment App folders:
 
 | Folder | Classification |
 |---|---|
@@ -72,11 +72,13 @@ The user explicitly instructed deletion of these 14 dedicated folders. They rema
 | VISA | Payment |
 | PingAn | Financial services |
 
-This deletion is limited to the dedicated folders. Matching domains in unrelated App, Global, advertising, privacy, or filter rule sets were not removed. `Rule/Personal/PayPay.list` remains untouched. The permanent exclusion manifest is `.github/explicit-rule-exclusions.json`; automation enforces it before audits and consolidation.
+All 14 folders are currently present in `Rule/Upstream`. The exact exclusion manifest `.github/explicit-rule-exclusions.json` has an empty `exclusions` list. The earlier category-based deletion instruction was withdrawn. These folders have no special protection or deletion status and follow the same evidence-based security policy as every other App.
+
+The 238 upstream financial-domain review matches were not deleted by category. Matching domains in unrelated App, Global, advertising, privacy, or filter rule sets are assessed in their own routing context. `Rule/Personal/PayPay.list` remains outside upstream automation and unchanged.
 
 ### Trading, cryptocurrency and securities rule folders — retained
 
-The user's confirmed deletion instruction applies to the 14 dedicated bank/payment App folders listed in `.github/explicit-rule-exclusions.json`. It does not authorize deletion of crypto exchanges, cryptocurrency category lists, securities brokers, or investment communities. These seven folders therefore remain part of the upstream library and are not tombstoned:
+The following seven finance/trading/crypto folders remain present. They have no category-based exemption and are subject to the same evidence-based security policy as all other App folders:
 
 | Folder | Classification | Rule entries |
 |---|---|---:|
@@ -89,9 +91,9 @@ The user's confirmed deletion instruction applies to the 14 dedicated bank/payme
 | XueQiu | Securities / stock-investment information community | 11 |
 | **Total** | **7 folders / 7 rule lists** | **322** |
 
-A previous automation change incorrectly treated these seven folders as user-deleted and removed them. Their original seven `.list` files and seven `README.md` files have now been restored byte-for-byte from the repository snapshot immediately preceding that unauthorized removal. They are excluded from the permanent deletion manifest and must not be deleted or restored again without an explicit user instruction.
+These folders are not listed in the exact deletion manifest. The manifest currently has zero entries. No category-based deletion or restoration is permitted.
 
-This is a folder-level distinction only. It does not add these services to the bank/payment category. The 14 bank/payment folders remain excluded; matching domains in unrelated App, Global, advertising, privacy, or filter lists remain untouched. `Rule/Personal` remains untouched.
+There is no category-based distinction in deletion policy. All App categories follow the same evidence-based security policy. Matching domains in unrelated App, Global, advertising, privacy, or filter lists are not removed solely due to category. `Rule/Personal` remains outside automation.
 
 `Stackexchange` remains because it is a Q&A/community service, not a financial securities exchange. The 238 general-purpose financial-domain matches elsewhere in the library remain subject to their own scenario-aware review.
 
