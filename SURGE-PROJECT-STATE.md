@@ -411,3 +411,16 @@ Reviewed Rule/Upstream/BiliBili and the existing cached BiliBiliIntl author snap
 - The folder README already documents BiliBili as the single canonical App folder and BiliBiliIntl as a consolidated regional variant. Keep one folder and retain the regional domains in this unified App rule set; the user's country/region choice remains in the App policy group.
 - Conclusion: BiliBili rule content and format variants are consistent with the existing cached evidence. No rule-file changes required. README metadata corrected only.
 - Next App review: proceed to iQIYI using existing local files and any already-cached matching source metadata. Do not fetch new author sources.
+
+
+## 27. App-by-App review — iQIYI rule set (2026-11-28)
+
+Reviewed Rule/Upstream/iQIYI local files and README. No matching author-source metadata snapshot exists in SourceMetadata; do not fetch new sources while author collection is paused.
+
+- iQIYI.list and iQIYI_Resolve.list each contain 74 entries and 74 case-sensitive unique lines. Both have the same type counts: DOMAIN-SUFFIX 34, DOMAIN-KEYWORD 1, IP-CIDR 30, USER-AGENT 6, PROCESS-NAME 3.
+- The two files differ only by the no-resolve option on the same 30 IP-CIDR rules. Preserve both formats.
+- A case-insensitive comparison identifies two pairs of USER-AGENT entries that differ only by casing (iQiYi*/iQiyi* and iQIYI*/iQiYi*). They are not byte-identical. Keep them pending confirmation of Surge USER-AGENT case-matching semantics; do not silently remove potentially distinct match patterns.
+- README statistics were stale (IP-CIDR 21, PROCESS-NAME 1, TOTAL 63). Corrected to IP-CIDR 30, PROCESS-NAME 3, TOTAL 74. No rule entries changed.
+- No local author snapshot exists for iQIYIIntl, so completeness against alternate author sources cannot be established under the current source-pause policy. The existing README identifies iQIYIIntl as the regional variant consolidated into this single App folder; preserve this organization and the region choice in the App policy group.
+- Conclusion: paired formats are structurally consistent; two case-only USER-AGENT overlaps remain review-only; source completeness is not verifiable from current cache. No rule-file changes.
+- Next App review: continue to the next eligible canonical App with existing cached evidence, starting with Telegram only if its cached source metadata is present; otherwise perform local structural/format checks and record the source-evidence limitation.
