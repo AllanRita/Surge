@@ -47,7 +47,7 @@ def feed_hosts(path):
    s=s.split("://",1)[1].split("/",1)[0].split(":",1)[0]
   else:
    parts=s.split()
-   s=parts[-1].split("#",1)[0] if parts else ""
+   s=parts[0].split("#",1)[0] if parts else ""
   s=s.strip(".")
   if re.fullmatch(r"(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}",s):
    out.add(s)
