@@ -1,15 +1,15 @@
 # Surge rule cleanup inventory and security audit
 
-Generated: 2026-11-27 13:05 UTC
+Generated: 2026-11-27 13:06 UTC
 
 Scope: existing rule files and cached source metadata only. No new rule authors or rule lists were fetched. This report is read-only and does not alter rule files.
 
 ## Inventory
 
-- Rule files: **821**
-- App/category folders: **656**
-- Top-level folders: **633**
-- Rule data size: **116,040,156 bytes**
+- Rule files: **828**
+- App/category folders: **663**
+- Top-level folders: **640**
+- Rule data size: **116,049,942 bytes**
 - Folders with multiple files/formats: **107**
 - Exact byte-identical file groups: **2**
 - Identical rule-payload groups (headers ignored): **3**
@@ -27,7 +27,13 @@ These folders are not automatically classified as bank/payment Apps. They are li
 
 | Folder | Classification | Rule files | Rule entries | Status |
 |---|---|---:|---:|---|
-| — | No additional finance candidates | 0 | 0 | — |
+| Binance | crypto exchange | 1 | 12 | Review only |
+| Crypto | cryptocurrency category list (not a single App) | 1 | 201 | Review only |
+| Cryptocurrency | cryptocurrency category list (not a single App) | 1 | 43 | Review only |
+| EastMoney | securities brokerage / investment platform | 1 | 33 | Review only |
+| OKX | crypto exchange | 1 | 3 | Review only |
+| TigerFintech | securities brokerage / investment platform | 1 | 19 | Review only |
+| XueQiu | securities / stock-investment information community | 1 | 11 | Review only |
 
 ## Same-App / regional alias candidates
 

@@ -1,19 +1,19 @@
 {
-  "generated_utc": "2026-11-27 13:05 UTC",
+  "generated_utc": "2026-11-27 13:06 UTC",
   "scope": "Existing Rule/Upstream and cached SourceMetadata only. No rule authors fetched. This audit does not edit rules.",
   "summary": {
-    "rule_files": 821,
-    "app_or_category_folders": 656,
-    "top_level_folders": 633,
-    "total_rule_bytes": 116040156,
+    "rule_files": 828,
+    "app_or_category_folders": 663,
+    "top_level_folders": 640,
+    "total_rule_bytes": 116049942,
     "multi_file_folders": 107,
     "exact_raw_duplicate_file_groups": 2,
     "same_rule_payload_file_groups": 3,
     "duplicate_rule_lines": 0,
-    "domain_rule_count": 2690635,
+    "domain_rule_count": 2690953,
     "personal_files_seen_not_modified": 3,
     "bank_payment_app_folders_found": 0,
-    "finance_app_review_candidates": 0,
+    "finance_app_review_candidates": 7,
     "cached_author_source_count": 15,
     "cached_author_source_rule_count": 300,
     "cached_author_source_missing_count": 0,
@@ -23,7 +23,78 @@
     "shared_hosting_suffix_rule_occurrences": 159
   },
   "bank_payment_app_folders": [],
-  "finance_app_review_candidates": [],
+  "finance_app_review_candidates": [
+    {
+      "folder": "Binance",
+      "classification": "crypto exchange",
+      "rule_file_count": 1,
+      "rule_occurrences": 12,
+      "files": [
+        "Binance/Binance.list"
+      ],
+      "status": "review_only_not_removed"
+    },
+    {
+      "folder": "Crypto",
+      "classification": "cryptocurrency category list (not a single App)",
+      "rule_file_count": 1,
+      "rule_occurrences": 201,
+      "files": [
+        "Crypto/Crypto.list"
+      ],
+      "status": "review_only_not_removed"
+    },
+    {
+      "folder": "Cryptocurrency",
+      "classification": "cryptocurrency category list (not a single App)",
+      "rule_file_count": 1,
+      "rule_occurrences": 43,
+      "files": [
+        "Cryptocurrency/Cryptocurrency.list"
+      ],
+      "status": "review_only_not_removed"
+    },
+    {
+      "folder": "EastMoney",
+      "classification": "securities brokerage / investment platform",
+      "rule_file_count": 1,
+      "rule_occurrences": 33,
+      "files": [
+        "EastMoney/EastMoney.list"
+      ],
+      "status": "review_only_not_removed"
+    },
+    {
+      "folder": "OKX",
+      "classification": "crypto exchange",
+      "rule_file_count": 1,
+      "rule_occurrences": 3,
+      "files": [
+        "OKX/OKX.list"
+      ],
+      "status": "review_only_not_removed"
+    },
+    {
+      "folder": "TigerFintech",
+      "classification": "securities brokerage / investment platform",
+      "rule_file_count": 1,
+      "rule_occurrences": 19,
+      "files": [
+        "TigerFintech/TigerFintech.list"
+      ],
+      "status": "review_only_not_removed"
+    },
+    {
+      "folder": "XueQiu",
+      "classification": "securities / stock-investment information community",
+      "rule_file_count": 1,
+      "rule_occurrences": 11,
+      "files": [
+        "XueQiu/XueQiu.list"
+      ],
+      "status": "review_only_not_removed"
+    }
+  ],
   "personal_files_seen_not_modified": [
     "Rule/Personal/Grok.list",
     "Rule/Personal/PayPay.list",
@@ -3700,7 +3771,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
+      "matched_domain": "8s2y5-cp0-1vnf-5ee82-08-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3716,7 +3787,7 @@
       "path": "Cloudflare/Cloudflare.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3724,7 +3795,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 47,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
+      "matched_domain": "8s2y5-cp0-1vnf-5ee82-08-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3740,7 +3811,7 @@
       "path": "Cloudflare/Cloudflare_Resolve.list",
       "line": 51,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3748,7 +3819,7 @@
       "path": "GitBook/GitBook.list",
       "line": 8,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3756,7 +3827,7 @@
       "path": "GitHub/GitHub.list",
       "line": 19,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "wildpigger.github.io"
+      "matched_domain": "wargreymon9.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3764,7 +3835,7 @@
       "path": "Global/Global_All.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
+      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3772,7 +3843,7 @@
       "path": "Global/Global_All.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "shopee-307.blogspot.com"
+      "matched_domain": "instagram-baittouts-login.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3788,7 +3859,7 @@
       "path": "Global/Global_All.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "wildpigger.github.io"
+      "matched_domain": "wargreymon9.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3836,7 +3907,7 @@
       "path": "Global/Global_All.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3852,7 +3923,7 @@
       "path": "Global/Global_All.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
+      "matched_domain": "8s2y5-cp0-1vnf-5ee82-08-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3860,7 +3931,7 @@
       "path": "Global/Global_All.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.vakifbank.vercel.app"
+      "matched_domain": "ore45.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3876,7 +3947,7 @@
       "path": "Global/Global_All.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3884,7 +3955,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 2994,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
+      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -3892,7 +3963,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 4020,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "shopee-307.blogspot.com"
+      "matched_domain": "instagram-baittouts-login.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -3908,7 +3979,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 10778,
       "rule": "DOMAIN-SUFFIX,github.io",
-      "matched_domain": "wildpigger.github.io"
+      "matched_domain": "wargreymon9.github.io"
     },
     {
       "feed": "OpenPhish",
@@ -3956,7 +4027,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 30643,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -3972,7 +4043,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 32610,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
+      "matched_domain": "8s2y5-cp0-1vnf-5ee82-08-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -3980,7 +4051,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34443,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.vakifbank.vercel.app"
+      "matched_domain": "ore45.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -3996,7 +4067,7 @@
       "path": "Global/Global_All_No_Resolve.list",
       "line": 34775,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4036,7 +4107,7 @@
       "path": "Google/Google.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "shopee-307.blogspot.com"
+      "matched_domain": "instagram-baittouts-login.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4044,7 +4115,7 @@
       "path": "Google/Google_Resolve.list",
       "line": 89,
       "rule": "DOMAIN-SUFFIX,blogspot.com",
-      "matched_domain": "shopee-307.blogspot.com"
+      "matched_domain": "instagram-baittouts-login.blogspot.com"
     },
     {
       "feed": "OpenPhish",
@@ -4052,7 +4123,7 @@
       "path": "Microsoft/Microsoft.list",
       "line": 86,
       "rule": "DOMAIN-SUFFIX,azurefd.net",
-      "matched_domain": "jqtwxeuajdx7rhx43etm-enc3ewbnatfudeba.z03.azurefd.net"
+      "matched_domain": "macrojunyieldingf8-d3dxaya3fuaya7hb.z03.azurefd.net"
     },
     {
       "feed": "OpenPhish",
@@ -4116,7 +4187,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4132,7 +4203,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
+      "matched_domain": "8s2y5-cp0-1vnf-5ee82-08-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4140,7 +4211,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.vakifbank.vercel.app"
+      "matched_domain": "ore45.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4156,7 +4227,7 @@
       "path": "Proxy/Proxy_All.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4196,7 +4267,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 2342,
       "rule": "DOMAIN-SUFFIX,gitbook.io",
-      "matched_domain": "kucinlogn16.gitbook.io"
+      "matched_domain": "treozarwalletf.gitbook.io"
     },
     {
       "feed": "OpenPhish",
@@ -4212,7 +4283,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 4325,
       "rule": "DOMAIN-SUFFIX,pages.dev",
-      "matched_domain": "mnje9-4ff-2teq-ok37i-07-10-2026-aa.pages.dev"
+      "matched_domain": "8s2y5-cp0-1vnf-5ee82-08-10-2026-aa.pages.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4220,7 +4291,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6170,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.vakifbank.vercel.app"
+      "matched_domain": "ore45.vercel.app"
     },
     {
       "feed": "OpenPhish",
@@ -4236,7 +4307,7 @@
       "path": "Proxy/Proxy_All_No_Resolve.list",
       "line": 6505,
       "rule": "DOMAIN-SUFFIX,workers.dev",
-      "matched_domain": "ncacmn.wbmilsportal.workers.dev"
+      "matched_domain": "substantiating-proof-f2d1.63186834.workers.dev"
     },
     {
       "feed": "OpenPhish",
@@ -4276,7 +4347,7 @@
       "path": "Vercel/Vercel.list",
       "line": 18,
       "rule": "DOMAIN-SUFFIX,vercel.app",
-      "matched_domain": "www.vakifbank.vercel.app"
+      "matched_domain": "ore45.vercel.app"
     }
   ],
   "reputation_match_counts_by_scope": {
