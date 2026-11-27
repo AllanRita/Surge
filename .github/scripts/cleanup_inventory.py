@@ -90,6 +90,10 @@ def ip_covered(rule,target_rules):
    if src.version==net.version and src.subnet_of(net): return True
   except ValueError: pass
  return False
+def rule_covered(rule,target_rules):
+ if rule.lower() in {x.lower() for x in target_rules}: return True
+ return domain_covered(rule,target_rules) or ip_covered(rule,target_rules)
+
 def source_coverage():
  out=[]
  for name,target_rel in sorted(SOURCE_TARGETS.items()):
@@ -122,10 +126,13 @@ def alias_report():
    canon=[x for x in items if x["folder"]==g["canonical"]]
    alias=[x for x in items if x["folder"]!=g["canonical"]]
    if not canon or not alias: continue
-   base=set(canon[0]["rules"]); union=set(base)
-   for item in alias: union.update(item["rules"])
-   missing=sorted(union-base)
-   comps.append({"format":label,"canonical_file":canon[0]["path"],"alias_files":[x["path"] for x in alias],"canonical_lines":len(base),"alias_lines":sum(len(x["rules"]) for x in alias),"union_unique_lines":len(union),"new_exact_lines":len(missing),"new_examples":missing[:30]})
+   base=set(canon[0]["rules"]); union=set(base); missing=set()
+   for item in alias:
+    union.update(item["rules"])
+    for rule in item["rules"]:
+     if not rule_covered(rule,canon[0]["rules"]): missing.add(rule)
+   missing=sorted(missing)
+   comps.append({"format":label,"canonical_file":canon[0]["path"],"alias_files":[x["path"] for x in alias],"canonical_lines":len(base),"alias_lines":sum(len(x["rules"]) for x in alias),"union_unique_lines":len(union),"new_semantic_lines":len(missing),"new_examples":missing[:30]})
   out.append({"canonical":g["canonical"],"aliases":g["aliases"],"reason":g["reason"],"canonical_exists":(ROOT/g["canonical"]).is_dir(),"existing_aliases":[x for x in g["aliases"] if (ROOT/x).is_dir()],"comparisons":comps})
  return out
 
@@ -181,17 +188,18 @@ def main():
      if len(examples["single_label_suffix"])<50: examples["single_label_suffix"].append(f"{rel}:{num}: {s}")
      if tlds and domain not in tlds: findings["stale_or_private_root_suffix"]+=1
     if FINANCIAL_RE.fullmatch(domain): financial.append(f"{rel}:{num}: {s}")
-    for feed_name,feed,suffixes in (("URLhaus",urlhaus,urlhaus_suffix),("OpenPhish",openphish,openphish_suffix)):
-     if kind in {"DOMAIN-SUFFIX","HOST-SUFFIX"}: match=suffixes.get(domain)
-     else: match=domain if domain in feed else None
-     if match:
-      scope="block_or_filter" if any(x in rel.parts for x in ("Block","Advertising","AdvertisingLite","AdvertisingTest","AdGuardSDNSFilter","Privacy","Hijacking")) else "app_or_routing"
-      threat_scope[scope]+=1
-      if len(threat)<500: threat.append({"feed":feed_name,"scope":scope,"path":str(rel),"line":num,"rule":s,"matched_domain":match})
+    if len(domain.split("."))>=2 and domain not in tlds:
+     for feed_name,feed,suffixes in (("URLhaus",urlhaus,urlhaus_suffix),("OpenPhish",openphish,openphish_suffix)):
+      if kind in {"DOMAIN-SUFFIX","HOST-SUFFIX"}: match=suffixes.get(domain)
+      else: match=domain if domain in feed else None
+      if match:
+       scope="block_or_filter" if any(x in rel.parts for x in ("Block","Advertising","AdvertisingLite","AdvertisingTest","AdGuardSDNSFilter","Privacy","Hijacking")) else "app_or_routing"
+       threat_scope[scope]+=1
+       if len(threat)<500: threat.append({"feed":feed_name,"scope":scope,"path":str(rel),"line":num,"rule":s,"matched_domain":match})
  financial_folders=[]
  for folder in folders:
   norm=re.sub(r"[^a-z0-9]+","",folder.split("/")[-1].lower())
-  if norm in KNOWN_FINANCIAL or any(x in norm for x in ("alipay","paypal","stripe","unionpay","visa","mastercard","paypay","wechatpay","applepay","googlepay","samsungpay","bank","paytm","phonepe","cashapp","venmo","payoneer","revolut","klarna","afterpay","affirm","adyen","worldpay","americanexpress","discover","jcb")):
+  if norm in KNOWN_FINANCIAL or any(x in norm for x in ("alipay","paypal","stripe","unionpay","visa","mastercard","paypay","wechatpay","applepay","googlepay","samsungpay","bank","paytm","phonepe","cashapp","venmo","payoneer","revolut","klarna","afterpay","affirm","adyen","worldpay","americanexpress","jcb")):
    financial_folders.append(folder)
  rawdups=[x for x in rawhash.values() if len(x)>1]; payloaddups=[x for x in payloadhash.values() if len(x)>1]
  multi=[]
@@ -204,7 +212,7 @@ def main():
   "summary":{"rule_files":len(files),"app_or_category_folders":len(folders),"top_level_folders":len({p.relative_to(ROOT).parts[0] for p in files}),"total_rule_bytes":sum(p.stat().st_size for p in files),"multi_file_folders":len(multi),"exact_raw_duplicate_file_groups":len(rawdups),"same_rule_payload_file_groups":len(payloaddups),"duplicate_rule_lines":findings["duplicate_rule_lines"],"domain_rule_count":domain_count,"personal_files_seen_not_modified":len(personal),"bank_payment_app_folders_found":len(financial_folders)},
   "bank_payment_app_folders":financial_folders,"personal_files_seen_not_modified":personal,"multi_format_folders":multi,
   "exact_raw_duplicate_file_groups":rawdups,"same_rule_payload_file_groups":payloaddups,"alias_candidates":aliases,
-  "cached_source_coverage":coverage,"static_security_findings":dict(findings),"financial_domain_matches_not_deleted":financial[:500],
+  "cached_source_coverage":coverage,"static_security_findings":dict(findings),"static_security_examples":{k:v[:50] for k,v in examples.items()},"financial_domain_matches_not_deleted":financial[:500],
   "reputation_feed_status":{"urlhaus_domains":len(urlhaus),"openphish_domains":len(openphish),"feeds_available":bool(urlhaus or openphish),"urlhaus_file_present":bool(a.urlhaus and Path(a.urlhaus).is_file()),"openphish_file_present":bool(a.openphish and Path(a.openphish).is_file()),"note":"Reputation matches are review flags, not automatic deletions. Matches in block/filter lists may be expected."},
   "reputation_matches":threat,"reputation_match_counts_by_scope":dict(threat_scope),"files":file_rows,
  }
@@ -215,7 +223,7 @@ def main():
  for g in aliases:
   md += [f"### {g['canonical']}",f"- Candidate folders: {', '.join(g['aliases'])}",f"- Present aliases: {', '.join(g['existing_aliases']) if g['existing_aliases'] else 'none'}",f"- Rationale: {g['reason']}"]
   for c in g["comparisons"]:
-   md.append(f"- {c['format']}: canonical {c['canonical_lines']} lines; aliases {c['alias_lines']} lines; union {c['union_unique_lines']} unique; new exact lines {c['new_exact_lines']}")
+   md.append(f"- {c['format']}: canonical {c['canonical_lines']} lines; aliases {c['alias_lines']} lines; union {c['union_unique_lines']} unique; new semantic lines {c['new_semantic_lines']}")
    for x in c["new_examples"][:10]: md.append(f"  - {x}")
  md += ["","## Cached author-source coverage","","| Cached source | Target | Source rules | Exact | Parent suffix | IP covered | Missing |","|---|---|---:|---:|---:|---:|---:|"]
  for r in coverage:
@@ -225,8 +233,13 @@ def main():
    for x in r["missing_examples"][:15]: md.append(f"  - Missing candidate for {r['source']}: {x}")
  md += ["","## Static security checks",""]
  for k,v in sorted(findings.items()): md.append(f"- {k}: {v}")
+ for x in examples.get("unsupported_or_missing_operand",[])[:30]: md.append(f"  - {x}")
+ for x in examples.get("invalid_domain",[])[:30]: md.append(f"  - {x}")
+ for x in examples.get("invalid_network",[])[:30]: md.append(f"  - {x}")
  md += ["",f"- Financial-domain matches: {len(financial)} (review only; not deleted)",f"- URLhaus domains loaded: {len(urlhaus)}",f"- OpenPhish domains loaded: {len(openphish)}",f"- Reputation matches shown: {len(threat)} (max 500); scope counts: {dict(threat_scope)}","- Reputation-feed matches are review flags, not automatic deletions. Matches in block/filter lists may be intentional; app/routing matches need manual review.","","## Exact duplicate files",""]
  md += [", ".join(x) for x in rawdups] if rawdups else ["- None"]
+ md += ["","## Identical rule payloads with headers ignored",""]
+ md += [", ".join(x) for x in payloaddups] if payloaddups else ["- None"]
  md += ["","## Multi-format folders","","Format labels are inferred from filename suffixes; distinct formats are preserved unless explicitly approved after content comparison.",""]
  for x in multi: md.append(f"- {x['folder']}: {', '.join(x['formats'])} ({x['file_count']} files)")
  md += ["","## Safety boundaries","- No rule files or personal files are deleted, renamed, or rewritten by this audit.","- Bank/payment classification applies to dedicated App folders only; domains embedded in other Apps remain untouched.","- Regional variants are candidates for consolidation into one App policy group; country selection belongs in the Surge policy group, not separate rule folders.","- Resolve / non-Resolve and other distinct formats are compared and preserved separately.","- Similarity, shared CDN domains, or parent-company ownership alone never authorizes cross-App merging.",""]
