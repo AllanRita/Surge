@@ -23,8 +23,8 @@ def load_exclusions():
     except (OSError, ValueError) as exc:
         raise SystemExit("Cannot read explicit exclusion manifest: " + str(exc))
     entries = data.get("exclusions")
-    if not isinstance(entries, list) or not entries:
-        raise SystemExit("Explicit exclusion manifest has no exclusions")
+    if not isinstance(entries, list):
+        raise SystemExit("Explicit exclusion manifest exclusions must be a list")
     seen = set()
     names = []
     for entry in entries:
