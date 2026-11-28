@@ -678,3 +678,13 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - Updated the hourly Surge automation prompt to encode update-only existing rule sets, no new sources/folders, read-only shared-domain review, the security-intel briefing prerequisite, all-folder validation in one run, and existing deletion/Personal protections.
 - Automation ID: `6b09937cc3e081919c07f45bec73e2c3`, remains enabled.
 - Next: continue the shared-domain read-only review and produce the first refreshed full-scope findings when a full inventory run is available; separately deliver the security-intelligence briefing for user decision.
+
+
+## 49. User cancels shared-domain专项审查 (2026-11-28 UTC)
+
+- User clarified that shared-domain review is not needed because their `Global/Google` rule set is placed after all other rule sets.
+- Cancel the planned shared-domain专项审查. Do not create/continue `SHARED-DOMAIN-REVIEW.md`, do not expand the existing historical reports into new audits, and do not modify, remove, narrow, move, or merge any shared-domain rules on this basis.
+- Treat `Global/Google` ordering as the user's intended fallback/routing arrangement. Preserve the current rule-set order and routing behavior; do not reorder rule sets.
+- Keep the user's other current decisions: existing rule sets are sufficient; only update/sync upstream changes to existing rule sets; no new author sources or new App folders; `Rule/Personal` remains untouched; explicit user deletions must never be restored.
+- Security-intelligence proposal remains separate and awaits user decision. Threat-based automatic deletion remains disabled.
+- V2.0 should continue with workflow observability/reliability and safe existing-rule-set update maintenance, not shared-domain review.
