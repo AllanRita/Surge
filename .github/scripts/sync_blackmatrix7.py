@@ -73,7 +73,11 @@ def main():
         if not source.is_dir(): raise SystemExit("Upstream rule/Surge directory missing")
         source_files=sorted(source.rglob("*.list"))
         if not source_files: raise SystemExit("No upstream Surge .list files")
-        # Remove old rule files and stale per-App README files, preserving root reports and non-rule assets.
+        # Remove old rule files, obsolete multi-author cache snapshots, and stale per-App README files; preserve root reports and non-rule assets.
+        old_cache=ROOT/"SourceMetadata"
+        if old_cache.exists():
+            if old_cache.is_symlink(): raise SystemExit("Unsafe SourceMetadata symlink")
+            shutil.rmtree(old_cache)
         for p in ROOT.rglob("*.list"):
             if p.is_file() and not p.is_symlink(): p.unlink()
         for p in list(ROOT.rglob("README.md")):
