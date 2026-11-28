@@ -22,6 +22,7 @@ MAINTAIN = load_module("batch_maintain", "batch_maintain.py")
 PREFLIGHT = load_module("batch_preflight", "batch_preflight.py")
 FORMAT = load_module("audit_format_parity", "audit_format_parity.py")
 APP_AUDIT = load_module("audit_app_completeness", "audit_app_completeness.py")
+EXCLUSIONS = load_module("enforce_explicit_exclusions", "enforce_explicit_exclusions.py")
 VERIFY = load_module("verify_batch_integrity", "verify_batch_integrity.py")
 
 class SurgeMaintenanceTests(unittest.TestCase):
@@ -451,6 +452,66 @@ class SurgeMaintenanceTests(unittest.TestCase):
                 stdout=subprocess.PIPE
             ).stdout
             self.assertEqual(status, b"")
+
+
+
+    def test_batch_maintenance_rerun_is_idempotent_and_preserves_first_backup(self):
+        with tempfile.TemporaryDirectory() as td:
+            base = Path(td)
+            root = base / "Rule" / "Upstream"
+            personal = base / "Rule" / "Personal"
+            manifest = base / ".github" / "explicit-rule-exclusions.json"
+            out = base / "out"
+            backup = base / "backup"
+            app = root / "TestApp"
+            app.mkdir(parents=True)
+            personal.mkdir(parents=True)
+            manifest.parent.mkdir(parents=True)
+            manifest.write_text(json.dumps({"exclusions": []}), encoding="utf-8")
+            personal_file = personal / "private.list"
+            personal_file.write_text("DOMAIN,private.example\\n", encoding="utf-8")
+            target = app / "TestApp.list"
+            original = "# NAME: TestApp\\nDOMAIN,duplicate.example\\nDOMAIN,duplicate.example\\n"
+            target.write_text(original, encoding="utf-8")
+            argv = ["batch_maintain.py", "--batch", "1", "--batch-size", "100",
+                    "--output-dir", str(out), "--backup-dir", str(backup)]
+            for _ in range(2):
+                with patch.object(MAINTAIN, "ROOT", root), patch.object(MAINTAIN, "PERSONAL", personal), patch.object(MAINTAIN, "MANIFEST", manifest), patch.object(sys, "argv", argv):
+                    MAINTAIN.main()
+            report = json.loads((out / "batch-001-maintenance.json").read_text(encoding="utf-8"))
+            saved = backup / "batch-001" / "TestApp" / "TestApp.list"
+            self.assertEqual(target.read_text(encoding="utf-8"), "# NAME: TestApp\\nDOMAIN,duplicate.example\\n")
+            self.assertEqual(saved.read_text(encoding="utf-8"), original)
+            self.assertEqual(report["summary"].get("duplicates_removed", 0), 0)
+            self.assertEqual(personal_file.read_text(encoding="utf-8"), "DOMAIN,private.example\\n")
+            self.assertTrue(report["personal_unchanged"])
+
+    def test_explicit_tombstone_recheck_is_idempotent_and_does_not_restore_or_touch_neighbors(self):
+        with tempfile.TemporaryDirectory() as td:
+            base = Path(td)
+            root = base / "Rule" / "Upstream"
+            personal = base / "Rule" / "Personal"
+            manifest = base / ".github" / "explicit-rule-exclusions.json"
+            deleted = root / "UserDeletedApp"
+            neighbor = root / "NeighborApp"
+            deleted.mkdir(parents=True)
+            neighbor.mkdir(parents=True)
+            personal.mkdir(parents=True)
+            (deleted / "UserDeletedApp.list").write_text("DOMAIN,deleted.example\\n", encoding="utf-8")
+            neighbor_file = neighbor / "NeighborApp.list"
+            neighbor_file.write_text("DOMAIN,neighbor.example\\n", encoding="utf-8")
+            personal_file = personal / "private.list"
+            personal_file.write_text("DOMAIN,private.example\\n", encoding="utf-8")
+            manifest.parent.mkdir(parents=True)
+            manifest.write_text(json.dumps({"exclusions": [
+                {"folder": "UserDeletedApp", "path": "Rule/Upstream/UserDeletedApp"}
+            ]}), encoding="utf-8")
+            with patch.object(EXCLUSIONS, "ROOT", root), patch.object(EXCLUSIONS, "MANIFEST", manifest):
+                EXCLUSIONS.enforce_explicit_exclusions()
+                EXCLUSIONS.enforce_explicit_exclusions()
+            self.assertFalse(deleted.exists())
+            self.assertEqual(neighbor_file.read_text(encoding="utf-8"), "DOMAIN,neighbor.example\\n")
+            self.assertEqual(personal_file.read_text(encoding="utf-8"), "DOMAIN,private.example\\n")
 
 
 if __name__ == "__main__":
