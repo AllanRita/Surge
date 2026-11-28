@@ -655,3 +655,26 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - This instruction changes validation execution only. Do not infer that production maintenance/mutation must abandon its existing safe 100-folder processing batches; keep maintenance batching unless the user explicitly changes that separate setting.
 - For validation runs, ensure the scope enumerates the complete current eligible folder set once, produces one overall result plus per-folder/per-file findings as needed, and does not stop after the first 100. If platform/runtime limits make one-run validation infeasible, report the exact constraint and ask before silently reverting to 100-folder chunks.
 - Preserve all prior safety constraints: no changes to Rule/Personal, no restoring exact user-deleted content, no new author-source fetching, no deferred shared-domain/security-intelligence work, and no unapproved routing-semantic changes.
+
+
+## 49. User policy update: existing-rule updates only; shared-domain review started; security-intel briefing pending (2026-11-28 UTC)
+
+### New rule-set scope decision
+- User confirms the current rule-set collection is sufficient. From now on, only fetch/sync upstream updates for existing rule sets and existing source mappings. Do not add new authors, App rule-set folders, source mappings, or broaden collection scope.
+- Preserve all existing bank/payment/financial rule sets. Never restore user-deleted content. `Rule/Personal` remains outside automated changes.
+
+### Shared-domain review authorized and started
+- User explicitly changed the earlier deferral and authorized starting the shared-domain special review.
+- Created `Rule/Upstream/SHARED-DOMAIN-REVIEW.md` as a read-only working report (commit `e92255dd6fdb888dd0d59308ade17c9e976a6626`). It records classification framework, current available baseline (2026-11-27 inventory: 42 curated suffixes checked, 34 present, 159 occurrences; 21 App/service suffixes with 33 occurrences; 126 aggregate-folder occurrences), threat-feed caveats, priority groups, and required per-occurrence report fields.
+- This baseline is not a fresh 2026-11-28 full scan. The current review must refresh the inventory over all eligible rule-set folders in one run, per user's full-validation instruction. Do not split validation into 100-folder chunks.
+- Review is strictly read-only. Do not delete, rewrite, narrow, move, or merge shared-domain rules without presenting exact before/after diffs and receiving explicit user approval. A threat-feed hit beneath a shared parent suffix is not proof the parent is malicious.
+- The connected GitHub action tools available in this task do not expose `workflow_dispatch`; do not claim a refreshed inventory run until a real GitHub Actions run ID and report artifact exist. Continue by preparing and checking the report and, where possible, inspect the current tree directly.
+
+### Security-intelligence briefing requested
+- User asked to be introduced to security intelligence before any activation. No authorization has been given to add/enable feeds, modify Secrets, or enable threat-based automatic deletion.
+- Keep threat-based automatic deletion disabled. Prepare a clear briefing covering feed roles, OpenPhish vs URLhaus, coverage gaps, false positives, exact-domain vs parent-suffix matches, credentials/availability, and safe handling options. Do not ask for a secret or make configuration changes before the user decides.
+
+### Automation updated
+- Updated the hourly Surge automation prompt to encode update-only existing rule sets, no new sources/folders, read-only shared-domain review, the security-intel briefing prerequisite, all-folder validation in one run, and existing deletion/Personal protections.
+- Automation ID: `6b09937cc3e081919c07f45bec73e2c3`, remains enabled.
+- Next: continue the shared-domain read-only review and produce the first refreshed full-scope findings when a full inventory run is available; separately deliver the security-intelligence briefing for user decision.
