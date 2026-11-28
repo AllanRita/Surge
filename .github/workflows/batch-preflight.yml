@@ -1,35 +1,19 @@
-name: Surge Automatic 100-Folder Maintenance
+name: Surge Single-Source Sync and Security Check
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'Rule/Upstream/**/*.list'
-      - '.github/scripts/batch_preflight.py'
-      - '.github/scripts/batch_maintain.py'
-      - '.github/scripts/merge_cached_sources.py'
-      - '.github/scripts/test_batch_maintenance.py'
-      - '.github/scripts/audit_format_parity.py'
-      - '.github/scripts/audit_app_completeness.py'
-      - '.github/scripts/verify_batch_integrity.py'
-      - 'Rule/Upstream/SourceMetadata/**/*.json'
-      - '.github/workflows/batch-preflight.yml'
-      - '.github/explicit-rule-exclusions.json'
-      - 'Rule/CONSOLIDATION-PLAN.json'
+  workflow_dispatch:
   schedule:
     - cron: '17 3 * * *'
-  workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: surge-rule-batch-maintenance
+  group: surge-single-source-sync
   cancel-in-progress: false
 
 jobs:
-  maintain:
-    if: github.actor != 'github-actions[bot]'
+  sync-and-audit:
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
@@ -44,117 +28,65 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Run offline maintenance self-tests
-        run: python3 .github/scripts/test_batch_maintenance.py
-
-      - name: Audit paired format parity (read-only)
-        run: python3 .github/scripts/audit_format_parity.py --output-dir batch-output
-
-      - name: Build App-by-App completeness evidence matrix (read-only)
-        run: python3 .github/scripts/audit_app_completeness.py --output-dir batch-output
-
-      - name: Download security intelligence feeds
+      - name: Download phishing and malware intelligence
         env:
           URLHAUS_AUTH_KEY: ${{ secrets.URLHAUS_AUTH_KEY }}
+        shell: bash
         run: |
           set -euo pipefail
-          mkdir -p "$RUNNER_TEMP/surge-feeds" batch-output
+          mkdir -p "$RUNNER_TEMP/surge-feeds"
           curl -fsSL --retry 3 --retry-all-errors --max-time 90 \
             https://raw.githubusercontent.com/openphish/public_feed/refs/heads/main/feed.txt \
             -o "$RUNNER_TEMP/surge-feeds/openphish.txt"
           test -s "$RUNNER_TEMP/surge-feeds/openphish.txt"
           grep -qE '^https?://' "$RUNNER_TEMP/surge-feeds/openphish.txt"
-          if curl -fsSL --retry 3 --retry-all-errors --max-time 90 \
-            https://data.iana.org/TLD/tlds-alpha-by-domain.txt \
-            -o "$RUNNER_TEMP/surge-feeds/tlds-alpha-by-domain.txt" && \
-            grep -q '^# Version ' "$RUNNER_TEMP/surge-feeds/tlds-alpha-by-domain.txt"; then
-            echo "IANA_TLDS_AVAILABLE=true" >> "$GITHUB_ENV"
+
+          if [ -n "${URLHAUS_AUTH_KEY:-}" ] && curl -fsSL --retry 2 --retry-all-errors --max-time 90 \
+            "https://urlhaus-api.abuse.ch/v2/files/exports/${URLHAUS_AUTH_KEY}/hostfile.txt" \
+            -o "$RUNNER_TEMP/surge-feeds/urlhaus.txt" && test -s "$RUNNER_TEMP/surge-feeds/urlhaus.txt"; then
+            echo "URLHAUS_AVAILABLE=true" >> "$GITHUB_ENV"
           else
-            rm -f "$RUNNER_TEMP/surge-feeds/tlds-alpha-by-domain.txt"
-            echo "IANA_TLDS_AVAILABLE=false" >> "$GITHUB_ENV"
-            echo "::warning::IANA root-zone TLD list unavailable; single-label suffixes will remain review-only."
-          fi
-          if [ -n "${URLHAUS_AUTH_KEY:-}" ]; then
-            if curl -fsSL --retry 2 --retry-all-errors --max-time 90 \
-              "https://urlhaus-api.abuse.ch/v2/files/exports/${URLHAUS_AUTH_KEY}/hostfile.txt" \
-              -o "$RUNNER_TEMP/surge-feeds/urlhaus.txt" && test -s "$RUNNER_TEMP/surge-feeds/urlhaus.txt"; then
-              echo "URLHAUS_AVAILABLE=true" >> "$GITHUB_ENV"
-            else
-              rm -f "$RUNNER_TEMP/surge-feeds/urlhaus.txt"
-              echo "URLHAUS_AVAILABLE=false" >> "$GITHUB_ENV"
-              echo "::warning::URLhaus unavailable. Automatic threat deletion will be disabled; non-threat deterministic repairs may continue."
-            fi
-          else
+            rm -f "$RUNNER_TEMP/surge-feeds/urlhaus.txt"
             echo "URLHAUS_AVAILABLE=false" >> "$GITHUB_ENV"
-            echo "::warning::URLHAUS_AUTH_KEY unavailable. Automatic threat deletion will be disabled."
+            echo "::warning::URLhaus unavailable; automatic threat deletion will be disabled for this run."
           fi
 
-      - name: Enforce exact user deletion tombstones
-        run: python3 .github/scripts/enforce_explicit_exclusions.py
-
-      - name: Process every 100-folder batch sequentially
-        shell: bash
+      - name: Sync only the upstream author's Surge rule files and perform full-tree security check
         run: |
           set -euo pipefail
-          TOTAL=$(python3 -c 'from pathlib import Path; p=Path("Rule/Upstream"); print(sum(1 for x in p.iterdir() if x.is_dir() and not x.is_symlink() and x.name != "SourceMetadata"))')
-          BATCHES=$(((TOTAL + 99) / 100))
-          echo "Eligible folders: $TOTAL; batches: $BATCHES"
+          ARGS=(--openphish "$RUNNER_TEMP/surge-feeds/openphish.txt" --output Rule/Upstream/SECURITY-SYNC-REPORT.json)
+          if [ "$URLHAUS_AVAILABLE" = "true" ]; then
+            ARGS+=(--urlhaus "$RUNNER_TEMP/surge-feeds/urlhaus.txt")
+          fi
+          python3 .github/scripts/sync_blackmatrix7.py "${ARGS[@]}"
+
+      - name: Publish exact sync, threat-removal and full-validation report
+        run: |
+          set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          for ((BATCH=1; BATCH<=BATCHES; BATCH++)); do
-            echo "::group::Maintenance batch $BATCH/$BATCHES"
-            python3 .github/scripts/enforce_explicit_exclusions.py
-            if [ "$URLHAUS_AVAILABLE" = "true" ]; then
-              python3 .github/scripts/batch_maintain.py --batch "$BATCH" --batch-size 100 --openphish "$RUNNER_TEMP/surge-feeds/openphish.txt" --urlhaus "$RUNNER_TEMP/surge-feeds/urlhaus.txt" --output-dir batch-output --backup-dir batch-output/backups || { git checkout -- Rule/Upstream; exit 1; }
-            else
-              python3 .github/scripts/batch_maintain.py --batch "$BATCH" --batch-size 100 --openphish "$RUNNER_TEMP/surge-feeds/openphish.txt" --output-dir batch-output --backup-dir batch-output/backups || { git checkout -- Rule/Upstream; exit 1; }
-            fi
-            python3 .github/scripts/merge_cached_sources.py --batch "$BATCH" --batch-size 100 --output-dir batch-output --backup-dir batch-output/backups || { git checkout -- Rule/Upstream; exit 1; }
-            PREFLIGHT_ARGS=(--batch "$BATCH" --batch-size 100 --output-dir batch-output)
-            if [ "${IANA_TLDS_AVAILABLE:-false}" = "true" ]; then
-              PREFLIGHT_ARGS+=(--iana-tlds "$RUNNER_TEMP/surge-feeds/tlds-alpha-by-domain.txt")
-            fi
-            python3 .github/scripts/batch_preflight.py "${PREFLIGHT_ARGS[@]}" || { git checkout -- Rule/Upstream; exit 1; }
-            python3 .github/scripts/verify_batch_integrity.py --batch "$BATCH" --output-dir batch-output --backup-dir batch-output/backups || { git checkout -- Rule/Upstream; exit 1; }
-            git add -- Rule/Upstream
-            if ! git diff --cached --quiet; then
-              git commit -m "Surge automatic maintenance batch $BATCH [skip ci]"
-              git push origin HEAD:main
-            fi
-            echo "::endgroup::"
-          done
-          if [ "$URLHAUS_AVAILABLE" = "true" ]; then
-            echo "ALL_BATCHES_COMPLETED=$BATCHES" > batch-output/BATCH-STATUS.txt
-            echo "Security feeds: OpenPhish and URLhaus loaded; exact dual-feed threat checks enabled." >> batch-output/BATCH-STATUS.txt
-          else
-            echo "ALL_BATCHES_COMPLETED_WITH_INCOMPLETE_SECURITY_COVERAGE=$BATCHES" > batch-output/BATCH-STATUS.txt
-            echo "Security coverage is incomplete: URLhaus feed unavailable. Threat-based automatic deletion was disabled; deterministic repair and cached-source merge still ran." >> batch-output/BATCH-STATUS.txt
+          git add -A -- Rule/Upstream
+          if git diff --cached --quiet; then
+            echo "No upstream rule or security report changes."
+            exit 0
           fi
-          echo "Cached author snapshots: 15 existing SourceMetadata JSON files only; no new author fetching." >> batch-output/BATCH-STATUS.txt
-          echo "Changes are committed per batch; pre-change copies are included in the artifact when files were modified." >> batch-output/BATCH-STATUS.txt
-          python3 .github/scripts/verify_batch_integrity.py --final --total "$TOTAL" --output-dir batch-output
+          git commit -m "Sync blackmatrix7 Surge rules and run full security validation"
+          git push origin HEAD:main
 
-      - name: Add maintenance summary
+      - name: Summarize security coverage and validation
         if: always()
         run: |
-          if [ -f batch-output/BATCH-STATUS.txt ]; then cat batch-output/BATCH-STATUS.txt >> "$GITHUB_STEP_SUMMARY"; fi
-          if [ -f batch-output/format-parity-audit.md ]; then
-            cat batch-output/format-parity-audit.md >> "$GITHUB_STEP_SUMMARY"
+          if [ -f Rule/Upstream/SECURITY-SYNC-REPORT.json ]; then
+            python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          p=json.load(open("Rule/Upstream/SECURITY-SYNC-REPORT.json",encoding="utf-8"))
+          print("## Surge single-source sync")
+          print("- Source:", p.get("source"), "commit", p.get("source_commit"))
+          print("- Imported rule files:", p.get("upstream_rule_files"))
+          print("- Rule folders:", p.get("validation",{}).get("rule_folders"))
+          print("- Exact high-confidence removals:", len(p.get("removed_exact_domain_rules",[])))
+          print("- Automatic deletion enabled:", p.get("automatic_deletion_enabled"))
+          print("- Validation errors:", len(p.get("validation_errors",[])))
+          print("- Coverage:", p.get("coverage_note"))
+          PY
           fi
-          if [ -f batch-output/app-completeness-matrix.md ]; then
-            cat batch-output/app-completeness-matrix.md >> "$GITHUB_STEP_SUMMARY"
-          fi
-          for report in batch-output/batch-*-maintenance.json batch-output/batch-*-cached-sources.json; do
-            [ -f "$report" ] || continue
-            echo '### ' "$report" >> "$GITHUB_STEP_SUMMARY"
-            cat "$report" >> "$GITHUB_STEP_SUMMARY"
-          done
-
-      - name: Upload per-batch maintenance and preflight reports
-        if: always()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: surge-automatic-maintenance-${{ github.run_number }}
-          path: batch-output/
-          if-no-files-found: warn
-          retention-days: 90
