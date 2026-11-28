@@ -1,1 +1,27 @@
-# NAME: DMM\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:18:49\n# DOMAIN-SUFFIX: 18\n# IP-CIDR: 2\n# TOTAL: 20\nDOMAIN-SUFFIX,akabeesoft2.com\nDOMAIN-SUFFIX,akabeesoft3.com\nDOMAIN-SUFFIX,akatsukiworks.com\nDOMAIN-SUFFIX,alicesoft.com\nDOMAIN-SUFFIX,api-p.videomarket.jp\nDOMAIN-SUFFIX,cosmiccute.com\nDOMAIN-SUFFIX,ddo.jp\nDOMAIN-SUFFIX,dmm-extension.com\nDOMAIN-SUFFIX,dmm.co.jp\nDOMAIN-SUFFIX,dmm.com\nDOMAIN-SUFFIX,dmm.hk\nDOMAIN-SUFFIX,dmmapis.com\nDOMAIN-SUFFIX,dmmrex.com\nDOMAIN-SUFFIX,hibiki-site.com\nDOMAIN-SUFFIX,minori.ph\nDOMAIN-SUFFIX,navismithapis-cdn.com\nDOMAIN-SUFFIX,tenco.cc\nDOMAIN-SUFFIX,wheel-soft.com\nIP-CIDR,125.6.189.7/32,no-resolve\nIP-CIDR,203.104.209.7/32,no-resolve
+# NAME: DMM
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:18:49
+# DOMAIN-SUFFIX: 18
+# IP-CIDR: 2
+# TOTAL: 20
+DOMAIN-SUFFIX,akabeesoft2.com
+DOMAIN-SUFFIX,akabeesoft3.com
+DOMAIN-SUFFIX,akatsukiworks.com
+DOMAIN-SUFFIX,alicesoft.com
+DOMAIN-SUFFIX,api-p.videomarket.jp
+DOMAIN-SUFFIX,cosmiccute.com
+DOMAIN-SUFFIX,ddo.jp
+DOMAIN-SUFFIX,dmm-extension.com
+DOMAIN-SUFFIX,dmm.co.jp
+DOMAIN-SUFFIX,dmm.com
+DOMAIN-SUFFIX,dmm.hk
+DOMAIN-SUFFIX,dmmapis.com
+DOMAIN-SUFFIX,dmmrex.com
+DOMAIN-SUFFIX,hibiki-site.com
+DOMAIN-SUFFIX,minori.ph
+DOMAIN-SUFFIX,navismithapis-cdn.com
+DOMAIN-SUFFIX,tenco.cc
+DOMAIN-SUFFIX,wheel-soft.com
+IP-CIDR,125.6.189.7/32,no-resolve
+IP-CIDR,203.104.209.7/32,no-resolve

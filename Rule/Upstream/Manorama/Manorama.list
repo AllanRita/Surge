@@ -1,1 +1,18 @@
-# NAME: Manorama\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:45\n# DOMAIN-SUFFIX: 12\n# TOTAL: 12\nDOMAIN-SUFFIX,malayalamanorama.com\nDOMAIN-SUFFIX,manorama.com\nDOMAIN-SUFFIX,manoramanews.com\nDOMAIN-SUFFIX,manoramaonline.com\nDOMAIN-SUFFIX,manoramayearbook.in\nDOMAIN-SUFFIX,onmanorama.com\nDOMAIN-SUFFIX,radiomango.fm\nDOMAIN-SUFFIX,theman.in\nDOMAIN-SUFFIX,theweek.in\nDOMAIN-SUFFIX,vanitaonline.com\nDOMAIN-SUFFIX,vanitha.in\nDOMAIN-SUFFIX,vanithaveedu.com
+# NAME: Manorama
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:45
+# DOMAIN-SUFFIX: 12
+# TOTAL: 12
+DOMAIN-SUFFIX,malayalamanorama.com
+DOMAIN-SUFFIX,manorama.com
+DOMAIN-SUFFIX,manoramanews.com
+DOMAIN-SUFFIX,manoramaonline.com
+DOMAIN-SUFFIX,manoramayearbook.in
+DOMAIN-SUFFIX,onmanorama.com
+DOMAIN-SUFFIX,radiomango.fm
+DOMAIN-SUFFIX,theman.in
+DOMAIN-SUFFIX,theweek.in
+DOMAIN-SUFFIX,vanitaonline.com
+DOMAIN-SUFFIX,vanitha.in
+DOMAIN-SUFFIX,vanithaveedu.com

@@ -1,1 +1,32 @@
-# NAME: Domob\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:33\n# DOMAIN-SUFFIX: 26\n# TOTAL: 26\nDOMAIN-SUFFIX,dmaow.com\nDOMAIN-SUFFIX,dmrta.com\nDOMAIN-SUFFIX,dmrtb.cn\nDOMAIN-SUFFIX,dmrtb.com\nDOMAIN-SUFFIX,dmvideo.cn\nDOMAIN-SUFFIX,dmvideo.mobi\nDOMAIN-SUFFIX,dmvideo.net\nDOMAIN-SUFFIX,dmvideo.org\nDOMAIN-SUFFIX,dmyouxi.com\nDOMAIN-SUFFIX,domob-inc.cn\nDOMAIN-SUFFIX,domob-inc.com\nDOMAIN-SUFFIX,domob.cn\nDOMAIN-SUFFIX,domob.com.cn\nDOMAIN-SUFFIX,domob.org\nDOMAIN-SUFFIX,domobcdn.cn\nDOMAIN-SUFFIX,domobcdn.com\nDOMAIN-SUFFIX,domobnetwork.com\nDOMAIN-SUFFIX,duomeng.cn\nDOMAIN-SUFFIX,duomeng.net\nDOMAIN-SUFFIX,duomeng.org\nDOMAIN-SUFFIX,modh.cn\nDOMAIN-SUFFIX,modh.com.cn\nDOMAIN-SUFFIX,moxz.cn\nDOMAIN-SUFFIX,moxz.net\nDOMAIN-SUFFIX,ugdesk.cn\nDOMAIN-SUFFIX,ugdesk.com
+# NAME: Domob
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:33
+# DOMAIN-SUFFIX: 26
+# TOTAL: 26
+DOMAIN-SUFFIX,dmaow.com
+DOMAIN-SUFFIX,dmrta.com
+DOMAIN-SUFFIX,dmrtb.cn
+DOMAIN-SUFFIX,dmrtb.com
+DOMAIN-SUFFIX,dmvideo.cn
+DOMAIN-SUFFIX,dmvideo.mobi
+DOMAIN-SUFFIX,dmvideo.net
+DOMAIN-SUFFIX,dmvideo.org
+DOMAIN-SUFFIX,dmyouxi.com
+DOMAIN-SUFFIX,domob-inc.cn
+DOMAIN-SUFFIX,domob-inc.com
+DOMAIN-SUFFIX,domob.cn
+DOMAIN-SUFFIX,domob.com.cn
+DOMAIN-SUFFIX,domob.org
+DOMAIN-SUFFIX,domobcdn.cn
+DOMAIN-SUFFIX,domobcdn.com
+DOMAIN-SUFFIX,domobnetwork.com
+DOMAIN-SUFFIX,duomeng.cn
+DOMAIN-SUFFIX,duomeng.net
+DOMAIN-SUFFIX,duomeng.org
+DOMAIN-SUFFIX,modh.cn
+DOMAIN-SUFFIX,modh.com.cn
+DOMAIN-SUFFIX,moxz.cn
+DOMAIN-SUFFIX,moxz.net
+DOMAIN-SUFFIX,ugdesk.cn
+DOMAIN-SUFFIX,ugdesk.com

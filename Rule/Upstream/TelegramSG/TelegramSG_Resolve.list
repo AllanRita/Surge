@@ -1,1 +1,10 @@
-# NAME: TelegramSG\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:51\n# IP-CIDR: 2\n# IP-CIDR6: 1\n# TOTAL: 3\nIP-CIDR,91.108.16.0/22\nIP-CIDR,91.108.56.0/22\nIP-CIDR6,2001:b28:f23f::/48
+# NAME: TelegramSG
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:51
+# IP-CIDR: 2
+# IP-CIDR6: 1
+# TOTAL: 3
+IP-CIDR,91.108.16.0/22
+IP-CIDR,91.108.56.0/22
+IP-CIDR6,2001:b28:f23f::/48

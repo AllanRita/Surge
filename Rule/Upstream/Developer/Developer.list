@@ -1,1 +1,76 @@
-# NAME: Developer\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:16:56\n# DOMAIN-SUFFIX: 70\n# TOTAL: 70\nDOMAIN-SUFFIX,apple-cloudkit.com\nDOMAIN-SUFFIX,apple-mapkit.com\nDOMAIN-SUFFIX,apple.com.akadns.net\nDOMAIN-SUFFIX,appleswift.com\nDOMAIN-SUFFIX,appleworldwidedeveloper.hb-api.omtrdc.net\nDOMAIN-SUFFIX,appleworldwidedeveloper.sc.omtrdc.net\nDOMAIN-SUFFIX,calendarserver.org\nDOMAIN-SUFFIX,carekit.org\nDOMAIN-SUFFIX,courier-push-apple.com.akadns.net\nDOMAIN-SUFFIX,cups.org\nDOMAIN-SUFFIX,developer.apple.com\nDOMAIN-SUFFIX,developerservices2.apple.com\nDOMAIN-SUFFIX,devimages-cdn.apple.com\nDOMAIN-SUFFIX,devstreaming-cdn.apple.com\nDOMAIN-SUFFIX,foundationdb.org\nDOMAIN-SUFFIX,macosforge.org\nDOMAIN-SUFFIX,macruby.com\nDOMAIN-SUFFIX,macruby.net\nDOMAIN-SUFFIX,macruby.org\nDOMAIN-SUFFIX,notary-submissions-prod.s3-accelerate.amazonaws.com\nDOMAIN-SUFFIX,notary-submissions-prod.s3.us-west-2.amazonaws.com\nDOMAIN-SUFFIX,p-events-delivery.akamaized.net\nDOMAIN-SUFFIX,playgrounds-cdn.apple.com\nDOMAIN-SUFFIX,push-apple.com.akadns.net\nDOMAIN-SUFFIX,researchandcare.org\nDOMAIN-SUFFIX,researchkit.cn\nDOMAIN-SUFFIX,researchkit.com.cn\nDOMAIN-SUFFIX,researchkit.hk\nDOMAIN-SUFFIX,researchkit.net\nDOMAIN-SUFFIX,researchkit.org\nDOMAIN-SUFFIX,researchkit.tv\nDOMAIN-SUFFIX,servicetalk.io\nDOMAIN-SUFFIX,swift.org\nDOMAIN-SUFFIX,swiftui.cn\nDOMAIN-SUFFIX,swiftui.com.cn\nDOMAIN-SUFFIX,timestamp.apple.com\nDOMAIN-SUFFIX,webkit.org\nDOMAIN-SUFFIX,webkitgtk.org\nDOMAIN-SUFFIX,webobjects.com\nDOMAIN-SUFFIX,wpewebkit.org\nDOMAIN-SUFFIX,apache.org\nDOMAIN-SUFFIX,atlassian.com\nDOMAIN-SUFFIX,debian.com\nDOMAIN-SUFFIX,docker.com\nDOMAIN-SUFFIX,docker.io\nDOMAIN-SUFFIX,elastic.co\nDOMAIN-SUFFIX,elastic.com\nDOMAIN-SUFFIX,fontawesome.com\nDOMAIN-SUFFIX,gcr.io\nDOMAIN-SUFFIX,gitlab.com\nDOMAIN-SUFFIX,gitlab.io\nDOMAIN-SUFFIX,jetbra.in\nDOMAIN-SUFFIX,jitpack.io\nDOMAIN-SUFFIX,macosicons.com\nDOMAIN-SUFFIX,maven.org\nDOMAIN-SUFFIX,medium.com\nDOMAIN-SUFFIX,mvnrepository.com\nDOMAIN-SUFFIX,openai.com\nDOMAIN-SUFFIX,postman-echo.com\nDOMAIN-SUFFIX,python.org\nDOMAIN-SUFFIX,pythonhosted.org\nDOMAIN-SUFFIX,quay.io\nDOMAIN-SUFFIX,reddit.com\nDOMAIN-SUFFIX,redhat.com\nDOMAIN-SUFFIX,sonatype.org\nDOMAIN-SUFFIX,sourcegraph.com\nDOMAIN-SUFFIX,spring.io\nDOMAIN-SUFFIX,spring.net\nDOMAIN-SUFFIX,stackoverflow.com\nDOMAIN-SUFFIX,unpkg.com
+# NAME: Developer
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:16:56
+# DOMAIN-SUFFIX: 70
+# TOTAL: 70
+DOMAIN-SUFFIX,apple-cloudkit.com
+DOMAIN-SUFFIX,apple-mapkit.com
+DOMAIN-SUFFIX,apple.com.akadns.net
+DOMAIN-SUFFIX,appleswift.com
+DOMAIN-SUFFIX,appleworldwidedeveloper.hb-api.omtrdc.net
+DOMAIN-SUFFIX,appleworldwidedeveloper.sc.omtrdc.net
+DOMAIN-SUFFIX,calendarserver.org
+DOMAIN-SUFFIX,carekit.org
+DOMAIN-SUFFIX,courier-push-apple.com.akadns.net
+DOMAIN-SUFFIX,cups.org
+DOMAIN-SUFFIX,developer.apple.com
+DOMAIN-SUFFIX,developerservices2.apple.com
+DOMAIN-SUFFIX,devimages-cdn.apple.com
+DOMAIN-SUFFIX,devstreaming-cdn.apple.com
+DOMAIN-SUFFIX,foundationdb.org
+DOMAIN-SUFFIX,macosforge.org
+DOMAIN-SUFFIX,macruby.com
+DOMAIN-SUFFIX,macruby.net
+DOMAIN-SUFFIX,macruby.org
+DOMAIN-SUFFIX,notary-submissions-prod.s3-accelerate.amazonaws.com
+DOMAIN-SUFFIX,notary-submissions-prod.s3.us-west-2.amazonaws.com
+DOMAIN-SUFFIX,p-events-delivery.akamaized.net
+DOMAIN-SUFFIX,playgrounds-cdn.apple.com
+DOMAIN-SUFFIX,push-apple.com.akadns.net
+DOMAIN-SUFFIX,researchandcare.org
+DOMAIN-SUFFIX,researchkit.cn
+DOMAIN-SUFFIX,researchkit.com.cn
+DOMAIN-SUFFIX,researchkit.hk
+DOMAIN-SUFFIX,researchkit.net
+DOMAIN-SUFFIX,researchkit.org
+DOMAIN-SUFFIX,researchkit.tv
+DOMAIN-SUFFIX,servicetalk.io
+DOMAIN-SUFFIX,swift.org
+DOMAIN-SUFFIX,swiftui.cn
+DOMAIN-SUFFIX,swiftui.com.cn
+DOMAIN-SUFFIX,timestamp.apple.com
+DOMAIN-SUFFIX,webkit.org
+DOMAIN-SUFFIX,webkitgtk.org
+DOMAIN-SUFFIX,webobjects.com
+DOMAIN-SUFFIX,wpewebkit.org
+DOMAIN-SUFFIX,apache.org
+DOMAIN-SUFFIX,atlassian.com
+DOMAIN-SUFFIX,debian.com
+DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,docker.io
+DOMAIN-SUFFIX,elastic.co
+DOMAIN-SUFFIX,elastic.com
+DOMAIN-SUFFIX,fontawesome.com
+DOMAIN-SUFFIX,gcr.io
+DOMAIN-SUFFIX,gitlab.com
+DOMAIN-SUFFIX,gitlab.io
+DOMAIN-SUFFIX,jetbra.in
+DOMAIN-SUFFIX,jitpack.io
+DOMAIN-SUFFIX,macosicons.com
+DOMAIN-SUFFIX,maven.org
+DOMAIN-SUFFIX,medium.com
+DOMAIN-SUFFIX,mvnrepository.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,postman-echo.com
+DOMAIN-SUFFIX,python.org
+DOMAIN-SUFFIX,pythonhosted.org
+DOMAIN-SUFFIX,quay.io
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,redhat.com
+DOMAIN-SUFFIX,sonatype.org
+DOMAIN-SUFFIX,sourcegraph.com
+DOMAIN-SUFFIX,spring.io
+DOMAIN-SUFFIX,spring.net
+DOMAIN-SUFFIX,stackoverflow.com
+DOMAIN-SUFFIX,unpkg.com

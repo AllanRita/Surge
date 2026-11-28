@@ -1,1 +1,45 @@
-# NAME: CBS\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:16:57\n# DOMAIN-SUFFIX: 34\n# PROCESS-NAME: 2\n# USER-AGENT: 1\n# TOTAL: 37\nDOMAIN-SUFFIX,amlg.io\nDOMAIN-SUFFIX,cbs.com\nDOMAIN-SUFFIX,cbsaavideo.com\nDOMAIN-SUFFIX,cbscorporation.com\nDOMAIN-SUFFIX,cbsi.com\nDOMAIN-SUFFIX,cbsi.live.ott.irdeto.com\nDOMAIN-SUFFIX,cbsi.video\nDOMAIN-SUFFIX,cbsiam.com\nDOMAIN-SUFFIX,cbsig.net\nDOMAIN-SUFFIX,cbsimg.net\nDOMAIN-SUFFIX,cbsinteractive.com\nDOMAIN-SUFFIX,cbsistatic.com\nDOMAIN-SUFFIX,cbsivideo.com\nDOMAIN-SUFFIX,cbsnews.com\nDOMAIN-SUFFIX,cbsplaylistserver.aws.syncbak.com\nDOMAIN-SUFFIX,cbspressexpress.com\nDOMAIN-SUFFIX,cbsradio.com\nDOMAIN-SUFFIX,cbsservice.aws.syncbak.com\nDOMAIN-SUFFIX,cbssports.com\nDOMAIN-SUFFIX,cbsstatic.com\nDOMAIN-SUFFIX,cbsstore.com\nDOMAIN-SUFFIX,cbssvideo.com\nDOMAIN-SUFFIX,cbstelevisioncity.com\nDOMAIN-SUFFIX,mtvnservices.com\nDOMAIN-SUFFIX,paramount.com\nDOMAIN-SUFFIX,paramountplus.com\nDOMAIN-SUFFIX,pluto.tv\nDOMAIN-SUFFIX,plutotv.net\nDOMAIN-SUFFIX,pplusstatic.com\nDOMAIN-SUFFIX,showtime.com\nDOMAIN-SUFFIX,viacbs.com\nDOMAIN-SUFFIX,viacom.com\nDOMAIN-SUFFIX,viacomcbs.com\nDOMAIN-SUFFIX,viacomcbspressexpress.com\nUSER-AGENT,PPlus*\nPROCESS-NAME,com.cbs.app\nPROCESS-NAME,com.showtime.standalone
+# NAME: CBS
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:16:57
+# DOMAIN-SUFFIX: 34
+# PROCESS-NAME: 2
+# USER-AGENT: 1
+# TOTAL: 37
+DOMAIN-SUFFIX,amlg.io
+DOMAIN-SUFFIX,cbs.com
+DOMAIN-SUFFIX,cbsaavideo.com
+DOMAIN-SUFFIX,cbscorporation.com
+DOMAIN-SUFFIX,cbsi.com
+DOMAIN-SUFFIX,cbsi.live.ott.irdeto.com
+DOMAIN-SUFFIX,cbsi.video
+DOMAIN-SUFFIX,cbsiam.com
+DOMAIN-SUFFIX,cbsig.net
+DOMAIN-SUFFIX,cbsimg.net
+DOMAIN-SUFFIX,cbsinteractive.com
+DOMAIN-SUFFIX,cbsistatic.com
+DOMAIN-SUFFIX,cbsivideo.com
+DOMAIN-SUFFIX,cbsnews.com
+DOMAIN-SUFFIX,cbsplaylistserver.aws.syncbak.com
+DOMAIN-SUFFIX,cbspressexpress.com
+DOMAIN-SUFFIX,cbsradio.com
+DOMAIN-SUFFIX,cbsservice.aws.syncbak.com
+DOMAIN-SUFFIX,cbssports.com
+DOMAIN-SUFFIX,cbsstatic.com
+DOMAIN-SUFFIX,cbsstore.com
+DOMAIN-SUFFIX,cbssvideo.com
+DOMAIN-SUFFIX,cbstelevisioncity.com
+DOMAIN-SUFFIX,mtvnservices.com
+DOMAIN-SUFFIX,paramount.com
+DOMAIN-SUFFIX,paramountplus.com
+DOMAIN-SUFFIX,pluto.tv
+DOMAIN-SUFFIX,plutotv.net
+DOMAIN-SUFFIX,pplusstatic.com
+DOMAIN-SUFFIX,showtime.com
+DOMAIN-SUFFIX,viacbs.com
+DOMAIN-SUFFIX,viacom.com
+DOMAIN-SUFFIX,viacomcbs.com
+DOMAIN-SUFFIX,viacomcbspressexpress.com
+USER-AGENT,PPlus*
+PROCESS-NAME,com.cbs.app
+PROCESS-NAME,com.showtime.standalone

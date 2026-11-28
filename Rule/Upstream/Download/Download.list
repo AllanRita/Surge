@@ -1,1 +1,30 @@
-# NAME: Download\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:01\n# DESCRIPTION: 分流规则中含有URL-REGEX类型，建议搭配MITM使用\n# DOMAIN-KEYWORD: 5\n# DOMAIN-SUFFIX: 1\n# PROCESS-NAME: 13\n# URL-REGEX: 1\n# TOTAL: 20\nDOMAIN-SUFFIX,qbittorrent.org\nDOMAIN-KEYWORD,aria2\nDOMAIN-KEYWORD,thunder\nDOMAIN-KEYWORD,xlliveud\nDOMAIN-KEYWORD,xunlei\nDOMAIN-KEYWORD,yunpan\nURL-REGEX,assets\d+\.xboxlive\.(com|cn)\nPROCESS-NAME,BitComet\nPROCESS-NAME,DownloadService\nPROCESS-NAME,Folx\nPROCESS-NAME,NetTransport\nPROCESS-NAME,Thunder\nPROCESS-NAME,Transmission\nPROCESS-NAME,WebTorrent\nPROCESS-NAME,WebTorrentHelper\nPROCESS-NAME,Weiyun\nPROCESS-NAME,aria2c\nPROCESS-NAME,fdm\nPROCESS-NAME,qbittorrent\nPROCESS-NAME,uTorrent
+# NAME: Download
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:01
+# DESCRIPTION: 分流规则中含有URL-REGEX类型，建议搭配MITM使用
+# DOMAIN-KEYWORD: 5
+# DOMAIN-SUFFIX: 1
+# PROCESS-NAME: 13
+# URL-REGEX: 1
+# TOTAL: 20
+DOMAIN-SUFFIX,qbittorrent.org
+DOMAIN-KEYWORD,aria2
+DOMAIN-KEYWORD,thunder
+DOMAIN-KEYWORD,xlliveud
+DOMAIN-KEYWORD,xunlei
+DOMAIN-KEYWORD,yunpan
+URL-REGEX,assets\d+\.xboxlive\.(com|cn)
+PROCESS-NAME,BitComet
+PROCESS-NAME,DownloadService
+PROCESS-NAME,Folx
+PROCESS-NAME,NetTransport
+PROCESS-NAME,Thunder
+PROCESS-NAME,Transmission
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,WebTorrentHelper
+PROCESS-NAME,Weiyun
+PROCESS-NAME,aria2c
+PROCESS-NAME,fdm
+PROCESS-NAME,qbittorrent
+PROCESS-NAME,uTorrent

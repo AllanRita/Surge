@@ -1,1 +1,11 @@
-# NAME: 8btc\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:52\n# DOMAIN-SUFFIX: 5\n# TOTAL: 5\nDOMAIN-SUFFIX,8btc.com\nDOMAIN-SUFFIX,bystack.com\nDOMAIN-SUFFIX,chainnode.com\nDOMAIN-SUFFIX,matpool.com\nDOMAIN-SUFFIX,matpool.net
+# NAME: 8btc
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:52
+# DOMAIN-SUFFIX: 5
+# TOTAL: 5
+DOMAIN-SUFFIX,8btc.com
+DOMAIN-SUFFIX,bystack.com
+DOMAIN-SUFFIX,chainnode.com
+DOMAIN-SUFFIX,matpool.com
+DOMAIN-SUFFIX,matpool.net

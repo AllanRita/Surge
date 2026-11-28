@@ -1,1 +1,11 @@
-# NAME: YiZhiBo\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:40\n# DOMAIN-SUFFIX: 5\n# TOTAL: 5\nDOMAIN-SUFFIX,hifengli.com\nDOMAIN-SUFFIX,liexiulive.com\nDOMAIN-SUFFIX,sndks.com\nDOMAIN-SUFFIX,yizhibo.com\nDOMAIN-SUFFIX,yzbo.tv
+# NAME: YiZhiBo
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:40
+# DOMAIN-SUFFIX: 5
+# TOTAL: 5
+DOMAIN-SUFFIX,hifengli.com
+DOMAIN-SUFFIX,liexiulive.com
+DOMAIN-SUFFIX,sndks.com
+DOMAIN-SUFFIX,yizhibo.com
+DOMAIN-SUFFIX,yzbo.tv

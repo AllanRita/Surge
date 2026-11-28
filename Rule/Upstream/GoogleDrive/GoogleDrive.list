@@ -1,1 +1,18 @@
-# NAME: GoogleDrive\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:15:10\n# DOMAIN: 1\n# DOMAIN-SUFFIX: 4\n# PROCESS-NAME: 1\n# USER-AGENT: 3\n# TOTAL: 9\nDOMAIN,www.googleapis.com\nDOMAIN-SUFFIX,docs.google.com\nDOMAIN-SUFFIX,drive.google.com\nDOMAIN-SUFFIX,googledrive.com\nDOMAIN-SUFFIX,googleusercontent.com\nUSER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*\nUSER-AGENT,*com.google.Drive*\nUSER-AGENT,Google.Drive*\nPROCESS-NAME,BackupandSync
+# NAME: GoogleDrive
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:15:10
+# DOMAIN: 1
+# DOMAIN-SUFFIX: 4
+# PROCESS-NAME: 1
+# USER-AGENT: 3
+# TOTAL: 9
+DOMAIN,www.googleapis.com
+DOMAIN-SUFFIX,docs.google.com
+DOMAIN-SUFFIX,drive.google.com
+DOMAIN-SUFFIX,googledrive.com
+DOMAIN-SUFFIX,googleusercontent.com
+USER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*
+USER-AGENT,*com.google.Drive*
+USER-AGENT,Google.Drive*
+PROCESS-NAME,BackupandSync

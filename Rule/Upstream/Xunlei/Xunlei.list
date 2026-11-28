@@ -1,1 +1,39 @@
-# NAME: Xunlei\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:29\n# DOMAIN-SUFFIX: 31\n# PROCESS-NAME: 1\n# TOTAL: 32\nDOMAIN-SUFFIX,00cdn.com\nDOMAIN-SUFFIX,155.com\nDOMAIN-SUFFIX,2sonar.com\nDOMAIN-SUFFIX,88cdn.com\nDOMAIN-SUFFIX,8uri.cn\nDOMAIN-SUFFIX,falconalliance.cn\nDOMAIN-SUFFIX,fontong.com\nDOMAIN-SUFFIX,geilijiasu.com\nDOMAIN-SUFFIX,geilijiasu.net\nDOMAIN-SUFFIX,gigaget.com\nDOMAIN-SUFFIX,kanimg.com\nDOMAIN-SUFFIX,kankan.com\nDOMAIN-SUFFIX,kuaipan.cn\nDOMAIN-SUFFIX,n0808.com\nDOMAIN-SUFFIX,neoimaging.cn\nDOMAIN-SUFFIX,newvr.com\nDOMAIN-SUFFIX,p2cdn.com\nDOMAIN-SUFFIX,sandai.net\nDOMAIN-SUFFIX,sjzhushou.com\nDOMAIN-SUFFIX,szxlxzb.com\nDOMAIN-SUFFIX,thundercdn.com\nDOMAIN-SUFFIX,thunderurl.com\nDOMAIN-SUFFIX,xbase.cloud\nDOMAIN-SUFFIX,xbase.xyz\nDOMAIN-SUFFIX,xcloudbase.com\nDOMAIN-SUFFIX,xlisp.net\nDOMAIN-SUFFIX,xlpan.com\nDOMAIN-SUFFIX,xlyouxi.net\nDOMAIN-SUFFIX,xunlei.cn\nDOMAIN-SUFFIX,xunlei.com\nDOMAIN-SUFFIX,xunlei.net\nPROCESS-NAME,Thunder
+# NAME: Xunlei
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:29
+# DOMAIN-SUFFIX: 31
+# PROCESS-NAME: 1
+# TOTAL: 32
+DOMAIN-SUFFIX,00cdn.com
+DOMAIN-SUFFIX,155.com
+DOMAIN-SUFFIX,2sonar.com
+DOMAIN-SUFFIX,88cdn.com
+DOMAIN-SUFFIX,8uri.cn
+DOMAIN-SUFFIX,falconalliance.cn
+DOMAIN-SUFFIX,fontong.com
+DOMAIN-SUFFIX,geilijiasu.com
+DOMAIN-SUFFIX,geilijiasu.net
+DOMAIN-SUFFIX,gigaget.com
+DOMAIN-SUFFIX,kanimg.com
+DOMAIN-SUFFIX,kankan.com
+DOMAIN-SUFFIX,kuaipan.cn
+DOMAIN-SUFFIX,n0808.com
+DOMAIN-SUFFIX,neoimaging.cn
+DOMAIN-SUFFIX,newvr.com
+DOMAIN-SUFFIX,p2cdn.com
+DOMAIN-SUFFIX,sandai.net
+DOMAIN-SUFFIX,sjzhushou.com
+DOMAIN-SUFFIX,szxlxzb.com
+DOMAIN-SUFFIX,thundercdn.com
+DOMAIN-SUFFIX,thunderurl.com
+DOMAIN-SUFFIX,xbase.cloud
+DOMAIN-SUFFIX,xbase.xyz
+DOMAIN-SUFFIX,xcloudbase.com
+DOMAIN-SUFFIX,xlisp.net
+DOMAIN-SUFFIX,xlpan.com
+DOMAIN-SUFFIX,xlyouxi.net
+DOMAIN-SUFFIX,xunlei.cn
+DOMAIN-SUFFIX,xunlei.com
+DOMAIN-SUFFIX,xunlei.net
+PROCESS-NAME,Thunder

@@ -1,1 +1,22 @@
-# NAME: NYTimes\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:16:59\n# DOMAIN-SUFFIX: 16\n# TOTAL: 16\nDOMAIN-SUFFIX,d1f1eryiqyjs0r.cloudfront.net\nDOMAIN-SUFFIX,d3lar09xbwlsge.cloudfront.net\nDOMAIN-SUFFIX,d3q1qj9jzsu8nw.cloudfront.net\nDOMAIN-SUFFIX,dc8xl0ndzn2cb.cloudfront.net\nDOMAIN-SUFFIX,nyt.com\nDOMAIN-SUFFIX,nyt.net\nDOMAIN-SUFFIX,nytchina.com\nDOMAIN-SUFFIX,nytcn.me\nDOMAIN-SUFFIX,nytco.com\nDOMAIN-SUFFIX,nyti.ms\nDOMAIN-SUFFIX,nytimes.com\nDOMAIN-SUFFIX,nytimg.com\nDOMAIN-SUFFIX,nytlog.com\nDOMAIN-SUFFIX,nytstyle.com\nDOMAIN-SUFFIX,timestalks.com\nDOMAIN-SUFFIX,tynt.com
+# NAME: NYTimes
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:16:59
+# DOMAIN-SUFFIX: 16
+# TOTAL: 16
+DOMAIN-SUFFIX,d1f1eryiqyjs0r.cloudfront.net
+DOMAIN-SUFFIX,d3lar09xbwlsge.cloudfront.net
+DOMAIN-SUFFIX,d3q1qj9jzsu8nw.cloudfront.net
+DOMAIN-SUFFIX,dc8xl0ndzn2cb.cloudfront.net
+DOMAIN-SUFFIX,nyt.com
+DOMAIN-SUFFIX,nyt.net
+DOMAIN-SUFFIX,nytchina.com
+DOMAIN-SUFFIX,nytcn.me
+DOMAIN-SUFFIX,nytco.com
+DOMAIN-SUFFIX,nyti.ms
+DOMAIN-SUFFIX,nytimes.com
+DOMAIN-SUFFIX,nytimg.com
+DOMAIN-SUFFIX,nytlog.com
+DOMAIN-SUFFIX,nytstyle.com
+DOMAIN-SUFFIX,timestalks.com
+DOMAIN-SUFFIX,tynt.com

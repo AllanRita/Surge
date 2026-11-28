@@ -1,1 +1,12 @@
-# NAME: Zendesk\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:49\n# DOMAIN-SUFFIX: 6\n# TOTAL: 6\nDOMAIN-SUFFIX,outbound.io\nDOMAIN-SUFFIX,zdassets.com\nDOMAIN-SUFFIX,zdusercontent.com\nDOMAIN-SUFFIX,zendesk.com\nDOMAIN-SUFFIX,zndsk.com\nDOMAIN-SUFFIX,zopim.com
+# NAME: Zendesk
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:49
+# DOMAIN-SUFFIX: 6
+# TOTAL: 6
+DOMAIN-SUFFIX,outbound.io
+DOMAIN-SUFFIX,zdassets.com
+DOMAIN-SUFFIX,zdusercontent.com
+DOMAIN-SUFFIX,zendesk.com
+DOMAIN-SUFFIX,zndsk.com
+DOMAIN-SUFFIX,zopim.com

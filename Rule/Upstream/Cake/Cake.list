@@ -1,1 +1,14 @@
-# NAME: Cake\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:18:50\n# DOMAIN: 4\n# DOMAIN-SUFFIX: 3\n# TOTAL: 7\nDOMAIN,d1koerlbtsmkf8.cloudfront.net\nDOMAIN,d31wl6mro6753i.cloudfront.net\nDOMAIN,static-mycake.pstatic.net\nDOMAIN,vstatic-mycake.pstatic.net\nDOMAIN-SUFFIX,cake.day\nDOMAIN-SUFFIX,cakeapp.me\nDOMAIN-SUFFIX,mycake.me
+# NAME: Cake
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:18:50
+# DOMAIN: 4
+# DOMAIN-SUFFIX: 3
+# TOTAL: 7
+DOMAIN,d1koerlbtsmkf8.cloudfront.net
+DOMAIN,d31wl6mro6753i.cloudfront.net
+DOMAIN,static-mycake.pstatic.net
+DOMAIN,vstatic-mycake.pstatic.net
+DOMAIN-SUFFIX,cake.day
+DOMAIN-SUFFIX,cakeapp.me
+DOMAIN-SUFFIX,mycake.me

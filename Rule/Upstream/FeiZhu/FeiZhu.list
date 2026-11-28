@@ -1,1 +1,26 @@
-# NAME: FeiZhu\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:34\n# DOMAIN-SUFFIX: 20\n# TOTAL: 20\nDOMAIN-SUFFIX,alitrip.com\nDOMAIN-SUFFIX,asczwa.com\nDOMAIN-SUFFIX,asczxcefsv.com\nDOMAIN-SUFFIX,bcvbw.com\nDOMAIN-SUFFIX,dfkhgj.com\nDOMAIN-SUFFIX,edcdfg.com\nDOMAIN-SUFFIX,ereuiib.com\nDOMAIN-SUFFIX,fdfgdf.cn\nDOMAIN-SUFFIX,feizhu.cn\nDOMAIN-SUFFIX,feizhu.com\nDOMAIN-SUFFIX,fliggy.com\nDOMAIN-SUFFIX,fliggy.hk\nDOMAIN-SUFFIX,iuynfg.com\nDOMAIN-SUFFIX,jhgtgb.com\nDOMAIN-SUFFIX,mnbvbqw.com\nDOMAIN-SUFFIX,ujmjk.com\nDOMAIN-SUFFIX,vfvdf.com\nDOMAIN-SUFFIX,xcvvs.com\nDOMAIN-SUFFIX,zxczw.com\nDOMAIN-SUFFIX,zzxca.com
+# NAME: FeiZhu
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:34
+# DOMAIN-SUFFIX: 20
+# TOTAL: 20
+DOMAIN-SUFFIX,alitrip.com
+DOMAIN-SUFFIX,asczwa.com
+DOMAIN-SUFFIX,asczxcefsv.com
+DOMAIN-SUFFIX,bcvbw.com
+DOMAIN-SUFFIX,dfkhgj.com
+DOMAIN-SUFFIX,edcdfg.com
+DOMAIN-SUFFIX,ereuiib.com
+DOMAIN-SUFFIX,fdfgdf.cn
+DOMAIN-SUFFIX,feizhu.cn
+DOMAIN-SUFFIX,feizhu.com
+DOMAIN-SUFFIX,fliggy.com
+DOMAIN-SUFFIX,fliggy.hk
+DOMAIN-SUFFIX,iuynfg.com
+DOMAIN-SUFFIX,jhgtgb.com
+DOMAIN-SUFFIX,mnbvbqw.com
+DOMAIN-SUFFIX,ujmjk.com
+DOMAIN-SUFFIX,vfvdf.com
+DOMAIN-SUFFIX,xcvvs.com
+DOMAIN-SUFFIX,zxczw.com
+DOMAIN-SUFFIX,zzxca.com

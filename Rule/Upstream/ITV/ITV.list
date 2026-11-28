@@ -1,1 +1,12 @@
-# NAME: ITV\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:16:58\n# DOMAIN: 1\n# DOMAIN-SUFFIX: 2\n# USER-AGENT: 1\n# TOTAL: 4\nDOMAIN,itvpnpmobile-a.akamaihd.net\nDOMAIN-SUFFIX,itv.com\nDOMAIN-SUFFIX,itvstatic.com\nUSER-AGENT,ITV_Player*
+# NAME: ITV
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:16:58
+# DOMAIN: 1
+# DOMAIN-SUFFIX: 2
+# USER-AGENT: 1
+# TOTAL: 4
+DOMAIN,itvpnpmobile-a.akamaihd.net
+DOMAIN-SUFFIX,itv.com
+DOMAIN-SUFFIX,itvstatic.com
+USER-AGENT,ITV_Player*

@@ -1,1 +1,8 @@
-# NAME: Razer\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:47\n# DOMAIN-SUFFIX: 2\n# TOTAL: 2\nDOMAIN-SUFFIX,razer.com\nDOMAIN-SUFFIX,razerzone.com
+# NAME: Razer
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:47
+# DOMAIN-SUFFIX: 2
+# TOTAL: 2
+DOMAIN-SUFFIX,razer.com
+DOMAIN-SUFFIX,razerzone.com

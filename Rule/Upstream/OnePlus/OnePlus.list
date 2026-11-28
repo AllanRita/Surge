@@ -1,1 +1,13 @@
-# NAME: OnePlus\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:37\n# DOMAIN-SUFFIX: 7\n# TOTAL: 7\nDOMAIN-SUFFIX,h2os.com\nDOMAIN-SUFFIX,oneplus.cn\nDOMAIN-SUFFIX,oneplus.com\nDOMAIN-SUFFIX,oneplus.net\nDOMAIN-SUFFIX,oneplusbbs.com\nDOMAIN-SUFFIX,oneplusmobile.com\nDOMAIN-SUFFIX,opstatics.com
+# NAME: OnePlus
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:37
+# DOMAIN-SUFFIX: 7
+# TOTAL: 7
+DOMAIN-SUFFIX,h2os.com
+DOMAIN-SUFFIX,oneplus.cn
+DOMAIN-SUFFIX,oneplus.com
+DOMAIN-SUFFIX,oneplus.net
+DOMAIN-SUFFIX,oneplusbbs.com
+DOMAIN-SUFFIX,oneplusmobile.com
+DOMAIN-SUFFIX,opstatics.com

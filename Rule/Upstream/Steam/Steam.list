@@ -1,1 +1,77 @@
-# NAME: Steam\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2026-10-24 04:55:18\n# DOMAIN-KEYWORD: 3\n# DOMAIN-SUFFIX: 54\n# IP-CIDR: 12\n# TOTAL: 69\nDOMAIN-SUFFIX,cdn-ali.content.steamchina.com\nDOMAIN-SUFFIX,cdn-qc.content.steamchina.com\nDOMAIN-SUFFIX,cdn-ws.content.steamchina.com\nDOMAIN-SUFFIX,csgo.wmsj.cn\nDOMAIN-SUFFIX,dl.steam.clngaa.com\nDOMAIN-SUFFIX,dl.steam.ksyna.com\nDOMAIN-SUFFIX,dota2.com\nDOMAIN-SUFFIX,dota2.wmsj.cn\nDOMAIN-SUFFIX,edge.steam-dns.top.comcast.net\nDOMAIN-SUFFIX,f3b7q2p3.ssl.hwcdn.net\nDOMAIN-SUFFIX,fanatical.com\nDOMAIN-SUFFIX,humblebundle.com\nDOMAIN-SUFFIX,playartifact.com\nDOMAIN-SUFFIX,s.team\nDOMAIN-SUFFIX,st.dl.bscstorage.net\nDOMAIN-SUFFIX,st.dl.eccdnx.com\nDOMAIN-SUFFIX,st.dl.pinyuncloud.com\nDOMAIN-SUFFIX,steam-api.com\nDOMAIN-SUFFIX,steam-chat.com\nDOMAIN-SUFFIX,steam.apac.qtlglb.com\nDOMAIN-SUFFIX,steam.cdn.on.net\nDOMAIN-SUFFIX,steam.cdn.orcon.net.nz\nDOMAIN-SUFFIX,steam.cdn.slingshot.co.nz\nDOMAIN-SUFFIX,steam.cdn.webra.ru\nDOMAIN-SUFFIX,steam.eca.qtlglb.com\nDOMAIN-SUFFIX,steam.naeu.qtlglb.com\nDOMAIN-SUFFIX,steam.ru.qtlglb.com\nDOMAIN-SUFFIX,steam.tv\nDOMAIN-SUFFIX,steambroadcast.akamaized.net\nDOMAIN-SUFFIX,steamcdn-a.akamaihd.net\nDOMAIN-SUFFIX,steamcommunity-a.akamaihd.net\nDOMAIN-SUFFIX,steamcommunity.com\nDOMAIN-SUFFIX,steamconnecttest.com\nDOMAIN-SUFFIX,steamcontent.tnkjmec.com\nDOMAIN-SUFFIX,steamdeck.com\nDOMAIN-SUFFIX,steamgames.com\nDOMAIN-SUFFIX,steammobile.akamaized.net\nDOMAIN-SUFFIX,steampipe-kr.akamaized.net\nDOMAIN-SUFFIX,steampipe-partner.akamaized.net\nDOMAIN-SUFFIX,steampipe.akamaized.net\nDOMAIN-SUFFIX,steampowered.com\nDOMAIN-SUFFIX,steampowered.com.8686c.com\nDOMAIN-SUFFIX,steamstat.us\nDOMAIN-SUFFIX,steamstatic.com\nDOMAIN-SUFFIX,steamstatic.com.8686c.com\nDOMAIN-SUFFIX,steamstore-a.akamaihd.net\nDOMAIN-SUFFIX,steamunlocked.net\nDOMAIN-SUFFIX,steamusercontent-a.akamaihd.net\nDOMAIN-SUFFIX,steamuserimages-a.akamaihd.net\nDOMAIN-SUFFIX,steamvideo-a.akamaihd.net\nDOMAIN-SUFFIX,underlords.com\nDOMAIN-SUFFIX,valve.net\nDOMAIN-SUFFIX,valvesoftware.com\nDOMAIN-SUFFIX,wmsjsteam.com\nDOMAIN-KEYWORD,steambroadcast\nDOMAIN-KEYWORD,steamstore\nDOMAIN-KEYWORD,steamuserimages\nIP-CIDR,103.10.124.0/23,no-resolve\nIP-CIDR,103.28.54.0/24,no-resolve\nIP-CIDR,146.66.152.0/24,no-resolve\nIP-CIDR,146.66.155.0/24,no-resolve\nIP-CIDR,155.133.224.0/19,no-resolve\nIP-CIDR,162.254.192.0/21,no-resolve\nIP-CIDR,185.25.180.0/22,no-resolve\nIP-CIDR,192.69.96.0/22,no-resolve\nIP-CIDR,205.196.6.0/24,no-resolve\nIP-CIDR,208.64.200.0/22,no-resolve\nIP-CIDR,208.78.164.0/22,no-resolve\nIP-CIDR,45.121.184.0/24,no-resolve
+# NAME: Steam
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2026-10-24 04:55:18
+# DOMAIN-KEYWORD: 3
+# DOMAIN-SUFFIX: 54
+# IP-CIDR: 12
+# TOTAL: 69
+DOMAIN-SUFFIX,cdn-ali.content.steamchina.com
+DOMAIN-SUFFIX,cdn-qc.content.steamchina.com
+DOMAIN-SUFFIX,cdn-ws.content.steamchina.com
+DOMAIN-SUFFIX,csgo.wmsj.cn
+DOMAIN-SUFFIX,dl.steam.clngaa.com
+DOMAIN-SUFFIX,dl.steam.ksyna.com
+DOMAIN-SUFFIX,dota2.com
+DOMAIN-SUFFIX,dota2.wmsj.cn
+DOMAIN-SUFFIX,edge.steam-dns.top.comcast.net
+DOMAIN-SUFFIX,f3b7q2p3.ssl.hwcdn.net
+DOMAIN-SUFFIX,fanatical.com
+DOMAIN-SUFFIX,humblebundle.com
+DOMAIN-SUFFIX,playartifact.com
+DOMAIN-SUFFIX,s.team
+DOMAIN-SUFFIX,st.dl.bscstorage.net
+DOMAIN-SUFFIX,st.dl.eccdnx.com
+DOMAIN-SUFFIX,st.dl.pinyuncloud.com
+DOMAIN-SUFFIX,steam-api.com
+DOMAIN-SUFFIX,steam-chat.com
+DOMAIN-SUFFIX,steam.apac.qtlglb.com
+DOMAIN-SUFFIX,steam.cdn.on.net
+DOMAIN-SUFFIX,steam.cdn.orcon.net.nz
+DOMAIN-SUFFIX,steam.cdn.slingshot.co.nz
+DOMAIN-SUFFIX,steam.cdn.webra.ru
+DOMAIN-SUFFIX,steam.eca.qtlglb.com
+DOMAIN-SUFFIX,steam.naeu.qtlglb.com
+DOMAIN-SUFFIX,steam.ru.qtlglb.com
+DOMAIN-SUFFIX,steam.tv
+DOMAIN-SUFFIX,steambroadcast.akamaized.net
+DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
+DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net
+DOMAIN-SUFFIX,steamcommunity.com
+DOMAIN-SUFFIX,steamconnecttest.com
+DOMAIN-SUFFIX,steamcontent.tnkjmec.com
+DOMAIN-SUFFIX,steamdeck.com
+DOMAIN-SUFFIX,steamgames.com
+DOMAIN-SUFFIX,steammobile.akamaized.net
+DOMAIN-SUFFIX,steampipe-kr.akamaized.net
+DOMAIN-SUFFIX,steampipe-partner.akamaized.net
+DOMAIN-SUFFIX,steampipe.akamaized.net
+DOMAIN-SUFFIX,steampowered.com
+DOMAIN-SUFFIX,steampowered.com.8686c.com
+DOMAIN-SUFFIX,steamstat.us
+DOMAIN-SUFFIX,steamstatic.com
+DOMAIN-SUFFIX,steamstatic.com.8686c.com
+DOMAIN-SUFFIX,steamstore-a.akamaihd.net
+DOMAIN-SUFFIX,steamunlocked.net
+DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
+DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
+DOMAIN-SUFFIX,steamvideo-a.akamaihd.net
+DOMAIN-SUFFIX,underlords.com
+DOMAIN-SUFFIX,valve.net
+DOMAIN-SUFFIX,valvesoftware.com
+DOMAIN-SUFFIX,wmsjsteam.com
+DOMAIN-KEYWORD,steambroadcast
+DOMAIN-KEYWORD,steamstore
+DOMAIN-KEYWORD,steamuserimages
+IP-CIDR,103.10.124.0/23,no-resolve
+IP-CIDR,103.28.54.0/24,no-resolve
+IP-CIDR,146.66.152.0/24,no-resolve
+IP-CIDR,146.66.155.0/24,no-resolve
+IP-CIDR,155.133.224.0/19,no-resolve
+IP-CIDR,162.254.192.0/21,no-resolve
+IP-CIDR,185.25.180.0/22,no-resolve
+IP-CIDR,192.69.96.0/22,no-resolve
+IP-CIDR,205.196.6.0/24,no-resolve
+IP-CIDR,208.64.200.0/22,no-resolve
+IP-CIDR,208.78.164.0/22,no-resolve
+IP-CIDR,45.121.184.0/24,no-resolve

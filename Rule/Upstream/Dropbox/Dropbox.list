@@ -1,1 +1,23 @@
-# NAME: Dropbox\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:43\n# DOMAIN-SUFFIX: 17\n# TOTAL: 17\nDOMAIN-SUFFIX,db.tt\nDOMAIN-SUFFIX,dropbox-dns.com\nDOMAIN-SUFFIX,dropbox.com\nDOMAIN-SUFFIX,dropbox.tech\nDOMAIN-SUFFIX,dropbox.zendesk.com\nDOMAIN-SUFFIX,dropboxapi.com\nDOMAIN-SUFFIX,dropboxbusiness.com\nDOMAIN-SUFFIX,dropboxcaptcha.com\nDOMAIN-SUFFIX,dropboxforum.com\nDOMAIN-SUFFIX,dropboxforums.com\nDOMAIN-SUFFIX,dropboxinsiders.com\nDOMAIN-SUFFIX,dropboxmail.com\nDOMAIN-SUFFIX,dropboxpartners.com\nDOMAIN-SUFFIX,dropboxstatic.com\nDOMAIN-SUFFIX,dropboxusercontent.com\nDOMAIN-SUFFIX,getdropbox.com\nDOMAIN-SUFFIX,paper-attachments.s3.amazonaws.com
+# NAME: Dropbox
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:43
+# DOMAIN-SUFFIX: 17
+# TOTAL: 17
+DOMAIN-SUFFIX,db.tt
+DOMAIN-SUFFIX,dropbox-dns.com
+DOMAIN-SUFFIX,dropbox.com
+DOMAIN-SUFFIX,dropbox.tech
+DOMAIN-SUFFIX,dropbox.zendesk.com
+DOMAIN-SUFFIX,dropboxapi.com
+DOMAIN-SUFFIX,dropboxbusiness.com
+DOMAIN-SUFFIX,dropboxcaptcha.com
+DOMAIN-SUFFIX,dropboxforum.com
+DOMAIN-SUFFIX,dropboxforums.com
+DOMAIN-SUFFIX,dropboxinsiders.com
+DOMAIN-SUFFIX,dropboxmail.com
+DOMAIN-SUFFIX,dropboxpartners.com
+DOMAIN-SUFFIX,dropboxstatic.com
+DOMAIN-SUFFIX,dropboxusercontent.com
+DOMAIN-SUFFIX,getdropbox.com
+DOMAIN-SUFFIX,paper-attachments.s3.amazonaws.com

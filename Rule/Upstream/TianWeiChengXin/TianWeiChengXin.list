@@ -1,1 +1,29 @@
-# NAME: TianWeiChengXin\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:38\n# DOMAIN-SUFFIX: 23\n# TOTAL: 23\nDOMAIN-SUFFIX,4006663999.cn\nDOMAIN-SUFFIX,6rencn.com\nDOMAIN-SUFFIX,dcocsp.cn\nDOMAIN-SUFFIX,ev-ssl.cn\nDOMAIN-SUFFIX,ev-ssl.com.cn\nDOMAIN-SUFFIX,fxg365.cn\nDOMAIN-SUFFIX,helloid.cn\nDOMAIN-SUFFIX,itrus.cn\nDOMAIN-SUFFIX,itrus.com\nDOMAIN-SUFFIX,itrus.com.cn\nDOMAIN-SUFFIX,itrus.net.cn\nDOMAIN-SUFFIX,itruscloud.com\nDOMAIN-SUFFIX,itrusign.cn\nDOMAIN-SUFFIX,itrusign.com\nDOMAIN-SUFFIX,mingjian365.cn\nDOMAIN-SUFFIX,mingjian365.com\nDOMAIN-SUFFIX,mingjian365.net\nDOMAIN-SUFFIX,mj365.club\nDOMAIN-SUFFIX,mj365.site\nDOMAIN-SUFFIX,mj365.vip\nDOMAIN-SUFFIX,nowhttps.com\nDOMAIN-SUFFIX,yunssl.cn\nDOMAIN-SUFFIX,yunssl.com
+# NAME: TianWeiChengXin
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:38
+# DOMAIN-SUFFIX: 23
+# TOTAL: 23
+DOMAIN-SUFFIX,4006663999.cn
+DOMAIN-SUFFIX,6rencn.com
+DOMAIN-SUFFIX,dcocsp.cn
+DOMAIN-SUFFIX,ev-ssl.cn
+DOMAIN-SUFFIX,ev-ssl.com.cn
+DOMAIN-SUFFIX,fxg365.cn
+DOMAIN-SUFFIX,helloid.cn
+DOMAIN-SUFFIX,itrus.cn
+DOMAIN-SUFFIX,itrus.com
+DOMAIN-SUFFIX,itrus.com.cn
+DOMAIN-SUFFIX,itrus.net.cn
+DOMAIN-SUFFIX,itruscloud.com
+DOMAIN-SUFFIX,itrusign.cn
+DOMAIN-SUFFIX,itrusign.com
+DOMAIN-SUFFIX,mingjian365.cn
+DOMAIN-SUFFIX,mingjian365.com
+DOMAIN-SUFFIX,mingjian365.net
+DOMAIN-SUFFIX,mj365.club
+DOMAIN-SUFFIX,mj365.site
+DOMAIN-SUFFIX,mj365.vip
+DOMAIN-SUFFIX,nowhttps.com
+DOMAIN-SUFFIX,yunssl.cn
+DOMAIN-SUFFIX,yunssl.com

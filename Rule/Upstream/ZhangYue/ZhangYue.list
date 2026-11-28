@@ -1,1 +1,32 @@
-# NAME: ZhangYue\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:40\n# DOMAIN-SUFFIX: 26\n# TOTAL: 26\nDOMAIN-SUFFIX,corp3g.cn\nDOMAIN-SUFFIX,ireader.com\nDOMAIN-SUFFIX,ireader.com.cn\nDOMAIN-SUFFIX,ireader.live\nDOMAIN-SUFFIX,ireader.mobi\nDOMAIN-SUFFIX,ireaderm.com\nDOMAIN-SUFFIX,ireaderm.net\nDOMAIN-SUFFIX,iremaker.com\nDOMAIN-SUFFIX,mgcube.cn\nDOMAIN-SUFFIX,palmebook.com\nDOMAIN-SUFFIX,palmeread.cn\nDOMAIN-SUFFIX,palmeread.com\nDOMAIN-SUFFIX,palmestore.cn\nDOMAIN-SUFFIX,palmestore.com\nDOMAIN-SUFFIX,transmonkey.cn\nDOMAIN-SUFFIX,transmonkey.com\nDOMAIN-SUFFIX,transmonkey.net\nDOMAIN-SUFFIX,z3.cn\nDOMAIN-SUFFIX,zhangyue.com\nDOMAIN-SUFFIX,zhangyue.net\nDOMAIN-SUFFIX,zhangyue01.com\nDOMAIN-SUFFIX,zhangyue02.com\nDOMAIN-SUFFIX,zhangyue03.com\nDOMAIN-SUFFIX,zhi3.com.cn\nDOMAIN-SUFFIX,zhi3.net\nDOMAIN-SUFFIX,zuoshujiang.com
+# NAME: ZhangYue
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:40
+# DOMAIN-SUFFIX: 26
+# TOTAL: 26
+DOMAIN-SUFFIX,corp3g.cn
+DOMAIN-SUFFIX,ireader.com
+DOMAIN-SUFFIX,ireader.com.cn
+DOMAIN-SUFFIX,ireader.live
+DOMAIN-SUFFIX,ireader.mobi
+DOMAIN-SUFFIX,ireaderm.com
+DOMAIN-SUFFIX,ireaderm.net
+DOMAIN-SUFFIX,iremaker.com
+DOMAIN-SUFFIX,mgcube.cn
+DOMAIN-SUFFIX,palmebook.com
+DOMAIN-SUFFIX,palmeread.cn
+DOMAIN-SUFFIX,palmeread.com
+DOMAIN-SUFFIX,palmestore.cn
+DOMAIN-SUFFIX,palmestore.com
+DOMAIN-SUFFIX,transmonkey.cn
+DOMAIN-SUFFIX,transmonkey.com
+DOMAIN-SUFFIX,transmonkey.net
+DOMAIN-SUFFIX,z3.cn
+DOMAIN-SUFFIX,zhangyue.com
+DOMAIN-SUFFIX,zhangyue.net
+DOMAIN-SUFFIX,zhangyue01.com
+DOMAIN-SUFFIX,zhangyue02.com
+DOMAIN-SUFFIX,zhangyue03.com
+DOMAIN-SUFFIX,zhi3.com.cn
+DOMAIN-SUFFIX,zhi3.net
+DOMAIN-SUFFIX,zuoshujiang.com

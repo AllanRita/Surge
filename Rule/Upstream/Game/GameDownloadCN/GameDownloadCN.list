@@ -1,1 +1,23 @@
-# NAME: GameDownloadCN\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2024-01-08 16:02:50\n# DOMAIN: 15\n# DOMAIN-SUFFIX: 1\n# TOTAL: 16\nDOMAIN,assets1.xboxlive.cn\nDOMAIN,assets2.xboxlive.cn\nDOMAIN,cdn-ali.content.steamchina.com\nDOMAIN,cdn-qc.content.steamchina.com\nDOMAIN,cdn-ws.content.steamchina.com\nDOMAIN,dl.delivery.mp.microsoft.com\nDOMAIN,dl.steam.clngaa.com\nDOMAIN,epicgames-download1-1251447533.file.myqcloud.com\nDOMAIN,st.dl.bscstorage.net\nDOMAIN,st.dl.eccdnx.com\nDOMAIN,steampipe.steamcontent.tnkjmec.com\nDOMAIN,tlu.dl.delivery.mp.microsoft.com\nDOMAIN,trts.baishancdnx.cn\nDOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn\nDOMAIN,xz.pphimalayanrt.com\nDOMAIN-SUFFIX,pdl.wow.battlenet.com.cn
+# NAME: GameDownloadCN
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-01-08 16:02:50
+# DOMAIN: 15
+# DOMAIN-SUFFIX: 1
+# TOTAL: 16
+DOMAIN,assets1.xboxlive.cn
+DOMAIN,assets2.xboxlive.cn
+DOMAIN,cdn-ali.content.steamchina.com
+DOMAIN,cdn-qc.content.steamchina.com
+DOMAIN,cdn-ws.content.steamchina.com
+DOMAIN,dl.delivery.mp.microsoft.com
+DOMAIN,dl.steam.clngaa.com
+DOMAIN,epicgames-download1-1251447533.file.myqcloud.com
+DOMAIN,st.dl.bscstorage.net
+DOMAIN,st.dl.eccdnx.com
+DOMAIN,steampipe.steamcontent.tnkjmec.com
+DOMAIN,tlu.dl.delivery.mp.microsoft.com
+DOMAIN,trts.baishancdnx.cn
+DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
+DOMAIN,xz.pphimalayanrt.com
+DOMAIN-SUFFIX,pdl.wow.battlenet.com.cn

@@ -1,1 +1,8 @@
-# NAME: Haveibeenpwned\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2024-01-08 16:02:54\n# DOMAIN-SUFFIX: 2\n# TOTAL: 2\nDOMAIN-SUFFIX,haveibeenpwned.com\nDOMAIN-SUFFIX,pwnedpasswords.com
+# NAME: Haveibeenpwned
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-01-08 16:02:54
+# DOMAIN-SUFFIX: 2
+# TOTAL: 2
+DOMAIN-SUFFIX,haveibeenpwned.com
+DOMAIN-SUFFIX,pwnedpasswords.com

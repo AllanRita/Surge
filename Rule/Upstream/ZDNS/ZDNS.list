@@ -1,1 +1,18 @@
-# NAME: ZDNS\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:40\n# DOMAIN-SUFFIX: 12\n# TOTAL: 12\nDOMAIN-SUFFIX,zcmbc.com.cn\nDOMAIN-SUFFIX,zdns.cn\nDOMAIN-SUFFIX,zdns.net.cn\nDOMAIN-SUFFIX,zdns.org.cn\nDOMAIN-SUFFIX,zdnscloud.biz\nDOMAIN-SUFFIX,zdnscloud.cn\nDOMAIN-SUFFIX,zdnscloud.com\nDOMAIN-SUFFIX,zdnscloud.com.cn\nDOMAIN-SUFFIX,zdnscloud.info\nDOMAIN-SUFFIX,zdnscloud.net\nDOMAIN-SUFFIX,zdnscloud.net.cn\nDOMAIN-SUFFIX,zdnscloud.org.cn
+# NAME: ZDNS
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:40
+# DOMAIN-SUFFIX: 12
+# TOTAL: 12
+DOMAIN-SUFFIX,zcmbc.com.cn
+DOMAIN-SUFFIX,zdns.cn
+DOMAIN-SUFFIX,zdns.net.cn
+DOMAIN-SUFFIX,zdns.org.cn
+DOMAIN-SUFFIX,zdnscloud.biz
+DOMAIN-SUFFIX,zdnscloud.cn
+DOMAIN-SUFFIX,zdnscloud.com
+DOMAIN-SUFFIX,zdnscloud.com.cn
+DOMAIN-SUFFIX,zdnscloud.info
+DOMAIN-SUFFIX,zdnscloud.net
+DOMAIN-SUFFIX,zdnscloud.net.cn
+DOMAIN-SUFFIX,zdnscloud.org.cn

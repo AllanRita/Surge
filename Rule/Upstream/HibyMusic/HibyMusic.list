@@ -1,1 +1,9 @@
-# NAME: HibyMusic\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:34\n# DOMAIN-SUFFIX: 3\n# TOTAL: 3\nDOMAIN-SUFFIX,hiby.cd\nDOMAIN-SUFFIX,hiby.com\nDOMAIN-SUFFIX,hibymusic.com
+# NAME: HibyMusic
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:34
+# DOMAIN-SUFFIX: 3
+# TOTAL: 3
+DOMAIN-SUFFIX,hiby.cd
+DOMAIN-SUFFIX,hiby.com
+DOMAIN-SUFFIX,hibymusic.com

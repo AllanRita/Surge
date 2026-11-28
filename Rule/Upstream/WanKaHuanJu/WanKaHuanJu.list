@@ -1,1 +1,35 @@
-# NAME: WanKaHuanJu\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:18:24\n# DOMAIN-SUFFIX: 29\n# TOTAL: 29\nDOMAIN-SUFFIX,daxianglingke.cn\nDOMAIN-SUFFIX,daxianglingke.com\nDOMAIN-SUFFIX,daxianglingke.com.cn\nDOMAIN-SUFFIX,daxianglink.cn\nDOMAIN-SUFFIX,daxianglink.com\nDOMAIN-SUFFIX,daxianglink.com.cn\nDOMAIN-SUFFIX,gdsa.com\nDOMAIN-SUFFIX,gm825.cn\nDOMAIN-SUFFIX,gm825.com\nDOMAIN-SUFFIX,gm825.com.cn\nDOMAIN-SUFFIX,gm825.net\nDOMAIN-SUFFIX,hapjs.org\nDOMAIN-SUFFIX,ita-alliance.com\nDOMAIN-SUFFIX,itgsa.com\nDOMAIN-SUFFIX,mhacn.cn\nDOMAIN-SUFFIX,mhacn.com\nDOMAIN-SUFFIX,mhacn.com.cn\nDOMAIN-SUFFIX,mhacn.net\nDOMAIN-SUFFIX,quickapp.cn\nDOMAIN-SUFFIX,quickingdata.com\nDOMAIN-SUFFIX,quicklyopen.com\nDOMAIN-SUFFIX,shenyinhudong.cn\nDOMAIN-SUFFIX,shenyinhudong.com\nDOMAIN-SUFFIX,so-quick.cn\nDOMAIN-SUFFIX,wankacn.cn\nDOMAIN-SUFFIX,wankacn.com\nDOMAIN-SUFFIX,wankacn.com.cn\nDOMAIN-SUFFIX,wankacn.net\nDOMAIN-SUFFIX,wankamall.com
+# NAME: WanKaHuanJu
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:18:24
+# DOMAIN-SUFFIX: 29
+# TOTAL: 29
+DOMAIN-SUFFIX,daxianglingke.cn
+DOMAIN-SUFFIX,daxianglingke.com
+DOMAIN-SUFFIX,daxianglingke.com.cn
+DOMAIN-SUFFIX,daxianglink.cn
+DOMAIN-SUFFIX,daxianglink.com
+DOMAIN-SUFFIX,daxianglink.com.cn
+DOMAIN-SUFFIX,gdsa.com
+DOMAIN-SUFFIX,gm825.cn
+DOMAIN-SUFFIX,gm825.com
+DOMAIN-SUFFIX,gm825.com.cn
+DOMAIN-SUFFIX,gm825.net
+DOMAIN-SUFFIX,hapjs.org
+DOMAIN-SUFFIX,ita-alliance.com
+DOMAIN-SUFFIX,itgsa.com
+DOMAIN-SUFFIX,mhacn.cn
+DOMAIN-SUFFIX,mhacn.com
+DOMAIN-SUFFIX,mhacn.com.cn
+DOMAIN-SUFFIX,mhacn.net
+DOMAIN-SUFFIX,quickapp.cn
+DOMAIN-SUFFIX,quickingdata.com
+DOMAIN-SUFFIX,quicklyopen.com
+DOMAIN-SUFFIX,shenyinhudong.cn
+DOMAIN-SUFFIX,shenyinhudong.com
+DOMAIN-SUFFIX,so-quick.cn
+DOMAIN-SUFFIX,wankacn.cn
+DOMAIN-SUFFIX,wankacn.com
+DOMAIN-SUFFIX,wankacn.com.cn
+DOMAIN-SUFFIX,wankacn.net
+DOMAIN-SUFFIX,wankamall.com

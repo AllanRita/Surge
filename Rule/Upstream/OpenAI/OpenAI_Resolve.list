@@ -1,1 +1,45 @@
-# NAME: OpenAI\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:20:00\n# DOMAIN: 7\n# DOMAIN-KEYWORD: 1\n# DOMAIN-SUFFIX: 24\n# IP-ASN: 1\n# IP-CIDR: 2\n# TOTAL: 35\nDOMAIN,browser-intake-datadoghq.com\nDOMAIN,chat.openai.com.cdn.cloudflare.net\nDOMAIN,openai-api.arkoselabs.com\nDOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net\nDOMAIN,openaicomproductionae4b.blob.core.windows.net\nDOMAIN,production-openaicom-storage.azureedge.net\nDOMAIN,static.cloudflareinsights.com\nDOMAIN-SUFFIX,ai.com\nDOMAIN-SUFFIX,algolia.net\nDOMAIN-SUFFIX,api.statsig.com\nDOMAIN-SUFFIX,auth0.com\nDOMAIN-SUFFIX,chatgpt.com\nDOMAIN-SUFFIX,chatgpt.livekit.cloud\nDOMAIN-SUFFIX,client-api.arkoselabs.com\nDOMAIN-SUFFIX,events.statsigapi.net\nDOMAIN-SUFFIX,featuregates.org\nDOMAIN-SUFFIX,host.livekit.cloud\nDOMAIN-SUFFIX,identrust.com\nDOMAIN-SUFFIX,intercom.io\nDOMAIN-SUFFIX,intercomcdn.com\nDOMAIN-SUFFIX,launchdarkly.com\nDOMAIN-SUFFIX,oaistatic.com\nDOMAIN-SUFFIX,oaiusercontent.com\nDOMAIN-SUFFIX,observeit.net\nDOMAIN-SUFFIX,openai.com\nDOMAIN-SUFFIX,openaiapi-site.azureedge.net\nDOMAIN-SUFFIX,openaicom.imgix.net\nDOMAIN-SUFFIX,segment.io\nDOMAIN-SUFFIX,sentry.io\nDOMAIN-SUFFIX,stripe.com\nDOMAIN-SUFFIX,turn.livekit.cloud\nDOMAIN-KEYWORD,openai\nIP-CIDR,24.199.123.28/32\nIP-CIDR,64.23.132.171/32\nIP-ASN,20473
+# NAME: OpenAI
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:20:00
+# DOMAIN: 7
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 24
+# IP-ASN: 1
+# IP-CIDR: 2
+# TOTAL: 35
+DOMAIN,browser-intake-datadoghq.com
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,openai-api.arkoselabs.com
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN,static.cloudflareinsights.com
+DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,algolia.net
+DOMAIN-SUFFIX,api.statsig.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,observeit.net
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,openaicom.imgix.net
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,turn.livekit.cloud
+DOMAIN-KEYWORD,openai
+IP-CIDR,24.199.123.28/32
+IP-CIDR,64.23.132.171/32
+IP-ASN,20473

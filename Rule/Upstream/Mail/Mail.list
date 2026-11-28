@@ -1,1 +1,19 @@
-# NAME: Mail\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:16:55\n# DOMAIN: 9\n# DOMAIN-SUFFIX: 3\n# TOTAL: 12\nDOMAIN,apple.imap.mail.yahoo.com\nDOMAIN,apple.smtp.mail.yahoo.com\nDOMAIN,imap-mail.outlook.com\nDOMAIN,imap.gmail.com\nDOMAIN,outlook.office365.com\nDOMAIN,pop.gmail.com\nDOMAIN,smtp-mail.outlook.com\nDOMAIN,smtp.gmail.com\nDOMAIN,smtp.office365.com\nDOMAIN-SUFFIX,imap.yandex.com\nDOMAIN-SUFFIX,m.hotmail.com\nDOMAIN-SUFFIX,smtp.yandex.com
+# NAME: Mail
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:16:55
+# DOMAIN: 9
+# DOMAIN-SUFFIX: 3
+# TOTAL: 12
+DOMAIN,apple.imap.mail.yahoo.com
+DOMAIN,apple.smtp.mail.yahoo.com
+DOMAIN,imap-mail.outlook.com
+DOMAIN,imap.gmail.com
+DOMAIN,outlook.office365.com
+DOMAIN,pop.gmail.com
+DOMAIN,smtp-mail.outlook.com
+DOMAIN,smtp.gmail.com
+DOMAIN,smtp.office365.com
+DOMAIN-SUFFIX,imap.yandex.com
+DOMAIN-SUFFIX,m.hotmail.com
+DOMAIN-SUFFIX,smtp.yandex.com

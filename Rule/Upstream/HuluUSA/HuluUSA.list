@@ -1,1 +1,60 @@
-# NAME: HuluUSA\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:41\n# DOMAIN-SUFFIX: 52\n# PROCESS-NAME: 1\n# TOTAL: 53\nDOMAIN-SUFFIX,112263.com\nDOMAIN-SUFFIX,assetshuluimcom-a.akamaihd.net\nDOMAIN-SUFFIX,callhulu.com\nDOMAIN-SUFFIX,cws-hulu.conviva.com\nDOMAIN-SUFFIX,findyourlimits.com\nDOMAIN-SUFFIX,freehulu.com\nDOMAIN-SUFFIX,hooloo.tv\nDOMAIN-SUFFIX,hoolu.com\nDOMAIN-SUFFIX,hoolu.tv\nDOMAIN-SUFFIX,hu1u.com\nDOMAIN-SUFFIX,huloo.cc\nDOMAIN-SUFFIX,huloo.tv\nDOMAIN-SUFFIX,hulu.com\nDOMAIN-SUFFIX,hulu.hb.omtrdc.net\nDOMAIN-SUFFIX,hulu.playback.edge.bamgrid.com\nDOMAIN-SUFFIX,hulu.sc.omtrdc.net\nDOMAIN-SUFFIX,hulu.tv\nDOMAIN-SUFFIX,hulu.us\nDOMAIN-SUFFIX,huluaction.com\nDOMAIN-SUFFIX,huluad.com\nDOMAIN-SUFFIX,huluapp.com\nDOMAIN-SUFFIX,huluasks.com\nDOMAIN-SUFFIX,hulucall.com\nDOMAIN-SUFFIX,hulufree.com\nDOMAIN-SUFFIX,hulugans.com\nDOMAIN-SUFFIX,hulugermany.com\nDOMAIN-SUFFIX,hulugo.com\nDOMAIN-SUFFIX,huluim.com\nDOMAIN-SUFFIX,huluinstantmessenger.com\nDOMAIN-SUFFIX,huluitaly.com\nDOMAIN-SUFFIX,hulunet.com\nDOMAIN-SUFFIX,hulunetwork.com\nDOMAIN-SUFFIX,huluplus.com\nDOMAIN-SUFFIX,hulupremium.com\nDOMAIN-SUFFIX,hulupurchase.com\nDOMAIN-SUFFIX,huluqa.com\nDOMAIN-SUFFIX,hulurussia.com\nDOMAIN-SUFFIX,huluspain.com\nDOMAIN-SUFFIX,hulusports.com\nDOMAIN-SUFFIX,hulustream.com\nDOMAIN-SUFFIX,huluteam.com\nDOMAIN-SUFFIX,hulutv.com\nDOMAIN-SUFFIX,huluusa.com\nDOMAIN-SUFFIX,joinmaidez.com\nDOMAIN-SUFFIX,mushymush.tv\nDOMAIN-SUFFIX,myhulu.com\nDOMAIN-SUFFIX,originalhulu.com\nDOMAIN-SUFFIX,payhulu.com\nDOMAIN-SUFFIX,prod.hjholdings.tv\nDOMAIN-SUFFIX,registerhulu.com\nDOMAIN-SUFFIX,thehulubraintrust.com\nDOMAIN-SUFFIX,wwwhuluplus.com\nPROCESS-NAME,com.hulu.plus
+# NAME: HuluUSA
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:41
+# DOMAIN-SUFFIX: 52
+# PROCESS-NAME: 1
+# TOTAL: 53
+DOMAIN-SUFFIX,112263.com
+DOMAIN-SUFFIX,assetshuluimcom-a.akamaihd.net
+DOMAIN-SUFFIX,callhulu.com
+DOMAIN-SUFFIX,cws-hulu.conviva.com
+DOMAIN-SUFFIX,findyourlimits.com
+DOMAIN-SUFFIX,freehulu.com
+DOMAIN-SUFFIX,hooloo.tv
+DOMAIN-SUFFIX,hoolu.com
+DOMAIN-SUFFIX,hoolu.tv
+DOMAIN-SUFFIX,hu1u.com
+DOMAIN-SUFFIX,huloo.cc
+DOMAIN-SUFFIX,huloo.tv
+DOMAIN-SUFFIX,hulu.com
+DOMAIN-SUFFIX,hulu.hb.omtrdc.net
+DOMAIN-SUFFIX,hulu.playback.edge.bamgrid.com
+DOMAIN-SUFFIX,hulu.sc.omtrdc.net
+DOMAIN-SUFFIX,hulu.tv
+DOMAIN-SUFFIX,hulu.us
+DOMAIN-SUFFIX,huluaction.com
+DOMAIN-SUFFIX,huluad.com
+DOMAIN-SUFFIX,huluapp.com
+DOMAIN-SUFFIX,huluasks.com
+DOMAIN-SUFFIX,hulucall.com
+DOMAIN-SUFFIX,hulufree.com
+DOMAIN-SUFFIX,hulugans.com
+DOMAIN-SUFFIX,hulugermany.com
+DOMAIN-SUFFIX,hulugo.com
+DOMAIN-SUFFIX,huluim.com
+DOMAIN-SUFFIX,huluinstantmessenger.com
+DOMAIN-SUFFIX,huluitaly.com
+DOMAIN-SUFFIX,hulunet.com
+DOMAIN-SUFFIX,hulunetwork.com
+DOMAIN-SUFFIX,huluplus.com
+DOMAIN-SUFFIX,hulupremium.com
+DOMAIN-SUFFIX,hulupurchase.com
+DOMAIN-SUFFIX,huluqa.com
+DOMAIN-SUFFIX,hulurussia.com
+DOMAIN-SUFFIX,huluspain.com
+DOMAIN-SUFFIX,hulusports.com
+DOMAIN-SUFFIX,hulustream.com
+DOMAIN-SUFFIX,huluteam.com
+DOMAIN-SUFFIX,hulutv.com
+DOMAIN-SUFFIX,huluusa.com
+DOMAIN-SUFFIX,joinmaidez.com
+DOMAIN-SUFFIX,mushymush.tv
+DOMAIN-SUFFIX,myhulu.com
+DOMAIN-SUFFIX,originalhulu.com
+DOMAIN-SUFFIX,payhulu.com
+DOMAIN-SUFFIX,prod.hjholdings.tv
+DOMAIN-SUFFIX,registerhulu.com
+DOMAIN-SUFFIX,thehulubraintrust.com
+DOMAIN-SUFFIX,wwwhuluplus.com
+PROCESS-NAME,com.hulu.plus

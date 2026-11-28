@@ -1,1 +1,8 @@
-# NAME: Contentful\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2024-01-08 16:02:53\n# DOMAIN-SUFFIX: 2\n# TOTAL: 2\nDOMAIN-SUFFIX,contentful.com\nDOMAIN-SUFFIX,ctfassets.net
+# NAME: Contentful
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-01-08 16:02:53
+# DOMAIN-SUFFIX: 2
+# TOTAL: 2
+DOMAIN-SUFFIX,contentful.com
+DOMAIN-SUFFIX,ctfassets.net

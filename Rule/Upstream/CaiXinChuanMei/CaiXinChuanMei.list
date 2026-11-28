@@ -1,1 +1,30 @@
-# NAME: CaiXinChuanMei\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:32\n# DOMAIN-SUFFIX: 24\n# TOTAL: 24\nDOMAIN-SUFFIX,caing.cn\nDOMAIN-SUFFIX,caing.com\nDOMAIN-SUFFIX,caixin.com\nDOMAIN-SUFFIX,caixinmedia.cn\nDOMAIN-SUFFIX,caixinmedia.com\nDOMAIN-SUFFIX,caixinmedia.com.cn\nDOMAIN-SUFFIX,caixinonline.com\nDOMAIN-SUFFIX,healthpoint.cn\nDOMAIN-SUFFIX,healthpoint.com.cn\nDOMAIN-SUFFIX,icaing.cn\nDOMAIN-SUFFIX,jianhangcaifu.com\nDOMAIN-SUFFIX,lifetmt.cn\nDOMAIN-SUFFIX,lifetmt.com\nDOMAIN-SUFFIX,lifetmt.com.cn\nDOMAIN-SUFFIX,lifetmt.net\nDOMAIN-SUFFIX,lifetmt.org\nDOMAIN-SUFFIX,weinews.cn\nDOMAIN-SUFFIX,weinews.com.cn\nDOMAIN-SUFFIX,whyenjoy.com\nDOMAIN-SUFFIX,whyenjoy.com.cn\nDOMAIN-SUFFIX,wusuobuneng.cn\nDOMAIN-SUFFIX,wusuobuneng.com\nDOMAIN-SUFFIX,wusuobuneng.com.cn\nDOMAIN-SUFFIX,wusuobuneng.org
+# NAME: CaiXinChuanMei
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:32
+# DOMAIN-SUFFIX: 24
+# TOTAL: 24
+DOMAIN-SUFFIX,caing.cn
+DOMAIN-SUFFIX,caing.com
+DOMAIN-SUFFIX,caixin.com
+DOMAIN-SUFFIX,caixinmedia.cn
+DOMAIN-SUFFIX,caixinmedia.com
+DOMAIN-SUFFIX,caixinmedia.com.cn
+DOMAIN-SUFFIX,caixinonline.com
+DOMAIN-SUFFIX,healthpoint.cn
+DOMAIN-SUFFIX,healthpoint.com.cn
+DOMAIN-SUFFIX,icaing.cn
+DOMAIN-SUFFIX,jianhangcaifu.com
+DOMAIN-SUFFIX,lifetmt.cn
+DOMAIN-SUFFIX,lifetmt.com
+DOMAIN-SUFFIX,lifetmt.com.cn
+DOMAIN-SUFFIX,lifetmt.net
+DOMAIN-SUFFIX,lifetmt.org
+DOMAIN-SUFFIX,weinews.cn
+DOMAIN-SUFFIX,weinews.com.cn
+DOMAIN-SUFFIX,whyenjoy.com
+DOMAIN-SUFFIX,whyenjoy.com.cn
+DOMAIN-SUFFIX,wusuobuneng.cn
+DOMAIN-SUFFIX,wusuobuneng.com
+DOMAIN-SUFFIX,wusuobuneng.com.cn
+DOMAIN-SUFFIX,wusuobuneng.org

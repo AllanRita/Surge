@@ -1,1 +1,17 @@
-# NAME: Majsoul\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:18:25\n# DOMAIN-SUFFIX: 11\n# TOTAL: 11\nDOMAIN-SUFFIX,game.maj-soul.com\nDOMAIN-SUFFIX,gateway-cdn.maj-soul.com\nDOMAIN-SUFFIX,gateway-hw.maj-soul.com\nDOMAIN-SUFFIX,gateway-sy.catmjstudio.com\nDOMAIN-SUFFIX,gateway-sy.maj-soul.com\nDOMAIN-SUFFIX,gateway-v2.maj-soul.com\nDOMAIN-SUFFIX,lb-cdn.maj-soul.com\nDOMAIN-SUFFIX,lb-hw.maj-soul.com\nDOMAIN-SUFFIX,lb-sy.maj-soul.com\nDOMAIN-SUFFIX,lb-v2.maj-soul.com\nDOMAIN-SUFFIX,majsoul-hk-client.cn-hongkong.log.aliyuncs.com
+# NAME: Majsoul
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:18:25
+# DOMAIN-SUFFIX: 11
+# TOTAL: 11
+DOMAIN-SUFFIX,game.maj-soul.com
+DOMAIN-SUFFIX,gateway-cdn.maj-soul.com
+DOMAIN-SUFFIX,gateway-hw.maj-soul.com
+DOMAIN-SUFFIX,gateway-sy.catmjstudio.com
+DOMAIN-SUFFIX,gateway-sy.maj-soul.com
+DOMAIN-SUFFIX,gateway-v2.maj-soul.com
+DOMAIN-SUFFIX,lb-cdn.maj-soul.com
+DOMAIN-SUFFIX,lb-hw.maj-soul.com
+DOMAIN-SUFFIX,lb-sy.maj-soul.com
+DOMAIN-SUFFIX,lb-v2.maj-soul.com
+DOMAIN-SUFFIX,majsoul-hk-client.cn-hongkong.log.aliyuncs.com

@@ -1,1 +1,11 @@
-# NAME: Gog\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:15:09\n# DOMAIN: 1\n# DOMAIN-SUFFIX: 3\n# TOTAL: 4\nDOMAIN,gog.salesmanago.com\nDOMAIN-SUFFIX,gog-statics.com\nDOMAIN-SUFFIX,gog.com\nDOMAIN-SUFFIX,gog.qtlglb.com
+# NAME: Gog
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:15:09
+# DOMAIN: 1
+# DOMAIN-SUFFIX: 3
+# TOTAL: 4
+DOMAIN,gog.salesmanago.com
+DOMAIN-SUFFIX,gog-statics.com
+DOMAIN-SUFFIX,gog.com
+DOMAIN-SUFFIX,gog.qtlglb.com

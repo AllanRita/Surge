@@ -1,1 +1,15 @@
-# NAME: HunanTV\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:34\n# DOMAIN-SUFFIX: 7\n# USER-AGENT: 1\n# TOTAL: 8\nDOMAIN-SUFFIX,hifuntv.com\nDOMAIN-SUFFIX,hitv.com\nDOMAIN-SUFFIX,hunaniptv.com\nDOMAIN-SUFFIX,hunantv.com\nDOMAIN-SUFFIX,imgo.tv\nDOMAIN-SUFFIX,mgtv.com\nDOMAIN-SUFFIX,tazai.com\nUSER-AGENT,MGTV*
+# NAME: HunanTV
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:34
+# DOMAIN-SUFFIX: 7
+# USER-AGENT: 1
+# TOTAL: 8
+DOMAIN-SUFFIX,hifuntv.com
+DOMAIN-SUFFIX,hitv.com
+DOMAIN-SUFFIX,hunaniptv.com
+DOMAIN-SUFFIX,hunantv.com
+DOMAIN-SUFFIX,imgo.tv
+DOMAIN-SUFFIX,mgtv.com
+DOMAIN-SUFFIX,tazai.com
+USER-AGENT,MGTV*

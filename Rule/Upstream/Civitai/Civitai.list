@@ -1,1 +1,7 @@
-# NAME: Civitai\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:20:01\n# DOMAIN-SUFFIX: 1\n# TOTAL: 1\nDOMAIN-SUFFIX,civitai.com
+# NAME: Civitai
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:20:01
+# DOMAIN-SUFFIX: 1
+# TOTAL: 1
+DOMAIN-SUFFIX,civitai.com

@@ -1,1 +1,23 @@
-# NAME: Dailymail\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:43\n# DOMAIN-SUFFIX: 17\n# TOTAL: 17\nDOMAIN-SUFFIX,anm.co.uk\nDOMAIN-SUFFIX,dailym.ai\nDOMAIN-SUFFIX,dailymail.co.uk\nDOMAIN-SUFFIX,dailymail.com\nDOMAIN-SUFFIX,dailymail.com.au\nDOMAIN-SUFFIX,dailymail.dk\nDOMAIN-SUFFIX,dailymailonline.com\nDOMAIN-SUFFIX,dmgmediaprivacy.co.uk\nDOMAIN-SUFFIX,mailhealth.com\nDOMAIN-SUFFIX,mailonline.co.uk\nDOMAIN-SUFFIX,mailonline.com\nDOMAIN-SUFFIX,mailonsunday.co.uk\nDOMAIN-SUFFIX,mailonsunday.ie\nDOMAIN-SUFFIX,metro.co.uk\nDOMAIN-SUFFIX,mol.im\nDOMAIN-SUFFIX,thisismoney.co.uk\nDOMAIN-SUFFIX,thismon.ee
+# NAME: Dailymail
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:43
+# DOMAIN-SUFFIX: 17
+# TOTAL: 17
+DOMAIN-SUFFIX,anm.co.uk
+DOMAIN-SUFFIX,dailym.ai
+DOMAIN-SUFFIX,dailymail.co.uk
+DOMAIN-SUFFIX,dailymail.com
+DOMAIN-SUFFIX,dailymail.com.au
+DOMAIN-SUFFIX,dailymail.dk
+DOMAIN-SUFFIX,dailymailonline.com
+DOMAIN-SUFFIX,dmgmediaprivacy.co.uk
+DOMAIN-SUFFIX,mailhealth.com
+DOMAIN-SUFFIX,mailonline.co.uk
+DOMAIN-SUFFIX,mailonline.com
+DOMAIN-SUFFIX,mailonsunday.co.uk
+DOMAIN-SUFFIX,mailonsunday.ie
+DOMAIN-SUFFIX,metro.co.uk
+DOMAIN-SUFFIX,mol.im
+DOMAIN-SUFFIX,thisismoney.co.uk
+DOMAIN-SUFFIX,thismon.ee

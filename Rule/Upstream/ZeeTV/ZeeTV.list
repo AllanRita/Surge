@@ -1,1 +1,15 @@
-# NAME: ZeeTV\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:00\n# DOMAIN-SUFFIX: 9\n# TOTAL: 9\nDOMAIN-SUFFIX,z5.app\nDOMAIN-SUFFIX,z5.com\nDOMAIN-SUFFIX,zee5.com\nDOMAIN-SUFFIX,zee5.in\nDOMAIN-SUFFIX,zee5.tv\nDOMAIN-SUFFIX,zeebioskop.com\nDOMAIN-SUFFIX,zeetv.co.uk\nDOMAIN-SUFFIX,zeetv.com\nDOMAIN-SUFFIX,zeeuk.com
+# NAME: ZeeTV
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:00
+# DOMAIN-SUFFIX: 9
+# TOTAL: 9
+DOMAIN-SUFFIX,z5.app
+DOMAIN-SUFFIX,z5.com
+DOMAIN-SUFFIX,zee5.com
+DOMAIN-SUFFIX,zee5.in
+DOMAIN-SUFFIX,zee5.tv
+DOMAIN-SUFFIX,zeebioskop.com
+DOMAIN-SUFFIX,zeetv.co.uk
+DOMAIN-SUFFIX,zeetv.com
+DOMAIN-SUFFIX,zeeuk.com

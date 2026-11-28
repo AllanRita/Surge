@@ -1,1 +1,33 @@
-# NAME: Vercel\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:48\n# DOMAIN-SUFFIX: 27\n# TOTAL: 27\nDOMAIN-SUFFIX,err.sh\nDOMAIN-SUFFIX,hyper.is\nDOMAIN-SUFFIX,nextjs.org\nDOMAIN-SUFFIX,now.sh\nDOMAIN-SUFFIX,static.fun\nDOMAIN-SUFFIX,title.sh\nDOMAIN-SUFFIX,turborepo.org\nDOMAIN-SUFFIX,vercel-analytics.com\nDOMAIN-SUFFIX,vercel-dns.com\nDOMAIN-SUFFIX,vercel-insights.com\nDOMAIN-SUFFIX,vercel-status.com\nDOMAIN-SUFFIX,vercel.app\nDOMAIN-SUFFIX,vercel.blog\nDOMAIN-SUFFIX,vercel.com\nDOMAIN-SUFFIX,vercel.events\nDOMAIN-SUFFIX,vercel.link\nDOMAIN-SUFFIX,vercel.live\nDOMAIN-SUFFIX,vercel.pub\nDOMAIN-SUFFIX,vercel.sh\nDOMAIN-SUFFIX,vercel.store\nDOMAIN-SUFFIX,zeit-world.co.uk\nDOMAIN-SUFFIX,zeit-world.com\nDOMAIN-SUFFIX,zeit-world.net\nDOMAIN-SUFFIX,zeit-world.org\nDOMAIN-SUFFIX,zeit.co\nDOMAIN-SUFFIX,zeit.sh\nDOMAIN-SUFFIX,zeitworld.com
+# NAME: Vercel
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:48
+# DOMAIN-SUFFIX: 27
+# TOTAL: 27
+DOMAIN-SUFFIX,err.sh
+DOMAIN-SUFFIX,hyper.is
+DOMAIN-SUFFIX,nextjs.org
+DOMAIN-SUFFIX,now.sh
+DOMAIN-SUFFIX,static.fun
+DOMAIN-SUFFIX,title.sh
+DOMAIN-SUFFIX,turborepo.org
+DOMAIN-SUFFIX,vercel-analytics.com
+DOMAIN-SUFFIX,vercel-dns.com
+DOMAIN-SUFFIX,vercel-insights.com
+DOMAIN-SUFFIX,vercel-status.com
+DOMAIN-SUFFIX,vercel.app
+DOMAIN-SUFFIX,vercel.blog
+DOMAIN-SUFFIX,vercel.com
+DOMAIN-SUFFIX,vercel.events
+DOMAIN-SUFFIX,vercel.link
+DOMAIN-SUFFIX,vercel.live
+DOMAIN-SUFFIX,vercel.pub
+DOMAIN-SUFFIX,vercel.sh
+DOMAIN-SUFFIX,vercel.store
+DOMAIN-SUFFIX,zeit-world.co.uk
+DOMAIN-SUFFIX,zeit-world.com
+DOMAIN-SUFFIX,zeit-world.net
+DOMAIN-SUFFIX,zeit-world.org
+DOMAIN-SUFFIX,zeit.co
+DOMAIN-SUFFIX,zeit.sh
+DOMAIN-SUFFIX,zeitworld.com

@@ -1,1 +1,28 @@
-# NAME: RuanMei\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:37\n# DOMAIN-SUFFIX: 22\n# TOTAL: 22\nDOMAIN-SUFFIX,6655.com\nDOMAIN-SUFFIX,cike.cn\nDOMAIN-SUFFIX,cooldock.com\nDOMAIN-SUFFIX,dnsnut.com\nDOMAIN-SUFFIX,fengkeji.com\nDOMAIN-SUFFIX,henku.com\nDOMAIN-SUFFIX,ithome.com\nDOMAIN-SUFFIX,ithome.net\nDOMAIN-SUFFIX,jimeng.com\nDOMAIN-SUFFIX,lapin365.com\nDOMAIN-SUFFIX,loogoo.com\nDOMAIN-SUFFIX,ruanmei.cn\nDOMAIN-SUFFIX,ruanmei.com\nDOMAIN-SUFFIX,saayaa.com\nDOMAIN-SUFFIX,souxia.com\nDOMAIN-SUFFIX,tweakcube.com\nDOMAIN-SUFFIX,vista123.com\nDOMAIN-SUFFIX,wanhongbao.com\nDOMAIN-SUFFIX,win7china.com\nDOMAIN-SUFFIX,win8china.com\nDOMAIN-SUFFIX,yaodu365.com\nDOMAIN-SUFFIX,zuihuimai.com
+# NAME: RuanMei
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:37
+# DOMAIN-SUFFIX: 22
+# TOTAL: 22
+DOMAIN-SUFFIX,6655.com
+DOMAIN-SUFFIX,cike.cn
+DOMAIN-SUFFIX,cooldock.com
+DOMAIN-SUFFIX,dnsnut.com
+DOMAIN-SUFFIX,fengkeji.com
+DOMAIN-SUFFIX,henku.com
+DOMAIN-SUFFIX,ithome.com
+DOMAIN-SUFFIX,ithome.net
+DOMAIN-SUFFIX,jimeng.com
+DOMAIN-SUFFIX,lapin365.com
+DOMAIN-SUFFIX,loogoo.com
+DOMAIN-SUFFIX,ruanmei.cn
+DOMAIN-SUFFIX,ruanmei.com
+DOMAIN-SUFFIX,saayaa.com
+DOMAIN-SUFFIX,souxia.com
+DOMAIN-SUFFIX,tweakcube.com
+DOMAIN-SUFFIX,vista123.com
+DOMAIN-SUFFIX,wanhongbao.com
+DOMAIN-SUFFIX,win7china.com
+DOMAIN-SUFFIX,win8china.com
+DOMAIN-SUFFIX,yaodu365.com
+DOMAIN-SUFFIX,zuihuimai.com

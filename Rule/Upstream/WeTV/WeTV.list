@@ -1,1 +1,20 @@
-# NAME: WeTV\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2026-08-01 03:15:15\n# DOMAIN: 1\n# DOMAIN-SUFFIX: 5\n# IP-CIDR: 1\n# PROCESS-NAME: 2\n# USER-AGENT: 1\n# TOTAL: 10\nDOMAIN,wetv.qq.com\nDOMAIN-SUFFIX,iflix-images.akamaized.net\nDOMAIN-SUFFIX,iflix.com\nDOMAIN-SUFFIX,vv.video.qq.com\nDOMAIN-SUFFIX,wetv.vip\nDOMAIN-SUFFIX,wetvinfo.com\nIP-CIDR,150.109.28.51/32,no-resolve\nUSER-AGENT,WeTV*\nPROCESS-NAME,com.tencent.qqlivei18n\nPROCESS-NAME,com.tencent.qqlivei18n.us
+# NAME: WeTV
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2026-08-01 03:15:15
+# DOMAIN: 1
+# DOMAIN-SUFFIX: 5
+# IP-CIDR: 1
+# PROCESS-NAME: 2
+# USER-AGENT: 1
+# TOTAL: 10
+DOMAIN,wetv.qq.com
+DOMAIN-SUFFIX,iflix-images.akamaized.net
+DOMAIN-SUFFIX,iflix.com
+DOMAIN-SUFFIX,vv.video.qq.com
+DOMAIN-SUFFIX,wetv.vip
+DOMAIN-SUFFIX,wetvinfo.com
+IP-CIDR,150.109.28.51/32,no-resolve
+USER-AGENT,WeTV*
+PROCESS-NAME,com.tencent.qqlivei18n
+PROCESS-NAME,com.tencent.qqlivei18n.us

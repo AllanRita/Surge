@@ -1,1 +1,76 @@
-# NAME: Canon\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:43\n# DOMAIN-SUFFIX: 70\n# TOTAL: 70\nDOMAIN-SUFFIX,c-ij.com\nDOMAIN-SUFFIX,canon-cee.com\nDOMAIN-SUFFIX,canon-cmos-sensors.com\nDOMAIN-SUFFIX,canon-cna.com\nDOMAIN-SUFFIX,canon-ebm.com.hk\nDOMAIN-SUFFIX,canon-emea.com\nDOMAIN-SUFFIX,canon-emirates.ae\nDOMAIN-SUFFIX,canon-europa.com\nDOMAIN-SUFFIX,canon-europe.com\nDOMAIN-SUFFIX,canon-me.com\nDOMAIN-SUFFIX,canon-ois.qa\nDOMAIN-SUFFIX,canon-se.com.tw\nDOMAIN-SUFFIX,canon.am\nDOMAIN-SUFFIX,canon.at\nDOMAIN-SUFFIX,canon.az\nDOMAIN-SUFFIX,canon.ba\nDOMAIN-SUFFIX,canon.be\nDOMAIN-SUFFIX,canon.bg\nDOMAIN-SUFFIX,canon.ca\nDOMAIN-SUFFIX,canon.ch\nDOMAIN-SUFFIX,canon.cn\nDOMAIN-SUFFIX,canon.co.il\nDOMAIN-SUFFIX,canon.co.uk\nDOMAIN-SUFFIX,canon.co.za\nDOMAIN-SUFFIX,canon.com\nDOMAIN-SUFFIX,canon.com.al\nDOMAIN-SUFFIX,canon.com.au\nDOMAIN-SUFFIX,canon.com.by\nDOMAIN-SUFFIX,canon.com.cn\nDOMAIN-SUFFIX,canon.com.cy\nDOMAIN-SUFFIX,canon.com.hk\nDOMAIN-SUFFIX,canon.com.mk\nDOMAIN-SUFFIX,canon.com.mt\nDOMAIN-SUFFIX,canon.com.my\nDOMAIN-SUFFIX,canon.com.tr\nDOMAIN-SUFFIX,canon.com.tw\nDOMAIN-SUFFIX,canon.cz\nDOMAIN-SUFFIX,canon.de\nDOMAIN-SUFFIX,canon.dk\nDOMAIN-SUFFIX,canon.ee\nDOMAIN-SUFFIX,canon.es\nDOMAIN-SUFFIX,canon.fi\nDOMAIN-SUFFIX,canon.fr\nDOMAIN-SUFFIX,canon.ge\nDOMAIN-SUFFIX,canon.gr\nDOMAIN-SUFFIX,canon.hr\nDOMAIN-SUFFIX,canon.hu\nDOMAIN-SUFFIX,canon.ie\nDOMAIN-SUFFIX,canon.it\nDOMAIN-SUFFIX,canon.kz\nDOMAIN-SUFFIX,canon.lt\nDOMAIN-SUFFIX,canon.lu\nDOMAIN-SUFFIX,canon.lv\nDOMAIN-SUFFIX,canon.me\nDOMAIN-SUFFIX,canon.net\nDOMAIN-SUFFIX,canon.nl\nDOMAIN-SUFFIX,canon.no\nDOMAIN-SUFFIX,canon.pl\nDOMAIN-SUFFIX,canon.pt\nDOMAIN-SUFFIX,canon.ro\nDOMAIN-SUFFIX,canon.rs\nDOMAIN-SUFFIX,canon.ru\nDOMAIN-SUFFIX,canon.se\nDOMAIN-SUFFIX,canon.si\nDOMAIN-SUFFIX,canon.sk\nDOMAIN-SUFFIX,canon.tj\nDOMAIN-SUFFIX,canon.ua\nDOMAIN-SUFFIX,canon.uz\nDOMAIN-SUFFIX,canonfoundation.org\nDOMAIN-SUFFIX,canonproprinters.com
+# NAME: Canon
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:43
+# DOMAIN-SUFFIX: 70
+# TOTAL: 70
+DOMAIN-SUFFIX,c-ij.com
+DOMAIN-SUFFIX,canon-cee.com
+DOMAIN-SUFFIX,canon-cmos-sensors.com
+DOMAIN-SUFFIX,canon-cna.com
+DOMAIN-SUFFIX,canon-ebm.com.hk
+DOMAIN-SUFFIX,canon-emea.com
+DOMAIN-SUFFIX,canon-emirates.ae
+DOMAIN-SUFFIX,canon-europa.com
+DOMAIN-SUFFIX,canon-europe.com
+DOMAIN-SUFFIX,canon-me.com
+DOMAIN-SUFFIX,canon-ois.qa
+DOMAIN-SUFFIX,canon-se.com.tw
+DOMAIN-SUFFIX,canon.am
+DOMAIN-SUFFIX,canon.at
+DOMAIN-SUFFIX,canon.az
+DOMAIN-SUFFIX,canon.ba
+DOMAIN-SUFFIX,canon.be
+DOMAIN-SUFFIX,canon.bg
+DOMAIN-SUFFIX,canon.ca
+DOMAIN-SUFFIX,canon.ch
+DOMAIN-SUFFIX,canon.cn
+DOMAIN-SUFFIX,canon.co.il
+DOMAIN-SUFFIX,canon.co.uk
+DOMAIN-SUFFIX,canon.co.za
+DOMAIN-SUFFIX,canon.com
+DOMAIN-SUFFIX,canon.com.al
+DOMAIN-SUFFIX,canon.com.au
+DOMAIN-SUFFIX,canon.com.by
+DOMAIN-SUFFIX,canon.com.cn
+DOMAIN-SUFFIX,canon.com.cy
+DOMAIN-SUFFIX,canon.com.hk
+DOMAIN-SUFFIX,canon.com.mk
+DOMAIN-SUFFIX,canon.com.mt
+DOMAIN-SUFFIX,canon.com.my
+DOMAIN-SUFFIX,canon.com.tr
+DOMAIN-SUFFIX,canon.com.tw
+DOMAIN-SUFFIX,canon.cz
+DOMAIN-SUFFIX,canon.de
+DOMAIN-SUFFIX,canon.dk
+DOMAIN-SUFFIX,canon.ee
+DOMAIN-SUFFIX,canon.es
+DOMAIN-SUFFIX,canon.fi
+DOMAIN-SUFFIX,canon.fr
+DOMAIN-SUFFIX,canon.ge
+DOMAIN-SUFFIX,canon.gr
+DOMAIN-SUFFIX,canon.hr
+DOMAIN-SUFFIX,canon.hu
+DOMAIN-SUFFIX,canon.ie
+DOMAIN-SUFFIX,canon.it
+DOMAIN-SUFFIX,canon.kz
+DOMAIN-SUFFIX,canon.lt
+DOMAIN-SUFFIX,canon.lu
+DOMAIN-SUFFIX,canon.lv
+DOMAIN-SUFFIX,canon.me
+DOMAIN-SUFFIX,canon.net
+DOMAIN-SUFFIX,canon.nl
+DOMAIN-SUFFIX,canon.no
+DOMAIN-SUFFIX,canon.pl
+DOMAIN-SUFFIX,canon.pt
+DOMAIN-SUFFIX,canon.ro
+DOMAIN-SUFFIX,canon.rs
+DOMAIN-SUFFIX,canon.ru
+DOMAIN-SUFFIX,canon.se
+DOMAIN-SUFFIX,canon.si
+DOMAIN-SUFFIX,canon.sk
+DOMAIN-SUFFIX,canon.tj
+DOMAIN-SUFFIX,canon.ua
+DOMAIN-SUFFIX,canon.uz
+DOMAIN-SUFFIX,canonfoundation.org
+DOMAIN-SUFFIX,canonproprinters.com

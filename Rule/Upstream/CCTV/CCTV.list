@@ -1,1 +1,43 @@
-# NAME: CCTV\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:29\n# DOMAIN-SUFFIX: 37\n# TOTAL: 37\nDOMAIN-SUFFIX,cctv.cn\nDOMAIN-SUFFIX,cctv.com\nDOMAIN-SUFFIX,cctvlib.cn\nDOMAIN-SUFFIX,cctvlib.com.cn\nDOMAIN-SUFFIX,cctvlibrary.cn\nDOMAIN-SUFFIX,cctvlibrary.com.cn\nDOMAIN-SUFFIX,cctvpic.com\nDOMAIN-SUFFIX,cctvpro.cn\nDOMAIN-SUFFIX,cctvpro.com.cn\nDOMAIN-SUFFIX,chinaepg.cn\nDOMAIN-SUFFIX,chinalive.com\nDOMAIN-SUFFIX,citv.net.cn\nDOMAIN-SUFFIX,cnms.net.cn\nDOMAIN-SUFFIX,cntv.cn\nDOMAIN-SUFFIX,cntv.com.cn\nDOMAIN-SUFFIX,cntvwb.cn\nDOMAIN-SUFFIX,gjgbdszt.cn\nDOMAIN-SUFFIX,gjgbdszt.com.cn\nDOMAIN-SUFFIX,gjgbdszt.net.cn\nDOMAIN-SUFFIX,ipanda.cn\nDOMAIN-SUFFIX,ipanda.com\nDOMAIN-SUFFIX,ipanda.com.cn\nDOMAIN-SUFFIX,ipanda.net\nDOMAIN-SUFFIX,livechina.cn\nDOMAIN-SUFFIX,livechina.com\nDOMAIN-SUFFIX,olympicchannelchina.cn\nDOMAIN-SUFFIX,tvcc.cn\nDOMAIN-SUFFIX,tvcc.com.cn\nDOMAIN-SUFFIX,xn--fiq53l6wcx3kp9bc7joo6apn8a.cn\nDOMAIN-SUFFIX,xn--fiq53l6wcx3kp9bc7joo6apn8a.xn--fiqs8s\nDOMAIN-SUFFIX,xn--fiq53l90et9fpncc7joo6apn8a.cn\nDOMAIN-SUFFIX,xn--kprv4ewxfr9cpxcc7joo6apn8a.cn\nDOMAIN-SUFFIX,xn--kprv4ewxfr9cpxcc7joo6apn8a.xn--fiqs8s\nDOMAIN-SUFFIX,zggbdszt.cn\nDOMAIN-SUFFIX,zggbdszt.com.cn\nDOMAIN-SUFFIX,zggbdszt.net.cn\nDOMAIN-SUFFIX,zygbdszt.net.cn
+# NAME: CCTV
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:29
+# DOMAIN-SUFFIX: 37
+# TOTAL: 37
+DOMAIN-SUFFIX,cctv.cn
+DOMAIN-SUFFIX,cctv.com
+DOMAIN-SUFFIX,cctvlib.cn
+DOMAIN-SUFFIX,cctvlib.com.cn
+DOMAIN-SUFFIX,cctvlibrary.cn
+DOMAIN-SUFFIX,cctvlibrary.com.cn
+DOMAIN-SUFFIX,cctvpic.com
+DOMAIN-SUFFIX,cctvpro.cn
+DOMAIN-SUFFIX,cctvpro.com.cn
+DOMAIN-SUFFIX,chinaepg.cn
+DOMAIN-SUFFIX,chinalive.com
+DOMAIN-SUFFIX,citv.net.cn
+DOMAIN-SUFFIX,cnms.net.cn
+DOMAIN-SUFFIX,cntv.cn
+DOMAIN-SUFFIX,cntv.com.cn
+DOMAIN-SUFFIX,cntvwb.cn
+DOMAIN-SUFFIX,gjgbdszt.cn
+DOMAIN-SUFFIX,gjgbdszt.com.cn
+DOMAIN-SUFFIX,gjgbdszt.net.cn
+DOMAIN-SUFFIX,ipanda.cn
+DOMAIN-SUFFIX,ipanda.com
+DOMAIN-SUFFIX,ipanda.com.cn
+DOMAIN-SUFFIX,ipanda.net
+DOMAIN-SUFFIX,livechina.cn
+DOMAIN-SUFFIX,livechina.com
+DOMAIN-SUFFIX,olympicchannelchina.cn
+DOMAIN-SUFFIX,tvcc.cn
+DOMAIN-SUFFIX,tvcc.com.cn
+DOMAIN-SUFFIX,xn--fiq53l6wcx3kp9bc7joo6apn8a.cn
+DOMAIN-SUFFIX,xn--fiq53l6wcx3kp9bc7joo6apn8a.xn--fiqs8s
+DOMAIN-SUFFIX,xn--fiq53l90et9fpncc7joo6apn8a.cn
+DOMAIN-SUFFIX,xn--kprv4ewxfr9cpxcc7joo6apn8a.cn
+DOMAIN-SUFFIX,xn--kprv4ewxfr9cpxcc7joo6apn8a.xn--fiqs8s
+DOMAIN-SUFFIX,zggbdszt.cn
+DOMAIN-SUFFIX,zggbdszt.com.cn
+DOMAIN-SUFFIX,zggbdszt.net.cn
+DOMAIN-SUFFIX,zygbdszt.net.cn

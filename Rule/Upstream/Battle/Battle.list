@@ -1,1 +1,15 @@
-# NAME: Battle\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:49\n# DOMAIN: 5\n# DOMAIN-SUFFIX: 3\n# TOTAL: 8\nDOMAIN,blizzard.nefficient.co.kr\nDOMAIN,blzddist1-a.akamaihd.net\nDOMAIN,blzddistkr1-a.akamaihd.net\nDOMAIN,bnetproduct-a.akamaihd.net\nDOMAIN,cdn.blz-contentstack.com\nDOMAIN-SUFFIX,battle.net\nDOMAIN-SUFFIX,battlenet.com.cn\nDOMAIN-SUFFIX,blizzard.com
+# NAME: Battle
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:49
+# DOMAIN: 5
+# DOMAIN-SUFFIX: 3
+# TOTAL: 8
+DOMAIN,blizzard.nefficient.co.kr
+DOMAIN,blzddist1-a.akamaihd.net
+DOMAIN,blzddistkr1-a.akamaihd.net
+DOMAIN,bnetproduct-a.akamaihd.net
+DOMAIN,cdn.blz-contentstack.com
+DOMAIN-SUFFIX,battle.net
+DOMAIN-SUFFIX,battlenet.com.cn
+DOMAIN-SUFFIX,blizzard.com

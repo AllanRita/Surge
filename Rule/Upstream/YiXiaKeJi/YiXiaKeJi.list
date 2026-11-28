@@ -1,1 +1,20 @@
-# NAME: YiXiaKeJi\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:40\n# DOMAIN-SUFFIX: 14\n# TOTAL: 14\nDOMAIN-SUFFIX,huangka.com\nDOMAIN-SUFFIX,iyuezhang.net\nDOMAIN-SUFFIX,miaokan.com\nDOMAIN-SUFFIX,miaopai.com\nDOMAIN-SUFFIX,vbbobo.com\nDOMAIN-SUFFIX,vitamio.net\nDOMAIN-SUFFIX,vitamio.org\nDOMAIN-SUFFIX,vitamio.tv\nDOMAIN-SUFFIX,vplayer.net\nDOMAIN-SUFFIX,weishipin.com\nDOMAIN-SUFFIX,xiaoka.tv\nDOMAIN-SUFFIX,xiaokaxiu.com\nDOMAIN-SUFFIX,yixia.com\nDOMAIN-SUFFIX,yixiatong.com
+# NAME: YiXiaKeJi
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:40
+# DOMAIN-SUFFIX: 14
+# TOTAL: 14
+DOMAIN-SUFFIX,huangka.com
+DOMAIN-SUFFIX,iyuezhang.net
+DOMAIN-SUFFIX,miaokan.com
+DOMAIN-SUFFIX,miaopai.com
+DOMAIN-SUFFIX,vbbobo.com
+DOMAIN-SUFFIX,vitamio.net
+DOMAIN-SUFFIX,vitamio.org
+DOMAIN-SUFFIX,vitamio.tv
+DOMAIN-SUFFIX,vplayer.net
+DOMAIN-SUFFIX,weishipin.com
+DOMAIN-SUFFIX,xiaoka.tv
+DOMAIN-SUFFIX,xiaokaxiu.com
+DOMAIN-SUFFIX,yixia.com
+DOMAIN-SUFFIX,yixiatong.com

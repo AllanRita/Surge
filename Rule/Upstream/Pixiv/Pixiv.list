@@ -1,1 +1,14 @@
-# NAME: Pixiv\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:46\n# DOMAIN-SUFFIX: 8\n# TOTAL: 8\nDOMAIN-SUFFIX,booth.pm\nDOMAIN-SUFFIX,fanbox.cc\nDOMAIN-SUFFIX,pixiv.cat\nDOMAIN-SUFFIX,pixiv.co.jp\nDOMAIN-SUFFIX,pixiv.me\nDOMAIN-SUFFIX,pixiv.net\nDOMAIN-SUFFIX,pixiv.org\nDOMAIN-SUFFIX,pximg.net
+# NAME: Pixiv
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:46
+# DOMAIN-SUFFIX: 8
+# TOTAL: 8
+DOMAIN-SUFFIX,booth.pm
+DOMAIN-SUFFIX,fanbox.cc
+DOMAIN-SUFFIX,pixiv.cat
+DOMAIN-SUFFIX,pixiv.co.jp
+DOMAIN-SUFFIX,pixiv.me
+DOMAIN-SUFFIX,pixiv.net
+DOMAIN-SUFFIX,pixiv.org
+DOMAIN-SUFFIX,pximg.net

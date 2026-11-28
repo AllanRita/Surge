@@ -1,1 +1,23 @@
-# NAME: CNKI\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:32\n# DOMAIN-SUFFIX: 17\n# TOTAL: 17\nDOMAIN-SUFFIX,bbf.org.cn\nDOMAIN-SUFFIX,bjsbnet.com\nDOMAIN-SUFFIX,chndoi.cn\nDOMAIN-SUFFIX,chndoi.com\nDOMAIN-SUFFIX,chndoi.com.cn\nDOMAIN-SUFFIX,chndoi.net\nDOMAIN-SUFFIX,chndoi.org\nDOMAIN-SUFFIX,cnki.net\nDOMAIN-SUFFIX,cnkidoi.cn\nDOMAIN-SUFFIX,cnkidoi.com\nDOMAIN-SUFFIX,cnkidoi.net\nDOMAIN-SUFFIX,cnkidoi.org\nDOMAIN-SUFFIX,wuxizazhi.cn\nDOMAIN-SUFFIX,wuxizazhi.com\nDOMAIN-SUFFIX,wuxizazhi.com.cn\nDOMAIN-SUFFIX,wuxizazhi.net\nDOMAIN-SUFFIX,wuxizazhi.net.cn
+# NAME: CNKI
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:32
+# DOMAIN-SUFFIX: 17
+# TOTAL: 17
+DOMAIN-SUFFIX,bbf.org.cn
+DOMAIN-SUFFIX,bjsbnet.com
+DOMAIN-SUFFIX,chndoi.cn
+DOMAIN-SUFFIX,chndoi.com
+DOMAIN-SUFFIX,chndoi.com.cn
+DOMAIN-SUFFIX,chndoi.net
+DOMAIN-SUFFIX,chndoi.org
+DOMAIN-SUFFIX,cnki.net
+DOMAIN-SUFFIX,cnkidoi.cn
+DOMAIN-SUFFIX,cnkidoi.com
+DOMAIN-SUFFIX,cnkidoi.net
+DOMAIN-SUFFIX,cnkidoi.org
+DOMAIN-SUFFIX,wuxizazhi.cn
+DOMAIN-SUFFIX,wuxizazhi.com
+DOMAIN-SUFFIX,wuxizazhi.com.cn
+DOMAIN-SUFFIX,wuxizazhi.net
+DOMAIN-SUFFIX,wuxizazhi.net.cn

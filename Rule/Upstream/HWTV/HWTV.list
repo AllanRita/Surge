@@ -1,1 +1,10 @@
-# NAME: HWTV\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:16:58\n# DOMAIN-SUFFIX: 2\n# USER-AGENT: 1\n# TOTAL: 3\nDOMAIN-SUFFIX,5itv.tv\nDOMAIN-SUFFIX,ocnttv.com\nUSER-AGENT,HWTVMobile*
+# NAME: HWTV
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:16:58
+# DOMAIN-SUFFIX: 2
+# USER-AGENT: 1
+# TOTAL: 3
+DOMAIN-SUFFIX,5itv.tv
+DOMAIN-SUFFIX,ocnttv.com
+USER-AGENT,HWTVMobile*

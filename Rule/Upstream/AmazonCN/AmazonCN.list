@@ -1,1 +1,53 @@
-# NAME: AmazonCN\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2024-01-08 16:03:00\n# DOMAIN-SUFFIX: 47\n# TOTAL: 47\nDOMAIN-SUFFIX,a2z.org.cn\nDOMAIN-SUFFIX,aboutamazon.cn\nDOMAIN-SUFFIX,alexafund.cn\nDOMAIN-SUFFIX,alexafund.com.cn\nDOMAIN-SUFFIX,amazon.cn\nDOMAIN-SUFFIX,amazonaws.cn\nDOMAIN-SUFFIX,amazonaws.com.cn\nDOMAIN-SUFFIX,amazonbusiness.cn\nDOMAIN-SUFFIX,amazonbusiness.com.cn\nDOMAIN-SUFFIX,amazonchoice.cn\nDOMAIN-SUFFIX,amazonchoice.com.cn\nDOMAIN-SUFFIX,amazonchoices.cn\nDOMAIN-SUFFIX,amazonchoices.com.cn\nDOMAIN-SUFFIX,amazoninspire.cn\nDOMAIN-SUFFIX,amazoninspire.com.cn\nDOMAIN-SUFFIX,amazonlaunchpad.cn\nDOMAIN-SUFFIX,amazonlaunchpad.com.cn\nDOMAIN-SUFFIX,amazonlending.com.cn\nDOMAIN-SUFFIX,amazonnow.cn\nDOMAIN-SUFFIX,amazonnow.com.cn\nDOMAIN-SUFFIX,amazonprimevideo.cn\nDOMAIN-SUFFIX,amazonprimevideo.com.cn\nDOMAIN-SUFFIX,amazonwebservices.com.cn\nDOMAIN-SUFFIX,amazonworkdocs.cn\nDOMAIN-SUFFIX,amazonworkdocs.com.cn\nDOMAIN-SUFFIX,asfiovnxocqpcry.com.cn\nDOMAIN-SUFFIX,assoc-amazon.cn\nDOMAIN-SUFFIX,aws-border.cn\nDOMAIN-SUFFIX,aws-icp-domain-manager.cn\nDOMAIN-SUFFIX,awsapps.cn\nDOMAIN-SUFFIX,awsapps.com.cn\nDOMAIN-SUFFIX,awsstatic.cn\nDOMAIN-SUFFIX,cloudfront-test.cn\nDOMAIN-SUFFIX,cloudfront.cn\nDOMAIN-SUFFIX,kindle.cn\nDOMAIN-SUFFIX,kindleoasis.cn\nDOMAIN-SUFFIX,kindleoasis.com.cn\nDOMAIN-SUFFIX,nwcdcloud.cn\nDOMAIN-SUFFIX,nwcdcloud.com.cn\nDOMAIN-SUFFIX,nwcddns.cn\nDOMAIN-SUFFIX,nwcdinfosec.cn\nDOMAIN-SUFFIX,primeday.cn\nDOMAIN-SUFFIX,primeday.com.cn\nDOMAIN-SUFFIX,route53.cn\nDOMAIN-SUFFIX,sagemaker.com.cn\nDOMAIN-SUFFIX,yamaxun.cn\nDOMAIN-SUFFIX,z.cn
+# NAME: AmazonCN
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-01-08 16:03:00
+# DOMAIN-SUFFIX: 47
+# TOTAL: 47
+DOMAIN-SUFFIX,a2z.org.cn
+DOMAIN-SUFFIX,aboutamazon.cn
+DOMAIN-SUFFIX,alexafund.cn
+DOMAIN-SUFFIX,alexafund.com.cn
+DOMAIN-SUFFIX,amazon.cn
+DOMAIN-SUFFIX,amazonaws.cn
+DOMAIN-SUFFIX,amazonaws.com.cn
+DOMAIN-SUFFIX,amazonbusiness.cn
+DOMAIN-SUFFIX,amazonbusiness.com.cn
+DOMAIN-SUFFIX,amazonchoice.cn
+DOMAIN-SUFFIX,amazonchoice.com.cn
+DOMAIN-SUFFIX,amazonchoices.cn
+DOMAIN-SUFFIX,amazonchoices.com.cn
+DOMAIN-SUFFIX,amazoninspire.cn
+DOMAIN-SUFFIX,amazoninspire.com.cn
+DOMAIN-SUFFIX,amazonlaunchpad.cn
+DOMAIN-SUFFIX,amazonlaunchpad.com.cn
+DOMAIN-SUFFIX,amazonlending.com.cn
+DOMAIN-SUFFIX,amazonnow.cn
+DOMAIN-SUFFIX,amazonnow.com.cn
+DOMAIN-SUFFIX,amazonprimevideo.cn
+DOMAIN-SUFFIX,amazonprimevideo.com.cn
+DOMAIN-SUFFIX,amazonwebservices.com.cn
+DOMAIN-SUFFIX,amazonworkdocs.cn
+DOMAIN-SUFFIX,amazonworkdocs.com.cn
+DOMAIN-SUFFIX,asfiovnxocqpcry.com.cn
+DOMAIN-SUFFIX,assoc-amazon.cn
+DOMAIN-SUFFIX,aws-border.cn
+DOMAIN-SUFFIX,aws-icp-domain-manager.cn
+DOMAIN-SUFFIX,awsapps.cn
+DOMAIN-SUFFIX,awsapps.com.cn
+DOMAIN-SUFFIX,awsstatic.cn
+DOMAIN-SUFFIX,cloudfront-test.cn
+DOMAIN-SUFFIX,cloudfront.cn
+DOMAIN-SUFFIX,kindle.cn
+DOMAIN-SUFFIX,kindleoasis.cn
+DOMAIN-SUFFIX,kindleoasis.com.cn
+DOMAIN-SUFFIX,nwcdcloud.cn
+DOMAIN-SUFFIX,nwcdcloud.com.cn
+DOMAIN-SUFFIX,nwcddns.cn
+DOMAIN-SUFFIX,nwcdinfosec.cn
+DOMAIN-SUFFIX,primeday.cn
+DOMAIN-SUFFIX,primeday.com.cn
+DOMAIN-SUFFIX,route53.cn
+DOMAIN-SUFFIX,sagemaker.com.cn
+DOMAIN-SUFFIX,yamaxun.cn
+DOMAIN-SUFFIX,z.cn

@@ -1,1 +1,40 @@
-# NAME: AsianMedia\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:16:56\n# DOMAIN: 19\n# DOMAIN-KEYWORD: 1\n# DOMAIN-SUFFIX: 4\n# IP-CIDR: 7\n# TOTAL: 31\nDOMAIN,akmcdnoversea-tw.inter.iqiyi.com\nDOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv\nDOMAIN,api.biliapi.com\nDOMAIN,api.biliapi.net\nDOMAIN,api.bilibili.com\nDOMAIN,app.biliapi.com\nDOMAIN,app.biliapi.net\nDOMAIN,app.bilibili.com\nDOMAIN,cache.video.iqiyi.com\nDOMAIN,chuangcachecdnoversea-tw.inter.iqiyi.com\nDOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv\nDOMAIN,grpc.biliapi.net\nDOMAIN,intl-rcd.iqiyi.com\nDOMAIN,intl-subscription.iqiyi.com\nDOMAIN,intl.iqiyi.com\nDOMAIN,m.bilibili.com\nDOMAIN,mobileso.bz.mgtv.com\nDOMAIN,upos-hz-mirrorakam.akamaized.net\nDOMAIN,www.bilibili.com\nDOMAIN-SUFFIX,api.mgtv.com\nDOMAIN-SUFFIX,iq.com\nDOMAIN-SUFFIX,wetv.vip\nDOMAIN-SUFFIX,wetvinfo.com\nDOMAIN-KEYWORD,cn-hk-eq-bcache-\nIP-CIDR,103.44.56.0/22\nIP-CIDR,116.211.202.206/32\nIP-CIDR,116.211.202.216/32\nIP-CIDR,118.26.120.0/24\nIP-CIDR,118.26.32.0/23\nIP-CIDR,23.40.241.251/32\nIP-CIDR,23.40.242.10/32
+# NAME: AsianMedia
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:16:56
+# DOMAIN: 19
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 4
+# IP-CIDR: 7
+# TOTAL: 31
+DOMAIN,akmcdnoversea-tw.inter.iqiyi.com
+DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
+DOMAIN,api.biliapi.com
+DOMAIN,api.biliapi.net
+DOMAIN,api.bilibili.com
+DOMAIN,app.biliapi.com
+DOMAIN,app.biliapi.net
+DOMAIN,app.bilibili.com
+DOMAIN,cache.video.iqiyi.com
+DOMAIN,chuangcachecdnoversea-tw.inter.iqiyi.com
+DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
+DOMAIN,grpc.biliapi.net
+DOMAIN,intl-rcd.iqiyi.com
+DOMAIN,intl-subscription.iqiyi.com
+DOMAIN,intl.iqiyi.com
+DOMAIN,m.bilibili.com
+DOMAIN,mobileso.bz.mgtv.com
+DOMAIN,upos-hz-mirrorakam.akamaized.net
+DOMAIN,www.bilibili.com
+DOMAIN-SUFFIX,api.mgtv.com
+DOMAIN-SUFFIX,iq.com
+DOMAIN-SUFFIX,wetv.vip
+DOMAIN-SUFFIX,wetvinfo.com
+DOMAIN-KEYWORD,cn-hk-eq-bcache-
+IP-CIDR,103.44.56.0/22
+IP-CIDR,116.211.202.206/32
+IP-CIDR,116.211.202.216/32
+IP-CIDR,118.26.120.0/24
+IP-CIDR,118.26.32.0/23
+IP-CIDR,23.40.241.251/32
+IP-CIDR,23.40.242.10/32

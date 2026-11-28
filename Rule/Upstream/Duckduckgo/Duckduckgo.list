@@ -1,1 +1,49 @@
-# NAME: Duckduckgo\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:43\n# DOMAIN-SUFFIX: 43\n# TOTAL: 43\nDOMAIN-SUFFIX,cispaletter.com\nDOMAIN-SUFFIX,cispaletter.org\nDOMAIN-SUFFIX,cometotheduckside.com\nDOMAIN-SUFFIX,ddg.co\nDOMAIN-SUFFIX,ddg.gg\nDOMAIN-SUFFIX,ddh.gg\nDOMAIN-SUFFIX,dgg.gg\nDOMAIN-SUFFIX,dontbubble.us\nDOMAIN-SUFFIX,donttrack.us\nDOMAIN-SUFFIX,duck.co\nDOMAIN-SUFFIX,duck.com\nDOMAIN-SUFFIX,duckduckco.com\nDOMAIN-SUFFIX,duckduckco.de\nDOMAIN-SUFFIX,duckduckgo.ca\nDOMAIN-SUFFIX,duckduckgo.co\nDOMAIN-SUFFIX,duckduckgo.co.uk\nDOMAIN-SUFFIX,duckduckgo.com\nDOMAIN-SUFFIX,duckduckgo.com.mx\nDOMAIN-SUFFIX,duckduckgo.com.tw\nDOMAIN-SUFFIX,duckduckgo.de\nDOMAIN-SUFFIX,duckduckgo.dk\nDOMAIN-SUFFIX,duckduckgo.in\nDOMAIN-SUFFIX,duckduckgo.jp\nDOMAIN-SUFFIX,duckduckgo.ke\nDOMAIN-SUFFIX,duckduckgo.mx\nDOMAIN-SUFFIX,duckduckgo.nl\nDOMAIN-SUFFIX,duckduckgo.org\nDOMAIN-SUFFIX,duckduckgo.pl\nDOMAIN-SUFFIX,duckduckgo.sg\nDOMAIN-SUFFIX,duckduckgo.uk\nDOMAIN-SUFFIX,duckduckhack.com\nDOMAIN-SUFFIX,duckgo.com\nDOMAIN-SUFFIX,ducksear.ch\nDOMAIN-SUFFIX,duckside.com\nDOMAIN-SUFFIX,dukgo.com\nDOMAIN-SUFFIX,enteentegeh.de\nDOMAIN-SUFFIX,fixtracking.com\nDOMAIN-SUFFIX,goduckgo.com\nDOMAIN-SUFFIX,hacksear.ch\nDOMAIN-SUFFIX,justduckit.com\nDOMAIN-SUFFIX,privacysimplified.com\nDOMAIN-SUFFIX,privatebrowsingmyths.com\nDOMAIN-SUFFIX,spreadprivacy.com
+# NAME: Duckduckgo
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:43
+# DOMAIN-SUFFIX: 43
+# TOTAL: 43
+DOMAIN-SUFFIX,cispaletter.com
+DOMAIN-SUFFIX,cispaletter.org
+DOMAIN-SUFFIX,cometotheduckside.com
+DOMAIN-SUFFIX,ddg.co
+DOMAIN-SUFFIX,ddg.gg
+DOMAIN-SUFFIX,ddh.gg
+DOMAIN-SUFFIX,dgg.gg
+DOMAIN-SUFFIX,dontbubble.us
+DOMAIN-SUFFIX,donttrack.us
+DOMAIN-SUFFIX,duck.co
+DOMAIN-SUFFIX,duck.com
+DOMAIN-SUFFIX,duckduckco.com
+DOMAIN-SUFFIX,duckduckco.de
+DOMAIN-SUFFIX,duckduckgo.ca
+DOMAIN-SUFFIX,duckduckgo.co
+DOMAIN-SUFFIX,duckduckgo.co.uk
+DOMAIN-SUFFIX,duckduckgo.com
+DOMAIN-SUFFIX,duckduckgo.com.mx
+DOMAIN-SUFFIX,duckduckgo.com.tw
+DOMAIN-SUFFIX,duckduckgo.de
+DOMAIN-SUFFIX,duckduckgo.dk
+DOMAIN-SUFFIX,duckduckgo.in
+DOMAIN-SUFFIX,duckduckgo.jp
+DOMAIN-SUFFIX,duckduckgo.ke
+DOMAIN-SUFFIX,duckduckgo.mx
+DOMAIN-SUFFIX,duckduckgo.nl
+DOMAIN-SUFFIX,duckduckgo.org
+DOMAIN-SUFFIX,duckduckgo.pl
+DOMAIN-SUFFIX,duckduckgo.sg
+DOMAIN-SUFFIX,duckduckgo.uk
+DOMAIN-SUFFIX,duckduckhack.com
+DOMAIN-SUFFIX,duckgo.com
+DOMAIN-SUFFIX,ducksear.ch
+DOMAIN-SUFFIX,duckside.com
+DOMAIN-SUFFIX,dukgo.com
+DOMAIN-SUFFIX,enteentegeh.de
+DOMAIN-SUFFIX,fixtracking.com
+DOMAIN-SUFFIX,goduckgo.com
+DOMAIN-SUFFIX,hacksear.ch
+DOMAIN-SUFFIX,justduckit.com
+DOMAIN-SUFFIX,privacysimplified.com
+DOMAIN-SUFFIX,privatebrowsingmyths.com
+DOMAIN-SUFFIX,spreadprivacy.com

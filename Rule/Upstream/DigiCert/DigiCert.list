@@ -1,1 +1,20 @@
-# NAME: DigiCert\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:43\n# DOMAIN-SUFFIX: 14\n# TOTAL: 14\nDOMAIN-SUFFIX,dcocsp.cn\nDOMAIN-SUFFIX,digicert-cn.com\nDOMAIN-SUFFIX,digicert-validation.com\nDOMAIN-SUFFIX,digicert.cn\nDOMAIN-SUFFIX,digicert.com\nDOMAIN-SUFFIX,digitalcertvalidation.com\nDOMAIN-SUFFIX,freessl.com\nDOMAIN-SUFFIX,geotrust.com\nDOMAIN-SUFFIX,public-trust.com\nDOMAIN-SUFFIX,quovadisglobal.com\nDOMAIN-SUFFIX,rapidssl.com\nDOMAIN-SUFFIX,thawte.com\nDOMAIN-SUFFIX,thawte.de\nDOMAIN-SUFFIX,thawte.fr
+# NAME: DigiCert
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:43
+# DOMAIN-SUFFIX: 14
+# TOTAL: 14
+DOMAIN-SUFFIX,dcocsp.cn
+DOMAIN-SUFFIX,digicert-cn.com
+DOMAIN-SUFFIX,digicert-validation.com
+DOMAIN-SUFFIX,digicert.cn
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,digitalcertvalidation.com
+DOMAIN-SUFFIX,freessl.com
+DOMAIN-SUFFIX,geotrust.com
+DOMAIN-SUFFIX,public-trust.com
+DOMAIN-SUFFIX,quovadisglobal.com
+DOMAIN-SUFFIX,rapidssl.com
+DOMAIN-SUFFIX,thawte.com
+DOMAIN-SUFFIX,thawte.de
+DOMAIN-SUFFIX,thawte.fr

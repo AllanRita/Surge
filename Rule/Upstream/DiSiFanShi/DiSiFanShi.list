@@ -1,1 +1,10 @@
-# NAME: DiSiFanShi\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:33\n# DOMAIN-SUFFIX: 4\n# TOTAL: 4\nDOMAIN-SUFFIX,4paradigm.com\nDOMAIN-SUFFIX,aihero100.com\nDOMAIN-SUFFIX,tuijianxitong.cn\nDOMAIN-SUFFIX,v1zhushou.com
+# NAME: DiSiFanShi
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:33
+# DOMAIN-SUFFIX: 4
+# TOTAL: 4
+DOMAIN-SUFFIX,4paradigm.com
+DOMAIN-SUFFIX,aihero100.com
+DOMAIN-SUFFIX,tuijianxitong.cn
+DOMAIN-SUFFIX,v1zhushou.com

@@ -1,1 +1,41 @@
-# NAME: Twitter\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-09-28 02:08:26\n# DOMAIN-KEYWORD: 1\n# DOMAIN-SUFFIX: 26\n# IP-CIDR: 6\n# TOTAL: 33\nDOMAIN-SUFFIX,ads-twitter.com\nDOMAIN-SUFFIX,cms-twdigitalassets.com\nDOMAIN-SUFFIX,grok.com\nDOMAIN-SUFFIX,periscope.tv\nDOMAIN-SUFFIX,pscp.tv\nDOMAIN-SUFFIX,t.co\nDOMAIN-SUFFIX,tellapart.com\nDOMAIN-SUFFIX,tweetdeck.com\nDOMAIN-SUFFIX,twimg.co\nDOMAIN-SUFFIX,twimg.com\nDOMAIN-SUFFIX,twimg.org\nDOMAIN-SUFFIX,twitpic.com\nDOMAIN-SUFFIX,twitter.biz\nDOMAIN-SUFFIX,twitter.com\nDOMAIN-SUFFIX,twitter.jp\nDOMAIN-SUFFIX,twittercommunity.com\nDOMAIN-SUFFIX,twitterflightschool.com\nDOMAIN-SUFFIX,twitterinc.com\nDOMAIN-SUFFIX,twitteroauth.com\nDOMAIN-SUFFIX,twitterstat.us\nDOMAIN-SUFFIX,twtrdns.net\nDOMAIN-SUFFIX,twttr.com\nDOMAIN-SUFFIX,twttr.net\nDOMAIN-SUFFIX,twvid.com\nDOMAIN-SUFFIX,vine.co\nDOMAIN-SUFFIX,x.com\nDOMAIN-KEYWORD,twitter\nIP-CIDR,192.133.76.0/22\nIP-CIDR,199.59.148.0/22\nIP-CIDR,199.96.56.0/21\nIP-CIDR,202.160.128.0/22\nIP-CIDR,209.237.192.0/19\nIP-CIDR,69.195.160.0/19
+# NAME: Twitter
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-09-28 02:08:26
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 26
+# IP-CIDR: 6
+# TOTAL: 33
+DOMAIN-SUFFIX,ads-twitter.com
+DOMAIN-SUFFIX,cms-twdigitalassets.com
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,periscope.tv
+DOMAIN-SUFFIX,pscp.tv
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,tellapart.com
+DOMAIN-SUFFIX,tweetdeck.com
+DOMAIN-SUFFIX,twimg.co
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,twimg.org
+DOMAIN-SUFFIX,twitpic.com
+DOMAIN-SUFFIX,twitter.biz
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twitter.jp
+DOMAIN-SUFFIX,twittercommunity.com
+DOMAIN-SUFFIX,twitterflightschool.com
+DOMAIN-SUFFIX,twitterinc.com
+DOMAIN-SUFFIX,twitteroauth.com
+DOMAIN-SUFFIX,twitterstat.us
+DOMAIN-SUFFIX,twtrdns.net
+DOMAIN-SUFFIX,twttr.com
+DOMAIN-SUFFIX,twttr.net
+DOMAIN-SUFFIX,twvid.com
+DOMAIN-SUFFIX,vine.co
+DOMAIN-SUFFIX,x.com
+DOMAIN-KEYWORD,twitter
+IP-CIDR,192.133.76.0/22
+IP-CIDR,199.59.148.0/22
+IP-CIDR,199.96.56.0/21
+IP-CIDR,202.160.128.0/22
+IP-CIDR,209.237.192.0/19
+IP-CIDR,69.195.160.0/19

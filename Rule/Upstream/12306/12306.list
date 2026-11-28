@@ -1,1 +1,21 @@
-# NAME: 12306\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:30\n# DOMAIN-SUFFIX: 15\n# TOTAL: 15\nDOMAIN-SUFFIX,12306.cn\nDOMAIN-SUFFIX,95306.cn\nDOMAIN-SUFFIX,95572.com\nDOMAIN-SUFFIX,china-railway.com.cn\nDOMAIN-SUFFIX,china-ric.com\nDOMAIN-SUFFIX,crct.com\nDOMAIN-SUFFIX,cre.cn\nDOMAIN-SUFFIX,crecc.com.cn\nDOMAIN-SUFFIX,creip.cn\nDOMAIN-SUFFIX,crscl.com.cn\nDOMAIN-SUFFIX,gzrailway.com.cn\nDOMAIN-SUFFIX,nntlj.com\nDOMAIN-SUFFIX,peoplerail.com\nDOMAIN-SUFFIX,rails.cn\nDOMAIN-SUFFIX,tdpress.com
+# NAME: 12306
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:30
+# DOMAIN-SUFFIX: 15
+# TOTAL: 15
+DOMAIN-SUFFIX,12306.cn
+DOMAIN-SUFFIX,95306.cn
+DOMAIN-SUFFIX,95572.com
+DOMAIN-SUFFIX,china-railway.com.cn
+DOMAIN-SUFFIX,china-ric.com
+DOMAIN-SUFFIX,crct.com
+DOMAIN-SUFFIX,cre.cn
+DOMAIN-SUFFIX,crecc.com.cn
+DOMAIN-SUFFIX,creip.cn
+DOMAIN-SUFFIX,crscl.com.cn
+DOMAIN-SUFFIX,gzrailway.com.cn
+DOMAIN-SUFFIX,nntlj.com
+DOMAIN-SUFFIX,peoplerail.com
+DOMAIN-SUFFIX,rails.cn
+DOMAIN-SUFFIX,tdpress.com

@@ -1,1 +1,35 @@
-# NAME: MIUIPrivacy\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:20:01\n# DOMAIN: 29\n# TOTAL: 29\nDOMAIN,a0.app.xiaomi.com\nDOMAIN,api.installer.xiaomi.com\nDOMAIN,api.jr.mi.com\nDOMAIN,auth.be.sec.miui.com\nDOMAIN,ccc.sys.miui.com\nDOMAIN,cn.app.chat.xiaomi.net\nDOMAIN,data.mistat.xiaomi.com\nDOMAIN,diagnosis.ad.xiaomi.com\nDOMAIN,etl-xlmc-ssl.sandai.net\nDOMAIN,flash.sec.miui.com\nDOMAIN,idm.api.io.mi.com\nDOMAIN,ixav-cse.avlyun.com\nDOMAIN,jupiter.sys.miui.com\nDOMAIN,log.ad.xiaomi.com\nDOMAIN,log.avlyun.sec.intl.miui.com\nDOMAIN,logupdate.avlyun.sec.miui.com\nDOMAIN,m.track.ad.xiaomi.com\nDOMAIN,mazu.sec.miui.com\nDOMAIN,metok.sys.miui.com\nDOMAIN,miav-cse.avlyun.com\nDOMAIN,miui-fxcse.avlyun.com\nDOMAIN,qsb.browser.miui.srv\nDOMAIN,rom.pt.miui.srv\nDOMAIN,sdkconf.avlyun.com\nDOMAIN,sdkconfig.ad.xiaomi.com\nDOMAIN,ssl-cdn.static.browser.mi-img.com\nDOMAIN,tmfsdk.m.qq.com\nDOMAIN,tracking.miui.com\nDOMAIN,update.avlyun.sec.miui.com
+# NAME: MIUIPrivacy
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:20:01
+# DOMAIN: 29
+# TOTAL: 29
+DOMAIN,a0.app.xiaomi.com
+DOMAIN,api.installer.xiaomi.com
+DOMAIN,api.jr.mi.com
+DOMAIN,auth.be.sec.miui.com
+DOMAIN,ccc.sys.miui.com
+DOMAIN,cn.app.chat.xiaomi.net
+DOMAIN,data.mistat.xiaomi.com
+DOMAIN,diagnosis.ad.xiaomi.com
+DOMAIN,etl-xlmc-ssl.sandai.net
+DOMAIN,flash.sec.miui.com
+DOMAIN,idm.api.io.mi.com
+DOMAIN,ixav-cse.avlyun.com
+DOMAIN,jupiter.sys.miui.com
+DOMAIN,log.ad.xiaomi.com
+DOMAIN,log.avlyun.sec.intl.miui.com
+DOMAIN,logupdate.avlyun.sec.miui.com
+DOMAIN,m.track.ad.xiaomi.com
+DOMAIN,mazu.sec.miui.com
+DOMAIN,metok.sys.miui.com
+DOMAIN,miav-cse.avlyun.com
+DOMAIN,miui-fxcse.avlyun.com
+DOMAIN,qsb.browser.miui.srv
+DOMAIN,rom.pt.miui.srv
+DOMAIN,sdkconf.avlyun.com
+DOMAIN,sdkconfig.ad.xiaomi.com
+DOMAIN,ssl-cdn.static.browser.mi-img.com
+DOMAIN,tmfsdk.m.qq.com
+DOMAIN,tracking.miui.com
+DOMAIN,update.avlyun.sec.miui.com

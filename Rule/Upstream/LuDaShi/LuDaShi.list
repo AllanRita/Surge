@@ -1,1 +1,23 @@
-# NAME: LuDaShi\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:36\n# DOMAIN-SUFFIX: 17\n# TOTAL: 17\nDOMAIN-SUFFIX,birdpaper.cn\nDOMAIN-SUFFIX,dualspace.com\nDOMAIN-SUFFIX,dualspacetech.com\nDOMAIN-SUFFIX,easyclean.fun\nDOMAIN-SUFFIX,kejids.cn\nDOMAIN-SUFFIX,kejids.com\nDOMAIN-SUFFIX,ludan.cn\nDOMAIN-SUFFIX,ludashi.cn\nDOMAIN-SUFFIX,ludashi.com\nDOMAIN-SUFFIX,monidashi.cn\nDOMAIN-SUFFIX,monidashi.com.cn\nDOMAIN-SUFFIX,superlitetech.com\nDOMAIN-SUFFIX,taojike.cn\nDOMAIN-SUFFIX,xiaoluerhuo.com\nDOMAIN-SUFFIX,xiaoluhaohuo.com\nDOMAIN-SUFFIX,xiaoluyouxuan.com\nDOMAIN-SUFFIX,youhua.com
+# NAME: LuDaShi
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:36
+# DOMAIN-SUFFIX: 17
+# TOTAL: 17
+DOMAIN-SUFFIX,birdpaper.cn
+DOMAIN-SUFFIX,dualspace.com
+DOMAIN-SUFFIX,dualspacetech.com
+DOMAIN-SUFFIX,easyclean.fun
+DOMAIN-SUFFIX,kejids.cn
+DOMAIN-SUFFIX,kejids.com
+DOMAIN-SUFFIX,ludan.cn
+DOMAIN-SUFFIX,ludashi.cn
+DOMAIN-SUFFIX,ludashi.com
+DOMAIN-SUFFIX,monidashi.cn
+DOMAIN-SUFFIX,monidashi.com.cn
+DOMAIN-SUFFIX,superlitetech.com
+DOMAIN-SUFFIX,taojike.cn
+DOMAIN-SUFFIX,xiaoluerhuo.com
+DOMAIN-SUFFIX,xiaoluhaohuo.com
+DOMAIN-SUFFIX,xiaoluyouxuan.com
+DOMAIN-SUFFIX,youhua.com

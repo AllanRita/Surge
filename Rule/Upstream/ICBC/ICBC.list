@@ -1,1 +1,64 @@
-# NAME: ICBC\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:35\n# DOMAIN-SUFFIX: 58\n# TOTAL: 58\nDOMAIN-SUFFIX,95588.com\nDOMAIN-SUFFIX,95588.com.cn\nDOMAIN-SUFFIX,dccnet.com.cn\nDOMAIN-SUFFIX,icbc\nDOMAIN-SUFFIX,icbc-at.com\nDOMAIN-SUFFIX,icbc-cz.com\nDOMAIN-SUFFIX,icbc-ltd.com\nDOMAIN-SUFFIX,icbc-uk.com\nDOMAIN-SUFFIX,icbc-us.com\nDOMAIN-SUFFIX,icbc.ae\nDOMAIN-SUFFIX,icbc.be\nDOMAIN-SUFFIX,icbc.co.id\nDOMAIN-SUFFIX,icbc.co.jp\nDOMAIN-SUFFIX,icbc.co.kr\nDOMAIN-SUFFIX,icbc.co.nl\nDOMAIN-SUFFIX,icbc.com.au\nDOMAIN-SUFFIX,icbc.com.cn\nDOMAIN-SUFFIX,icbc.com.es\nDOMAIN-SUFFIX,icbc.com.kh\nDOMAIN-SUFFIX,icbc.com.kw\nDOMAIN-SUFFIX,icbc.com.la\nDOMAIN-SUFFIX,icbc.com.mm\nDOMAIN-SUFFIX,icbc.com.mo\nDOMAIN-SUFFIX,icbc.com.mx\nDOMAIN-SUFFIX,icbc.com.pe\nDOMAIN-SUFFIX,icbc.com.pk\nDOMAIN-SUFFIX,icbc.com.qa\nDOMAIN-SUFFIX,icbc.com.sg\nDOMAIN-SUFFIX,icbc.com.vn\nDOMAIN-SUFFIX,icbc.de\nDOMAIN-SUFFIX,icbc.eu\nDOMAIN-SUFFIX,icbc.lu\nDOMAIN-SUFFIX,icbcalmaty.kz\nDOMAIN-SUFFIX,icbcasia.com\nDOMAIN-SUFFIX,icbcbr.com.br\nDOMAIN-SUFFIX,icbccs.com.cn\nDOMAIN-SUFFIX,icbccstz.com.cn\nDOMAIN-SUFFIX,icbci.com.hk\nDOMAIN-SUFFIX,icbcina.com\nDOMAIN-SUFFIX,icbcindia.com\nDOMAIN-SUFFIX,icbcit.com\nDOMAIN-SUFFIX,icbclondon.com\nDOMAIN-SUFFIX,icbcmanila.com.cn\nDOMAIN-SUFFIX,icbcme.ae\nDOMAIN-SUFFIX,icbcmoscow.ru\nDOMAIN-SUFFIX,icbcmy.com\nDOMAIN-SUFFIX,icbcnz.com\nDOMAIN-SUFFIX,icbcpanama.com\nDOMAIN-SUFFIX,icbcparis.fr\nDOMAIN-SUFFIX,icbcpl.com\nDOMAIN-SUFFIX,icbcstandard.com\nDOMAIN-SUFFIX,icbcstandardbank.com\nDOMAIN-SUFFIX,icbcstandardresources.com\nDOMAIN-SUFFIX,icbcstandardsecurities.com\nDOMAIN-SUFFIX,icbcswiss.com\nDOMAIN-SUFFIX,icbcthai.com\nDOMAIN-SUFFIX,icbkfs.com\nDOMAIN-SUFFIX,icbkus.com
+# NAME: ICBC
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:35
+# DOMAIN-SUFFIX: 58
+# TOTAL: 58
+DOMAIN-SUFFIX,95588.com
+DOMAIN-SUFFIX,95588.com.cn
+DOMAIN-SUFFIX,dccnet.com.cn
+DOMAIN-SUFFIX,icbc
+DOMAIN-SUFFIX,icbc-at.com
+DOMAIN-SUFFIX,icbc-cz.com
+DOMAIN-SUFFIX,icbc-ltd.com
+DOMAIN-SUFFIX,icbc-uk.com
+DOMAIN-SUFFIX,icbc-us.com
+DOMAIN-SUFFIX,icbc.ae
+DOMAIN-SUFFIX,icbc.be
+DOMAIN-SUFFIX,icbc.co.id
+DOMAIN-SUFFIX,icbc.co.jp
+DOMAIN-SUFFIX,icbc.co.kr
+DOMAIN-SUFFIX,icbc.co.nl
+DOMAIN-SUFFIX,icbc.com.au
+DOMAIN-SUFFIX,icbc.com.cn
+DOMAIN-SUFFIX,icbc.com.es
+DOMAIN-SUFFIX,icbc.com.kh
+DOMAIN-SUFFIX,icbc.com.kw
+DOMAIN-SUFFIX,icbc.com.la
+DOMAIN-SUFFIX,icbc.com.mm
+DOMAIN-SUFFIX,icbc.com.mo
+DOMAIN-SUFFIX,icbc.com.mx
+DOMAIN-SUFFIX,icbc.com.pe
+DOMAIN-SUFFIX,icbc.com.pk
+DOMAIN-SUFFIX,icbc.com.qa
+DOMAIN-SUFFIX,icbc.com.sg
+DOMAIN-SUFFIX,icbc.com.vn
+DOMAIN-SUFFIX,icbc.de
+DOMAIN-SUFFIX,icbc.eu
+DOMAIN-SUFFIX,icbc.lu
+DOMAIN-SUFFIX,icbcalmaty.kz
+DOMAIN-SUFFIX,icbcasia.com
+DOMAIN-SUFFIX,icbcbr.com.br
+DOMAIN-SUFFIX,icbccs.com.cn
+DOMAIN-SUFFIX,icbccstz.com.cn
+DOMAIN-SUFFIX,icbci.com.hk
+DOMAIN-SUFFIX,icbcina.com
+DOMAIN-SUFFIX,icbcindia.com
+DOMAIN-SUFFIX,icbcit.com
+DOMAIN-SUFFIX,icbclondon.com
+DOMAIN-SUFFIX,icbcmanila.com.cn
+DOMAIN-SUFFIX,icbcme.ae
+DOMAIN-SUFFIX,icbcmoscow.ru
+DOMAIN-SUFFIX,icbcmy.com
+DOMAIN-SUFFIX,icbcnz.com
+DOMAIN-SUFFIX,icbcpanama.com
+DOMAIN-SUFFIX,icbcparis.fr
+DOMAIN-SUFFIX,icbcpl.com
+DOMAIN-SUFFIX,icbcstandard.com
+DOMAIN-SUFFIX,icbcstandardbank.com
+DOMAIN-SUFFIX,icbcstandardresources.com
+DOMAIN-SUFFIX,icbcstandardsecurities.com
+DOMAIN-SUFFIX,icbcswiss.com
+DOMAIN-SUFFIX,icbcthai.com
+DOMAIN-SUFFIX,icbkfs.com
+DOMAIN-SUFFIX,icbkus.com

@@ -1,1 +1,14 @@
-# NAME: EncoreTVB\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:16:57\n# DOMAIN: 4\n# DOMAIN-SUFFIX: 1\n# USER-AGENT: 1\n# TOTAL: 6\nDOMAIN,bcbolt446c5271-a.akamaihd.net\nDOMAIN,content.jwplatform.com\nDOMAIN,edge.api.brightcove.com\nDOMAIN,videos-f.jwpsrv.com\nDOMAIN-SUFFIX,encoretvb.com\nUSER-AGENT,encoreTVB*
+# NAME: EncoreTVB
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:16:57
+# DOMAIN: 4
+# DOMAIN-SUFFIX: 1
+# USER-AGENT: 1
+# TOTAL: 6
+DOMAIN,bcbolt446c5271-a.akamaihd.net
+DOMAIN,content.jwplatform.com
+DOMAIN,edge.api.brightcove.com
+DOMAIN,videos-f.jwpsrv.com
+DOMAIN-SUFFIX,encoretvb.com
+USER-AGENT,encoreTVB*

@@ -1,1 +1,31 @@
-# NAME: HBOHK\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:41\n# DOMAIN: 1\n# DOMAIN-SUFFIX: 23\n# TOTAL: 24\nDOMAIN,wmff.warnermediacdn.com\nDOMAIN-SUFFIX,hboasia.com\nDOMAIN-SUFFIX,hboasia1-i.akamaihd.net\nDOMAIN-SUFFIX,hboasia2-i.akamaihd.net\nDOMAIN-SUFFIX,hboasia3-i.akamaihd.net\nDOMAIN-SUFFIX,hboasia4-i.akamaihd.net\nDOMAIN-SUFFIX,hboasia5-i.akamaihd.net\nDOMAIN-SUFFIX,hboasialive.akamaized.net\nDOMAIN-SUFFIX,hbogo.co.th\nDOMAIN-SUFFIX,hbogo.com\nDOMAIN-SUFFIX,hbogo.eu\nDOMAIN-SUFFIX,hbogoasia.com\nDOMAIN-SUFFIX,hbogoasia.hk\nDOMAIN-SUFFIX,hbogoasia.id\nDOMAIN-SUFFIX,hbogoasia.ph\nDOMAIN-SUFFIX,hbogoasia.sg\nDOMAIN-SUFFIX,hbogoasia.tw\nDOMAIN-SUFFIX,hbogoprod-vod.akamaized.net\nDOMAIN-SUFFIX,hbomaxcdn.com\nDOMAIN-SUFFIX,now-ashare.com\nDOMAIN-SUFFIX,now-tv.com\nDOMAIN-SUFFIX,now.com.hk\nDOMAIN-SUFFIX,nowe.com\nDOMAIN-SUFFIX,nowe.hk
+# NAME: HBOHK
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:41
+# DOMAIN: 1
+# DOMAIN-SUFFIX: 23
+# TOTAL: 24
+DOMAIN,wmff.warnermediacdn.com
+DOMAIN-SUFFIX,hboasia.com
+DOMAIN-SUFFIX,hboasia1-i.akamaihd.net
+DOMAIN-SUFFIX,hboasia2-i.akamaihd.net
+DOMAIN-SUFFIX,hboasia3-i.akamaihd.net
+DOMAIN-SUFFIX,hboasia4-i.akamaihd.net
+DOMAIN-SUFFIX,hboasia5-i.akamaihd.net
+DOMAIN-SUFFIX,hboasialive.akamaized.net
+DOMAIN-SUFFIX,hbogo.co.th
+DOMAIN-SUFFIX,hbogo.com
+DOMAIN-SUFFIX,hbogo.eu
+DOMAIN-SUFFIX,hbogoasia.com
+DOMAIN-SUFFIX,hbogoasia.hk
+DOMAIN-SUFFIX,hbogoasia.id
+DOMAIN-SUFFIX,hbogoasia.ph
+DOMAIN-SUFFIX,hbogoasia.sg
+DOMAIN-SUFFIX,hbogoasia.tw
+DOMAIN-SUFFIX,hbogoprod-vod.akamaized.net
+DOMAIN-SUFFIX,hbomaxcdn.com
+DOMAIN-SUFFIX,now-ashare.com
+DOMAIN-SUFFIX,now-tv.com
+DOMAIN-SUFFIX,now.com.hk
+DOMAIN-SUFFIX,nowe.com
+DOMAIN-SUFFIX,nowe.hk

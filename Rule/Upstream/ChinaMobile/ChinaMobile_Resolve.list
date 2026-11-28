@@ -1,1 +1,45 @@
-# NAME: ChinaMobile\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2026-09-22 05:33:45\n# DOMAIN-SUFFIX: 37\n# IP-CIDR: 1\n# TOTAL: 38\nDOMAIN-SUFFIX,10086.cn\nDOMAIN-SUFFIX,10086kuaixiu.com\nDOMAIN-SUFFIX,12530.com\nDOMAIN-SUFFIX,139.com\nDOMAIN-SUFFIX,andfx.cn\nDOMAIN-SUFFIX,andfx.net\nDOMAIN-SUFFIX,chinamobile.com\nDOMAIN-SUFFIX,chinamobiledevice.com\nDOMAIN-SUFFIX,chinamobileltd.com\nDOMAIN-SUFFIX,cmccb2b.com\nDOMAIN-SUFFIX,cmdcl.cn\nDOMAIN-SUFFIX,cmdcxls.com\nDOMAIN-SUFFIX,cmecloud.cn\nDOMAIN-SUFFIX,cmicrwx.cn\nDOMAIN-SUFFIX,cmpassport.com\nDOMAIN-SUFFIX,cmvideo.cn\nDOMAIN-SUFFIX,cxzx10086.cn\nDOMAIN-SUFFIX,ecpan.cn\nDOMAIN-SUFFIX,fetion-portal.com\nDOMAIN-SUFFIX,fetionpic.com\nDOMAIN-SUFFIX,fxltsbl.com\nDOMAIN-SUFFIX,lovev.cn\nDOMAIN-SUFFIX,lovev.com\nDOMAIN-SUFFIX,migu.cn\nDOMAIN-SUFFIX,migucc.cn\nDOMAIN-SUFFIX,migucdn.cn\nDOMAIN-SUFFIX,migucloud.com\nDOMAIN-SUFFIX,migufm.com\nDOMAIN-SUFFIX,migugk.com\nDOMAIN-SUFFIX,migutv.com\nDOMAIN-SUFFIX,miguvideo.com\nDOMAIN-SUFFIX,miguvideo.com.cn\nDOMAIN-SUFFIX,mmarket.com\nDOMAIN-SUFFIX,mmarket6.com\nDOMAIN-SUFFIX,monternet.com\nDOMAIN-SUFFIX,warmchina121.com\nDOMAIN-SUFFIX,zdsdp.com\nIP-CIDR,117.161.2.5/32
+# NAME: ChinaMobile
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2026-09-22 05:33:45
+# DOMAIN-SUFFIX: 37
+# IP-CIDR: 1
+# TOTAL: 38
+DOMAIN-SUFFIX,10086.cn
+DOMAIN-SUFFIX,10086kuaixiu.com
+DOMAIN-SUFFIX,12530.com
+DOMAIN-SUFFIX,139.com
+DOMAIN-SUFFIX,andfx.cn
+DOMAIN-SUFFIX,andfx.net
+DOMAIN-SUFFIX,chinamobile.com
+DOMAIN-SUFFIX,chinamobiledevice.com
+DOMAIN-SUFFIX,chinamobileltd.com
+DOMAIN-SUFFIX,cmccb2b.com
+DOMAIN-SUFFIX,cmdcl.cn
+DOMAIN-SUFFIX,cmdcxls.com
+DOMAIN-SUFFIX,cmecloud.cn
+DOMAIN-SUFFIX,cmicrwx.cn
+DOMAIN-SUFFIX,cmpassport.com
+DOMAIN-SUFFIX,cmvideo.cn
+DOMAIN-SUFFIX,cxzx10086.cn
+DOMAIN-SUFFIX,ecpan.cn
+DOMAIN-SUFFIX,fetion-portal.com
+DOMAIN-SUFFIX,fetionpic.com
+DOMAIN-SUFFIX,fxltsbl.com
+DOMAIN-SUFFIX,lovev.cn
+DOMAIN-SUFFIX,lovev.com
+DOMAIN-SUFFIX,migu.cn
+DOMAIN-SUFFIX,migucc.cn
+DOMAIN-SUFFIX,migucdn.cn
+DOMAIN-SUFFIX,migucloud.com
+DOMAIN-SUFFIX,migufm.com
+DOMAIN-SUFFIX,migugk.com
+DOMAIN-SUFFIX,migutv.com
+DOMAIN-SUFFIX,miguvideo.com
+DOMAIN-SUFFIX,miguvideo.com.cn
+DOMAIN-SUFFIX,mmarket.com
+DOMAIN-SUFFIX,mmarket6.com
+DOMAIN-SUFFIX,monternet.com
+DOMAIN-SUFFIX,warmchina121.com
+DOMAIN-SUFFIX,zdsdp.com
+IP-CIDR,117.161.2.5/32

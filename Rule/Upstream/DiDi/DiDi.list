@@ -1,1 +1,31 @@
-# NAME: DiDi\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:01\n# DOMAIN-SUFFIX: 25\n# TOTAL: 25\nDOMAIN-SUFFIX,apptaxi.com.cn\nDOMAIN-SUFFIX,cxyule.com\nDOMAIN-SUFFIX,didi-food.com\nDOMAIN-SUFFIX,didi.cn\nDOMAIN-SUFFIX,didi.xin\nDOMAIN-SUFFIX,didialift.com\nDOMAIN-SUFFIX,didiapp.net.cn\nDOMAIN-SUFFIX,didiaustralia.blog\nDOMAIN-SUFFIX,didichuxing.com\nDOMAIN-SUFFIX,didiglobal.com\nDOMAIN-SUFFIX,didimobility.co.jp\nDOMAIN-SUFFIX,didimobility.com\nDOMAIN-SUFFIX,didiopenapi.com\nDOMAIN-SUFFIX,didiqiche.com\nDOMAIN-SUFFIX,didistatic.com\nDOMAIN-SUFFIX,diditaxi.com\nDOMAIN-SUFFIX,diditaxi.com.cn\nDOMAIN-SUFFIX,didiwuxian.com\nDOMAIN-SUFFIX,didiyun.com\nDOMAIN-SUFFIX,didiyun.org\nDOMAIN-SUFFIX,didiyunapi.com\nDOMAIN-SUFFIX,juyanwenjuan.com\nDOMAIN-SUFFIX,udache.com\nDOMAIN-SUFFIX,xiaojuchefu.cn\nDOMAIN-SUFFIX,xiaojukeji.com
+# NAME: DiDi
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:01
+# DOMAIN-SUFFIX: 25
+# TOTAL: 25
+DOMAIN-SUFFIX,apptaxi.com.cn
+DOMAIN-SUFFIX,cxyule.com
+DOMAIN-SUFFIX,didi-food.com
+DOMAIN-SUFFIX,didi.cn
+DOMAIN-SUFFIX,didi.xin
+DOMAIN-SUFFIX,didialift.com
+DOMAIN-SUFFIX,didiapp.net.cn
+DOMAIN-SUFFIX,didiaustralia.blog
+DOMAIN-SUFFIX,didichuxing.com
+DOMAIN-SUFFIX,didiglobal.com
+DOMAIN-SUFFIX,didimobility.co.jp
+DOMAIN-SUFFIX,didimobility.com
+DOMAIN-SUFFIX,didiopenapi.com
+DOMAIN-SUFFIX,didiqiche.com
+DOMAIN-SUFFIX,didistatic.com
+DOMAIN-SUFFIX,diditaxi.com
+DOMAIN-SUFFIX,diditaxi.com.cn
+DOMAIN-SUFFIX,didiwuxian.com
+DOMAIN-SUFFIX,didiyun.com
+DOMAIN-SUFFIX,didiyun.org
+DOMAIN-SUFFIX,didiyunapi.com
+DOMAIN-SUFFIX,juyanwenjuan.com
+DOMAIN-SUFFIX,udache.com
+DOMAIN-SUFFIX,xiaojuchefu.cn
+DOMAIN-SUFFIX,xiaojukeji.com

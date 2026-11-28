@@ -1,1 +1,25 @@
-# NAME: XingKongWuXian\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2024-01-08 16:02:55\n# DOMAIN-SUFFIX: 19\n# TOTAL: 19\nDOMAIN-SUFFIX,avstar01.me\nDOMAIN-SUFFIX,avstar02.me\nDOMAIN-SUFFIX,avstar03.me\nDOMAIN-SUFFIX,avstar04.com\nDOMAIN-SUFFIX,avstar04.me\nDOMAIN-SUFFIX,avstar05.me\nDOMAIN-SUFFIX,avstar06.me\nDOMAIN-SUFFIX,avstar07.com\nDOMAIN-SUFFIX,avstar07.me\nDOMAIN-SUFFIX,avstar09.com\nDOMAIN-SUFFIX,avstar09.me\nDOMAIN-SUFFIX,avstar1.com\nDOMAIN-SUFFIX,avstar2.com\nDOMAIN-SUFFIX,avstar3.com\nDOMAIN-SUFFIX,avstar4.com\nDOMAIN-SUFFIX,avstar5.com\nDOMAIN-SUFFIX,avstar6.com\nDOMAIN-SUFFIX,avstar8.com\nDOMAIN-SUFFIX,avstar9.com
+# NAME: XingKongWuXian
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-01-08 16:02:55
+# DOMAIN-SUFFIX: 19
+# TOTAL: 19
+DOMAIN-SUFFIX,avstar01.me
+DOMAIN-SUFFIX,avstar02.me
+DOMAIN-SUFFIX,avstar03.me
+DOMAIN-SUFFIX,avstar04.com
+DOMAIN-SUFFIX,avstar04.me
+DOMAIN-SUFFIX,avstar05.me
+DOMAIN-SUFFIX,avstar06.me
+DOMAIN-SUFFIX,avstar07.com
+DOMAIN-SUFFIX,avstar07.me
+DOMAIN-SUFFIX,avstar09.com
+DOMAIN-SUFFIX,avstar09.me
+DOMAIN-SUFFIX,avstar1.com
+DOMAIN-SUFFIX,avstar2.com
+DOMAIN-SUFFIX,avstar3.com
+DOMAIN-SUFFIX,avstar4.com
+DOMAIN-SUFFIX,avstar5.com
+DOMAIN-SUFFIX,avstar6.com
+DOMAIN-SUFFIX,avstar8.com
+DOMAIN-SUFFIX,avstar9.com

@@ -1,1 +1,21 @@
-# NAME: HBOUSA\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:41\n# DOMAIN: 1\n# DOMAIN-SUFFIX: 9\n# PROCESS-NAME: 1\n# USER-AGENT: 1\n# TOTAL: 12\nDOMAIN,wmff.warnermediacdn.com\nDOMAIN-SUFFIX,cinemax.com\nDOMAIN-SUFFIX,discomax.com\nDOMAIN-SUFFIX,h264.io\nDOMAIN-SUFFIX,hbomax.com\nDOMAIN-SUFFIX,hbomaxcdn.com\nDOMAIN-SUFFIX,hbomaxdash.s.llnwi.net\nDOMAIN-SUFFIX,hbonow.com\nDOMAIN-SUFFIX,max.com\nDOMAIN-SUFFIX,maxgo.com\nUSER-AGENT,HBOMAX*\nPROCESS-NAME,com.hbo.hbonow
+# NAME: HBOUSA
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:41
+# DOMAIN: 1
+# DOMAIN-SUFFIX: 9
+# PROCESS-NAME: 1
+# USER-AGENT: 1
+# TOTAL: 12
+DOMAIN,wmff.warnermediacdn.com
+DOMAIN-SUFFIX,cinemax.com
+DOMAIN-SUFFIX,discomax.com
+DOMAIN-SUFFIX,h264.io
+DOMAIN-SUFFIX,hbomax.com
+DOMAIN-SUFFIX,hbomaxcdn.com
+DOMAIN-SUFFIX,hbomaxdash.s.llnwi.net
+DOMAIN-SUFFIX,hbonow.com
+DOMAIN-SUFFIX,max.com
+DOMAIN-SUFFIX,maxgo.com
+USER-AGENT,HBOMAX*
+PROCESS-NAME,com.hbo.hbonow

@@ -1,1 +1,27 @@
-# NAME: PrimeVideo\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:50\n# DOMAIN: 9\n# DOMAIN-KEYWORD: 1\n# DOMAIN-SUFFIX: 6\n# USER-AGENT: 2\n# TOTAL: 18\nDOMAIN,atv-ps.amazon.com\nDOMAIN,avodmp4s3ww-a.akamaihd.net\nDOMAIN,d1v5ir2lpwr8os.cloudfront.net\nDOMAIN,d22qjgkvxw22r6.cloudfront.net\nDOMAIN,d25xi40x97liuc.cloudfront.net\nDOMAIN,d27xxe7juh1us6.cloudfront.net\nDOMAIN,dmqdd6hw24ucf.cloudfront.net\nDOMAIN,fls-na.amazon.com\nDOMAIN,www.amazon.com\nDOMAIN-SUFFIX,aiv-cdn.net\nDOMAIN-SUFFIX,aiv-delivery.net\nDOMAIN-SUFFIX,amazonvideo.com\nDOMAIN-SUFFIX,media-amazon.com\nDOMAIN-SUFFIX,primevideo.com\nDOMAIN-SUFFIX,pv-cdn.net\nDOMAIN-KEYWORD,avoddashs\nUSER-AGENT,InstantVideo.US*\nUSER-AGENT,Prime%20Video*
+# NAME: PrimeVideo
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:50
+# DOMAIN: 9
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 6
+# USER-AGENT: 2
+# TOTAL: 18
+DOMAIN,atv-ps.amazon.com
+DOMAIN,avodmp4s3ww-a.akamaihd.net
+DOMAIN,d1v5ir2lpwr8os.cloudfront.net
+DOMAIN,d22qjgkvxw22r6.cloudfront.net
+DOMAIN,d25xi40x97liuc.cloudfront.net
+DOMAIN,d27xxe7juh1us6.cloudfront.net
+DOMAIN,dmqdd6hw24ucf.cloudfront.net
+DOMAIN,fls-na.amazon.com
+DOMAIN,www.amazon.com
+DOMAIN-SUFFIX,aiv-cdn.net
+DOMAIN-SUFFIX,aiv-delivery.net
+DOMAIN-SUFFIX,amazonvideo.com
+DOMAIN-SUFFIX,media-amazon.com
+DOMAIN-SUFFIX,primevideo.com
+DOMAIN-SUFFIX,pv-cdn.net
+DOMAIN-KEYWORD,avoddashs
+USER-AGENT,InstantVideo.US*
+USER-AGENT,Prime%20Video*

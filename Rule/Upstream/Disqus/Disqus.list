@@ -1,1 +1,9 @@
-# NAME: Disqus\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:43\n# DOMAIN-SUFFIX: 3\n# TOTAL: 3\nDOMAIN-SUFFIX,disqus.com\nDOMAIN-SUFFIX,disquscdn.com\nDOMAIN-SUFFIX,disqusservice.com
+# NAME: Disqus
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:43
+# DOMAIN-SUFFIX: 3
+# TOTAL: 3
+DOMAIN-SUFFIX,disqus.com
+DOMAIN-SUFFIX,disquscdn.com
+DOMAIN-SUFFIX,disqusservice.com

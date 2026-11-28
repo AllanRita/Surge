@@ -1,1 +1,22 @@
-# NAME: DingXiangYuan\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:33\n# DOMAIN-SUFFIX: 16\n# TOTAL: 16\nDOMAIN-SUFFIX,0dxy.cn\nDOMAIN-SUFFIX,biomart.cn\nDOMAIN-SUFFIX,centerwatch.cn\nDOMAIN-SUFFIX,crou.cn\nDOMAIN-SUFFIX,dxy.cn\nDOMAIN-SUFFIX,dxy.com\nDOMAIN-SUFFIX,dxy.me\nDOMAIN-SUFFIX,dxy.net\nDOMAIN-SUFFIX,dxycdn.com\nDOMAIN-SUFFIX,dxyer.cn\nDOMAIN-SUFFIX,dxyer.com\nDOMAIN-SUFFIX,guanlannet.com\nDOMAIN-SUFFIX,jobmd.cn\nDOMAIN-SUFFIX,linkmed.com.cn\nDOMAIN-SUFFIX,mdnews.cn\nDOMAIN-SUFFIX,pubmed.cn
+# NAME: DingXiangYuan
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:33
+# DOMAIN-SUFFIX: 16
+# TOTAL: 16
+DOMAIN-SUFFIX,0dxy.cn
+DOMAIN-SUFFIX,biomart.cn
+DOMAIN-SUFFIX,centerwatch.cn
+DOMAIN-SUFFIX,crou.cn
+DOMAIN-SUFFIX,dxy.cn
+DOMAIN-SUFFIX,dxy.com
+DOMAIN-SUFFIX,dxy.me
+DOMAIN-SUFFIX,dxy.net
+DOMAIN-SUFFIX,dxycdn.com
+DOMAIN-SUFFIX,dxyer.cn
+DOMAIN-SUFFIX,dxyer.com
+DOMAIN-SUFFIX,guanlannet.com
+DOMAIN-SUFFIX,jobmd.cn
+DOMAIN-SUFFIX,linkmed.com.cn
+DOMAIN-SUFFIX,mdnews.cn
+DOMAIN-SUFFIX,pubmed.cn

@@ -1,1 +1,14 @@
-# NAME: PikPak\n# AUTHOR: tugepaopao\n# REPO: https://github.com/tugepaopao/Image-Storage\n# UPDATED: 2025-06-06 09:18:50\n# DOMAIN-KEYWORD: 1\n# DOMAIN-SUFFIX: 6\n# TOTAL: 7\nDOMAIN-SUFFIX,dlandroid.rcv.sandai.net\nDOMAIN-SUFFIX,hub5idx.v6.shub.sandai.net\nDOMAIN-SUFFIX,hub5pn.wap.sandai.net\nDOMAIN-SUFFIX,hub5pnc.sandai.net\nDOMAIN-SUFFIX,hub5pr.v6.phub.sandai.net\nDOMAIN-SUFFIX,hubciddata.sandai.net\nDOMAIN-KEYWORD,mypikpak
+# NAME: PikPak
+# AUTHOR: tugepaopao
+# REPO: https://github.com/tugepaopao/Image-Storage
+# UPDATED: 2025-06-06 09:18:50
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 6
+# TOTAL: 7
+DOMAIN-SUFFIX,dlandroid.rcv.sandai.net
+DOMAIN-SUFFIX,hub5idx.v6.shub.sandai.net
+DOMAIN-SUFFIX,hub5pn.wap.sandai.net
+DOMAIN-SUFFIX,hub5pnc.sandai.net
+DOMAIN-SUFFIX,hub5pr.v6.phub.sandai.net
+DOMAIN-SUFFIX,hubciddata.sandai.net
+DOMAIN-KEYWORD,mypikpak

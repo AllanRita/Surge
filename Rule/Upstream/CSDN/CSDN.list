@@ -1,1 +1,28 @@
-# NAME: CSDN\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:32\n# DOMAIN-SUFFIX: 22\n# TOTAL: 22\nDOMAIN-SUFFIX,codechina.net\nDOMAIN-SUFFIX,csdn.com\nDOMAIN-SUFFIX,csdn.net\nDOMAIN-SUFFIX,csdn.net.cn\nDOMAIN-SUFFIX,csdnimg.cn\nDOMAIN-SUFFIX,csto.com\nDOMAIN-SUFFIX,datasea.cn\nDOMAIN-SUFFIX,gitbook.cn\nDOMAIN-SUFFIX,gitchat.cn\nDOMAIN-SUFFIX,gitcode.com\nDOMAIN-SUFFIX,gitcode.net\nDOMAIN-SUFFIX,iteye.com\nDOMAIN-SUFFIX,kaifayun.com\nDOMAIN-SUFFIX,linuxpower.com.cn\nDOMAIN-SUFFIX,powerlinux.com.cn\nDOMAIN-SUFFIX,programmer.com.cn\nDOMAIN-SUFFIX,programmer.net.cn\nDOMAIN-SUFFIX,qualcomm-challenge.com\nDOMAIN-SUFFIX,tinymind.cn\nDOMAIN-SUFFIX,tinymind.com\nDOMAIN-SUFFIX,tinymind.com.cn\nDOMAIN-SUFFIX,topcto50.com
+# NAME: CSDN
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:32
+# DOMAIN-SUFFIX: 22
+# TOTAL: 22
+DOMAIN-SUFFIX,codechina.net
+DOMAIN-SUFFIX,csdn.com
+DOMAIN-SUFFIX,csdn.net
+DOMAIN-SUFFIX,csdn.net.cn
+DOMAIN-SUFFIX,csdnimg.cn
+DOMAIN-SUFFIX,csto.com
+DOMAIN-SUFFIX,datasea.cn
+DOMAIN-SUFFIX,gitbook.cn
+DOMAIN-SUFFIX,gitchat.cn
+DOMAIN-SUFFIX,gitcode.com
+DOMAIN-SUFFIX,gitcode.net
+DOMAIN-SUFFIX,iteye.com
+DOMAIN-SUFFIX,kaifayun.com
+DOMAIN-SUFFIX,linuxpower.com.cn
+DOMAIN-SUFFIX,powerlinux.com.cn
+DOMAIN-SUFFIX,programmer.com.cn
+DOMAIN-SUFFIX,programmer.net.cn
+DOMAIN-SUFFIX,qualcomm-challenge.com
+DOMAIN-SUFFIX,tinymind.cn
+DOMAIN-SUFFIX,tinymind.com
+DOMAIN-SUFFIX,tinymind.com.cn
+DOMAIN-SUFFIX,topcto50.com

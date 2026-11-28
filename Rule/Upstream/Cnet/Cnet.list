@@ -1,1 +1,7 @@
-# NAME: Cnet\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2024-01-08 16:02:54\n# DOMAIN-SUFFIX: 1\n# TOTAL: 1\nDOMAIN-SUFFIX,cnet.com
+# NAME: Cnet
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-01-08 16:02:54
+# DOMAIN-SUFFIX: 1
+# TOTAL: 1
+DOMAIN-SUFFIX,cnet.com

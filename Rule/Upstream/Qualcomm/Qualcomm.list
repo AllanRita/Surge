@@ -1,1 +1,51 @@
-# NAME: Qualcomm\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:46\n# DOMAIN-SUFFIX: 45\n# TOTAL: 45\nDOMAIN-SUFFIX,airgonetworks.com\nDOMAIN-SUFFIX,berkanawireless.com\nDOMAIN-SUFFIX,brewmp.com\nDOMAIN-SUFFIX,cdmatech.com\nDOMAIN-SUFFIX,dragoniscoming.com\nDOMAIN-SUFFIX,gobianywhere.com\nDOMAIN-SUFFIX,gpsonextra.net\nDOMAIN-SUFFIX,hellosmartbook.com\nDOMAIN-SUFFIX,imod.com\nDOMAIN-SUFFIX,ipleadership.org\nDOMAIN-SUFFIX,iskoot.com\nDOMAIN-SUFFIX,izatcloud.net\nDOMAIN-SUFFIX,meetsmartbook.com\nDOMAIN-SUFFIX,patenttruth.org\nDOMAIN-SUFFIX,pixtronix.com\nDOMAIN-SUFFIX,qceventscenter.com.cn\nDOMAIN-SUFFIX,qctconnect.com\nDOMAIN-SUFFIX,qprize.com\nDOMAIN-SUFFIX,qualcomm-email.com\nDOMAIN-SUFFIX,qualcomm.cn\nDOMAIN-SUFFIX,qualcomm.co.id\nDOMAIN-SUFFIX,qualcomm.co.in\nDOMAIN-SUFFIX,qualcomm.co.jp\nDOMAIN-SUFFIX,qualcomm.co.kr\nDOMAIN-SUFFIX,qualcomm.co.uk\nDOMAIN-SUFFIX,qualcomm.com\nDOMAIN-SUFFIX,qualcomm.com.br\nDOMAIN-SUFFIX,qualcomm.com.tw\nDOMAIN-SUFFIX,qualcomm.de\nDOMAIN-SUFFIX,qualcomm.fr\nDOMAIN-SUFFIX,qualcomm.sc.omtrdc.net\nDOMAIN-SUFFIX,qualcommhalo.com\nDOMAIN-SUFFIX,qualcommlabs.com\nDOMAIN-SUFFIX,qualcommmea.com\nDOMAIN-SUFFIX,qualcommretail.com\nDOMAIN-SUFFIX,qualcommventures.cn\nDOMAIN-SUFFIX,qualcommventures.com\nDOMAIN-SUFFIX,qualphone.com\nDOMAIN-SUFFIX,quicinc.com\nDOMAIN-SUFFIX,snapdragon.cn\nDOMAIN-SUFFIX,snapdragonbooth.com\nDOMAIN-SUFFIX,uplinq.com\nDOMAIN-SUFFIX,wipower.com\nDOMAIN-SUFFIX,wirelessreach.com\nDOMAIN-SUFFIX,xtracloud.cn
+# NAME: Qualcomm
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:46
+# DOMAIN-SUFFIX: 45
+# TOTAL: 45
+DOMAIN-SUFFIX,airgonetworks.com
+DOMAIN-SUFFIX,berkanawireless.com
+DOMAIN-SUFFIX,brewmp.com
+DOMAIN-SUFFIX,cdmatech.com
+DOMAIN-SUFFIX,dragoniscoming.com
+DOMAIN-SUFFIX,gobianywhere.com
+DOMAIN-SUFFIX,gpsonextra.net
+DOMAIN-SUFFIX,hellosmartbook.com
+DOMAIN-SUFFIX,imod.com
+DOMAIN-SUFFIX,ipleadership.org
+DOMAIN-SUFFIX,iskoot.com
+DOMAIN-SUFFIX,izatcloud.net
+DOMAIN-SUFFIX,meetsmartbook.com
+DOMAIN-SUFFIX,patenttruth.org
+DOMAIN-SUFFIX,pixtronix.com
+DOMAIN-SUFFIX,qceventscenter.com.cn
+DOMAIN-SUFFIX,qctconnect.com
+DOMAIN-SUFFIX,qprize.com
+DOMAIN-SUFFIX,qualcomm-email.com
+DOMAIN-SUFFIX,qualcomm.cn
+DOMAIN-SUFFIX,qualcomm.co.id
+DOMAIN-SUFFIX,qualcomm.co.in
+DOMAIN-SUFFIX,qualcomm.co.jp
+DOMAIN-SUFFIX,qualcomm.co.kr
+DOMAIN-SUFFIX,qualcomm.co.uk
+DOMAIN-SUFFIX,qualcomm.com
+DOMAIN-SUFFIX,qualcomm.com.br
+DOMAIN-SUFFIX,qualcomm.com.tw
+DOMAIN-SUFFIX,qualcomm.de
+DOMAIN-SUFFIX,qualcomm.fr
+DOMAIN-SUFFIX,qualcomm.sc.omtrdc.net
+DOMAIN-SUFFIX,qualcommhalo.com
+DOMAIN-SUFFIX,qualcommlabs.com
+DOMAIN-SUFFIX,qualcommmea.com
+DOMAIN-SUFFIX,qualcommretail.com
+DOMAIN-SUFFIX,qualcommventures.cn
+DOMAIN-SUFFIX,qualcommventures.com
+DOMAIN-SUFFIX,qualphone.com
+DOMAIN-SUFFIX,quicinc.com
+DOMAIN-SUFFIX,snapdragon.cn
+DOMAIN-SUFFIX,snapdragonbooth.com
+DOMAIN-SUFFIX,uplinq.com
+DOMAIN-SUFFIX,wipower.com
+DOMAIN-SUFFIX,wirelessreach.com
+DOMAIN-SUFFIX,xtracloud.cn

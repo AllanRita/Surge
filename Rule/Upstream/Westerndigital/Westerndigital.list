@@ -1,1 +1,29 @@
-# NAME: Westerndigital\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:48\n# DOMAIN-SUFFIX: 23\n# TOTAL: 23\nDOMAIN-SUFFIX,g-technology.com\nDOMAIN-SUFFIX,sandisk.ae\nDOMAIN-SUFFIX,sandisk.cn\nDOMAIN-SUFFIX,sandisk.co.jp\nDOMAIN-SUFFIX,sandisk.co.kr\nDOMAIN-SUFFIX,sandisk.co.uk\nDOMAIN-SUFFIX,sandisk.com\nDOMAIN-SUFFIX,sandisk.com.au\nDOMAIN-SUFFIX,sandisk.com.br\nDOMAIN-SUFFIX,sandisk.com.tr\nDOMAIN-SUFFIX,sandisk.com.tw\nDOMAIN-SUFFIX,sandisk.de\nDOMAIN-SUFFIX,sandisk.es\nDOMAIN-SUFFIX,sandisk.fr\nDOMAIN-SUFFIX,sandisk.hk\nDOMAIN-SUFFIX,sandisk.id\nDOMAIN-SUFFIX,sandisk.in\nDOMAIN-SUFFIX,sandisk.it\nDOMAIN-SUFFIX,sandisk.nl\nDOMAIN-SUFFIX,sandisk.sg\nDOMAIN-SUFFIX,wd.com\nDOMAIN-SUFFIX,wdc.com\nDOMAIN-SUFFIX,westerndigital.com
+# NAME: Westerndigital
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:48
+# DOMAIN-SUFFIX: 23
+# TOTAL: 23
+DOMAIN-SUFFIX,g-technology.com
+DOMAIN-SUFFIX,sandisk.ae
+DOMAIN-SUFFIX,sandisk.cn
+DOMAIN-SUFFIX,sandisk.co.jp
+DOMAIN-SUFFIX,sandisk.co.kr
+DOMAIN-SUFFIX,sandisk.co.uk
+DOMAIN-SUFFIX,sandisk.com
+DOMAIN-SUFFIX,sandisk.com.au
+DOMAIN-SUFFIX,sandisk.com.br
+DOMAIN-SUFFIX,sandisk.com.tr
+DOMAIN-SUFFIX,sandisk.com.tw
+DOMAIN-SUFFIX,sandisk.de
+DOMAIN-SUFFIX,sandisk.es
+DOMAIN-SUFFIX,sandisk.fr
+DOMAIN-SUFFIX,sandisk.hk
+DOMAIN-SUFFIX,sandisk.id
+DOMAIN-SUFFIX,sandisk.in
+DOMAIN-SUFFIX,sandisk.it
+DOMAIN-SUFFIX,sandisk.nl
+DOMAIN-SUFFIX,sandisk.sg
+DOMAIN-SUFFIX,wd.com
+DOMAIN-SUFFIX,wdc.com
+DOMAIN-SUFFIX,westerndigital.com
