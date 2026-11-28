@@ -34,6 +34,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Compile-check sync script
+        run: python -m py_compile .github/scripts/sync_blackmatrix7.py
+
       - name: Download phishing and malware intelligence
         env:
           URLHAUS_AUTH_KEY: ${{ secrets.URLHAUS_AUTH_KEY }}
