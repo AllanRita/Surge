@@ -25,7 +25,7 @@ def parse_name_status(raw):
     for line in raw.decode("utf-8").splitlines():
         if not line:
             continue
-        parts = line.split("\\t")
+        parts = line.split("\t")
         if len(parts) < 2:
             raise RuntimeError("Unrecognized git diff --name-status row: " + line)
         records.append((parts[0], parts[-1]))
