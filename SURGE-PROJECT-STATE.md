@@ -490,3 +490,14 @@ Reviewed Rule/Upstream/Amazon local files and README. No matching Amazon author-
 - README stale counts corrected from 663 suffix/673 total to 664/674 in 65a3f2d1af59ad561567d4877925c5cd5b9d549f; read back verified. Rule blob ab54e86e6dd3101b001246b4f97105dc07a76475 unchanged; original header still reflects upstream 673 count, intentionally not edited in this documentation-only pass. No rule semantics changed.
 - Latest run #45 (46027566072, head 08c5d4f5dcd7a158fa223b8ad1c237496edd783c) unchanged; all 14 steps successful, artifact 15211774930 unexpired. Section 30 independently verified 21 reports, 20 tests, seven ordered batches covering 654 folders, 842 upstream files and 4,335,128 entries. No new run; logs/reports not downloaded again. Independently compared complete current and run-head Git trees: all Rule .list path/blob pairs identical before README change; Microsoft rule and personal tree rechecked after README change. Rule/Personal SHA 45a22b8dcf15f6dd455655c6244a1f7971c6c4f0 unchanged. Exact exclusions empty. Workflow still disables threat deletion without URLhaus; deferred workstreams remain deferred.
 - Next: OneDrive App review using existing local files and Aoang-OneDrive.json only; retain independent App policy and intentional formats, report ambiguous overlaps without deleting or merging them.
+
+
+## 35. App-by-App review — OneDrive (2026-11-28)
+
+Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoang-OneDrive cached snapshot. No new author sources were fetched and no rule file was modified.
+
+- OneDrive.list contains 18 entries, all unique: DOMAIN-SUFFIX 13, DOMAIN-KEYWORD 3, PROCESS-NAME 2. README counts and usage instructions match the actual file. Only the standard RULE-SET format exists; no Resolve variant is documented or required.
+- The existing Aoang snapshot contains four source rules. Three are exact matches; DOMAIN,oneclient.sfx.ms is semantically covered by the existing DOMAIN-SUFFIX,oneclient.sfx.ms rule. Therefore all four cached source rules are covered; no additions or review-only source rules are needed.
+- Preserve OneDrive as its own App policy group even though the parent Microsoft rule set also contains the same endpoint; the project policy explicitly keeps OneDrive as a separate App boundary.
+- Conclusion: OneDrive passes local structural, README-count, and existing-cache coverage checks. No changes required.
+- Next App review: proceed to the next App explicitly mapped to an existing cached source snapshot in the consolidation/inventory mapping; do not infer that an App is unmapped without checking the mapping manifest. Continue using only the existing 15 cached snapshots.
