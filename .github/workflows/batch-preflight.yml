@@ -50,9 +50,7 @@ jobs:
           print("deletion manifest schema valid")
           PY
 
-      - name: Download phishing and malware intelligence
-        env:
-          URLHAUS_AUTH_KEY: ${{ secrets.URLHAUS_AUTH_KEY }}
+      - name: Download OpenPhish intelligence
         shell: bash
         run: |
           set -euo pipefail
@@ -63,15 +61,6 @@ jobs:
           test -s "$RUNNER_TEMP/surge-feeds/openphish.txt"
           grep -qE '^https?://' "$RUNNER_TEMP/surge-feeds/openphish.txt"
 
-          if [ -n "${URLHAUS_AUTH_KEY:-}" ] && curl -fsSL --retry 2 --retry-all-errors --max-time 90 \
-            "https://urlhaus-api.abuse.ch/v2/files/exports/${URLHAUS_AUTH_KEY}/hostfile.txt" \
-            -o "$RUNNER_TEMP/surge-feeds/urlhaus.txt" && test -s "$RUNNER_TEMP/surge-feeds/urlhaus.txt"; then
-            echo "URLHAUS_AVAILABLE=true" >> "$GITHUB_ENV"
-          else
-            rm -f "$RUNNER_TEMP/surge-feeds/urlhaus.txt"
-            echo "URLHAUS_AVAILABLE=false" >> "$GITHUB_ENV"
-            echo "::warning::URLhaus unavailable; automatic threat deletion will be disabled for this run."
-          fi
 
       - name: Publish with concurrent-update retry
         shell: bash
@@ -83,9 +72,6 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
             ARGS=(--openphish "$RUNNER_TEMP/surge-feeds/openphish.txt" --output Rule/Upstream/SECURITY-SYNC-REPORT.json)
-            if [ "$URLHAUS_AVAILABLE" = "true" ]; then
-              ARGS+=(--urlhaus "$RUNNER_TEMP/surge-feeds/urlhaus.txt")
-            fi
             python3 .github/scripts/sync_blackmatrix7.py "${ARGS[@]}"
             git add -A -- Rule/Upstream
             if git diff --cached --quiet; then

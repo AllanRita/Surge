@@ -118,6 +118,7 @@ def main():
     if a.openphish and Path(a.openphish).is_file(): openphish=openphish_hosts(a.openphish)
     if a.urlhaus and Path(a.urlhaus).is_file(): urlhaus=urlhaus_hosts(a.urlhaus)
     corroborated=openphish & urlhaus
+    openphish_matches=[]
     removals=[]
     # Previously confirmed exact malicious hosts are persistent no-restore tombstones.
     log=QUARANTINE/"removed-indicators.jsonl"
@@ -142,6 +143,8 @@ def main():
             parts=[x.strip() for x in s.split(",")]
             if len(parts)>=2 and parts[0].upper()=="DOMAIN":
                 host=parts[1].lower().rstrip(".")
+                if host in openphish:
+                    openphish_matches.append({"path": str(p), "line": n, "host": host})
                 if host in blocked_hosts:
                     if host in corroborated and host not in prior_removed:
                         removals.append({"path":str(p),"line":n,"rule":s,"host":host,"feeds":["OpenPhish","URLhaus"],"removed_utc":datetime.now(timezone.utc).isoformat(),"sha256":sha(line.encode()),"reason":"Exact host confirmed by both current threat feeds"})
@@ -159,7 +162,7 @@ def main():
     validation=validate_tree()
     personal_after={str(p.relative_to("Rule/Personal")):sha(p.read_bytes()) for p in Path("Rule/Personal").rglob("*") if p.is_file()}
     if personal_before!=personal_after: raise SystemExit("Rule/Personal changed unexpectedly")
-    report={"generated_utc":datetime.now(timezone.utc).isoformat(),"source":"blackmatrix7/ios_rule_script","source_branch":"master","source_commit":source_commit,"upstream_rule_files":len(imported),"upstream_file_manifest":imported,"openphish_hosts":len(openphish),"urlhaus_hosts":len(urlhaus),"automatic_deletion_enabled":bool(openphish and urlhaus),"corroborated_hosts":len(corroborated),"persistent_removed_host_tombstones":len(blocked_hosts),"removed_exact_domain_rules":removals,"coverage_note":"OpenPhish phishing URLs and URLhaus malware URLs only; not comprehensive fraud/scam coverage. Missing either feed disables automatic deletion.","validation":{k:v for k,v in validation.items() if k!="errors"},"validation_errors":validation["errors"],"rule_personal_unchanged":True}
+    report={"generated_utc":datetime.now(timezone.utc).isoformat(),"source":"blackmatrix7/ios_rule_script","source_branch":"master","source_commit":source_commit,"upstream_rule_files":len(imported),"upstream_file_manifest":imported,"openphish_hosts":len(openphish),"openphish_exact_matches":openphish_matches,"urlhaus_hosts":len(urlhaus),"automatic_deletion_enabled":bool(openphish and urlhaus),"corroborated_hosts":len(corroborated),"persistent_removed_host_tombstones":len(blocked_hosts),"removed_exact_domain_rules":removals,"coverage_note":"Exact DOMAIN matches from OpenPhish are reported. New threat removals require corroboration by both feeds.","validation":{k:v for k,v in validation.items() if k!="errors"},"validation_errors":validation["errors"],"rule_personal_unchanged":True}
     Path(a.output).write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps({"imported":len(imported),"folders":validation["rule_folders"],"removed":len(removals),"validation_errors":len(validation["errors"]),"auto_delete":report["automatic_deletion_enabled"]}))
     if validation["errors"]: raise SystemExit("Full-tree validation failed")
