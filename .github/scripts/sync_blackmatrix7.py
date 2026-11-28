@@ -73,6 +73,14 @@ def main():
         if not source.is_dir(): raise SystemExit("Upstream rule/Surge directory missing")
         source_files=sorted(source.rglob("*.list"))
         if not source_files: raise SystemExit("No upstream Surge .list files")
+        # Enforce exact user-deletion tombstones before importing any upstream path.
+        manifest=Path(".github/explicit-rule-exclusions.json")
+        if not manifest.is_file() or manifest.is_symlink():
+            raise SystemExit("Explicit deletion-protection manifest missing or unsafe")
+        exclusion_data=json.loads(manifest.read_text(encoding="utf-8"))
+        excluded={str(x["folder"]).casefold() for x in exclusion_data.get("exclusions", [])}
+        source_files=[p for p in source_files if p.relative_to(source).parts[0].casefold() not in excluded]
+        if not source_files: raise SystemExit("No eligible upstream Surge rule files after deletion exclusions")
         # Remove old rule files, obsolete multi-author cache snapshots, and stale per-App README files; preserve root reports and non-rule assets.
         old_cache=ROOT/"SourceMetadata"
         if old_cache.exists():
@@ -98,8 +106,22 @@ def main():
     if a.urlhaus and Path(a.urlhaus).is_file(): urlhaus=urlhaus_hosts(a.urlhaus)
     corroborated=openphish & urlhaus
     removals=[]
+    # Previously confirmed exact malicious hosts are persistent no-restore tombstones.
+    log=QUARANTINE/"removed-indicators.jsonl"
+    prior_removed={}
+    if log.is_file() and not log.is_symlink():
+        for raw in log.read_text(encoding="utf-8",errors="replace").splitlines():
+            try:
+                item=json.loads(raw)
+                host=str(item.get("host","")).lower().rstrip(".")
+                if host and item.get("rule","").upper().startswith("DOMAIN,"):
+                    prior_removed[host]=item
+            except (ValueError, TypeError):
+                raise SystemExit("Invalid threat-removal tombstone log; refusing sync")
+    blocked_hosts=set(prior_removed)
     if openphish and urlhaus:
-        for p in sorted(ROOT.rglob("*.list")):
+        blocked_hosts |= corroborated
+    for p in sorted(ROOT.rglob("*.list")):
             original=p.read_text(encoding="utf-8-sig")
             kept=[]
             for n,line in enumerate(original.splitlines(),1):
@@ -107,21 +129,24 @@ def main():
                 parts=[x.strip() for x in s.split(",")]
                 if len(parts)>=2 and parts[0].upper()=="DOMAIN":
                     host=parts[1].lower().rstrip(".")
-                    if host in corroborated:
-                        removals.append({"path":str(p),"line":n,"rule":s,"host":host,"feeds":["OpenPhish","URLhaus"],"removed_utc":datetime.now(timezone.utc).isoformat(),"sha256":sha(line.encode())})
+                    if host in blocked_hosts:
+                        if host in corroborated and host not in prior_removed:
+                            removals.append({"path":str(p),"line":n,"rule":s,"host":host,"feeds":["OpenPhish","URLhaus"],"removed_utc":datetime.now(timezone.utc).isoformat(),"sha256":sha(line.encode()),"reason":"Exact host confirmed by both current threat feeds"})
+                        elif host in prior_removed:
+                            # Do not restore previously confirmed malicious entries on later upstream syncs.
+                            pass
                         continue
                 kept.append(line)
             if len(kept)!=len(original.splitlines()):
                 p.write_text("\n".join(kept)+("\n" if original.endswith("\n") else ""),encoding="utf-8")
     QUARANTINE.mkdir(parents=True,exist_ok=True)
-    log=QUARANTINE/"removed-indicators.jsonl"
     if removals:
         with log.open("a",encoding="utf-8") as f:
             for item in removals: f.write(json.dumps(item,ensure_ascii=False)+"\n")
     validation=validate_tree()
     personal_after={str(p.relative_to("Rule/Personal")):sha(p.read_bytes()) for p in Path("Rule/Personal").rglob("*") if p.is_file()}
     if personal_before!=personal_after: raise SystemExit("Rule/Personal changed unexpectedly")
-    report={"generated_utc":datetime.now(timezone.utc).isoformat(),"source":"blackmatrix7/ios_rule_script","source_branch":"master","source_commit":source_commit,"upstream_rule_files":len(imported),"upstream_file_manifest":imported,"openphish_hosts":len(openphish),"urlhaus_hosts":len(urlhaus),"automatic_deletion_enabled":bool(openphish and urlhaus),"corroborated_hosts":len(corroborated),"removed_exact_domain_rules":removals,"coverage_note":"OpenPhish phishing URLs and URLhaus malware URLs only; not comprehensive fraud/scam coverage. Missing either feed disables automatic deletion.","validation":{k:v for k,v in validation.items() if k!="errors"},"validation_errors":validation["errors"],"rule_personal_unchanged":True}
+    report={"generated_utc":datetime.now(timezone.utc).isoformat(),"source":"blackmatrix7/ios_rule_script","source_branch":"master","source_commit":source_commit,"upstream_rule_files":len(imported),"upstream_file_manifest":imported,"openphish_hosts":len(openphish),"urlhaus_hosts":len(urlhaus),"automatic_deletion_enabled":bool(openphish and urlhaus),"corroborated_hosts":len(corroborated),"persistent_removed_host_tombstones":len(blocked_hosts),"removed_exact_domain_rules":removals,"coverage_note":"OpenPhish phishing URLs and URLhaus malware URLs only; not comprehensive fraud/scam coverage. Missing either feed disables automatic deletion.","validation":{k:v for k,v in validation.items() if k!="errors"},"validation_errors":validation["errors"],"rule_personal_unchanged":True}
     Path(a.output).write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps({"imported":len(imported),"folders":validation["rule_folders"],"removed":len(removals),"validation_errors":len(validation["errors"]),"auto_delete":report["automatic_deletion_enabled"]}))
     if validation["errors"]: raise SystemExit("Full-tree validation failed")
