@@ -647,3 +647,11 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - Initial workstream: make execution state and failure semantics clearer (run manifest, batch-level status, durable failure reason, safe full-run restart, report/backup inventory, retention visibility), while keeping current full-run restart semantics until any checkpoint-resume design is separately tested and shown safe.
 - Do not expand author collection, perform shared-domain review, or modify bank/payment/financial rule sets unless the user later directs it. Do not restore explicitly deleted content. Rule/Personal remains protected.
 - Next: inspect current state/report schema and workflow summary presentation; propose and implement the smallest V2.0 observability improvement in scripts/tests, validate with isolated fixtures and Actions. Do not touch production `.list` files.
+
+
+## 48. User execution preference: full-folder validation in one run (2026-11-28 UTC)
+
+- New standing instruction: for future validation/verification/audit/test passes over the rule-set folder collection, do NOT split validation into groups of 100 folders. Execute the validation against ALL rule-set folders in one complete run and report aggregate results.
+- This instruction changes validation execution only. Do not infer that production maintenance/mutation must abandon its existing safe 100-folder processing batches; keep maintenance batching unless the user explicitly changes that separate setting.
+- For validation runs, ensure the scope enumerates the complete current eligible folder set once, produces one overall result plus per-folder/per-file findings as needed, and does not stop after the first 100. If platform/runtime limits make one-run validation infeasible, report the exact constraint and ask before silently reverting to 100-folder chunks.
+- Preserve all prior safety constraints: no changes to Rule/Personal, no restoring exact user-deleted content, no new author-source fetching, no deferred shared-domain/security-intelligence work, and no unapproved routing-semantic changes.
