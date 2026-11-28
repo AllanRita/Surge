@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-28T07:45:30.339371+00:00",
+  "generated_utc": "2026-11-28T07:48:10.413413+00:00",
   "source": "blackmatrix7/ios_rule_script",
   "source_branch": "master",
   "source_commit": "0b6897dc17e0c513d25449c935a9694818e32f0c",
@@ -5174,12 +5174,10 @@
   ],
   "openphish_hosts": 289,
   "openphish_exact_matches": [],
-  "urlhaus_hosts": 0,
   "automatic_deletion_enabled": false,
-  "corroborated_hosts": 0,
   "persistent_removed_host_tombstones": 0,
   "removed_exact_domain_rules": [],
-  "coverage_note": "Exact DOMAIN matches from OpenPhish are reported. New threat removals require corroboration by both feeds.",
+  "coverage_note": "Exact DOMAIN matches from OpenPhish are reported.",
   "validation": {
     "rule_files": 861,
     "rule_folders": 690
