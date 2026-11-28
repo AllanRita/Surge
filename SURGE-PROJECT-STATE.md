@@ -601,3 +601,15 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 ### V1.0 status
 - Do not mark V1.0 accepted yet. The remaining approved validation task is an end-to-end workflow retry/re-run test or an explicit documented decision that full-run restart (rather than checkpoint resume) is the intended V1.0 behavior, plus final review of backup artifact policy. Do not silently imply checkpoint resume exists.
 - Unique next step: inspect the workflow trigger schedule and idempotency/tombstone behavior, then design a safe isolated failure/re-run validation that cannot mutate production rules. If this cannot be safely exercised without a dedicated test workflow, record it as a limitation and propose the smallest isolated test workflow. Once the acceptance matrix is closed, mark V1.0 and proceed automatically to V2.0.
+
+
+## 45. Added isolated full-rerun idempotency and tombstone recheck tests; Run #50 queued (2026-11-28 UTC)
+
+- Inspected the actual workflow triggers: push on relevant rule/script/manifest changes, daily schedule at 03:17 UTC, and manual dispatch. Concurrency is serialized (`cancel-in-progress: false`). The workflow restarts from batch 1 on a new run; it does not persist a failed-batch checkpoint. Feed download retries are configured, but the full workflow does not automatically retry a failed batch.
+- Added two isolated regression tests in `.github/scripts/test_batch_maintenance.py` (now 24 test methods):
+  1. `test_batch_maintenance_rerun_is_idempotent_and_preserves_first_backup`: run deterministic duplicate cleanup twice in a temporary tree; assert second run makes no further changes, the original pre-change backup remains unchanged, and `Rule/Personal` is untouched.
+  2. `test_explicit_tombstone_recheck_is_idempotent_and_does_not_restore_or_touch_neighbors`: enforce an exact test-only tombstone twice; assert the deleted folder remains absent, neighboring rules remain unchanged, and personal rules remain untouched.
+- The existing cached-source merge idempotency test already runs the merge twice and verifies zero second-run additions and one copy of the merged rule. This complements the two new tests.
+- Commit `eb6b38d248f461e5fc6779cdc0a88ffe44785920` triggered maintenance Run #50 (`46110850136`), queued at time of inspection. Do not count the new tests as passed until the run completes and logs confirm all 24 tests.
+- V1.0 design decision recorded: batch checkpoint resume is not implemented; the current intended recovery model is safe full-run restart from batch 1, relying on idempotent processing and exact tombstones. This is distinct from automatic in-run retry. If Run #50 passes, document this restart model as a known V1.0 behavior rather than treating checkpoint resume as required. Keep 90-day artifact retention explicit.
+- Next: inspect Run #50 result and logs. If all 24 tests and full workflow pass, complete the V1.0 acceptance matrix with this full-restart behavior and remaining external/user-deferred limits; then mark V1.0 accepted and begin V2.0 only after confirming all approved core criteria. If Run #50 fails, fix only the isolated test/implementation defect and rerun.
