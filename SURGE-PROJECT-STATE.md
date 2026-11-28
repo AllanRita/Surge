@@ -536,3 +536,11 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - Full maintenance workflow processed all 654 eligible folders in seven sequential batches. URLhaus remained unavailable (`URLHAUS_AVAILABLE=false`); workflow explicitly disabled threat-based automatic deletion and marked security coverage incomplete. Existing 15 cached author snapshots only; no new author fetching.
 - Artifact `15248194299` (`surge-automatic-maintenance-48`) was uploaded and is unexpired. Run #48 is valid evidence of a successful full maintenance cycle, but it does not by itself prove all failure/retry/commit-boundary scenarios or constitute final V1.0 acceptance.
 - V1.0 remains open. Next: inspect the Run #48 artifact's batch reports and verify the final Git tree / Rule/Personal invariants; then add isolated failure/recovery and commit-boundary acceptance tests, and write the final acceptance matrix. Only after that may V2.0 begin automatically.
+
+
+## 40. Isolated failed-batch rollback acceptance case added (2026-11-28 UTC)
+
+- Added `test_failed_batch_rollback_preserves_prior_commit_and_discards_current_changes` to `.github/scripts/test_batch_maintenance.py` (commit `6656edc1b8c656d19033280cbdd5d77fc4541b00`). It creates a temporary Git repository, commits a successful first batch, simulates a second-batch partial edit followed by the workflow's `git checkout -- Rule/Upstream` rollback, and asserts the prior batch commit remains, the failed batch's partial edit is discarded, and the working tree is clean.
+- This test models the current workflow's per-batch commit/rollback boundary; it does not yet constitute a live injected failure inside GitHub Actions. No production rule files or Rule/Personal were modified.
+- Run #48 passed 21 tests and all 14 workflow steps; its artifact `15248194299` is available. The newly added 22nd test has not yet been run in Actions as of this entry.
+- Next: confirm the push of commit `6656edc1b8c656d19033280cbdd5d77fc4541b00` triggered a new run; inspect its offline test result and full workflow outcome. If no run was triggered, dispatch the existing maintenance workflow explicitly. Then update the V1.0 acceptance matrix based on evidence, without claiming final acceptance until all approved criteria pass.
