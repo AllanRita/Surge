@@ -411,5 +411,47 @@ class SurgeMaintenanceTests(unittest.TestCase):
                 VERIFY.git_bytes = original_git_bytes
 
 
+
+    def test_failed_batch_rollback_preserves_prior_commit_and_discards_current_changes(self):
+        with tempfile.TemporaryDirectory() as td:
+            repo = Path(td)
+            subprocess.run(["git", "init", "-q"], cwd=repo, check=True)
+            subprocess.run(["git", "config", "user.name", "Surge Test"], cwd=repo, check=True)
+            subprocess.run(["git", "config", "user.email", "surge-test@example.invalid"], cwd=repo, check=True)
+            root = repo / "Rule" / "Upstream"
+            first = root / "AppOne" / "AppOne.list"
+            second = root / "AppTwo" / "AppTwo.list"
+            first.parent.mkdir(parents=True)
+            second.parent.mkdir(parents=True)
+            first.write_text("DOMAIN,one.original\\n", encoding="utf-8")
+            second.write_text("DOMAIN,two.original\\n", encoding="utf-8")
+            subprocess.run(["git", "add", "Rule/Upstream"], cwd=repo, check=True)
+            subprocess.run(["git", "commit", "-qm", "baseline"], cwd=repo, check=True)
+
+            first.write_text("DOMAIN,one.committed\\n", encoding="utf-8")
+            subprocess.run(["git", "add", "Rule/Upstream/AppOne/AppOne.list"], cwd=repo, check=True)
+            subprocess.run(["git", "commit", "-qm", "batch 1 committed"], cwd=repo, check=True)
+            committed_head = subprocess.run(
+                ["git", "rev-parse", "HEAD"], cwd=repo, check=True,
+                stdout=subprocess.PIPE, text=True
+            ).stdout.strip()
+
+            second.write_text("DOMAIN,two.partial\\n", encoding="utf-8")
+            subprocess.run(["git", "checkout", "--", "Rule/Upstream"], cwd=repo, check=True)
+
+            self.assertEqual(first.read_text(encoding="utf-8"), "DOMAIN,one.committed\\n")
+            self.assertEqual(second.read_text(encoding="utf-8"), "DOMAIN,two.original\\n")
+            current_head = subprocess.run(
+                ["git", "rev-parse", "HEAD"], cwd=repo, check=True,
+                stdout=subprocess.PIPE, text=True
+            ).stdout.strip()
+            self.assertEqual(current_head, committed_head)
+            status = subprocess.run(
+                ["git", "status", "--porcelain"], cwd=repo, check=True,
+                stdout=subprocess.PIPE
+            ).stdout
+            self.assertEqual(status, b"")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
