@@ -469,9 +469,9 @@ class SurgeMaintenanceTests(unittest.TestCase):
             manifest.parent.mkdir(parents=True)
             manifest.write_text(json.dumps({"exclusions": []}), encoding="utf-8")
             personal_file = personal / "private.list"
-            personal_file.write_text("DOMAIN,private.example\\n", encoding="utf-8")
+            personal_file.write_text("DOMAIN,private.example\n", encoding="utf-8")
             target = app / "TestApp.list"
-            original = "# NAME: TestApp\\nDOMAIN,duplicate.example\\nDOMAIN,duplicate.example\\n"
+            original = "# NAME: TestApp\nDOMAIN,duplicate.example\nDOMAIN,duplicate.example\n"
             target.write_text(original, encoding="utf-8")
             argv = ["batch_maintain.py", "--batch", "1", "--batch-size", "100",
                     "--output-dir", str(out), "--backup-dir", str(backup)]
@@ -480,10 +480,10 @@ class SurgeMaintenanceTests(unittest.TestCase):
                     MAINTAIN.main()
             report = json.loads((out / "batch-001-maintenance.json").read_text(encoding="utf-8"))
             saved = backup / "batch-001" / "TestApp" / "TestApp.list"
-            self.assertEqual(target.read_text(encoding="utf-8"), "# NAME: TestApp\\nDOMAIN,duplicate.example\\n")
+            self.assertEqual(target.read_text(encoding="utf-8"), "# NAME: TestApp\nDOMAIN,duplicate.example\n")
             self.assertEqual(saved.read_text(encoding="utf-8"), original)
             self.assertEqual(report["summary"].get("duplicates_removed", 0), 0)
-            self.assertEqual(personal_file.read_text(encoding="utf-8"), "DOMAIN,private.example\\n")
+            self.assertEqual(personal_file.read_text(encoding="utf-8"), "DOMAIN,private.example\n")
             self.assertTrue(report["personal_unchanged"])
 
     def test_explicit_tombstone_recheck_is_idempotent_and_does_not_restore_or_touch_neighbors(self):
