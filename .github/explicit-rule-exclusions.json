@@ -1,7 +1,7 @@
 {
-  "schema_version": 1,
-  "last_updated": "2026-11-27",
-  "purpose": "Exact no-restore tombstones only for items the user explicitly instructed to delete. No category-based exclusions are maintained.",
+  "schema_version": 2,
+  "last_updated": "2026-11-28",
+  "purpose": "Exact no-restore tombstones for explicitly deleted folders and exact rule lines. Empty entries mean no historical individual deletions have been reconstructed; never infer them.",
   "policy": {
     "scope": "Exact direct-child folders under Rule/Upstream only.",
     "automatic_restore_allowed": false,
@@ -17,5 +17,6 @@
     "category_based_deletion_rules": false,
     "all_app_categories_subject_to_same_security_policy": true
   },
-  "exclusions": []
+  "exclusions": [],
+  "rule_lines": []
 }
