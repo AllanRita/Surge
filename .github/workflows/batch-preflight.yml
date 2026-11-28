@@ -34,8 +34,21 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Compile-check sync script
-        run: python -m py_compile .github/scripts/sync_blackmatrix7.py
+      - name: Compile-check sync script and validate deletion manifest
+        run: |
+          python -m py_compile .github/scripts/sync_blackmatrix7.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=json.loads(Path(".github/explicit-rule-exclusions.json").read_text(encoding="utf-8"))
+          assert p.get("schema_version") == 2
+          assert isinstance(p.get("exclusions"), list)
+          assert isinstance(p.get("rule_lines"), list)
+          for item in p["rule_lines"]:
+              assert item["path"].startswith("Rule/Upstream/") and item["path"].endswith(".list")
+              assert item["rule"].strip()
+          print("deletion manifest schema valid")
+          PY
 
       - name: Download phishing and malware intelligence
         env:
