@@ -66,18 +66,33 @@ jobs:
           fi
           python3 .github/scripts/sync_blackmatrix7.py "${ARGS[@]}"
 
-      - name: Publish exact sync, threat-removal and full-validation report
+      - name: Publish with concurrent-update retry
+        shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A -- Rule/Upstream
-          if git diff --cached --quiet; then
-            echo "No upstream rule or security report changes."
-            exit 0
-          fi
-          git commit -m "Sync blackmatrix7 Surge rules and run full security validation"
-          git push origin HEAD:main
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            ARGS=(--openphish "$RUNNER_TEMP/surge-feeds/openphish.txt" --output Rule/Upstream/SECURITY-SYNC-REPORT.json)
+            if [ "$URLHAUS_AVAILABLE" = "true" ]; then
+              ARGS+=(--urlhaus "$RUNNER_TEMP/surge-feeds/urlhaus.txt")
+            fi
+            python3 .github/scripts/sync_blackmatrix7.py "${ARGS[@]}"
+            git add -A -- Rule/Upstream
+            if git diff --cached --quiet; then
+              echo "No upstream rule or security report changes."
+              exit 0
+            fi
+            git commit -m "Sync blackmatrix7 Surge rules and run full security validation"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "::warning::Main advanced during publication; rebuilding from latest main (attempt $attempt of 3)."
+          done
+          echo "Could not publish after three retries."
+          exit 1
 
       - name: Summarize security coverage and validation
         if: always()
