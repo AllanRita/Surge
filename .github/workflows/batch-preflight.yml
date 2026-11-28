@@ -57,15 +57,6 @@ jobs:
             echo "::warning::URLhaus unavailable; automatic threat deletion will be disabled for this run."
           fi
 
-      - name: Sync only the upstream author's Surge rule files and perform full-tree security check
-        run: |
-          set -euo pipefail
-          ARGS=(--openphish "$RUNNER_TEMP/surge-feeds/openphish.txt" --output Rule/Upstream/SECURITY-SYNC-REPORT.json)
-          if [ "$URLHAUS_AVAILABLE" = "true" ]; then
-            ARGS+=(--urlhaus "$RUNNER_TEMP/surge-feeds/urlhaus.txt")
-          fi
-          python3 .github/scripts/sync_blackmatrix7.py "${ARGS[@]}"
-
       - name: Publish with concurrent-update retry
         shell: bash
         run: |
