@@ -740,3 +740,13 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - Fix now filters exact excluded top-level source folders before import and treats previously logged exact `DOMAIN,host` threat removals as persistent no-restore tombstones. Added `python -m py_compile` gate before feed download/sync. No changes to Rule/Personal or main config.
 - Important limitation: folder exclusions and confirmed threat-host tombstones are now protected. Individual user-deleted domain lines require explicit line-level tombstones if they are to be guaranteed against upstream reintroduction; do not claim that legacy individual line deletions are fully protected without an authoritative manifest.
 - Next: inspect Actions run triggered by merge `a163bff059a00536768e77295fe9596a69c77901`; verify syntax gate and full sync succeed, no restore occurs, Rule/Personal remains unchanged. Then design and test line-level explicit deletion tombstones only from a user-approved historical deletion record; do not guess deleted entries. Continue URLhaus feed blocker only through authorized configuration; do not create or guess secrets.
+
+
+## 55. V2.0 no-restore guard validation passed (2026-11-28 UTC)
+
+- User confirmed Actions run #55 is complete. Independently verified run ID `46121563181`: status completed, conclusion success; job `sync-and-audit` completed successfully. URL: https://github.com/AllanRita/Surge/actions/runs/46121563181
+- Validated the post-fix report generated `2026-11-28T07:31:53Z`: source blackmatrix7 commit `0b6897dc17e0c513d25449c935a9694818e32f0c`; 861 `.list` files, 690 rule directories, 0 validation errors; `Rule/Personal` unchanged.
+- Workflow files remain exactly 2: `.github/workflows/batch-preflight.yml` (single-source sync/security) and `.github/workflows/BuildIcons.yml` (icons).
+- Explicit folder-exclusion filtering and persistent threat-host tombstone code passed the live run. Current tombstone count 0; no threat rules removed.
+- Security status remains limited: OpenPhish 289 hosts, URLhaus 0, auto deletion disabled, 0 corroborated hosts. Do not enable automatic deletion until both feeds are valid and current.
+- Next priority: inspect whether there is a trustworthy, user-approved record of historical individual domain deletions; if not, do not invent tombstones. Design a safe line-level deletion manifest format and document that it only protects entries explicitly recorded. Separately assess authorized URLhaus access/feed availability without creating or guessing secrets. Preserve main config and Rule/Personal.
