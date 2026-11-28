@@ -781,3 +781,7 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 ## 59. URLhaus paused by user
 
 Do not fetch or troubleshoot URLhaus or request credentials until the user asks. Continue full blackmatrix7 sync, validation, existing no-restore protections, and reporting of exact OpenPhish DOMAIN matches. Single-feed matches do not authorize new deletions. Next: verify the first run with this policy and its published report.
+
+## 60. V2.0 ongoing maintenance
+
+This section supersedes all earlier next steps. Sync blackmatrix7, validate the full rule tree, report exact OpenPhish matches and preserve explicit exclusions and personal rules. On each cycle verify the run and published report. Escalate actionable findings or sync failures only.

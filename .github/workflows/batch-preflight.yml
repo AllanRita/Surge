@@ -99,7 +99,7 @@ jobs:
           print("- Imported rule files:", p.get("upstream_rule_files"))
           print("- Rule folders:", p.get("validation",{}).get("rule_folders"))
           print("- Exact high-confidence removals:", len(p.get("removed_exact_domain_rules",[])))
-          print("- Automatic deletion enabled:", p.get("automatic_deletion_enabled"))
+          print("- Exact OpenPhish matches:", len(p["openphish_exact_matches"]))
           print("- Validation errors:", len(p.get("validation_errors",[])))
           print("- Coverage:", p.get("coverage_note"))
           PY

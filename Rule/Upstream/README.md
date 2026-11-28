@@ -8,8 +8,6 @@ This directory is maintained from one upstream source only:
 - Security report: `SECURITY-SYNC-REPORT.json`.
 - Threat-removal evidence: `ThreatQuarantine/removed-indicators.jsonl`.
 
-The sync process mirrors upstream rule files without manual domain additions, narrowing, expansion, policy-target changes, or rule reordering. Exact phishing/malware host entries are removed only when the exact host is independently present in both configured OpenPhish and URLhaus feeds. If either feed is unavailable, automatic threat deletion is disabled for that run. Parent suffixes and shared hosting/provider domains are never deleted based on a child-host match.
-
-OpenPhish and URLhaus do not provide comprehensive scam/fraud coverage. Security findings and feed coverage limitations are recorded in the report.
+The sync process mirrors upstream rule files without manual domain additions, narrowing, expansion, policy-target changes, or rule reordering. The report lists exact DOMAIN matches against OpenPhish with the file path, line number and hostname. Matches are reported for review. Existing explicit exclusions and recorded removals continue to apply.
 
 `Rule/Personal`, the user's Surge main configuration, and its rule order are outside this workflow and must never be modified.

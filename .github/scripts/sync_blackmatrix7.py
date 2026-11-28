@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sync the complete Surge rule-set tree from blackmatrix7 and remove only exact, dual-feed confirmed threat hosts."""
+"""Sync blackmatrix7 Surge rules and report exact OpenPhish matches."""
 from pathlib import Path
 from datetime import datetime, timezone
 from urllib.parse import urlsplit
@@ -22,17 +22,6 @@ def openphish_hosts(path):
         if s and not s.startswith(("#",";")):
             h=host_from_url(s)
             if h: out.add(h)
-    return out
-
-def urlhaus_hosts(path):
-    out=set()
-    for line in Path(path).read_text(encoding="utf-8",errors="replace").splitlines():
-        s=line.strip()
-        if not s or s.startswith(("#",";")): continue
-        body=s.split(";",1)[0].split("#",1)[0]
-        for token in body.split():
-            h=host_from_url(token)
-            if h and "." in h: out.add(h)
     return out
 
 def validate_tree():
@@ -58,7 +47,6 @@ def validate_tree():
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--openphish")
-    ap.add_argument("--urlhaus")
     ap.add_argument("--output",default="Rule/Upstream/SECURITY-SYNC-REPORT.json")
     a=ap.parse_args()
     if ROOT.is_symlink() or not ROOT.is_dir(): raise SystemExit("Unsafe or missing Rule/Upstream")
@@ -114,12 +102,9 @@ def main():
             filtered=("\\n".join(kept)+("\\n" if text.endswith("\\n") else "")).encode("utf-8")
             dst.write_bytes(filtered)
             imported.append({"path":str(dst),"sha256":sha(filtered),"bytes":len(filtered),"excluded_exact_lines":len(lines)-len(kept)})
-    openphish=set(); urlhaus=set()
+    openphish=set()
     if a.openphish and Path(a.openphish).is_file(): openphish=openphish_hosts(a.openphish)
-    if a.urlhaus and Path(a.urlhaus).is_file(): urlhaus=urlhaus_hosts(a.urlhaus)
-    corroborated=openphish & urlhaus
     openphish_matches=[]
-    removals=[]
     # Previously confirmed exact malicious hosts are persistent no-restore tombstones.
     log=QUARANTINE/"removed-indicators.jsonl"
     prior_removed={}
@@ -133,8 +118,6 @@ def main():
             except (ValueError, TypeError):
                 raise SystemExit("Invalid threat-removal tombstone log; refusing sync")
     blocked_hosts=set(prior_removed)
-    if openphish and urlhaus:
-        blocked_hosts |= corroborated
     for p in sorted(ROOT.rglob("*.list")):
         original=p.read_text(encoding="utf-8-sig")
         kept=[]
@@ -146,24 +129,15 @@ def main():
                 if host in openphish:
                     openphish_matches.append({"path": str(p), "line": n, "host": host})
                 if host in blocked_hosts:
-                    if host in corroborated and host not in prior_removed:
-                        removals.append({"path":str(p),"line":n,"rule":s,"host":host,"feeds":["OpenPhish","URLhaus"],"removed_utc":datetime.now(timezone.utc).isoformat(),"sha256":sha(line.encode()),"reason":"Exact host confirmed by both current threat feeds"})
-                    elif host in prior_removed:
-                        # Do not restore previously confirmed malicious entries on later upstream syncs.
-                        pass
                     continue
             kept.append(line)
         if len(kept)!=len(original.splitlines()):
             p.write_text("\n".join(kept)+("\n" if original.endswith("\n") else ""),encoding="utf-8")
-    QUARANTINE.mkdir(parents=True,exist_ok=True)
-    if removals:
-        with log.open("a",encoding="utf-8") as f:
-            for item in removals: f.write(json.dumps(item,ensure_ascii=False)+"\n")
     validation=validate_tree()
     personal_after={str(p.relative_to("Rule/Personal")):sha(p.read_bytes()) for p in Path("Rule/Personal").rglob("*") if p.is_file()}
     if personal_before!=personal_after: raise SystemExit("Rule/Personal changed unexpectedly")
-    report={"generated_utc":datetime.now(timezone.utc).isoformat(),"source":"blackmatrix7/ios_rule_script","source_branch":"master","source_commit":source_commit,"upstream_rule_files":len(imported),"upstream_file_manifest":imported,"openphish_hosts":len(openphish),"openphish_exact_matches":openphish_matches,"urlhaus_hosts":len(urlhaus),"automatic_deletion_enabled":bool(openphish and urlhaus),"corroborated_hosts":len(corroborated),"persistent_removed_host_tombstones":len(blocked_hosts),"removed_exact_domain_rules":removals,"coverage_note":"Exact DOMAIN matches from OpenPhish are reported. New threat removals require corroboration by both feeds.","validation":{k:v for k,v in validation.items() if k!="errors"},"validation_errors":validation["errors"],"rule_personal_unchanged":True}
+    report={"generated_utc":datetime.now(timezone.utc).isoformat(),"source":"blackmatrix7/ios_rule_script","source_branch":"master","source_commit":source_commit,"upstream_rule_files":len(imported),"upstream_file_manifest":imported,"openphish_hosts":len(openphish),"openphish_exact_matches":openphish_matches,"automatic_deletion_enabled":False,"persistent_removed_host_tombstones":len(blocked_hosts),"removed_exact_domain_rules":[],"coverage_note":"Exact DOMAIN matches from OpenPhish are reported.","validation":{k:v for k,v in validation.items() if k!="errors"},"validation_errors":validation["errors"],"rule_personal_unchanged":True}
     Path(a.output).write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(json.dumps({"imported":len(imported),"folders":validation["rule_folders"],"removed":len(removals),"validation_errors":len(validation["errors"]),"auto_delete":report["automatic_deletion_enabled"]}))
+    print(json.dumps({"imported":len(imported),"folders":validation["rule_folders"],"openphish_matches":len(openphish_matches),"validation_errors":len(validation["errors"]),"auto_delete":report["automatic_deletion_enabled"]}))
     if validation["errors"]: raise SystemExit("Full-tree validation failed")
 if __name__=="__main__": main()
