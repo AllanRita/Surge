@@ -3,6 +3,7 @@
 import importlib.util
 import json
 import sys
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -360,6 +361,56 @@ class SurgeMaintenanceTests(unittest.TestCase):
             VERIFY.validate_change_records([("M", "Rule/Upstream/Microsoft/Microsoft.list")], {"Apple"})
         with self.assertRaises(ValueError):
             VERIFY.validate_change_records([("D", "Rule/Upstream/Apple/Apple.list")], {"Apple"})
+
+
+    def test_batch_integrity_verifies_backup_and_git_rollback_in_isolated_repo(self):
+        with tempfile.TemporaryDirectory() as td:
+            base = Path(td)
+            subprocess.run(["git", "init", "-q"], cwd=base, check=True)
+            subprocess.run(["git", "config", "user.name", "Surge Test"], cwd=base, check=True)
+            subprocess.run(["git", "config", "user.email", "surge-test@example.invalid"], cwd=base, check=True)
+            target = base / "Rule" / "Upstream" / "Apple" / "Apple.list"
+            target.parent.mkdir(parents=True)
+            target.write_text("DOMAIN,original.example\\n", encoding="utf-8")
+            subprocess.run(["git", "add", "Rule/Upstream/Apple/Apple.list"], cwd=base, check=True)
+            subprocess.run(["git", "commit", "-qm", "fixture baseline"], cwd=base, check=True)
+
+            out = base / "batch-output"
+            backup_root = out / "backups"
+            backup = backup_root / "batch-001" / "Apple" / "Apple.list"
+            backup.parent.mkdir(parents=True)
+            backup.write_text("DOMAIN,original.example\\n", encoding="utf-8")
+            target.write_text("DOMAIN,repaired.example\\n", encoding="utf-8")
+
+            selected = ["Apple"]
+            preflight = {"batch": 1, "batch_size": 100, "selected_folders": selected,
+                         "selected_folder_count": 1, "total_eligible_top_level_folders": 1,
+                         "summary": {"blockers": 0}, "personal_tree_unchanged": True}
+            maintenance = {"batch": 1, "batch_size": 100, "selected_folders": selected,
+                           "personal_unchanged": True}
+            cached = {"batch": 1, "batch_size": 100, "selected_folders": selected,
+                      "personal_unchanged": True, "cached_sources_expected": 15,
+                      "cached_sources_processed": 15}
+            out.mkdir(exist_ok=True)
+            (out / "batch-001.json").write_text(json.dumps(preflight), encoding="utf-8")
+            (out / "batch-001-maintenance.json").write_text(json.dumps(maintenance), encoding="utf-8")
+            (out / "batch-001-cached-sources.json").write_text(json.dumps(cached), encoding="utf-8")
+
+            with patch("pathlib.Path.cwd", return_value=base), patch.object(Path, "resolve", autospec=True, side_effect=lambda p, *a, **k: p):
+                # subprocess/git helpers use cwd explicitly through a scoped wrapper.
+                original_git_bytes = VERIFY.git_bytes
+                VERIFY.git_bytes = lambda args: subprocess.run(["git", *args], cwd=base, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True).stdout
+                try:
+                    result = VERIFY.verify_batch(1, out, backup_root)
+                    self.assertEqual(result["changed_files"], 1)
+                    backup.unlink()
+                    with self.assertRaisesRegex(RuntimeError, "Missing pre-change backup"):
+                        VERIFY.verify_batch(1, out, backup_root)
+                    subprocess.run(["git", "checkout", "--", "Rule/Upstream/Apple/Apple.list"], cwd=base, check=True)
+                    self.assertEqual(target.read_text(encoding="utf-8"), "DOMAIN,original.example\\n")
+                finally:
+                    VERIFY.git_bytes = original_git_bytes
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
