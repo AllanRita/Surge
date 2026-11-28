@@ -527,3 +527,12 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - Fixed `.github/scripts/verify_batch_integrity.py` to split on the actual tab character. This is a workflow correctness fix uncovered by the isolated fixture, not a production rule change. Commit: `d1d8b9b3dcc816913dca28f5f92a00610ccf1cbf`.
 - Run #47 failed before any feed download, maintenance, rule edits, or batch commits because the offline test step failed first. No production rules were modified by that run.
 - Next: verify the new Actions run triggered by the verifier fix. Confirm all 21 offline tests pass, including the new isolated backup/missing-backup/Git rollback case; then continue testing commit-boundary and failure rollback behavior. V1.0 remains unaccepted until evidence is complete.
+
+
+## 39. V1.0 validation run #48 passed (2026-11-28 UTC)
+
+- Run #48 (`46108672439`, head `d1d8b9b3dcc816913dca28f5f92a00610ccf1cbf`) completed successfully. All 14 workflow steps succeeded.
+- Offline self-tests: 21 passed, including the new isolated verifier/backup/missing-backup/Git checkout rollback case. Format parity audit and App completeness matrix also completed successfully.
+- Full maintenance workflow processed all 654 eligible folders in seven sequential batches. URLhaus remained unavailable (`URLHAUS_AVAILABLE=false`); workflow explicitly disabled threat-based automatic deletion and marked security coverage incomplete. Existing 15 cached author snapshots only; no new author fetching.
+- Artifact `15248194299` (`surge-automatic-maintenance-48`) was uploaded and is unexpired. Run #48 is valid evidence of a successful full maintenance cycle, but it does not by itself prove all failure/retry/commit-boundary scenarios or constitute final V1.0 acceptance.
+- V1.0 remains open. Next: inspect the Run #48 artifact's batch reports and verify the final Git tree / Rule/Personal invariants; then add isolated failure/recovery and commit-boundary acceptance tests, and write the final acceptance matrix. Only after that may V2.0 begin automatically.
