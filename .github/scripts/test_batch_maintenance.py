@@ -396,20 +396,19 @@ class SurgeMaintenanceTests(unittest.TestCase):
             (out / "batch-001-maintenance.json").write_text(json.dumps(maintenance), encoding="utf-8")
             (out / "batch-001-cached-sources.json").write_text(json.dumps(cached), encoding="utf-8")
 
-            with patch("pathlib.Path.cwd", return_value=base), patch.object(Path, "resolve", autospec=True, side_effect=lambda p, *a, **k: p):
-                # subprocess/git helpers use cwd explicitly through a scoped wrapper.
-                original_git_bytes = VERIFY.git_bytes
-                VERIFY.git_bytes = lambda args: subprocess.run(["git", *args], cwd=base, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True).stdout
-                try:
-                    result = VERIFY.verify_batch(1, out, backup_root)
-                    self.assertEqual(result["changed_files"], 1)
-                    backup.unlink()
-                    with self.assertRaisesRegex(RuntimeError, "Missing pre-change backup"):
-                        VERIFY.verify_batch(1, out, backup_root)
-                    subprocess.run(["git", "checkout", "--", "Rule/Upstream/Apple/Apple.list"], cwd=base, check=True)
-                    self.assertEqual(target.read_text(encoding="utf-8"), "DOMAIN,original.example\\n")
-                finally:
-                    VERIFY.git_bytes = original_git_bytes
+            # Run the verifier's Git inspection against this isolated fixture repository.
+            original_git_bytes = VERIFY.git_bytes
+            VERIFY.git_bytes = lambda args: subprocess.run(["git", *args], cwd=base, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True).stdout
+            try:
+                result = VERIFY.verify_batch(1, out, backup_root)
+                self.assertEqual(result["changed_files"], 1)
+                backup.unlink()
+                with self.assertRaisesRegex(RuntimeError, "Missing pre-change backup"):
+                    VERIFY.verify_batch(1, out, backup_root)
+                subprocess.run(["git", "checkout", "--", "Rule/Upstream/Apple/Apple.list"], cwd=base, check=True)
+                self.assertEqual(target.read_text(encoding="utf-8"), "DOMAIN,original.example\\n")
+            finally:
+                VERIFY.git_bytes = original_git_bytes
 
 
 if __name__ == "__main__":
