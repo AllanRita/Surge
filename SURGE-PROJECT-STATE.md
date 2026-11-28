@@ -519,3 +519,11 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - Added the isolated test to `.github/scripts/test_batch_maintenance.py`; no production rule file or `Rule/Personal` file was modified. Initial test commit `881916fce6bd488693d54a11601ce86b101adac3` triggered run #46 (`46108596056`), which failed at the offline test step. Corrected the fixture's Git execution context in commit `dd0e93e987bf6e41c525b6318b01d35efd5c3e05`.
 - Corrected validation run #47 (`46108611478`) is in progress. Do not count the new test as passed until the run completes successfully and logs confirm it ran.
 - Sole next step: inspect run #47's offline test result and full workflow conclusion; if it fails, repair only the isolated test fixture and rerun. If it passes, continue isolated failure-path/commit-boundary evidence and prepare the V1.0 acceptance matrix. V1.0 is not yet accepted; do not begin V2.0.
+
+
+## 38. V1.0 verifier defect found by isolated acceptance test (2026-11-28)
+
+- Corrected run #47 (`46108611478`) executed 21 tests and exposed a real verifier defect: `parse_name_status()` split Git `--name-status` output on the two-character sequence `\\t` instead of an actual tab delimiter. The verifier therefore rejected valid changed-file rows such as `M<TAB>Rule/Upstream/Apple/Apple.list`.
+- Fixed `.github/scripts/verify_batch_integrity.py` to split on the actual tab character. This is a workflow correctness fix uncovered by the isolated fixture, not a production rule change. Commit: `d1d8b9b3dcc816913dca28f5f92a00610ccf1cbf`.
+- Run #47 failed before any feed download, maintenance, rule edits, or batch commits because the offline test step failed first. No production rules were modified by that run.
+- Next: verify the new Actions run triggered by the verifier fix. Confirm all 21 offline tests pass, including the new isolated backup/missing-backup/Git rollback case; then continue testing commit-boundary and failure rollback behavior. V1.0 remains unaccepted until evidence is complete.
