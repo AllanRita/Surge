@@ -1103,6 +1103,18 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/AM.png"
     },
     {
+      "name": "Amazon Music: Songs & Podcasts · Google Play",
+      "url": "https://play-lh.googleusercontent.com/9v2z1-7g8pWbxek8IW3Q9gGsAqD-YkTvy_rmyd4Cfb-OkpVR2T6jt-Ev2eKDcvx72njhCQ_4fEd9qg8-T9AaDA=w240-h480"
+    },
+    {
+      "name": "Amazon Music: Songs & Podcasts · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/35/72/a4/3572a400-de5c-0954-333d-431454be03ea/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "name": "Amazon Prime Video · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0f/ce/51/0fce51d0-438b-6e58-a389-88d140aca3db/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "Amazon Shopping App · Google Play",
       "url": "https://play-lh.googleusercontent.com/UIYZ9hTFNg-zZUg_uzLS9YdyDpvoo1VHNFb6VlzHy5JqNMq9Uq-p2S1VPwzXCipHTFacfGKhJkyAuKL19VVlcWA=w240-h480"
     },
@@ -1317,6 +1329,10 @@
     {
       "name": "App_Store · Qure-Mini",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/App_Store.png"
+    },
+    {
+      "name": "Apple Music · Google Play",
+      "url": "https://play-lh.googleusercontent.com/KvngbEdIpmKyn-6C1pKfZBBs_3mwS1lUfvZf6LxOg2p4ZLqAdKy9WTGSUIUR5DT4LdMkdwvqzng2rxNpLa5c=w240-h480"
     },
     {
       "name": "apple · Lige",
@@ -1903,8 +1919,16 @@
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f346.png"
     },
     {
+      "name": "Audiomack - Play Music Offline · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8b/42/0c/8b420c10-6ebe-0421-aa84-67c15fb7cc82/AppIcon-1-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "Audiomack · KeLee",
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Audiomack.png"
+    },
+    {
+      "name": "Audiomack: Music Downloader · Google Play",
+      "url": "https://play-lh.googleusercontent.com/7TBdEjil-lhQok7Y-jlpEDbgtS4cayV5l5j872slxL9pfvnGYAuHa8khiiQc9FVOQRLfU-vjPJeVm1yUDKsj=w240-h480"
     },
     {
       "name": "Australia · Lige",
@@ -3093,6 +3117,10 @@
     {
       "name": "BLG · fmz200",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/LPL/BLG.png"
+    },
+    {
+      "name": "BlinkDrama: Short Dramas & TV · Google Play",
+      "url": "https://play-lh.googleusercontent.com/HyuhR0hMZWQRdOV6tPS6J84kdM0jXQraNMyTHSZgO00_DahHKmZtL8dW6V7yO9JUGAdX6Vj01CANK8EarUAUgj8=w240-h480"
     },
     {
       "name": "BlinkLoad · fmz200",
@@ -5071,8 +5099,16 @@
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/26b0-fe0f.png"
     },
     {
+      "name": "Coin Drama · Google Play",
+      "url": "https://play-lh.googleusercontent.com/wBzll6M9AScFwDlxIpsQSSkPNHK2l0AAVlRmlIzyAWRqbF9Cftcl1MedCiMrA9wQxpr6K1l9myXzJ0VHhW3Gu58=w240-h480"
+    },
+    {
       "name": "COIN · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1fa99.png"
+    },
+    {
+      "name": "CoinDrama · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/74/1f/de/741fdef6-9687-000c-9971-e8d4362e42db/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "Cola · fmz200",
@@ -5807,8 +5843,16 @@
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f451.png"
     },
     {
+      "name": "Crunchyroll · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/46/ca/2f/46ca2f65-a321-6c8b-fadf-ee1c2fe2ae1f/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "Crunchyroll · Oasisic",
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/SONY/Crunchyroll/Crunchyroll.png"
+    },
+    {
+      "name": "Crunchyroll: Anime Streaming · Google Play",
+      "url": "https://play-lh.googleusercontent.com/FUEOotGzxEZqItvGGov0YBiOhZBCACxCM6kF37OtpWrCG9H6EyxSeY2G8PDXQGueLxlxtL3Xr0fbkvXaQ67NLg=w240-h480"
     },
     {
       "name": "CRUTCH · Apple Emoji",
@@ -6347,6 +6391,10 @@
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Democratic_Republic_Of_Congo.png"
     },
     {
+      "name": "Demus: Easy Music Streaming · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/85/a7/e4/85a7e4b8-658c-0b0d-4d06-9961b6bfac11/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "Denmark · Semporia",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Denmark.png"
     },
@@ -6605,6 +6653,14 @@
     {
       "name": "Disney+ · fmz200",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Disney+.png"
+    },
+    {
+      "name": "Disney+ · Google Play",
+      "url": "https://play-lh.googleusercontent.com/AEX_3Bk5_SEZfR4fUcJsWiyqW_RRVcLED9AM2HMUVHAPVTZhZHfP2q3M35mRe4LtCXlb712DtkKwkZa_nJ-0=w240-h480"
+    },
+    {
+      "name": "Disney+ · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c9/04/20/c9042033-641e-f439-37eb-4ce174e477ff/AppIcon-0-0-1x_U007emarketing-0-8-0-0-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "Disney+ · KeLee",
@@ -7365,6 +7421,26 @@
     {
       "name": "DRAGON · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f409.png"
+    },
+    {
+      "name": "DramaBox - Stream Drama Shorts · Google Play",
+      "url": "https://play-lh.googleusercontent.com/GGi0g65ySR86svFuxny2J2FgfkTZuFlJcftmeAZ_bZ7sM86XfwUNL1h9omSyoRKha1c1-_BoFkUbyJz2VSXI=w240-h480"
+    },
+    {
+      "name": "DramaBox - Stream Drama Shorts · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3b/de/f6/3bdef618-7e9d-7dad-cace-1ea999e08e5e/AppIcon-0-0-1x_U007ephone-0-1-0-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "name": "DramaReels – Short Dramas & TV · Google Play",
+      "url": "https://play-lh.googleusercontent.com/vcG5aOTR5pvYaKqp1a-_AUmIwV4o3qF9rvR_XlT_hsDnm_gvcZ-y_X5AsTzsy0E25-iAo0AkGVFTW801qPR-3A=w240-h480"
+    },
+    {
+      "name": "DramaWave - Dramas & Reels · Google Play",
+      "url": "https://play-lh.googleusercontent.com/qdfS5KciqnG6lP2HCxKT-CoeWrGdXsxe2sQgRR_-X-G_MVG5WZljSIesMUPkAkic0cjxgsp7gA6WMNXaq-lA6iU=w240-h480"
+    },
+    {
+      "name": "DramaWave - Dramas & Reels · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/89/9e/ef/899eef44-3153-8eff-f71d-afa81408d15d/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "DREAME · KeLee",
@@ -9035,6 +9111,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Flareix.png"
     },
     {
+      "name": "Flash TV · Google Play",
+      "url": "https://play-lh.googleusercontent.com/93FTYiJ1fhgOXeYLj_SR-u6MaSM1T8u30pHQKzCGUq6TFI69XijwfBDLrx8cntIiJCrPNOhXRHLCA3tEuig3qg=w240-h480"
+    },
+    {
       "name": "FLAT SHOE · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f97f.png"
     },
@@ -9073,6 +9153,14 @@
     {
       "name": "Flickr · Semporia",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Flickr.png"
+    },
+    {
+      "name": "FlickReels - AI Story & Drama · Google Play",
+      "url": "https://play-lh.googleusercontent.com/CmQ5EeRcDO_gIzXMTCcgdleypz8fJtQFX2q4rE5P_cmP5cTzV58rFoZy9m0VJueR9uME098gvcW3GBw6wFS-=w240-h480"
+    },
+    {
+      "name": "FlickReels - AI Story & Drama · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d9/00/f2/d900f2be-324d-e7de-af83-36d371aee2c2/AppIcon-1x_U007epad-0-1-0-85-220-0.png/512x512bb.jpg"
     },
     {
       "name": "FLOPPY DISK · Apple Emoji",
@@ -9367,8 +9455,20 @@
       "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/FRANXX.png"
     },
     {
+      "name": "FreeDrama: Short Drama & Reels · Google Play",
+      "url": "https://play-lh.googleusercontent.com/naDFm8LzFy2OVyMrUf5vZDWlSSANqLWpjkf6oD_9Itm4UOh0NJXfKg5ruiheKxFb42nlo4Q9RSVrMZDiCfG8mw=w240-h480"
+    },
+    {
+      "name": "FreeDrama: Watch Short Stories · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fc/6b/00/fc6b00c8-fc26-8f77-5f6f-6f9cce12d420/appIconFreeDrama-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "FreeEmby · fmz200",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/FreeEmby.png"
+    },
+    {
+      "name": "FreeReels - Dramas & Reels · Google Play",
+      "url": "https://play-lh.googleusercontent.com/1ybMEp7xw4kTY-K7ocih3vcbTEyCEqaxerVB6tDT8WcE3k5zCRR-jhKwS6Ct0UXIorczCIat3wTV0QLiuoLPdbY=w240-h480"
     },
     {
       "name": "FREEZING FACE · Apple Emoji",
@@ -9955,6 +10055,10 @@
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f95b.png"
     },
     {
+      "name": "Glint Reels · Google Play",
+      "url": "https://play-lh.googleusercontent.com/pdaNjUjN6ID15lvjF4QVAiPlHskILlcGtSi28dodN3736eb0colyrTlLqm-vIq5WrWIaSZ-qWUav8P1upzCWVA=w240-h480"
+    },
+    {
       "name": "GLM · Oasisic",
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/AI/GLM/GLM.png"
     },
@@ -10067,8 +10171,20 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/goodnotes.png"
     },
     {
+      "name": "GoodShort - Short Dramas Hub · Google Play",
+      "url": "https://play-lh.googleusercontent.com/KRRusfufUnwu85IplvKDA87UugyOqoqQExymB6aahV6Rh_yN3vwIkgbC3qmol0Wdt9cP2yTDFeetrvWA8Gyj=w240-h480"
+    },
+    {
+      "name": "GoodShort - Short Dramas Hub · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/21/08/10/2108100c-f307-a2db-f04f-cdbb1eebf4c8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "Google Gemini · KeLee",
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/GoogleGemini.png"
+    },
+    {
+      "name": "Google TV: Watch Movies & TV · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6c/68/c3/6c68c3d5-2151-af9a-f08b-0ed76ed210ad/logo_google_tv_color-0-0-1x_U007emarketing-0-0-0-7-0-0-0-0-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "Google · fmz200",
@@ -10769,6 +10885,14 @@
     {
       "name": "Hawaii · Semporia",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Hawaii.png"
+    },
+    {
+      "name": "HBO Max: Stream Movies & TV · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b9/86/2b/b9862b25-4b8a-edee-cc76-0e0d36af480d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg"
+    },
+    {
+      "name": "HBO Max: Stream TV & Movies · Google Play",
+      "url": "https://play-lh.googleusercontent.com/wKJ5hN5CmSBWXPBVYYuRENzcEVb7FB6NyibjKqPT4SB0eoZ7Fww2jq-OhUDCxEPGALrSekQaazrHLSBwVb6T4A=w240-h480"
     },
     {
       "name": "HBO · fmz200",
@@ -11971,6 +12095,10 @@
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/IQ.png"
     },
     {
+      "name": "iQIYI - Drama, Anime, Show · Google Play",
+      "url": "https://play-lh.googleusercontent.com/o7-CfVMA4U8MqrWY6v855kdPeu7Sc6IGHS2mbG5WbtVR01bDUbEJCNBXVMS8ViIdgvGN5916NrmaWYHfAcgaF3I=w240-h480"
+    },
+    {
       "name": "iqiyi · fmz200",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/iqiyi.png"
     },
@@ -12299,8 +12427,20 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jinritoutiao.png"
     },
     {
+      "name": "JioHotstar · Google Play",
+      "url": "https://play-lh.googleusercontent.com/02xiO0ptbXjD8NR3sbS2StP1P9aytDN56dDR15zqM_i66Vwq5W_hD-98CoFxvRVoUS4uV_xMSv-iQh3nQFeDeQ=w240-h480"
+    },
+    {
+      "name": "JioHotstar · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3a/b0/d2/3ab0d218-cc4c-87c3-3a25-30b29d39e538/AppIcon-IN-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "JioHotstar · Oasisic",
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/JioHotstar/JioHotstar.png"
+    },
+    {
+      "name": "JioSaavn - Music & Podcasts · Google Play",
+      "url": "https://play-lh.googleusercontent.com/tJwz_QkxqQN1yFfb8ItXc2hpfzzSfxA-sdqaPGv51ldOFDXCMSmG0coD0uCzKo5y28rJLzyiIY7tmCHiuOOtdKM=w240-h480"
     },
     {
       "name": "jiuhaochuxing · Lige",
@@ -12669,6 +12809,10 @@
     {
       "name": "KI · Kiribati Flag · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f0-1f1ee.png"
+    },
+    {
+      "name": "KICK: Live Streaming · Google Play",
+      "url": "https://play-lh.googleusercontent.com/zEMwKW77990UYUC6aJrJhJmnKdHpr_56Y4W1n7C9xrk2a2gSTT62_Lk1uaLek-cYH4UBl12pc8Au4444oYQK=w240-h480"
     },
     {
       "name": "Kickstarter · Semporia",
@@ -14101,6 +14245,10 @@
     {
       "name": "liuliang(5) · Lige",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/liuliang(5).png"
+    },
+    {
+      "name": "Live TV: Live Sports Streaming · Google Play",
+      "url": "https://play-lh.googleusercontent.com/UN_qZyvNxF4CxZjXE2F8EsJxuC5WEzA6Of0r9ZL5zNKNcBY351MAWU_o1yN4gk89y4EQMLh80Jb4f_oLIlxUSQ=w240-h480"
     },
     {
       "name": "LiveJournal · Semporia",
@@ -16939,6 +17087,10 @@
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Melilla.png"
     },
     {
+      "name": "Melolo - Short Dramas & Reels · Google Play",
+      "url": "https://play-lh.googleusercontent.com/HEkeCbNIuDdTlBr_2vuey1BeBTc-0O_RwemiQ80eWKGJFyJrq83Kk-34wOK_jqyXJ_XBP7eh3eoGg2nBbZd0eQ=w240-h480"
+    },
+    {
       "name": "MELON · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f348.png"
     },
@@ -17311,6 +17463,10 @@
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f4bd.png"
     },
     {
+      "name": "MiniDrama: Stream Drama Shorts · Google Play",
+      "url": "https://play-lh.googleusercontent.com/IM5N_ADvZotyqZRqHOplfA-y7sUMDE1Xlo1cuDGvMelQLicdK9TZhZk-khYd3ECmN0AdLZUWIcYrLUarwe2GAw=w240-h480"
+    },
+    {
       "name": "MiniMax · Oasisic",
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/AI/MiniMax/MiniMax.png"
     },
@@ -17345,6 +17501,10 @@
     {
       "name": "mitce · Lige",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/mitce.png"
+    },
+    {
+      "name": "MixReels · Google Play",
+      "url": "https://play-lh.googleusercontent.com/GfvnSfebwEmEwOvwbTtTGVxjV_i22XMO_s4x1B21uKL6WQb6A9t7DkSHAGOZ1e25h20EY0lhBKAN-POOGIks3A=w240-h480"
     },
     {
       "name": "Mjj · fmz200",
@@ -17703,6 +17863,10 @@
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f344.png"
     },
     {
+      "name": "Music  : Cloud Music Streaming · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/00/74/20/007420ce-1353-75c6-3e39-9d37f837fe13/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "Music · Qure-Light",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Music.png"
     },
@@ -17999,6 +18163,10 @@
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f922.png"
     },
     {
+      "name": "Navo TV: Live TV & Watch Movie · Google Play",
+      "url": "https://play-lh.googleusercontent.com/vgqrYSOcSQVU2ND2ZMpPAqVNnGTk6ei2Nnt-04cvuiVwxTcqRyPlkFhux0pKCK9p8QplvWdHQjd_RNrS6RZcRCo=w240-h480"
+    },
+    {
       "name": "NAZAR AMULET · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f9ff.png"
     },
@@ -18159,6 +18327,14 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/NeteaseUnblock.png"
     },
     {
+      "name": "Netflix · Google Play",
+      "url": "https://play-lh.googleusercontent.com/fXVS45nukV1x9PYVSKHkCQK0QGCOishIvAOxIZS3sgRem8HS7l9l94_Ggj-WZPrTLePRdNYN4pp4SPAQL7oS0PU=w240-h480"
+    },
+    {
+      "name": "Netflix · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4d/5d/8d/4d5d8d1d-8455-6c65-a256-f41ac98a2419/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "Netflix · KeLee",
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Netflix.png"
     },
@@ -18261,6 +18437,14 @@
     {
       "name": "NetLove(1) · Lige",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/NetLove(1).png"
+    },
+    {
+      "name": "NetShort - Popular Dramas & TV · Google Play",
+      "url": "https://play-lh.googleusercontent.com/abBbNR-5zthxSLW7YYJTHBB-0gNcb6iJbX7CIGz3p99RBMaabM_ljYlSFuiHS33DTQ3PI2Ye7b2qzuRDmTQ6BzQ=w240-h480"
+    },
+    {
+      "name": "NetShort - Popular Dramas & TV · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8d/f5/88/8df5888e-8b38-9d18-7e06-c12902462175/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "NEUTRAL FACE · Apple Emoji",
@@ -18405,6 +18589,14 @@
     {
       "name": "Nicegram · KeLee",
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Nicegram.png"
+    },
+    {
+      "name": "NiceTV Max · Google Play",
+      "url": "https://play-lh.googleusercontent.com/n6c2x4NUfYwIiGe9qeMjkJgv8YNsoOghR3kZ4zJ2AuRQvzQ-tlsZhxqxjEK97WeK3Gf4XudQipTcUT9HirGNAw=w240-h480"
+    },
+    {
+      "name": "NiceTV · Google Play",
+      "url": "https://play-lh.googleusercontent.com/AwYnrhj11yrw7ZZoFCdcbqUx4YQoIRLiBOhpEvZdt9exOYrkfKefuk6iYt4TTv9s1D0PCa-a2LPYXPGmPLmyUQ=w240-h480"
     },
     {
       "name": "Niconico · Oasisic",
@@ -19499,6 +19691,10 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Pandora.png"
     },
     {
+      "name": "Pandora: Personalized Music · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/69/1d/a4/691da433-8725-cab3-7f17-e240ff8d5247/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "PaoChe · fmz200",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/PaoChe.png"
     },
@@ -19557,6 +19753,14 @@
     {
       "name": "Paramount · Qure-Color",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Paramount.png"
+    },
+    {
+      "name": "Paramount+ (GB) · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/83/8a/d9/838ad994-4418-3c1b-ef57-6b8c58224071/P_U002bINTLAppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "name": "Paramount+ (US) · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/37/aa/2737aab5-cbe8-12f5-c496-fb96836dd0df/P_U002bAppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "Paramount+ · KeLee",
@@ -19713,6 +19917,10 @@
     {
       "name": "Peach · fmz200",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Peach.png"
+    },
+    {
+      "name": "Peacock TV: Stream TV & Movies · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ca/c0/0d/cac00d2c-157e-cbe8-becd-413d578aad97/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "PEACOCK · Apple Emoji",
@@ -20675,6 +20883,14 @@
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f34d.png"
     },
     {
+      "name": "PineDrama - Short Dramas · Google Play",
+      "url": "https://play-lh.googleusercontent.com/pfc2SBr-JiF9y5d47tVq2hreXASR0MOZV2SA0CHk0GGyPpmf2e47GtkOJi3_pL9PDYVh1dG6vxqRFzpBOHzN=w240-h480"
+    },
+    {
+      "name": "PineDrama - Short Dramas · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4f/8e/e2/4f8ee2d8-76ce-64e0-22ea-baed1eb3ab71/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "pinganhaochezhu · Lige",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/pinganhaochezhu.png"
     },
@@ -20875,6 +21091,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Plusemby.png"
     },
     {
+      "name": "Pluto TV: Watch Free Movies/TV · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/69/11/26/69112662-0cb0-0b91-d790-3c26fe60eeee/PTVAppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "PM · KeLee-Flags",
       "url": "https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Flag_icon/120px/PM.png"
     },
@@ -20889,6 +21109,10 @@
     {
       "name": "PN · Pitcairn Islands Flag · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f5-1f1f3.png"
+    },
+    {
+      "name": "Pocket FM: Audio Dramas · Google Play",
+      "url": "https://play-lh.googleusercontent.com/WpXQtLSdj7RatTG5mQ8ssNoy7sfEZle2pqVCEd2Ab6EQ2Prnw0jGS8uFOpP48ocfXa2VoNfyOvR3I89xFL9F=w240-h480"
     },
     {
       "name": "Poe · Oasisic",
@@ -21137,6 +21361,10 @@
     {
       "name": "PRETZEL · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f968.png"
+    },
+    {
+      "name": "Prime Video · Google Play",
+      "url": "https://play-lh.googleusercontent.com/NnoDzfxkvlsAvU8jzoPeK8aaxbcU2sEH_btwgMQ2xI88_qtrNGQuf1vlFkxSiQODyKVFZ3-s71sU1MHyV-vc9Q=w240-h480"
     },
     {
       "name": "Prime Video · KeLee",
@@ -21495,6 +21723,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/QQvideo.png"
     },
     {
+      "name": "QQ音乐 - 听我想听 · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/3d/45/2a3d45c5-29ee-eb11-9360-ac7b7839df9d/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "QQ音乐 · KeLee",
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QQMusic.png"
     },
@@ -21611,6 +21843,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/QuarkDrive.png"
     },
     {
+      "name": "QuickTV - Short Drama & Movies · Google Play",
+      "url": "https://play-lh.googleusercontent.com/d8Qz2th3Fzhx6MjTK7kWshhZw4MaMJNd43syJeZdPjzczSKxvVLfTUyBajCqy8chAUwIhEThVmuTjT2_Wd8g=w240-h480"
+    },
+    {
       "name": "Qunhui · fmz200",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Qunhui.png"
     },
@@ -21665,6 +21901,10 @@
     {
       "name": "RADIO BUTTON · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f518.png"
+    },
+    {
+      "name": "Radio FM · Google Play",
+      "url": "https://play-lh.googleusercontent.com/2rlLPxL05gj03pSzNX-Sq8EwDptnUfh_-Pd-rRub_dcrIBBhYU35Iyk7zSbD_hn5F0fMEHwI6QQIbbk1pyts604=w240-h480"
     },
     {
       "name": "RADIO · Apple Emoji",
@@ -21823,6 +22063,10 @@
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Rapa_Nui.png"
     },
     {
+      "name": "Rapid Short · Google Play",
+      "url": "https://play-lh.googleusercontent.com/pooVUqFUS5Qtnn9H1IZq-MjY5GXo-9qvcq7gKn4MBWdGHaewKmCccjMr6wR2pYrSaMaP0vovLJuiQ7ck8LaQ=w240-h480"
+    },
+    {
       "name": "RAT · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f400.png"
     },
@@ -21907,8 +22151,20 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/redotpay.png"
     },
     {
+      "name": "ReelShort - Stream Drama & TV · Google Play",
+      "url": "https://play-lh.googleusercontent.com/mzo4PnyNudAfdPmD7kPGoX0-OWqPgngejYRmiEkva1WCPvLfnA5n7CQWYJErwFGnGw-cg4zBXf8JOVVtrKM0HmI=w240-h480"
+    },
+    {
+      "name": "ReelShort - Stream Drama & TV · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/41/d5/c1/41d5c184-935e-0040-b565-a9dedfeccbb5/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "ReelShort · KeLee",
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ReelShort.png"
+    },
+    {
+      "name": "ReelyGo - Stream Short Dramas · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/1a/30/bd1a302b-eec5-8cc3-2af5-fa34d8c265d9/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "reflix · Lige",
@@ -22153,6 +22409,10 @@
     {
       "name": "RIGHTWARDS PUSHING HAND · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1faf8.png"
+    },
+    {
+      "name": "Rigi TV: Short Drama App · Google Play",
+      "url": "https://play-lh.googleusercontent.com/TCXpDdLpHpURLPOxysncK_04AlpeLvndR_R8v7r0zDPOuMZeNj-kQcBptD7cRti_K3BLZ3xC9aeoJTRKxjH6=w240-h480"
     },
     {
       "name": "RING BUOY · Apple Emoji",
@@ -23483,6 +23743,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Shortcuts_03.png"
     },
     {
+      "name": "ShortMax - Short Dramas & TV · Google Play",
+      "url": "https://play-lh.googleusercontent.com/qFAWc6vT4KKSCK_SAek_9Zr8Q1KQ7wHxLB_AT1pU6fqRFHvUPU7R1ZtlUqD0qdOF17M5jGI50qbJ4n7JQ2FOrto=w240-h480"
+    },
+    {
       "name": "SHORTS · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1fa73.png"
     },
@@ -24171,6 +24435,10 @@
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Somaliland.png"
     },
     {
+      "name": "Sony LIV: Sports & Entmt · Google Play",
+      "url": "https://play-lh.googleusercontent.com/OSPwLdQHHx16DNvMT8GxkBvpzj5x9WG9_DmJoTMS1YKKbg1YsQlfzTLzc-XTkCLaF9FT7-I-kX9RvSUxSAwYRA=w240-h480"
+    },
+    {
       "name": "SONY · Oasisic",
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/SONY/SONY/SONY.png"
     },
@@ -24201,6 +24469,14 @@
     {
       "name": "SoundCloud · Semporia",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/SoundCloud.png"
+    },
+    {
+      "name": "SoundCloud: Discover Music · Google Play",
+      "url": "https://play-lh.googleusercontent.com/rfmCNUApzYntPTdAVmor5vpaOGxIUJWNlpED2pwKcDuCTUaf_2vJlOALNzX1PiejSgZIuAT8k0F5xIBU58JG3g=w240-h480"
+    },
+    {
+      "name": "SoundCloud: Discover New Music · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cc/a8/61/cca86124-c8f7-cd96-91c9-122ae8d29f1b/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "SOUTH EAST ARROW · Apple Emoji",
@@ -24461,6 +24737,18 @@
     {
       "name": "spotify(green)(1) · Lige",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/spotify(green)(1).png"
+    },
+    {
+      "name": "Spotify: Music & Podcasts · Google Play",
+      "url": "https://play-lh.googleusercontent.com/7ghCqs4kKYrQpTECddnejlSeAXgpdiiKlIghuDR869MpF5msXdPsd3gqjC6lstD_NfJkmP0LAUJTty7UACcrLw=w240-h480"
+    },
+    {
+      "name": "Spotify: Music and Podcasts · Google Play",
+      "url": "https://play-lh.googleusercontent.com/IzQgYCcnCFCD08GR-3bdtcT8xzOvrNkC84avGT5CwTX2VIqmTmKKJcP_Cd4JoBOdmCMlTndlOzV6hrthg2fOWA=w240-h480"
+    },
+    {
+      "name": "Spotify: Music and Podcasts · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ce/b5/1c/ceb51c33-0a63-56fb-db99-5d345728ae9e/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "Spotify_01 · fmz200",
@@ -26347,6 +26635,14 @@
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/23f1-fe0f.png"
     },
     {
+      "name": "Story Max- Movies & Reel Shows · Google Play",
+      "url": "https://play-lh.googleusercontent.com/kHP4-shiBc-HKXgmymai77BlE115yZmFZkPT24fKVcpsBszAgp7EHFcvW75ZZzMzee-Yvt8TlOiSu8gSU1q8=w240-h480"
+    },
+    {
+      "name": "Story TV - Watch Short Dramas · Google Play",
+      "url": "https://play-lh.googleusercontent.com/A5ISR8CT9j9gTFpqTSJBXwvxWKk1WmJlJ8-WRl7dYUzI0U3srRPCF0t6_sX6Jvfl1Su1_-p0R5k9wd4fur79VQ=w240-h480"
+    },
+    {
       "name": "STRAIGHT RULER · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f4cf.png"
     },
@@ -27647,6 +27943,10 @@
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f3ab.png"
     },
     {
+      "name": "TIDAL Music: HiFi Sound · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e5/1c/b1/e51cb19c-ffcb-993a-feac-099737b35b29/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "TIDAL · Oasisic",
       "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Music/TIDAL/TIDAL.png"
     },
@@ -27681,6 +27981,10 @@
     {
       "name": "TIGER · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f405.png"
+    },
+    {
+      "name": "TikTok - Videos, Shop & LIVE · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7b/a9/be/7ba9be57-1bd4-5534-bb8d-50f707ca521e/TikTok_AppIcon26-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "TikTok · KeLee",
@@ -27761,6 +28065,10 @@
     {
       "name": "tiktok(1) · Lige",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/tiktok(1).png"
+    },
+    {
+      "name": "TikTok-Global Video Community · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7a/b4/04/7ab4042d-087e-ce9b-6a29-87a8b039eaa5/TikTok_AppIcon26-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "TikTok_1 · Qure-Color",
@@ -27925,6 +28233,10 @@
     {
       "name": "TOP WITH UPWARDS ARROW ABOVE · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f51d.png"
+    },
+    {
+      "name": "TopShort - Dramas & Reels · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/ed/9f/34ed9f20-346c-3d59-d7bc-f10806b9e2a3/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "topwidge · Lige",
@@ -28131,6 +28443,10 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Tubi.png"
     },
     {
+      "name": "Tubi: Movies & Live TV · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/25/23/f1/2523f1ff-3c4f-a030-d64d-9e099d415124/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "Tuhu 途虎养车 · fmz200",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Tuhu.png"
     },
@@ -28309,6 +28625,10 @@
     {
       "name": "twitch(1) · Lige",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/twitch(1).png"
+    },
+    {
+      "name": "Twitch: Live Streaming · Google Play",
+      "url": "https://play-lh.googleusercontent.com/JHCM4AIyomRp6Lo2-5ugoznlGdsZmNnejVN8DLvtWFHShcz8YRgUE170f1CyOfrleYbtFL2g8tQ3VqlQNAgqoA=w240-h480"
     },
     {
       "name": "twitter · Lige",
@@ -28585,6 +28905,10 @@
     {
       "name": "TZ · Tanzania Flag · Apple Emoji",
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1f9-1f1ff.png"
+    },
+    {
+      "name": "U-NEXT - 映画やドラマ、アニメなどの動画が見放題 · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/95/8c/b0/958cb09a-3003-3c01-b82c-30431618a424/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "UA · KeLee-Flags",
@@ -29051,6 +29375,10 @@
       "url": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@16.0.0/img/apple/64/1f1fb-1f1ea.png"
     },
     {
+      "name": "Vega Drama · Google Play",
+      "url": "https://play-lh.googleusercontent.com/zogCeTdEbqJNdVSBsFs0SvbuaFGXUZFCYMIF46BhpeyECs02VGYuE4zPhd7lX5Z6NsZ34P3gUM0Hi68Scv0m9m0=w240-h480"
+    },
+    {
       "name": "Venezuela · Semporia",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Venezuela.png"
     },
@@ -29077,6 +29405,14 @@
     {
       "name": "Viadeo · Semporia",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Viadeo.png"
+    },
+    {
+      "name": "VibeShort: AI Short Dramas · Google Play",
+      "url": "https://play-lh.googleusercontent.com/fLxYdKk9hGCSPgtxZjjENqNluD8sTHp-rLsVgNna9E8tgvjnLno6fEgRzzLjXA5kbu0UuSUDMCjZqnFZDUfeXg=w240-h480"
+    },
+    {
+      "name": "VibeShort: AI Short Dramas · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a1/cb/18/a1cb18dc-7037-83a3-475b-39fb062aebf0/AppIcon-0-0-1x_U007ephone-0-1-0-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "VIBRATION MODE · Apple Emoji",
@@ -32775,8 +33111,32 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/youkushipin(1).png"
     },
     {
+      "name": "Youtify - Music & Playlists · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6c/c4/6b/6cc46b9d-b0d6-a84e-5c68-6f6a897752c7/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg"
+    },
+    {
+      "name": "YouTube Kids · Google Play",
+      "url": "https://play-lh.googleusercontent.com/XmNSJLiwxfeoGwofbTZ37le-jDNAdZmHbVo7un7y2g-d-A3iD0LKUm1FMAgdURw8PFEiFh4Vv14u7q_nvET-=w240-h480"
+    },
+    {
+      "name": "YouTube Kids · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/89/a7/f2/89a7f2a5-7760-a497-6b26-0f969a2ba015/logo_youtube_kids_2024_q4_color-0-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "name": "YouTube Music · Google Play",
+      "url": "https://play-lh.googleusercontent.com/MyptZXmcCyF59phIWPsNCfHq6zSO_ojEdw_4rMYYWPOGdikSjqeOXcoszBZ053VYpINe5K7ZR9KV1nkFWgxdOw=w240-h480"
+    },
+    {
+      "name": "YouTube Music · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bb/ae/84/bbae8447-05ac-1058-54d4-306f9073d8ec/logo_youtube_music_2024_q4_color-0-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "YouTube Music · KeLee",
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YouTubeMusic.png"
+    },
+    {
+      "name": "YouTube TV · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/83/0c/cb/830ccb40-d023-9dcb-071a-7c53bfffd907/logo_youtube_television_2024_q4_color-0-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "YouTube · KeLee",
@@ -33519,6 +33879,10 @@
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Bilibili.png"
     },
     {
+      "name": "哔哩哔哩-弹幕番剧直播高清视频 · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/5f/06/e05f0629-26ec-d0f9-6bde-42276c9e0d76/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "哔哩哔哩漫画 · KeLee",
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BiliComic.png"
     },
@@ -33763,6 +34127,10 @@
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ChengFenMiao.png"
     },
     {
+      "name": "抖音 · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/23/26/2e/23262e2f-efcc-3c94-af6a-b6e4b85124e6/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "招商银行 · fmz200",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/bank/CMB.png"
     },
@@ -33915,6 +34283,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/bank/CMBC.png"
     },
     {
+      "name": "汽水音乐 - 随时听好歌 · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/43/ef/65/43ef6587-66e4-cff1-9f9e-71880d58432d/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "汽水音乐 · KeLee",
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/SodaMusic.png"
     },
@@ -33949,6 +34321,10 @@
     {
       "name": "海雀 · KeLee",
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AlcidaeVideo.png"
+    },
+    {
+      "name": "海马畅听-小说电子书随身听 · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/56/0d/24/560d24be-58b3-9348-afdb-c4d08071fec0/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "淘宝 · KeLee",
@@ -34103,6 +34479,14 @@
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/FenxiangLife.png"
     },
     {
+      "name": "红果漫剧 - 热门精彩漫剧 · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a2/7f/7c/a27f7cce-fb2a-6f73-26d9-ffa76623c221/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
+      "name": "红果短剧 - 海量热门短剧随心看 · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a3/ae/71/a3ae7189-4183-3563-fe6d-7cf8b0582f09/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "红果短剧 · KeLee",
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/PhoenixVideo.png"
     },
@@ -34117,6 +34501,10 @@
     {
       "name": "网易云音乐 · KeLee",
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/NeteaseCloudMusic.png"
+    },
+    {
+      "name": "网易云音乐-数亿音乐畅听 · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/17/c6/ce/17c6ce15-4a59-47ec-949f-7b1eb2380c9e/appIconNew-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "网易大神 · KeLee",
@@ -34187,12 +34575,20 @@
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Tencent_Video.png"
     },
     {
+      "name": "腾讯视频-沈腾携《现在就出发4》爆笑回归 · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1d/13/80/1d138028-76f4-495c-ab82-7fe387b4182b/AppIcon-0-0-1x_U007epad-0-1-0-0-sRGB-85-220.png/512x512bb.jpg"
+    },
+    {
       "name": "航旅纵横 · KeLee",
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Umetrip.png"
     },
     {
       "name": "节点检测工具 · KeLee",
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Node_detection_tool.png"
+    },
+    {
+      "name": "芒果TV · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/74/e3/c1/74e3c1a5-7b6c-5c5b-6726-2c1cdf5d6c1d/AppIcon-0-0-1x_U007ephone-0-1-0-0-0-85-220.png/512x512bb.jpg"
     },
     {
       "name": "芒果TV · KeLee",
@@ -34321,6 +34717,10 @@
     {
       "name": "酷狗铃声 · KeLee",
       "url": "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KGRing.png"
+    },
+    {
+      "name": "酷狗音乐 - 就是歌多 · iOS",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/57/74/bd/5774bd85-6f8b-1efb-11b0-6ebf3ac02e5c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg"
     },
     {
       "name": "酷狗音乐 · KeLee",
