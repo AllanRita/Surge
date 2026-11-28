@@ -613,3 +613,12 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - Commit `eb6b38d248f461e5fc6779cdc0a88ffe44785920` triggered maintenance Run #50 (`46110850136`), queued at time of inspection. Do not count the new tests as passed until the run completes and logs confirm all 24 tests.
 - V1.0 design decision recorded: batch checkpoint resume is not implemented; the current intended recovery model is safe full-run restart from batch 1, relying on idempotent processing and exact tombstones. This is distinct from automatic in-run retry. If Run #50 passes, document this restart model as a known V1.0 behavior rather than treating checkpoint resume as required. Keep 90-day artifact retention explicit.
 - Next: inspect Run #50 result and logs. If all 24 tests and full workflow pass, complete the V1.0 acceptance matrix with this full-restart behavior and remaining external/user-deferred limits; then mark V1.0 accepted and begin V2.0 only after confirming all approved core criteria. If Run #50 fails, fix only the isolated test/implementation defect and rerun.
+
+
+## 46. Run #50 exposed a test-fixture escaping error; corrected and Run #51 queued (2026-11-28 UTC)
+
+- Run #50 (`46110850136`) failed at the offline test step before audits, feed downloads, tombstone enforcement, or any production batch processing. No production rules were modified by this run.
+- The failing assertion was in the newly added rerun-idempotency test fixture: the fixture wrote literal `\\n` sequences rather than actual line breaks, so the duplicate-rule parser correctly treated it as one line. This was a test-fixture construction defect, not a discovered production cleanup defect.
+- Corrected only the fixture's newline escaping in commit `93884e2540126b74445066679ef853fd561548a5`. The exact tombstone recheck test passed in Run #50; other prior tests also ran, but the suite is not green because one test failed.
+- Push triggered Run #51 (`46110901516`), queued at inspection. It must explicitly confirm all 24 tests and full workflow success before acceptance evidence is updated.
+- V1.0 remains open. Next: inspect Run #51's test output and complete workflow. If green, record the two idempotency/tombstone tests as passed, then finalize the acceptance matrix. Do not modify production rule data to work around test failures.
