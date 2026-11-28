@@ -1,6 +1,12 @@
 name: Surge Single-Source Sync and Security Check
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/sync_blackmatrix7.py'
+      - '.github/workflows/batch-preflight.yml'
+      - 'Rule/Upstream/README.md'
   workflow_dispatch:
   schedule:
     - cron: '17 3 * * *'
