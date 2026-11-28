@@ -622,3 +622,28 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - Corrected only the fixture's newline escaping in commit `93884e2540126b74445066679ef853fd561548a5`. The exact tombstone recheck test passed in Run #50; other prior tests also ran, but the suite is not green because one test failed.
 - Push triggered Run #51 (`46110901516`), queued at inspection. It must explicitly confirm all 24 tests and full workflow success before acceptance evidence is updated.
 - V1.0 remains open. Next: inspect Run #51's test output and complete workflow. If green, record the two idempotency/tombstone tests as passed, then finalize the acceptance matrix. Do not modify production rule data to work around test failures.
+
+
+## 47. Run #51 passed; V1.0 accepted with explicit deferred/external limitations; V2.0 started (2026-11-28 UTC)
+
+### Run #51 evidence
+- GitHub Actions Run #51 (`46110901516`) completed `success`; all 14 workflow steps succeeded. Offline suite reports `Ran 24 tests ... OK`.
+- Both new tests passed: rerunning deterministic maintenance is idempotent and preserves the first pre-change backup; rechecking an exact deletion tombstone is idempotent and does not restore the deleted folder or alter neighboring/Personal rules.
+- Full run processed 654 eligible folders in seven sequential batches (100x6 + 54). All seven preflight reports show zero blockers, zero review items, zero duplicate lines, zero unsupported rules, zero invalid networks/domains; `personal_tree_unchanged=true` in every batch.
+- All seven maintenance reports show empty `changes` arrays and `personal_unchanged=true`; no production rule changes were made. Cached-source reports processed the 15 existing snapshots (576 total source-rule occurrences) with 0 additions and 0 changed files.
+- Format parity audit and App completeness matrix completed. Artifact `surge-automatic-maintenance-51`, ID `15249598099`, 33 files, SHA-256 `ccbf485f05f65e6e07d49320f857b3c9a5d72586cc753fc79903fb82003960e9`, retention until 2027-02-26 (90 days).
+- URLhaus was unavailable in Run #51; OpenPhish and deterministic checks still ran. Threat-based automatic deletion was disabled; workflow status explicitly records `ALL_BATCHES_COMPLETED_WITH_INCOMPLETE_SECURITY_COVERAGE=7`. This is an external/deferred limitation, not a failed run.
+- Broad parent/shared suffix findings remain REVIEW-only and unchanged per user's deferral. No automatic deletion occurred. No new author sources were fetched; only the 15 existing cached snapshots were used.
+
+### V1.0 acceptance decision
+- V1.0 accepted for the explicitly approved operational scope: 100-folder sequential processing, automatic deterministic repair with pre-change backup and audit reports, duplicate/integrity/format checks, cached-source comparison using existing sources only, exact deletion tombstones (no auto-restore), Rule/Personal protection, and safe full-run restart semantics.
+- Recovery semantics are explicitly full-run restart from batch 1, not persisted checkpoint resume; feed download retries exist, full workflow auto-retry/checkpoint resume does not. This is accepted as the V1.0 behavior, not claimed as a feature.
+- 90-day GitHub artifact retention is explicit; it is not permanent archival.
+- V1.0 acceptance does not claim complete threat-intelligence coverage (URLhaus unavailable), completeness proof for 663 folders without cached-source mappings, or resolution of broad/shared suffix REVIEW findings. These remain external/user-deferred and are not blockers to the agreed V1.0 scope.
+- No formal approval was inferred for changes to production rule content in this acceptance run; all maintenance reports indicate zero production changes.
+
+### V2.0 initial scope opened
+- Begin V2.0 as a workflow/observability/reliability upgrade, preserving all V1.0 safety invariants and user decisions.
+- Initial workstream: make execution state and failure semantics clearer (run manifest, batch-level status, durable failure reason, safe full-run restart, report/backup inventory, retention visibility), while keeping current full-run restart semantics until any checkpoint-resume design is separately tested and shown safe.
+- Do not expand author collection, perform shared-domain review, or modify bank/payment/financial rule sets unless the user later directs it. Do not restore explicitly deleted content. Rule/Personal remains protected.
+- Next: inspect current state/report schema and workflow summary presentation; propose and implement the smallest V2.0 observability improvement in scripts/tests, validate with isolated fixtures and Actions. Do not touch production `.list` files.
