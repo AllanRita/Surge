@@ -750,3 +750,13 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - Explicit folder-exclusion filtering and persistent threat-host tombstone code passed the live run. Current tombstone count 0; no threat rules removed.
 - Security status remains limited: OpenPhish 289 hosts, URLhaus 0, auto deletion disabled, 0 corroborated hosts. Do not enable automatic deletion until both feeds are valid and current.
 - Next priority: inspect whether there is a trustworthy, user-approved record of historical individual domain deletions; if not, do not invent tombstones. Design a safe line-level deletion manifest format and document that it only protects entries explicitly recorded. Separately assess authorized URLhaus access/feed availability without creating or guessing secrets. Preserve main config and Rule/Personal.
+
+
+## 56. Exact rule-line no-restore tombstone support merged (2026-11-28 UTC)
+
+- Reviewed manifest and script after run #55. `.github/explicit-rule-exclusions.json` had an empty folder exclusions list and no individual-line tombstone support; historical deleted individual lines are not available as an authoritative record. Do not infer or recreate them.
+- Implemented manifest schema v2 with `rule_lines` array. Sync now removes only exact matching rule text at exact `Rule/Upstream/.../*.list` path supplied in that manifest. Empty array is intentional until authoritative historical deletion records exist. Existing exact folder exclusions remain.
+- Added workflow preflight to py_compile the sync script and validate manifest schema before feed download/sync.
+- PR #3 merged as `b9df5f25fbcbb09a7c7d0064ac618df1050a4a13`. No rule files or Rule/Personal content were modified by this change; no main Surge config touched.
+- Current security feed blocker remains: OpenPhish 289 hosts, URLhaus 0, auto deletion disabled. Do not create secrets or infer individual deletions.
+- Next: verify the Actions run triggered by merge `b9df5f25fbcbb09a7c7d0064ac618df1050a4a13`; check syntax and manifest preflight plus full 861-file validation. Then continue assessing a legitimate authorized URLhaus feed method and document the limitations. Keep rule set updates single-source and preserve all safety constraints.
