@@ -80,6 +80,14 @@ def main():
         exclusion_data=json.loads(manifest.read_text(encoding="utf-8"))
         excluded={str(x["folder"]).casefold() for x in exclusion_data.get("exclusions", [])}
         source_files=[p for p in source_files if p.relative_to(source).parts[0].casefold() not in excluded]
+        # Exact line tombstones: only apply entries explicitly present in the manifest.
+        excluded_lines={}
+        for item in exclusion_data.get("rule_lines", []):
+            rel=str(item.get("path","")).replace("\\","/")
+            exact=str(item.get("rule","")).strip()
+            if not rel.startswith("Rule/Upstream/") or not rel.endswith(".list") or not exact:
+                raise SystemExit("Invalid exact rule-line exclusion entry")
+            excluded_lines.setdefault(rel,set()).add(exact)
         if not source_files: raise SystemExit("No eligible upstream Surge rule files after deletion exclusions")
         # Remove old rule files, obsolete multi-author cache snapshots, and stale per-App README files; preserve root reports and non-rule assets.
         old_cache=ROOT/"SourceMetadata"
@@ -99,8 +107,13 @@ def main():
             dst=ROOT/rel
             dst.parent.mkdir(parents=True,exist_ok=True)
             data=src.read_bytes()
-            dst.write_bytes(data)
-            imported.append({"path":str(dst),"sha256":sha(data),"bytes":len(data)})
+            text=data.decode("utf-8-sig")
+            lines=text.splitlines()
+            blocked=excluded_lines.get(str(dst),set())
+            kept=[line for line in lines if line.strip() not in blocked]
+            filtered=("\\n".join(kept)+("\\n" if text.endswith("\\n") else "")).encode("utf-8")
+            dst.write_bytes(filtered)
+            imported.append({"path":str(dst),"sha256":sha(filtered),"bytes":len(filtered),"excluded_exact_lines":len(lines)-len(kept)})
     openphish=set(); urlhaus=set()
     if a.openphish and Path(a.openphish).is_file(): openphish=openphish_hosts(a.openphish)
     if a.urlhaus and Path(a.urlhaus).is_file(): urlhaus=urlhaus_hosts(a.urlhaus)
