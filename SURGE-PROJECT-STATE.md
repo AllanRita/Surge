@@ -721,3 +721,13 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - Threat removal: exact `DOMAIN,host` line only when the exact host appears in both OpenPhish and URLhaus; no parent suffix or shared provider deletion. If either feed missing, automatic deletion is disabled. The sources do not provide comprehensive scam/fraud coverage; report this limitation. Deletion evidence is recorded in `ThreatQuarantine/removed-indicators.jsonl`.
 - New workflow was configured to trigger on the installation commit. Actual source import/clear is NOT yet confirmed complete; wait for the GitHub Actions run and inspect its status, report, imported file count, validation results, Rule/Personal hash protection, and commit. If it fails, do not claim success; diagnose on a staging branch and retry.
 - Next step: inspect the Actions run triggered by commit `fc3be9fd224da8341bcc0c1804eb9091eabf5d13`; confirm successful full-tree sync/validation and report actual counts. Preserve backup branch permanently unless user explicitly requests deletion.
+
+
+## 53. Initial single-source import completed and verified (2026-11-28 UTC)
+
+- Actions run #53 / ID `46118409160` completed successfully: https://github.com/AllanRita/Surge/actions/runs/46118409160
+- `Rule/Upstream` now contains exactly 861 `.list` files from `blackmatrix7/ios_rule_script` `rule/Surge`, source commit `0b6897dc17e0c513d25449c935a9694818e32f0c`; full validator counted 690 rule-containing directories and 0 validation errors.
+- Old 842 `.list` collection replaced; obsolete `Rule/Upstream/SourceMetadata` multi-author cache removed. Historical root reports preserved. `Rule/Personal` remains exactly `Grok.list`, `PayPay.list`, `Target.list` and was verified unchanged by workflow.
+- First publication attempt failed due concurrent main update; workflow was fixed to reset/rebuild from latest main and retry up to three times. Run #53 succeeded with this retry logic. Follow-up duplicate run #54 may complete as a no-op; inspect and record its final status.
+- Security feed status: OpenPhish loaded 289 hosts; URLhaus unavailable because `URLHAUS_AUTH_KEY` is not configured. Therefore automatic threat deletion was disabled for this run and 0 rules were removed. Do not claim security deletion is active yet. Do not add a secret or alternative feed without separate approval; explain coverage limitation to user.
+- Initial import and full-tree validation are complete. Continue V2.0 workflow reliability and feed coverage planning; daily sync is active. Never change main Surge config or Rule/Personal.
