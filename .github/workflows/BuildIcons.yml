@@ -43,7 +43,7 @@ jobs:
 
           MAX_BYTES = 12*1024*1024
           MAX_ICONS = 30000
-          MAX_APPS = 100
+          MAX_APPS = 110
           MAX_HISTORY = 10000
           CHECK_LIMIT = 20
           FAIL_LIMIT = 3
