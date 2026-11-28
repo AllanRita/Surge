@@ -576,3 +576,28 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - Security/heuristic reports contain 72 REVIEW-only parent-suffix findings across 38 paths (e.g. `DOMAIN-SUFFIX,cn`, `duckdns.org`, `gitbook.io`, `netlify.app`, `pages.dev`, `vercel.app`, `weebly.com`, `workers.dev`). No items were automatically deleted. These are within the previously deferred broad/shared-domain review scope; leave them review-only and do not initiate a new audit or ask for resolution now.
 - Independently compared Git trees at Run #49 head `5afca6bd55f40a2312a29e87d32c7df3c2ec9da6` and current state-record head `532d75e5918a87b2c4c8cdbea8cad7a672a193ee`: zero differences among `Rule/Upstream/**/*.list` and `Rule/Personal/**`; `Rule/Personal` contains 3 files. This verifies no production `.list` or personal-rule file changed between the run head and current head.
 - Conclusion: Run #49's 22 tests, seven batch reports, format parity, cached-source merge, and current-tree invariants are verified. V1.0 still needs a concise final acceptance matrix and explicit evidence classification. Do not treat 663 unmapped folders or the user-deferred review findings as defects requiring unauthorized work. Next: inspect workflow implementation for any remaining approved core criteria not yet evidenced (especially backup retention and failure retry/resume semantics), then write the V1.0 acceptance matrix; only if all approved core criteria are evidenced, mark V1.0 accepted and move automatically to V2.0.
+
+
+## 44. V1.0 acceptance matrix draft and remaining implementation gap (2026-11-28 UTC)
+
+### Verified
+- 22 offline tests pass in Run #49; includes isolated pre-change backup verification/missing-backup rejection/Git checkout rollback and simulated failed-batch rollback preserving a prior commit.
+- Full 654-folder, seven-batch maintenance run passed; all batch reports and 33 artifact files reviewed.
+- 132 paired-format comparisons: zero unresolved differences; 123 intentional resolution-option differences.
+- All 15 cached author snapshots processed across batches; 576 source-rule occurrences: 337 exact, 239 semantic coverage, zero additions.
+- All seven batch reports show no production maintenance changes; each reports personal_unchanged=true. Independent Git tree comparison from Run #49 head `5afca6bd55f40a2312a29e87d32c7df3c2ec9da6` to current state-record head `532d75e5918a87b2c4c8cdbea8cad7a672a193ee` found zero changed `Rule/Upstream/**/*.list` or `Rule/Personal/**` blobs; three personal files remain.
+- Backup behavior is implemented: write-once pre-change copies, verifier requires backup to match pre-change HEAD, and the workflow uploads batch-output including backups as a 90-day artifact. Run #49 made no production rule edits, so there were no real changed-rule backups in that artifact; backup correctness is supported by isolated tests, not a live production mutation.
+
+### Implemented but not fully exercised end-to-end
+- Workflow failure handler runs `git checkout -- Rule/Upstream` for a failed batch stage; isolated test proves the Git behavior preserves earlier committed batch state and discards current uncommitted edits. No live injected GitHub Actions failure has been performed.
+- Retry behavior exists for feed downloads (`curl --retry`), not for the full batch job. A failed workflow run aborts; a later scheduled/manual run starts from batch 1 and reprocesses all eligible folders rather than resuming from a persisted failed-batch checkpoint. Idempotent reprocessing is expected from current deterministic operations, but a failed-run/re-run cycle has not been exercised in Actions.
+- Backup artifact retention is 90 days; this is not indefinite archival.
+
+### External limitations / user-deferred
+- URLhaus unavailable in Run #49; threat-based automatic deletion disabled and security coverage marked incomplete.
+- 663 folders have no explicit cached-author mapping, so author completeness cannot be established for them from the existing 15 snapshots.
+- 72 broad/shared-parent-suffix review-only findings in 38 paths were not acted on. This is within the user's deferred shared-domain/security review scope; leave untouched.
+
+### V1.0 status
+- Do not mark V1.0 accepted yet. The remaining approved validation task is an end-to-end workflow retry/re-run test or an explicit documented decision that full-run restart (rather than checkpoint resume) is the intended V1.0 behavior, plus final review of backup artifact policy. Do not silently imply checkpoint resume exists.
+- Unique next step: inspect the workflow trigger schedule and idempotency/tombstone behavior, then design a safe isolated failure/re-run validation that cannot mutate production rules. If this cannot be safely exercised without a dedicated test workflow, record it as a limitation and propose the smallest isolated test workflow. Once the acceptance matrix is closed, mark V1.0 and proceed automatically to V2.0.
