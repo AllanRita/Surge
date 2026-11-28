@@ -553,3 +553,15 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - Test file now contains 22 test methods (previously 21). Commit `5afca6bd55f40a2312a29e87d32c7df3c2ec9da6`.
 - Push triggered GitHub Actions maintenance Run #49 (`46110119259`), currently queued, head `5afca6bd55f40a2312a29e87d32c7df3c2ec9da6`. Do not count the new test as passed until Run #49 finishes and logs confirm all 22 tests pass.
 - Next: inspect Run #49 test and full workflow result. If successful, inspect batch reports and verify current Git tree and Rule/Personal invariants; then produce the V1.0 acceptance matrix. V1.0 remains unaccepted; V2.0 must not start until acceptance evidence is complete.
+
+
+## 42. Run #49 completed successfully — 22-test rollback evidence (2026-11-28 UTC)
+
+- GitHub Actions Run #49 (`46110119259`) completed with conclusion `success`; all 14 job steps succeeded. Run URL: https://github.com/AllanRita/Surge/actions/runs/46110119259. Head: `5afca6bd55f40a2312a29e87d32c7df3c2ec9da6`.
+- Offline suite log explicitly reports `Ran 22 tests ... OK`. This includes `test_failed_batch_rollback_preserves_prior_commit_and_discards_current_changes` and the isolated verifier/backup/missing-backup/Git checkout rollback test.
+- Full maintenance completed all 654 eligible folders in seven ordered batches: six batches of 100 and final batch of 54. Batch summaries report PASS and zero blockers/review items. 33 report files were uploaded in artifact `surge-automatic-maintenance-49`, artifact ID `15249237907`, SHA-256 `ecf7c1feb6ac7d23142a5b159321c33ffbd5a25b343ea4bf99167fcd48a66103`.
+- Run logs show `URLHAUS_AVAILABLE=false`; automatic threat deletion was disabled and coverage remains incomplete as previously approved. Existing cached-source workflow ran; no new author collection was enabled.
+- Batch/source test logs include `personal_unchanged: true`; do not overstate this as a separately computed full-tree Rule/Personal SHA comparison for Run #49. No production rule changes are indicated by the batch summaries (`changed_files: 0` in the reported cached-source batch checks; batch maintenance reports no changes).
+- Correction to Section 40: commit `6656edc...` did not contain the claimed test function. Section 41 added it correctly in commit `5afca6bd...`; Run #49 is the first verified passing run for that test.
+- V1.0 is not yet formally accepted. Remaining work: inspect all 7 JSON/Markdown batch reports from artifact 15249237907, independently compare the run-head/current Git tree for Rule `.list` files and `Rule/Personal`, then prepare the final acceptance matrix covering tested, code-only, externally blocked, and user-deferred items. Do not begin V2.0 until these checks are complete.
+- Unique next step: download/read artifact `surge-automatic-maintenance-49` and verify the seven batch reports plus current-tree invariants.
