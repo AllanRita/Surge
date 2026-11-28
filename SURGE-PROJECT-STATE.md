@@ -688,3 +688,12 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - Keep the user's other current decisions: existing rule sets are sufficient; only update/sync upstream changes to existing rule sets; no new author sources or new App folders; `Rule/Personal` remains untouched; explicit user deletions must never be restored.
 - Security-intelligence proposal remains separate and awaits user decision. Threat-based automatic deletion remains disabled.
 - V2.0 should continue with workflow observability/reliability and safe existing-rule-set update maintenance, not shared-domain review.
+
+
+## 50. User confirms Surge main-config order is immutable; rule-domain scope restricted (2026-11-28 UTC)
+
+- User explicitly instructs: do not change the order of entries/rules in their Surge main configuration file. Preserve the uploaded `Surge_EDC-Lzay.conf` ordering exactly; do not move Google, Global, GEOIP, FINAL, App rules, policy groups, or any other entries. The prior assistant's suggestion to move Google is withdrawn; no such change is authorized or needed.
+- User explicitly restricts work in rule-set folders: do not arbitrarily adjust, rewrite, remove, add, narrow, expand, or otherwise alter domain/rule entries. Authorized work is limited to consolidation and security checks. Any content change beyond strictly mechanical, approved consolidation must be shown as a before/after diff and receive explicit user approval before applying. Security checks are report-only unless the user separately approves a specific remediation.
+- Consolidation must preserve routing semantics and all unique rule coverage. Do not infer that de-duplication authorizes changing domain meaning, suffix breadth, rule type, policy target, or ordering. Keep exact user-deletion protections; never restore deleted entries/folders. Keep Rule/Personal untouched.
+- Existing rule sets are sufficient: only sync upstream updates for existing rule sets; no new author sources, App folders, or rule-set expansion. Shared-domain review remains cancelled. Security-intelligence automatic deletion remains disabled pending user decision.
+- All future folder validation/audit must run once across the complete eligible folder set, not 100-folder validation batches. Production maintenance updates may retain safe batches, but no unauthorized domain changes.
