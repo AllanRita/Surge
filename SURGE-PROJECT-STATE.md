@@ -785,3 +785,7 @@ Do not fetch or troubleshoot URLhaus or request credentials until the user asks.
 ## 60. V2.0 ongoing maintenance
 
 This section supersedes all earlier next steps. Sync blackmatrix7, validate the full rule tree, report exact OpenPhish matches and preserve explicit exclusions and personal rules. On each cycle verify the run and published report. Escalate actionable findings or sync failures only.
+
+## 61. OpenPhish automatic removal
+
+This supersedes the reporting-only policy. An exact DOMAIN host match against OpenPhish authorizes automatic removal from upstream rules. Record the evidence and enforce existing removals on subsequent syncs. Verify the next published report and personal-rule integrity.
