@@ -1,16 +1,1 @@
-# NAME: HanYi
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:34
-# DOMAIN: 2
-# DOMAIN-SUFFIX: 7
-# TOTAL: 9
-DOMAIN,hellofontpreview.oss-cn-beijing.aliyuncs.com
-DOMAIN,hellowebfonts.oss-cn-beijing.aliyuncs.com
-DOMAIN-SUFFIX,fontstar.com.cn
-DOMAIN-SUFFIX,fontstudio.cn
-DOMAIN-SUFFIX,hanyi.com
-DOMAIN-SUFFIX,hanyi.com.cn
-DOMAIN-SUFFIX,hellowebfont.com
-DOMAIN-SUFFIX,ifont.cn
-DOMAIN-SUFFIX,joytype.com
+# NAME: HanYi\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:34\n# DOMAIN: 2\n# DOMAIN-SUFFIX: 7\n# TOTAL: 9\nDOMAIN,hellofontpreview.oss-cn-beijing.aliyuncs.com\nDOMAIN,hellowebfonts.oss-cn-beijing.aliyuncs.com\nDOMAIN-SUFFIX,fontstar.com.cn\nDOMAIN-SUFFIX,fontstudio.cn\nDOMAIN-SUFFIX,hanyi.com\nDOMAIN-SUFFIX,hanyi.com.cn\nDOMAIN-SUFFIX,hellowebfont.com\nDOMAIN-SUFFIX,ifont.cn\nDOMAIN-SUFFIX,joytype.com

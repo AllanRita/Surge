@@ -1,11 +1,1 @@
-# NAME: Roblox
-# AUTHOR: ooyq
-# REPO: https://github.com/ooyq
-# UPDATED: 2025-06-06 09:19:58
-# DOMAIN-KEYWORD: 1
-# DOMAIN-SUFFIX: 1
-# USER-AGENT: 1
-# TOTAL: 3
-DOMAIN-SUFFIX,rbxcdn.com
-DOMAIN-KEYWORD,roblox
-USER-AGENT,Roblox*
+# NAME: Roblox\n# AUTHOR: ooyq\n# REPO: https://github.com/ooyq\n# UPDATED: 2025-06-06 09:19:58\n# DOMAIN-KEYWORD: 1\n# DOMAIN-SUFFIX: 1\n# USER-AGENT: 1\n# TOTAL: 3\nDOMAIN-SUFFIX,rbxcdn.com\nDOMAIN-KEYWORD,roblox\nUSER-AGENT,Roblox*

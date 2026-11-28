@@ -1,14 +1,1 @@
-# NAME: Nikke
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:20:01
-# DOMAIN-SUFFIX: 6
-# IP-CIDR: 1
-# TOTAL: 7
-DOMAIN-SUFFIX,anticheatexpert.com
-DOMAIN-SUFFIX,centauriglobal.com
-DOMAIN-SUFFIX,gamepass.com
-DOMAIN-SUFFIX,iegcom.com
-DOMAIN-SUFFIX,intlgame.com
-DOMAIN-SUFFIX,nikke-kr.com
-IP-CIDR,43.152.114.31/32
+# NAME: Nikke\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:20:01\n# DOMAIN-SUFFIX: 6\n# IP-CIDR: 1\n# TOTAL: 7\nDOMAIN-SUFFIX,anticheatexpert.com\nDOMAIN-SUFFIX,centauriglobal.com\nDOMAIN-SUFFIX,gamepass.com\nDOMAIN-SUFFIX,iegcom.com\nDOMAIN-SUFFIX,intlgame.com\nDOMAIN-SUFFIX,nikke-kr.com\nIP-CIDR,43.152.114.31/32

@@ -1,10 +1,1 @@
-# NAME: MeiTu
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:01
-# DOMAIN-SUFFIX: 4
-# TOTAL: 4
-DOMAIN-SUFFIX,meipai.com
-DOMAIN-SUFFIX,meitu.com
-DOMAIN-SUFFIX,meitudata.com
-DOMAIN-SUFFIX,meitustat.com
+# NAME: MeiTu\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:01\n# DOMAIN-SUFFIX: 4\n# TOTAL: 4\nDOMAIN-SUFFIX,meipai.com\nDOMAIN-SUFFIX,meitu.com\nDOMAIN-SUFFIX,meitudata.com\nDOMAIN-SUFFIX,meitustat.com

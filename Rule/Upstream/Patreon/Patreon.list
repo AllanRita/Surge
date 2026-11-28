@@ -1,11 +1,1 @@
-# NAME: Patreon
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-01-08 16:02:55
-# DOMAIN: 1
-# DOMAIN-SUFFIX: 3
-# TOTAL: 4
-DOMAIN,live-patreon-marketing.pantheonsite.io
-DOMAIN-SUFFIX,patreon.com
-DOMAIN-SUFFIX,patreoncommunity.com
-DOMAIN-SUFFIX,patreonusercontent.com
+# NAME: Patreon\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2024-01-08 16:02:55\n# DOMAIN: 1\n# DOMAIN-SUFFIX: 3\n# TOTAL: 4\nDOMAIN,live-patreon-marketing.pantheonsite.io\nDOMAIN-SUFFIX,patreon.com\nDOMAIN-SUFFIX,patreoncommunity.com\nDOMAIN-SUFFIX,patreonusercontent.com

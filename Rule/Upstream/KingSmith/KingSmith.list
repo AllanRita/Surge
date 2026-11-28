@@ -1,10 +1,1 @@
-# NAME: KingSmith
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:35
-# DOMAIN-SUFFIX: 4
-# TOTAL: 4
-DOMAIN-SUFFIX,kingsmith.cn
-DOMAIN-SUFFIX,kingsmith.com.cn
-DOMAIN-SUFFIX,walkingpad.cn
-DOMAIN-SUFFIX,walkingpad.com
+# NAME: KingSmith\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:35\n# DOMAIN-SUFFIX: 4\n# TOTAL: 4\nDOMAIN-SUFFIX,kingsmith.cn\nDOMAIN-SUFFIX,kingsmith.com.cn\nDOMAIN-SUFFIX,walkingpad.cn\nDOMAIN-SUFFIX,walkingpad.com

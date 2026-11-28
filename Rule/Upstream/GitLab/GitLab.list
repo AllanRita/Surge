@@ -1,12 +1,1 @@
-# NAME: GitLab
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:44
-# DOMAIN-SUFFIX: 6
-# TOTAL: 6
-DOMAIN-SUFFIX,gitlab-assets.oss-cn-hongkong.aliyuncs.com
-DOMAIN-SUFFIX,gitlab-static.net
-DOMAIN-SUFFIX,gitlab.com
-DOMAIN-SUFFIX,gitlab.net
-DOMAIN-SUFFIX,gitter-static.net
-DOMAIN-SUFFIX,gitter.im
+# NAME: GitLab\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:44\n# DOMAIN-SUFFIX: 6\n# TOTAL: 6\nDOMAIN-SUFFIX,gitlab-assets.oss-cn-hongkong.aliyuncs.com\nDOMAIN-SUFFIX,gitlab-static.net\nDOMAIN-SUFFIX,gitlab.com\nDOMAIN-SUFFIX,gitlab.net\nDOMAIN-SUFFIX,gitter-static.net\nDOMAIN-SUFFIX,gitter.im

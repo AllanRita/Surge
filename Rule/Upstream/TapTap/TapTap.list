@@ -1,8 +1,1 @@
-# NAME: TapTap
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:18:53
-# DOMAIN-SUFFIX: 2
-# TOTAL: 2
-DOMAIN-SUFFIX,tap.io
-DOMAIN-SUFFIX,taptap.tw
+# NAME: TapTap\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:18:53\n# DOMAIN-SUFFIX: 2\n# TOTAL: 2\nDOMAIN-SUFFIX,tap.io\nDOMAIN-SUFFIX,taptap.tw

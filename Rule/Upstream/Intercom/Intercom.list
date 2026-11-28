@@ -1,10 +1,1 @@
-# NAME: Intercom
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:50
-# DOMAIN-SUFFIX: 4
-# TOTAL: 4
-DOMAIN-SUFFIX,intercom.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomassets.com
-DOMAIN-SUFFIX,intercomcdn.com
+# NAME: Intercom\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:50\n# DOMAIN-SUFFIX: 4\n# TOTAL: 4\nDOMAIN-SUFFIX,intercom.com\nDOMAIN-SUFFIX,intercom.io\nDOMAIN-SUFFIX,intercomassets.com\nDOMAIN-SUFFIX,intercomcdn.com

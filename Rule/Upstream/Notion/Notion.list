@@ -1,13 +1,1 @@
-# NAME: Notion
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:46
-# DOMAIN: 1
-# DOMAIN-SUFFIX: 5
-# TOTAL: 6
-DOMAIN,http-inputs-notion.splunkcloud.com
-DOMAIN-SUFFIX,notion-static.com
-DOMAIN-SUFFIX,notion.com
-DOMAIN-SUFFIX,notion.new
-DOMAIN-SUFFIX,notion.site
-DOMAIN-SUFFIX,notion.so
+# NAME: Notion\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:46\n# DOMAIN: 1\n# DOMAIN-SUFFIX: 5\n# TOTAL: 6\nDOMAIN,http-inputs-notion.splunkcloud.com\nDOMAIN-SUFFIX,notion-static.com\nDOMAIN-SUFFIX,notion.com\nDOMAIN-SUFFIX,notion.new\nDOMAIN-SUFFIX,notion.site\nDOMAIN-SUFFIX,notion.so

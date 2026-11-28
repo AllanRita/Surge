@@ -1,10 +1,1 @@
-# NAME: SMG
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:20:01
-# DOMAIN-SUFFIX: 4
-# TOTAL: 4
-DOMAIN-SUFFIX,cptn.tv
-DOMAIN-SUFFIX,sava.sh.cn
-DOMAIN-SUFFIX,smg.cn
-DOMAIN-SUFFIX,smg.sh.cn
+# NAME: SMG\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:20:01\n# DOMAIN-SUFFIX: 4\n# TOTAL: 4\nDOMAIN-SUFFIX,cptn.tv\nDOMAIN-SUFFIX,sava.sh.cn\nDOMAIN-SUFFIX,smg.cn\nDOMAIN-SUFFIX,smg.sh.cn

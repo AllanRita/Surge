@@ -1,17 +1,1 @@
-# NAME: Slack
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:47
-# DOMAIN-SUFFIX: 11
-# TOTAL: 11
-DOMAIN-SUFFIX,slack-core.com
-DOMAIN-SUFFIX,slack-edge.com
-DOMAIN-SUFFIX,slack-files.com
-DOMAIN-SUFFIX,slack-imgs.com
-DOMAIN-SUFFIX,slack-msgs.com
-DOMAIN-SUFFIX,slack-redir.net
-DOMAIN-SUFFIX,slack.com
-DOMAIN-SUFFIX,slackb.com
-DOMAIN-SUFFIX,slackcertified.com
-DOMAIN-SUFFIX,slackdemo.com
-DOMAIN-SUFFIX,slackhq.com
+# NAME: Slack\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:47\n# DOMAIN-SUFFIX: 11\n# TOTAL: 11\nDOMAIN-SUFFIX,slack-core.com\nDOMAIN-SUFFIX,slack-edge.com\nDOMAIN-SUFFIX,slack-files.com\nDOMAIN-SUFFIX,slack-imgs.com\nDOMAIN-SUFFIX,slack-msgs.com\nDOMAIN-SUFFIX,slack-redir.net\nDOMAIN-SUFFIX,slack.com\nDOMAIN-SUFFIX,slackb.com\nDOMAIN-SUFFIX,slackcertified.com\nDOMAIN-SUFFIX,slackdemo.com\nDOMAIN-SUFFIX,slackhq.com

@@ -1,18 +1,1 @@
-# NAME: ParamountPlus
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:50
-# DOMAIN: 4
-# DOMAIN-SUFFIX: 5
-# USER-AGENT: 1
-# TOTAL: 10
-DOMAIN,cbsi.live.ott.irdeto.com
-DOMAIN,cbsplaylistserver.aws.syncbak.com
-DOMAIN,cbsservice.aws.syncbak.com
-DOMAIN,link.theplatform.com
-DOMAIN-SUFFIX,cbsaavideo.com
-DOMAIN-SUFFIX,cbsi.com
-DOMAIN-SUFFIX,cbsivideo.com
-DOMAIN-SUFFIX,paramountplus.com
-DOMAIN-SUFFIX,pplusstatic.com
-USER-AGENT,PPlus*
+# NAME: ParamountPlus\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:50\n# DOMAIN: 4\n# DOMAIN-SUFFIX: 5\n# USER-AGENT: 1\n# TOTAL: 10\nDOMAIN,cbsi.live.ott.irdeto.com\nDOMAIN,cbsplaylistserver.aws.syncbak.com\nDOMAIN,cbsservice.aws.syncbak.com\nDOMAIN,link.theplatform.com\nDOMAIN-SUFFIX,cbsaavideo.com\nDOMAIN-SUFFIX,cbsi.com\nDOMAIN-SUFFIX,cbsivideo.com\nDOMAIN-SUFFIX,paramountplus.com\nDOMAIN-SUFFIX,pplusstatic.com\nUSER-AGENT,PPlus*

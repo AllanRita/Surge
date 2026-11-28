@@ -1,17 +1,1 @@
-# NAME: DaMai
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:33
-# DOMAIN-SUFFIX: 11
-# TOTAL: 11
-DOMAIN-SUFFIX,baotoo.com
-DOMAIN-SUFFIX,damai.cn
-DOMAIN-SUFFIX,damaicdn.cn
-DOMAIN-SUFFIX,dmcdn.cn
-DOMAIN-SUFFIX,jtwsm.cn
-DOMAIN-SUFFIX,maikr.com
-DOMAIN-SUFFIX,maitix.com
-DOMAIN-SUFFIX,maitix.net
-DOMAIN-SUFFIX,piao.com.cn
-DOMAIN-SUFFIX,piaogroup.com
-DOMAIN-SUFFIX,yanchupiaojia.com
+# NAME: DaMai\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:33\n# DOMAIN-SUFFIX: 11\n# TOTAL: 11\nDOMAIN-SUFFIX,baotoo.com\nDOMAIN-SUFFIX,damai.cn\nDOMAIN-SUFFIX,damaicdn.cn\nDOMAIN-SUFFIX,dmcdn.cn\nDOMAIN-SUFFIX,jtwsm.cn\nDOMAIN-SUFFIX,maikr.com\nDOMAIN-SUFFIX,maitix.com\nDOMAIN-SUFFIX,maitix.net\nDOMAIN-SUFFIX,piao.com.cn\nDOMAIN-SUFFIX,piaogroup.com\nDOMAIN-SUFFIX,yanchupiaojia.com

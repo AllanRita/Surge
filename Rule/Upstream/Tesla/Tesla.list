@@ -1,18 +1,1 @@
-# NAME: Tesla
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:52
-# DOMAIN-SUFFIX: 12
-# TOTAL: 12
-DOMAIN-SUFFIX,solarcity.com
-DOMAIN-SUFFIX,tesla-cdn.thron.cn
-DOMAIN-SUFFIX,tesla-cdn.thron.com
-DOMAIN-SUFFIX,tesla.com
-DOMAIN-SUFFIX,tesla.com.cn
-DOMAIN-SUFFIX,tesla.services
-DOMAIN-SUFFIX,teslaenergy.services
-DOMAIN-SUFFIX,teslamotors.cn
-DOMAIN-SUFFIX,teslamotors.com
-DOMAIN-SUFFIX,teslamotors.com.cn
-DOMAIN-SUFFIX,teslazta.net
-DOMAIN-SUFFIX,ts.la
+# NAME: Tesla\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:52\n# DOMAIN-SUFFIX: 12\n# TOTAL: 12\nDOMAIN-SUFFIX,solarcity.com\nDOMAIN-SUFFIX,tesla-cdn.thron.cn\nDOMAIN-SUFFIX,tesla-cdn.thron.com\nDOMAIN-SUFFIX,tesla.com\nDOMAIN-SUFFIX,tesla.com.cn\nDOMAIN-SUFFIX,tesla.services\nDOMAIN-SUFFIX,teslaenergy.services\nDOMAIN-SUFFIX,teslamotors.cn\nDOMAIN-SUFFIX,teslamotors.com\nDOMAIN-SUFFIX,teslamotors.com.cn\nDOMAIN-SUFFIX,teslazta.net\nDOMAIN-SUFFIX,ts.la

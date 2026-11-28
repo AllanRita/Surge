@@ -1,12 +1,1 @@
-# NAME: LvMiLianChuang
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:36
-# DOMAIN-SUFFIX: 6
-# TOTAL: 6
-DOMAIN-SUFFIX,aqara.cn
-DOMAIN-SUFFIX,aqara.com
-DOMAIN-SUFFIX,aqara.com.cn
-DOMAIN-SUFFIX,lumiunited.cn
-DOMAIN-SUFFIX,lumiunited.com
-DOMAIN-SUFFIX,lumiunited.com.cn
+# NAME: LvMiLianChuang\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:36\n# DOMAIN-SUFFIX: 6\n# TOTAL: 6\nDOMAIN-SUFFIX,aqara.cn\nDOMAIN-SUFFIX,aqara.com\nDOMAIN-SUFFIX,aqara.com.cn\nDOMAIN-SUFFIX,lumiunited.cn\nDOMAIN-SUFFIX,lumiunited.com\nDOMAIN-SUFFIX,lumiunited.com.cn

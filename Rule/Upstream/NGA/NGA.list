@@ -1,10 +1,1 @@
-# NAME: NGA
-# AUTHOR: ameyukisora
-# REPO: https://github.com/ameyukisora/Clash-Rule
-# UPDATED: 2024-01-08 16:02:03
-# DOMAIN-SUFFIX: 4
-# TOTAL: 4
-DOMAIN-SUFFIX,178.com
-DOMAIN-SUFFIX,nga.cn
-DOMAIN-SUFFIX,ngabbs.com
-DOMAIN-SUFFIX,ngacn.cc
+# NAME: NGA\n# AUTHOR: ameyukisora\n# REPO: https://github.com/ameyukisora/Clash-Rule\n# UPDATED: 2024-01-08 16:02:03\n# DOMAIN-SUFFIX: 4\n# TOTAL: 4\nDOMAIN-SUFFIX,178.com\nDOMAIN-SUFFIX,nga.cn\nDOMAIN-SUFFIX,ngabbs.com\nDOMAIN-SUFFIX,ngacn.cc

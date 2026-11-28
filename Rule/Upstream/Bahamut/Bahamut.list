@@ -1,16 +1,1 @@
-# NAME: Bahamut
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:16:56
-# DOMAIN: 1
-# DOMAIN-SUFFIX: 6
-# USER-AGENT: 1
-# TOTAL: 8
-DOMAIN,bahamut.akamaized.net
-DOMAIN-SUFFIX,bahamut.com.tw
-DOMAIN-SUFFIX,digicert.com
-DOMAIN-SUFFIX,gamer.com.tw
-DOMAIN-SUFFIX,gvt1.com
-DOMAIN-SUFFIX,hinet.net
-DOMAIN-SUFFIX,viblast.com
-USER-AGENT,Anime*
+# NAME: Bahamut\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:16:56\n# DOMAIN: 1\n# DOMAIN-SUFFIX: 6\n# USER-AGENT: 1\n# TOTAL: 8\nDOMAIN,bahamut.akamaized.net\nDOMAIN-SUFFIX,bahamut.com.tw\nDOMAIN-SUFFIX,digicert.com\nDOMAIN-SUFFIX,gamer.com.tw\nDOMAIN-SUFFIX,gvt1.com\nDOMAIN-SUFFIX,hinet.net\nDOMAIN-SUFFIX,viblast.com\nUSER-AGENT,Anime*

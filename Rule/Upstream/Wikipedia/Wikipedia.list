@@ -1,18 +1,1 @@
-# NAME: Wikipedia
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:16:55
-# DOMAIN-SUFFIX: 12
-# TOTAL: 12
-DOMAIN-SUFFIX,mediawiki.org
-DOMAIN-SUFFIX,wikibooks.org
-DOMAIN-SUFFIX,wikidata.org
-DOMAIN-SUFFIX,wikileaks.org
-DOMAIN-SUFFIX,wikimedia.org
-DOMAIN-SUFFIX,wikinews.org
-DOMAIN-SUFFIX,wikipedia.org
-DOMAIN-SUFFIX,wikiquote.org
-DOMAIN-SUFFIX,wikisource.org
-DOMAIN-SUFFIX,wikiversity.org
-DOMAIN-SUFFIX,wikivoyage.org
-DOMAIN-SUFFIX,wiktionary.org
+# NAME: Wikipedia\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:16:55\n# DOMAIN-SUFFIX: 12\n# TOTAL: 12\nDOMAIN-SUFFIX,mediawiki.org\nDOMAIN-SUFFIX,wikibooks.org\nDOMAIN-SUFFIX,wikidata.org\nDOMAIN-SUFFIX,wikileaks.org\nDOMAIN-SUFFIX,wikimedia.org\nDOMAIN-SUFFIX,wikinews.org\nDOMAIN-SUFFIX,wikipedia.org\nDOMAIN-SUFFIX,wikiquote.org\nDOMAIN-SUFFIX,wikisource.org\nDOMAIN-SUFFIX,wikiversity.org\nDOMAIN-SUFFIX,wikivoyage.org\nDOMAIN-SUFFIX,wiktionary.org

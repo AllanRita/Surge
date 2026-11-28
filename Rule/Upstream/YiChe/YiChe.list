@@ -1,11 +1,1 @@
-# NAME: YiChe
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:40
-# DOMAIN-SUFFIX: 5
-# TOTAL: 5
-DOMAIN-SUFFIX,bitauto.com
-DOMAIN-SUFFIX,bitautoimg.com
-DOMAIN-SUFFIX,cheyisou.com
-DOMAIN-SUFFIX,yccdn.com
-DOMAIN-SUFFIX,yiche.com
+# NAME: YiChe\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:40\n# DOMAIN-SUFFIX: 5\n# TOTAL: 5\nDOMAIN-SUFFIX,bitauto.com\nDOMAIN-SUFFIX,bitautoimg.com\nDOMAIN-SUFFIX,cheyisou.com\nDOMAIN-SUFFIX,yccdn.com\nDOMAIN-SUFFIX,yiche.com

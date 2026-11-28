@@ -1,15 +1,1 @@
-# NAME: JinJiangWenXue
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:35
-# DOMAIN-SUFFIX: 7
-# PROCESS-NAME: 1
-# TOTAL: 8
-DOMAIN-SUFFIX,chaba123.com
-DOMAIN-SUFFIX,jjwxc.cn
-DOMAIN-SUFFIX,jjwxc.com
-DOMAIN-SUFFIX,jjwxc.net
-DOMAIN-SUFFIX,jjwxc.org
-DOMAIN-SUFFIX,jjycw.net
-DOMAIN-SUFFIX,robook.com
-PROCESS-NAME,com.jjwxc.reader
+# NAME: JinJiangWenXue\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:35\n# DOMAIN-SUFFIX: 7\n# PROCESS-NAME: 1\n# TOTAL: 8\nDOMAIN-SUFFIX,chaba123.com\nDOMAIN-SUFFIX,jjwxc.cn\nDOMAIN-SUFFIX,jjwxc.com\nDOMAIN-SUFFIX,jjwxc.net\nDOMAIN-SUFFIX,jjwxc.org\nDOMAIN-SUFFIX,jjycw.net\nDOMAIN-SUFFIX,robook.com\nPROCESS-NAME,com.jjwxc.reader

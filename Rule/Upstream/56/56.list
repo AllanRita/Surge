@@ -1,16 +1,1 @@
-# NAME: 56
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:30
-# DOMAIN-SUFFIX: 10
-# TOTAL: 10
-DOMAIN-SUFFIX,56.com
-DOMAIN-SUFFIX,56img.com
-DOMAIN-SUFFIX,56imgs.com
-DOMAIN-SUFFIX,icaneasy.com
-DOMAIN-SUFFIX,icanvideo.com
-DOMAIN-SUFFIX,qf.com.cn
-DOMAIN-SUFFIX,qianfan.tv
-DOMAIN-SUFFIX,somama.com
-DOMAIN-SUFFIX,v-56.com
-DOMAIN-SUFFIX,vicovico.com
+# NAME: 56\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:30\n# DOMAIN-SUFFIX: 10\n# TOTAL: 10\nDOMAIN-SUFFIX,56.com\nDOMAIN-SUFFIX,56img.com\nDOMAIN-SUFFIX,56imgs.com\nDOMAIN-SUFFIX,icaneasy.com\nDOMAIN-SUFFIX,icanvideo.com\nDOMAIN-SUFFIX,qf.com.cn\nDOMAIN-SUFFIX,qianfan.tv\nDOMAIN-SUFFIX,somama.com\nDOMAIN-SUFFIX,v-56.com\nDOMAIN-SUFFIX,vicovico.com

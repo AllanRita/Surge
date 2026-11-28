@@ -1,15 +1,1 @@
-# NAME: WIX
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:48
-# DOMAIN-SUFFIX: 9
-# TOTAL: 9
-DOMAIN-SUFFIX,editorx.com
-DOMAIN-SUFFIX,parastorage.com
-DOMAIN-SUFFIX,wix-code.com
-DOMAIN-SUFFIX,wix.com
-DOMAIN-SUFFIX,wixanswers.com
-DOMAIN-SUFFIX,wixapps.net
-DOMAIN-SUFFIX,wixmp.com
-DOMAIN-SUFFIX,wixsite.com
-DOMAIN-SUFFIX,wixstatic.com
+# NAME: WIX\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:48\n# DOMAIN-SUFFIX: 9\n# TOTAL: 9\nDOMAIN-SUFFIX,editorx.com\nDOMAIN-SUFFIX,parastorage.com\nDOMAIN-SUFFIX,wix-code.com\nDOMAIN-SUFFIX,wix.com\nDOMAIN-SUFFIX,wixanswers.com\nDOMAIN-SUFFIX,wixapps.net\nDOMAIN-SUFFIX,wixmp.com\nDOMAIN-SUFFIX,wixsite.com\nDOMAIN-SUFFIX,wixstatic.com

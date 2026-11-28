@@ -1,15 +1,1 @@
-# NAME: Unity
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:50
-# DOMAIN-SUFFIX: 9
-# TOTAL: 9
-DOMAIN-SUFFIX,multiplay.cn
-DOMAIN-SUFFIX,unity.cn
-DOMAIN-SUFFIX,unity.com
-DOMAIN-SUFFIX,unity3d.com
-DOMAIN-SUFFIX,unity3dusercontent.com
-DOMAIN-SUFFIX,unitychina.cn
-DOMAIN-SUFFIX,unityedu.cn
-DOMAIN-SUFFIX,unityedu.com
-DOMAIN-SUFFIX,unityedu.com.cn
+# NAME: Unity\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:50\n# DOMAIN-SUFFIX: 9\n# TOTAL: 9\nDOMAIN-SUFFIX,multiplay.cn\nDOMAIN-SUFFIX,unity.cn\nDOMAIN-SUFFIX,unity.com\nDOMAIN-SUFFIX,unity3d.com\nDOMAIN-SUFFIX,unity3dusercontent.com\nDOMAIN-SUFFIX,unitychina.cn\nDOMAIN-SUFFIX,unityedu.cn\nDOMAIN-SUFFIX,unityedu.com\nDOMAIN-SUFFIX,unityedu.com.cn

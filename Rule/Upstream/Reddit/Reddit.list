@@ -1,14 +1,1 @@
-# NAME: Reddit
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:47
-# DOMAIN-SUFFIX: 8
-# TOTAL: 8
-DOMAIN-SUFFIX,redd.it
-DOMAIN-SUFFIX,reddit.com
-DOMAIN-SUFFIX,redditmail.com
-DOMAIN-SUFFIX,redditmedia.com
-DOMAIN-SUFFIX,redditstatic.com
-DOMAIN-SUFFIX,reddituploads.com
-DOMAIN-SUFFIX,reddituploads.com.cdn-cf.behance.net
-DOMAIN-SUFFIX,reddituploads.com.cdn-cf.dropbox.com
+# NAME: Reddit\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:47\n# DOMAIN-SUFFIX: 8\n# TOTAL: 8\nDOMAIN-SUFFIX,redd.it\nDOMAIN-SUFFIX,reddit.com\nDOMAIN-SUFFIX,redditmail.com\nDOMAIN-SUFFIX,redditmedia.com\nDOMAIN-SUFFIX,redditstatic.com\nDOMAIN-SUFFIX,reddituploads.com\nDOMAIN-SUFFIX,reddituploads.com.cdn-cf.behance.net\nDOMAIN-SUFFIX,reddituploads.com.cdn-cf.dropbox.com

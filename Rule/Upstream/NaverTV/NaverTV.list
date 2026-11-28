@@ -1,10 +1,1 @@
-# NAME: NaverTV
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:50
-# DOMAIN-SUFFIX: 2
-# USER-AGENT: 1
-# TOTAL: 3
-DOMAIN-SUFFIX,naver.com
-DOMAIN-SUFFIX,smartmediarep.com
-USER-AGENT,Naver%20TV*
+# NAME: NaverTV\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:50\n# DOMAIN-SUFFIX: 2\n# USER-AGENT: 1\n# TOTAL: 3\nDOMAIN-SUFFIX,naver.com\nDOMAIN-SUFFIX,smartmediarep.com\nUSER-AGENT,Naver%20TV*

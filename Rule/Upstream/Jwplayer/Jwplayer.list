@@ -1,11 +1,1 @@
-# NAME: Jwplayer
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:45
-# DOMAIN-SUFFIX: 5
-# TOTAL: 5
-DOMAIN-SUFFIX,jwpcdn.com
-DOMAIN-SUFFIX,jwplatform.com
-DOMAIN-SUFFIX,jwplayer.com
-DOMAIN-SUFFIX,jwpltx.com
-DOMAIN-SUFFIX,jwpsrv.com
+# NAME: Jwplayer\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:45\n# DOMAIN-SUFFIX: 5\n# TOTAL: 5\nDOMAIN-SUFFIX,jwpcdn.com\nDOMAIN-SUFFIX,jwplatform.com\nDOMAIN-SUFFIX,jwplayer.com\nDOMAIN-SUFFIX,jwpltx.com\nDOMAIN-SUFFIX,jwpsrv.com

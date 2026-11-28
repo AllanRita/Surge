@@ -1,14 +1,1 @@
-# NAME: Asahi
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-01-08 16:02:53
-# DOMAIN: 1
-# DOMAIN-SUFFIX: 6
-# TOTAL: 7
-DOMAIN,asahishimbun.sc.omtrdc.net
-DOMAIN-SUFFIX,aiasahi.jp
-DOMAIN-SUFFIX,asagaku.com
-DOMAIN-SUFFIX,asahi.com
-DOMAIN-SUFFIX,asahicom.jp
-DOMAIN-SUFFIX,asakonet.co.jp
-DOMAIN-SUFFIX,nikkansports.com
+# NAME: Asahi\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2024-01-08 16:02:53\n# DOMAIN: 1\n# DOMAIN-SUFFIX: 6\n# TOTAL: 7\nDOMAIN,asahishimbun.sc.omtrdc.net\nDOMAIN-SUFFIX,aiasahi.jp\nDOMAIN-SUFFIX,asagaku.com\nDOMAIN-SUFFIX,asahi.com\nDOMAIN-SUFFIX,asahicom.jp\nDOMAIN-SUFFIX,asakonet.co.jp\nDOMAIN-SUFFIX,nikkansports.com

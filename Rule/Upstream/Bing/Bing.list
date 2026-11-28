@@ -1,15 +1,1 @@
-# NAME: Bing
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:20:00
-# DOMAIN-SUFFIX: 9
-# TOTAL: 9
-DOMAIN-SUFFIX,bing.com
-DOMAIN-SUFFIX,bing.com.cn
-DOMAIN-SUFFIX,bing.net
-DOMAIN-SUFFIX,bingads.com
-DOMAIN-SUFFIX,bingagencyawards.com
-DOMAIN-SUFFIX,bingapistatistics.com
-DOMAIN-SUFFIX,bingsandbox.com
-DOMAIN-SUFFIX,bingvisualsearch.com
-DOMAIN-SUFFIX,bingworld.com
+# NAME: Bing\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:20:00\n# DOMAIN-SUFFIX: 9\n# TOTAL: 9\nDOMAIN-SUFFIX,bing.com\nDOMAIN-SUFFIX,bing.com.cn\nDOMAIN-SUFFIX,bing.net\nDOMAIN-SUFFIX,bingads.com\nDOMAIN-SUFFIX,bingagencyawards.com\nDOMAIN-SUFFIX,bingapistatistics.com\nDOMAIN-SUFFIX,bingsandbox.com\nDOMAIN-SUFFIX,bingvisualsearch.com\nDOMAIN-SUFFIX,bingworld.com

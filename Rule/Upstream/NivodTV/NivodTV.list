@@ -1,15 +1,1 @@
-# NAME: NivodTV
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:20:01
-# DOMAIN-KEYWORD: 1
-# DOMAIN-SUFFIX: 7
-# TOTAL: 8
-DOMAIN-SUFFIX,biggggg.com
-DOMAIN-SUFFIX,mudvod.tv
-DOMAIN-SUFFIX,nbys.tv
-DOMAIN-SUFFIX,nbys1.tv
-DOMAIN-SUFFIX,nbyy.tv
-DOMAIN-SUFFIX,newpppp.com
-DOMAIN-SUFFIX,vod360.net
-DOMAIN-KEYWORD,nivod
+# NAME: NivodTV\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:20:01\n# DOMAIN-KEYWORD: 1\n# DOMAIN-SUFFIX: 7\n# TOTAL: 8\nDOMAIN-SUFFIX,biggggg.com\nDOMAIN-SUFFIX,mudvod.tv\nDOMAIN-SUFFIX,nbys.tv\nDOMAIN-SUFFIX,nbys1.tv\nDOMAIN-SUFFIX,nbyy.tv\nDOMAIN-SUFFIX,newpppp.com\nDOMAIN-SUFFIX,vod360.net\nDOMAIN-KEYWORD,nivod

@@ -1,7 +1,1 @@
-# NAME: AnandTech
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-01-08 16:02:59
-# DOMAIN-SUFFIX: 1
-# TOTAL: 1
-DOMAIN-SUFFIX,anandtech.com
+# NAME: AnandTech\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2024-01-08 16:02:59\n# DOMAIN-SUFFIX: 1\n# TOTAL: 1\nDOMAIN-SUFFIX,anandtech.com

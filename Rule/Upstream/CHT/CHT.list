@@ -1,13 +1,1 @@
-# NAME: CHT
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:42
-# DOMAIN-SUFFIX: 7
-# TOTAL: 7
-DOMAIN-SUFFIX,cht.com.tw
-DOMAIN-SUFFIX,chtf.org.tw
-DOMAIN-SUFFIX,emome.net
-DOMAIN-SUFFIX,gtlsca.nat.gov.tw
-DOMAIN-SUFFIX,hinet.net
-DOMAIN-SUFFIX,litv.tv
-DOMAIN-SUFFIX,xuite.net
+# NAME: CHT\n# AUTHOR: blackmatrix7\n# REPO: https://github.com/blackmatrix7/ios_rule_script\n# UPDATED: 2025-06-06 09:17:42\n# DOMAIN-SUFFIX: 7\n# TOTAL: 7\nDOMAIN-SUFFIX,cht.com.tw\nDOMAIN-SUFFIX,chtf.org.tw\nDOMAIN-SUFFIX,emome.net\nDOMAIN-SUFFIX,gtlsca.nat.gov.tw\nDOMAIN-SUFFIX,hinet.net\nDOMAIN-SUFFIX,litv.tv\nDOMAIN-SUFFIX,xuite.net
