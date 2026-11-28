@@ -122,23 +122,23 @@ def main():
     if openphish and urlhaus:
         blocked_hosts |= corroborated
     for p in sorted(ROOT.rglob("*.list")):
-            original=p.read_text(encoding="utf-8-sig")
-            kept=[]
-            for n,line in enumerate(original.splitlines(),1):
-                s=line.strip()
-                parts=[x.strip() for x in s.split(",")]
-                if len(parts)>=2 and parts[0].upper()=="DOMAIN":
-                    host=parts[1].lower().rstrip(".")
-                    if host in blocked_hosts:
-                        if host in corroborated and host not in prior_removed:
-                            removals.append({"path":str(p),"line":n,"rule":s,"host":host,"feeds":["OpenPhish","URLhaus"],"removed_utc":datetime.now(timezone.utc).isoformat(),"sha256":sha(line.encode()),"reason":"Exact host confirmed by both current threat feeds"})
-                        elif host in prior_removed:
-                            # Do not restore previously confirmed malicious entries on later upstream syncs.
-                            pass
-                        continue
-                kept.append(line)
-            if len(kept)!=len(original.splitlines()):
-                p.write_text("\n".join(kept)+("\n" if original.endswith("\n") else ""),encoding="utf-8")
+        original=p.read_text(encoding="utf-8-sig")
+        kept=[]
+        for n,line in enumerate(original.splitlines(),1):
+            s=line.strip()
+            parts=[x.strip() for x in s.split(",")]
+            if len(parts)>=2 and parts[0].upper()=="DOMAIN":
+                host=parts[1].lower().rstrip(".")
+                if host in blocked_hosts:
+                    if host in corroborated and host not in prior_removed:
+                        removals.append({"path":str(p),"line":n,"rule":s,"host":host,"feeds":["OpenPhish","URLhaus"],"removed_utc":datetime.now(timezone.utc).isoformat(),"sha256":sha(line.encode()),"reason":"Exact host confirmed by both current threat feeds"})
+                    elif host in prior_removed:
+                        # Do not restore previously confirmed malicious entries on later upstream syncs.
+                        pass
+                    continue
+            kept.append(line)
+        if len(kept)!=len(original.splitlines()):
+            p.write_text("\n".join(kept)+("\n" if original.endswith("\n") else ""),encoding="utf-8")
     QUARANTINE.mkdir(parents=True,exist_ok=True)
     if removals:
         with log.open("a",encoding="utf-8") as f:
