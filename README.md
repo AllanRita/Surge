@@ -1,31 +1,11 @@
-# Surge Rule Library
+# Surge 规则库
 
-This repository keeps the shared rule library separate from personal additions.
+## V2.0 维护方式
 
-## Start here
+每天计划于北京时间 11:17 从 blackmatrix7 的 `rule/Surge` 同步全部 `.list` 文件，也可手动运行。同步保留上游相对路径、规则顺序和不同解析格式，并应用已登记的排除项。[上游来源](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge) · [同步后的规则](Rule/Upstream/)
 
-- [Consolidated rule index](Rule/CONSOLIDATED-INDEX.md) — current App folders, supported formats, merge decisions, and old-path migration map.
-- [Cleanup inventory](Rule/Upstream/CLEANUP-INVENTORY.md) — current file counts, duplicate checks, cached-source coverage, finance-folder review, and shared-hosting inventory.
-- [Manual audit review](Rule/AUDIT-REVIEW.md) — interpretation of broad suffixes, financial-domain matches, cross-App boundaries, and validation limits.
-- [Broad suffix scope review](Rule/Upstream/BROAD-SUFFIX-SCOPE-REVIEW.md) — 78 IANA-valid single-label suffixes classified by routing scope; review only, no automatic deletion.
-- [Shared-hosting scope review](Rule/Upstream/SHARED-HOSTING-SCOPE-REVIEW.md) — 34 shared CDN/hosting suffixes and their App versus aggregate placement.
-- [Security review](Rule/Upstream/SECURITY-REVIEW.md) — threat-feed matches and broad shared-hosting suffixes. Matches are review signals, not automatic deletion instructions.
-- [App policy-group merge report](Rule/Upstream/APP-POLICY-MERGE-REPORT.md) — completed regional/alias consolidation.
-- Paired-format parity audit — generated in each maintenance workflow artifact; checks compatible formats without changing rule files.
+工作流校验全部规则文件，用 OpenPhish 核对精确的 `DOMAIN` 规则。新命中会记录文件、行号和主机名，供复核。已登记的删除记录在后续同步中继续生效。[最新发布报告](Rule/Upstream/SECURITY-SYNC-REPORT.json)
 
-> **Visibility note:** This repository is public. Files under `Rule/Personal/` are therefore publicly readable too. Keep only entries you are comfortable publishing here; if those personal additions should remain private, store them in a separate private repository rather than changing this repository's visibility without checking subscription access.
+每次运行的摘要列出各步骤结果。同步或发布失败时，请先查看该次运行的摘要和日志。仓库中的报告对应最近一次成功发布。[运行记录](../../actions/workflows/batch-preflight.yml) · [项目交接记录](SURGE-PROJECT-STATE.md)
 
-## Folder structure
-
-- `Rule/Upstream/` — consolidated upstream rule library. One App/service folder is the canonical location; distinct formats such as Standard and Resolve remain separate.
-- `Rule/Personal/` — personal rule additions, kept separate from upstream imports and automated upstream cleanup.
-
-## Maintenance boundaries
-
-- New author rule-set imports are paused.
-- Existing cached author snapshots may be compared, but no claim is made that every App has been compared against every possible author.
-- Personal rule files are not rewritten by upstream consolidation.
-- App consolidation is restricted to approved same-App/regional aliases and is guarded by the exact deletion manifest; deleted folders cannot be used as canonical or alias sources.
-- The 14 dedicated bank/payment App folders are currently present in `Rule/Upstream`. The exact deletion manifest currently contains zero entries. No category-based keep/delete exemption exists; every App follows the same evidence-based security policy. Only a future exact user-directed deletion may create a tombstone. Matching domains in other rule sets are not removed by category.
-- Shared CDN/hosting suffixes and threat-feed matches are reviewed manually; they are never deleted solely because of a feed match.
-- Regional country/area selection belongs in the corresponding Surge policy group, not in separate regional App folders.
+个人补充规则位于 `Rule/Personal/`。此仓库公开，该目录的内容也公开可读。同步会校验个人规则保持原样。Surge 主配置和策略顺序由用户单独维护。

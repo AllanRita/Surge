@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/scripts/sync_blackmatrix7.py'
       - '.github/workflows/batch-preflight.yml'
+      - '.github/explicit-rule-exclusions.json'
       - 'Rule/Upstream/README.md'
   workflow_dispatch:
   schedule:
@@ -24,17 +25,20 @@ jobs:
     timeout-minutes: 180
     steps:
       - name: Checkout repository
+        id: checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: true
           fetch-depth: 0
 
       - name: Set up Python
+        id: python
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: "3.12"
 
       - name: Compile-check sync script and validate deletion manifest
+        id: preflight
         run: |
           python -m py_compile .github/scripts/sync_blackmatrix7.py
           python - <<'PY'
@@ -51,6 +55,7 @@ jobs:
           PY
 
       - name: Download OpenPhish intelligence
+        id: feed
         shell: bash
         run: |
           set -euo pipefail
@@ -63,16 +68,19 @@ jobs:
 
 
       - name: Publish with concurrent-update retry
+        id: publish
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           for attempt in 1 2 3; do
+            rm -f "$RUNNER_TEMP/surge-report-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT.json"
             git fetch origin main
             git reset --hard origin/main
-            ARGS=(--openphish "$RUNNER_TEMP/surge-feeds/openphish.txt" --output Rule/Upstream/SECURITY-SYNC-REPORT.json)
+            ARGS=(--openphish "$RUNNER_TEMP/surge-feeds/openphish.txt" --output "$RUNNER_TEMP/surge-report-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT.json")
             python3 .github/scripts/sync_blackmatrix7.py "${ARGS[@]}"
+            cp "$RUNNER_TEMP/surge-report-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT.json" Rule/Upstream/SECURITY-SYNC-REPORT.json
             git add -A -- Rule/Upstream
             if git diff --cached --quiet; then
               echo "No upstream rule or security report changes."
@@ -89,18 +97,33 @@ jobs:
 
       - name: Summarize security coverage and validation
         if: always()
+        shell: bash
+        env:
+          STEP_OUTCOMES: ${{ toJSON(steps) }}
         run: |
-          if [ -f Rule/Upstream/SECURITY-SYNC-REPORT.json ]; then
-            python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
           import json
-          p=json.load(open("Rule/Upstream/SECURITY-SYNC-REPORT.json",encoding="utf-8"))
+          import os
+          from pathlib import Path
+
+          steps = json.loads(os.environ["STEP_OUTCOMES"])
           print("## Surge single-source sync")
-          print("- Source:", p.get("source"), "commit", p.get("source_commit"))
-          print("- Imported rule files:", p.get("upstream_rule_files"))
-          print("- Rule folders:", p.get("validation",{}).get("rule_folders"))
-          print("- Exact high-confidence removals:", len(p.get("removed_exact_domain_rules",[])))
-          print("- Exact OpenPhish matches:", len(p["openphish_exact_matches"]))
-          print("- Validation errors:", len(p.get("validation_errors",[])))
-          print("- Coverage:", p.get("coverage_note"))
+          for name in ("checkout", "python", "preflight", "feed", "publish"):
+              print(f"- {name}: {steps.get(name, {}).get('outcome', 'skipped')}")
+
+          run = os.environ["GITHUB_RUN_ID"]
+          attempt = os.environ["GITHUB_RUN_ATTEMPT"]
+          report = Path(os.environ["RUNNER_TEMP"]) / f"surge-report-{run}-{attempt}.json"
+          if not report.is_file():
+              print("This attempt produced no report.")
+          else:
+              p = json.loads(report.read_text(encoding="utf-8"))
+              print("- Source commit:", p["source_commit"])
+              print("- Rule files:", p["validation"]["rule_files"])
+              print("- Rule folders:", p["validation"]["rule_folders"])
+              print("- OpenPhish hosts:", p["openphish_hosts"])
+              print("- Exact OpenPhish matches:", len(p["openphish_exact_matches"]))
+              print("- New removals:", len(p["removed_exact_domain_rules"]))
+              print("- Validation errors:", len(p["validation_errors"]))
+              print("- Personal rules unchanged:", p["rule_personal_unchanged"])
           PY
-          fi
