@@ -64,9 +64,11 @@ def main():
     if ROOT.is_symlink() or not ROOT.is_dir(): raise SystemExit("Unsafe or missing Rule/Upstream")
     if Path("Rule/Personal").is_symlink(): raise SystemExit("Rule/Personal symlink")
     personal_before={str(p.relative_to("Rule/Personal")):sha(p.read_bytes()) for p in Path("Rule/Personal").rglob("*") if p.is_file()}
+    source_commit=""
     with tempfile.TemporaryDirectory() as td:
         clone=Path(td)/"source"
         subprocess.run(["git","clone","--depth","1","--branch","master","https://github.com/blackmatrix7/ios_rule_script.git",str(clone)],check=True)
+        source_commit=subprocess.check_output(["git","-C",str(clone),"rev-parse","HEAD"],text=True).strip()
         source=clone/"rule"/"Surge"
         if not source.is_dir(): raise SystemExit("Upstream rule/Surge directory missing")
         source_files=sorted(source.rglob("*.list"))
@@ -115,7 +117,7 @@ def main():
     validation=validate_tree()
     personal_after={str(p.relative_to("Rule/Personal")):sha(p.read_bytes()) for p in Path("Rule/Personal").rglob("*") if p.is_file()}
     if personal_before!=personal_after: raise SystemExit("Rule/Personal changed unexpectedly")
-    report={"generated_utc":datetime.now(timezone.utc).isoformat(),"source":"blackmatrix7/ios_rule_script","source_branch":"master","source_commit":subprocess.check_output(["git","-C",str(clone),"rev-parse","HEAD"],text=True).strip() if 'clone' in locals() else "recorded-in-workflow","upstream_rule_files":len(imported),"upstream_file_manifest":imported,"openphish_hosts":len(openphish),"urlhaus_hosts":len(urlhaus),"automatic_deletion_enabled":bool(openphish and urlhaus),"corroborated_hosts":len(corroborated),"removed_exact_domain_rules":removals,"coverage_note":"OpenPhish phishing URLs and URLhaus malware URLs only; not comprehensive fraud/scam coverage. Missing either feed disables automatic deletion.","validation":{k:v for k,v in validation.items() if k!="errors"},"validation_errors":validation["errors"],"rule_personal_unchanged":True}
+    report={"generated_utc":datetime.now(timezone.utc).isoformat(),"source":"blackmatrix7/ios_rule_script","source_branch":"master","source_commit":source_commit,"upstream_rule_files":len(imported),"upstream_file_manifest":imported,"openphish_hosts":len(openphish),"urlhaus_hosts":len(urlhaus),"automatic_deletion_enabled":bool(openphish and urlhaus),"corroborated_hosts":len(corroborated),"removed_exact_domain_rules":removals,"coverage_note":"OpenPhish phishing URLs and URLhaus malware URLs only; not comprehensive fraud/scam coverage. Missing either feed disables automatic deletion.","validation":{k:v for k,v in validation.items() if k!="errors"},"validation_errors":validation["errors"],"rule_personal_unchanged":True}
     Path(a.output).write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps({"imported":len(imported),"folders":validation["rule_folders"],"removed":len(removals),"validation_errors":len(validation["errors"]),"auto_delete":report["automatic_deletion_enabled"]}))
     if validation["errors"]: raise SystemExit("Full-tree validation failed")
