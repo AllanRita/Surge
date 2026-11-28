@@ -6,15 +6,15 @@ External icon links only. No image mirroring.
 
 | Index | Icons | Link |
 |---|---:|---|
-| All.json | 8702 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
+| All.json | 8802 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/All.json) |
 | Flags.json | 602 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Flags.json) |
-| Streaming.json | 517 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
+| Streaming.json | 617 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Streaming.json) |
 | AI.json | 59 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/AI.json) |
 | Packs/Apple-Emoji.json | 3587 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Emoji.json) |
 | Packs/Apple-Flags.json | 262 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-Flags.json) |
-| Packs/Apple-iOS.json | 60 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-iOS.json) |
+| Packs/Apple-iOS.json | 110 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-iOS.json) |
 | Packs/Apple-iOS-History.json | 0 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Apple-iOS-History.json) |
-| Packs/Google-Play.json | 59 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Google-Play.json) |
+| Packs/Google-Play.json | 109 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Google-Play.json) |
 | Packs/Google-Play-History.json | 0 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Google-Play-History.json) |
 | Packs/Qure-Color.json | 347 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Color.json) |
 | Packs/Qure-Mini.json | 347 | [JSON](https://raw.githubusercontent.com/AllanRita/Surge/main/Icon/Packs/Qure-Mini.json) |
@@ -114,21 +114,71 @@ External icon links only. No image mirroring.
 - [284035177](https://apps.apple.com/us/app/id284035177)
 - [934459219](https://apps.apple.com/us/app/id934459219)
 - [913943275](https://apps.apple.com/us/app/id913943275)
+- [393765873](https://apps.apple.com/cn/app/id393765873)
+- [1260489449](https://apps.apple.com/cn/app/id1260489449)
+- [383457673](https://apps.apple.com/us/app/id383457673)
+- [1488894313](https://apps.apple.com/us/app/id1488894313)
+- [1538433480](https://apps.apple.com/us/app/id1538433480)
+- [1517062289](https://apps.apple.com/us/app/id1517062289)
+- [520797969](https://apps.apple.com/cn/app/id520797969)
+- [6756595533](https://apps.apple.com/cn/app/id6756595533)
+- [6466786430](https://apps.apple.com/us/app/id6466786430)
+- [1339670993](https://apps.apple.com/us/app/id1339670993)
+- [292738169](https://apps.apple.com/us/app/id292738169)
+- [336141475](https://apps.apple.com/cn/app/id336141475)
+- [905401434](https://apps.apple.com/us/app/id905401434)
+- [6464002625](https://apps.apple.com/us/app/id6464002625)
+- [6800989223](https://apps.apple.com/us/app/id6800989223)
+- [6758488784](https://apps.apple.com/us/app/id6758488784)
+- [6776180188](https://apps.apple.com/us/app/id6776180188)
+- [376510438](https://apps.apple.com/us/app/id376510438)
+- [1480205582](https://apps.apple.com/cn/app/id1480205582)
+- [1477031443](https://apps.apple.com/cn/app/id1477031443)
+- [317951436](https://apps.apple.com/us/app/id317951436)
+- [6503421271](https://apps.apple.com/us/app/id6503421271)
+- [6444170965](https://apps.apple.com/cn/app/id6444170965)
+- [1531467766](https://apps.apple.com/us/app/id1531467766)
+- [6795492315](https://apps.apple.com/us/app/id6795492315)
+- [6451242037](https://apps.apple.com/cn/app/id6451242037)
+- [6449206831](https://apps.apple.com/us/app/id6449206831)
+- [6479289916](https://apps.apple.com/cn/app/id6479289916)
+- [6737513497](https://apps.apple.com/gb/app/id6737513497)
+- [290638154](https://apps.apple.com/us/app/id290638154)
+- [1598433714](https://apps.apple.com/us/app/id1598433714)
+- [6755376484](https://apps.apple.com/us/app/id6755376484)
+- [891132290](https://apps.apple.com/us/app/id891132290)
+- [1136238277](https://apps.apple.com/us/app/id1136238277)
+- [6502927070](https://apps.apple.com/cn/app/id6502927070)
+- [1479814602](https://apps.apple.com/us/app/id1479814602)
+- [588673713](https://apps.apple.com/cn/app/id588673713)
+- [418987775](https://apps.apple.com/us/app/id418987775)
+- [6747066887](https://apps.apple.com/us/app/id6747066887)
+- [587794258](https://apps.apple.com/us/app/id587794258)
+- [1461999674](https://apps.apple.com/us/app/id1461999674)
+- [863882795](https://apps.apple.com/us/app/id863882795)
+- [1148465254](https://apps.apple.com/us/app/id1148465254)
+- [787130974](https://apps.apple.com/us/app/id787130974)
+- [6752596179](https://apps.apple.com/cn/app/id6752596179)
+- [6810959713](https://apps.apple.com/us/app/id6810959713)
+- [1541981555](https://apps.apple.com/cn/app/id1541981555)
+- [912390687](https://apps.apple.com/us/app/id912390687)
+- [1387514950](https://apps.apple.com/us/app/id1387514950)
+- [871095743](https://apps.apple.com/us/app/id871095743)
 
 ## Apple icon history
 
-Current apps: 60
+Current apps: 110
 Visible historical URLs: 0
 Hidden historical URLs: 0
-Archived versions: 60
+Archived versions: 110
 
 ## Google Play
 
-Manual registered URLs: 59
-Visible current URLs: 59
+Manual registered URLs: 109
+Visible current URLs: 109
 Visible historical URLs: 0
 Hidden URLs: 0
-Archived URLs: 59
+Archived URLs: 109
 
 Google Play icons are registered manually in Custom.json. No store scraping. Removing a registered URL makes it historical; the archive is retained.
 
