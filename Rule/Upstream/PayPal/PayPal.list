@@ -1,9 +1,11 @@
 # NAME: PayPal
 # AUTHOR: blackmatrix7
-# SOURCE: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list
-# RESTORED: 2026-11-27
-# RULES: 248
-
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:16:55
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 246
+# USER-AGENT: 1
+# TOTAL: 248
 DOMAIN-SUFFIX,account-paypal.info
 DOMAIN-SUFFIX,account-paypal.net
 DOMAIN-SUFFIX,account-paypal.org

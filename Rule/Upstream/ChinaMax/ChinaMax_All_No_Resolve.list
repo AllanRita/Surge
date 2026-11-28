@@ -4,14 +4,13 @@
 # UPDATED: 2026-10-28 05:43:03
 # DOMAIN: 271
 # DOMAIN-KEYWORD: 13
-# DOMAIN-SUFFIX: 110206
+# DOMAIN-SUFFIX: 110207
 # IP-ASN: 1
 # IP-CIDR: 8244
 # IP-CIDR6: 4312
 # PROCESS-NAME: 12
 # USER-AGENT: 65
-# TOTAL: 123124
-
+# TOTAL: 123125
 DOMAIN,cpro.baidustatic.com
 DOMAIN,analytics.strava.com
 DOMAIN,blzddist1-a.akamaihd.net
@@ -97386,6 +97385,7 @@ DOMAIN-SUFFIX,xihaxueche.com
 DOMAIN-SUFFIX,xihazsww.com
 DOMAIN-SUFFIX,xihegp.com
 DOMAIN-SUFFIX,xiherencai.com
+DOMAIN-SUFFIX,xihuan
 DOMAIN-SUFFIX,xihuan.me
 DOMAIN-SUFFIX,xihusgh.com
 DOMAIN-SUFFIX,xiimoon.com

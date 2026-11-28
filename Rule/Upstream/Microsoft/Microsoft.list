@@ -681,7 +681,3 @@ USER-AGENT,OneDrive*
 USER-AGENT,OneDriveiOSApp*
 PROCESS-NAME,OneDrive
 PROCESS-NAME,OneDriveUpdater
-# BEGIN MERGED SUPPLEMENT
-# Source: https://github.com/SukkaLab/ruleset.skk.moe
-# License: AGPL-3.0; notices in SourceMetadata/Microsoft.json
-DOMAIN-SUFFIX,clarity.ms

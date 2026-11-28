@@ -1,9 +1,9 @@
 # NAME: VISA
 # AUTHOR: blackmatrix7
-# SOURCE: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/VISA/VISA.list
-# RESTORED: 2026-11-27
-# RULES: 99
-
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:48
+# DOMAIN-SUFFIX: 99
+# TOTAL: 99
 DOMAIN-SUFFIX,visa.be
 DOMAIN-SUFFIX,visa.ca
 DOMAIN-SUFFIX,visa.cl

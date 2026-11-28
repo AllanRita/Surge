@@ -1,0 +1,4326 @@
+{
+  "generated_utc": "2026-11-28T06:50:37.399224+00:00",
+  "source": "blackmatrix7/ios_rule_script",
+  "source_branch": "master",
+  "source_commit": "0b6897dc17e0c513d25449c935a9694818e32f0c",
+  "upstream_rule_files": 861,
+  "upstream_file_manifest": [
+    {
+      "path": "Rule/Upstream/115/115.list",
+      "sha256": "cbd6547bb076a5d5485ae28ca9c93ce3a4a4ed91cee922e8e3ae03777c441e5f",
+      "bytes": 421
+    },
+    {
+      "path": "Rule/Upstream/12306/12306.list",
+      "sha256": "ea721ee413f28c6b338c0777d52a9e0b66f5da0cbb9abb5a54a2cf82f5c21007",
+      "bytes": 543
+    },
+    {
+      "path": "Rule/Upstream/1337x/1337x.list",
+      "sha256": "328d28dd2ca694b5047b4d6bf42ce6516505a74ad65f5d1115b2c0068f022447",
+      "bytes": 392
+    },
+    {
+      "path": "Rule/Upstream/17173/17173.list",
+      "sha256": "ba86c98ac9eb0bf90012b74f2a1befe16e42818ab4cd1ea6bc79757fe0cb45cd",
+      "bytes": 1631
+    },
+    {
+      "path": "Rule/Upstream/178/178.list",
+      "sha256": "39856a9735513d681f14d511f7ab1b3ccf1ebaf13e6af513a76fb38e2960dd5b",
+      "bytes": 689
+    },
+    {
+      "path": "Rule/Upstream/17zuoye/17zuoye.list",
+      "sha256": "5a0fc9e58641abc5aad8b502832a165eab9340e6fdccab1fe329b7be92719d10",
+      "bytes": 1034
+    },
+    {
+      "path": "Rule/Upstream/2KGames/2KGames.list",
+      "sha256": "6ef6a9ad00866bf950a6b6e3107c7a8356f946cba50013b4e857271c129bcfa2",
+      "bytes": 264
+    },
+    {
+      "path": "Rule/Upstream/360/360.list",
+      "sha256": "0b1aaa1de7793984d10fe574f7971c5bed362030a1fe320f4135ebb75001c69c",
+      "bytes": 6789
+    },
+    {
+      "path": "Rule/Upstream/36kr/36kr.list",
+      "sha256": "671393622cde4b0d1b17a8f51495372640a14fdd44b639658412cbc70316483e",
+      "bytes": 257
+    },
+    {
+      "path": "Rule/Upstream/3Type/3Type.list",
+      "sha256": "a904fd75cf285ff5fd238031e2c47f66f65cd9ec33ef245f0edec348c376b173",
+      "bytes": 177
+    },
+    {
+      "path": "Rule/Upstream/3dm/3dm.list",
+      "sha256": "425d7bf0af028c8f06bfaf4de6a79e84c8867fe8740e3d5611474063ef8fcb7c",
+      "bytes": 178
+    },
+    {
+      "path": "Rule/Upstream/4399/4399.list",
+      "sha256": "1b25db3ac60b059893d49800ffd028bacd85b877449eb6ee77812c6bd2682947",
+      "bytes": 479
+    },
+    {
+      "path": "Rule/Upstream/4Paradigm/4Paradigm.list",
+      "sha256": "f6cddcb568506a2bef96df7f9cb62a6ed82fe7ae801bae80cf4aea8a51fcb191",
+      "bytes": 186
+    },
+    {
+      "path": "Rule/Upstream/4chan/4chan.list",
+      "sha256": "4adf1d2344ee7fe10f753c1fd63d0b7ffe94280308ff3cc51b88cf04d117d759",
+      "bytes": 228
+    },
+    {
+      "path": "Rule/Upstream/51Job/51Job.list",
+      "sha256": "18aa25c1e9ee764a38b45512c8a07394f8775e553d4618c41be27922926ab836",
+      "bytes": 687
+    },
+    {
+      "path": "Rule/Upstream/51nod/51nod.list",
+      "sha256": "8aba8b570412b5bfcdd88c7ea28b01abb86e8e48040cc6620a3962fb00a17a8e",
+      "bytes": 178
+    },
+    {
+      "path": "Rule/Upstream/56/56.list",
+      "sha256": "51073d5275e72009da6da19c5adefc9fdfeb399910b29c65b8b0bbebbb5e063a",
+      "bytes": 402
+    },
+    {
+      "path": "Rule/Upstream/58TongCheng/58TongCheng.list",
+      "sha256": "a6b766addf27ba441ef49bbf538b9ef1b3bf8b223844e0262be5b996b34a04c6",
+      "bytes": 1782
+    },
+    {
+      "path": "Rule/Upstream/6JianFang/6JianFang.list",
+      "sha256": "663c84404f7f59c6621969199073e94e5e6ece2b7778beb051180e681ecc2ee9",
+      "bytes": 643
+    },
+    {
+      "path": "Rule/Upstream/6park/6park.list",
+      "sha256": "453ecce974e69802aa796548ecbd4b77d3642f5db19c2272a119272f68677031",
+      "bytes": 258
+    },
+    {
+      "path": "Rule/Upstream/8btc/8btc.list",
+      "sha256": "b66686047348cc0c0a837e418a54cf7f67e80863213cfa1ef1374072399173dc",
+      "bytes": 282
+    },
+    {
+      "path": "Rule/Upstream/9News/9News.list",
+      "sha256": "0efeb0257a372600962d49b5adac7cfd464a5727e1c5275807bf7f24c2c71f06",
+      "bytes": 572
+    },
+    {
+      "path": "Rule/Upstream/9to5/9to5.list",
+      "sha256": "01613f56a44a02e5a09adf1b121979fd0e97368f41cee05ef0a41991eb4320b2",
+      "bytes": 350
+    },
+    {
+      "path": "Rule/Upstream/ABC/ABC.list",
+      "sha256": "cb552428fa4c83beb01d126fe8e46551f72e37af3ce1334f256febaedf9acfde",
+      "bytes": 311
+    },
+    {
+      "path": "Rule/Upstream/AFP/AFP.list",
+      "sha256": "6a05095937f73fdf00ad58735fa03d3d50ee594da0c40b33bf7ab14434d27c6d",
+      "bytes": 201
+    },
+    {
+      "path": "Rule/Upstream/ALJazeera/ALJazeera.list",
+      "sha256": "62e2ec1e5a90fcec25361dcf4d65b0d97b5e8b7d8e3cf2387594b99c40ff3d63",
+      "bytes": 368
+    },
+    {
+      "path": "Rule/Upstream/AMD/AMD.list",
+      "sha256": "fa42925ca48d9081b5452342f6e04ada5b457b0f8e13f5928dbfbd1dac3b8665",
+      "bytes": 254
+    },
+    {
+      "path": "Rule/Upstream/AMP/AMP.list",
+      "sha256": "5f5c3d2f2620db7cdbb911a756ce34a3c7ac3f3a86bdc58cf0f56c0658529a3a",
+      "bytes": 298
+    },
+    {
+      "path": "Rule/Upstream/AOL/AOL.list",
+      "sha256": "1cdf18284136aae513c17d9a73d2aed3758bd14ea344af804dfb324ad17ddb3f",
+      "bytes": 245
+    },
+    {
+      "path": "Rule/Upstream/APKCombo/APKCombo.list",
+      "sha256": "fff1b68762e1079c322c493f61bbf2d49fa78e24ef6645b4e15b9cd42e4b30a4",
+      "bytes": 184
+    },
+    {
+      "path": "Rule/Upstream/ATTWatchTV/ATTWatchTV.list",
+      "sha256": "994c14e4c5407055c272647c5f4d7e5eb5f5d011d4a75e773c9e73ce478f011e",
+      "bytes": 318
+    },
+    {
+      "path": "Rule/Upstream/Abema/Abema.list",
+      "sha256": "e10b18c45ed518538a0efb9a003efa1c9fda2a7125a87ac3684f2cd6f5857789",
+      "bytes": 737
+    },
+    {
+      "path": "Rule/Upstream/AbemaTV/AbemaTV.list",
+      "sha256": "37dea21dd977c1d61143c3d104268685cc8d1e7dd20991f729a992c73a8a7552",
+      "bytes": 943
+    },
+    {
+      "path": "Rule/Upstream/AcFun/AcFun.list",
+      "sha256": "81ae62594c06eab1929963d1bd79aaaebbe4931f145c0971eed22daecb6b2887",
+      "bytes": 284
+    },
+    {
+      "path": "Rule/Upstream/Accuweather/Accuweather.list",
+      "sha256": "3046a7224b5c23c2d3766af4ab47632a3c037259d19837917f9a60c92dc2b175",
+      "bytes": 190
+    },
+    {
+      "path": "Rule/Upstream/Acer/Acer.list",
+      "sha256": "3dd20dc4b11657a0c165f3f13d53e7971debf7aaebd0ec9cebb5075808e73552",
+      "bytes": 286
+    },
+    {
+      "path": "Rule/Upstream/Acplay/Acplay.list",
+      "sha256": "cf79479abc449cc31682090e12c7a29e108dbdfec711de3ab1638f2af35bad44",
+      "bytes": 209
+    },
+    {
+      "path": "Rule/Upstream/Actalis/Actalis.list",
+      "sha256": "74f4d5391fd1b0c861f48a4457645392aa64ccbc4a612f2127defaebc2ac6331",
+      "bytes": 207
+    },
+    {
+      "path": "Rule/Upstream/AdColony/AdColony.list",
+      "sha256": "037d33a75d751566481f26f2e66d3a19a8ac518608547f12f6be4dff2f118fb3",
+      "bytes": 184
+    },
+    {
+      "path": "Rule/Upstream/AdGuardSDNSFilter/AdGuardSDNSFilter_All.list",
+      "sha256": "cea9ff9a696c204920f695fa2a0807ba27d7eb178405522be3ee199f164e38f6",
+      "bytes": 3706815
+    },
+    {
+      "path": "Rule/Upstream/AdGuardSDNSFilter/AdGuardSDNSFilter_All_No_Resolve.list",
+      "sha256": "eff11f0f025060c01cc1cb5e528fbb13f1dcd89b2ced539e439ab0c1f8da5913",
+      "bytes": 3706815
+    },
+    {
+      "path": "Rule/Upstream/AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list",
+      "sha256": "6340cbef6a70112bc67cf06fa290581872fbb02a86e9d94ac1b257e4c759d7de",
+      "bytes": 2289537
+    },
+    {
+      "path": "Rule/Upstream/AdGuardSDNSFilter/Direct/Direct.list",
+      "sha256": "4dd83b81db007f331600d13157826d13e65c83d3d10abca2cbf64aee2a048479",
+      "bytes": 4200
+    },
+    {
+      "path": "Rule/Upstream/AddToAny/AddToAny.list",
+      "sha256": "6571788ebe1ed294947ff12d984931b5742551ac00a62f91ee5103cfea9b8153",
+      "bytes": 184
+    },
+    {
+      "path": "Rule/Upstream/Addthis/Addthis.list",
+      "sha256": "df6419147be8263d628742e0ac2b147b87d638ce87231116faede705d651b6c2",
+      "bytes": 241
+    },
+    {
+      "path": "Rule/Upstream/Adidas/Adidas.list",
+      "sha256": "0612c1f877f0ac26b84f405679a9d936520f7ea9c084e9aafd9fe9c9467dcd52",
+      "bytes": 632
+    },
+    {
+      "path": "Rule/Upstream/Adobe/Adobe.list",
+      "sha256": "e1197204ea146067ae722d9cd5efbcdaa1167d2ef40e48dd10fdd10ce70a07c1",
+      "bytes": 4216
+    },
+    {
+      "path": "Rule/Upstream/AdobeActivation/AdobeActivation.list",
+      "sha256": "a8437015fd61d6d2480bbc33217bded475297f43f0e4906f3a1b737477bd6006",
+      "bytes": 3851
+    },
+    {
+      "path": "Rule/Upstream/AdobeActivation/AdobeActivation_Resolve.list",
+      "sha256": "0e07597c5253466f4ebb034c57962a97c267757aec54cdfd4c63120bef832253",
+      "bytes": 3521
+    },
+    {
+      "path": "Rule/Upstream/Advertising/Advertising.list",
+      "sha256": "cda3e6804f933755773cfa8e5894f07489bfa1653951fc3780f4a21da02a5b5d",
+      "bytes": 26927
+    },
+    {
+      "path": "Rule/Upstream/Advertising/Advertising_All.list",
+      "sha256": "01f8b9caf1ab7b9ba58b17ebfcd04dc61b27af0751c43b5daa23ee5e7f6676d9",
+      "bytes": 9604598
+    },
+    {
+      "path": "Rule/Upstream/Advertising/Advertising_All_No_Resolve.list",
+      "sha256": "6114257c8520a4b212124075ecc427b672fdae76f698109feba185d5817f7a0e",
+      "bytes": 9609977
+    },
+    {
+      "path": "Rule/Upstream/Advertising/Advertising_Domain.list",
+      "sha256": "66b14bdf06325898836681fa2a6e727eb167a5bbeb782c907ca99720601194fe",
+      "bytes": 5906909
+    },
+    {
+      "path": "Rule/Upstream/Advertising/Advertising_Resolve.list",
+      "sha256": "f4d0993acc40759bf6b94e2c50cbd6bd4dd9d748d6f8277ae61a3b5644a9b67c",
+      "bytes": 21548
+    },
+    {
+      "path": "Rule/Upstream/AdvertisingLite/AdvertisingLite.list",
+      "sha256": "4d9a9c809ee52f973228ab35be58f29c7a5e818b3a74cbed820035eb46a0b858",
+      "bytes": 12941
+    },
+    {
+      "path": "Rule/Upstream/AdvertisingLite/AdvertisingLite_All.list",
+      "sha256": "0cca6a10810742bcf1e59ff64309801fe89c96fc5000570773c22c8300227974",
+      "bytes": 953816
+    },
+    {
+      "path": "Rule/Upstream/AdvertisingLite/AdvertisingLite_All_No_Resolve.list",
+      "sha256": "08f166a2c294bc6257d6c3d1f99a4c29936c32c6d71a5c61650677b45dda2f65",
+      "bytes": 955873
+    },
+    {
+      "path": "Rule/Upstream/AdvertisingLite/AdvertisingLite_Domain.list",
+      "sha256": "2aa1f0867e276fc7b7e52d03a245560bf253171873608d9464c7510773eae5d0",
+      "bytes": 595794
+    },
+    {
+      "path": "Rule/Upstream/AdvertisingLite/AdvertisingLite_Resolve.list",
+      "sha256": "5145ef558cae7dd752bc06994b127349fbc7e47a91cfd1e7e5ad0000fd66ac9d",
+      "bytes": 10884
+    },
+    {
+      "path": "Rule/Upstream/AdvertisingMiTV/AdvertisingMiTV.list",
+      "sha256": "74a0a085248cdc2f088903e4cd053a7a936186449713307cc36afd24b11f998f",
+      "bytes": 4583
+    },
+    {
+      "path": "Rule/Upstream/AdvertisingTest/AdvertisingTest.list",
+      "sha256": "87eec1fab48c80d3eb552f7cbff799dc10e195e2ed0578735f67946b5ca42466",
+      "bytes": 27764
+    },
+    {
+      "path": "Rule/Upstream/AdvertisingTest/AdvertisingTest_All.list",
+      "sha256": "6296dc56abdf089ff734e4e77dae38304f14fbea52a3068e8e5c33def416f33f",
+      "bytes": 10384179
+    },
+    {
+      "path": "Rule/Upstream/AdvertisingTest/AdvertisingTest_All_No_Resolve.list",
+      "sha256": "c02fdb0114403fbe8313a8faad827115db8390fa807fbc2147c007d682950d12",
+      "bytes": 10389800
+    },
+    {
+      "path": "Rule/Upstream/AdvertisingTest/AdvertisingTest_Domain.list",
+      "sha256": "29958261d93e3d93c05e430352b64b1c955f0cc8bbd265e27460e5d31c5c267f",
+      "bytes": 6345586
+    },
+    {
+      "path": "Rule/Upstream/AdvertisingTest/AdvertisingTest_Resolve.list",
+      "sha256": "97dcfa549aa6949ab70c0879fc4efc2385ec3e2f4864ed3a7f400e3d0df4eb42",
+      "bytes": 22143
+    },
+    {
+      "path": "Rule/Upstream/Aerogard/Aerogard.list",
+      "sha256": "5171cc4d4a46746c7ec59a11ca8e1d22937ad32168fbaf9e30fa4137a6f294f7",
+      "bytes": 246
+    },
+    {
+      "path": "Rule/Upstream/Afdian/Afdian.list",
+      "sha256": "196939f6e6fc0eb821412ae4b202a3e9567d455d9affc5546754cd97be84807b",
+      "bytes": 208
+    },
+    {
+      "path": "Rule/Upstream/Agora/Agora.list",
+      "sha256": "99f90aadc6409130f203125012685ef96164ca83c4354534517a91a4592ba149",
+      "bytes": 228
+    },
+    {
+      "path": "Rule/Upstream/AiQiCha/AiQiCha.list",
+      "sha256": "13440fb69be0c354d4d2881abe424d464fb25613e1794965e876180a44aa7fbf",
+      "bytes": 188
+    },
+    {
+      "path": "Rule/Upstream/AirChina/AirChina.list",
+      "sha256": "f7f8ddc5979d193d7f5a2361f1d3b03842874ef736d4b7627c5e406849b691b3",
+      "bytes": 219
+    },
+    {
+      "path": "Rule/Upstream/AirWick/AirWick.list",
+      "sha256": "c925dc8c68bb528bc87785f6b17210979955c4ca61523f8e550c70274d0e2b74",
+      "bytes": 1197
+    },
+    {
+      "path": "Rule/Upstream/Akamai/Akamai.list",
+      "sha256": "f4624956ebda15f8451149083d3cb5a1030b9b2a74dc8b696f248bd7af6a831c",
+      "bytes": 320
+    },
+    {
+      "path": "Rule/Upstream/Ali213/Ali213.list",
+      "sha256": "62bec2da75e0acf4654c7b2c94d0dc94901f7c18b16ddbe5628379bd8c72b0dc",
+      "bytes": 180
+    },
+    {
+      "path": "Rule/Upstream/AliPay/AliPay.list",
+      "sha256": "23d7ca5404f4795d485b4ea700f45e1d94f2dbf0f2871eeca5298cfce81ff5be",
+      "bytes": 749
+    },
+    {
+      "path": "Rule/Upstream/Alibaba/Alibaba.list",
+      "sha256": "3d605a61b5d0789ca3835c0a040f8d764dff1ec325ff9857af3720658a20e6de",
+      "bytes": 2125
+    },
+    {
+      "path": "Rule/Upstream/Alibaba/Alibaba_All.list",
+      "sha256": "5f9f645d39a6592b49a558af5c13d832a66c127bd458347e6b1ba253c3d93520",
+      "bytes": 37032
+    },
+    {
+      "path": "Rule/Upstream/Alibaba/Alibaba_All_No_Resolve.list",
+      "sha256": "e9e167c3d55f9f87a2093f0290b0bb99f6cf5d14f9210c6d8222bd45be6eb094",
+      "bytes": 37626
+    },
+    {
+      "path": "Rule/Upstream/Alibaba/Alibaba_Domain.list",
+      "sha256": "f91b18d532534171872e7e23876e031879d05fa7b9c8551b9dc07e87573614af",
+      "bytes": 19290
+    },
+    {
+      "path": "Rule/Upstream/Alibaba/Alibaba_Resolve.list",
+      "sha256": "3137fc8de9ed6756dfb67059dd9a38213013576907765e9db9abbf12c33aebea",
+      "bytes": 1531
+    },
+    {
+      "path": "Rule/Upstream/All4/All4.list",
+      "sha256": "e8833f1d48739b7d19220198d262809d98516a40703414e17db47e2ad41ce3a0",
+      "bytes": 240
+    },
+    {
+      "path": "Rule/Upstream/Amazon/Amazon.list",
+      "sha256": "f282c666dd8f4183c3451082a4d20a5da65dede1321c893a7862add1832ea5e7",
+      "bytes": 6545
+    },
+    {
+      "path": "Rule/Upstream/Amazon/Amazon_Resolve.list",
+      "sha256": "809f37b6c8a3ef34a88701ffad41c5eb00f52b21b4ce55f8bf129a8b91d51983",
+      "bytes": 6380
+    },
+    {
+      "path": "Rule/Upstream/AmazonCN/AmazonCN.list",
+      "sha256": "af39782a0aa9d2e2fd87b6b6f1a236cd71518228a2dfcdfe1f55cacb5bf61e7c",
+      "bytes": 1590
+    },
+    {
+      "path": "Rule/Upstream/AmazonIP/AmazonIP.list",
+      "sha256": "c82b2b6ba2d15f7748d6a8e61b50751a0beec858aa8aa88ed6e1d0caa3295dcd",
+      "bytes": 52234
+    },
+    {
+      "path": "Rule/Upstream/AmazonIP/AmazonIP_Resolve.list",
+      "sha256": "5430446b5b7491433fc6740499135c8ae6a0147780043babcb9f8e91d506f4bb",
+      "bytes": 35503
+    },
+    {
+      "path": "Rule/Upstream/AmazonPrimeVideo/AmazonPrimeVideo.list",
+      "sha256": "f5b07fda0d55df6b8f70ed4ad7ecbe7e501bfe0f9cf469528d611313a3ad03c5",
+      "bytes": 1125
+    },
+    {
+      "path": "Rule/Upstream/AmazonTrust/AmazonTrust.list",
+      "sha256": "0029310fd6b5c25101d27e16aa3a363f33d8768157994041422608b22e0a1201",
+      "bytes": 238
+    },
+    {
+      "path": "Rule/Upstream/Americasvoice/Americasvoice.list",
+      "sha256": "fdfe8c62a7205984bf89427432f773b927ebab6f9c297e6c7edfccf31c274775",
+      "bytes": 195
+    },
+    {
+      "path": "Rule/Upstream/AnTianKeJi/AnTianKeJi.list",
+      "sha256": "a36586b5d30cef2159d80534d28c591101a2d9d536067ef2b84f176073d3341f",
+      "bytes": 451
+    },
+    {
+      "path": "Rule/Upstream/Anaconda/Anaconda.list",
+      "sha256": "548ff11fd007df0881324373a6776a7703e5f5f63b26041db079ba755108709d",
+      "bytes": 263
+    },
+    {
+      "path": "Rule/Upstream/AnandTech/AnandTech.list",
+      "sha256": "d8bf34ddbf2e7316c3de73fef6accab0e3e7064e2e8076a6890575979d8417f1",
+      "bytes": 186
+    },
+    {
+      "path": "Rule/Upstream/Android/Android.list",
+      "sha256": "35a604136a9fbf18deb39b67c867b05c0b117f367c3de3db369de27defbeb9ec",
+      "bytes": 176
+    },
+    {
+      "path": "Rule/Upstream/Anime/Anime.list",
+      "sha256": "815a9d67af29ff9e796e7cb685618cb0ea270f7672f9744f792c2bdd144371a2",
+      "bytes": 497
+    },
+    {
+      "path": "Rule/Upstream/Anjuke/Anjuke.list",
+      "sha256": "4a0ce12ceccf7633e3e45d0f1b5d800ecf20d3b0082d5d92e62758f0bb3a9573",
+      "bytes": 339
+    },
+    {
+      "path": "Rule/Upstream/Anonv/Anonv.list",
+      "sha256": "cfc015fcb908c1ba00d4b4c935f6965b85aceb10f3f057c7fb9c8e6a9c4a819b",
+      "bytes": 204
+    },
+    {
+      "path": "Rule/Upstream/Anthropic/Anthropic.list",
+      "sha256": "ee68bf42bf5666943067127776e40643f6f52bdd911152b1be62b3ecb187dc8e",
+      "bytes": 263
+    },
+    {
+      "path": "Rule/Upstream/Antutu/Antutu.list",
+      "sha256": "84feb43c89a086d055f5794120d1989c5cc18805f258bf98b77fd9763024ef22",
+      "bytes": 180
+    },
+    {
+      "path": "Rule/Upstream/Apifox/Apifox.list",
+      "sha256": "77e612abcd59639888708d6b2678673a9bf6bf16ace30d2dc2a91b6bfeff9bea",
+      "bytes": 204
+    },
+    {
+      "path": "Rule/Upstream/Apkpure/Apkpure.list",
+      "sha256": "afbfa803346299ebd5e26ded190d6440f88bc3689d53c0e4f5182c1b2544c5a1",
+      "bytes": 259
+    },
+    {
+      "path": "Rule/Upstream/AppLovin/AppLovin.list",
+      "sha256": "7c5c315e477bdf2471ed334349841b3dca5dbf731f01958d40966e6e370557a5",
+      "bytes": 209
+    },
+    {
+      "path": "Rule/Upstream/AppStore/AppStore.list",
+      "sha256": "245ea6eb4c7fa160824476c937be4f15f3925d83fba1d94bb3b6cc58562feb90",
+      "bytes": 196
+    },
+    {
+      "path": "Rule/Upstream/Apple/Apple.list",
+      "sha256": "cdfd3d4746541b6a73b129e510b37ed8b77e0b9737270f7fc83448304560ffbd",
+      "bytes": 1805
+    },
+    {
+      "path": "Rule/Upstream/Apple/Apple_All.list",
+      "sha256": "456b349d8039ef3f5c3707a2d3915a88a16d1c59364c82700ad4cb590812234f",
+      "bytes": 51235
+    },
+    {
+      "path": "Rule/Upstream/Apple/Apple_All_No_Resolve.list",
+      "sha256": "e45e27cd85b876512dec54589fe2e0a5dc271eed4942016f023d43d5bb5a68a3",
+      "bytes": 51378
+    },
+    {
+      "path": "Rule/Upstream/Apple/Apple_Domain.list",
+      "sha256": "a686ef716dffb43a4c0d4062dcc5d01f52a055756b923233c85cf1d9d10eb59c",
+      "bytes": 29616
+    },
+    {
+      "path": "Rule/Upstream/Apple/Apple_Resolve.list",
+      "sha256": "5a621776727af5c06f423000b4f2c2366a7634ceb77245dfc44dcf751003abc5",
+      "bytes": 1662
+    },
+    {
+      "path": "Rule/Upstream/AppleDaily/AppleDaily.list",
+      "sha256": "6702a35a6b73f46208d58bd8a9e617f7c6c2cc417846680eb454c8af5998ed8b",
+      "bytes": 1086
+    },
+    {
+      "path": "Rule/Upstream/AppleDev/AppleDev.list",
+      "sha256": "a87efe77959e71e86592d32aed87fc66335e739da4824c2ee1160203e01f5c4d",
+      "bytes": 1541
+    },
+    {
+      "path": "Rule/Upstream/AppleFirmware/AppleFirmware.list",
+      "sha256": "78b2c2aae3d0331af0c9ca910443fba528f6ee1190c30ad5ce40828ef27e144e",
+      "bytes": 5429
+    },
+    {
+      "path": "Rule/Upstream/AppleHardware/AppleHardware.list",
+      "sha256": "4ccf8dfe6272d65f2a2610c96306dbf4887f059db189dcba319844fa9a21492e",
+      "bytes": 6596
+    },
+    {
+      "path": "Rule/Upstream/AppleID/AppleID.list",
+      "sha256": "12f4ae62f12a0e8309a7ff072821b5f3c31a91f2ba60b33516e1014a4dcbb269",
+      "bytes": 247
+    },
+    {
+      "path": "Rule/Upstream/AppleMail/AppleMail.list",
+      "sha256": "b14c45ddca00fe20b0fb8899cba87ca36a20774d2381e4ec8d7cfb64cd909a6e",
+      "bytes": 217
+    },
+    {
+      "path": "Rule/Upstream/AppleMedia/AppleMedia.list",
+      "sha256": "0757b8eab284f2309bd099e195b8a44f748328e6bb834d8119ba88fe6f88a5ed",
+      "bytes": 1767
+    },
+    {
+      "path": "Rule/Upstream/AppleMusic/AppleMusic.list",
+      "sha256": "fc190481ce56195d4daf94806ad6c09094d0777e0b411b4f359107e373398d28",
+      "bytes": 528
+    },
+    {
+      "path": "Rule/Upstream/AppleNews/AppleNews.list",
+      "sha256": "ec57625e5b938396b92034c0d71eadbd0c4a1adbff8243f05d8bb97441ad1b26",
+      "bytes": 217
+    },
+    {
+      "path": "Rule/Upstream/AppleProxy/AppleProxy.list",
+      "sha256": "b8811294562510da0ddea1879212718b8fa89262458d8cdeb991d8f9a1721f18",
+      "bytes": 1537
+    },
+    {
+      "path": "Rule/Upstream/AppleTV/AppleTV.list",
+      "sha256": "1078a83e65a4d65cf754e267c369f667fe4b30937747232f809aa03223148bbd",
+      "bytes": 474
+    },
+    {
+      "path": "Rule/Upstream/Arphic/Arphic.list",
+      "sha256": "4c3e6a98cbb852b997eefa51dd233f8205a2b3a5020e74e7c57523cc4d3402d3",
+      "bytes": 265
+    },
+    {
+      "path": "Rule/Upstream/Asahi/Asahi.list",
+      "sha256": "d2d97ce4c8b4224e5227bcfed932afdc0975a1030da75a9b62f9555f559d40ed",
+      "bytes": 361
+    },
+    {
+      "path": "Rule/Upstream/AsianMedia/AsianMedia.list",
+      "sha256": "3a7f4f6be07d841f6b8214f84730c458a10b5a11bd46741c3fac5aeda127aff5",
+      "bytes": 1158
+    },
+    {
+      "path": "Rule/Upstream/AsianMedia/AsianMedia_Resolve.list",
+      "sha256": "836fa2c882db94e3b8ceea072ee694cc4e9b572ebdb6b10f06ef1bbb30c0643c",
+      "bytes": 1081
+    },
+    {
+      "path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list",
+      "sha256": "01527eba28e13463c859ff0687cbe2bbceb4ea74469f0797a418087f96cba91d",
+      "bytes": 683
+    },
+    {
+      "path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list",
+      "sha256": "2f95ce72cd45b540d92a66e8bab81904361aa382cf79388ebdfbb46251982e02",
+      "bytes": 518
+    },
+    {
+      "path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list",
+      "sha256": "1f03c078fe6f11a0af18ef3b9d6a2cd8972d6ab19a751cd3a5e79f82a1688bc7",
+      "bytes": 702
+    },
+    {
+      "path": "Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list",
+      "sha256": "d0d8de667cf3955f954a1fba59b1a19d72d3912df3ccc7cc0713d06a1a3f91b9",
+      "bytes": 526
+    },
+    {
+      "path": "Rule/Upstream/Atlassian/Atlassian.list",
+      "sha256": "243613384193edb80bcc0ee4106fc2b110c23b7c32f46258947be453f483ab9f",
+      "bytes": 295
+    },
+    {
+      "path": "Rule/Upstream/Atomdata/Atomdata.list",
+      "sha256": "fb31aac34062c5cd8adfc66dba13c6c26801f5e119eaa0635fa8d560fada33b6",
+      "bytes": 243
+    },
+    {
+      "path": "Rule/Upstream/BBC/BBC.list",
+      "sha256": "65d8e181e227aa4052ad68a7b1d1f46f51e87d726b921e943237266d76ef5fd5",
+      "bytes": 1078
+    },
+    {
+      "path": "Rule/Upstream/BMW/BMW.list",
+      "sha256": "e8c71f6363a9383fef09e9ae38e5c26a4a29ff8a14c985ef71c27320c21f2641",
+      "bytes": 21408
+    },
+    {
+      "path": "Rule/Upstream/BOC/BOC.list",
+      "sha256": "728311dda26e89a70d3157aa79c7fb3c9b186fb7a34131058ec53d7761c49c22",
+      "bytes": 766
+    },
+    {
+      "path": "Rule/Upstream/BOCOM/BOCOM.list",
+      "sha256": "eca473c71e7ef3c215a1bc0a2780a583b69ad2ba3637edeac8dcac06c3113ff2",
+      "bytes": 324
+    },
+    {
+      "path": "Rule/Upstream/Bahamut/Bahamut.list",
+      "sha256": "5c6618ac00734921dae209bb812c1b61cc88523e158b856548153d1d3d8df2fd",
+      "bytes": 387
+    },
+    {
+      "path": "Rule/Upstream/BaiDuTieBa/BaiDuTieBa.list",
+      "sha256": "1a675077eee52f8640ce97e64a80ab4cbfe1270920ecb1516c61e0c140a2bba2",
+      "bytes": 998
+    },
+    {
+      "path": "Rule/Upstream/BaiFenDian/BaiFenDian.list",
+      "sha256": "be182bd38d63017d01fa2245bfdb92dedb6de24eb3d2181a558a7d04548f369d",
+      "bytes": 434
+    },
+    {
+      "path": "Rule/Upstream/BaiShanYunKeJi/BaiShanYunKeJi.list",
+      "sha256": "5980b58faaa5ceabff004d8728ab0d90e1e9679296193bb53629b2c97e93116d",
+      "bytes": 1776
+    },
+    {
+      "path": "Rule/Upstream/Baidu/Baidu.list",
+      "sha256": "ac49361bba37ccd12f46dff78885ef07218d9dc9deb254d71d1c0431a7eb921a",
+      "bytes": 6981
+    },
+    {
+      "path": "Rule/Upstream/BaoFengYingYin/BaoFengYingYin.list",
+      "sha256": "77e0e5153a5da7a1d2dac61581cfb1eaed36c217030ed48c482d496e6bf576cd",
+      "bytes": 371
+    },
+    {
+      "path": "Rule/Upstream/BardAI/BardAI.list",
+      "sha256": "3dc3871ee3dcd4045d32794de6b8e5ffd9123afb71d67b3f1115b5dd3d53e619",
+      "bytes": 508
+    },
+    {
+      "path": "Rule/Upstream/Battle/Battle.list",
+      "sha256": "719a6f7de4ac6cc7420e95895d611d889eed35de02a757d4085a6f55c39e79e4",
+      "bytes": 415
+    },
+    {
+      "path": "Rule/Upstream/BeStore/BeStore.list",
+      "sha256": "61d3959d848c90deebcd150a6e397030d7f595cac1ba4eb325c89d60ed5666aa",
+      "bytes": 231
+    },
+    {
+      "path": "Rule/Upstream/Beats/Beats.list",
+      "sha256": "996051a254cd3c98aecd5e4bef666ea42a95c4be740c356da839dde95cb8f382",
+      "bytes": 25341
+    },
+    {
+      "path": "Rule/Upstream/BesTV/BesTV.list",
+      "sha256": "108399050b4718b0751b5d474126b98f007378cc68a8c394c21c7d977c769cfb",
+      "bytes": 336
+    },
+    {
+      "path": "Rule/Upstream/Bestbuy/Bestbuy.list",
+      "sha256": "b2e8c76ac3c7c4435e0fcb5d721b33b57b9889469ba08a14ad8078caf03dda02",
+      "bytes": 2748
+    },
+    {
+      "path": "Rule/Upstream/BianFeng/BianFeng.list",
+      "sha256": "9972e28f86b3089cf9e3d41345bff97f2334d0537426c5e997dab52964c9f017",
+      "bytes": 2920
+    },
+    {
+      "path": "Rule/Upstream/BiliBili/BiliBili.list",
+      "sha256": "8537129301d5e4040d9f2b2255217458a16c96eef850ec22367352c512bc3988",
+      "bytes": 4742
+    },
+    {
+      "path": "Rule/Upstream/BiliBili/BiliBili_Resolve.list",
+      "sha256": "e1cc0a2f6253adec3778b1df1dfe0c1469e2b843b3e1b7bdb823b4d2103a398f",
+      "bytes": 4654
+    },
+    {
+      "path": "Rule/Upstream/BiliBiliIntl/BiliBiliIntl.list",
+      "sha256": "ccb061a3327eb9e49ff13a90a628577389c89d0c67e0a930be2e4f174434b0ad",
+      "bytes": 233
+    },
+    {
+      "path": "Rule/Upstream/Binance/Binance.list",
+      "sha256": "034b1730ac0adb39a8a88685d6f6864a7070a14d722acbf8f3859806b28b92a4",
+      "bytes": 482
+    },
+    {
+      "path": "Rule/Upstream/Bing/Bing.list",
+      "sha256": "4b9fe5e5f0cef4c4b09a2e109ca4db00f1cc67ec45aae5c50fca3bdb72b61968",
+      "bytes": 415
+    },
+    {
+      "path": "Rule/Upstream/Blizzard/Blizzard.list",
+      "sha256": "0ccab4f1bb94504abc671f4c901cbccf3a8e4f871c1f8d30b785c87c7a58b446",
+      "bytes": 2304
+    },
+    {
+      "path": "Rule/Upstream/Blizzard/Blizzard_Resolve.list",
+      "sha256": "658d6070fd467b3ad5a14f95a5137a39ebd7c16801e156dbb980dce357c8eae9",
+      "bytes": 2051
+    },
+    {
+      "path": "Rule/Upstream/BlockHttpDNS/BlockHttpDNS.list",
+      "sha256": "52753614063eff40364dcbdbbcea14f974409e197c0fe71fa716baa6fb518051",
+      "bytes": 2403
+    },
+    {
+      "path": "Rule/Upstream/BlockHttpDNS/BlockHttpDNS_Resolve.list",
+      "sha256": "bce9928cf5d522020590b44bf8f301d58ef2e7883bd80e49387a33f3160592d2",
+      "bytes": 1952
+    },
+    {
+      "path": "Rule/Upstream/Bloomberg/Bloomberg.list",
+      "sha256": "af3131c164b5579366228b29b08888ae4250a5e6c036f682f168c0673a19c490",
+      "bytes": 816
+    },
+    {
+      "path": "Rule/Upstream/Blued/Blued.list",
+      "sha256": "2f6b9757d2ab8262fd019ef569bcbdf42f5ca22b4a296de044ef9ff2b3a84e0f",
+      "bytes": 1050
+    },
+    {
+      "path": "Rule/Upstream/BoXun/BoXun.list",
+      "sha256": "6af7c0e23385c384db9fdda180cec6350b8a9aa6d77c299911d0835f67949977",
+      "bytes": 207
+    },
+    {
+      "path": "Rule/Upstream/Bootcss/Bootcss.list",
+      "sha256": "f51311b1f2302755fd5d5b8c7eefaee0bdb6db4016c0e5a6412d25b322139871",
+      "bytes": 237
+    },
+    {
+      "path": "Rule/Upstream/BrightCove/BrightCove.list",
+      "sha256": "0852af3005c228bb266da9f3775004ebe020386aa9820c56711b06e75a667c17",
+      "bytes": 582
+    },
+    {
+      "path": "Rule/Upstream/BritboxUK/BritboxUK.list",
+      "sha256": "a7f603cb5f7a4218b8cc0b9ec2fcae9e463b64b04da21e01f26eea2f16422311",
+      "bytes": 397
+    },
+    {
+      "path": "Rule/Upstream/Buypass/Buypass.list",
+      "sha256": "0d77f16f509396631e3ce682e4b1efc9c4c78b092684a1755f5b22965d3c3972",
+      "bytes": 285
+    },
+    {
+      "path": "Rule/Upstream/ByteDance/ByteDance.list",
+      "sha256": "0130f2b40e5101921a28e522db785ace1102dcab7b02808fd047b0c909ba0904",
+      "bytes": 10812
+    },
+    {
+      "path": "Rule/Upstream/ByteDance/ByteDance_Resolve.list",
+      "sha256": "2d7c839ee7e40da6942e681bca4918390f3e3ecf26702f9468a51dedc63af597",
+      "bytes": 10801
+    },
+    {
+      "path": "Rule/Upstream/CAS/CAS.list",
+      "sha256": "dca025d030f0c2e5895dbda0527dfccf86a3ab636a7dfd4240f63235809feb07",
+      "bytes": 1340
+    },
+    {
+      "path": "Rule/Upstream/CBS/CBS.list",
+      "sha256": "5a9b47ab4d6115c8cced1a6a9535ef3cc8bb040bf97a037e87ab2a004e12ad74",
+      "bytes": 1263
+    },
+    {
+      "path": "Rule/Upstream/CCB/CCB.list",
+      "sha256": "359b1c5f978e63fe77cc69a847d5abaa6e14fd77f27889ef9522d2f266008559",
+      "bytes": 638
+    },
+    {
+      "path": "Rule/Upstream/CCTV/CCTV.list",
+      "sha256": "64df84175c121659dac1a4d97f3e8c01937770e8e56d8754b42706a22d67ebb4",
+      "bytes": 1274
+    },
+    {
+      "path": "Rule/Upstream/CEB/CEB.list",
+      "sha256": "78e1fd135817273dada154012658f3d43b547fa9357436097586ff9e1966452a",
+      "bytes": 558
+    },
+    {
+      "path": "Rule/Upstream/CETV/CETV.list",
+      "sha256": "b5029a400eaae0247d60853113d633438e1697329492537e2834cfb619d4b4b5",
+      "bytes": 225
+    },
+    {
+      "path": "Rule/Upstream/CGB/CGB.list",
+      "sha256": "15168cfb0a9a4b2c100cf69f0798166c0ca9dcd4c29971969ea9281161af5360",
+      "bytes": 257
+    },
+    {
+      "path": "Rule/Upstream/CHT/CHT.list",
+      "sha256": "d9d66304cd6bb6143494408952b81d0f480223ffda82f2a96a92ad848d04f147",
+      "bytes": 329
+    },
+    {
+      "path": "Rule/Upstream/CIBN/CIBN.list",
+      "sha256": "0395fc18bab460677167ef464c9b80683353c458af808cff63eff8ebb5ba22db",
+      "bytes": 2163
+    },
+    {
+      "path": "Rule/Upstream/CKJR/CKJR.list",
+      "sha256": "a326f80ee7048143935741f909c1dc2c3ca662c18de0634e98021efd7eb467a0",
+      "bytes": 488
+    },
+    {
+      "path": "Rule/Upstream/CMB/CMB.list",
+      "sha256": "f74e32d571eb603904e33e5cd965c820063c60ab9b1bc9439df588aeac39fea6",
+      "bytes": 1167
+    },
+    {
+      "path": "Rule/Upstream/CNKI/CNKI.list",
+      "sha256": "263854f3da026e9603fb0f4b9e7e22ede281a305173fa1de6f20a66683d46607",
+      "bytes": 604
+    },
+    {
+      "path": "Rule/Upstream/CNN/CNN.list",
+      "sha256": "838c89c38158f72c8b6d96a5de5218d6d9852b1d80e817a26a63d12aafac5590",
+      "bytes": 296
+    },
+    {
+      "path": "Rule/Upstream/CNNIC/CNNIC.list",
+      "sha256": "1d9b73e224cad7bd03dbf5a3c8589967788c732d9fc7b95a455a590d7d89c700",
+      "bytes": 972
+    },
+    {
+      "path": "Rule/Upstream/CSDN/CSDN.list",
+      "sha256": "e190ddbfaabd9a43cf11a7de270fedd3bb490328df44917ded080dbadf1af6f4",
+      "bytes": 756
+    },
+    {
+      "path": "Rule/Upstream/CWSeed/CWSeed.list",
+      "sha256": "ddc5fd8e3ea5a9893c92f99f95d4de8c5a8c094d5955e9c6ad6534bea57a509c",
+      "bytes": 414
+    },
+    {
+      "path": "Rule/Upstream/CableTV/CableTV.list",
+      "sha256": "d9ba3622f396ea12b174281c4997368b55f69767f97705e654521e52d6a3382d",
+      "bytes": 211
+    },
+    {
+      "path": "Rule/Upstream/CaiNiao/CaiNiao.list",
+      "sha256": "3f65c4298a26f42bd6f11b801924597d6a6de6efba63e8b87b2d3c654170abd8",
+      "bytes": 409
+    },
+    {
+      "path": "Rule/Upstream/CaiXinChuanMei/CaiXinChuanMei.list",
+      "sha256": "6247ea7308999f9263571f0c2e882b320a19653996a67b41a31723ca8e3eb70a",
+      "bytes": 843
+    },
+    {
+      "path": "Rule/Upstream/Cake/Cake.list",
+      "sha256": "2df3ad5040a1a534199f35a1e735a800865bf14e7c38917b55410c2bd5ff696d",
+      "bytes": 378
+    },
+    {
+      "path": "Rule/Upstream/Camera360/Camera360.list",
+      "sha256": "6af5b07fe3c4fd501a53f7cd4e7531ab1ffe4d1e259ff1e3882f321bd939b905",
+      "bytes": 367
+    },
+    {
+      "path": "Rule/Upstream/Canon/Canon.list",
+      "sha256": "39dbb8a2a5d340b8a037186e374459fb9caa50f11b1231b47f192b19e3ea0b62",
+      "bytes": 1922
+    },
+    {
+      "path": "Rule/Upstream/ChengTongWangPan/ChengTongWangPan.list",
+      "sha256": "f75945cdacf14ccfad96c474428a18089ccac32edb67015ef5bb3bbe74e70c75",
+      "bytes": 262
+    },
+    {
+      "path": "Rule/Upstream/China/China.list",
+      "sha256": "15890ccb51dbc91f61aefb4fd4634c8cc030be7f2dc273dfd9e363e6d99e1451",
+      "bytes": 2056
+    },
+    {
+      "path": "Rule/Upstream/China/China_All.list",
+      "sha256": "aee93e6383987a8afd6c9d0932203bb9c5ccf25f135b9dfeca676937780f8785",
+      "bytes": 100523
+    },
+    {
+      "path": "Rule/Upstream/China/China_All_No_Resolve.list",
+      "sha256": "24b4e320bdddb98b0d27e7e1c2cfe1cadf063d0dc73caeb5c08d948aff0f24b4",
+      "bytes": 100754
+    },
+    {
+      "path": "Rule/Upstream/China/China_Domain.list",
+      "sha256": "28817e4a59359c6e6c264b6ed7d05dfc376548afb0aab50dbec5f60eb79e413f",
+      "bytes": 51081
+    },
+    {
+      "path": "Rule/Upstream/China/China_Resolve.list",
+      "sha256": "e84c5c83e2552149b29b6282bf49f43383596498815183f8f995abc6f70326ec",
+      "bytes": 1825
+    },
+    {
+      "path": "Rule/Upstream/ChinaASN/ChinaASN.list",
+      "sha256": "f62f1397a3db97a2379c9250a21a378ead74782fb00b2f7844b54b32beeaef10",
+      "bytes": 24980
+    },
+    {
+      "path": "Rule/Upstream/ChinaASN/ChinaASN_Resolve.list",
+      "sha256": "807bfb69e31e6db51c39922f10111245da59f307a1cfde8481f243ca8072f539",
+      "bytes": 13881
+    },
+    {
+      "path": "Rule/Upstream/ChinaDNS/ChinaDNS.list",
+      "sha256": "bad645310af23d3266ff63913dae9e54f0295fa0b295c516b5ff388e902b9d2f",
+      "bytes": 279
+    },
+    {
+      "path": "Rule/Upstream/ChinaDNS/ChinaDNS_Resolve.list",
+      "sha256": "a2fc6e3ea8e4183d0a466fc4edbdddb19c9abce5f74447dcac83eaa12aa36afd",
+      "bytes": 268
+    },
+    {
+      "path": "Rule/Upstream/ChinaIPs/ChinaIPs.list",
+      "sha256": "fed4ed76b77828c2616770aa403604afe50ef9acfa14888266afb2452b4e1251",
+      "bytes": 704956
+    },
+    {
+      "path": "Rule/Upstream/ChinaIPs/ChinaIPsTest/ChinaIPsTest.list",
+      "sha256": "c0edde57a8f424035ef5bba2231d9331ea166f64c76a0e76b87912aa2a8de894",
+      "bytes": 827623
+    },
+    {
+      "path": "Rule/Upstream/ChinaIPs/ChinaIPsTest/ChinaIPsTest_No_IPv6.list",
+      "sha256": "4619c89fa392dc0743d92dc9a7ace310f947c0de3f2d4704651e5f5d9318c461",
+      "bytes": 562935
+    },
+    {
+      "path": "Rule/Upstream/ChinaIPs/ChinaIPsTest/ChinaIPsTest_No_IPv6_Resolve.list",
+      "sha256": "39ff3c3c91e941a515fa8d96ca96b68eb816e799864d960e31442dd1525adbde",
+      "bytes": 384988
+    },
+    {
+      "path": "Rule/Upstream/ChinaIPs/ChinaIPsTest/ChinaIPsTest_Resolve.list",
+      "sha256": "7af31d1fe93982046e244769b1f4eebf3e5f5166525d0842b548ea0293425a79",
+      "bytes": 574359
+    },
+    {
+      "path": "Rule/Upstream/ChinaIPs/ChinaIPs_No_IPv6.list",
+      "sha256": "2eb01c8f44f7910be789495773b16a1d9772691fe70c3d479b944ba0cbfc9520",
+      "bytes": 485126
+    },
+    {
+      "path": "Rule/Upstream/ChinaIPs/ChinaIPs_No_IPv6_Resolve.list",
+      "sha256": "873993d0ba05c64d67b49353dafd4e5ce2411d681989a341a7c9da5556c9de7f",
+      "bytes": 331709
+    },
+    {
+      "path": "Rule/Upstream/ChinaIPs/ChinaIPs_Resolve.list",
+      "sha256": "a98e10ffb9c45c69dc8d978a00baaabdd312fadc56ae5f573835606802632125",
+      "bytes": 489147
+    },
+    {
+      "path": "Rule/Upstream/ChinaIPsBGP/ChinaIPsBGP.list",
+      "sha256": "eb93e905ea6eabea92130ba43194ea9a7974ca1cb5d934d018a8523dea58c67c",
+      "bytes": 135446
+    },
+    {
+      "path": "Rule/Upstream/ChinaIPsBGP/ChinaIPsBGP_Resolve.list",
+      "sha256": "7217af483b976fa50b75ed123d1656c93946df78eb9d4c82ad2af4955490de2b",
+      "bytes": 92370
+    },
+    {
+      "path": "Rule/Upstream/ChinaMax/ChinaMax.list",
+      "sha256": "76e105405da7d57c53f783cbafa7f6bcf7e893df5934dc5da75f64085f7ccdbc",
+      "bytes": 457327
+    },
+    {
+      "path": "Rule/Upstream/ChinaMax/ChinaMax_All.list",
+      "sha256": "b9c0451a88da763fd2a19757f852a36092479b7119e22671df0ffce17bb57070",
+      "bytes": 3262452
+    },
+    {
+      "path": "Rule/Upstream/ChinaMax/ChinaMax_All_No_Resolve.list",
+      "sha256": "b1dd68a236388c7bbf50fd0785589074099b882e6ac954db518de1a8685ea0a9",
+      "bytes": 3400579
+    },
+    {
+      "path": "Rule/Upstream/ChinaMax/ChinaMax_Domain.list",
+      "sha256": "87389763101076417a965c6a681274ad76ba1d2f2a3d36f8262835aa5a7c5d47",
+      "bytes": 1509610
+    },
+    {
+      "path": "Rule/Upstream/ChinaMax/ChinaMax_No_IPv6.list",
+      "sha256": "81f73c26c894d49a71704f14565e52b177e2c0ee7e1ec6b6a58e36d77aaea973",
+      "bytes": 290468
+    },
+    {
+      "path": "Rule/Upstream/ChinaMax/ChinaMax_No_IPv6_Resolve.list",
+      "sha256": "b633d13da3ccafa274524f311f627ec6ade9954ee20f9c5e13978027cf7b4bf1",
+      "bytes": 199773
+    },
+    {
+      "path": "Rule/Upstream/ChinaMax/ChinaMax_Resolve.list",
+      "sha256": "393688022c1d2b3a771d26e453317fa12e1874985c6ad753736456e4e25e9c79",
+      "bytes": 319200
+    },
+    {
+      "path": "Rule/Upstream/ChinaMaxNoIP/ChinaMaxNoIP.list",
+      "sha256": "71dcb54c98fcab21b875b7e23e04adb9c946215d7cdc89e44e6414f380cba3ff",
+      "bytes": 3712
+    },
+    {
+      "path": "Rule/Upstream/ChinaMaxNoIP/ChinaMaxNoIP_All.list",
+      "sha256": "5993f02d13ee3e932ecd6a2f044989315e6166157bd6283da256465f05c5981e",
+      "bytes": 2937469
+    },
+    {
+      "path": "Rule/Upstream/ChinaMaxNoIP/ChinaMaxNoIP_All_No_Resolve.list",
+      "sha256": "5993f02d13ee3e932ecd6a2f044989315e6166157bd6283da256465f05c5981e",
+      "bytes": 2937469
+    },
+    {
+      "path": "Rule/Upstream/ChinaMaxNoIP/ChinaMaxNoIP_Domain.list",
+      "sha256": "908d59990d817514259f4b27c241d4c5874fb54da49439a015d75c5a8d977f74",
+      "bytes": 1504267
+    },
+    {
+      "path": "Rule/Upstream/ChinaMaxNoMedia/ChinaMaxNoMedia.list",
+      "sha256": "af954faebf474b8458c24f1d3e634195c3c586c9dd891030d4df12d3d2a6de64",
+      "bytes": 457208
+    },
+    {
+      "path": "Rule/Upstream/ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+      "sha256": "a32e7bad2658e79635e0be2e27818fc62072d082b4fa4c8ade14f52b77a7133c",
+      "bytes": 3249981
+    },
+    {
+      "path": "Rule/Upstream/ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
+      "sha256": "630a312d9041d5d059d5a7accb1bf1e70b5b605425ce3f82f644d18f1b65a822",
+      "bytes": 3388108
+    },
+    {
+      "path": "Rule/Upstream/ChinaMaxNoMedia/ChinaMaxNoMedia_Domain.list",
+      "sha256": "4daef0ea94ded6aec053f3f1b99e3e07e01c77c50d87429e59c8c2677ecb1f9c",
+      "bytes": 1502862
+    },
+    {
+      "path": "Rule/Upstream/ChinaMaxNoMedia/ChinaMaxNoMedia_Resolve.list",
+      "sha256": "f4912c11f332652257a3f0acf0cd37404bbab769eafd03806c41d7567a36fe96",
+      "bytes": 319081
+    },
+    {
+      "path": "Rule/Upstream/ChinaMedia/ChinaMedia.list",
+      "sha256": "d82e7315457f8aa1c4649df09d560e54dbc19757dc4fc5d8d2df0bd78a373079",
+      "bytes": 14354
+    },
+    {
+      "path": "Rule/Upstream/ChinaMedia/ChinaMedia_Resolve.list",
+      "sha256": "cbe0181e30a15b1a0fa3f2106a08d8584d2633c5da6355862ea77b9af6415c1f",
+      "bytes": 13430
+    },
+    {
+      "path": "Rule/Upstream/ChinaMobile/ChinaMobile.list",
+      "sha256": "8aa8078a08299feee81b6927c4f0ac82b91df9c1ed96012dc5c1e78fa324c8fb",
+      "bytes": 1187
+    },
+    {
+      "path": "Rule/Upstream/ChinaMobile/ChinaMobile_Resolve.list",
+      "sha256": "3e0ce58a0872a115e78070e8e99feb542c45afc8f4b86323c956d02cf3f5726e",
+      "bytes": 1176
+    },
+    {
+      "path": "Rule/Upstream/ChinaNews/ChinaNews.list",
+      "sha256": "3c4c6f0ba31dbd4a194527339ac13b1a0839872dfc9dc7f3ae4add5a218a131b",
+      "bytes": 264
+    },
+    {
+      "path": "Rule/Upstream/ChinaNoMedia/ChinaNoMedia.list",
+      "sha256": "4de3822c66055a887a1ac0b7740491160c657dd3a3b37a7ed96b298697068028",
+      "bytes": 1853
+    },
+    {
+      "path": "Rule/Upstream/ChinaNoMedia/ChinaNoMedia_All.list",
+      "sha256": "4220d9c08c1f58e1fa8795e50b5e6420c1bd1a035cd9322d9bb9f2359133c05c",
+      "bytes": 98038
+    },
+    {
+      "path": "Rule/Upstream/ChinaNoMedia/ChinaNoMedia_All_No_Resolve.list",
+      "sha256": "6b3a82934146b1208eac1a0ed782148371340751a1cea4d55eae072c82fd36a1",
+      "bytes": 98203
+    },
+    {
+      "path": "Rule/Upstream/ChinaNoMedia/ChinaNoMedia_Domain.list",
+      "sha256": "6a100e7f3d03f2385c3776576b9f32636d2c014e5abfa1a5e1295255d4910fb5",
+      "bytes": 49923
+    },
+    {
+      "path": "Rule/Upstream/ChinaNoMedia/ChinaNoMedia_Resolve.list",
+      "sha256": "ba36762aa8e3df803bb24396ea179309adf4812fe61588dd53c49672ef445241",
+      "bytes": 1688
+    },
+    {
+      "path": "Rule/Upstream/ChinaTelecom/ChinaTelecom.list",
+      "sha256": "b804b6a6b87a3b0ab250445b205a735a394acd6e0d9c6c4c77fd21ebac854027",
+      "bytes": 2335
+    },
+    {
+      "path": "Rule/Upstream/ChinaTest/ChinaTest.list",
+      "sha256": "15c3c37491d1e8fbb2f7764829c227bb76b0e4ec7c9e9dacfbcee4f99a1609d3",
+      "bytes": 3028
+    },
+    {
+      "path": "Rule/Upstream/ChinaTest/ChinaTest_All.list",
+      "sha256": "7dc773bf8c0cb26af29835a7d99ec6e692762d5a48e41f813d9c35467bd60e5b",
+      "bytes": 2930758
+    },
+    {
+      "path": "Rule/Upstream/ChinaTest/ChinaTest_All_No_Resolve.list",
+      "sha256": "0e8df04cf43aa6925420cf51d0956afb76da6a11b1f1cbffe6e80a755660a0bc",
+      "bytes": 2930923
+    },
+    {
+      "path": "Rule/Upstream/ChinaTest/ChinaTest_Domain.list",
+      "sha256": "1dab26de6bbe01b59e36bca45fd097072e6eb664fe23ecf618504ed96f261588",
+      "bytes": 1498979
+    },
+    {
+      "path": "Rule/Upstream/ChinaTest/ChinaTest_Resolve.list",
+      "sha256": "1146f0b4546d78ce0c27decd66eafebbe30be51f5c872b09444f3d44d0dd02bd",
+      "bytes": 2863
+    },
+    {
+      "path": "Rule/Upstream/ChinaUnicom/ChinaUnicom.list",
+      "sha256": "ece90d6c9bbd29377e65a7aa1301e47c77b62f2fe9ba0955c938faf2976768dd",
+      "bytes": 1114
+    },
+    {
+      "path": "Rule/Upstream/ChinaUnicom/ChinaUnicom_Resolve.list",
+      "sha256": "ef3f24122a63686040c3c9e3de95e0e7ae0c62bc7306ea203007aef8e0e353b1",
+      "bytes": 1103
+    },
+    {
+      "path": "Rule/Upstream/Chromecast/Chromecast.list",
+      "sha256": "24be1c4635279510a6c06485995949b791d85afddbac2c50eeffa2fdad8da5a8",
+      "bytes": 185
+    },
+    {
+      "path": "Rule/Upstream/ChuangKeTie/ChuangKeTie.list",
+      "sha256": "e6bc70bd412deebd4bf9293f7ab7173beecf43df55a566f58e534eb72b7806d4",
+      "bytes": 285
+    },
+    {
+      "path": "Rule/Upstream/ChunYou/ChunYou.list",
+      "sha256": "2eeed4082a40ad421e579a3b1689ef4fadff842fe832e631bc932e512192ed75",
+      "bytes": 1198
+    },
+    {
+      "path": "Rule/Upstream/Cisco/Cisco.list",
+      "sha256": "028ba57bca3ed6a124484bafd5880c5eac70db54c576900932d9da2cfb3de352",
+      "bytes": 3610
+    },
+    {
+      "path": "Rule/Upstream/Civitai/Civitai.list",
+      "sha256": "76f0b25371919791d7d90fee7a4e7a57b9a02675dccbad14034e36b3d317f949",
+      "bytes": 182
+    },
+    {
+      "path": "Rule/Upstream/Classic/Classic.list",
+      "sha256": "cec320579ec7427c0dbdbf9c367cb74c6df30ae6fe886ffcf538ba2475fddf95",
+      "bytes": 247
+    },
+    {
+      "path": "Rule/Upstream/Claude/Claude.list",
+      "sha256": "870e7e25d798e7f00338507f773b0eea4dfd15e25e9df0a27d5ae421ae1ab378",
+      "bytes": 244
+    },
+    {
+      "path": "Rule/Upstream/Cloud/360Cloud/360Cloud.list",
+      "sha256": "bf875d85c3a6dbbecb95d35b5d58781806ae75ed839101a79aa2b1d962c786ef",
+      "bytes": 492
+    },
+    {
+      "path": "Rule/Upstream/Cloud/360Cloud/360Cloud_Resolve.list",
+      "sha256": "d904f6b197167cd0f770cd02f15b1d9343ba44098bcd5b6840c2bb06f72ce2ad",
+      "bytes": 393
+    },
+    {
+      "path": "Rule/Upstream/Cloud/AkamaiCloud/AkamaiCloud.list",
+      "sha256": "1fa50f12c90aad07fb9620f286fd86f65b9b50ce79a2b826bfea0c443de61ce2",
+      "bytes": 10331
+    },
+    {
+      "path": "Rule/Upstream/Cloud/AkamaiCloud/AkamaiCloud_Resolve.list",
+      "sha256": "d1932ca0b99fedc9111cf784321a01f4109091647e6bcfa6967baabf3c5534c3",
+      "bytes": 7306
+    },
+    {
+      "path": "Rule/Upstream/Cloud/AmazonCloud/AmazonCloud.list",
+      "sha256": "9431f70f4fc3e6625cf1ee8c3c0eac1260587457ae46eee045f84018484f7ca1",
+      "bytes": 69065
+    },
+    {
+      "path": "Rule/Upstream/Cloud/AmazonCloud/AmazonCloud_Resolve.list",
+      "sha256": "1269cc11a51a423b167ead4491d443940d1fefaf8830bf6cb89392a7e8acf21b",
+      "bytes": 47593
+    },
+    {
+      "path": "Rule/Upstream/Cloud/BaiduCloud/BaiduCloud.list",
+      "sha256": "9e70cb582c1d5c76dac9b46f0c77152fd227abbf2a2951861c23afae8acc73cd",
+      "bytes": 1500
+    },
+    {
+      "path": "Rule/Upstream/Cloud/BaiduCloud/BaiduCloud_Resolve.list",
+      "sha256": "4e5bfe9ffd2fc65a419ef3df1e1a92abe4eb0d734f8bb1ab4f48fefd9fd1514d",
+      "bytes": 1082
+    },
+    {
+      "path": "Rule/Upstream/Cloud/CloudCN/CloudCN.list",
+      "sha256": "c2d851719a52114312cad0d70d9679d44d62c4123ec1bcac9d215dcfbb17e033",
+      "bytes": 8155
+    },
+    {
+      "path": "Rule/Upstream/Cloud/CloudCN/CloudCN_Resolve.list",
+      "sha256": "ebca6c47120d4b601b45a6fe9488d836159ebefa84601dc7293a5ed7dabc128f",
+      "bytes": 5614
+    },
+    {
+      "path": "Rule/Upstream/Cloud/CloudGlobal/CloudGlobal.list",
+      "sha256": "34f561470c0ce30e61ce5dfd0532ba2174f547b3d3b5b3d140ac7c47238e6439",
+      "bytes": 102674
+    },
+    {
+      "path": "Rule/Upstream/Cloud/CloudGlobal/CloudGlobal_Resolve.list",
+      "sha256": "c5bae4f378f1aa5b5f05ca4b79ac50e49b3d8e32856fdf23e69a396ba9e7406a",
+      "bytes": 71412
+    },
+    {
+      "path": "Rule/Upstream/Cloud/HiNet/HiNet.list",
+      "sha256": "9e70d57a37b6640dd885721a4775b3143da8f8870008e85299f3cf741bc2151d",
+      "bytes": 2400
+    },
+    {
+      "path": "Rule/Upstream/Cloud/HiNet/HiNet_Resolve.list",
+      "sha256": "e3d8cd4adae757620b6590960c23ca2408e2d6a3713efbd3fff4ed3a1851385a",
+      "bytes": 1685
+    },
+    {
+      "path": "Rule/Upstream/Cloud/HuaweiCloud/HuaweiCloud.list",
+      "sha256": "6a2976c3922ec44dda978d881cc170df09b802915c6c3af69c7807b296b6b5bb",
+      "bytes": 1238
+    },
+    {
+      "path": "Rule/Upstream/Cloud/HuaweiCloud/HuaweiCloud_Resolve.list",
+      "sha256": "d6be25e66ea3f18db1197e1b10e01e26116055985a6791e55b38a63c99226f0d",
+      "bytes": 897
+    },
+    {
+      "path": "Rule/Upstream/Cloud/JingDongCloud/JingDongCloud.list",
+      "sha256": "f6ed95542a1f90bbf70dc28f46651732cdcfdb2123717f62a17af936771eb74d",
+      "bytes": 458
+    },
+    {
+      "path": "Rule/Upstream/Cloud/JingDongCloud/JingDongCloud_Resolve.list",
+      "sha256": "ae14fb4e3e402f9da4f2755b4eafcc1ff14e965517151e5ed09c1ffa0ae708bf",
+      "bytes": 370
+    },
+    {
+      "path": "Rule/Upstream/Cloud/KingsoftCloud/KingsoftCloud.list",
+      "sha256": "259c8745527d06d2379a6179f294cb30756c636f1e0bd24daa18e230b70293e7",
+      "bytes": 580
+    },
+    {
+      "path": "Rule/Upstream/Cloud/KingsoftCloud/KingsoftCloud_Resolve.list",
+      "sha256": "9ca7f0c73da8633a6d308a536a9a0ff80ad6dbba20befef9bff19c9b45a928e0",
+      "bytes": 448
+    },
+    {
+      "path": "Rule/Upstream/Cloud/NeteaseCloud/NeteaseCloud.list",
+      "sha256": "972a2a232944fd98c7726bdad352de463a0f881a05c344338124345071aaecee",
+      "bytes": 1161
+    },
+    {
+      "path": "Rule/Upstream/Cloud/NeteaseCloud/NeteaseCloud_Resolve.list",
+      "sha256": "cce56c5b08acbd96672ed9894e736e4021b7f8251bf8acb89a725a990f329cae",
+      "bytes": 842
+    },
+    {
+      "path": "Rule/Upstream/Cloud/TencentCloud/TencentCloud.list",
+      "sha256": "9a86b69987761784b493c49346c97b9a83f2381d9d08bee3244374b24302c58e",
+      "bytes": 3747
+    },
+    {
+      "path": "Rule/Upstream/Cloud/TencentCloud/TencentCloud_Resolve.list",
+      "sha256": "7cbcb215ffb43a4ec2d2fcae1a0bd97f9e840cd63eb68c18d06c61041db36c8b",
+      "bytes": 2603
+    },
+    {
+      "path": "Rule/Upstream/Cloudflare/Cloudflare.list",
+      "sha256": "167324d60eabc110e16496a7b12f077ec0e66f7b00524a919af10d6065086db6",
+      "bytes": 2276
+    },
+    {
+      "path": "Rule/Upstream/Cloudflare/Cloudflare_Resolve.list",
+      "sha256": "74184995bcd880297a116b8db9fe187db33ea1f7c458e4353f7f5c76536a3187",
+      "bytes": 2034
+    },
+    {
+      "path": "Rule/Upstream/Cloudflarecn/Cloudflarecn.list",
+      "sha256": "dd116f47268dc813fd5be8271d030196cb9583507ba43a514882e7ff4c4ffaef",
+      "bytes": 573
+    },
+    {
+      "path": "Rule/Upstream/Clubhouse/Clubhouse.list",
+      "sha256": "3158d557bfd3b7c55d4fc774b0d3988ffb3cf0aa24bc3f19b1df0df5635f7ac8",
+      "bytes": 327
+    },
+    {
+      "path": "Rule/Upstream/ClubhouseIP/ClubhouseIP.list",
+      "sha256": "fab86dc75d0b67557021c31e56679841daf5b80fd47f2b82bac165f7c3e61fd1",
+      "bytes": 3335
+    },
+    {
+      "path": "Rule/Upstream/ClubhouseIP/ClubhouseIP_Resolve.list",
+      "sha256": "85c2376d67bfb215209309cd93a26b21637fe50b946e43a3fd9a0d65fb0bdd5c",
+      "bytes": 2411
+    },
+    {
+      "path": "Rule/Upstream/Cnet/Cnet.list",
+      "sha256": "d40408da63d9d610e45d01f509d90b796917e922981b6f427fefed9dd98429b5",
+      "bytes": 176
+    },
+    {
+      "path": "Rule/Upstream/Collabora/Collabora.list",
+      "sha256": "798e00dfd5b17c812c197d27ac370d332e4faf311cf167e5ff6790c237a5eb2b",
+      "bytes": 278
+    },
+    {
+      "path": "Rule/Upstream/Comodo/Comodo.list",
+      "sha256": "7ecef39037fe4f55d8d8df7b7c385f8a6b51c3424ca21b1a527d77eddd5e7b96",
+      "bytes": 291
+    },
+    {
+      "path": "Rule/Upstream/Contentful/Contentful.list",
+      "sha256": "42cbe73a86214209890b024806e864d76931f40a1f7c41a34bcb922ed467f2d6",
+      "bytes": 216
+    },
+    {
+      "path": "Rule/Upstream/Coolapk/Coolapk.list",
+      "sha256": "6b6b507dd9130f53d5ea74d4ba5f992432de7db8a3a0c81282f94dd75a93e6f7",
+      "bytes": 246
+    },
+    {
+      "path": "Rule/Upstream/Copilot/Copilot.list",
+      "sha256": "12773330de34b84b7fd2f3f2af598480ea62d8574d8e9b8ae9d011a53c044d39",
+      "bytes": 1822
+    },
+    {
+      "path": "Rule/Upstream/Copilot/Copilot_Resolve.list",
+      "sha256": "1539a0572c08131513004e821b251ce5b4cb8780f8263177e6e56faac1c466f2",
+      "bytes": 1778
+    },
+    {
+      "path": "Rule/Upstream/Crypto/Crypto.list",
+      "sha256": "4fe49a0fd839fe32a88640ee891197bfd926faf70c2ea1c812383d02f16184e7",
+      "bytes": 5599
+    },
+    {
+      "path": "Rule/Upstream/Cryptocurrency/Cryptocurrency.list",
+      "sha256": "82eab17c49d55e27aa122b63b9c1103e30713512d79dd10f81352dcc94ca3237",
+      "bytes": 1272
+    },
+    {
+      "path": "Rule/Upstream/CyberTrust/CyberTrust.list",
+      "sha256": "053a201c49a07944478cc1714f5d2f4a1ce414e7ce81936704056cd97f929ad7",
+      "bytes": 221
+    },
+    {
+      "path": "Rule/Upstream/DAZN/DAZN.list",
+      "sha256": "7fe67b77f6517039572519c78c8847dc3a53ccd2aaa8b577bdc98a20c6bd0a04",
+      "bytes": 825
+    },
+    {
+      "path": "Rule/Upstream/DMM/DMM.list",
+      "sha256": "255c924e26503a11d8f1d96b696ca623140686c7d34512c935fef27210f8b0b4",
+      "bytes": 734
+    },
+    {
+      "path": "Rule/Upstream/DMM/DMM_Resolve.list",
+      "sha256": "9bbdfe7f2539398714a993d9eae67f093efa5f4eac8bce90481d4e134caf71bc",
+      "bytes": 712
+    },
+    {
+      "path": "Rule/Upstream/DNS/DNS.list",
+      "sha256": "39ec5ff6ffe564fcbe918e16807dba1a2ca58c18853a52ce7a6ce5d7aed55a0a",
+      "bytes": 3375
+    },
+    {
+      "path": "Rule/Upstream/DNS/DNS_Resolve.list",
+      "sha256": "92c8346f989e991c94eddca29fa02f2b60a45c375a056c4a84463d491d213a76",
+      "bytes": 3089
+    },
+    {
+      "path": "Rule/Upstream/DaMai/DaMai.list",
+      "sha256": "285d7c19134a696d606264460b9b5e07edc63763574075e4513548767a223084",
+      "bytes": 436
+    },
+    {
+      "path": "Rule/Upstream/Dailymail/Dailymail.list",
+      "sha256": "b04f71b8d92f0f180cd966fea2ea9eda3237ef2ab2aa7ffc45bfb2ea739a3b2d",
+      "bytes": 650
+    },
+    {
+      "path": "Rule/Upstream/Dailymotion/Dailymotion.list",
+      "sha256": "7dac1624b3a50d4d2b110d3d3d30d94c578ab8294275b4279d36b1174a8377af",
+      "bytes": 287
+    },
+    {
+      "path": "Rule/Upstream/DanDanZan/DanDanZan.list",
+      "sha256": "c0d3531d0d6b47cc1de559392e39a45b082c7d3b6ab6285586bc5ff1656d0aee",
+      "bytes": 346
+    },
+    {
+      "path": "Rule/Upstream/Dandanplay/Dandanplay.list",
+      "sha256": "7d6593142655a722e942b59723444c9eed64e5c8b71d8a49a5ea299ae6f969cc",
+      "bytes": 244
+    },
+    {
+      "path": "Rule/Upstream/DangDang/DangDang.list",
+      "sha256": "aeb9976c38eb65fa9eaf4dd2c44bbe9e1baa61a03846e42bbd8f0e81b400fc5a",
+      "bytes": 207
+    },
+    {
+      "path": "Rule/Upstream/Dedao/Dedao.list",
+      "sha256": "6685ad2236dedf9065b58eeb47b5af34b8fb79f0e6c2939f1cca7c629a3c3027",
+      "bytes": 351
+    },
+    {
+      "path": "Rule/Upstream/Deepin/Deepin.list",
+      "sha256": "f80dd184e4b57a89c6e9e9b6d025bfc8ac2329e7d931444d099dd22a41a2feac",
+      "bytes": 335
+    },
+    {
+      "path": "Rule/Upstream/Deezer/Deezer.list",
+      "sha256": "6cd1078d8bdeb6f256de239e52dd630ebf5d568300e57afb054db96ab9357709",
+      "bytes": 239
+    },
+    {
+      "path": "Rule/Upstream/Dell/Dell.list",
+      "sha256": "112f240a4648bfd53d19a9d1e7109ae4aacf3d70fdff6424d77e91734353e0ec",
+      "bytes": 3615
+    },
+    {
+      "path": "Rule/Upstream/Developer/Developer.list",
+      "sha256": "d665f274c517e512aaf7ee72eff8ade6bccfc7146be9fbc24f92707ef2a829ec",
+      "bytes": 2325
+    },
+    {
+      "path": "Rule/Upstream/DiDi/DiDi.list",
+      "sha256": "9d5739b3946601d1251388dcbbaa0cf52795d0f19b37d11f2fed4db11ee89e74",
+      "bytes": 863
+    },
+    {
+      "path": "Rule/Upstream/DiLianWangLuo/DiLianWangLuo.list",
+      "sha256": "309bdf1acac26213d786fac4f6bd685b211ed08659c6e2818e1b66fb060302e0",
+      "bytes": 513
+    },
+    {
+      "path": "Rule/Upstream/DiSiFanShi/DiSiFanShi.list",
+      "sha256": "b60367525c84089e45d5ba0afe21a8c73395a3f4aa5bc797d6b598b57ffe1513",
+      "bytes": 274
+    },
+    {
+      "path": "Rule/Upstream/DiabloIII/DiabloIII.list",
+      "sha256": "5a42c7ee9ddfcdf93054fc564cae47c81d6088b85458b8dc0fa2951cc0b2db66",
+      "bytes": 405
+    },
+    {
+      "path": "Rule/Upstream/DiabloIII/DiabloIII_Resolve.list",
+      "sha256": "3423c9f39336916f8fc06f867f87b31e112c8219ee7c02fe1fd01501fc873605",
+      "bytes": 328
+    },
+    {
+      "path": "Rule/Upstream/DianCeWangKe/DianCeWangKe.list",
+      "sha256": "da142dbb9f52b041bf0f1ab60a6ecd9bda4d74cc29ffc5cf5a677055ef842502",
+      "bytes": 352
+    },
+    {
+      "path": "Rule/Upstream/DigiCert/DigiCert.list",
+      "sha256": "f79fd2bb8ea39c8fae071824dfe8cf0b3c9d521f4aecd34da1e4715a212f23e3",
+      "bytes": 561
+    },
+    {
+      "path": "Rule/Upstream/DigitalOcean/DigitalOcean.list",
+      "sha256": "2b0da4987e073f5d3dbed5cf5aa0a1c7d160a383aa77d5809f52370fba1889bc",
+      "bytes": 278
+    },
+    {
+      "path": "Rule/Upstream/DingTalk/DingTalk.list",
+      "sha256": "7945176ffad14aeaa1d5f2ebfa787e25af9e72dd3950435870ad2bdf8d9f5c2f",
+      "bytes": 450
+    },
+    {
+      "path": "Rule/Upstream/DingXiangYuan/DingXiangYuan.list",
+      "sha256": "4e538674b200ff01ed7ee91d66c486e24986f00dcef5e61b8a19d2d7978d5113",
+      "bytes": 549
+    },
+    {
+      "path": "Rule/Upstream/Direct/Direct.list",
+      "sha256": "5d1d3198c0f525b167b1b3b1ccb7023fac55a696a8bb9d1b44e0028aed3d0f43",
+      "bytes": 7385
+    },
+    {
+      "path": "Rule/Upstream/Discord/Discord.list",
+      "sha256": "3d18c8fe716de06891ba3d6c34dba254cb65138a10f79e1a1a0628b5237ecb2c",
+      "bytes": 1076
+    },
+    {
+      "path": "Rule/Upstream/DiscoveryPlus/DiscoveryPlus.list",
+      "sha256": "f0cb66d8c190e44a454d5ad686cd255d113adfe7824bcec1d1ce894ad7430760",
+      "bytes": 757
+    },
+    {
+      "path": "Rule/Upstream/Disney/Disney.list",
+      "sha256": "d0cfd6aee89d9d3075aef9dfadd98a2a3c6a2dba487f5091c801d1bcd70e9884",
+      "bytes": 5674
+    },
+    {
+      "path": "Rule/Upstream/Disqus/Disqus.list",
+      "sha256": "b763f106b7c4da1ebd09bfbfbea9b2f4c398d012d171b8db9b18033f743b9482",
+      "bytes": 240
+    },
+    {
+      "path": "Rule/Upstream/Docker/Docker.list",
+      "sha256": "2a608ae68e9984677e76da00cf5d76a361e112e75fe5a5d27c65a5117aeadb31",
+      "bytes": 385
+    },
+    {
+      "path": "Rule/Upstream/Domob/Domob.list",
+      "sha256": "11facc8de0e9ce137e81f18cc6848b1d9b2ac0e3ade75f4f8a98f8cd9d3cbd7a",
+      "bytes": 813
+    },
+    {
+      "path": "Rule/Upstream/Dood/Dood.list",
+      "sha256": "1e369f3c00dc3d9ab9d53ec10bd5ea3355cd63fca8e927fbf4c5b9f57730909a",
+      "bytes": 226
+    },
+    {
+      "path": "Rule/Upstream/DouBan/DouBan.list",
+      "sha256": "49b368896f4e38f4a31ac911b8e13fee923575884afe0d27a3cb1a0735551742",
+      "bytes": 231
+    },
+    {
+      "path": "Rule/Upstream/DouYin/DouYin.list",
+      "sha256": "020e742fe4a7084268af6aa52c4153bf5bfd54c4d7a17466f42cd3461609e32a",
+      "bytes": 533
+    },
+    {
+      "path": "Rule/Upstream/Douyu/Douyu.list",
+      "sha256": "e29d67bbbd3734756e5bfe5db9764cd02313b9397c38b4609a69aba6ced1c393",
+      "bytes": 495
+    },
+    {
+      "path": "Rule/Upstream/Download/Download.list",
+      "sha256": "32bb1052491936ed42c1a7f2d783c1b711086541eedf2bb0f027c4c3106dfbf5",
+      "bytes": 771
+    },
+    {
+      "path": "Rule/Upstream/Dropbox/Dropbox.list",
+      "sha256": "5e66a0c3798c02e8fdbdfd366c178b3273f03746e677193c35b5e4a411b6cbde",
+      "bytes": 699
+    },
+    {
+      "path": "Rule/Upstream/DtDNS/DtDNS.list",
+      "sha256": "efe080a316d3bbe7c238582f083c57f3a9a1e88fac34d73c3f6e8274ee3dab8b",
+      "bytes": 582
+    },
+    {
+      "path": "Rule/Upstream/Dubox/Dubox.list",
+      "sha256": "51448c3c3db8782eefad24c4192e3a821ed4a1012abdcb87d4a2d31bb3d1f1d1",
+      "bytes": 205
+    },
+    {
+      "path": "Rule/Upstream/Duckduckgo/Duckduckgo.list",
+      "sha256": "60b68051c8e59658a27a6d25a5e377d526ad71115cd393492954baba7e509632",
+      "bytes": 1368
+    },
+    {
+      "path": "Rule/Upstream/DuoWan/DuoWan.list",
+      "sha256": "55167f3741d0b49921a79d9d29b4fdc88d6dc6ac55e45777ed334b4dac88b2c5",
+      "bytes": 880
+    },
+    {
+      "path": "Rule/Upstream/Duolingo/Duolingo.list",
+      "sha256": "25855ef6cc806fde8817bf41d6cd243ec22e92b0c598cd2a6949ce2090563828",
+      "bytes": 210
+    },
+    {
+      "path": "Rule/Upstream/DynDNS/DynDNS.list",
+      "sha256": "0a3021024da620d0c09410bf3a5e7ce90891d87cd03f6b5b47e9c9b9c388b52c",
+      "bytes": 368
+    },
+    {
+      "path": "Rule/Upstream/Dynu/Dynu.list",
+      "sha256": "eebd9817b63a6ed8861211b5d89fff4b2ca31e3c8d48e46c11f25d5f9bd1fd9b",
+      "bytes": 226
+    },
+    {
+      "path": "Rule/Upstream/EA/EA.list",
+      "sha256": "83cd3c809f0cb781c695f6753246968a88178a375a74561a6b21e5752a74f960",
+      "bytes": 5310
+    },
+    {
+      "path": "Rule/Upstream/EHGallery/EHGallery.list",
+      "sha256": "200500cd896dcdd39be2167baa807b1b2c42977157f20d718e6fb091820fcc83",
+      "bytes": 366
+    },
+    {
+      "path": "Rule/Upstream/EHGallery/EHGallery_Resolve.list",
+      "sha256": "823045c8bdd840d177476d3dc3cc5a3b8d9fa8a72bee35ac2d32edec5907cdc7",
+      "bytes": 355
+    },
+    {
+      "path": "Rule/Upstream/EastMoney/EastMoney.list",
+      "sha256": "36e47718cb5b723d7e16ef08f83262d6a9876cca7bf18afd9b993bdeb7ad4d1a",
+      "bytes": 1053
+    },
+    {
+      "path": "Rule/Upstream/EasyPrivacy/EasyPrivacy_All.list",
+      "sha256": "37b3d6427a1c770f9d0f5c99fbc7860665259375ce8479769305da9431fc1b84",
+      "bytes": 1447384
+    },
+    {
+      "path": "Rule/Upstream/EasyPrivacy/EasyPrivacy_All_No_Resolve.list",
+      "sha256": "37b3d6427a1c770f9d0f5c99fbc7860665259375ce8479769305da9431fc1b84",
+      "bytes": 1447384
+    },
+    {
+      "path": "Rule/Upstream/EasyPrivacy/EasyPrivacy_Domain.list",
+      "sha256": "e91c9df5f57f3881401d3e9b28b1f71ed0325f76c355999658eb964d1ace19c0",
+      "bytes": 928121
+    },
+    {
+      "path": "Rule/Upstream/Electron/Electron.list",
+      "sha256": "e03bb72a6aa546a453bd8557bd6ac0f2a126e7bf2e5dda5339911f5626f88a01",
+      "bytes": 186
+    },
+    {
+      "path": "Rule/Upstream/Eleme/Eleme.list",
+      "sha256": "209df8cd0f30bca31a3a56eece0830d628b864df862d1918a539cb901c386d12",
+      "bytes": 500
+    },
+    {
+      "path": "Rule/Upstream/Embl/Embl.list",
+      "sha256": "209c39e064c91252c9254ccdb472cdc4e4db6ee059824a6c5a411c8d73de4269",
+      "bytes": 325
+    },
+    {
+      "path": "Rule/Upstream/Emby/Emby.list",
+      "sha256": "48ae40d231b5429ef2c11459dd13b88c5ced78cee4dc964ce4e67291b8d59614",
+      "bytes": 1675
+    },
+    {
+      "path": "Rule/Upstream/Emojipedia/Emojipedia.list",
+      "sha256": "27c5daa5f82234a1263c768a273e60f2676bc0c53ef775640b081b7a96687ad0",
+      "bytes": 255
+    },
+    {
+      "path": "Rule/Upstream/EncoreTVB/EncoreTVB.list",
+      "sha256": "2f2daeb4bbc8488fe1add796d1e360d105a8f1ff649844f9bcd22867a6e054e1",
+      "bytes": 361
+    },
+    {
+      "path": "Rule/Upstream/Entrust/Entrust.list",
+      "sha256": "af83cbfe6ff572bc63719cfe80b85e9cd88ae408f7d4b191b9bcdf1ba0d1c17a",
+      "bytes": 353
+    },
+    {
+      "path": "Rule/Upstream/Epic/Epic.list",
+      "sha256": "8f5fcadadd967023aa81273803de80beb2ceadd9af4e9352b565b3b00ccf464d",
+      "bytes": 588
+    },
+    {
+      "path": "Rule/Upstream/Espn/Espn.list",
+      "sha256": "fc1151d4e1b3856ab9131ba351f186c45cdc1176e3d85225b406be3344c8d7f9",
+      "bytes": 459
+    },
+    {
+      "path": "Rule/Upstream/FOXNOW/FOXNOW.list",
+      "sha256": "2bdda8ff8d11bbc1d5ee3edc80504d05bfab952dc1e525e6e4dc813cc787fe98",
+      "bytes": 265
+    },
+    {
+      "path": "Rule/Upstream/FOXPlus/FOXPlus.list",
+      "sha256": "90d6814e9e533ba3f87ae92b0d2e1cc55baf9da7f7c3a6affec9a02b608b1f94",
+      "bytes": 418
+    },
+    {
+      "path": "Rule/Upstream/Facebook/Facebook.list",
+      "sha256": "747563c96825bbd5f868be955543b0ca1979064e7b094f8aab08aafbce577c36",
+      "bytes": 17399
+    },
+    {
+      "path": "Rule/Upstream/Facebook/Facebook_Resolve.list",
+      "sha256": "71dc99edcee47f7ea1688aac37d2f4c57f04adb749d91f6981aba367de3371dd",
+      "bytes": 17135
+    },
+    {
+      "path": "Rule/Upstream/FanFou/FanFou.list",
+      "sha256": "0a172532c574b7d3d39f07a02ce755173b66aaa347e7bb8fa5b309bd8ee6b7b5",
+      "bytes": 250
+    },
+    {
+      "path": "Rule/Upstream/FangZhengDianZi/FangZhengDianZi.list",
+      "sha256": "9d097dbcb15a734c36583a56485ff3bba4c13032a31efbe8ef653a0c820dae3a",
+      "bytes": 701
+    },
+    {
+      "path": "Rule/Upstream/Faronics/Faronics.list",
+      "sha256": "fa142726322fc28689cb7baadcbfb4401b36383d73466fe58b8b2bd0721fab11",
+      "bytes": 692
+    },
+    {
+      "path": "Rule/Upstream/FeiZhu/FeiZhu.list",
+      "sha256": "c8b32881a478cbb05ed3c2c44ce5a718a8c0eb39fb2522df4a162406d6654b1f",
+      "bytes": 655
+    },
+    {
+      "path": "Rule/Upstream/FengHuangWang/FengHuangWang.list",
+      "sha256": "f16069866b134878ec7bca2d54c828e3c9999820b50682d3d5cfd2d34637b9ec",
+      "bytes": 415
+    },
+    {
+      "path": "Rule/Upstream/FengXiaWangLuo/FengXiaWangLuo.list",
+      "sha256": "4b75c7c66766b6943e5183736e906875c3aedb949012ade3a2b7d5c59717a0ef",
+      "bytes": 358
+    },
+    {
+      "path": "Rule/Upstream/Figma/Figma.list",
+      "sha256": "acb2531963e8ff2f0ae371867f5fc49caf4ff1cc307139f2a5eade55126b24d3",
+      "bytes": 178
+    },
+    {
+      "path": "Rule/Upstream/Fiio/Fiio.list",
+      "sha256": "c9eba3f7c287643d4e4407cd4949ce12f41bcab32b178c4bc98df414a987023c",
+      "bytes": 247
+    },
+    {
+      "path": "Rule/Upstream/FindMy/FindMy.list",
+      "sha256": "c4944fd32c127c4fd855401e515054a66e93b57f9552206fb880b986a5201398",
+      "bytes": 231
+    },
+    {
+      "path": "Rule/Upstream/FitnessPlus/FitnessPlus.list",
+      "sha256": "83e3677e451b80a1db48fd6ce770efd0ff5b1ccce6ac7f4c09b849bc8e1d935c",
+      "bytes": 219
+    },
+    {
+      "path": "Rule/Upstream/FlipBoard/FlipBoard.list",
+      "sha256": "a0ef8c232054f5b4ed562addae7b6003be866437d0fbe48236af3dcd82abda3d",
+      "bytes": 213
+    },
+    {
+      "path": "Rule/Upstream/Flurry/Flurry.list",
+      "sha256": "f005ac381fba2fe17b9c4c5c497ed7b0d23ba2cfc42946f550df1cbb91939ce1",
+      "bytes": 185
+    },
+    {
+      "path": "Rule/Upstream/Fox/Fox.list",
+      "sha256": "4903f6f52603046f034b04b9037728515aa280a8a3564b05b234f175e29ccc3c",
+      "bytes": 7890
+    },
+    {
+      "path": "Rule/Upstream/FreeCodeCamp/FreeCodeCamp.list",
+      "sha256": "9618d4ad12cb15066626112d0a6394ffc9e28bbf35372e9192701b99fcbddbec",
+      "bytes": 192
+    },
+    {
+      "path": "Rule/Upstream/FuboTV/FuboTV.list",
+      "sha256": "16c68ded47c744ece900e83243013234979d13fbad277f4f981fdb17f608a7d0",
+      "bytes": 202
+    },
+    {
+      "path": "Rule/Upstream/Funshion/Funshion.list",
+      "sha256": "cf50b8b8c613f9e3f83a9faab6998d7cbe4b1417d87225e83ef6db017d47c4f7",
+      "bytes": 421
+    },
+    {
+      "path": "Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey.list",
+      "sha256": "555e79e414122b446e1e6e260c365e94d25dd75ede3d264026d0a5487cf00531",
+      "bytes": 683
+    },
+    {
+      "path": "Rule/Upstream/Game/Assassin'sCreed-Odyssey/Assassin'sCreed-Odyssey_Resolve.list",
+      "sha256": "c8870d71ac1e687cca6f3e4c6a8712514e4f6c0b9847e22411b1df2bc07813f9",
+      "bytes": 518
+    },
+    {
+      "path": "Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins.list",
+      "sha256": "f829c27a18e6b3c28c7b3fa8d9ab7c516954cf962e353f721f4f807a8e5195fe",
+      "bytes": 702
+    },
+    {
+      "path": "Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list",
+      "sha256": "bffecaf53f1c5071981bcc83f66bb1b4f51fb12feb5af598732676b01dfcdaa3",
+      "bytes": 526
+    },
+    {
+      "path": "Rule/Upstream/Game/Game.list",
+      "sha256": "63ed1092c588beb377cad51b574c921ca113a880752b6c0b8c96b9ecc7f13366",
+      "bytes": 19725
+    },
+    {
+      "path": "Rule/Upstream/Game/GameDownload/GameDownload.list",
+      "sha256": "c7cbcca7d00ea7b663f0745d451358c000c2f6dc568b0189f8daf5b32e2136b6",
+      "bytes": 1434
+    },
+    {
+      "path": "Rule/Upstream/Game/GameDownloadCN/GameDownloadCN.list",
+      "sha256": "f196c9b3c463248f474c7e77a205425ece4f5837e14a0f979b2c62cc7b9a0051",
+      "bytes": 736
+    },
+    {
+      "path": "Rule/Upstream/Game/Game_Resolve.list",
+      "sha256": "eefa8366a8d1f3430104a336fcc8cb2c06960b42a16823b0800fea6cf27fc93d",
+      "bytes": 19087
+    },
+    {
+      "path": "Rule/Upstream/Game/Nikke/Nikke.list",
+      "sha256": "cfa74b8d80b71d892038ed5eec48cf2daf2d34506058b85199a2dc365be5cfb5",
+      "bytes": 376
+    },
+    {
+      "path": "Rule/Upstream/Game/Nikke/Nikke_Resolve.list",
+      "sha256": "63fde7797330a7401c6e53f9c031a477216c002349fd14d39be0a67fcf553145",
+      "bytes": 365
+    },
+    {
+      "path": "Rule/Upstream/Game/Roblox/Roblox.list",
+      "sha256": "cf11a035beda1041b7a79fc481bb712b3140cb28096caa96987c642d7d86812e",
+      "bytes": 225
+    },
+    {
+      "path": "Rule/Upstream/Game/TencentLoLMobile/TencentLoLMobile.list",
+      "sha256": "b5fbfe5934d14676eb6e5789648efc3a2ac306fc4103564a8140a887c173dd84",
+      "bytes": 244
+    },
+    {
+      "path": "Rule/Upstream/GaoDe/GaoDe.list",
+      "sha256": "f313209d1ffeb36ceaa1713ff4c0b67d219542b157128f9dfa261a979b32e152",
+      "bytes": 373
+    },
+    {
+      "path": "Rule/Upstream/Garena/Garena.list",
+      "sha256": "a0b4c51a829c8b85c4ebcab0400d5c55469f76aaeacfb39cdfeb64d92225fe47",
+      "bytes": 592
+    },
+    {
+      "path": "Rule/Upstream/Geely/Geely.list",
+      "sha256": "9858d5da581336a0f44b8e0dea87852847e880cee915a76341d60f393a76907a",
+      "bytes": 1596
+    },
+    {
+      "path": "Rule/Upstream/Gemini/Gemini.list",
+      "sha256": "db8f69154426dca76792ab80b3ad6b0e2d078ebe0e52e76faec1724245a4ec49",
+      "bytes": 605
+    },
+    {
+      "path": "Rule/Upstream/Gettyimages/Gettyimages.list",
+      "sha256": "3b366272d68b35ebb62c03dba39a94274534a276afd4fc7d9a0d35cfd81f10c0",
+      "bytes": 909
+    },
+    {
+      "path": "Rule/Upstream/Gigabyte/Gigabyte.list",
+      "sha256": "2dfd235ad768129ab75c81ef803b31ab20c788aee491e3a5d052870133ae18bb",
+      "bytes": 385
+    },
+    {
+      "path": "Rule/Upstream/GitBook/GitBook.list",
+      "sha256": "198ad878c303b3da956ddef92038172e658e05ba79a77ecf31aed34cb28d8ba5",
+      "bytes": 241
+    },
+    {
+      "path": "Rule/Upstream/GitHub/GitHub.list",
+      "sha256": "ced8ab0ecda5775d04ec8ee6a57b282181108565331a6a1d85e9a26fee25d79b",
+      "bytes": 1117
+    },
+    {
+      "path": "Rule/Upstream/GitLab/GitLab.list",
+      "sha256": "0c41418dd3d49d6313c5516b1d828a39aa13e1c08b9750698b5e4ec5d7ba5f8c",
+      "bytes": 350
+    },
+    {
+      "path": "Rule/Upstream/Gitee/Gitee.list",
+      "sha256": "2e68ebdc6658ca717e164f13cdc37cfc82e4a7a07c7a88890a5c577e70042827",
+      "bytes": 201
+    },
+    {
+      "path": "Rule/Upstream/Global/Global.list",
+      "sha256": "297a679b8afdaf297adc4bc8ea8d6b427216394556d5dbc322ecb6d099f9a762",
+      "bytes": 6267
+    },
+    {
+      "path": "Rule/Upstream/Global/Global_All.list",
+      "sha256": "ed79ee4572768cc564633f097dffc1d48878d74fb3ff8dbbc2bbd8f89aaef2b6",
+      "bytes": 1013544
+    },
+    {
+      "path": "Rule/Upstream/Global/Global_All_No_Resolve.list",
+      "sha256": "41f1861a89974194601c77ff4f8117d573204c7308a268a7010f6a2fe8735636",
+      "bytes": 1014853
+    },
+    {
+      "path": "Rule/Upstream/Global/Global_Domain.list",
+      "sha256": "5149c5a02742ba5baf8bd738f9fe5a7429dbab1a71cc0d05da9ddd615a3122e9",
+      "bytes": 553036
+    },
+    {
+      "path": "Rule/Upstream/Global/Global_Resolve.list",
+      "sha256": "982d9e0439203fee3b6c216cb807491911fbf92cb2733ccb654cc1a912f77991",
+      "bytes": 4958
+    },
+    {
+      "path": "Rule/Upstream/GlobalMedia/GlobalMedia.list",
+      "sha256": "f25f757f9ffd0df6ff382b79480f9f65791f3917d690bd20717ac770f0507f82",
+      "bytes": 35722
+    },
+    {
+      "path": "Rule/Upstream/GlobalMedia/GlobalMedia_All.list",
+      "sha256": "b82ee02faf94720274cd7023511ace22c9c044f1f899050c8d0ed957351a4a5e",
+      "bytes": 63187
+    },
+    {
+      "path": "Rule/Upstream/GlobalMedia/GlobalMedia_All_No_Resolve.list",
+      "sha256": "cdad0ecd75c1d772f6492970a8ef60efcf4e0b6f12627766e78f2169bdbff122",
+      "bytes": 73351
+    },
+    {
+      "path": "Rule/Upstream/GlobalMedia/GlobalMedia_Domain.list",
+      "sha256": "db94f6b347728dd37baa8477a5b6c3ebb5a18c0a6a81fde95274b5aabdf67b59",
+      "bytes": 21164
+    },
+    {
+      "path": "Rule/Upstream/GlobalMedia/GlobalMedia_Resolve.list",
+      "sha256": "74f753c270802aba80ccfd5c37442608fd3f62115f242276eaacf89ef455510e",
+      "bytes": 25558
+    },
+    {
+      "path": "Rule/Upstream/GlobalScholar/GlobalScholar.list",
+      "sha256": "0678ba75b4f13649eef4072c93499e2323eed9b450d10e94deed4d9608f74fa8",
+      "bytes": 6645
+    },
+    {
+      "path": "Rule/Upstream/GlobalSign/GlobalSign.list",
+      "sha256": "c356f5de6186c7629ca2fe5cee2472293f01f58f1cfb22aea37e541b41f2497e",
+      "bytes": 549
+    },
+    {
+      "path": "Rule/Upstream/Gog/Gog.list",
+      "sha256": "87bb7c0453f02fe8b409c0fd4118a97e03885d204541a6b791ecadceefeeb754",
+      "bytes": 272
+    },
+    {
+      "path": "Rule/Upstream/Google/Google.list",
+      "sha256": "4b08fd3ef47e2668d2a4bb79777773e2408394fdda60ac36014e1a4d3456ba6f",
+      "bytes": 19985
+    },
+    {
+      "path": "Rule/Upstream/Google/Google_Resolve.list",
+      "sha256": "147933b3f8163a57b3222162c48234babe50a925ca73176836edbfbc3e2702cc",
+      "bytes": 19930
+    },
+    {
+      "path": "Rule/Upstream/GoogleDrive/GoogleDrive.list",
+      "sha256": "254d0484fd5d02b0b6eef1811dbff6fe4ebbf778218beb2b87eb14d08435ca0d",
+      "bytes": 490
+    },
+    {
+      "path": "Rule/Upstream/GoogleEarth/GoogleEarth.list",
+      "sha256": "1204beef8e1a628fca2a648301fe79fdb40cd2b3fbead3e6068bedfa908a9180",
+      "bytes": 677
+    },
+    {
+      "path": "Rule/Upstream/GoogleFCM/GoogleFCM.list",
+      "sha256": "9794f848f2935db94be703f797921f8c512a1ddd213c20c47c1f884dccbd82ca",
+      "bytes": 1590
+    },
+    {
+      "path": "Rule/Upstream/GoogleFCM/GoogleFCM_Resolve.list",
+      "sha256": "6517953da55e180497439a0e369211b6a198ea01b7c84f5cff28e92f63a9c288",
+      "bytes": 1304
+    },
+    {
+      "path": "Rule/Upstream/GoogleSearch/GoogleSearch.list",
+      "sha256": "c35c6a5350ca6b2c1fb15147cc92c23739592dea9715125f767ed9b507878ade",
+      "bytes": 189
+    },
+    {
+      "path": "Rule/Upstream/GoogleVoice/GoogleVoice.list",
+      "sha256": "a3eee2e522719d448bd95bb3b55956d45166310f9780f57ff04b6e967a6f7b1c",
+      "bytes": 178
+    },
+    {
+      "path": "Rule/Upstream/GovCN/GovCN.list",
+      "sha256": "3a91f0bf739e9d51381c4bb7d22554d7bd2e8605c461bac8e95d4d15676b37d2",
+      "bytes": 573
+    },
+    {
+      "path": "Rule/Upstream/Gucci/Gucci.list",
+      "sha256": "763459ac7ed9ec7eb2862921fb513665e68d3b3bc0923cefd518a73dd8ce50ff",
+      "bytes": 324
+    },
+    {
+      "path": "Rule/Upstream/GuiGuDongLi/GuiGuDongLi.list",
+      "sha256": "ae7401441da83d26588be2c08c9f296794627cf479712d29e776d93b11ee034c",
+      "bytes": 445
+    },
+    {
+      "path": "Rule/Upstream/HBO/HBO.list",
+      "sha256": "fd78b9a0a2ffedd9102d23256011bf8ec94ad98630c06337fdaa6970f4690832",
+      "bytes": 1784
+    },
+    {
+      "path": "Rule/Upstream/HBOAsia/HBOAsia.list",
+      "sha256": "aea8877ee108cbe84a2676a6c04b76c4c1d6f1f636cd82fbfa00a25aaa314338",
+      "bytes": 877
+    },
+    {
+      "path": "Rule/Upstream/HBOHK/HBOHK.list",
+      "sha256": "92bc5608039696d0eaf5be9e8f8621204ad10b944adb3a4c6a04002924498db6",
+      "bytes": 885
+    },
+    {
+      "path": "Rule/Upstream/HBOUSA/HBOUSA.list",
+      "sha256": "9f812ff7114e67e4640d747d60dc8f994d62538a4d731e0415f2860d408d7256",
+      "bytes": 516
+    },
+    {
+      "path": "Rule/Upstream/HKBN/HKBN.list",
+      "sha256": "6af735ee1866f492cfbe781bd9486f75b62d4194a6c18a46bf25b620c3ce1c6b",
+      "bytes": 306
+    },
+    {
+      "path": "Rule/Upstream/HKOpenTV/HKOpenTV.list",
+      "sha256": "0b51033534212bb9f44ee4b59c1616446f8ab552172160fa4892563a8ab7344a",
+      "bytes": 207
+    },
+    {
+      "path": "Rule/Upstream/HKedcity/HKedcity.list",
+      "sha256": "99df485bac3eb9d0110bf0a5383d78053cade0ee6a04f865a795c9b8ba91145a",
+      "bytes": 240
+    },
+    {
+      "path": "Rule/Upstream/HP/HP.list",
+      "sha256": "c9b6b70c32d8d213ce5d574f1e49614165b2fb3a86fe6b522c0aba9cf854fee1",
+      "bytes": 272
+    },
+    {
+      "path": "Rule/Upstream/HWTV/HWTV.list",
+      "sha256": "ea18eaafa10e350018e898f52417499ceedc15d90f37d3a9102cc010325360d6",
+      "bytes": 239
+    },
+    {
+      "path": "Rule/Upstream/HaiNanHangKong/HaiNanHangKong.list",
+      "sha256": "92ab2eb59e980071122f97af1885af379208036007d40be24f5ef85d692fdd5f",
+      "bytes": 338
+    },
+    {
+      "path": "Rule/Upstream/HamiVideo/HamiVideo.list",
+      "sha256": "014e547336063d20ddda216cfd2ff4870b2fc263d4e7adae03cc72370ade1146",
+      "bytes": 326
+    },
+    {
+      "path": "Rule/Upstream/HanYi/HanYi.list",
+      "sha256": "3e03b4e984f1a69fd5694fdc693295f1f4d4dccf565e1c0a436029f1ccb7341a",
+      "bytes": 456
+    },
+    {
+      "path": "Rule/Upstream/HashiCorp/HashiCorp.list",
+      "sha256": "69fa3edc162e9e18a772c90ed0a9c5459240aa20ee8efc8d427ee0ce76eca3c1",
+      "bytes": 380
+    },
+    {
+      "path": "Rule/Upstream/Haveibeenpwned/Haveibeenpwned.list",
+      "sha256": "e4fea96368b2de5e789412cad192ca09b354281163294878e1f1f96a7a2d37a2",
+      "bytes": 229
+    },
+    {
+      "path": "Rule/Upstream/HeMa/HeMa.list",
+      "sha256": "9925a0acdc1c961f2e7b8d275e1f2cee002c529f246c230ff03da236f5760eab",
+      "bytes": 468
+    },
+    {
+      "path": "Rule/Upstream/Hearthstone/Hearthstone.list",
+      "sha256": "7834815c4637f563b33442326ba41f6b998c88dfd3bda7b9709beb404a61ccfa",
+      "bytes": 300
+    },
+    {
+      "path": "Rule/Upstream/Hearthstone/Hearthstone_Resolve.list",
+      "sha256": "c6862d9d6b209cff3934d86eb3770c5725bfd9552ed06b32e31a4394ebac5e13",
+      "bytes": 256
+    },
+    {
+      "path": "Rule/Upstream/HeroesoftheStorm/HeroesoftheStorm.list",
+      "sha256": "9c40434694f83c1f276e70e88c599d8cdaf87ef51ece5c337105be0ffbeb7eee",
+      "bytes": 483
+    },
+    {
+      "path": "Rule/Upstream/HeroesoftheStorm/HeroesoftheStorm_Resolve.list",
+      "sha256": "a3a4d5334990128b8837c724917255181e02d799db9c0b388ee26eef73308bd4",
+      "bytes": 384
+    },
+    {
+      "path": "Rule/Upstream/Heroku/Heroku.list",
+      "sha256": "2c52eece92845e94cbbdda83f61b72a2562e431cd7eb28e039b6f54510921b13",
+      "bytes": 479
+    },
+    {
+      "path": "Rule/Upstream/HibyMusic/HibyMusic.list",
+      "sha256": "85359cc30b0a6379c48001dd4add8a6febd3a3d301ab56944114cd812f23b464",
+      "bytes": 231
+    },
+    {
+      "path": "Rule/Upstream/Hijacking/Hijacking.list",
+      "sha256": "47bffe4e8d4f56e736e43f1ed5f639f0b909591de09c5908df6cddad4b9e4e5b",
+      "bytes": 6734
+    },
+    {
+      "path": "Rule/Upstream/Hijacking/Hijacking_Resolve.list",
+      "sha256": "7cb15b2cae2056bc90c7c4a2fbc90550dca510557656005438bf4dede01927d3",
+      "bytes": 6272
+    },
+    {
+      "path": "Rule/Upstream/Himalaya/Himalaya.list",
+      "sha256": "6fa0483ce4beb3fb2e9ef0dfcef08f2d7ada0f253abbe9e96035810d328a362e",
+      "bytes": 653
+    },
+    {
+      "path": "Rule/Upstream/Hkgolden/Hkgolden.list",
+      "sha256": "ee629c0080c036f283976c36cf80446e44a6f2a3ab00b642ca0ac22254e2be0f",
+      "bytes": 213
+    },
+    {
+      "path": "Rule/Upstream/HoYoverse/HoYoverse.list",
+      "sha256": "b6b630839ec25ba1b787f037cfad96f16d963a039b09423bb475568edefd690e",
+      "bytes": 478
+    },
+    {
+      "path": "Rule/Upstream/Hpplay/Hpplay.list",
+      "sha256": "db1ac96e421f6359ed16d045cac052636b29a425795d1dd72fb03fcb1ca44234",
+      "bytes": 295
+    },
+    {
+      "path": "Rule/Upstream/HuYa/HuYa.list",
+      "sha256": "9889627e10e5adebd648c1015f92da25f904f00b6705e114a8ff294a76268bff",
+      "bytes": 256
+    },
+    {
+      "path": "Rule/Upstream/HuaShuTV/HuaShuTV.list",
+      "sha256": "6d43c631116f35f21b93ec83e2ebbfd75b4e507ca913fe224092d3de44b093b3",
+      "bytes": 299
+    },
+    {
+      "path": "Rule/Upstream/HuanJu/HuanJu.list",
+      "sha256": "627caf451bfce6cf215d63276e31ebbb5bec44c124588788361ef4e0d348efc3",
+      "bytes": 701
+    },
+    {
+      "path": "Rule/Upstream/Huawei/Huawei.list",
+      "sha256": "c16c48de7a7aa73e03ce8cf027b104f532581883fbe5fbb83e330bad9c7f755e",
+      "bytes": 4638
+    },
+    {
+      "path": "Rule/Upstream/Huffpost/Huffpost.list",
+      "sha256": "607a51da2bc6f5aa9d0715e68e43af58c99bd54d75162034da95d926cf65b5d5",
+      "bytes": 748
+    },
+    {
+      "path": "Rule/Upstream/Hulu/Hulu.list",
+      "sha256": "c1efecf92e9b46a0c440471dbcc64a48f29d8d08efbb48a095723ca53d23c2ba",
+      "bytes": 1869
+    },
+    {
+      "path": "Rule/Upstream/HuluJP/HuluJP.list",
+      "sha256": "04ecf91cfb5898a906074a46bd62c2b946906950a408b451f36d70f628299077",
+      "bytes": 280
+    },
+    {
+      "path": "Rule/Upstream/HuluUSA/HuluUSA.list",
+      "sha256": "f22157d76443dc274dd220418f4d0de8a69ee582a92ab3176abdbeb77cf990f9",
+      "bytes": 1678
+    },
+    {
+      "path": "Rule/Upstream/HunanTV/HunanTV.list",
+      "sha256": "b842ca6308c8425e8f0492c4b516aecc93cb5b84f417bc33c3b6d51e9e0cda3c",
+      "bytes": 361
+    },
+    {
+      "path": "Rule/Upstream/Hupu/Hupu.list",
+      "sha256": "db912838438d1e9eb268d29274f0ff7737a232fcf1759d791adccab96a3101b1",
+      "bytes": 468
+    },
+    {
+      "path": "Rule/Upstream/IBM/IBM.list",
+      "sha256": "f5cc63593a6fd733439f1179b6e385c5d8378f19802df26b0bc3fe4fc5fae59d",
+      "bytes": 446
+    },
+    {
+      "path": "Rule/Upstream/ICBC/ICBC.list",
+      "sha256": "24021bd1f25cf7457211197ba9ee8d60e4607d2a72d7fda6686c6616d89234c8",
+      "bytes": 1701
+    },
+    {
+      "path": "Rule/Upstream/IKEA/IKEA.list",
+      "sha256": "d86fb645253e8e7843a6b8cc11aea47e9147848bbb805d81651a380f0a25caf7",
+      "bytes": 2410
+    },
+    {
+      "path": "Rule/Upstream/IMDB/IMDB.list",
+      "sha256": "421ee468eb8b976a3d86ddc7e29f73715405305e37dd92aaed9e1b253f4e73ae",
+      "bytes": 259
+    },
+    {
+      "path": "Rule/Upstream/IPTVMainland/IPTVMainland.list",
+      "sha256": "678d826470ff4749f74cf33f49c2dc2f4dde047f83df82196cbee95aecda1565",
+      "bytes": 74641
+    },
+    {
+      "path": "Rule/Upstream/IPTVMainland/IPTVMainland_Resolve.list",
+      "sha256": "7118302fe96b37994ccefee75eb3e4948446ecb596d1fa84d7f7946e1c24dcf9",
+      "bytes": 60264
+    },
+    {
+      "path": "Rule/Upstream/IPTVOther/IPTVOther.list",
+      "sha256": "013cf37467c3410660b619d420c200d24d308db14a5f1d2ccda7d61aeb5172e0",
+      "bytes": 18877
+    },
+    {
+      "path": "Rule/Upstream/IPTVOther/IPTVOther_All.list",
+      "sha256": "333a701fafdaa4b509e10a00b28db08f03144e1fb55c5634b6cdd52ce65ba68b",
+      "bytes": 85444
+    },
+    {
+      "path": "Rule/Upstream/IPTVOther/IPTVOther_All_No_Resolve.list",
+      "sha256": "c18ccd6fed85a8e6d213cbc998166a53d05cfea769748af83297f8170efc1557",
+      "bytes": 91109
+    },
+    {
+      "path": "Rule/Upstream/IPTVOther/IPTVOther_Domain.list",
+      "sha256": "d0fe0fd6222ff65551325bf81c9ec6865817d474ce86b3a1311b4e9338b42bb6",
+      "bytes": 56311
+    },
+    {
+      "path": "Rule/Upstream/IPTVOther/IPTVOther_Resolve.list",
+      "sha256": "f3f04f425382b2e38ed60244cb0bf0a6925499ad932c259cb77ae1a7c2b38aef",
+      "bytes": 13212
+    },
+    {
+      "path": "Rule/Upstream/ITV/ITV.list",
+      "sha256": "35792fb7d1be1e9585b8b5b9a76542b3b0560c567036540f915d8f77ded25914",
+      "bytes": 288
+    },
+    {
+      "path": "Rule/Upstream/Identrust/Identrust.list",
+      "sha256": "7865956f3b9d3b7a88cac0644075c0c3e0818428e0f9c0436fa072a507cdd33b",
+      "bytes": 244
+    },
+    {
+      "path": "Rule/Upstream/Imgur/Imgur.list",
+      "sha256": "75f527e8d9686b4c417c14e0c5828c0944491e609a7832581156be97f0927a8a",
+      "bytes": 205
+    },
+    {
+      "path": "Rule/Upstream/Instagram/Instagram.list",
+      "sha256": "65f28f9253b0dbb2a81485c788537896a0817766685e7bd91b2f90ec7aa19548",
+      "bytes": 287
+    },
+    {
+      "path": "Rule/Upstream/Intel/Intel.list",
+      "sha256": "f66b108b5a042004cded2b0d9fce240a9fb405a1331850c8a1e2364ecab988fa",
+      "bytes": 7125
+    },
+    {
+      "path": "Rule/Upstream/Intercom/Intercom.list",
+      "sha256": "64fb09375d074917ff69d1e3c37823b47399e50bf5ac31afc45cfcc922109d2d",
+      "bytes": 273
+    },
+    {
+      "path": "Rule/Upstream/JOOX/JOOX.list",
+      "sha256": "376156c0686ca34aae1230187ad15d2714bd66f3994c3a04f54ca2e6705b3f92",
+      "bytes": 462
+    },
+    {
+      "path": "Rule/Upstream/JOOX/JOOX_Resolve.list",
+      "sha256": "3ce329bb4b7d57e9ab0622d781d13e624b52c63cb068e41df15296d413912076",
+      "bytes": 440
+    },
+    {
+      "path": "Rule/Upstream/Japonx/Japonx.list",
+      "sha256": "f736266f911fcf4c7c6365b44265d2b103eb16f5ef3fb48795efce30f5f3dff2",
+      "bytes": 423
+    },
+    {
+      "path": "Rule/Upstream/Jetbrains/Jetbrains.list",
+      "sha256": "6fe78152c27a6639d3ebf60be2618b07c74bda2d1eb4f7658205253d3b13d9c7",
+      "bytes": 546
+    },
+    {
+      "path": "Rule/Upstream/Jfrog/Jfrog.list",
+      "sha256": "0e020b83fc7c0043ee9f211c06ad7ef6c1f3080a821d184167cb72952edc2022",
+      "bytes": 228
+    },
+    {
+      "path": "Rule/Upstream/JiGuangTuiSong/JiGuangTuiSong.list",
+      "sha256": "47158a4fa3ec5087ff4f08cd885f12c7c43e2d9658a75ed1fbb8f4ca9c743ed8",
+      "bytes": 595
+    },
+    {
+      "path": "Rule/Upstream/JianGuoYun/JianGuoYun.list",
+      "sha256": "5e03ac27a1a78b374fedf8494f8725d5415e686de1797eb149152fcc1f7cee0a",
+      "bytes": 299
+    },
+    {
+      "path": "Rule/Upstream/JianShu/JianShu.list",
+      "sha256": "03b4ec5003f1b970414d03e0fff9a9bb8d1f5eb45b050aea26901ee3c8f38883",
+      "bytes": 291
+    },
+    {
+      "path": "Rule/Upstream/JinJiangWenXue/JinJiangWenXue.list",
+      "sha256": "8592bf2b627a50e9a5ef5bea114045d8d1b29adb9052c850fe4f4fc8df39fbb9",
+      "bytes": 382
+    },
+    {
+      "path": "Rule/Upstream/JingDong/JingDong.list",
+      "sha256": "0b7a01784c5dfdb1a18d9051f4872c4078c6d5deb6a24f71bfe2bc06d96bb02a",
+      "bytes": 7244
+    },
+    {
+      "path": "Rule/Upstream/Jquery/Jquery.list",
+      "sha256": "11da8e5cac9187a87af07562a6965a39f5ce5202eccacf8b0df7dfc305262c07",
+      "bytes": 238
+    },
+    {
+      "path": "Rule/Upstream/Jsdelivr/Jsdelivr.list",
+      "sha256": "0cf7c277c92604d601fd87355ebebb9ee0828d98ebea6982e023c6fb06008cf2",
+      "bytes": 233
+    },
+    {
+      "path": "Rule/Upstream/JueJin/JueJin.list",
+      "sha256": "dae560d5bfb92db93210e223ed184069aa26b878d881010b46bd2439f81182ac",
+      "bytes": 576
+    },
+    {
+      "path": "Rule/Upstream/Jwplayer/Jwplayer.list",
+      "sha256": "703bc79df2604b90ebbce7042c88cf4ce6a8d9ee49285d11ca51090875015cbb",
+      "bytes": 288
+    },
+    {
+      "path": "Rule/Upstream/KKBOX/KKBOX.list",
+      "sha256": "5efa92ff7222c8859930164caebcd590911301caddfe002ac7d6e8ca269c210f",
+      "bytes": 393
+    },
+    {
+      "path": "Rule/Upstream/KKTV/KKTV.list",
+      "sha256": "e94adf9866be62d772c3ccd5377175e9c2448df08b06c2d1f29546e5f1d00bb1",
+      "bytes": 340
+    },
+    {
+      "path": "Rule/Upstream/KakaoTalk/KakaoTalk.list",
+      "sha256": "535a2ac2a9a909c04a0fa35bd8b58ec367a299259320a2dd966386bb72642fe8",
+      "bytes": 617
+    },
+    {
+      "path": "Rule/Upstream/KakaoTalk/KakaoTalk_Resolve.list",
+      "sha256": "7370206b77ed6ff11f55831959f4e3c15e2021c22a56196e0011ff51110d2710",
+      "bytes": 551
+    },
+    {
+      "path": "Rule/Upstream/Kantv/Kantv.list",
+      "sha256": "6c70668967dbdf2e81450750505749ecc3d922ff1d8806316636c4dd8c2a7c53",
+      "bytes": 177
+    },
+    {
+      "path": "Rule/Upstream/Keep/Keep.list",
+      "sha256": "36680602251af311501f8608e2f1d5307c2b9ce64c22c6a0efd1b4c7eab6dc0b",
+      "bytes": 285
+    },
+    {
+      "path": "Rule/Upstream/KingSmith/KingSmith.list",
+      "sha256": "fbcbfd1de6445e7317628da59ede6cdee149837f995730585dd2c6970aac3120",
+      "bytes": 273
+    },
+    {
+      "path": "Rule/Upstream/Kingsoft/Kingsoft.list",
+      "sha256": "dd07791eaf272b108b47c8da58e235fdc6343bc3c4cdf2866b62279633adf755",
+      "bytes": 6857
+    },
+    {
+      "path": "Rule/Upstream/KouDaiShiShang/KouDaiShiShang.list",
+      "sha256": "21a174a11f18b7626dd2c740e8f274c4aeb3744b109c987f09d0199883b72a7c",
+      "bytes": 734
+    },
+    {
+      "path": "Rule/Upstream/Ku6/Ku6.list",
+      "sha256": "9856d0771b1968d56d03cbac2a6206fe5476bbfdf6f01a64c3d9d1d98f281a48",
+      "bytes": 424
+    },
+    {
+      "path": "Rule/Upstream/KuKeMusic/KuKeMusic.list",
+      "sha256": "92dde84abf46949488e9490f8c68954da3142fd1d324193b98d5247decf8404f",
+      "bytes": 231
+    },
+    {
+      "path": "Rule/Upstream/KuaiDi100/KuaiDi100.list",
+      "sha256": "ab1bc893c061d06815357a4104b4e64ca4dc339ce1a262a026ef1ff21eb3f089",
+      "bytes": 313
+    },
+    {
+      "path": "Rule/Upstream/KuaiShou/KuaiShou.list",
+      "sha256": "ba3eeeb698c90b6fb8164cf1f49d8735ab9a1803503d2628b45342d40fb2e7a4",
+      "bytes": 19364
+    },
+    {
+      "path": "Rule/Upstream/KuangShi/KuangShi.list",
+      "sha256": "da211316bc14a6413a50f54697a90f5f0cf527b0881714f5d618a175f8adc9d3",
+      "bytes": 911
+    },
+    {
+      "path": "Rule/Upstream/KuangShi/KuangShi_Resolve.list",
+      "sha256": "72ea4b15cf704bfadd59fbf7ce6458461716cd5c6ce05427485fb5096d1620ac",
+      "bytes": 889
+    },
+    {
+      "path": "Rule/Upstream/KugouKuwo/KugouKuwo.list",
+      "sha256": "77d79b88f96a57fa005588bac7244b1f1eb52baaa8424213e26d851ef260e664",
+      "bytes": 3781
+    },
+    {
+      "path": "Rule/Upstream/KugouKuwo/KugouKuwo_Resolve.list",
+      "sha256": "15459e4c14ef073a05ee53e96a6b84e2a33be69d9b815268e8b09d7fc3e31e49",
+      "bytes": 2791
+    },
+    {
+      "path": "Rule/Upstream/LG/LG.list",
+      "sha256": "04e8622372cbdb69b34e101f55a6cf58411a12c79c7296ddd7e63e90bf85ed65",
+      "bytes": 1297
+    },
+    {
+      "path": "Rule/Upstream/LG/LG_Resolve.list",
+      "sha256": "25c8593cf5a181d6da438fea553beec3fc10c4d94984b332d246dd294f675048",
+      "bytes": 978
+    },
+    {
+      "path": "Rule/Upstream/Lan/Lan.list",
+      "sha256": "65decf7849f37cbc66cff8e1155ea1d6344c748c6ead772db2f9e9c7e6a1d546",
+      "bytes": 4861
+    },
+    {
+      "path": "Rule/Upstream/Lan/Lan_Resolve.list",
+      "sha256": "cb6ad6978cc1247e6466d2c511272848ae29e410ef91171080ba8337d2b7bcbc",
+      "bytes": 4663
+    },
+    {
+      "path": "Rule/Upstream/LanZouYun/LanZouYun.list",
+      "sha256": "b75d6f61f9b12fc8b9f0672ec35eb6ea2e5e65d3081e3e7396a3c784930e7b1e",
+      "bytes": 1092
+    },
+    {
+      "path": "Rule/Upstream/LastFM/LastFM.list",
+      "sha256": "6bef8824c291069041fb3261003aa59a3f86e09e309f1dd32b59700bb4291be0",
+      "bytes": 966
+    },
+    {
+      "path": "Rule/Upstream/LastPass/LastPass.list",
+      "sha256": "5abb1132ffb43dd6127794eab0c43c5ab015f6a605de1f91ccf3bfbb6f0e53fd",
+      "bytes": 261
+    },
+    {
+      "path": "Rule/Upstream/LeJu/LeJu.list",
+      "sha256": "cff95f1a6726c6bca93b4f2c2d62acda25807efcbec3e1ee7ecf318947f9d0a4",
+      "bytes": 662
+    },
+    {
+      "path": "Rule/Upstream/LeTV/LeTV.list",
+      "sha256": "632a74705b3e49ac584854e7d077be44f962c05f6b53e883b56db3cf31abb6d9",
+      "bytes": 491
+    },
+    {
+      "path": "Rule/Upstream/Lenovo/Lenovo.list",
+      "sha256": "f2f7cda5718c0ee063d6cc80d036d199e3236b6046f6aa525af4debe6a9a8862",
+      "bytes": 1003
+    },
+    {
+      "path": "Rule/Upstream/LiTV/LiTV.list",
+      "sha256": "5a590268414bfdefd3060ad7720b9bc25b6f7a76156ec9ded15315328ef69e7a",
+      "bytes": 233
+    },
+    {
+      "path": "Rule/Upstream/LianMeng/LianMeng.list",
+      "sha256": "36c8b877aeef74c5e90e938d47c2c95d89d1e4365c002e8f43939e6918c23d21",
+      "bytes": 498
+    },
+    {
+      "path": "Rule/Upstream/Limelight/Limelight.list",
+      "sha256": "cef04989e622196c1df7f01bf23965852d8680d477705b07aeaa1242f2646cb7",
+      "bytes": 366
+    },
+    {
+      "path": "Rule/Upstream/Line/Line.list",
+      "sha256": "d13bdaa601bdf37d20dfaf04c2561a06eb9067a81fcd407183730272a0264c92",
+      "bytes": 938
+    },
+    {
+      "path": "Rule/Upstream/Line/Line_Resolve.list",
+      "sha256": "c3c1cc41dbab56347256a2f0a35fcd70b1e8c2595a140af8f4c12a5968e4942f",
+      "bytes": 762
+    },
+    {
+      "path": "Rule/Upstream/LineTV/LineTV.list",
+      "sha256": "9536a6445529fb8d2bffd4786058670cb24cc9871013c9bc9fa2fea2e63e7f9c",
+      "bytes": 520
+    },
+    {
+      "path": "Rule/Upstream/Linguee/Linguee.list",
+      "sha256": "ac3ca2df808f5ddff607f8c925c9828d37b0a823e64574d31b3e6f70a47ec2f9",
+      "bytes": 206
+    },
+    {
+      "path": "Rule/Upstream/LinkedIn/LinkedIn.list",
+      "sha256": "660570f6613cc81ad4c590b18550a5235b1e7636ecc3ef3f90b8edf600f30134",
+      "bytes": 509
+    },
+    {
+      "path": "Rule/Upstream/Linux/Linux.list",
+      "sha256": "18ddba5aff94885281e52c7c5b168ccd7bfc967cd5d666254440e8e1b20e2308",
+      "bytes": 178
+    },
+    {
+      "path": "Rule/Upstream/LivePerson/LivePerson.list",
+      "sha256": "86101462e9a415c79b77e2b144351cb17949e6b1f56cf2ac7eca9aefc3dcce2e",
+      "bytes": 245
+    },
+    {
+      "path": "Rule/Upstream/Logitech/Logitech.list",
+      "sha256": "e50e0b7b4ce0bc932cd544f3487a66d4ecd6ec8ac8e4c9d5872368183e471cfe",
+      "bytes": 409
+    },
+    {
+      "path": "Rule/Upstream/LondonReal/LondonReal.list",
+      "sha256": "f2d14f60ec57178e85e2f9d19f1c047178aeb8747068ce8ab371f3f32ee6d240",
+      "bytes": 220
+    },
+    {
+      "path": "Rule/Upstream/LuDaShi/LuDaShi.list",
+      "sha256": "e866f5d246fffda374da01c87f8594be3c1f57b26e9d450b040a7008a7efdcc6",
+      "bytes": 629
+    },
+    {
+      "path": "Rule/Upstream/LvMiLianChuang/LvMiLianChuang.list",
+      "sha256": "ce24c36c035ed618fc8d7915f8416fb96963477e20975341653f7bda1cd044bb",
+      "bytes": 326
+    },
+    {
+      "path": "Rule/Upstream/MEGA/MEGA.list",
+      "sha256": "6f54cec122c7dd905be4dc66c3b6f5981b48ccb3d4c4867fcac6a915e2caf869",
+      "bytes": 661
+    },
+    {
+      "path": "Rule/Upstream/MEGA/MEGA_Resolve.list",
+      "sha256": "b1096b2842df40d742c6677dbb533e84f6d85b3537f36ae1c509f07b18779d10",
+      "bytes": 551
+    },
+    {
+      "path": "Rule/Upstream/MIUIPrivacy/MIUIPrivacy.list",
+      "sha256": "28f3b3ed094e97daf2e6943fb4b29df9e6acdeda6b8c2daed7ee2539cac62a65",
+      "bytes": 978
+    },
+    {
+      "path": "Rule/Upstream/MOMOShop/MOMOShop.list",
+      "sha256": "5395257b86c3c19fcafb3f125bc1fbab0ea409d79a9d426eb0d299c2ab551915",
+      "bytes": 266
+    },
+    {
+      "path": "Rule/Upstream/MOOMusic/MOOMusic.list",
+      "sha256": "2b17b9e4248cef19918b4c9da7c1fc12e8b16ca4186094aea5fd90a5e6fe8db1",
+      "bytes": 186
+    },
+    {
+      "path": "Rule/Upstream/MOOV/MOOV.list",
+      "sha256": "cc2f1d423773dc0b0f73bb8a20668d92eb67b69d886eb30fb45f9dd17b0b068b",
+      "bytes": 201
+    },
+    {
+      "path": "Rule/Upstream/Mail/Mail.list",
+      "sha256": "1b04212722906e5f1019dc151e89c23a8bee433f35d488837ddca08906a69706",
+      "bytes": 498
+    },
+    {
+      "path": "Rule/Upstream/Mailru/Mailru.list",
+      "sha256": "31d09b5503e16139d3e36566fe128dda25dcc20bf5455ea13018b5807b24dbb9",
+      "bytes": 226
+    },
+    {
+      "path": "Rule/Upstream/Majsoul/Majsoul.list",
+      "sha256": "c2e8f32c11f389884bacce292328b6b9070010f7e6eb44f35566c4cc929b8e44",
+      "bytes": 578
+    },
+    {
+      "path": "Rule/Upstream/Manorama/Manorama.list",
+      "sha256": "798e7160694fe8ba3dc1a8f5bc7d719127d7d01fa69b808a42699e6e72020a45",
+      "bytes": 512
+    },
+    {
+      "path": "Rule/Upstream/Maocloud/Maocloud.list",
+      "sha256": "ed58dc8653511278e929e9336afefe94ad43124998924079eed7a5add774e0e7",
+      "bytes": 241
+    },
+    {
+      "path": "Rule/Upstream/Marketing/Marketing.list",
+      "sha256": "77f5b921c87a81d6bd2320844589096aed867882080aab449f628a5fa861c6be",
+      "bytes": 1795
+    },
+    {
+      "path": "Rule/Upstream/McDonalds/McDonalds.list",
+      "sha256": "19897739166ffe3e890d54b6a13c7c43df508c53b706fbdfd9a78447aebbcd8f",
+      "bytes": 935
+    },
+    {
+      "path": "Rule/Upstream/MeWatch/MeWatch.list",
+      "sha256": "e26383f76bc53591645d2d9d7435f0ec46715da2cc05f863e180cd1c694ec04b",
+      "bytes": 181
+    },
+    {
+      "path": "Rule/Upstream/MeiTu/MeiTu.list",
+      "sha256": "a9b53b397e0221f5ea495d9572b0ddb7a12e27411841957494f5da33f20b7abc",
+      "bytes": 259
+    },
+    {
+      "path": "Rule/Upstream/MeiTuan/MeiTuan.list",
+      "sha256": "5c621dd07aa573761eb712c220631047a3c284297dc8d1830dfa62dab7b2d7ca",
+      "bytes": 334
+    },
+    {
+      "path": "Rule/Upstream/MeiZu/MeiZu.list",
+      "sha256": "d151eaf7a18cb884df25e72bafbd3d26ff48e114a449fd18b4a069ff313680dc",
+      "bytes": 528
+    },
+    {
+      "path": "Rule/Upstream/MiWu/MiWu.list",
+      "sha256": "5b45be0c5062ea969083f597c2795786ea28b7a7e6008f68c6d9bfad4481dfe2",
+      "bytes": 224
+    },
+    {
+      "path": "Rule/Upstream/Microsoft/Microsoft.list",
+      "sha256": "a2854b28dc9f903a64933c74fff5b50166e9bbebc70fdfce18c592f75793ff14",
+      "bytes": 20605
+    },
+    {
+      "path": "Rule/Upstream/MicrosoftEdge/MicrosoftEdge.list",
+      "sha256": "a5225ab53e53abf024ae88047e38e3e0ae267577f2e64e0392769d800264ac26",
+      "bytes": 280
+    },
+    {
+      "path": "Rule/Upstream/Migu/Migu.list",
+      "sha256": "df237864b7cf948193cc54e627cd9c04e65e38f63f9d980683b08640d898a992",
+      "bytes": 314
+    },
+    {
+      "path": "Rule/Upstream/MingLueZhaoHui/MingLueZhaoHui.list",
+      "sha256": "60a6f013c2433a69371c47405380e0cc6be0e7fe011ba534b6267e4d705a8184",
+      "bytes": 632
+    },
+    {
+      "path": "Rule/Upstream/Mogujie/Mogujie.list",
+      "sha256": "000ceddc0b2438eb8b968da2edb03f48cc12fbb03939bcfd70b33ee1035c277d",
+      "bytes": 421
+    },
+    {
+      "path": "Rule/Upstream/Mojitianqi/Mojitianqi.list",
+      "sha256": "5f41ec035fff440f0c3893c7bde7e53a1bb98f7c8e2a19bb4640a5b393388413",
+      "bytes": 339
+    },
+    {
+      "path": "Rule/Upstream/Movefree/Movefree.list",
+      "sha256": "870d9f727ebd96f35df52d80f4c73e1f3b5c42e0767ab8dace73ecc0aae83e04",
+      "bytes": 380
+    },
+    {
+      "path": "Rule/Upstream/Mozilla/Mozilla.list",
+      "sha256": "91a5c5801b3be84889146d181f1b625917f045ee392e44db691dfad51eaea086",
+      "bytes": 792
+    },
+    {
+      "path": "Rule/Upstream/My5/My5.list",
+      "sha256": "90c71233907820d0c7c0fe4d4ab830c19bd4b32030a4fcb1ca277f004d407959",
+      "bytes": 281
+    },
+    {
+      "path": "Rule/Upstream/NBC/NBC.list",
+      "sha256": "b96e35745cc858e265c0a750ef77dc8f975d4aed417c3709e4748568f0d3d0a2",
+      "bytes": 773
+    },
+    {
+      "path": "Rule/Upstream/NGA/NGA.list",
+      "sha256": "acf705830496c010eb93ac41e13e0caf65200e5dcc2059bf975e46ea783f061c",
+      "bytes": 236
+    },
+    {
+      "path": "Rule/Upstream/NGAA/NGAA.list",
+      "sha256": "54e89c37303c84719cc55ed499a8be909c947ebc8e9dcc341aa10bd36bdbf522",
+      "bytes": 913
+    },
+    {
+      "path": "Rule/Upstream/NTPService/NTPService.list",
+      "sha256": "48df64a9648e3551b357991a01f9577c89d6fa895ea96fed728eb10264ed3a02",
+      "bytes": 2789
+    },
+    {
+      "path": "Rule/Upstream/NYPost/NYPost.list",
+      "sha256": "54d8414b836df4088a7e0fdf4b222076d0765e540ed2ed047bc47ae7b17d56ea",
+      "bytes": 239
+    },
+    {
+      "path": "Rule/Upstream/NYTimes/NYTimes.list",
+      "sha256": "db5f912210d562f363e4a5b7e64e76b8594ac317ecedbba88bea9d206b983761",
+      "bytes": 628
+    },
+    {
+      "path": "Rule/Upstream/NaSDDNS/NaSDDNS.list",
+      "sha256": "56065216e4c4f4f5fc33cc61c9a519139c8a14f4f4de4228fc2e18fd06ebc4dc",
+      "bytes": 1566
+    },
+    {
+      "path": "Rule/Upstream/NaSDDNS/NaSDDNS_Resolve.list",
+      "sha256": "c7c30fa2cdbcc3721be3e420cf4286d79f2194ecf8ad26cabf8566b4a6baa17c",
+      "bytes": 1423
+    },
+    {
+      "path": "Rule/Upstream/Naver/Naver.list",
+      "sha256": "1dbf7ac6c0446089fe6acce7c2772ba468c212136afc54d64c16defe8446b537",
+      "bytes": 2167
+    },
+    {
+      "path": "Rule/Upstream/Naver/Naver_Resolve.list",
+      "sha256": "d46fa42a6f894788895658924a5dcf2ebe4d55c6b7ed9a2d7bc4764bafb7c8ad",
+      "bytes": 1804
+    },
+    {
+      "path": "Rule/Upstream/NaverTV/NaverTV.list",
+      "sha256": "b2b6c6c8c50821c2301cc8a7a025faa32b7841746ba8413e6aa4f014e039eacc",
+      "bytes": 251
+    },
+    {
+      "path": "Rule/Upstream/NetEase/NetEase.list",
+      "sha256": "4e4829591f7cb055bfe21c3c4ee2898c0849dc23f154eca7f5292da906611a9a",
+      "bytes": 4286
+    },
+    {
+      "path": "Rule/Upstream/NetEase/NetEase_Resolve.list",
+      "sha256": "25250c444e1aefd7f414dbeb83d80bd06c8ffc92acc03009c5cfcf92154a05be",
+      "bytes": 3978
+    },
+    {
+      "path": "Rule/Upstream/NetEaseMusic/NetEaseMusic.list",
+      "sha256": "0e3034b7fd6598cf8165f143510bcfe6683b3ceffb03e46fe24cc434cd0df3c0",
+      "bytes": 1238
+    },
+    {
+      "path": "Rule/Upstream/NetEaseMusic/NetEaseMusic_Resolve.list",
+      "sha256": "03c51568ddeda0f7a12527f5dbc36e779d8e50c11b29690d47e4ae43fcc58021",
+      "bytes": 1040
+    },
+    {
+      "path": "Rule/Upstream/Netflix/Netflix.list",
+      "sha256": "aa03f015949e8f6f981d90a7d8b1acf7e88472ee48601632bd964b0bb740f8aa",
+      "bytes": 40424
+    },
+    {
+      "path": "Rule/Upstream/Netflix/Netflix_Resolve.list",
+      "sha256": "14ea35ed4211e4959ee6fe81902954df60265bf12adc4602d92d354faf33cdc0",
+      "bytes": 28115
+    },
+    {
+      "path": "Rule/Upstream/Niconico/Niconico.list",
+      "sha256": "88c2662a8ebcffaf6d6a5b92ebbc1368eb13dc87e998cb4d29ba8f5a23e5f8bd",
+      "bytes": 419
+    },
+    {
+      "path": "Rule/Upstream/Nike/Nike.list",
+      "sha256": "2232e1431f24dadad985a7cc6d28b32d45b567061a54ab0a5c5d965769624c9c",
+      "bytes": 452
+    },
+    {
+      "path": "Rule/Upstream/Nikkei/Nikkei.list",
+      "sha256": "20ff076e4232a0a0a5655026105b9c23cc6433879fd8abd2afe70a1ac884a2ac",
+      "bytes": 231
+    },
+    {
+      "path": "Rule/Upstream/Nintendo/Nintendo.list",
+      "sha256": "ca3cf3ea5051ed220c255fbccbdd93e477f1c558e26ada6bf3dbcc2ba0487da2",
+      "bytes": 4120
+    },
+    {
+      "path": "Rule/Upstream/Nintendo/Nintendo_Resolve.list",
+      "sha256": "b633ac9cc413aa18f5f2f0d056fb86b48faecbf1e71c1a27b29537666e50c854",
+      "bytes": 4109
+    },
+    {
+      "path": "Rule/Upstream/NivodTV/NivodTV.list",
+      "sha256": "b8b31a0b6fffeb574af5a41556c8bf571050682c2585d7972054c9af0dc5488f",
+      "bytes": 365
+    },
+    {
+      "path": "Rule/Upstream/Notion/Notion.list",
+      "sha256": "3466f69e742780c236fa45fa0f1ce83b80d176368b902d203017319b2554846c",
+      "bytes": 341
+    },
+    {
+      "path": "Rule/Upstream/NowE/NowE.list",
+      "sha256": "88ee8bfd25d4d04a9c0665acf1b35de8d0847e32d639aae1c585082493515db3",
+      "bytes": 205
+    },
+    {
+      "path": "Rule/Upstream/Npmjs/Npmjs.list",
+      "sha256": "f34fcf2718fd12aacc5b7922a0d1bef2cefc6904e70fb3b939dbe8c288f5f5cd",
+      "bytes": 230
+    },
+    {
+      "path": "Rule/Upstream/Nvidia/Nvidia.list",
+      "sha256": "c4a1a0ff25a613cc4602cca0e9256d6b453b311fb8c9c915412067ce4d6cb2bd",
+      "bytes": 1830
+    },
+    {
+      "path": "Rule/Upstream/OKX/OKX.list",
+      "sha256": "eee1945a601da063462eb0cb2784601513a180bf5ab78377904e4689573bfc65",
+      "bytes": 222
+    },
+    {
+      "path": "Rule/Upstream/OP/OP.list",
+      "sha256": "d68e069da1faa776832d33304b77b6191538f72ce5d50cc6e2fcfcbf3527525c",
+      "bytes": 211
+    },
+    {
+      "path": "Rule/Upstream/OPPO/OPPO.list",
+      "sha256": "21595ba88730414cb5295a2113c253b61b1ddc473c1d8a1f4b3adcdfc7e83061",
+      "bytes": 1660
+    },
+    {
+      "path": "Rule/Upstream/Olevod/Olevod.list",
+      "sha256": "5b6e9c829b22067f02a8053ca96d130a5582808dbe440e43009abd7b9033f8f3",
+      "bytes": 297
+    },
+    {
+      "path": "Rule/Upstream/OneDrive/OneDrive.list",
+      "sha256": "c13255b88e542f92ce26a8cca4367adcea81f9f04e00a41d03dc4869caa070ea",
+      "bytes": 735
+    },
+    {
+      "path": "Rule/Upstream/OnePlus/OnePlus.list",
+      "sha256": "1839e774f66d7ef71ad89036741f90aabe2d492579c4c21e33ce9cd0b800daff",
+      "bytes": 345
+    },
+    {
+      "path": "Rule/Upstream/OpenAI/OpenAI.list",
+      "sha256": "6f4047cdbf6953cf5d9b38c4ccd6da7bc6f1acb91b7a87134f25d5b8f5d2408b",
+      "bytes": 1353
+    },
+    {
+      "path": "Rule/Upstream/OpenAI/OpenAI_Resolve.list",
+      "sha256": "f2b22eb5ff92faa0d19cd927392e0486be346244143d058a2e865cca272e2665",
+      "bytes": 1320
+    },
+    {
+      "path": "Rule/Upstream/Opera/Opera.list",
+      "sha256": "257f3d0c9876e830226e74e704b9754915475610a6328c4ccc86bf1fbed7edb2",
+      "bytes": 860
+    },
+    {
+      "path": "Rule/Upstream/Opera/Opera_Resolve.list",
+      "sha256": "0b291dfd874e7892a8947e7069ae24b1776c70767926a2b268aec8a3046e58bf",
+      "bytes": 772
+    },
+    {
+      "path": "Rule/Upstream/Oracle/Oracle.list",
+      "sha256": "b564015e25104e50ea0b73ceee10fdf828905b4b572e5c80fa3c24d06e714407",
+      "bytes": 902
+    },
+    {
+      "path": "Rule/Upstream/Oreilly/Oreilly.list",
+      "sha256": "b9dcd0b634a4f89c527581a9c6c6e468c8fb352688399473f5c412764bde6093",
+      "bytes": 316
+    },
+    {
+      "path": "Rule/Upstream/Origin/Origin.list",
+      "sha256": "7b262ecc55ca8740f0d78636d948989a1922edd35dadc44384e0eadeac19ba70",
+      "bytes": 370
+    },
+    {
+      "path": "Rule/Upstream/OuPeng/OuPeng.list",
+      "sha256": "296dcc22ae5cdb7287f7793d40888070b9169a8bcea3ddda34ed271c51a1fb13",
+      "bytes": 389
+    },
+    {
+      "path": "Rule/Upstream/Overcast/Overcast.list",
+      "sha256": "35aec7ee9c2c60a4b68506b1952acf19f604290a34705d785924257d03f94775",
+      "bytes": 220
+    },
+    {
+      "path": "Rule/Upstream/Overwatch/Overwatch.list",
+      "sha256": "d619987cbdcb8305232beb3add648c148b0e3195c2a612c9a5de20fa798e7a49",
+      "bytes": 405
+    },
+    {
+      "path": "Rule/Upstream/Overwatch/Overwatch_Resolve.list",
+      "sha256": "4798f4abd7ca1c9e322d1357f2f71f99468296cb8b595abe85ab571fbe3960e3",
+      "bytes": 328
+    },
+    {
+      "path": "Rule/Upstream/PBS/PBS.list",
+      "sha256": "53a6a203952161f85e5ea59c77c71495eac0ed77272d96944b09b7e5e8894e0d",
+      "bytes": 206
+    },
+    {
+      "path": "Rule/Upstream/PCCW/PCCW.list",
+      "sha256": "22a1812d065f7bafb9cd753411071385c01d7d2ac263b61833bd3afacfad078f",
+      "bytes": 845
+    },
+    {
+      "path": "Rule/Upstream/PChome/PChome.list",
+      "sha256": "be85af59135d52263375aa13a1dfd7d3368c3685d694892ef5a630fe7f14d033",
+      "bytes": 302
+    },
+    {
+      "path": "Rule/Upstream/PChomeTW/PChomeTW.list",
+      "sha256": "e00d05ad8aa96d33e6a735d576616e96541b80020841afc43765439975269d60",
+      "bytes": 304
+    },
+    {
+      "path": "Rule/Upstream/PPTV/PPTV.list",
+      "sha256": "19c36b4fb0d39616f3d700e46198c409a4e6873bb1a9b06b73268ea09982a538",
+      "bytes": 630
+    },
+    {
+      "path": "Rule/Upstream/PSBC/PSBC.list",
+      "sha256": "c7ccf44827c56b48bd57b07c081b1765d6719473f5c5fba1b577126e8758955e",
+      "bytes": 228
+    },
+    {
+      "path": "Rule/Upstream/Pandora/Pandora.list",
+      "sha256": "50e60387d7f3eb545a1a52c9a2c7b46e7e2dce5a653c01c1d934bcd5b5150337",
+      "bytes": 241
+    },
+    {
+      "path": "Rule/Upstream/PandoraTV/PandoraTV.list",
+      "sha256": "c16f3093057447445d573f12337c9b70aa9d0c379fafef69eea626d1267797c2",
+      "bytes": 210
+    },
+    {
+      "path": "Rule/Upstream/ParamountPlus/ParamountPlus.list",
+      "sha256": "cac7d967e7bcb6ccb080451e43b6de264706f749ee1195446ef07d3ccd38e2a3",
+      "bytes": 486
+    },
+    {
+      "path": "Rule/Upstream/Patreon/Patreon.list",
+      "sha256": "063df1cd0590be44eb9656699966aa0b92c2deadfcf50288209e2870136ad291",
+      "bytes": 312
+    },
+    {
+      "path": "Rule/Upstream/PayPal/PayPal.list",
+      "sha256": "4ffb6f94d2f1eff835c24b533c3d1d6e0c5a4cfbc32740fa9c32315ae218fd18",
+      "bytes": 7859
+    },
+    {
+      "path": "Rule/Upstream/Peacock/Peacock.list",
+      "sha256": "9a76bed21587550edaa62b4b745c996fb4b901aa9bd12c4b9de01c6a3c16f61b",
+      "bytes": 226
+    },
+    {
+      "path": "Rule/Upstream/Picacg/Picacg.list",
+      "sha256": "98b836aeeaefc48df1f634bd4ee9c006ebbf079d0daf1a9cbefde4c39775ab3e",
+      "bytes": 420
+    },
+    {
+      "path": "Rule/Upstream/Picsee/Picsee.list",
+      "sha256": "e5c831fc34a659708ba6feff3f215e36b4a86576902c10df889ba446bb55d74c",
+      "bytes": 291
+    },
+    {
+      "path": "Rule/Upstream/PikPak/PikPak.list",
+      "sha256": "4dd4d257fd99d14189bcd33e2aa771e009522b646266607d1ed367f706d72d7b",
+      "bytes": 418
+    },
+    {
+      "path": "Rule/Upstream/Pinduoduo/Pinduoduo.list",
+      "sha256": "fcddc414628d2a336b6ef3394eae6d17d6588ad0043ce60486b2c31be57291d0",
+      "bytes": 239
+    },
+    {
+      "path": "Rule/Upstream/PingAn/PingAn.list",
+      "sha256": "bf41e9854c272fa6bafeedf46e57bc95667682e1c1c2446e69d37c771fd11a97",
+      "bytes": 894
+    },
+    {
+      "path": "Rule/Upstream/Pinterest/Pinterest.list",
+      "sha256": "fec5616657771b81c750c5be622ae206a4ce2cc8e16c8a5debd53826ea575df3",
+      "bytes": 794
+    },
+    {
+      "path": "Rule/Upstream/Pixiv/Pixiv.list",
+      "sha256": "c8d9cce7aa65eeb4369e32191b9a4cf3c5457ecdb7f7e68864b3dd69f4b3ae4d",
+      "bytes": 346
+    },
+    {
+      "path": "Rule/Upstream/Pixnet/Pixnet.list",
+      "sha256": "40412085b70221ceac2702f904c86db2117a672ea5ab92bfe314aa695eca8ab2",
+      "bytes": 387
+    },
+    {
+      "path": "Rule/Upstream/PlayStation/PlayStation.list",
+      "sha256": "aeb304ee9340e07a835271a9688206d9426007f1efc3b15735fe3cbcdf4f8864",
+      "bytes": 300
+    },
+    {
+      "path": "Rule/Upstream/PotatoChat/PotatoChat.list",
+      "sha256": "b21f859af8875c8de592996f629cbc671274eb0ac6135838693f7d1551bef907",
+      "bytes": 256
+    },
+    {
+      "path": "Rule/Upstream/PotatoChat/PotatoChat_Resolve.list",
+      "sha256": "74d84f8877ac90b7945616d5e7463c06d42833e2d73a1d6b220e395b4d11f6f6",
+      "bytes": 223
+    },
+    {
+      "path": "Rule/Upstream/PrimeVideo/PrimeVideo.list",
+      "sha256": "4f957e0888cc89f61b3f04402282f50a5cf11d4bde7240d2b330bc9e1ba6ca46",
+      "bytes": 749
+    },
+    {
+      "path": "Rule/Upstream/Privacy/Privacy.list",
+      "sha256": "a29ccca1b7052f6fc28981646d3bb50daaee1ade27869a2f01e695d0c8d27320",
+      "bytes": 821
+    },
+    {
+      "path": "Rule/Upstream/Privacy/Privacy_All.list",
+      "sha256": "351b5893efaec15521a3edff0be886a955affe013ddd670971fe95131540d96a",
+      "bytes": 1445065
+    },
+    {
+      "path": "Rule/Upstream/Privacy/Privacy_All_No_Resolve.list",
+      "sha256": "b53416ba6a7c5779927068d7e958d624b293e7b09b4300496a4aedc482358703",
+      "bytes": 1445186
+    },
+    {
+      "path": "Rule/Upstream/Privacy/Privacy_Domain.list",
+      "sha256": "8db209a7febb64e2aed581c788f206454231e3a1d0445ad4199f7443a0e6a2c1",
+      "bytes": 925782
+    },
+    {
+      "path": "Rule/Upstream/Privacy/Privacy_Resolve.list",
+      "sha256": "6e017b8e3285fca49a1152360ee5783b0e890d06ae19aed95e7a90112d8109ad",
+      "bytes": 700
+    },
+    {
+      "path": "Rule/Upstream/PrivateTracker/PrivateTracker.list",
+      "sha256": "910ad846c9a866e523372d02dd8d9518fa96256f337f19d34174c5d07699397f",
+      "bytes": 6834
+    },
+    {
+      "path": "Rule/Upstream/PrivateTracker/PrivateTracker_Resolve.list",
+      "sha256": "5553fbc2121e6e84027d6554768b5660469fdda55f0756aa2f5d140c1579dbcd",
+      "bytes": 6801
+    },
+    {
+      "path": "Rule/Upstream/Protonmail/Protonmail.list",
+      "sha256": "77b95cce917009ad887266d2d30226c8ce55282f90db1b2fc65ce20cc8a283d4",
+      "bytes": 291
+    },
+    {
+      "path": "Rule/Upstream/Proxy/Proxy.list",
+      "sha256": "15d02f09a6b3271a23c3e959626a06d45cc24abb04f87fc5e16c98fbaa474844",
+      "bytes": 4494
+    },
+    {
+      "path": "Rule/Upstream/Proxy/Proxy_All.list",
+      "sha256": "aa996c99c950a8fa4b26028fbd84651ac99fe7578d1caaf85fa5df262528fbc3",
+      "bytes": 189822
+    },
+    {
+      "path": "Rule/Upstream/Proxy/Proxy_All_No_Resolve.list",
+      "sha256": "78c561b6900e08b8aaaceb76bac350731d1deadbffb4875d7fae29b6abd031c1",
+      "bytes": 190922
+    },
+    {
+      "path": "Rule/Upstream/Proxy/Proxy_Domain.list",
+      "sha256": "441b40e8644ebd93fcc1fedd66a8619d7ebef159c340c79f29fbde43686146c5",
+      "bytes": 97552
+    },
+    {
+      "path": "Rule/Upstream/Proxy/Proxy_Resolve.list",
+      "sha256": "16b194ecb04b8fe1ba8c26ee71066d9becc4442127357e2fae0afe04f11691f1",
+      "bytes": 3394
+    },
+    {
+      "path": "Rule/Upstream/ProxyLite/ProxyLite.list",
+      "sha256": "2d825cc36be246ebb5c60c87a800fab0f5e3b085c1c02f3f6f70d34400d4a5bf",
+      "bytes": 27427
+    },
+    {
+      "path": "Rule/Upstream/ProxyLite/ProxyLite_Resolve.list",
+      "sha256": "29f00c1a0b84707aa6987f3c63309ed334d27044ca57c2aaca3a0a93f5c00cb5",
+      "bytes": 26404
+    },
+    {
+      "path": "Rule/Upstream/Pubmatic/Pubmatic.list",
+      "sha256": "721f84587f1571c2fa1ce6616511fe7d81448aa72a3d18fbb8885ce69c4128e2",
+      "bytes": 188
+    },
+    {
+      "path": "Rule/Upstream/Purikonejp/Purikonejp.list",
+      "sha256": "79b96398402828b0c0aa1d1a51b52d21fc56717519b9594218e93382f36dadd1",
+      "bytes": 288
+    },
+    {
+      "path": "Rule/Upstream/Python/Python.list",
+      "sha256": "f4381f7f548cace7fd7092580d40ce8fa1de51737e892c84ac8c9ed32632e235",
+      "bytes": 302
+    },
+    {
+      "path": "Rule/Upstream/QiNiuYun/QiNiuYun.list",
+      "sha256": "40b533c52442ce4dc124e0704aaaea3abcc57c4a887523cfe95207091400cbe6",
+      "bytes": 1547
+    },
+    {
+      "path": "Rule/Upstream/QingCloud/QingCloud.list",
+      "sha256": "280e940ea0ea45ff2f7a12f2b71ec555a64a3b7484ac67a274324f00e970c2eb",
+      "bytes": 500
+    },
+    {
+      "path": "Rule/Upstream/Qobuz/Qobuz.list",
+      "sha256": "712a12944a96b4321cc11527e371483e461efb0cc9a3f4dfb1e2d13cf5c82ed0",
+      "bytes": 973
+    },
+    {
+      "path": "Rule/Upstream/Qobuz/Qobuz_Resolve.list",
+      "sha256": "63c655bad515dc0750da0399df8167edfe39180cefb28fc711fd51ba5d66429e",
+      "bytes": 951
+    },
+    {
+      "path": "Rule/Upstream/Qualcomm/Qualcomm.list",
+      "sha256": "f1c816924caae0d5f1f8fb7eee00de527ac5e51abe5379f428d32b98e93dc4a7",
+      "bytes": 1490
+    },
+    {
+      "path": "Rule/Upstream/QuickConnect/QuickConnect.list",
+      "sha256": "e88dabeb4f5cff0751889fecdd22d3b2650e7e96602e217707631c3aa1ff430b",
+      "bytes": 352
+    },
+    {
+      "path": "Rule/Upstream/Qyyjt/Qyyjt.list",
+      "sha256": "b4aeb398e98edf856604834bb7c631660e2ae58919a0484f9ce79cf2b8333286",
+      "bytes": 177
+    },
+    {
+      "path": "Rule/Upstream/RTHK/RTHK.list",
+      "sha256": "bb4efbce21564c1c363008242c57248bb626049e9c773a3fe8b9f74683c81d8f",
+      "bytes": 625
+    },
+    {
+      "path": "Rule/Upstream/Rakuten/Rakuten.list",
+      "sha256": "199de0858556f461c0f5add971e174955d5a5b6acf54dbda0bfba0bacc0a349c",
+      "bytes": 621
+    },
+    {
+      "path": "Rule/Upstream/Rarbg/Rarbg.list",
+      "sha256": "68e00d0ee75062c682b1aa4f370e8c1e0f5f9cc2776daf9caae7bdc5376d0cc8",
+      "bytes": 770
+    },
+    {
+      "path": "Rule/Upstream/Razer/Razer.list",
+      "sha256": "e24790c94d1d0c7f68e1b675bd2cb7cab8f3aee02f9a5cf337bbd56ec43bcf35",
+      "bytes": 206
+    },
+    {
+      "path": "Rule/Upstream/Reabble/Reabble.list",
+      "sha256": "9fb6bca337ed88ba1d742ce536dd51e37a58d769854bfee7dc852d162610711a",
+      "bytes": 207
+    },
+    {
+      "path": "Rule/Upstream/Reddit/Reddit.list",
+      "sha256": "8437bd0bbf3214170f6601f3a9b34d45a7684c9e9f8d7554b608142be8a2e80b",
+      "bytes": 426
+    },
+    {
+      "path": "Rule/Upstream/Riot/Riot.list",
+      "sha256": "ae276909536cb1c4d0296fe1151b06c6d6ca574cb0c0293d62ecf76613b73971",
+      "bytes": 1804
+    },
+    {
+      "path": "Rule/Upstream/Rockstar/Rockstar.list",
+      "sha256": "03b90246ad58c5cd95cce3a58deee14f6707b0e6a46f8d0766df38d2d8cefcf9",
+      "bytes": 375
+    },
+    {
+      "path": "Rule/Upstream/RuanMei/RuanMei.list",
+      "sha256": "bf7561ab2f3310c70a4faf1f8a937c84c528966a751fb5bed08ebc549a9d387a",
+      "bytes": 729
+    },
+    {
+      "path": "Rule/Upstream/SFExpress/SFExpress.list",
+      "sha256": "b89240955be84b66478c443d06b7a17148cdb94196881eda8e1c3eb580d81a46",
+      "bytes": 686
+    },
+    {
+      "path": "Rule/Upstream/SMG/SMG.list",
+      "sha256": "38c982e755dc50aac8351accfb2d7dda950feb781c3dee7c040cce07ab52815d",
+      "bytes": 244
+    },
+    {
+      "path": "Rule/Upstream/SMZDM/SMZDM.list",
+      "sha256": "326a5022fbd81d1fd21fbcc253376ccfc3b37fe6254eaea5ea5b3e876c8548ad",
+      "bytes": 395
+    },
+    {
+      "path": "Rule/Upstream/STUN/STUN.list",
+      "sha256": "2481864314795969c0505635cfd7916cae191eb3e907a910081436c5c438a3c6",
+      "bytes": 9548
+    },
+    {
+      "path": "Rule/Upstream/STUN/STUN_Resolve.list",
+      "sha256": "720c3d995af5485c94f1f7d86e0385d46cfc8acdf4746b8452f50d4e550c8522",
+      "bytes": 9372
+    },
+    {
+      "path": "Rule/Upstream/Salesforce/Salesforce.list",
+      "sha256": "e27d1720d29f5e49180f406756edf986598e4aec83297a553d105ccb4a774207",
+      "bytes": 531
+    },
+    {
+      "path": "Rule/Upstream/Samsung/Samsung.list",
+      "sha256": "92b44dcde1816269934abc96d7b90785f1bdec507ae40c7c4362cdc33c79fe34",
+      "bytes": 554
+    },
+    {
+      "path": "Rule/Upstream/Scaleflex/Scaleflex.list",
+      "sha256": "abfde65960c973238379d4fe869aa6596e2009e7935b9ae44d8a36b4e599ec87",
+      "bytes": 240
+    },
+    {
+      "path": "Rule/Upstream/Scholar/Scholar.list",
+      "sha256": "6ee615dbc0d4f25f05ec06724cb46eb68492af5b8b56b744f20ee8006c9cf2fa",
+      "bytes": 6662
+    },
+    {
+      "path": "Rule/Upstream/Sectigo/Sectigo.list",
+      "sha256": "7765b1f5f8ce67281eb892d8aa6c51ecd7606e0f74458e34a6376e637f2c955a",
+      "bytes": 363
+    },
+    {
+      "path": "Rule/Upstream/ShangHaiJuXiao/ShangHaiJuXiao.list",
+      "sha256": "275a5e126863f33a2307e4d68eee4ac16860d18249f3915340e7c8dfad03a216",
+      "bytes": 291
+    },
+    {
+      "path": "Rule/Upstream/Shanling/Shanling.list",
+      "sha256": "31641b5266e8094a33f70d919b4351a9f46f1af2597946e4bc7a2483a88ca0da",
+      "bytes": 212
+    },
+    {
+      "path": "Rule/Upstream/Sharethis/Sharethis.list",
+      "sha256": "b59b307670999b5a1aa7e97b4446cbf04f52ecf4134e79ca1ec129c6aedef3f5",
+      "bytes": 186
+    },
+    {
+      "path": "Rule/Upstream/ShenMa/ShenMa.list",
+      "sha256": "43d4183df5bff146336227be53c5a51178e8b286c056029e40598a8739a76cb7",
+      "bytes": 506
+    },
+    {
+      "path": "Rule/Upstream/ShiJiChaoXing/ShiJiChaoXing.list",
+      "sha256": "59e01eac661989c5e8ff5566bfa7dab53fd931da0cefeda5b419b479d0b436ee",
+      "bytes": 1055
+    },
+    {
+      "path": "Rule/Upstream/ShiNongZhiKe/ShiNongZhiKe.list",
+      "sha256": "840dc54662610efeb50f71c1011f53ca9221da5308addda1c9008299c035598a",
+      "bytes": 247
+    },
+    {
+      "path": "Rule/Upstream/Shopee/Shopee.list",
+      "sha256": "d52f4c47c9f1ff1d3417c8f481fe22d6045b90cab7e8267cbc0f3ec2d1fae20b",
+      "bytes": 691
+    },
+    {
+      "path": "Rule/Upstream/Shopify/Shopify.list",
+      "sha256": "989de25f85f2137200a72bf811cae076214df91964b367f042bb5a2403944a57",
+      "bytes": 380
+    },
+    {
+      "path": "Rule/Upstream/Sina/Sina.list",
+      "sha256": "223182b8b06af7838174f94839e1e799b39a9e283b66b0e1a71108539d7c2829",
+      "bytes": 2994
+    },
+    {
+      "path": "Rule/Upstream/Siri/Siri.list",
+      "sha256": "670cbd631e045fdcf1ec65882e5f0d67bd4feebf847a6e0b5ca762578bc9fe90",
+      "bytes": 171
+    },
+    {
+      "path": "Rule/Upstream/SkyGO/SkyGO.list",
+      "sha256": "e99c016a30dd580b300c224f6eb7b612ee064e4996a41d852891d8e6d10772ee",
+      "bytes": 665
+    },
+    {
+      "path": "Rule/Upstream/Slack/Slack.list",
+      "sha256": "aaf3f294bbf0c6b22a0e28f701eea3d8f6697581e1981be34822361916eee9e1",
+      "bytes": 468
+    },
+    {
+      "path": "Rule/Upstream/SlideShare/SlideShare.list",
+      "sha256": "cae377d881e3a6886b55515651823fffa43e6a18297131f281bcc438462ee3dc",
+      "bytes": 249
+    },
+    {
+      "path": "Rule/Upstream/Sling/Sling.list",
+      "sha256": "4eb94d8d9cd28d4dfd16fa507618c572613c59a0fdbc95c0767c2b483076bb10",
+      "bytes": 299
+    },
+    {
+      "path": "Rule/Upstream/SmarTone/SmarTone.list",
+      "sha256": "7a870202c04171c34e7b12b22c59772f319427b68a792aa3ca06bdc3e0bb9736",
+      "bytes": 640
+    },
+    {
+      "path": "Rule/Upstream/Snap/Snap.list",
+      "sha256": "67e1a466e52a4fca448559566363bd4c221f612ce167642a149f4a070485aaff",
+      "bytes": 306
+    },
+    {
+      "path": "Rule/Upstream/Sohu/Sohu.list",
+      "sha256": "f4e38e162cafeb5dbe144699181964ef918570a0b0d7e56d9459a769447c70ed",
+      "bytes": 1476
+    },
+    {
+      "path": "Rule/Upstream/Sony/Sony.list",
+      "sha256": "c3c96668d832b2b4e94ab185c14e2931d6af99d5a106bb658b0d83160fc9a19f",
+      "bytes": 3309
+    },
+    {
+      "path": "Rule/Upstream/SouFang/SouFang.list",
+      "sha256": "8f95e47292d28df7d45dac1c7475f8c07ecbc2da8f941f350b911f2f1adf1730",
+      "bytes": 425
+    },
+    {
+      "path": "Rule/Upstream/SoundCloud/SoundCloud.list",
+      "sha256": "1d78e9172bedd85142e991fea313406c9542abc7e626db4790978937689b60df",
+      "bytes": 275
+    },
+    {
+      "path": "Rule/Upstream/SourceForge/SourceForge.list",
+      "sha256": "ef959663e868bc13fb41884d1058c57191e9b0121ca0ae9756367a66c98092fe",
+      "bytes": 264
+    },
+    {
+      "path": "Rule/Upstream/Spark/Spark.list",
+      "sha256": "84c53dbd122b680accfa43966857c099d65cdea4fca846c627d064423bc5c58f",
+      "bytes": 298
+    },
+    {
+      "path": "Rule/Upstream/Speedtest/Speedtest.list",
+      "sha256": "d0f9a3b0befdfd209bf752b86e561094f7bb7e81d96e1df86c2ba585535ba755",
+      "bytes": 446
+    },
+    {
+      "path": "Rule/Upstream/Spotify/Spotify.list",
+      "sha256": "33bd52e8f23cda9374876259621c8fba21554035e20fa55daffbfcaee2109079",
+      "bytes": 1246
+    },
+    {
+      "path": "Rule/Upstream/Spotify/Spotify_Resolve.list",
+      "sha256": "9ed85b0098272a18d8efe7e6e07e477e2f8950044ebd14ce83cd7ab9054ef428",
+      "bytes": 1224
+    },
+    {
+      "path": "Rule/Upstream/Stackexchange/Stackexchange.list",
+      "sha256": "b28ee9e299a54d23464ad38e6245fb7416d8a5f972be9d7d56a908bee4adbae3",
+      "bytes": 783
+    },
+    {
+      "path": "Rule/Upstream/StarCraftII/StarCraftII.list",
+      "sha256": "186381321faacaecdcde1a1f99e6a218633ba071b32e4e4c2e51e0f207a0aef8",
+      "bytes": 443
+    },
+    {
+      "path": "Rule/Upstream/StarCraftII/StarCraftII_Resolve.list",
+      "sha256": "aabd462c33325136bb355a940c048a915f194853ebafaac3266d45a810b4a457",
+      "bytes": 355
+    },
+    {
+      "path": "Rule/Upstream/Starbucks/Starbucks.list",
+      "sha256": "c2f7eb76baa8cbf6a84510c7dbc792ee596375057648abd8bcd5c112959a1833",
+      "bytes": 1108
+    },
+    {
+      "path": "Rule/Upstream/Steam/Steam.list",
+      "sha256": "290ebccc4be56defc7d36f85d8c9777101548a4f2147ca29fe50b794c6a8dec7",
+      "bytes": 2571
+    },
+    {
+      "path": "Rule/Upstream/Steam/Steam_Resolve.list",
+      "sha256": "90bcd19be3e8796b45ef5f6a048ed993475ada4010894586f96c775e8e537f11",
+      "bytes": 2439
+    },
+    {
+      "path": "Rule/Upstream/SteamCN/SteamCN.list",
+      "sha256": "82c144434e9199c524d95caa8e3659c9f6f1de9fd23b223a58b5d3c821923936",
+      "bytes": 662
+    },
+    {
+      "path": "Rule/Upstream/Stripe/Stripe.list",
+      "sha256": "06de3de06eadf2f88698ab0e82ad9bf71dbccc61844e64fb73e0eaa47ba81708",
+      "bytes": 178
+    },
+    {
+      "path": "Rule/Upstream/SuNing/SuNing.list",
+      "sha256": "69470ec9b2ea93485697ed7e02654ecb0b825f81e7349e0e927867bd380528ea",
+      "bytes": 1017
+    },
+    {
+      "path": "Rule/Upstream/SublimeText/SublimeText.list",
+      "sha256": "e2727ab61d0ee16fe30276e733b301e812be9e36c1344202b6a7537261522b20",
+      "bytes": 281
+    },
+    {
+      "path": "Rule/Upstream/SuiShiChuanMei/SuiShiChuanMei.list",
+      "sha256": "2f09eac6bf89d22a13e28f4ce5206ae9ccc6719784e3617a1f1b1ffd395e519f",
+      "bytes": 534
+    },
+    {
+      "path": "Rule/Upstream/Supercell/Supercell.list",
+      "sha256": "9fee52945aceebfca90f9f47a0b71ada44b92159da519ef420aca9e3f868cd26",
+      "bytes": 1015
+    },
+    {
+      "path": "Rule/Upstream/Supercell/Supercell_Resolve.list",
+      "sha256": "18df0c514a9d6b0142e57ce51e95d89b737d0652e3d909d2672bdaa63b71f212",
+      "bytes": 773
+    },
+    {
+      "path": "Rule/Upstream/Synology/Synology.list",
+      "sha256": "b388eddd090ddb35a471eb1a21f367ff5ae96afa0f943a89877768904ede266e",
+      "bytes": 698
+    },
+    {
+      "path": "Rule/Upstream/SystemOTA/SystemOTA.list",
+      "sha256": "746ca09e36d5c8668566e24185715a4b917ec86802b20f30e7e77229449f971e",
+      "bytes": 2922
+    },
+    {
+      "path": "Rule/Upstream/TCL/TCL.list",
+      "sha256": "c92c9b7e4585a7091e7ff98493d02552550dcbde4b2c2969b679c1aeeacb8a2e",
+      "bytes": 341
+    },
+    {
+      "path": "Rule/Upstream/TIDAL/TIDAL.list",
+      "sha256": "6c5e364f6f024860f18bf6d3e7796529809f3eea226bbace26db7e56c9caa2c9",
+      "bytes": 330
+    },
+    {
+      "path": "Rule/Upstream/TVB/TVB.list",
+      "sha256": "acc88bed2db0778b65428e6b3b67fa071e5b97fa34f6d62ef4deac4aaf8be942",
+      "bytes": 891
+    },
+    {
+      "path": "Rule/Upstream/TVer/TVer.list",
+      "sha256": "5abb545696001a4ab0decedc97bba952ce672c0c194bd1853be4db3c59ab0fd3",
+      "bytes": 356
+    },
+    {
+      "path": "Rule/Upstream/TaiKang/TaiKang.list",
+      "sha256": "aa0545fed4a094a6c95a895227a5bd811f77d9705ca893cc325cdc4f9f08740f",
+      "bytes": 1271
+    },
+    {
+      "path": "Rule/Upstream/TaiWanGood/TaiWanGood.list",
+      "sha256": "b003868ff384b53bf44df06b3c06ed023f74f4b7b69278c5c8acf9b0268b3bf2",
+      "bytes": 265
+    },
+    {
+      "path": "Rule/Upstream/TaiheMusic/TaiheMusic.list",
+      "sha256": "97088bbd224c07d0d2ae457d6bf4eaf1b253c681ac30b8371d1f0cfc5882533c",
+      "bytes": 404
+    },
+    {
+      "path": "Rule/Upstream/TapTap/TapTap.list",
+      "sha256": "e39ce98ee55749364e92a4bd4382bad89b8ec1d7641df68ad0ff54e0d649a2dd",
+      "bytes": 200
+    },
+    {
+      "path": "Rule/Upstream/TeamViewer/TeamViewer.list",
+      "sha256": "3775059d482bcc513f6b3754c7234150d495444bcac968ac238b4b9a414c6498",
+      "bytes": 466
+    },
+    {
+      "path": "Rule/Upstream/TeamViewer/TeamViewer_Resolve.list",
+      "sha256": "c1c6822c1b0144b1b3dd0545827d703863dd552967fd798016d9a59e8f67a6b5",
+      "bytes": 389
+    },
+    {
+      "path": "Rule/Upstream/Teambition/Teambition.list",
+      "sha256": "f3fedcad45ba38737685219ba2e7449d4e5a9382fba03e4ad1d8e3541ffb3a34",
+      "bytes": 424
+    },
+    {
+      "path": "Rule/Upstream/Teams/Teams.list",
+      "sha256": "798202ddb4c44c7d3661fa7c304646e58d9296e2678e39a5ea575a2c79f50a3f",
+      "bytes": 301
+    },
+    {
+      "path": "Rule/Upstream/Telegram/Telegram.list",
+      "sha256": "3b375bee8b2ff16d6c955804a5a3638e6e8fdfcc58d209506a928bdd4cc9891a",
+      "bytes": 1680
+    },
+    {
+      "path": "Rule/Upstream/Telegram/Telegram_Resolve.list",
+      "sha256": "b18c6902711228f397e62be21962afc326ca425a70f5d97381e1bb20572a21bb",
+      "bytes": 1515
+    },
+    {
+      "path": "Rule/Upstream/TelegramNL/TelegramNL.list",
+      "sha256": "ec8553a2fc0a746f11d9354adb3b4cafdd282f65f79b0f95e75098f8ef9e13e7",
+      "bytes": 346
+    },
+    {
+      "path": "Rule/Upstream/TelegramNL/TelegramNL_Resolve.list",
+      "sha256": "f97ff9360b352579130d1b28b8b7656b82efc4ca4883ea74ae6de1abb607e4df",
+      "bytes": 291
+    },
+    {
+      "path": "Rule/Upstream/TelegramSG/TelegramSG.list",
+      "sha256": "d8cb4d467de3fc8639a78809ecf0360dfaf80170c80e33d77ac7b06f92a33c9f",
+      "bytes": 274
+    },
+    {
+      "path": "Rule/Upstream/TelegramSG/TelegramSG_Resolve.list",
+      "sha256": "b79c920d8f25b33a0395947594a1d40e6a71ba620bea0096f6f287928d603ff6",
+      "bytes": 241
+    },
+    {
+      "path": "Rule/Upstream/TelegramUS/TelegramUS.list",
+      "sha256": "94409ae4c48b9fca00cf2ea6ab7ca066b6beb666f2f68cdacb949b1697752238",
+      "bytes": 240
+    },
+    {
+      "path": "Rule/Upstream/TelegramUS/TelegramUS_Resolve.list",
+      "sha256": "8eb4b615d3baa5cbf5dc0c9863ff89973bb05bc0487360bfdb0ae00be71c84c3",
+      "bytes": 218
+    },
+    {
+      "path": "Rule/Upstream/Tencent/Tencent.list",
+      "sha256": "ce60bf5c3338a17d11baee30c31ef8a45d8f5cdac7a5fc21a4a3fa48522fcdbd",
+      "bytes": 1048
+    },
+    {
+      "path": "Rule/Upstream/Tencent/Tencent_All.list",
+      "sha256": "8e20df1ec53718fee6ddd4ff16b94267509c7a1996670bd23bbd45f5ef36aaa3",
+      "bytes": 73171
+    },
+    {
+      "path": "Rule/Upstream/Tencent/Tencent_All_No_Resolve.list",
+      "sha256": "e1539a437529b2cf39734462ad07824aed5f6af95a1992e5274306e4f4ee5770",
+      "bytes": 73391
+    },
+    {
+      "path": "Rule/Upstream/Tencent/Tencent_Domain.list",
+      "sha256": "aba29865528349ac940b4c9d3b832837cf20fad963c87e2b9bbee6b7817c2a0d",
+      "bytes": 40061
+    },
+    {
+      "path": "Rule/Upstream/Tencent/Tencent_Resolve.list",
+      "sha256": "e9e09c26dbd4d2fcb2ee9b8e6cd45499573e48c44e7c5c685b19e4ce057c4f93",
+      "bytes": 828
+    },
+    {
+      "path": "Rule/Upstream/TencentVideo/TencentVideo.list",
+      "sha256": "2f74f99c2f48a2133044b7f725faaa21a5621fd503c640599e1ac8b5eb48890b",
+      "bytes": 2270
+    },
+    {
+      "path": "Rule/Upstream/TencentVideo/TencentVideo_Resolve.list",
+      "sha256": "ce5bdc5786d2fabd216f58e5d0754e2b0ef4a61efb2fb700f469bf90cf529cf9",
+      "bytes": 1918
+    },
+    {
+      "path": "Rule/Upstream/TeraBox/TeraBox.list",
+      "sha256": "f5f07e018a5899ef047944141d6da84c7031590d1ea51273bff7738ae3bc93eb",
+      "bytes": 211
+    },
+    {
+      "path": "Rule/Upstream/Tesla/Tesla.list",
+      "sha256": "ae77caa54b5da2ff4356f0aea156e2c3a99e54b6bf4dd2a28a8b3af657d5602c",
+      "bytes": 505
+    },
+    {
+      "path": "Rule/Upstream/TestFlight/TestFlight.list",
+      "sha256": "06b2eb437c4ab26a9111168cf1be4d7efbafa8eda22b0d9c1d9343bb43092a46",
+      "bytes": 248
+    },
+    {
+      "path": "Rule/Upstream/ThomsonReuters/ThomsonReuters.list",
+      "sha256": "ef4e25db78d9843453d555f479f7bdb0664200d592ed7a532aeecda6008745d1",
+      "bytes": 1174
+    },
+    {
+      "path": "Rule/Upstream/Threads/Threads.list",
+      "sha256": "e9b86a51952a33ee50ad3b31dc98bcb09699bbeb4d21371762b1124cb0091e86",
+      "bytes": 182
+    },
+    {
+      "path": "Rule/Upstream/TianTianKanKan/TianTianKanKan.list",
+      "sha256": "5e9272f751eff67aad56958fada855c99b01526f354c865c27ff631cf5f144a0",
+      "bytes": 271
+    },
+    {
+      "path": "Rule/Upstream/TianWeiChengXin/TianWeiChengXin.list",
+      "sha256": "164dc825b5afa69943e5c5671d90f06b7a7344f155e94931b47a19adbb69ace1",
+      "bytes": 766
+    },
+    {
+      "path": "Rule/Upstream/TianYaForum/TianYaForum.list",
+      "sha256": "65247f6a22ce561dd2796c99a987f7563add63b9cd59f4d725eab2fc47319985",
+      "bytes": 507
+    },
+    {
+      "path": "Rule/Upstream/TigerFintech/TigerFintech.list",
+      "sha256": "83637b81f6ed7eb6b2b9c0a8693b70fddd312e35cb644cc3ac57bd50519aa44e",
+      "bytes": 691
+    },
+    {
+      "path": "Rule/Upstream/TikTok/TikTok.list",
+      "sha256": "e61af08425f87c1bc81216364c0f8fffbfc0a9924aab89f133151f1ea56de6c2",
+      "bytes": 1242
+    },
+    {
+      "path": "Rule/Upstream/Tmdb/Tmdb.list",
+      "sha256": "e07fd0340fda8bde85ad32c6f2ae158a0463bdbe1c8487c474b001bf7d99b677",
+      "bytes": 205
+    },
+    {
+      "path": "Rule/Upstream/TongCheng/TongCheng.list",
+      "sha256": "549c90b9a77ec5fbfb99fc46b6937c5ff501fbefabb05ed8bc3d651ecb1efca1",
+      "bytes": 351
+    },
+    {
+      "path": "Rule/Upstream/TrustWave/TrustWave.list",
+      "sha256": "07e1695cabfb7e0e821992e88572b8ce92b29248237180dec6a0dc885f69d255",
+      "bytes": 186
+    },
+    {
+      "path": "Rule/Upstream/TruthSocial/TruthSocial.list",
+      "sha256": "3f495ed553bca611960740ddde277ae656aff7da8f65a05d0848904ce4a9fc3f",
+      "bytes": 218
+    },
+    {
+      "path": "Rule/Upstream/Tumblr/Tumblr.list",
+      "sha256": "5a7c922263c12cc73599b655d9a99f339698f35e1c1d9c40bb6141a288c33d90",
+      "bytes": 227
+    },
+    {
+      "path": "Rule/Upstream/Twitch/Twitch.list",
+      "sha256": "5f1e5ba766fcef3196ea6f03e05c1859af7d1122338beaceaea2919b6c82f7a8",
+      "bytes": 917
+    },
+    {
+      "path": "Rule/Upstream/Twitch/Twitch_Resolve.list",
+      "sha256": "7b92deefdff4950c73d0b3faf023a667651be2818cd68f30492400ac7bf0deb5",
+      "bytes": 785
+    },
+    {
+      "path": "Rule/Upstream/Twitter/Twitter.list",
+      "sha256": "64c836f2431ca0d4728cc545bb74280ee50c886e346040012e6cdd2f3eee3f97",
+      "bytes": 1116
+    },
+    {
+      "path": "Rule/Upstream/Twitter/Twitter_Resolve.list",
+      "sha256": "96078a162f48f43c6d2e5b704e05f06480438c70556d899e9740bfc325d59d8f",
+      "bytes": 1050
+    },
+    {
+      "path": "Rule/Upstream/U17/U17.list",
+      "sha256": "15ba5d0afc1a125188b48d9c72d292acb42eb15eedf749caff465fb53c8f2214",
+      "bytes": 220
+    },
+    {
+      "path": "Rule/Upstream/UBI/UBI.list",
+      "sha256": "b6a5607200a67a6f581bd2ba6ee41b836d66f3d965db6e6fa50361304a041295",
+      "bytes": 334
+    },
+    {
+      "path": "Rule/Upstream/UC/UC.list",
+      "sha256": "5e226148adb275d3ca595bd34f2eef545a0e69f2286dee6687f278a0d6dcd91b",
+      "bytes": 1112
+    },
+    {
+      "path": "Rule/Upstream/UCloud/UCloud.list",
+      "sha256": "650af383578c8a56e5d73b2c49fcc20f9741dd59e200bce839f5860647f2e4aa",
+      "bytes": 1122
+    },
+    {
+      "path": "Rule/Upstream/UKMedia/UKMedia.list",
+      "sha256": "bbd556b798e4d78d212fbba18ca55caf9c0ec9f648c468c72c924e5d5c8d9139",
+      "bytes": 1112
+    },
+    {
+      "path": "Rule/Upstream/UPYun/UPYun.list",
+      "sha256": "33fafca0d57eed1543fbf7db244ef80c5b692a40ae76b917a9cd955a526f0bfe",
+      "bytes": 563
+    },
+    {
+      "path": "Rule/Upstream/USMedia/USMedia.list",
+      "sha256": "21047c9f98d264d38a63f959dd12e7e96072196ee53c7e276092e155af54c100",
+      "bytes": 3077
+    },
+    {
+      "path": "Rule/Upstream/Ubisoft/Ubisoft.list",
+      "sha256": "943e40e084bc7aa96b24ed3aaf0c778db79550505639a4feb4575f5f4de0d6f5",
+      "bytes": 186
+    },
+    {
+      "path": "Rule/Upstream/Ubuntu/Ubuntu.list",
+      "sha256": "e94c8d5f6db7f583eb9562f24b4357a40681f1f5795e733937600806a19b04f0",
+      "bytes": 1650
+    },
+    {
+      "path": "Rule/Upstream/Udacity/Udacity.list",
+      "sha256": "3e358624553262d68cbf504fae7251eb3d1ad5251e443bc3a82f734ff9e88924",
+      "bytes": 182
+    },
+    {
+      "path": "Rule/Upstream/UnionPay/UnionPay.list",
+      "sha256": "cf603ac5ee90f5869a4a119cec8b90eab865c6388858be4d97d196bff9a38187",
+      "bytes": 616
+    },
+    {
+      "path": "Rule/Upstream/Unity/Unity.list",
+      "sha256": "6e05ad9cb998d9900e3df623777cb070c2d33c4de738c871b8d91a024ed9ad8e",
+      "bytes": 402
+    },
+    {
+      "path": "Rule/Upstream/VISA/VISA.list",
+      "sha256": "f86c0a19ee2ec472d892ee8bedc82e3e10d32d56146dfe06a6d9023188a907a0",
+      "bytes": 2628
+    },
+    {
+      "path": "Rule/Upstream/VK/VK.list",
+      "sha256": "f42c2fcba98ec06ace64bc48c0f6a43dbee3fdb809b0d8e31d3ce0e78491a1f8",
+      "bytes": 317
+    },
+    {
+      "path": "Rule/Upstream/VOA/VOA.list",
+      "sha256": "1475faa7c349e830e594aed9ad483db9a18f531c137786dc083f51c445ef98b1",
+      "bytes": 1659
+    },
+    {
+      "path": "Rule/Upstream/Vancl/Vancl.list",
+      "sha256": "547adef2df5baa220f4e98d3c8944e95454fb47d864c6a2ec110911b251031ff",
+      "bytes": 229
+    },
+    {
+      "path": "Rule/Upstream/Vercel/Vercel.list",
+      "sha256": "bbaef6a5bfd19437ac8d35778332f1058bfb38508f99c0edacb6f1947cd6bbeb",
+      "bytes": 875
+    },
+    {
+      "path": "Rule/Upstream/Verisign/Verisign.list",
+      "sha256": "196d7b85b2982bdc7ea1c105ab0474f5480e2baf2214c5871c3a07c208b7fb12",
+      "bytes": 1074
+    },
+    {
+      "path": "Rule/Upstream/Verizon/Verizon.list",
+      "sha256": "c8d5d5d411fe62cdb035dd40837dce738fe4bc3fa3ba520b61a87cafcee67143",
+      "bytes": 4801
+    },
+    {
+      "path": "Rule/Upstream/VidolTV/VidolTV.list",
+      "sha256": "759c43babec968178afe3c9316072d8b09f2e8a015792dea452ca64008dce3ab",
+      "bytes": 179
+    },
+    {
+      "path": "Rule/Upstream/VikACG/VikACG.list",
+      "sha256": "4adee72cfe75891161334516935feeb2eb1acef9e911cfcf1f38824a6019922a",
+      "bytes": 204
+    },
+    {
+      "path": "Rule/Upstream/Viki/Viki.list",
+      "sha256": "9522270d1be05efe8338d594e0dcb01da9161ec25be655a557fc7e22bb5b6048",
+      "bytes": 401
+    },
+    {
+      "path": "Rule/Upstream/Vimeo/Vimeo.list",
+      "sha256": "7e09851e91c24b61ebadea8ad29118d5713be2f6899fb03a6efbe42cdf328434",
+      "bytes": 593
+    },
+    {
+      "path": "Rule/Upstream/VipShop/VipShop.list",
+      "sha256": "98d349603eaaccf9395d3dba57a97258cd25d61c14ae0383817b3c4dcfd4d10b",
+      "bytes": 261
+    },
+    {
+      "path": "Rule/Upstream/ViuTV/ViuTV.list",
+      "sha256": "8ea461ce5a46894de6d38f410b80dd859bc76e1a680fcfb36cfc80d1116be175",
+      "bytes": 594
+    },
+    {
+      "path": "Rule/Upstream/Vivo/Vivo.list",
+      "sha256": "8a8254c435efd8edc27135b1527c2293b2ae840b672107df6fff868ffdf5c41c",
+      "bytes": 506
+    },
+    {
+      "path": "Rule/Upstream/Voxmedia/Voxmedia.list",
+      "sha256": "534f9b8d569171fb3192a19ad7a8430bf0c56f4b7eca07db381d962fc68004f3",
+      "bytes": 582
+    },
+    {
+      "path": "Rule/Upstream/W3schools/W3schools.list",
+      "sha256": "7b1cd392b92abb4deded6660ea2e7057582f89b4995defe770bc576c89fc527a",
+      "bytes": 186
+    },
+    {
+      "path": "Rule/Upstream/WIX/WIX.list",
+      "sha256": "5eb60bb26a689f57c8b127e45bfad21949d2e7ceafed7088f39f0f50e5ca4a96",
+      "bytes": 390
+    },
+    {
+      "path": "Rule/Upstream/WanKaHuanJu/WanKaHuanJu.list",
+      "sha256": "c8b0bf774e2c633667c27c60862320376072344bdb9642366f3d2964c5fe7b04",
+      "bytes": 960
+    },
+    {
+      "path": "Rule/Upstream/WanMeiShiJie/WanMeiShiJie.list",
+      "sha256": "7c4cabe661cd5f47a1deec738b28338b690d66dcf9b3b585cb289386106165d3",
+      "bytes": 470
+    },
+    {
+      "path": "Rule/Upstream/Wanfang/Wanfang.list",
+      "sha256": "688512aebb9bed0ab3dac183ef2fc01b34c1d9f7e395b5bf11ac6bb6e9080d78",
+      "bytes": 210
+    },
+    {
+      "path": "Rule/Upstream/WangSuKeJi/WangSuKeJi.list",
+      "sha256": "f0dbcaa191d6d89bb547c7d114d447cb3114492d914e5dabfb760f4fe3cf2e8f",
+      "bytes": 5084
+    },
+    {
+      "path": "Rule/Upstream/WangXinKeJi/WangXinKeJi.list",
+      "sha256": "db3147c816d40491452c7eccbe8ef363c1d0836c67960e621fdc39364f6868db",
+      "bytes": 875
+    },
+    {
+      "path": "Rule/Upstream/WeChat/WeChat.list",
+      "sha256": "01e55617280a7b03db13397fcd2fe4bb3be559f728145fb1fbb054036d75d0bc",
+      "bytes": 10185
+    },
+    {
+      "path": "Rule/Upstream/WeChat/WeChat_Resolve.list",
+      "sha256": "446849d34848daa7d9115c9f233f8fb5d83a28f9fbbce267eb82dea6cf072e13",
+      "bytes": 9437
+    },
+    {
+      "path": "Rule/Upstream/WeTV/WeTV.list",
+      "sha256": "b03ac23c4235bcd31e11c7944fb56ddfa2cc32a7a24c38c47edf6a52a2d4772f",
+      "bytes": 505
+    },
+    {
+      "path": "Rule/Upstream/WeTV/WeTV_Resolve.list",
+      "sha256": "a31245716e2fa943fc992dff1dfdbb822d5fce875349e347d25efe4a40a5d17e",
+      "bytes": 494
+    },
+    {
+      "path": "Rule/Upstream/WeType/WeType.list",
+      "sha256": "fe25f3bdc8daa5aef719a8a1ac17ca594daaabfe9e1366dcf8e75d27b29702d7",
+      "bytes": 176
+    },
+    {
+      "path": "Rule/Upstream/WeiZhiYunDong/WeiZhiYunDong.list",
+      "sha256": "d98f2b22c896a622d78a1259c88c09531f2e364d7a0bb09f7d4ac0d46962eeb8",
+      "bytes": 274
+    },
+    {
+      "path": "Rule/Upstream/Weibo/Weibo.list",
+      "sha256": "54f8a08d7f89498f4f5ec29737c0c82feff1c69faadbd0d4722e1cbd72156f75",
+      "bytes": 269
+    },
+    {
+      "path": "Rule/Upstream/WenJuanXing/WenJuanXing.list",
+      "sha256": "628cc052fa453d2b2618190f5580496ae8d322d6f054c866bef34bfe567fc78d",
+      "bytes": 250
+    },
+    {
+      "path": "Rule/Upstream/Westerndigital/Westerndigital.list",
+      "sha256": "ea07da2c0645a95b5e95958830ef746c91c10196f2c886ef7d996546356c5984",
+      "bytes": 773
+    },
+    {
+      "path": "Rule/Upstream/Whatsapp/Whatsapp.list",
+      "sha256": "644fd145b484079ff65f681deb17a6dbf1aff620afea56b1a3c24d29d9f9db4f",
+      "bytes": 752
+    },
+    {
+      "path": "Rule/Upstream/Whatsapp/Whatsapp_Resolve.list",
+      "sha256": "9089f3aa3fc3faa22d9264f1318da0953c0d4615d9585d9f1b3396ea3846e05a",
+      "bytes": 631
+    },
+    {
+      "path": "Rule/Upstream/WiFiMaster/WiFiMaster.list",
+      "sha256": "4715a62e6912a41112d6d698efdea5ccec5940f904aba2d9ef0360f5ac04134a",
+      "bytes": 1827
+    },
+    {
+      "path": "Rule/Upstream/Wikimedia/Wikimedia.list",
+      "sha256": "329449efa2ba372b0be10e8bb1ced920b67d2918b88bc65bbdd4bc437f4442ce",
+      "bytes": 732
+    },
+    {
+      "path": "Rule/Upstream/Wikipedia/Wikipedia.list",
+      "sha256": "a13e83edb901e51c1bc4af4d2727cf37f1e09b8bdb0bb2c21e68a41d936c63ca",
+      "bytes": 499
+    },
+    {
+      "path": "Rule/Upstream/WildRift/WildRift.list",
+      "sha256": "cdbafaefca74c66f4eea80c025c4b0a1c404141a37704d91d423b17ed78068f5",
+      "bytes": 233
+    },
+    {
+      "path": "Rule/Upstream/WoLai/WoLai.list",
+      "sha256": "4830269c42d71951473a4bdf144161a1094839095396b2a5683498ed9526639d",
+      "bytes": 274
+    },
+    {
+      "path": "Rule/Upstream/Wordpress/Wordpress.list",
+      "sha256": "f7c5f60988b76d638ee29bf550f1958ce7e8e02e30a2fc6910ca5f258bcd97d5",
+      "bytes": 363
+    },
+    {
+      "path": "Rule/Upstream/WorldofWarcraft/WorldofWarcraft.list",
+      "sha256": "3764d67f1272dcd9645c0bd79eeb5a66d89b871d9c6c34c0ea33c67679ecbede",
+      "bytes": 449
+    },
+    {
+      "path": "Rule/Upstream/WorldofWarcraft/WorldofWarcraft_Resolve.list",
+      "sha256": "62e8e0fee90b684abdd541f9fb5458f15b0a8f419393006dfaf004aa78075d75",
+      "bytes": 361
+    },
+    {
+      "path": "Rule/Upstream/Wteam/Wteam.list",
+      "sha256": "8f302a8ab27b75b90f2c406f8579f727c5d363d40442dad2bd73d7e4aafccb3f",
+      "bytes": 182
+    },
+    {
+      "path": "Rule/Upstream/Xbox/Xbox.list",
+      "sha256": "8112c4b70412939a028de87b4c871e40b62aa30eda197034a55b5980297af134",
+      "bytes": 1377
+    },
+    {
+      "path": "Rule/Upstream/XiamiMusic/XiamiMusic.list",
+      "sha256": "b0725a152b464425c151506b03e5496f389dc3c8c5fec27731f5c0f418f56194",
+      "bytes": 284
+    },
+    {
+      "path": "Rule/Upstream/XianYu/XianYu.list",
+      "sha256": "a2b83429d47b68eee901ece76441f0d3cb8ae6ce671f9d7dc9f474777bd2b205",
+      "bytes": 562
+    },
+    {
+      "path": "Rule/Upstream/XiaoGouKeJi/XiaoGouKeJi.list",
+      "sha256": "6569073c00f8ca794d94052458e4f438c958586f1309c6ebe7130383c5f2c6ce",
+      "bytes": 641
+    },
+    {
+      "path": "Rule/Upstream/XiaoHongShu/XiaoHongShu.list",
+      "sha256": "9fb20e80dc0962cfdf410ffbd72d6bf2a6a0ac0d930951880f98164ff229e8ff",
+      "bytes": 272
+    },
+    {
+      "path": "Rule/Upstream/XiaoMi/XiaoMi.list",
+      "sha256": "8ce36a9ee9d083f2a3a58796c8be5ca40398aeba5920c88dc3ecb7041bb12b18",
+      "bytes": 4737
+    },
+    {
+      "path": "Rule/Upstream/XiaoMi/XiaoMi_Resolve.list",
+      "sha256": "457d152b6882daaa77033e2afaa5f9db5a1aeb39416b54d27b96db52ed89a386",
+      "bytes": 4638
+    },
+    {
+      "path": "Rule/Upstream/XiaoYuanKeJi/XiaoYuanKeJi.list",
+      "sha256": "2bf697a9aa536fb33c7622368460572f98f9d1dab6a9f60b3c4df72e1d1f6692",
+      "bytes": 295
+    },
+    {
+      "path": "Rule/Upstream/XieCheng/XieCheng.list",
+      "sha256": "a1bb4db8f750704786a525279eb7f87f38db436047fc65a121239765ffe4d186",
+      "bytes": 904
+    },
+    {
+      "path": "Rule/Upstream/XingKongWuXian/XingKongWuXian.list",
+      "sha256": "74abc23079e3bcd0ed850fb1199dc41704c44d6c2ff5b2ba738244b412452a7b",
+      "bytes": 662
+    },
+    {
+      "path": "Rule/Upstream/XueErSi/XueErSi.list",
+      "sha256": "76451dfb8bf0aeb8f672a2b17d936de2ac34aa54a1ffe354e0f132516cc32da7",
+      "bytes": 233
+    },
+    {
+      "path": "Rule/Upstream/XueQiu/XueQiu.list",
+      "sha256": "210e000358cc1d28d828c7ed80ce1024aded83567814c54d37320aacbcc1395d",
+      "bytes": 467
+    },
+    {
+      "path": "Rule/Upstream/Xunlei/Xunlei.list",
+      "sha256": "5b7551a662ebb97c3fde495468c11296f1b3569eef04fd8832542107506b9a6e",
+      "bytes": 994
+    },
+    {
+      "path": "Rule/Upstream/YYeTs/YYeTs.list",
+      "sha256": "f65353e1c2120529336a3b15cd75d3aa2e72d46e1892f72754560bacfd8a334c",
+      "bytes": 685
+    },
+    {
+      "path": "Rule/Upstream/Yandex/Yandex.list",
+      "sha256": "c06d9786ac3767a87764228691fe5c760a33f9ef678c94df4e428002a4280fac",
+      "bytes": 1661
+    },
+    {
+      "path": "Rule/Upstream/Yandex/Yandex_Resolve.list",
+      "sha256": "6511868ef5831437fd9c8bad1b993f3243023b49b3dab69a4f0ebaeec2ef07bb",
+      "bytes": 1463
+    },
+    {
+      "path": "Rule/Upstream/YiChe/YiChe.list",
+      "sha256": "ce3516cbedd966f81e2e7282965f49348b535f1ba738f5c40cc0bc1e3a936d4c",
+      "bytes": 284
+    },
+    {
+      "path": "Rule/Upstream/YiXiaKeJi/YiXiaKeJi.list",
+      "sha256": "74828d6337540f30eb335d30a7fdf276f0726b4a17ed1068caf5e86078f0b97a",
+      "bytes": 526
+    },
+    {
+      "path": "Rule/Upstream/YiZhiBo/YiZhiBo.list",
+      "sha256": "20720946ae9b5a236931ea68ed325d9cc8f323fb0dd2d64abce3b1580d1fa78c",
+      "bytes": 284
+    },
+    {
+      "path": "Rule/Upstream/YouMengChuangXiang/YouMengChuangXiang.list",
+      "sha256": "232f395398493b8704223d781406ea7c900b89012af19740bfd1c40ad2dc3a4d",
+      "bytes": 718
+    },
+    {
+      "path": "Rule/Upstream/YouTube/YouTube.list",
+      "sha256": "42274e143447066e26e1ebbf21ae03ce6efb40827f41e2775a84fb16d390713d",
+      "bytes": 5451
+    },
+    {
+      "path": "Rule/Upstream/YouTube/YouTube_Resolve.list",
+      "sha256": "4546f24661f520b0dd15462fdb7ec9ac2531e4e70ea4316ee42ef93622382b86",
+      "bytes": 5418
+    },
+    {
+      "path": "Rule/Upstream/YouTubeMusic/YouTubeMusic.list",
+      "sha256": "cb3ec1cb88951e9ef6da69a26662d1350c803d4f4628d0147ee95aa87e83b153",
+      "bytes": 327
+    },
+    {
+      "path": "Rule/Upstream/YouZan/YouZan.list",
+      "sha256": "b2cfae81d4d0f250af89588215fb98fd9a0a48d53bc1f463256d8442695c261d",
+      "bytes": 231
+    },
+    {
+      "path": "Rule/Upstream/Youku/Youku.list",
+      "sha256": "fe46c7fb82514f089c404aa60bc856aa524f4ef1ed27a9c49217ad4671d424ce",
+      "bytes": 1177
+    },
+    {
+      "path": "Rule/Upstream/Youku/Youku_Resolve.list",
+      "sha256": "6f2ce5766a62d53925a93e4aff61ebdcbd6d326f0eea51d219c625a5d1cb91f8",
+      "bytes": 1166
+    },
+    {
+      "path": "Rule/Upstream/YuanFuDao/YuanFuDao.list",
+      "sha256": "a912650d3c1370820ec63a69e41badac2d3885e7a3177a6e52e85d6d6b43a156",
+      "bytes": 2554
+    },
+    {
+      "path": "Rule/Upstream/YunFanJiaSu/YunFanJiaSu.list",
+      "sha256": "989f52b4f7f5df7ddcfb7e1954bcc41b750e4a24c22d642c95cf2e41b0aabdc3",
+      "bytes": 997
+    },
+    {
+      "path": "Rule/Upstream/ZDNS/ZDNS.list",
+      "sha256": "876ab2181959e771aedfa5237cf8e27532edfc9f0fd131aadd185583bca93a38",
+      "bytes": 489
+    },
+    {
+      "path": "Rule/Upstream/Zalo/Zalo.list",
+      "sha256": "b82957e9dbe8581f9fb76ba97c8b4efabdf8de8ccbba8c374302a7a69f8171f0",
+      "bytes": 201
+    },
+    {
+      "path": "Rule/Upstream/Zee/Zee.list",
+      "sha256": "866b29cf7e9b9ba693eb10e2ec643abef714352a69d12ddf4a429491dcba7aa3",
+      "bytes": 767
+    },
+    {
+      "path": "Rule/Upstream/ZeeTV/ZeeTV.list",
+      "sha256": "f7ec839745d499889757122584994bad607d47981302f04fc08b0a8f3f47d4b9",
+      "bytes": 366
+    },
+    {
+      "path": "Rule/Upstream/Zendesk/Zendesk.list",
+      "sha256": "ce67e94369d64586b79c1ec522577e5efb0e7b0e32c203a21eb55dc189cb0bc7",
+      "bytes": 315
+    },
+    {
+      "path": "Rule/Upstream/ZhangYue/ZhangYue.list",
+      "sha256": "b8331a1fca2826da6bbd6087531909d15b1059224ebbc841cb67d095845e1982",
+      "bytes": 866
+    },
+    {
+      "path": "Rule/Upstream/ZhiYinManKe/ZhiYinManKe.list",
+      "sha256": "56590d5adc79b8231cc7f35cb713ec25604e82b93d9c0d2d3e8097f08879e314",
+      "bytes": 641
+    },
+    {
+      "path": "Rule/Upstream/ZhiYunZhong/ZhiYunZhong.list",
+      "sha256": "1dcaa7f49c774484f7bd39748a3c2c0fc43f7fc3e320702d3b4c2c5a999949e8",
+      "bytes": 365
+    },
+    {
+      "path": "Rule/Upstream/Zhihu/Zhihu.list",
+      "sha256": "c9ea691fbe4cd52d194f3ee9bad2ed3f291a416f13200b0f51a7a19e2468583e",
+      "bytes": 438
+    },
+    {
+      "path": "Rule/Upstream/Zhihu/Zhihu_Resolve.list",
+      "sha256": "e687de061f38d3d1171945d10a80d0c95233c79a5493dae7e892877da8518bf8",
+      "bytes": 383
+    },
+    {
+      "path": "Rule/Upstream/ZhihuAds/ZhihuAds.list",
+      "sha256": "1ebd8e9e57b0360448d4d8671399e8e272999a91baf4bbf52f008aceb25efcb7",
+      "bytes": 1213
+    },
+    {
+      "path": "Rule/Upstream/ZhihuAds/ZhihuAds_Resolve.list",
+      "sha256": "8eba52dcff8bc89c42e930688402baeff7a32a2b1bb7d01d0ebc5d2ab0951a36",
+      "bytes": 1191
+    },
+    {
+      "path": "Rule/Upstream/ZhongGuoShiHua/ZhongGuoShiHua.list",
+      "sha256": "15e72ceba5771fe4fc1bd9648a0d7ea738d06769ef18957682177f464c807146",
+      "bytes": 314
+    },
+    {
+      "path": "Rule/Upstream/ZhongWeiShiJi/ZhongWeiShiJi.list",
+      "sha256": "416e4a3a899d14141f34c1396de3a8c85f32a16df9fbf01ee697463963b6f418",
+      "bytes": 622
+    },
+    {
+      "path": "Rule/Upstream/ZhongXingTongXun/ZhongXingTongXun.list",
+      "sha256": "c044121e816ac7509883ea2f2dc9c07b43afc132457549116c32e685ffe78ba9",
+      "bytes": 694
+    },
+    {
+      "path": "Rule/Upstream/ZhongYuanYiShang/ZhongYuanYiShang.list",
+      "sha256": "63c18fe304873024be737449c596c1f3381a0594e05c71861cedf40f5b0a5460",
+      "bytes": 407
+    },
+    {
+      "path": "Rule/Upstream/ZhuanZhuan/ZhuanZhuan.list",
+      "sha256": "aac1a6cad939bdf2747e86c9543b4016657bea963c56c67b05b214f94798073f",
+      "bytes": 275
+    },
+    {
+      "path": "Rule/Upstream/Zoho/Zoho.list",
+      "sha256": "2dd3fdef0fc7189367d7b4f5ccbd987e3a342f8ec6302c93a71bf521e9ff8226",
+      "bytes": 519
+    },
+    {
+      "path": "Rule/Upstream/aiXcoder/aiXcoder.list",
+      "sha256": "98e6385c5cec81c29b384c452b60e4946f25ff2e23364182d2c06dc3bb68147d",
+      "bytes": 210
+    },
+    {
+      "path": "Rule/Upstream/eBay/eBay.list",
+      "sha256": "96118dffc64d17f157b417c4366431660c74558ba95863a79e01b43b4af2dfc8",
+      "bytes": 1249
+    },
+    {
+      "path": "Rule/Upstream/friDay/friDay.list",
+      "sha256": "561c4e4d756d8b97892bde03b0d3a4105366aac2b56543882cb263bce49787b2",
+      "bytes": 204
+    },
+    {
+      "path": "Rule/Upstream/iCloud/iCloud.list",
+      "sha256": "e34e2c63cb431ab0a1838d218aba4d8ddb102774f49727f3de44bc8261227475",
+      "bytes": 1877
+    },
+    {
+      "path": "Rule/Upstream/iCloudPrivateRelay/iCloudPrivateRelay.list",
+      "sha256": "aaca6f9a1511b8479a6856b8eb64ddd307d7a19c965e917b0b2767c7a277620c",
+      "bytes": 356
+    },
+    {
+      "path": "Rule/Upstream/iFlytek/iFlytek.list",
+      "sha256": "6abb81ea818e5bdab71de80c1af4a2565b7311362b683471959f1077d20bb766",
+      "bytes": 4252
+    },
+    {
+      "path": "Rule/Upstream/iQIYI/iQIYI.list",
+      "sha256": "153f19cd26fe02085ba506c2882756ebdc0a05ee31d40563f8165ad099e50010",
+      "bytes": 1997
+    },
+    {
+      "path": "Rule/Upstream/iQIYI/iQIYI_Resolve.list",
+      "sha256": "8f0358fbb2b9430b82d73b22547f62a1c773d1f2ae18ccdb142c076348c404c2",
+      "bytes": 1766
+    },
+    {
+      "path": "Rule/Upstream/iQIYIIntl/iQIYIIntl.list",
+      "sha256": "5206f6a08edc9b9020ed0c26b4527aa252b3238792db0e1832f9f633d46bfebf",
+      "bytes": 913
+    },
+    {
+      "path": "Rule/Upstream/iQIYIIntl/iQIYIIntl_Resolve.list",
+      "sha256": "85662ae2f9c3bf0e2fd677537bb7bbc620904110edf0487c8785bd9225c78376",
+      "bytes": 770
+    },
+    {
+      "path": "Rule/Upstream/iTalkBB/iTalkBB.list",
+      "sha256": "637b7cc784af385fb7614bc22844865921777390865571abcbe01ad47b4eeccd",
+      "bytes": 292
+    },
+    {
+      "path": "Rule/Upstream/ifanr/ifanr.list",
+      "sha256": "6ce445ccfc2a165eeff88113a05072dd48a795f38f78d03a0cf7dd10b4c38cce",
+      "bytes": 1078
+    },
+    {
+      "path": "Rule/Upstream/myTVSUPER/myTVSUPER.list",
+      "sha256": "6ce1adcc85c470291fa0f4a955b2e44aedf6e0e219517b1708369183ef6b412e",
+      "bytes": 397
+    },
+    {
+      "path": "Rule/Upstream/zhanqi/zhanqi.list",
+      "sha256": "ab43e4796e3c2ccc7af6e1f8472ad8cc9dc64f107c85c102e80060832af2f478",
+      "bytes": 179
+    }
+  ],
+  "openphish_hosts": 289,
+  "urlhaus_hosts": 0,
+  "automatic_deletion_enabled": false,
+  "corroborated_hosts": 0,
+  "removed_exact_domain_rules": [],
+  "coverage_note": "OpenPhish phishing URLs and URLhaus malware URLs only; not comprehensive fraud/scam coverage. Missing either feed disables automatic deletion.",
+  "validation": {
+    "rule_files": 861,
+    "rule_folders": 690
+  },
+  "validation_errors": [],
+  "rule_personal_unchanged": true
+}

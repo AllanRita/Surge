@@ -2,11 +2,8 @@
 # AUTHOR: FQrabbit
 # REPO: https://github.com/FQrabbit/SSTap-Rule
 # UPDATED: 2022-05-09 00:53:27
-# CANONICAL-RULESET: Rule/Upstream/Assassin'sCreed/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list
-# MERGED-ALIASES: Rule/Upstream/Game/Assassin'sCreed-Origins/Assassin'sCreed-Origins_Resolve.list
 # IP-CIDR: 16
 # TOTAL: 16
-
 IP-CIDR,104.92.145.0/24
 IP-CIDR,216.98.48.0/24
 IP-CIDR,216.98.54.0/24

@@ -2,13 +2,10 @@
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 # UPDATED: 2026-10-24 04:55:18
-# APP-POLICY-GROUP: Steam
-# DOMAIN: 1
 # DOMAIN-KEYWORD: 3
-# DOMAIN-SUFFIX: 58
+# DOMAIN-SUFFIX: 54
 # IP-CIDR: 12
-# TOTAL: 74
-
+# TOTAL: 69
 DOMAIN-SUFFIX,cdn-ali.content.steamchina.com
 DOMAIN-SUFFIX,cdn-qc.content.steamchina.com
 DOMAIN-SUFFIX,cdn-ws.content.steamchina.com
@@ -78,8 +75,3 @@ IP-CIDR,205.196.6.0/24
 IP-CIDR,208.64.200.0/22
 IP-CIDR,208.78.164.0/22
 IP-CIDR,45.121.184.0/24
-DOMAIN,xz.pphimalayanrt.com
-DOMAIN-SUFFIX,steamchina.com
-DOMAIN-SUFFIX,steamcontent.com
-DOMAIN-SUFFIX,steamserver.net
-DOMAIN-SUFFIX,steamusercontent.com

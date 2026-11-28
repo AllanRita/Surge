@@ -1,9 +1,9 @@
 # NAME: ICBC
 # AUTHOR: blackmatrix7
-# SOURCE: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ICBC/ICBC.list
-# RESTORED: 2026-11-27
-# RULES: 58
-
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:35
+# DOMAIN-SUFFIX: 58
+# TOTAL: 58
 DOMAIN-SUFFIX,95588.com
 DOMAIN-SUFFIX,95588.com.cn
 DOMAIN-SUFFIX,dccnet.com.cn
