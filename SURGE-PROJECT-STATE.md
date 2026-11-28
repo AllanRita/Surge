@@ -760,3 +760,13 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - PR #3 merged as `b9df5f25fbcbb09a7c7d0064ac618df1050a4a13`. No rule files or Rule/Personal content were modified by this change; no main Surge config touched.
 - Current security feed blocker remains: OpenPhish 289 hosts, URLhaus 0, auto deletion disabled. Do not create secrets or infer individual deletions.
 - Next: verify the Actions run triggered by merge `b9df5f25fbcbb09a7c7d0064ac618df1050a4a13`; check syntax and manifest preflight plus full 861-file validation. Then continue assessing a legitimate authorized URLhaus feed method and document the limitations. Keep rule set updates single-source and preserve all safety constraints.
+
+
+## 57. Run #56 exact line tombstone preflight and full sync validation passed (2026-11-28 UTC)
+
+- User confirmed run #56 completed; independently verified Actions run ID `46121897280`, conclusion `success`, job `sync-and-audit` success. URL https://github.com/AllanRita/Surge/actions/runs/46121897280
+- Report timestamp `2026-11-28T07:36:04.582059+00:00`; source blackmatrix7 commit `0b6897dc17e0c513d25449c935a9694818e32f0c`; 861 `.list` files, 690 directories, 0 validation errors.
+- Schema v2 deletion manifest preflight and Python compile gate passed. `Rule/Personal` unchanged; current three files remain Grok.list, PayPay.list, Target.list. GitHub workflow count remains 2: BuildIcons.yml and batch-preflight.yml.
+- Security remains unchanged: OpenPhish 289 hosts; URLhaus 0; automatic deletion disabled; 0 removals. Do not claim auto-deletion active.
+- Historical line-level tombstone manifest remains empty because no authoritative record of previously deleted lines has been recovered. Never guess historical deleted domains. New explicitly recorded exact line tombstones are supported.
+- Next: assess safe URLhaus feed access using only already-authorized public endpoints or existing configured credentials; do not create/guess secrets. Investigate workflow support for an optional URLhaus public host feed if legally/publicly accessible and documented. Separately, determine whether prior deletion history can be recovered from repository commits (without restoring or changing any deleted content); if reconstructable, propose exact path+line entries and evidence before adding them. Preserve main config and Rule/Personal.
