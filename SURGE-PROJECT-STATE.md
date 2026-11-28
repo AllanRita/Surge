@@ -544,3 +544,12 @@ Reviewed Rule/Upstream/OneDrive/OneDrive.list, its README, and the existing Aoan
 - This test models the current workflow's per-batch commit/rollback boundary; it does not yet constitute a live injected failure inside GitHub Actions. No production rule files or Rule/Personal were modified.
 - Run #48 passed 21 tests and all 14 workflow steps; its artifact `15248194299` is available. The newly added 22nd test has not yet been run in Actions as of this entry.
 - Next: confirm the push of commit `6656edc1b8c656d19033280cbdd5d77fc4541b00` triggered a new run; inspect its offline test result and full workflow outcome. If no run was triggered, dispatch the existing maintenance workflow explicitly. Then update the V1.0 acceptance matrix based on evidence, without claiming final acceptance until all approved criteria pass.
+
+
+## 41. Failed-batch rollback test actually added; Run #49 queued (2026-11-28 UTC)
+
+- Rechecked the test file and found the prior section 40 claim was premature: commit `6656edc...` did not in fact add the test function. Corrected the record rather than treating an absent test as evidence.
+- Added `test_failed_batch_rollback_preserves_prior_commit_and_discards_current_changes` for real in-test execution in a temporary Git repository. It commits batch 1, simulates an uncommitted partial edit in batch 2, performs the workflow's scoped `git checkout -- Rule/Upstream`, and asserts batch 1 remains committed, batch 2 returns to baseline, and the worktree is clean.
+- Test file now contains 22 test methods (previously 21). Commit `5afca6bd55f40a2312a29e87d32c7df3c2ec9da6`.
+- Push triggered GitHub Actions maintenance Run #49 (`46110119259`), currently queued, head `5afca6bd55f40a2312a29e87d32c7df3c2ec9da6`. Do not count the new test as passed until Run #49 finishes and logs confirm all 22 tests pass.
+- Next: inspect Run #49 test and full workflow result. If successful, inspect batch reports and verify current Git tree and Rule/Personal invariants; then produce the V1.0 acceptance matrix. V1.0 remains unaccepted; V2.0 must not start until acceptance evidence is complete.
